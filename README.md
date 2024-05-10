@@ -1,1 +1,1 @@
-# pymassbank
+# MassBank-RDF
