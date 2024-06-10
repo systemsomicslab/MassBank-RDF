@@ -1,0 +1,134 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <http://www.massbank.jp/record/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem_compound: <http://identifiers.org/pubchem.compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000002 a mbo:MassSpectrum;
+  dc:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada";
+  dc:date "2017-07-07"^^xsd:date;
+  dc:identifier "MSBNK-AAFC-AC000002";
+  dc:license "CC BY-SA";
+  dc:references [
+    a bibo:Article;
+    rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5"
+  ];
+  dc:rights "Copyright (C) 2017";
+  mbo:analytical_methods_and_conditions [
+    a mbo:AnalyticalMethods;
+    mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific";
+    mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM";
+    mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min";
+    mbo:flow_rate [
+      sio:SIO_000221 obo:UO_0000271;
+      rdf:value 0.0
+    ];
+    mbo:fragmentation_mode "HCD";
+    mbo:instrument_type "LC-ESI-ITFT";
+    mbo:ion_mode "POSITIVE";
+    mbo:ionization "ESI";
+    mbo:ionization_voltage "3.9 kV";
+    mbo:ms_type "MS2";
+    mbo:resolution "17500";
+    mbo:retention_time [
+      sio:SIO_000221 obo:UO_0000031;
+      rdf:value 0.0
+    ];
+    mbo:solvent "A H2O 0.1% FA",
+      "B ACN 0.1% FA"
+  ];
+  mbo:compound [
+    a mbo:SampleChemicalCompound;
+    mbo:ch_compound_class "Natural Product; Fungal metabolite";
+    mbo:ch_exact_mass [
+      sio:SIO_000221 obo:UO_0000088;
+      rdf:value 178.06299
+    ];
+    mbo:ch_formula "C10H10O3";
+    mbo:ch_iupac "InChI=1S/C10H10O3/c1-6-5-7-3-2-4-8(11)9(7)10(12)13-6/h2-4,6,11H,5H2,1H3";
+    mbo:ch_name "Mellein",
+      "Ochracin",
+      "8-hydroxy-3-methyl-3,4-dihydroisochromen-1-one";
+    mbo:ch_smiles "CC1CC2=C(C(=CC=C2)O)C(=O)O1";
+    rdfs:seeAlso inchikey:KWILGNNWGSNMPA-UHFFFAOYSA-N,
+      cas:17397-85-2,
+      pubchem_compound:28516,
+      chemspider:26529,
+      knapsack:C00000550
+  ];
+  mbo:has_peak [
+    mbo:intensity 46563.63671875;
+    mbo:mz 133.0648;
+    mbo:peak_sequential_number 0;
+    mbo:relative_intensity 193.0
+  ], [
+    mbo:intensity 20681.7109375;
+    mbo:mz 151.0754;
+    mbo:peak_sequential_number 1;
+    mbo:relative_intensity 85.0
+  ], [
+    mbo:intensity 8681.3095703125;
+    mbo:mz 155.9745;
+    mbo:peak_sequential_number 2;
+    mbo:relative_intensity 35.0
+  ], [
+    mbo:intensity 239234.5625;
+    mbo:mz 161.0597;
+    mbo:peak_sequential_number 3;
+    mbo:relative_intensity 999.0
+  ], [
+    mbo:intensity 181936.171875;
+    mbo:mz 179.0703;
+    mbo:peak_sequential_number 4;
+    mbo:relative_intensity 759.0
+  ];
+  mbo:has_peak_annotations [
+    mbo:error [
+      sio:SIO_000221 obo:UO_0000169;
+      rdf:value -2.99
+    ];
+    mbo:mz 133.0644;
+    mbo:tentative_formula "C9H9O1+"
+  ], [
+    mbo:error [
+      sio:SIO_000221 obo:UO_0000169;
+      rdf:value -3.71
+    ];
+    mbo:mz 151.0748;
+    mbo:tentative_formula "C9H11O2+"
+  ], [
+    mbo:error [
+      sio:SIO_000221 obo:UO_0000169;
+      rdf:value -4.4
+    ];
+    mbo:mz 161.059;
+    mbo:tentative_formula "C10H9O2+"
+  ], [
+    mbo:error [
+      sio:SIO_000221 obo:UO_0000169;
+      rdf:value -2.07
+    ];
+    mbo:mz 179.0699;
+    mbo:tentative_formula "C10H11O3+"
+  ];
+  mbo:mass_spectram_meta_data [
+    a mbo:MassSpectramMetaData;
+    mbo:base_peak 161.059;
+    mbo:precursor_mz 179.0697;
+    mbo:precursor_type mbo:IT003
+  ];
+  mbo:ms_data_processing "DEPROFILE Proteowizard"@en;
+  mbo:pk_num_peak 5;
+  mbo:pk_splash "splash10-03fr-0900000000-7ddd9e0713885268b763";
+  rdfs:comment "CONFIDENCE isolated standard";
+  skos:definition "Mellein; LC-ESI-ITFT; MS2; CE: 20; R=17500; [M+H]+"@en .
