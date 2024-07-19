@@ -20,7 +20,7 @@ mb:MSBNK-RIKEN_IMS-LQA00001_CM
     sio:SIO_000231 mb:MSBNK-RIKEN_IMS-LQA00001_EX .
 
 mb:MSBNK-RIKEN_IMS-LQA00001_DE
-    rdf:type sio:CHEMINF_000043;
+    rdf:type sio:CHEMINF_011120;
     mbo:has_descripter [
     rdf:type sio:CHEMINF_000043;
     sio:SIO_000300 "PC(14:0/10-HDoHE)"
@@ -122,38 +122,34 @@ co:CHEMONTID:0002213
     sio:SIO_000300 http://classyfire.wishartlab.com/tax_nodes/C0002213
   ].
 
-mb:MSBNK-RIKEN_IMS-LQA00001_MS
-    rdf:type obo:MS_1000579 ;
+mb:MSBNK-RIKEN_IMS-LQA00001_SP
+    rdf:type obo:MS_1000294 ;
     sio:SIO_000232 mb:MSBNK-RIKEN_IMS-LQA00001_EX;
     sio:SIO_000369 mb:MSBNK-RIKEN_IMS-LQA00001_PK;
-    sio:SIO_000255 mb:MSBNK-RIKEN_IMS-LQA00001_AN;
-    sio:SIO_000369 "hhhh".
+    sio:SIO_000300 852.5396225.
 
 mb:MSBNK-RIKEN_IMS-LQA00001_PK
     rdf:type obo:MS_1000580;
     mbo:has_peaks [
-    rdf:type pk:pd ;
-    sio:SIO_000313 mb:MSBNK-RIKEN_IMS-LQA00001_MS ;
-    sio:SIO_000255 mb:MSBNK-RIKEN_IMS-PK00001_AN ;
-    mbo:intensity 10;
-    sio:SIO_000300 78.95756;
-    mbo:relative_intensity 15
+    rdf:type obo:MS_1000231 ;
+    sio:SIO_000313 mb:MSBNK-RIKEN_IMS-LQA00001_SP ;
+    sio:SIO_000255 mb:MSBNK-RIKEN_IMS-PK00001_1_AN ;
   ].
 
-mb:MSBNK-RIKEN_IMS-PK00001_AN
+mb:MSBNK-RIKEN_IMS-PK00001_1_AN
     rdf:type sio:SIO_001166;
     mbo:has_peaks [
-    rdf:type pkano:intensity ;
+    rdf:type mbo:intensity ;
     sio:SIO_000300 10
   ], [
-    rdf:type pkano:relintensity ;
+    rdf:type mbo:relative_intensity ;
     sio:SIO_000300 15
   ], [
-    rdf:type pkano:mz ;
+    rdf:type mbo:mz ;
     sio:SIO_000300 78.95756
   ], [
-    rdf:type pkano:formula ;
-    sio:SIO_000300 "CH3"
+    rdf:type mbo:neutral_loss ;
+    sio:SIO_000300 50.07987
   ].
 
 mb:MSBNK-RIKEN_IMS-PK00001_PR
@@ -169,22 +165,13 @@ mb:MSBNK-RIKEN_IMS-PK00001_PR
     rdf:type obo:MS_1002813 ;
     sio:SIO_000300 "[M+CH3COOH-H]-"
   ], [
-    rdf:type obo:MS_1000744 ;
-    sio:SIO_000300 852.5396225 ;
-    sio:SIO_000221 obo:MS_1000040
-  ], [
     rdf:type obo:MS_1000463 ;
     sio:SIO_000300 "LC-ESI-QTOF" 
   ], [
     rdf:type obo:MS_1000031 ;
-    sio:SIO_000300 852.5396225 
+    sio:SIO_000300 "Acquity UPLC Peptide BEH C18 column (50 x 2.1 mm; 1.7 um), Sciex TripleTOF5600"; 
   ], [
-    rdf:type obo:MS_1002013 ;
-    sio:SIO_000300 30 ;
-    sio:SIO_000221 obo:UO_0000266
-  ], [
-    rdf:type obo:MS_1002014 ;
-    sio:SIO_000300 50 ;
-    sio:SIO_000221 obo:UO_0000266 
+     sio:SIO_000300 "30-50" ;
+     a obo:MS_1000045
   ].
 
