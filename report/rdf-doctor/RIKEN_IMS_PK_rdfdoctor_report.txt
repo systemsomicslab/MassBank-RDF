@@ -1,0 +1,44 @@
+(base) knishida@anna:~/github/MassBank-RDF/draft_ttl/oka$ rdf-doctor -r -i RIKEN_IMS_PK.ttl
+26/08/2024 12:16:06 -- turtle:(not compressed)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX mb: <https://registry.identifiers.org/registry/massbank>
+PREFIX co: <http://classyfire.wishartlab.com/tax_nodes>
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX : <http://weso.es/shapes/>
+
+:MS_1000580  [<https://registry.identifiers.org/registry/>~]  AND   # 1140 instances.  Instance example: 'https://registry.identifiers.org/registry/massbankMSBNK-RIKEN_IMS-LQB00687_PK'
+{
+   rdf:type  [obo:MS_1000580]  ;                               # 100.0 % (1140 instances).
+   mbo:has_peak  @<BNode>  +                                   # 100.0 % (1140 instances).
+            # Node constraint example: 'n35359e68b79d4835a435afa86ea03046b19681'
+}
+
+
+# # Report on
+# ```
+# RIKEN_IMS_PK.ttl
+# ```
+#
+# ## Prefix reuse percentage ([?](https://github.com/dbcls/rdf-doctor#output-description))
+#
+# Percentage of prefixes used in the input file that are included in the predefined prefix list inside rdf-doctor.
+# ```
+# 50.0%
+# ```
+#
+#
+# ## Refine namespace and URIs ([?](https://github.com/dbcls/rdf-doctor#output-description))
+#
+# There is a more widely used Namespace and URI.
+# (For each of Namespace and URI, output only if the input value differs from the widely used value.)
+# ```
+# Input-Namespace       Input-URI       Widely-used-Namespace   Widely-used-URI
+# mb:   https://registry.identifiers.org/registry/massbank              http://dbtune.org/musicbrainz/resource/instrument/
+# co:   http://classyfire.wishartlab.com/tax_nodes              http://purl.org/ontology/co/core#
+# ```
+#
+#
+
+(base) knishida@anna:~/github/MassBank-RDF/draft_ttl/oka$
