@@ -1,0 +1,31 @@
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mb: <https://registry.identifiers.org/registry/massbank>
+PREFIX co: <http://classyfire.wishartlab.com/tax_nodes>
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?PK ?AN
+       (GROUP_CONCAT(DISTINCT ?intensity; separator=", ") AS ?intensities)
+       (GROUP_CONCAT(DISTINCT ?relative_intensity; separator=", ") AS ?relative_intensities)
+       (GROUP_CONCAT(DISTINCT ?mz; separator=", ") AS ?mzs)
+       (GROUP_CONCAT(DISTINCT ?neutral_loss; separator=", ") AS ?neutral_losses)
+WHERE {
+  ?descriptor a sio:CHEMINF_000059 ;
+              sio:SIO_000300 "XHKOSGCDDIGCOM-HIAJHCFCSA-N" .
+  ?descriptor2 mbo:has_descriptor ?descriptor .
+  ?CM sio:SIO_000008 ?descriptor2 ;
+      sio:SIO_000231 ?EX .
+  ?EX sio:SIO_000229 ?SP .
+  ?SP sio:SIO_000369 ?PK .
+  ?PK mbo:has_peak ?q .
+  ?q sio:SIO_000255 ?AN .
+  ?AN sio:SIO_000255 ?ANcontent .
+
+  OPTIONAL { ?ANcontent a mbo:intensity ; sio:SIO_000300 ?intensity . }
+  OPTIONAL { ?ANcontent a mbo:relative_intensity ; sio:SIO_000300 ?relative_intensity . }
+  OPTIONAL { ?ANcontent a mbo:mz ; sio:SIO_000300 ?mz . }
+  OPTIONAL { ?ANcontent a mbo:neutral_loss ; sio:SIO_000300 ?neutral_loss . }
+}
+GROUP BY ?PK ?AN
+LIMIT 10
