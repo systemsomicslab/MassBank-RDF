@@ -1,0 +1,120 @@
+(base) knishida@anna:~/github/MassBank-RDF/draft_ttl/nishida$ rdf-doctor -r -i massbankjson2ttl.ttl                                                                                                              26/08/2024 12:26:19 -- turtle:(not compressed)
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ns1: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://weso.es/shapes/>
+
+:ChemicalSubstance  [<https://massbank.eu/MassBank/>~]  AND   # 120184 instances.  Instance example: 'https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-RIKEN-PR308753#ChemicalSubstance'
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [ns1:ChemicalSubstance]  ;          # 100.0 % (120184 instances).
+   dcterms:conformsTo  @:CreativeWork  ;                       # 100.0 % (120184 instances).
+            # Node constraint example: 'https://bioschemas.org/profiles/ChemicalSubstance/0.4-RELEASE'
+   ns1:identifier  xsd:string  ;                               # 100.0 % (120184 instances).
+            # Node constraint example: 'MSBNK-MSSJ-MSJ00058'
+   ns1:alternateName  xsd:string  +;                           # 100.0 % (120184 instances).
+            # Node constraint example: 'Procaine'
+            # 53.32157358716635 % (64084 instances). obj: xsd:string. Cardinality: {1}
+            # 29.246821540304868 % (35150 instances). obj: xsd:string. Cardinality: {2}
+            # 11.422485522199294 % (13728 instances). obj: xsd:string. Cardinality: {3}
+   ns1:name  xsd:string  ;                                     # 100.0 % (120184 instances).
+            # Node constraint example: 'GDP-fucose, GDP-Fuc, Guanosine-5'-diphospho-beta-L-fucose, 6-Deoxy-beta-L-galactopyranosylguanosine 5'-diphosphate'
+   ns1:chemicalComposition  xsd:string  ;                      # 100.0 % (120184 instances).
+            # Node constraint example: 'C8H10N2O3S'
+   ns1:hasBioChemEntityPart  @:MolecularEntity  ;              # 100.0 % (120184 instances).
+            # Node constraint example: 'https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-RIKEN-PR308228#HITJFUSPLYBJPE-UHFFFAOYSA-N'
+   ns1:url  IRI                                                # 100.0 % (120184 instances).
+            # Node constraint example: 'https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-Fac_Eng_Univ_Tokyo-JP010983'
+}
+
+
+:MolecularEntity  [<https://massbank.eu/MassBank/>~]  AND   # 120184 instances.  Instance example: 'https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-BAFG-CSL2311095014#GAAPPIKAFNZRLA-UHFFFAOYSA-N'
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [ns1:MolecularEntity]  ;          # 100.0 % (120184 instances).
+   ns1:molecularFormula  xsd:string  ;                         # 100.0 % (120184 instances).
+            # Node constraint example: 'C17H13Cl3N4S'
+   ns1:name  xsd:string  ;                                     # 100.0 % (120184 instances).
+            # Node constraint example: '2-Isopropylthioxanthon'
+   ns1:url  IRI  ;                                             # 100.0 % (120184 instances).
+            # Node constraint example: 'https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-LCSB-LU088505'
+   ns1:identifier  xsd:string  ;                               # 100.0 % (120184 instances).
+            # Node constraint example: 'MSBNK-BAFG-CSL23111017641'
+   dcterms:conformsTo  @:CreativeWork  ;                       # 100.0 % (120184 instances).
+            # Node constraint example: 'https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE'
+   ns1:monoisotopicMolecularWeight  xsd:double  ;              # 100.0 % (120184 instances).
+            # Node constraint example: '346.2144'
+   ns1:inChI  xsd:string  ?;
+            # Node constraint example: 'InChI=1S/C12H22O4/c1-3-9-15-11(13)7-5-6-8-12(14)16-10-4-2/h3-10H2,1-2H3'
+            # 99.06559941423151 % (119061 instances). obj: xsd:string. Cardinality: {1}
+   ns1:inChIKey  xsd:string  ?;
+            # Node constraint example: 'ZTVZLYBCZNMWCF-UHFFFAOYSA-N'
+            # 98.84011182852959 % (118790 instances). obj: xsd:string. Cardinality: {1}
+   ns1:smiles  xsd:string  ?;
+            # Node constraint example: 'OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCO'
+            # 82.20228982227252 % (98794 instances). obj: xsd:string. Cardinality: {1}
+   ns1:smiles  <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>  ?
+            # Node constraint example: 'OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCO'
+            # 16.924881847833323 % (20341 instances). obj: <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>. Cardinality: {1}
+}
+
+
+:Dataset  [<https://massbank.eu/MassBank/>~]  AND   # 120184 instances.  Instance example: 'https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-Fac_Eng_Univ_Tokyo-JP006226#Dataset'
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [ns1:Dataset]  ;          # 100.0 % (120184 instances).
+   ns1:datePublished  ns1:Date  ;                              # 100.0 % (120184 instances).
+            # Node constraint example: '2023-05-02'
+   dcterms:conformsTo  @:CreativeWork  ;                       # 100.0 % (120184 instances).
+            # Node constraint example: 'https://bioschemas.org/profiles/Dataset/1.0-RELEASE'
+   ns1:identifier  xsd:string  ;                               # 100.0 % (120184 instances).
+            # Node constraint example: 'MSBNK-Washington_State_Univ-BML81020'
+   ns1:description  xsd:string  ;                              # 100.0 % (120184 instances).
+            # Node constraint example: 'This MassBank record with Accession MSBNK-Univ_Toyama-TY000013 contains the MS mass spectrum of Ginsenoside Rd with the InChIkey RLDVZILFNVRJTL-IWFVLDDISA-N.'
+   ns1:keywords  @<BNode>  ;                                   # 100.0 % (120184 instances).
+            # Node constraint example: 'nda3df4e280b047309052ce2319494a46b327232'
+   ns1:includedinDataCatalog  @<BNode>  ;                      # 100.0 % (120184 instances).
+            # Node constraint example: 'nda3df4e280b047309052ce2319494a46b246946'
+   ns1:url  IRI  ;                                             # 100.0 % (120184 instances).
+            # Node constraint example: 'https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-LCSB-LU106055'
+   ns1:measurementTechnique  @<BNode>  ;                       # 100.0 % (120184 instances).
+            # Node constraint example: 'nda3df4e280b047309052ce2319494a46b507119'
+   ns1:citation  xsd:string  ;                                 # 100.0 % (120184 instances).
+            # Node constraint example: ''
+   ns1:license  IRI  ?;
+            # Node constraint example: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
+            # 99.87602343073954 % (120035 instances). obj: IRI. Cardinality: {1}
+   ns1:name  xsd:string  ?
+            # Node constraint example: 'PFEtS; LC-ESI-QFT; MS2; CE: 15%; R=17500; [M-H]-'
+            # 98.6487386008121 % (118560 instances). obj: xsd:string. Cardinality: {1}
+}
+
+
+:CreativeWork  [<https://bioschemas.org/profiles/>~]  AND   # 3 instances.  Instance example: 'https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE'
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [ns1:CreativeWork]            # 100.0 % (3 instances).
+}
+
+
+# # Report on
+# ```
+# massbankjson2ttl.ttl
+# ```
+#
+# ## Prefix reuse percentage ([?](https://github.com/dbcls/rdf-doctor#output-description))
+#
+# Percentage of prefixes used in the input file that are included in the predefined prefix list inside rdf-doctor.
+# ```
+# 66.67%
+# ```
+#
+#
+# ## Refine namespace and URIs ([?](https://github.com/dbcls/rdf-doctor#output-description))
+#
+# There is a more widely used Namespace and URI.
+# (For each of Namespace and URI, output only if the input value differs from the widely used value.)
+# ```
+# Input-Namespace       Input-URI       Widely-used-Namespace   Widely-used-URI
+# ns1:  http://schema.org/      schema:|shema:|so:|sorg:|url:   http://www.w3.org/1999/xhtml/vocab#
+# ```
+#
+#
+
+(base) knishida@anna:~/github/MassBank-RDF/draft_ttl/nishida$
