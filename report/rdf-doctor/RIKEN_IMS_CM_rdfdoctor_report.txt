@@ -1,0 +1,46 @@
+(base) knishida@anna:~/github/MassBank-RDF/draft_ttl/oka$ rdf-doctor -r -i RIKEN_IMS_CM.ttl
+26/08/2024 11:56:36 -- turtle:(not compressed)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX mb: <https://registry.identifiers.org/registry/massbank>
+PREFIX co: <http://classyfire.wishartlab.com/tax_nodes>
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX : <http://weso.es/shapes/>
+
+:SIO_011125  [<https://registry.identifiers.org/registry/>~]  AND   # 1140 instances.  Instance example: 'https://registry.identifiers.org/registry/massbankMSBNK-RIKEN_IMS-LQA00143_CM'
+{
+   rdf:type  [sio:SIO_011125]  ;                               # 100.0 % (1140 instances).
+   sio:SIO_000008  IRI  {2};                                   # 100.0 % (1140 instances).
+            # Node constraint example: 'mb:MSBNK-RIKEN_IMS-LQA00362_DE'
+   sio:SIO_000231  IRI                                         # 100.0 % (1140 instances).
+            # Node constraint example: 'mb:MSBNK-RIKEN_IMS-LQB00382_EX'
+}
+
+
+# # Report on
+# ```
+# RIKEN_IMS_CM.ttl
+# ```
+#
+# ## Prefix reuse percentage ([?](https://github.com/dbcls/rdf-doctor#output-description))
+#
+# Percentage of prefixes used in the input file that are included in the predefined prefix list inside rdf-doctor.
+# ```
+# 50.0%
+# ```
+#
+#
+# ## Refine namespace and URIs ([?](https://github.com/dbcls/rdf-doctor#output-description))
+#
+# There is a more widely used Namespace and URI.
+# (For each of Namespace and URI, output only if the input value differs from the widely used value.)
+# ```
+# Input-Namespace       Input-URI       Widely-used-Namespace   Widely-used-URI
+# mb:   https://registry.identifiers.org/registry/massbank              http://dbtune.org/musicbrainz/resource/instrument/
+# co:   http://classyfire.wishartlab.com/tax_nodes              http://purl.org/ontology/co/core#
+# ```
+#
+#
+
+(base)
