@@ -1,0 +1,72 @@
+# クエリ1: 化合物の基本情報を取得
+PREFIX mb: <https://registry.identifiers.org/registry/massbank>
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT DISTINCT ?name ?formula ?mass
+WHERE {
+  mb:MSBNK-RIKEN_IMS-LQA00001 mbo:compound ?compound .
+  ?compound a sio:CHEMINF_000043 ;
+            sio:SIO_000300 ?name .
+  mb:MSBNK-RIKEN_IMS-LQA00001 mbo:compound ?formulaComp .
+  ?formulaComp a sio:CHEMINF_000042 ;
+               sio:SIO_000300 ?formula .
+  mb:MSBNK-RIKEN_IMS-LQA00001 mbo:compound ?massComp .
+  ?massComp a sio:CHEMINF_000217 ;
+            sio:SIO_000300 ?mass .
+}
+
+# クエリ2: ClassyFire分類情報を取得
+PREFIX mb: <https://registry.identifiers.org/registry/massbank>
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX classyfire: <http://purl.obolibrary.org/obo/>
+
+SELECT ?level ?name ?description
+WHERE {
+  mb:MSBNK-RIKEN_IMS-LQA00001 mbo:compound ?compound .
+  ?compound a ?classyfireType ;
+            mbo:has_classyfire_chemont ?chemont .
+  ?chemont a sio:SIO_000116 ;
+           sio:SIO_000300 ?name .
+  ?chemont a sio:SIO_000136 ;
+           sio:SIO_000300 ?description .
+  BIND(
+    IF(?classyfireType = classyfire:kingdom, "Kingdom",
+    IF(?classyfireType = classyfire:superclass, "Superclass",
+    IF(?classyfireType = classyfire:class, "Class",
+    IF(?classyfireType = classyfire:subclass, "Subclass", "Unknown")))) AS ?level
+  )
+}
+
+# クエリ3: 質量分析パラメータを取得
+PREFIX mb: <https://registry.identifiers.org/registry/massbank>
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT ?msLevel ?ionization ?instrument ?collisionEnergy
+WHERE {
+  mb:MSBNK-RIKEN_IMS-LQA00001 mbo:has_parameter ?param .
+  OPTIONAL { ?param a obo:MS_1000511 ; sio:SIO_000300 ?msLevel }
+  OPTIONAL { ?param a obo:MS_1000463 ; sio:SIO_000300 ?instrument }
+  OPTIONAL { ?param a obo:MS_1000045 ; sio:SIO_000300 ?collisionEnergy }
+  OPTIONAL { 
+    ?param a obo:MS_1000129 .
+    BIND("Negative" AS ?ionization)
+  }
+}
+
+# クエリ4: ピーク情報を取得
+PREFIX mb: <https://registry.identifiers.org/registry/massbank>
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+
+SELECT ?mz ?intensity ?relativeIntensity ?neutralLoss
+WHERE {
+  mb:MSBNK-RIKEN_IMS-LQA00001 mbo:has_peaks ?peak .
+  ?peak mbo:mz ?mz ;
+        mbo:intensity ?intensity ;
+        mbo:relative_intensity ?relativeIntensity ;
+        mbo:neutral_loss ?neutralLoss .
+}
+ORDER BY DESC(?relativeIntensity)
