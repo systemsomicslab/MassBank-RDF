@@ -1,0 +1,18 @@
+PREFIX ns1: <http://semanticscience.org/resource/>
+PREFIX ns2: <http://purl.obolibrary.org/obo/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?pubcheminchikey ?pubchembioassayid ?pubchembioassaytitle WHERE {
+  # Get PubChem InChIKey for a MassBank record
+  <https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-RIKEN_ReSpect-PS101902> ns1:CHEMINF_000059 ?pubcheminchikey .
+  
+  # Get PubChem CID for a PubChem InChIKey
+  ?pubcheminchikey ns1:SIO_000011 ?pubchemcid .
+  
+  # Get PubChem BioAssay IDs for PubChem CID
+  ?pubchemcid ns2:RO_0000056 ?pubchembioassayid .
+  
+  # Get PubChem BioAssay title for PubChem BioAssay ID
+  ?pubchembioassayid dcterms:title ?pubchembioassaytitle .
+} LIMIT 10
