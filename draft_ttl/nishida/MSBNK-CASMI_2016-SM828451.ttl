@@ -4,7 +4,15 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix massbank: <https://identifiers.org/massbank:> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix cas: <https://identifiers.org/cas/> .
+@prefix chebi: <https://identifiers.org/CHEBI/> .
+@prefix kegg: <https://identifiers.org/kegg.compound/> .
+@prefix pubchem: <https://identifiers.org/pubchem.compound/> .
+@prefix inchi: <https://identifiers.org/inchi/> .
+@prefix inchikey: <https://identifiers.org/inchikey/> .
+@prefix chemspider: <https://identifiers.org/chemspider/> .
+@prefix comptox: <https://identifiers.org/comptox/> .
 
 massbank:MSBNK-CASMI_2016-SM828451#Dataset rdf:type schema:Dataset .
 massbank:MSBNK-CASMI_2016-SM828451#Dataset dcterms:identifier	"MSBNK-CASMI_2016-SM828451" .
@@ -22,23 +30,18 @@ massbank:MSBNK-CASMI_2016-SM828451#Dataset rdfs:comment "CONFIDENCE standard com
 massbank:MSBNK-CASMI_2016-SM828451#Dataset rdfs:comment "INTERNAL_ID 8284"
 
 massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdf:type schema:ChemicalSubstance .
-massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance dcterms:conformsTo <https://bioschemas.org/profiles/ChemicalSubstance/0.4-RELEASE> .
-massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:alternateName "1-Hydroxyanthraquinone" .
-massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:alternateName "1-hydroxyanthracene-9,10-dione" .
-massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:chemicalComposition "C14H8O3" .
-massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:hasBioChemEntityPart massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N> .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:url massbank:MSBNK-CASMI_2016-SM828451 .
 massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:identifier "MSBNK-CASMI_2016-SM828451" .
 massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:name "1-Hydroxyanthraquinone" .
-massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:url massbank:MSBNK-CASMI_2016-SM828451> .
-
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N rdf:type schema:MolecularEntity .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N dcterms:conformsTo <https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE> .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:identifier "MSBNK-CASMI_2016-SM828451" .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:inChI "InChI=1S/C14H8O3/c15-11-7-3-6-10-12(11)14(17)9-5-2-1-4-8(9)13(10)16/h1-7,15H" .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:inChIKey "BTLXPCBPYBNQNR-UHFFFAOYSA-N" .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:molecularFormula "C14H8O3" .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:monoisotopicMolecularWeight "224.04734"^^xsd:double .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:name "1-Hydroxyanthraquinone" .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:smiles "Oc1cccc2C(=O)c3ccccc3C(=O)c12" .
-massbank:MSBNK-CASMI_2016-SM828451#BTLXPCBPYBNQNR-UHFFFAOYSA-N schema:url massbank:MSBNK-CASMI_2016-SM828451> .
-
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:alternateName "1-hydroxyanthracene-9,10-dione" .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:molecularFormula "C14H8O3" .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:monoisotopicMolecularWeight "224.04734"^^xsd:double .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:smiles "Oc1cccc2C(=O)c3ccccc3C(=O)c12" .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:inChI inchi:InChI=1S/C14H8O3/c15-11-7-3-6-10-12(11)14(17)9-5-2-1-4-8(9)13(10)16/h1-7,15H .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:inChIKey inchikey:BTLXPCBPYBNQNR-UHFFFAOYSA-N .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso cas:129-43-1 .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso chebi:28877 .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso kegg:C02980 .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso pubchem:8512 .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso chemspider:8198 .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso comptox:DTXSID1020722 .
