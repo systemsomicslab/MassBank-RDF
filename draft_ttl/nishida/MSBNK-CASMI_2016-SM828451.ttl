@@ -15,6 +15,7 @@
 @prefix comptox: <https://identifiers.org/comptox/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix splash: <https://identifiers.org/splash/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
 
 massbank:MSBNK-CASMI_2016-SM828451#Dataset rdf:type schema:Dataset .
 massbank:MSBNK-CASMI_2016-SM828451#Dataset dcterms:identifier	"MSBNK-CASMI_2016-SM828451" .
@@ -31,7 +32,7 @@ massbank:MSBNK-CASMI_2016-SM828451#Dataset schema:citation "Schymanski, E. L.; R
 massbank:MSBNK-CASMI_2016-SM828451#Dataset rdfs:comment "CONFIDENCE standard compound" .
 massbank:MSBNK-CASMI_2016-SM828451#Dataset rdfs:comment "INTERNAL_ID 8284" .
 
-massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdf:type schema:ChemicalSubstance .
+massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdf:type mbo:compound .
 massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:url massbank:MSBNK-CASMI_2016-SM828451 .
 massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance dcterms:identifier "MSBNK-CASMI_2016-SM828451" .
 # massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance schema:identifier "MSBNK-CASMI_2016-SM828451" .
@@ -49,20 +50,21 @@ massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso pubchem:8512 .
 massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso chemspider:8198 .
 massbank:MSBNK-CASMI_2016-SM828451#ChemicalSubstance rdfs:seeAlso comptox:DTXSID1020722 .
 
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:MS_1000031 "Q Exactive Plus Orbitrap Thermo Scientific" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:CHMO_0000751 "LC-ESI-QFT" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:MS_1001458 "MS_TYPE MS2" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:MS_1001458 "ION_MODE NEGATIVE" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:MS_1001458 "IONIZATION ESI" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:MS_1001458 "FRAGMENTATION_MODE HCD" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:MS_1001458 "COLLISION_ENERGY 35 (nominal)" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:MS_1001458 "RESOLUTION 35000" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:CHMO_0001000 "COLUMN_NAME Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:CHMO_0001000 "FLOW_GRADIENT 95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:CHMO_0001000 "FLOW_RATE 300 uL/min" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:CHMO_0001000 "RETENTION_TIME 10.747 min" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:CHMO_0001000 "SOLVENT A water with 0.1% formic acid" .
-massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions obo:CHMO_0001000 "SOLVENT B methanol with 0.1% formic acid" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions rdf:type mbo:analytical_methods_and_conditions .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:instrument_type "LC-ESI-QFT" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:ms_type "MS_TYPE MS2" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:ion_mode "ION_MODE NEGATIVE" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:ionization "IONIZATION ESI" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:fragmentation_mode "FRAGMENTATION_MODE HCD" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:collision_energy "COLLISION_ENERGY 35 (nominal)" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:resolution "RESOLUTION 35000" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:column_name "COLUMN_NAME Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:flow_gradient "FLOW_GRADIENT 95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:flow_rate "FLOW_RATE 300 uL/min" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:retention_time "RETENTION_TIME 10.747 min" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:solvent "SOLVENT A water with 0.1% formic acid" .
+massbank:MSBNK-CASMI_2016-SM828451#AnalyticalConditions mbo:solvent "SOLVENT B methanol with 0.1% formic acid" .
 
 massbank:MSBNK-CASMI_2016-SM828451#MassSpectra obo:MS_1000499 "BASE_PEAK 223.0399" .
 massbank:MSBNK-CASMI_2016-SM828451#MassSpectra obo:MS_1000499 "PRECURSOR_M/Z 223.0401" .
