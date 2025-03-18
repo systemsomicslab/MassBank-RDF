@@ -4,10 +4,10 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix knapsack: <http://identifiers.org/knapsack/> .
-@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix massbank: <http://www.massbank.jp/record/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix pubchem_compound: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix pubchem_compound: <http://identifiers.org/pubchem.compound/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
@@ -17,14 +17,14 @@
 
 massbank:MSBNK-AAFC-AC000001 a mbo:MassSpectrum;
   dc:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada";
-  dc:date "2017-07-07"^^xsd:date;
+  dc:date '"2017-07-07"^^xsd:date';
   dc:identifier "MSBNK-AAFC-AC000001";
+  dc:license "2017-07-07"^^xsd:date;
   dc:references [
     a bibo:Article;
     rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5"
   ];
-  dc:rights "Copyright (C) 2017 under CC BY-SA";
-  dc:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+  dc:rights "Copyright (C) 2017";
   mbo:analytical_methods_and_conditions [
     a mbo:AnalyticalMethods;
     mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific";
@@ -32,7 +32,7 @@ massbank:MSBNK-AAFC-AC000001 a mbo:MassSpectrum;
     mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min";
     mbo:flow_rate [
       sio:SIO_000221 obo:UO_0000271;
-      rdf:value 0.3
+      rdf:value 0.0
     ];
     mbo:fragmentation_mode "HCD";
     mbo:instrument_type "LC-ESI-ITFT";
@@ -43,13 +43,13 @@ massbank:MSBNK-AAFC-AC000001 a mbo:MassSpectrum;
     mbo:resolution "17500";
     mbo:retention_time [
       sio:SIO_000221 obo:UO_0000031;
-      rdf:value 3.44
+      rdf:value 0.0
     ];
     mbo:solvent "A H2O 0.1% FA",
       "B ACN 0.1% FA"
   ];
-  sio:SIO_000008 [
-    a schema:ChemicalSubstance;
+  mbo:compound [
+    a schema:chemicalsubstance;
     mbo:ch_compound_class "Natural Product; Fungal metabolite";
     mbo:ch_exact_mass "178.06299"^^xsd:double;
     schema:molecularFormula "C10H10O3";
@@ -60,7 +60,7 @@ massbank:MSBNK-AAFC-AC000001 a mbo:MassSpectrum;
     schema:smiles "CC1CC2=C(C(=CC=C2)O)C(=O)O1";
     schema:inChIKey inchikey:KWILGNNWGSNMPA-UHFFFAOYSA-N;
     rdfs:seeAlso cas:17397-85-2,
-      pubchem_compound:CID28516,
+      pubchem_compound:28516,
       chemspider:26529,
       knapsack:C00000550
   ];
@@ -125,8 +125,8 @@ massbank:MSBNK-AAFC-AC000001 a mbo:MassSpectrum;
     mbo:precursor_mz 179.0697;
     mbo:precursor_type mbo:IT003
   ];
-  mbo:ms_data_processing "DEPROFILE Proteowizard";
+  mbo:ms_data_processing "DEPROFILE Proteowizard"@en;
   mbo:pk_num_peak 5;
   mbo:pk_splash "splash10-03fr-0900000000-035ec76d23650a15673b";
   rdfs:comment "CONFIDENCE isolated standard";
-  skos:definition "Mellein; LC-ESI-ITFT; MS2; CE: 10; R=17500; [M+H]+".
+  skos:definition "Mellein; LC-ESI-ITFT; MS2; CE: 10; R=17500; [M+H]+"@en .
