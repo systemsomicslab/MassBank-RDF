@@ -1,0 +1,18 @@
+PREFIX mbo: <http://www.massbank.jp/ontology/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX schema: <https://schema.org/>
+PREFIX inchikey: <http://identifiers.org/inchikey/>
+SELECT ?spectrumID ?mzValue ?inchiKey ?spectrum
+WHERE {
+  # スペクトルの基本情報を取得
+  ?spectrum dc:identifier ?spectrumID .
+  # 特定のm/z値を持つピークを検索
+  ?spectrum mbo:has_peak ?peak .
+  ?peak mbo:mz ?mzValue .
+  # そのスペクトルに関連する化合物のInChIKeyを取得
+  ?spectrum sio:SIO_000008 ?compound .
+  ?compound schema:inChIKey ?inchiKey .
+  # 特定のm/z値でフィルタリング（例: 161.0591をターゲットとする場合）
+  FILTER(?mzValue >= 1.6105e+02 && ?mzValue <= 1.6106e+02)
+}
