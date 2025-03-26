@@ -232,6 +232,44 @@ def parse_ttl_graph_to_model_yaml(graph, prefixes, output_dir, model_filename="m
     # Convert rdf_data to the required YAML format
     rdf_data = [{f'{subj_names[key]} {key}': value} for key, value in rdf_data.items()]
     
+    def sort_rdf_structure(obj):
+        if isinstance(obj, dict):
+            # Get all keys in the dictionary
+            keys = list(obj.keys())
+
+            # Sort keys: place "rdf:type" first (if exists), then the rest in alphabetical order
+            sorted_keys = (
+                ["rdf:type"] if "rdf:type" in keys else []
+            ) + sorted([k for k in keys if k != "rdf:type"], reverse=False)
+
+            # Recursively apply sorting to values, and rebuild the dictionary in the sorted order
+            return {k: sort_rdf_structure(obj[k]) for k in sorted_keys}
+
+        elif isinstance(obj, list):
+            # Recursively sort each element in the list
+            d = {}
+            other = []
+            mapper = {}
+            for item in obj:
+                if isinstance(item, dict) and len(item) == 1:
+                    key = list(item.keys())[0]
+                    if key in d:
+                        new_name = f"{key}_{len(d)}"
+                        d[new_name] = item[key]
+                        mapper[new_name] = key
+                    else:
+                        d[key] = item[key]
+                        mapper[key] = key
+                else:
+                    other.append(item)
+            d = sort_rdf_structure(d)
+            return [{mapper[k]: d[k]} for k in d] + other
+
+        else:
+            # For non-dict, non-list types (e.g. str, int), return the value as is
+            return obj
+    
+    rdf_data = sort_rdf_structure(rdf_data)
 
 
     CustomDumper.add_representer(str, CustomDumper.represent_str)
@@ -263,7 +301,8 @@ def parse_ttl_file_to_yaml(ttl_file, output_dir):
 
 if __name__ == "__main__":
     # Input Turtle file
-    ttl_file = "MSBNK-AAFC-AC000001.ttl"
+    ttl_file = "MassBank-RDF\draft_ttl\ogawa\MSBNK-AAFC-AC000001.ttl"
+    output_dir = os.path.dirname(ttl_file)
 
-    parse_ttl_file_to_yaml(ttl_file, ".")
+    parse_ttl_file_to_yaml(ttl_file, output_dir)
 
