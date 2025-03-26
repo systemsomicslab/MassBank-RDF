@@ -1,7 +1,7 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix cas: <http://identifiers.org/cas/> .
 @prefix chemspider: <http://identifiers.org/chemspider/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix knapsack: <http://identifiers.org/knapsack/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
@@ -16,14 +16,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-AAFC-AC000001 a mbo:MassSpectrum ;
-    dc:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
-    dc:date "2017-07-07"^^xsd:date ;
-    dc:identifier "MSBNK-AAFC-AC000001" ;
-    dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:references [ a bibo:Article ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000001" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
             rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
-    dc:rights "Copyright (C) 2017 under CC BY-SA" ;
-    sio:SIO_000230 [ a schema:chemicalsubstance ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:compound [ a schema:chemicalsubstance ;
             mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
             mbo:ch_exact_mass 1.78063e+02 ;
             rdfs:seeAlso cas:17397-85-2,
@@ -36,14 +36,16 @@ massbank:MSBNK-AAFC-AC000001 a mbo:MassSpectrum ;
             schema:name "8-hydroxy-3-methyl-3,4-dihydroisochromen-1-one",
                 "Mellein",
                 "Ochracin" ;
+            rdfs:label "8-hydroxy-3-methyl-3,4-dihydroisochromen-1-one",
+                "Mellein",
+                "Ochracin" ;            
             schema:smiles "CC1CC2=C(C(=CC=C2)O)C(=O)O1" ] ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
             mbo:collision_energy "10(NCE)" ;
             mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
             mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
-            mbo:flow_rate [ sio:SIO_000221 obo:UO_0000271 ;
-                    rdf:value "0.3 mL min-1" ] ;
+            mbo:flow_rate "0.3 mL min-1" ;
             mbo:fragmentation_mode "HCD" ;
             mbo:instrument_type "LC-ESI-ITFT" ;
             mbo:ion_mode "POSITIVE" ;
