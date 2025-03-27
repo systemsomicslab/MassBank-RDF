@@ -1,0 +1,332 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000543 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000543" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.63" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cercosporin" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 5.341526e+02 ;
+            rdfs:seeAlso cas:35082-49-6,
+                chemspider:10188562,
+                knapsack:C00002801,
+                pubchem:CID91617 ;
+            schema:inChI "InChI=1S/C29H26O10/c1-10(30)5-12-18-19-13(6-11(2)31)29(37-4)27(35)21-15(33)8-17-23(25(19)21)22-16(38-9-39-17)7-14(32)20(24(18)22)26(34)28(12)36-3/h7-8,10-11,30-31,34-35H,5-6,9H2,1-4H3/t10-,11-/m1/s1" ;
+            schema:inChIKey inchikey:MXLWQNCWIIZUQT-GHMZBOCLSA-N ;
+            schema:molecularFormula "C29H26O10" ;
+            schema:name "Cercosporin" ;
+            schema:smiles "C[C@H](CC1=C(C(=C2C(=O)C=C3C4=C5C(=CC(=O)C6=C(C(=C(C(=C56)C1=C42)C[C@@H](C)O)OC)O)OCO3)O)OC)O" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 1.297574e+06 ;
+            mbo:mz 3.550601e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 2.374824e+06 ;
+            mbo:mz 3.970662e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 1.231318e+06 ;
+            mbo:mz 3.980785e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.375927e+06 ;
+            mbo:mz 3.990499e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 8.980155e+05 ;
+            mbo:mz 3.990863e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 3.107154e+06 ;
+            mbo:mz 4.000577e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 2.55886e+06 ;
+            mbo:mz 4.010656e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 8.836517e+05 ;
+            mbo:mz 4.090707e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 8.999912e+05 ;
+            mbo:mz 4.100785e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 9.56316e+05 ;
+            mbo:mz 4.110499e+02 ;
+            mbo:peak_sequential_number 18 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.166537e+06 ;
+            mbo:mz 4.110863e+02 ;
+            mbo:peak_sequential_number 19 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 9.050284e+05 ;
+            mbo:mz 3.680679e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 2.003783e+06 ;
+            mbo:mz 4.120577e+02 ;
+            mbo:peak_sequential_number 20 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 2.53006e+06 ;
+            mbo:mz 4.130612e+02 ;
+            mbo:peak_sequential_number 21 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 2.544977e+07 ;
+            mbo:mz 4.150812e+02 ;
+            mbo:peak_sequential_number 22 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.667495e+06 ;
+            mbo:mz 4.251093e+02 ;
+            mbo:peak_sequential_number 23 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.383955e+06 ;
+            mbo:mz 4.260734e+02 ;
+            mbo:peak_sequential_number 24 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 2.376221e+06 ;
+            mbo:mz 4.270812e+02 ;
+            mbo:peak_sequential_number 25 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 8.170786e+05 ;
+            mbo:mz 4.280479e+02 ;
+            mbo:peak_sequential_number 26 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.029153e+06 ;
+            mbo:mz 4.28089e+02 ;
+            mbo:peak_sequential_number 27 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 2.54523e+06 ;
+            mbo:mz 4.290969e+02 ;
+            mbo:peak_sequential_number 28 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 1.074239e+06 ;
+            mbo:mz 4.370656e+02 ;
+            mbo:peak_sequential_number 29 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 9.875957e+05 ;
+            mbo:mz 3.690757e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.734209e+06 ;
+            mbo:mz 4.410523e+02 ;
+            mbo:peak_sequential_number 30 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 2.953104e+06 ;
+            mbo:mz 4.430761e+02 ;
+            mbo:peak_sequential_number 31 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 1.044102e+06 ;
+            mbo:mz 4.431192e+02 ;
+            mbo:peak_sequential_number 32 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 8.927939e+05 ;
+            mbo:mz 4.52089e+02 ;
+            mbo:peak_sequential_number 33 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.770049e+06 ;
+            mbo:mz 4.530969e+02 ;
+            mbo:peak_sequential_number 34 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 9.442434e+05 ;
+            mbo:mz 4.55071e+02 ;
+            mbo:peak_sequential_number 35 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.662672e+06 ;
+            mbo:mz 4.591074e+02 ;
+            mbo:peak_sequential_number 36 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.996364e+06 ;
+            mbo:mz 4.851231e+02 ;
+            mbo:peak_sequential_number 37 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.0333e+06 ;
+            mbo:mz 3.730707e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 8.780792e+05 ;
+            mbo:mz 3.810757e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 5.080592e+06 ;
+            mbo:mz 3.83055e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 199 ],
+        [ mbo:intensity 2.136043e+06 ;
+            mbo:mz 3.840628e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 1.324054e+06 ;
+            mbo:mz 3.850707e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1.463319e+06 ;
+            mbo:mz 3.960628e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 57 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.48e+00 ] ;
+            mbo:mz 3.550585e+02 ;
+            mbo:tentative_formula "C22H11O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.06e+00 ] ;
+            mbo:mz 3.980789e+02 ;
+            mbo:tentative_formula "C24H14O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.04e+00 ] ;
+            mbo:mz 3.990475e+02 ;
+            mbo:tentative_formula "C23H11O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.9e-01 ] ;
+            mbo:mz 3.990867e+02 ;
+            mbo:tentative_formula "C24H15O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.59e+00 ] ;
+            mbo:mz 4.000547e+02 ;
+            mbo:tentative_formula "C23H12O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.13e+00 ] ;
+            mbo:mz 4.010623e+02 ;
+            mbo:tentative_formula "C23H13O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.55e+00 ] ;
+            mbo:mz 4.090692e+02 ;
+            mbo:tentative_formula "C25H13O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.66e+00 ] ;
+            mbo:mz 4.100808e+02 ;
+            mbo:tentative_formula "C25H14O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.3e+00 ] ;
+            mbo:mz 4.110465e+02 ;
+            mbo:tentative_formula "C24H11O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5e-01 ] ;
+            mbo:mz 4.110861e+02 ;
+            mbo:tentative_formula "C25H15O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.31e+00 ] ;
+            mbo:mz 4.120539e+02 ;
+            mbo:tentative_formula "C24H12O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.66e+00 ] ;
+            mbo:mz 3.680662e+02 ;
+            mbo:tentative_formula "C23H12O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.89e+00 ] ;
+            mbo:mz 4.150796e+02 ;
+            mbo:tentative_formula "C24H15O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.48e+00 ] ;
+            mbo:mz 4.260702e+02 ;
+            mbo:tentative_formula "C25H14O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.93e+00 ] ;
+            mbo:mz 4.270846e+02 ;
+            mbo:tentative_formula "C25H15O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.3e-01 ] ;
+            mbo:mz 4.280889e+02 ;
+            mbo:tentative_formula "C25H16O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.51e+00 ] ;
+            mbo:mz 4.290945e+02 ;
+            mbo:tentative_formula "C25H17O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.75e+00 ] ;
+            mbo:mz 4.370613e+02 ;
+            mbo:tentative_formula "C26H13O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.12e+00 ] ;
+            mbo:mz 4.430743e+02 ;
+            mbo:tentative_formula "C25H15O8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.63e+00 ] ;
+            mbo:mz 4.520874e+02 ;
+            mbo:tentative_formula "C27H16O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.56e+00 ] ;
+            mbo:mz 4.530948e+02 ;
+            mbo:tentative_formula "C27H17O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.89e+00 ] ;
+            mbo:mz 4.591061e+02 ;
+            mbo:tentative_formula "C26H19O8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.64e+00 ] ;
+            mbo:mz 3.690744e+02 ;
+            mbo:tentative_formula "C23H13O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.08e+00 ] ;
+            mbo:mz 4.851211e+02 ;
+            mbo:tentative_formula "C28H21O8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.77e+00 ] ;
+            mbo:mz 3.730685e+02 ;
+            mbo:tentative_formula "C22H13O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3e+00 ] ;
+            mbo:mz 3.810746e+02 ;
+            mbo:tentative_formula "C24H13O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.09e+00 ] ;
+            mbo:mz 3.830519e+02 ;
+            mbo:tentative_formula "C23H11O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.75e+00 ] ;
+            mbo:mz 3.84061e+02 ;
+            mbo:tentative_formula "C23H12O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.73e+00 ] ;
+            mbo:mz 3.850696e+02 ;
+            mbo:tentative_formula "C23H13O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.63e+00 ] ;
+            mbo:mz 3.960602e+02 ;
+            mbo:tentative_formula "C24H12O6+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.150796e+02 ;
+            mbo:precursor_mz 5.351593e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 37 ;
+    mbo:pk_splash "splash10-014i-0002900000-463251c2a8e26055bcaa" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Cercosporin; LC-ESI-ITFT; MS2; CE: 35; R=17500; [M+H]+" .
+

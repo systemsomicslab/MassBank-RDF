@@ -1,0 +1,127 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000924 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000924" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.37" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4',5-bisdeoxy-dothistromin" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 3.400583e+02 ;
+            rdfs:seeAlso pubchem:CID137628450 ;
+            schema:inChI "InChI=1S/C18H12O7/c19-9-3-1-2-7-11(9)15(21)12-8(14(7)20)6-10-13(16(12)22)18(23)4-5-24-17(18)25-10/h1-3,6,17,19,22-23H,4-5H2/t17-,18-/m1/s1" ;
+            schema:inChIKey inchikey:MFMARNFPIVNIHS-QZTJIDSGSA-N ;
+            schema:molecularFormula "C18H12O7" ;
+            schema:name "4',5-bisdeoxy-dothistromin" ;
+            schema:smiles "OC1=C(C(C2=C(O)C=CC=C2C3=O)=O)C3=CC(O4)=C1[C@@]5(O)[C@@H]4OCC5" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 3.1661e+06 ;
+            mbo:mz 2.510703e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 5.569802e+06 ;
+            mbo:mz 2.670652e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.42602e+07 ;
+            mbo:mz 2.690444e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 9.57362e+06 ;
+            mbo:mz 2.790652e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 8.969293e+06 ;
+            mbo:mz 2.830601e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 2.839609e+06 ;
+            mbo:mz 2.850393e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 3.03814e+07 ;
+            mbo:mz 2.950237e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 356 ],
+        [ mbo:intensity 8.51723e+07 ;
+            mbo:mz 2.950601e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.245043e+07 ;
+            mbo:mz 3.23055e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 263 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.66e+00 ] ;
+            mbo:mz 2.510691e+02 ;
+            mbo:tentative_formula "C16H11O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.79e+00 ] ;
+            mbo:mz 2.670639e+02 ;
+            mbo:tentative_formula "C16H11O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.97e+00 ] ;
+            mbo:mz 2.690431e+02 ;
+            mbo:tentative_formula "C15H9O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.59e+00 ] ;
+            mbo:mz 2.790639e+02 ;
+            mbo:tentative_formula "C17H11O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.91e+00 ] ;
+            mbo:mz 2.830587e+02 ;
+            mbo:tentative_formula "C16H11O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.73e+00 ] ;
+            mbo:mz 2.85038e+02 ;
+            mbo:tentative_formula "C15H9O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.36e+00 ] ;
+            mbo:mz 2.95023e+02 ;
+            mbo:tentative_formula "C16H7O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.73e+00 ] ;
+            mbo:mz 2.950584e+02 ;
+            mbo:tentative_formula "C17H11O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.95e+00 ] ;
+            mbo:mz 3.230534e+02 ;
+            mbo:tentative_formula "C18H11O6+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.950584e+02 ;
+            mbo:precursor_mz 3.41065e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0091000000-3e6dbe80d837bc53062a" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "4',5-bisdeoxy-dothistromin; LC-ESI-ITFT; MS2; CE: 35; R=17500; [M+H]+" .
+

@@ -1,0 +1,180 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000095 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, J. David Miller, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000095" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "10(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.53" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Culmorin" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 2.381933e+02 ;
+            rdfs:seeAlso cas:18374-83-9,
+                chemspider:327532,
+                knapsack:C00021971,
+                pubchem:CID115285 ;
+            schema:inChI "InChI=1S/C15H26O2/c1-13(2)6-5-7-14(3)10-9(16)8-15(14,4)12(17)11(10)13/h9-12,16-17H,5-8H2,1-4H3/t9-,10+,11+,12?,14-,15-/m1/s1" ;
+            schema:inChIKey inchikey:VWMGBHVRRNKOAE-PDMNRUCYSA-N ;
+            schema:molecularFormula "C15H26O2" ;
+            schema:name "Culmorin" ;
+            schema:smiles "C[C@@]12CCCC([C@H]3[C@@H]1[C@@H](C[C@@]2(C3O)C)O)(C)C" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 3.353639e+03 ;
+            mbo:mz 8.10699e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.238967e+04 ;
+            mbo:mz 1.631481e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 372 ],
+        [ mbo:intensity 3.197631e+04 ;
+            mbo:mz 1.771638e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 367 ],
+        [ mbo:intensity 2.077254e+04 ;
+            mbo:mz 1.981839e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 239 ],
+        [ mbo:intensity 2.468793e+04 ;
+            mbo:mz 2.031795e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 284 ],
+        [ mbo:intensity 8.698805e+04 ;
+            mbo:mz 2.2119e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.833641e+04 ;
+            mbo:mz 2.392006e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 211 ],
+        [ mbo:intensity 9.114361e+03 ;
+            mbo:mz 9.50855e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 8.753036e+03 ;
+            mbo:mz 1.070855e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 8.031647e+03 ;
+            mbo:mz 1.211012e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 3.75065e+03 ;
+            mbo:mz 1.331012e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 3.399563e+03 ;
+            mbo:mz 1.371325e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 4.505314e+03 ;
+            mbo:mz 1.471168e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1.205343e+04 ;
+            mbo:mz 1.491325e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 138 ],
+        [ mbo:intensity 7.849008e+03 ;
+            mbo:mz 1.611325e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 90 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.62e+00 ] ;
+            mbo:mz 8.10701e+01 ;
+            mbo:tentative_formula "C6H9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.2e+00 ] ;
+            mbo:mz 1.631473e+02 ;
+            mbo:tentative_formula "C12H19+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.95e+00 ] ;
+            mbo:mz 1.771631e+02 ;
+            mbo:tentative_formula "C13H21+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.7e+00 ] ;
+            mbo:mz 2.031787e+02 ;
+            mbo:tentative_formula "C15H23+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.58e+00 ] ;
+            mbo:mz 2.21189e+02 ;
+            mbo:tentative_formula "C15H25O1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.08e+00 ] ;
+            mbo:mz 2.391996e+02 ;
+            mbo:tentative_formula "C15H27O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.68e+00 ] ;
+            mbo:mz 9.50857e+01 ;
+            mbo:tentative_formula "C7H11+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.31e+00 ] ;
+            mbo:mz 1.070854e+02 ;
+            mbo:tentative_formula "C8H11+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.6e-01 ] ;
+            mbo:mz 1.211011e+02 ;
+            mbo:tentative_formula "C9H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.44e+00 ] ;
+            mbo:mz 1.33101e+02 ;
+            mbo:tentative_formula "C10H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.62e+00 ] ;
+            mbo:mz 1.37132e+02 ;
+            mbo:tentative_formula "C10H17+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.34e+00 ] ;
+            mbo:mz 1.471165e+02 ;
+            mbo:tentative_formula "C11H15+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.33e+00 ] ;
+            mbo:mz 1.49132e+02 ;
+            mbo:tentative_formula "C11H17+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.66e+00 ] ;
+            mbo:mz 1.611311e+02 ;
+            mbo:tentative_formula "C12H17+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.21189e+02 ;
+            mbo:precursor_mz 2.392e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-00di-0980000000-5c50ced6acc78b4abf72" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Culmorin; LC-ESI-ITFT; MS2; CE: 10; R=17500; [M+H]+" .
+

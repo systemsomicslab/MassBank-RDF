@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000643 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000643" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "20(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.25" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(7R,11S)-7,15,17-trihydroxy-11-methyl-12-oxabicyclo[12.4.0]octadeca-1(14),15,17-trien-13-one",
+                "Zeranol",
+                "zearanol" ;
+            mbo:ch_compound_class "Synthetic nonsteroidal estrogen; Fungal metabolite related" ;
+            mbo:ch_exact_mass 3.22178e+02 ;
+            rdfs:seeAlso cas:26538-44-3,
+                chemspider:2271133,
+                pubchem:CID2999413 ;
+            schema:inChI "InChI=1S/C18H26O5/c1-12-6-5-9-14(19)8-4-2-3-7-13-10-15(20)11-16(21)17(13)18(22)23-12/h10-12,14,19-21H,2-9H2,1H3/t12-,14+/m0/s1" ;
+            schema:inChIKey inchikey:DWTTZBARDOXEAM-GXTWGEPZSA-N ;
+            schema:molecularFormula "C18H26O5" ;
+            schema:name "(7R,11S)-7,15,17-trihydroxy-11-methyl-12-oxabicyclo[12.4.0]octadeca-1(14),15,17-trien-13-one",
+                "Zeranol",
+                "zearanol" ;
+            schema:smiles "C[C@H]1CCC[C@@H](CCCCCC2=CC(=CC(=C2C(=O)O1)O)O)O" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 3.13197e+05 ;
+            mbo:mz 1.230441e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 5.141568e+05 ;
+            mbo:mz 1.670339e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 3.049086e+05 ;
+            mbo:mz 2.771798e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.231785e+06 ;
+            mbo:mz 2.871642e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 8.051996e+06 ;
+            mbo:mz 3.051747e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.42e+00 ] ;
+            mbo:mz 1.230446e+02 ;
+            mbo:tentative_formula "C7H7O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.4e-01 ] ;
+            mbo:mz 1.67034e+02 ;
+            mbo:tentative_formula "C8H7O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.8e-01 ] ;
+            mbo:mz 2.771797e+02 ;
+            mbo:tentative_formula "C17H25O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.55e+00 ] ;
+            mbo:mz 2.871652e+02 ;
+            mbo:tentative_formula "C18H23O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.12e+00 ] ;
+            mbo:mz 3.05176e+02 ;
+            mbo:tentative_formula "C18H25O4+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.05176e+02 ;
+            mbo:precursor_mz 3.051742e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4i-0019000000-b8a86e1405c06f883496" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Zeranol; LC-ESI-ITFT; MS2; CE: 20; R=17500; [M-H2O+H]+" .
+

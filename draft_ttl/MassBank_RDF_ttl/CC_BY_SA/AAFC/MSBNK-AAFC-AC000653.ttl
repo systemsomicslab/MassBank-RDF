@@ -1,0 +1,114 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000653 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000653" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "40(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.24" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Clavacin",
+                "Expansin",
+                "Patulin" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 1.540266e+02 ;
+            rdfs:seeAlso cas:149-29-1,
+                chemspider:4534,
+                knapsack:C00024000,
+                pubchem:CID4696 ;
+            schema:inChI "InChI=1S/C7H6O4/c8-6-3-4-5(11-6)1-2-10-7(4)9/h1,3,7,9H,2H2" ;
+            schema:inChIKey inchikey:ZRWPUFFVAOMMNM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H6O4" ;
+            schema:name "Clavacin",
+                "Expansin",
+                "Patulin" ;
+            schema:smiles "C1C=C2C(=CC(=O)O2)C(O1)O" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 6.8364e+03 ;
+            mbo:mz 6.90326e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 338 ],
+        [ mbo:intensity 1.775937e+04 ;
+            mbo:mz 1.250222e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 879 ],
+        [ mbo:intensity 2.806358e+03 ;
+            mbo:mz 1.250585e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 2.239579e+03 ;
+            mbo:mz 1.333168e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 2.384931e+03 ;
+            mbo:mz 1.350434e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 118 ],
+        [ mbo:intensity 2.018983e+04 ;
+            mbo:mz 8.10327e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.087403e+03 ;
+            mbo:mz 8.30119e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 7.868402e+03 ;
+            mbo:mz 8.30482e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 389 ],
+        [ mbo:intensity 8.041819e+03 ;
+            mbo:mz 9.70275e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 398 ],
+        [ mbo:intensity 1.879546e+03 ;
+            mbo:mz 1.07048e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 1.912646e+04 ;
+            mbo:mz 1.090275e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 946 ],
+        [ mbo:intensity 2.563263e+03 ;
+            mbo:mz 1.110431e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 127 ],
+        [ mbo:intensity 2.043016e+03 ;
+            mbo:mz 1.16616e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 101 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.10327e+01 ;
+            mbo:precursor_mz 1.530199e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0560-8900000000-6c6c4453970c66d221e5" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Patulin; LC-ESI-ITFT; MS2; CE: 40; R=17500; [M-H]-" .
+
