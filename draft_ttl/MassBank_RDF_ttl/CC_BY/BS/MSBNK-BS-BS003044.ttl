@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS003044 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2013-07-27)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS003044" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "269.126 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Taxifolin  (3,3',4',5,7-pentahydroxylflavanone)" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 3.040583e+02 ;
+            rdfs:seeAlso cas:17654-26-1,
+                pubchem:CID439533 ;
+            schema:inChI "InChI=1S/C15H12O7/c16-7-4-10(19)12-11(5-7)22-15(14(21)13(12)20)6-1-2-8(17)9(18)3-6/h1-5,14-19,21H/t14-,15+/m0/s1" ;
+            schema:inChIKey inchikey:CXQWRCVTCMQVQX-LSDHHAIUSA-N ;
+            schema:molecularFormula "C15H12O7" ;
+            schema:name "Taxifolin  (3,3',4',5,7-pentahydroxylflavanone)" ;
+            schema:smiles "C1(=C(C(=C(C(=C1[C@]2([H])[C@]([H])(C(=O)C3=C(C(=C(C(=C3O2)[H])O[H])[H])O[H])O[H])[H])O[H])O[H])[H])[H]" ] ;
+    mbo:has_peak [ mbo:intensity 1.28e+02 ;
+            mbo:mz 1.21029e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 2.84e+02 ;
+            mbo:mz 2.5503e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 284 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.73041e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.4e+02 ;
+            mbo:mz 2.74046e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 2.38e+02 ;
+            mbo:mz 3.01036e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 238 ],
+        [ mbo:intensity 5.83e+02 ;
+            mbo:mz 1.25024e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 583 ],
+        [ mbo:intensity 1.14e+02 ;
+            mbo:mz 1.49024e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 114 ],
+        [ mbo:intensity 1.95e+02 ;
+            mbo:mz 1.51003e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 195 ],
+        [ mbo:intensity 8.7e+01 ;
+            mbo:mz 1.78999e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 8.4e+01 ;
+            mbo:mz 2.15035e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 2.12e+02 ;
+            mbo:mz 2.27036e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 212 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.29051e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 8.9e+01 ;
+            mbo:mz 2.45044e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 89 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.01036e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-00fr-0591000000-8c2bb267dbaff0ec8425" ;
+    skos:definition "Taxifolin  (3,3',4',5,7-pentahydroxylflavanone); LC-ESI-QTOF; MS2; CE:25 eV; [M-H]-" .
+

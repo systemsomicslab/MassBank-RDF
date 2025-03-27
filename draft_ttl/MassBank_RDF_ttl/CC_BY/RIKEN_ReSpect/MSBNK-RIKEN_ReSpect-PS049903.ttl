@@ -1,0 +1,81 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS049903 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS049903" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "30" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acetylputrescine",
+                "N-(4-aminobutyl)acetamide",
+                "N-acetyl putrescine hydrochloride" ;
+            mbo:ch_compound_class "CLASS1 Alkaloid CLASS2 Polyamine CLASS3 Putrescine" ;
+            mbo:ch_exact_mass 1.30191e+02 ;
+            rdfs:seeAlso cas:18233-70-0,
+                pubchem:CID122356 ;
+            schema:inChI "InChI=1S/C6H14N2O/c1-6(9)8-5-3-2-4-7/h2-5,7H2,1H3,(H,8,9)" ;
+            schema:inChIKey inchikey:KLZGKIDSEJWEDW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H14N2O" ;
+            schema:name "Acetylputrescine",
+                "N-(4-aminobutyl)acetamide",
+                "N-acetyl putrescine hydrochloride" ;
+            schema:smiles "CC(=O)NCCCCN" ] ;
+    mbo:has_peak [ mbo:intensity 1.5594e+04 ;
+            mbo:mz 2.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 4.9058e+04 ;
+            mbo:mz 3e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 503 ],
+        [ mbo:intensity 5.585e+03 ;
+            mbo:mz 4.2e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 9.51e+03 ;
+            mbo:mz 4.3e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 98 ],
+        [ mbo:intensity 6.716e+03 ;
+            mbo:mz 5.5e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 2.0262e+04 ;
+            mbo:mz 7.1e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 208 ],
+        [ mbo:intensity 9.7379e+04 ;
+            mbo:mz 7.2e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.0855e+04 ;
+            mbo:mz 1.14e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 111 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.3116e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-9000000000-2e2ac369e8f17538b39d" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Acetylputrescine, N-(4-aminobutyl)acetamide, N-acetyl putrescine hydrochloride; LC-ESI-QQ; MS2" .
+

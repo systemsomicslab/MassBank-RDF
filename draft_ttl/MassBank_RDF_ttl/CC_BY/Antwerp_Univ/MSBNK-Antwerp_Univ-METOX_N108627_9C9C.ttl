@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N108627_9C9C a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N108627_9C9C" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.190 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3R,5R,8R,9S,10S,13S,14S,17R)-17-[(1S)-1-hydroxyethyl]-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,14,15,16-tetradecahydrocyclopenta[a]phenanthrene-3,17-diol",
+                "Pregnanetriol" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.362664e+02 ;
+            rdfs:seeAlso cas:1098-45-9,
+                chemspider:92121,
+                pubchem:CID101967 ;
+            schema:inChI "InChI=1S/C21H36O3/c1-13(22)21(24)11-8-18-16-5-4-14-12-15(23)6-9-19(14,2)17(16)7-10-20(18,21)3/h13-18,22-24H,4-12H2,1-3H3/t13-,14+,15+,16+,17-,18-,19-,20-,21-/m0/s1" ;
+            schema:inChIKey inchikey:SCPADBBISMMJAW-UHHUKTEYSA-N ;
+            schema:molecularFormula "C21H36O3" ;
+            schema:name "(3R,5R,8R,9S,10S,13S,14S,17R)-17-[(1S)-1-hydroxyethyl]-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,14,15,16-tetradecahydrocyclopenta[a]phenanthrene-3,17-diol",
+                "Pregnanetriol" ;
+            schema:smiles "C[C@@H]([C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)O)C)C)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 8e+01 ;
+            mbo:mz 7.30293e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 390 ],
+        [ mbo:intensity 2.05e+02 ;
+            mbo:mz 8.40205e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.75e+01 ;
+            mbo:mz 1.830051e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 329 ],
+        [ mbo:intensity 7e+01 ;
+            mbo:mz 1.830436e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 341 ],
+        [ mbo:intensity 1.931e+02 ;
+            mbo:mz 2.872007e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 941 ],
+        [ mbo:intensity 7.66e+01 ;
+            mbo:mz 2.892164e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 373 ],
+        [ mbo:intensity 2.7e+01 ;
+            mbo:mz 3.042348e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 4.24e+01 ;
+            mbo:mz 3.070477e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 207 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 3.352592e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-001r-9482000000-5a3e060043c1bc9b5cf1" ;
+    rdfs:comment "INTERNAL_ID 1086" ;
+    skos:definition "Pregnanetriol; LC-ESI-QTOF; MS2; CE: 40eV; R=7000; [M-H]-" .
+

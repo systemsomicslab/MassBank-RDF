@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ361559 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ361559" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "180 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "11.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-butyl-1,2-diphenylpyrazolidine-3,5-dione",
+                "Phenylbutazone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.081525e+02 ;
+            rdfs:seeAlso cas:50-33-9,
+                chemspider:4617,
+                pubchem:CID4781 ;
+            schema:inChI "InChI=1S/C19H20N2O2/c1-2-3-14-17-18(22)20(15-10-6-4-7-11-15)21(19(17)23)16-12-8-5-9-13-16/h4-13,17H,2-3,14H2,1H3" ;
+            schema:inChIKey inchikey:VYMDGNCVAMGZFE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H20N2O2" ;
+            schema:name "4-butyl-1,2-diphenylpyrazolidine-3,5-dione",
+                "Phenylbutazone" ;
+            schema:smiles "CCCCC1C(=O)N(N(C1=O)C2=CC=CC=C2)C3=CC=CC=C3" ] ;
+    mbo:has_peak [ mbo:intensity 1.428461e+05 ;
+            mbo:mz 5.00035e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 6.968939e+05 ;
+            mbo:mz 6.50397e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 606 ],
+        [ mbo:intensity 2.41299e+04 ;
+            mbo:mz 6.6035e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.42157e+04 ;
+            mbo:mz 7.5024e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.71858e+04 ;
+            mbo:mz 9.00349e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1.149646e+06 ;
+            mbo:mz 9.20506e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.69723e+04 ;
+            mbo:mz 1.160507e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.071448e+02 ;
+            mbo:precursor_mz 3.071452e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00kf-9000000000-b6387c41c12a5abb6d4b" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3615" ;
+    skos:definition "Phenylbutazone; LC-ESI-QFT; MS2; CE: 180; R=35000; [M-H]-" .
+

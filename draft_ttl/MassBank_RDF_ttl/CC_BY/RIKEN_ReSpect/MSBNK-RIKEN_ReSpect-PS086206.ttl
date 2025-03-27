@@ -1,0 +1,97 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS086206 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS086206" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "60" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4'-Methoxyisoflavone-7-O-beta-D-glucopyranoside",
+                "Fmnn-7-Glc",
+                "Formononetin-7-O-beta-D-glucopyranoside",
+                "Glucosyl-7-O-formononetin",
+                "Ononin",
+                "calycosin-7-O-beta-D-glucoside",
+                "formononetin-7-O-glucoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Isoflavone CLASS3 Formononetin glycoside" ;
+            mbo:ch_exact_mass 4.30409e+02 ;
+            rdfs:seeAlso cas:486-62-4,
+                pubchem:CID442813 ;
+            schema:inChI "InChI=1S/C22H22O9/c1-28-12-4-2-11(3-5-12)15-10-29-16-8-13(6-7-14(16)18(15)24)30-22-21(27)20(26)19(25)17(9-23)31-22/h2-8,10,17,19-23,25-27H,9H2,1H3/t17-,19-,20+,21-,22-/m1/s1" ;
+            schema:inChIKey inchikey:MGJLSBDCWOSMHL-MIUGBVLSSA-N ;
+            schema:molecularFormula "C22H22O9" ;
+            schema:name "4'-Methoxyisoflavone-7-O-beta-D-glucopyranoside",
+                "Fmnn-7-Glc",
+                "Formononetin-7-O-beta-D-glucopyranoside",
+                "Glucosyl-7-O-formononetin",
+                "Ononin",
+                "calycosin-7-O-beta-D-glucoside",
+                "formononetin-7-O-glucoside" ;
+            schema:smiles "COC1=CC=C(C=C1)C2=COC3=C(C2=O)C=CC(=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.949e+03 ;
+            mbo:mz 2.12e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 9.078e+03 ;
+            mbo:mz 2.7e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 6.446e+03 ;
+            mbo:mz 2.13e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 8.587e+03 ;
+            mbo:mz 2.37e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 1.0977e+04 ;
+            mbo:mz 2.53e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 7.977e+03 ;
+            mbo:mz 2.54e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 3.161e+03 ;
+            mbo:mz 2.66e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.4079e+04 ;
+            mbo:mz 2.67e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 156 ],
+        [ mbo:intensity 4.8875e+04 ;
+            mbo:mz 2.68e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 542 ],
+        [ mbo:intensity 9.0092e+04 ;
+            mbo:mz 2.69e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.314e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-014i-0090000000-e46dec2f65176dcbe76d" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Ononin; LC-ESI-QQ; MS2" .
+

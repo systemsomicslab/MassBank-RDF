@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000782 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000782" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "11.100 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Lidocaine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.341732e+02 ;
+            rdfs:seeAlso cas:137-58-6 ;
+            schema:inChI "InChI=1S/C14H22N2O/c1-5-16(6-2)10-13(17)15-14-11(3)8-7-9-12(14)4/h7-9H,5-6,10H2,1-4H3,(H,15,17)" ;
+            schema:inChIKey inchikey:NNJVILVZKWQKPM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H22N2O" ;
+            schema:name "Lidocaine" ;
+            schema:smiles "CCN(CC)CC(=O)Nc(c(C)1)c(C)ccc1" ] ;
+    mbo:has_peak [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.08e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 4.7e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.13e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.26e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.44e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.62e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.16e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.35e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.45e+02 ;
+            mbo:mz 2.36e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 4.69e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 35 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-000i-0090000000-0a35e93456edc9da2d71" ;
+    skos:definition "Lidocaine; LC-ESI-Q; MS; POS; 15 V, 90 V" .
+

@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO008976 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO008976" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "0.80/0.45" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS3" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3alpha,7alpha,12alpha-Trihydroxy-5beta-cholan-24-oylglycine",
+                "Glycocholate",
+                "Glycocholic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.65309e+02 ;
+            rdfs:seeAlso cas:475-31-0,
+                pubchem:CID5027 ;
+            schema:inChI "InChI=1S/C26H43NO6/c1-14(4-7-22(31)27-13-23(32)33)17-5-6-18-24-19(12-21(30)26(17,18)3)25(2)9-8-16(28)10-15(25)11-20(24)29/h14-21,24,28-30H,4-13H2,1-3H3,(H,27,31)(H,32,33)/t14-,15+,16-,17-,18+,19+,20-,21+,24+,25+,26-/m1/s1" ;
+            schema:inChIKey inchikey:RFDAIACWWDREDC-FRVQLJSFSA-N ;
+            schema:molecularFormula "C26H43NO6" ;
+            schema:name "3alpha,7alpha,12alpha-Trihydroxy-5beta-cholan-24-oylglycine",
+                "Glycocholate",
+                "Glycocholic acid" ;
+            schema:smiles "C(C(C([H])(C4(C)1)CCC1([H])C(C(O)3)(C(CC(O)4)([H])C(C)(C([H])2C3)CCC(C2)O)[H])C)CC(=O)NCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.58e+00 ;
+            mbo:mz 1.291e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.5e+00 ;
+            mbo:mz 2.27e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 5.5e+00 ;
+            mbo:mz 3.011e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 4.67e+00 ;
+            mbo:mz 3.133e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 3.271e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.654e+01 ;
+            mbo:mz 3.372e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 238 ],
+        [ mbo:intensity 1.1123e+02 ;
+            mbo:mz 3.553e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.881e+01 ;
+            mbo:mz 3.731e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 349 ],
+        [ mbo:intensity 5.08e+00 ;
+            mbo:mz 4.595e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 46 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-40c238fd440affc20ee7" ;
+    rdfs:comment "[MS2] KO008975" ;
+    skos:definition "Glycocholic acid; LC-ESI-IT; MS3; m/z: 466/373; [M+H]+" .
+

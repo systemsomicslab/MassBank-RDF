@@ -1,0 +1,80 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00842 a mbo:MassSpectrum ;
+    dcterms:creator "Lege S, Zwiener C, Environmental Analytical Chemistry (EAC), University of Tuebingen" ;
+    dcterms:date "2019-01-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00842" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Environmental Analytical Chemistry (EAC), University of Tuebingen, Germany under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "6550 QTOF (Agilent Technologies)" ;
+            mbo:collision_energy "20.0V" ;
+            mbo:column_name "Flow injection" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "13000 (m/z 118) - 26000 (m/z 922)" ;
+            mbo:solvent " ",
+                "%",
+                "(",
+                ")",
+                "+",
+                ".",
+                "0",
+                "1",
+                "2",
+                "5",
+                ":",
+                "A",
+                "H",
+                "M",
+                "N",
+                "O",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "m",
+                "n",
+                "o",
+                "t",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Monoethylglycinexylidide",
+                "Norlidocaine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.061419e+02 ;
+            rdfs:seeAlso chemspider:22824,
+                pubchem:CID24415 ;
+            schema:inChI "InChI=1S/C12H18N2O/c1-4-13-8-11(15)14-12-9(2)6-5-7-10(12)3/h5-7,13H,4,8H2,1-3H3,(H,14,15)" ;
+            schema:inChIKey inchikey:WRMRXPASUROZGT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H18N2O" ;
+            schema:name "Monoethylglycinexylidide",
+                "Norlidocaine" ;
+            schema:smiles "CCNCC(=O)Nc1c(cccc1C)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.15165e+05 ;
+            mbo:mz 5.80648e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.731e+03 ;
+            mbo:mz 1.220956e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 17 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.071492e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-218972f5c57a26404e71" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Norlidocaine; LC-ESI-QTOF; MS2; CE: 20.0V; [M+H]+" .
+

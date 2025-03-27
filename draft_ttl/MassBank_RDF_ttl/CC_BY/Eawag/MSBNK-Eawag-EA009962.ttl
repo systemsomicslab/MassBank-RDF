@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA009962 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA009962" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "7.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[(2,6-diethylphenyl)-(methoxymethyl)amino]-2-oxidanylidene-ethanesulfonic acid",
+                "Alachlor ESA" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.15114e+02 ;
+            rdfs:seeAlso cas:142363-53-9,
+                chemspider:103108,
+                pubchem:CID115236 ;
+            schema:inChI "InChI=1S/C14H21NO5S/c1-4-11-7-6-8-12(5-2)14(11)15(10-20-3)13(16)9-21(17,18)19/h6-8H,4-5,9-10H2,1-3H3,(H,17,18,19)" ;
+            schema:inChIKey inchikey:UTCJUUGCHWHUNI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H21NO5S" ;
+            schema:name "2-[(2,6-diethylphenyl)-(methoxymethyl)amino]-2-oxidanylidene-ethanesulfonic acid",
+                "Alachlor ESA" ;
+            schema:smiles "CCC1=CC=CC(CC)=C1N(COC)C(=O)CS(O)(=O)=O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 4.23374e+04 ;
+            mbo:mz 7.69701e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 4.982849e+05 ;
+            mbo:mz 7.99573e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.12379e+04 ;
+            mbo:mz 1.209598e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 5.0022e+03 ;
+            mbo:mz 1.490965e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.69379e+04 ;
+            mbo:mz 1.580974e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 5.5697e+03 ;
+            mbo:mz 1.601134e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.141062e+02 ;
+            mbo:precursor_mz 3.141068e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-004i-9000000000-1f3c6269bfd1584e8c8a" ;
+    rdfs:comment "EAWAG_UCHEM_ID 99" ;
+    skos:definition "Alachlor ESA; LC-ESI-ITFT; MS2; CE: 75%; R=15000; [M-H]-" .
+

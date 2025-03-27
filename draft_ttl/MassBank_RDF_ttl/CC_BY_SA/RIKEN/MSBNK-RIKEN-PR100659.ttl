@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100659 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100659" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isor-3-Glc-6pp-Rha",
+                "Isorhamnetin-3-O-rutinoside",
+                "Isorhamnetin-3-rhamnoglucoside",
+                "Narcissin",
+                "Narcissoside" ;
+            mbo:ch_compound_class "Flavonoid" ;
+            mbo:ch_exact_mass 6.24169e+02 ;
+            rdfs:seeAlso cas:604-80-8,
+                chemspider:4587469,
+                knapsack:C00005548,
+                pubchem:CID5481663 ;
+            schema:inChI "InChI=1S/C28H32O16/c1-9-18(32)21(35)23(37)27(41-9)40-8-16-19(33)22(36)24(38)28(43-16)44-26-20(34)17-13(31)6-11(29)7-15(17)42-25(26)10-3-4-12(30)14(5-10)39-2/h3-7,9,16,18-19,21-24,27-33,35-38H,8H2,1-2H3/t9-,16+,18-,19+,21+,22-,23+,24+,27+,28-/m0/s1" ;
+            schema:inChIKey inchikey:UIDGLYUNOUKLBM-GEBJFKNCSA-N ;
+            schema:molecularFormula "C28H32O16" ;
+            schema:name "Isor-3-Glc-6pp-Rha",
+                "Isorhamnetin-3-O-rutinoside",
+                "Isorhamnetin-3-rhamnoglucoside",
+                "Narcissin",
+                "Narcissoside" ;
+            schema:smiles "O(CC(O2)C(O)C(O)C(C(OC(C5=O)=C(Oc(c45)cc(O)cc4O)c(c3)cc(c(O)c3)OC)2)O)C(O1)C(O)C(C(C1C)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.275e+03 ;
+            mbo:mz 2.990211e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 1.582e+03 ;
+            mbo:mz 3.000289e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 5.706e+03 ;
+            mbo:mz 3.140442e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 553 ],
+        [ mbo:intensity 1.03e+04 ;
+            mbo:mz 3.15052e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.994e+02 ;
+            mbo:mz 6.231613e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 97 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.231612e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-02t9-0009000000-bf026e576028dd19e8af" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Isorhamnetin-3-O-rutinoside; LC-ESI-QTOF; MS2; CE:30 V; [M-H]-" .
+

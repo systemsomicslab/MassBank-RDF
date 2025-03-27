@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000212 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000212" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(4-Hydroxyphenyl)butan-2-one",
+                "DTXSID5044495" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.640837e+02 ;
+            rdfs:seeAlso cas:5471-51-2,
+                pubchem:CID21648 ;
+            schema:inChI "InChI=1S/C10H12O2/c1-8(11)2-3-9-4-6-10(12)7-5-9/h4-7,12H,2-3H2,1H3" ;
+            schema:inChIKey inchikey:NJGBTKGETPDVIK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H12O2" ;
+            schema:name "4-(4-Hydroxyphenyl)butan-2-one",
+                "DTXSID5044495" ;
+            schema:smiles "CC(=O)CCC1C=CC(O)=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 6.32565e+01 ;
+            mbo:mz 4.100329e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 632 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 5.703459e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.14275e+00 ;
+            mbo:mz 9.101894e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.630765e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0a4l-9000000000-234ac71484db89f13460" ;
+    skos:definition "4-(4-Hydroxyphenyl)butan-2-one; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

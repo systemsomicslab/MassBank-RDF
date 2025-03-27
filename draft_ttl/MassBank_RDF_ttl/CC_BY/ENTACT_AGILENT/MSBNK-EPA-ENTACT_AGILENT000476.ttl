@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000476 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000476" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Butenedioic acid (2Z)-, dioctyl ester",
+                "DTXSID1027508" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.402614e+02 ;
+            rdfs:seeAlso cas:2915-53-9,
+                pubchem:CID6433353 ;
+            schema:inChI "InChI=1S/C20H36O4/c1-3-5-7-9-11-13-17-23-19(21)15-16-20(22)24-18-14-12-10-8-6-4-2/h15-16H,3-14,17-18H2,1-2H3/b16-15+" ;
+            schema:inChIKey inchikey:TVWTZAGVNBPXHU-FOCLMDBBSA-N ;
+            schema:molecularFormula "C20H36O4" ;
+            schema:name "2-Butenedioic acid (2Z)-, dioctyl ester",
+                "DTXSID1027508" ;
+            schema:smiles "CCCCCCCCOC(=O)/C=C/C(=O)OCCCCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 3.248576e+00 ;
+            mbo:mz 4.103858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.535741e+01 ;
+            mbo:mz 4.305423e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 1.917956e+01 ;
+            mbo:mz 5.706988e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 7.182657e+00 ;
+            mbo:mz 7.101276e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 7.791767e+00 ;
+            mbo:mz 7.108553e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 9.900767e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.271223e+00 ;
+            mbo:mz 9.904406e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.26524e+00 ;
+            mbo:mz 9.906518e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.412686e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0002-9000000000-7209d0718b297b613def" ;
+    skos:definition "2-Butenedioic acid (2Z)-, dioctyl ester; ESI-QTOF; MS2; CE: 40; [M+H]+" .
+

@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000086 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2012-05-21)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000086" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "808.700 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9(10H)-Anthracenone, 10-beta-D-glucopyranosyl-1,8-dihydroxy-3-(hydroxymethyl)-, (10S)-",
+                "9(10H)-Anthracenone, 10-beta-D-glucopyranosyl-1,8-dihydroxy-3-(hydroxymethyl)-, (S)-",
+                "Aloin",
+                "Aloin A",
+                "Anthrone, 10-glucopyranosyl-1,8-dihydroxy-3-(hydroxymethyl)-",
+                "Barbaloin",
+                "Barbaloin A",
+                "NSC 407305" ;
+            mbo:ch_compound_class "Natural Product; Anthraquinone" ;
+            mbo:ch_exact_mass 4.181264e+02 ;
+            rdfs:seeAlso cas:1415-73-2,
+                pubchem:CID12305761 ;
+            schema:inChI "InChI=1S/C21H22O9/c22-6-8-4-10-14(21-20(29)19(28)17(26)13(7-23)30-21)9-2-1-3-11(24)15(9)18(27)16(10)12(25)5-8/h1-5,13-14,17,19-26,28-29H,6-7H2/t13-,14+,17-,19+,20-,21+/m1/s1" ;
+            schema:inChIKey inchikey:AFHJQYHRLPMKHU-OSYMLPPYSA-N ;
+            schema:molecularFormula "C21H22O9" ;
+            schema:name "9(10H)-Anthracenone, 10-beta-D-glucopyranosyl-1,8-dihydroxy-3-(hydroxymethyl)-, (10S)-",
+                "9(10H)-Anthracenone, 10-beta-D-glucopyranosyl-1,8-dihydroxy-3-(hydroxymethyl)-, (S)-",
+                "Aloin",
+                "Aloin A",
+                "Anthrone, 10-glucopyranosyl-1,8-dihydroxy-3-(hydroxymethyl)-",
+                "Barbaloin",
+                "Barbaloin A",
+                "NSC 407305" ;
+            schema:smiles "OCc(c4)cc(c(c(O)4)2)C([H])(c(c3)c(c(O)cc3)C(=O)2)C([H])(O1)C(O)C(O)C(O)C(CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 6.194632e+06 ;
+            mbo:mz 4.011176e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 1.167008e+08 ;
+            mbo:mz 4.191317e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.856084e+07 ;
+            mbo:mz 4.201342e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 244 ],
+        [ mbo:intensity 7.201988e+06 ;
+            mbo:mz 8.542835e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 62 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0000900000-84d481d052aa3b62e6f2" ;
+    skos:definition "Barbaloin; LC-ESI-ITTOF; MS; [M+H]+" .
+

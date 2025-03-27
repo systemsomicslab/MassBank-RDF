@@ -1,0 +1,64 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA292153 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA292153" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "16.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[ethyl(1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluorooctylsulfonyl)amino]acetic acid",
+                "N-Ethylperfluorooctane sulfonamidoacetic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.849903e+02 ;
+            rdfs:seeAlso cas:1336-61-4,
+                chemspider:17128,
+                pubchem:CID18134 ;
+            schema:inChI "InChI=1S/C12H8F17NO4S/c1-2-30(3-4(31)32)35(33,34)12(28,29)10(23,24)8(19,20)6(15,16)5(13,14)7(17,18)9(21,22)11(25,26)27/h2-3H2,1H3,(H,31,32)" ;
+            schema:inChIKey inchikey:CKRXVVGETMYFIO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H8F17NO4S" ;
+            schema:name "2-[ethyl(1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluorooctylsulfonyl)amino]acetic acid",
+                "N-Ethylperfluorooctane sulfonamidoacetic acid" ;
+            schema:smiles "FC(F)(C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)S(=O)(=O)N(CC(O)=O)CC" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.41927e+04 ;
+            mbo:mz 1.689896e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 968 ],
+        [ mbo:intensity 1.46492e+04 ;
+            mbo:mz 2.189856e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.839827e+02 ;
+            mbo:precursor_mz 5.83983e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-014i-0890000000-1337756f28ca71de9ee7" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2921" ;
+    skos:definition "N-Ethylperfluorooctane sulfonamidoacetic acid; LC-ESI-ITFT; MS2; CE: 30%; R=7500; [M-H]-" .
+

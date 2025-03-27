@@ -1,0 +1,101 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100503 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100503" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-MU",
+                "4-Methylumbelliferone",
+                "7-Hydroxy-4-methylcoumarin",
+                "Cholestil",
+                "Hymecromone",
+                "beta-Methylumbelliferone" ;
+            mbo:ch_compound_class "Coumarins" ;
+            mbo:ch_exact_mass 1.760473e+02 ;
+            rdfs:seeAlso cas:90-33-5,
+                chemspider:4444190,
+                pubchem:CID5280567 ;
+            schema:inChI "InChI=1S/C10H8O3/c1-6-4-10(12)13-9-5-7(11)2-3-8(6)9/h2-5,11H,1H3" ;
+            schema:inChIKey inchikey:HSHNITRMYYLLCV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8O3" ;
+            schema:name "4-MU",
+                "4-Methylumbelliferone",
+                "7-Hydroxy-4-methylcoumarin",
+                "Cholestil",
+                "Hymecromone",
+                "beta-Methylumbelliferone" ;
+            schema:smiles "Oc(c2)cc(O1)c(c2)C(C)=CC(=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 8.577e+01 ;
+            mbo:mz 6.50044e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 197 ],
+        [ mbo:intensity 1.027e+02 ;
+            mbo:mz 1.470445e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 236 ],
+        [ mbo:intensity 7.34e+01 ;
+            mbo:mz 1.750395e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 169 ],
+        [ mbo:intensity 1.559e+02 ;
+            mbo:mz 7.70404e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 359 ],
+        [ mbo:intensity 2.195e+02 ;
+            mbo:mz 8.90401e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 505 ],
+        [ mbo:intensity 5.003e+01 ;
+            mbo:mz 9.10192e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 7.57e+01 ;
+            mbo:mz 9.30346e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 174 ],
+        [ mbo:intensity 1.476e+02 ;
+            mbo:mz 1.050348e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 339 ],
+        [ mbo:intensity 4.344e+02 ;
+            mbo:mz 1.1905e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.379e+01 ;
+            mbo:mz 1.310497e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 2.071e+02 ;
+            mbo:mz 1.330287e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 476 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.750395e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0159-5900000000-67144e5ea0eccd502633" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "4-Methylumbelliferone; LC-ESI-QTOF; MS2; CE:30 V; [M-H]-" .
+

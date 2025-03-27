@@ -1,0 +1,109 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS023206 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS023206" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "60" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-Butylpicolinic acid",
+                "5-butylpyridine-3-carboxylic acid",
+                "Fusarate",
+                "Fusaric acid",
+                "Fusarinic acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Fusaric acid" ;
+            mbo:ch_exact_mass 1.79219e+02 ;
+            rdfs:seeAlso cas:536-69-6,
+                pubchem:CID3442 ;
+            schema:inChI "InChI=1S/C10H13NO2/c1-2-3-4-8-5-6-9(10(12)13)11-7-8/h5-7H,2-4H2,1H3,(H,12,13)" ;
+            schema:inChIKey inchikey:DGMPVYSXXIOGJY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H13NO2" ;
+            schema:name "5-Butylpicolinic acid",
+                "5-butylpyridine-3-carboxylic acid",
+                "Fusarate",
+                "Fusaric acid",
+                "Fusarinic acid" ;
+            schema:smiles "CCCCC1=CN=C(C=C1)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.541e+03 ;
+            mbo:mz 2.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 1.539e+03 ;
+            mbo:mz 7.9e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.861e+03 ;
+            mbo:mz 9e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 2.0943e+04 ;
+            mbo:mz 9.1e+01 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 455 ],
+        [ mbo:intensity 2.4e+04 ;
+            mbo:mz 9.2e+01 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 522 ],
+        [ mbo:intensity 1.706e+03 ;
+            mbo:mz 1.33e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 4.545e+03 ;
+            mbo:mz 3.9e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 1.613e+03 ;
+            mbo:mz 4e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 4.348e+03 ;
+            mbo:mz 4.1e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 2.302e+03 ;
+            mbo:mz 5.5e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1.0493e+04 ;
+            mbo:mz 6.4e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 228 ],
+        [ mbo:intensity 4.5934e+04 ;
+            mbo:mz 6.5e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.111e+03 ;
+            mbo:mz 6.6e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 198 ],
+        [ mbo:intensity 1.719e+03 ;
+            mbo:mz 7.7e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 37 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.802e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-014l-9000000000-b8f01ce4686982953f2f" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Fusarate, 5-butylpyridine-3-carboxylic acid, Fusaric acid, 5-Butylpicolinic acid, Fusarinic acid; LC-ESI-QQ; MS2" .
+

@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000226 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000226" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diethyl ethoxymethylenemalonate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.160998e+02 ;
+            rdfs:seeAlso cas:87-13-8,
+                pubchem:CID6871 ;
+            schema:inChI "InChI=1S/C10H16O5/c1-4-13-7-8(9(11)14-5-2)10(12)15-6-3/h7H,4-6H2,1-3H3" ;
+            schema:inChIKey inchikey:LTMHNWPUDSTBKD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H16O5" ;
+            schema:name "Diethyl ethoxymethylenemalonate" ;
+            schema:smiles "CCOC=C(C(=O)OCC)C(=O)OCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.220527e+00 ;
+            mbo:mz 4.100219e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 6.899711e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.090035e+00 ;
+            mbo:mz 6.903349e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 3.407193e+00 ;
+            mbo:mz 9.699202e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 34 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.171071e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-9000000000-444c1fcea4a371600780" ;
+    skos:definition "Diethyl ethoxymethylenemalonate; ESI-QTOF; MS2; CE: 40; [M+H]+" .
+

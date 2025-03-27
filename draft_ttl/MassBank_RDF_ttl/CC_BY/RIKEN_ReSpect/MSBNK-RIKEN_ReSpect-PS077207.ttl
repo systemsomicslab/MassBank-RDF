@@ -1,0 +1,65 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS077207 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS077207" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-Citramalic acid",
+                "2-Hydroxy-2-methylbutanedioic Acid",
+                "2-Hydroxy-2-methylsuccinic Acid",
+                "2-Methylmalate",
+                "2-Methylmalic acid",
+                "Citramalate",
+                "D-2-Methylmalic acid",
+                "alpha-Hydroxypyrotartaric Acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Citramailc acid" ;
+            mbo:ch_exact_mass 1.48114e+02 ;
+            rdfs:seeAlso pubchem:CID439766 ;
+            schema:inChI "InChI=1S/C5H8O5/c1-5(10,4(8)9)2-3(6)7/h10H,2H2,1H3,(H,6,7)(H,8,9)" ;
+            schema:inChIKey inchikey:XFTRTWQBIOMVPK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H8O5" ;
+            schema:name "(-)-Citramalic acid",
+                "2-Hydroxy-2-methylbutanedioic Acid",
+                "2-Hydroxy-2-methylsuccinic Acid",
+                "2-Methylmalate",
+                "2-Methylmalic acid",
+                "Citramalate",
+                "D-2-Methylmalic acid",
+                "alpha-Hydroxypyrotartaric Acid" ;
+            schema:smiles "CC(CC(=O)O)(C(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.8849e+04 ;
+            mbo:mz 1.46e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 210 ],
+        [ mbo:intensity 1.85237e+05 ;
+            mbo:mz 1.47e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.4707e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-0900000000-5b51bc470e8b975406f9" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Citramalate, 2-Methylmalate, 2-Methylmalic acid, (-)-Citramalic acid, D-2-Methylmalic acid, 2-Hydroxy-2-methylsuccinic Acid, alpha-Hydroxypyrotartaric Acid, 2-Hydroxy-2-methylbutanedioic Acid; LC-ESI-QQ; MS2" .
+

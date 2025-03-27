@@ -1,0 +1,96 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET405001 a mbo:MassSpectrum ;
+    dcterms:creator "B. Clerc, R. Gulde, B. Lauper [com],  C. McArdell, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2020-12-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET405001" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde et al. 2020, Formation of transformation products during ozonation of secondary wastewater effluent and their fate in post-treatment: From laboratory- to full-scale, Water Research" ] ;
+    dcterms:rights "Copyright (C) Eawag 2020 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "85 % (nominal)" ;
+            mbo:column_name "C18 Atlantis T3 5 um, 3x150 mm, Waters" ;
+            mbo:flow_gradient "260/40 at 0 min, 260/40 at 5 min, 15/285 at 20 min, 15/285 at 29 min, 260/40 at 29.5 min, 260/40 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.176 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "CBZ_n_179.0461_17.2",
+                "Carbamazepine -C7H4 +O2",
+                "Hydroxylation of 4-hydroxy-3,4-dihydroquinazolin-2(1H)-one" ;
+            mbo:ch_compound_class "identified ozonation transformation product" ;
+            mbo:ch_exact_mass 1.800535e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C8H8N2O3" ;
+            schema:name "CBZ_n_179.0461_17.2",
+                "Carbamazepine -C7H4 +O2",
+                "Hydroxylation of 4-hydroxy-3,4-dihydroquinazolin-2(1H)-one" ;
+            schema:smiles "N/A" ] ;
+    mbo:has_peak [ mbo:intensity 1.65025e+04 ;
+            mbo:mz 7.8035e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.24875e+04 ;
+            mbo:mz 1.380201e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 5.3283e+03 ;
+            mbo:mz 1.380389e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.2889e+03 ;
+            mbo:mz 9.10428e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.53918e+04 ;
+            mbo:mz 9.20505e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.63479e+04 ;
+            mbo:mz 1.060299e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.666511e+05 ;
+            mbo:mz 1.070377e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 443 ],
+        [ mbo:intensity 3.6578e+03 ;
+            mbo:mz 1.180296e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.6818e+04 ;
+            mbo:mz 1.340248e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 98 ],
+        [ mbo:intensity 2.736e+03 ;
+            mbo:mz 1.360277e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.756296e+05 ;
+            mbo:mz 1.370356e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.10038e+01 ;
+            mbo:precursor_mz 1.790462e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-000i-0900000000-9825daf953ae6d954144" ;
+    rdfs:comment "UCHEM_ID 4050" ;
+    skos:definition "CBZ_n_179.0461_17.2; LC-ESI-QFT; MS2; CE: 85%; R=17500; [M-H]-" .
+

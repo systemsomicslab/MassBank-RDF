@@ -1,0 +1,99 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00966 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00966" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Neochlorogenic acid" ;
+            mbo:ch_compound_class "Natural Product; Phenylpropanoids" ;
+            mbo:ch_exact_mass 3.540951e+02 ;
+            schema:inChI "InChI=1S/C16H18O9/c17-9-3-1-8(5-10(9)18)2-4-13(20)25-12-7-16(24,15(22)23)6-11(19)14(12)21/h1-5,11-12,14,17-19,21,24H,6-7H2,(H,22,23)/b4-2+/t11-,12-,14+,16-/m1/s1" ;
+            schema:inChIKey inchikey:CWVRJTMFETXNAD-NXLLHMKUSA-N ;
+            schema:molecularFormula "C16H18O9" ;
+            schema:name "Neochlorogenic acid" ;
+            schema:smiles "O=C(C=Cc(c2)cc(O)c(O)c2)OC(C1)C(O)C(O)CC(O)(C(O)=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 6.352e+03 ;
+            mbo:mz 1.270402e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 6.1447e+04 ;
+            mbo:mz 1.790359e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 226 ],
+        [ mbo:intensity 7.405e+03 ;
+            mbo:mz 1.800392e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 2.71424e+05 ;
+            mbo:mz 1.910571e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.179e+04 ;
+            mbo:mz 1.920604e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 3.208e+03 ;
+            mbo:mz 1.93062e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.3067e+04 ;
+            mbo:mz 1.330298e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 3.698e+04 ;
+            mbo:mz 1.340376e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 136 ],
+        [ mbo:intensity 2.38234e+05 ;
+            mbo:mz 1.350455e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 877 ],
+        [ mbo:intensity 2.2153e+04 ;
+            mbo:mz 1.360489e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 4.275e+03 ;
+            mbo:mz 1.550358e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.2145e+04 ;
+            mbo:mz 1.610252e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 3.331e+03 ;
+            mbo:mz 1.710306e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 9.354e+03 ;
+            mbo:mz 1.730465e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 34 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-000f-0900000000-cda19179fe6c6b526bab" ;
+    rdfs:comment "[Raw Data] CBA73_Neochlorogenic-_neg_40eV.txt" ;
+    skos:definition "Neochlorogenic acid; LC-ESI-QTOF; MS2; [M-H]-; CE: 40eV" .
+

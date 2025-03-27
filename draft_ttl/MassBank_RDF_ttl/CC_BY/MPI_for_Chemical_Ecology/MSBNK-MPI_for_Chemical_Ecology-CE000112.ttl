@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000112 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-11)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000112" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, A. Svatos, R.K. Maddula, C. Boettcher and S. Boecker. Computing fragmentation trees from tandem mass spectrometry data. Anal. Chem., 2011, 83, 1243-1251 doi:10.1021/ac101825k" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1108.21 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Xanthohumol" ;
+            mbo:ch_compound_class "Natural Product; Benzopyran" ;
+            mbo:ch_exact_mass 3.541467e+02 ;
+            rdfs:seeAlso pubchem:CID639665 ;
+            schema:inChI "InChI=1S/C21H22O5/c1-13(2)4-10-16-18(24)12-19(26-3)20(21(16)25)17(23)11-7-14-5-8-15(22)9-6-14/h4-9,11-12,22,24-25H,10H2,1-3H3/b11-7+" ;
+            schema:inChIKey inchikey:ORXQGKIUCDPEAJ-YRNVUSSQSA-N ;
+            schema:molecularFormula "C21H22O5" ;
+            schema:name "Xanthohumol" ;
+            schema:smiles "CC(=CCC1=C(C=C(C(=C1O)C(=O)/C=C/C2=CC=C(C=C2)O)OC)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.278358e+06 ;
+            mbo:mz 3.551547e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.696823e+06 ;
+            mbo:mz 3.561579e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 233 ],
+        [ mbo:intensity 2.423594e+05 ;
+            mbo:mz 3.571602e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.840223e+04 ;
+            mbo:mz 3.581616e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-46e19545d4309224dc0f" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "Xanthohumol; LC-ESI-ITFT; MS; [M+H]+; isotope pattern" .
+

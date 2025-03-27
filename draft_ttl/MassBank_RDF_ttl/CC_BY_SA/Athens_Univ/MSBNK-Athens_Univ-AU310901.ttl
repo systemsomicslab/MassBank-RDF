@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU310901 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU310901" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.0 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-chloro-4-N-ethyl-2-N-propan-2-yl-1,3,5-triazine-2,4-diamine",
+                "Atrazine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.150938e+02 ;
+            rdfs:seeAlso cas:1912-24-9,
+                chemspider:2169,
+                pubchem:CID2256 ;
+            schema:inChI "InChI=1S/C8H14ClN5/c1-4-10-7-12-6(9)13-8(14-7)11-5(2)3/h5H,4H2,1-3H3,(H2,10,11,12,13,14)" ;
+            schema:inChIKey inchikey:MXWJVTOOROXGIU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H14ClN5" ;
+            schema:name "6-chloro-4-N-ethyl-2-N-propan-2-yl-1,3,5-triazine-2,4-diamine",
+                "Atrazine" ;
+            schema:smiles "CCNC1=NC(NC(C)C)=NC(Cl)=N1" ] ;
+    mbo:has_peak [ mbo:intensity 4.2352e+04 ;
+            mbo:mz 1.740531e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 2.688e+03 ;
+            mbo:mz 1.750557e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.1284e+04 ;
+            mbo:mz 1.760501e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 6.16e+02 ;
+            mbo:mz 1.770536e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.023928e+06 ;
+            mbo:mz 2.161006e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.0148e+04 ;
+            mbo:mz 2.171033e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.36196e+05 ;
+            mbo:mz 2.180976e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 230 ],
+        [ mbo:intensity 1.0568e+04 ;
+            mbo:mz 2.191003e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.161006e+02 ;
+            mbo:precursor_mz 2.16101e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-014i-0090000000-1f8dc1708e21447c72a5" ;
+    rdfs:comment "INTERNAL_ID 3109" ;
+    skos:definition "Atrazine; LC-ESI-QTOF; MS2; CE: 10 eV; R=35000; [M+H]+" .
+

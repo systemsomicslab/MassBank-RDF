@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU237362 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-03-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU237362" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "Ramp 19.8-29.7 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.710 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,4,5-Trichlorophenol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.959249e+02 ;
+            rdfs:seeAlso cas:609-19-8,
+                chemspider:11366,
+                pubchem:CID11859 ;
+            schema:inChI "InChI=1S/C6H3Cl3O/c7-4-1-3(10)2-5(8)6(4)9/h1-2,10H" ;
+            schema:inChIKey inchikey:GBNHEBQXJVDXSW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H3Cl3O" ;
+            schema:name "3,4,5-Trichlorophenol" ;
+            schema:smiles "OC1=CC(Cl)=C(Cl)C(Cl)=C1" ] ;
+    mbo:has_peak [ mbo:intensity 8.72e+02 ;
+            mbo:mz 1.229664e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.6164e+04 ;
+            mbo:mz 1.589415e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.224e+03 ;
+            mbo:mz 1.599443e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 1.0888e+04 ;
+            mbo:mz 1.609379e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 416 ],
+        [ mbo:intensity 9.752e+03 ;
+            mbo:mz 1.94918e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 372 ],
+        [ mbo:intensity 6.32e+02 ;
+            mbo:mz 1.959187e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 6.496e+03 ;
+            mbo:mz 1.969148e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 248 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.90132e+01 ;
+            mbo:precursor_mz 1.949177e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-6a7df7841e89b8bdb8cc" ;
+    rdfs:comment "INTERNAL_ID 2373" ;
+    skos:definition "3,4,5-Trichlorophenol; LC-ESI-QTOF; MS2; CE: Ramp 19.8-29.7 eV; R=35000; [M-H]-" .
+

@@ -1,0 +1,76 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT002252 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT002252" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "28.21 min (in paper: 28 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sphingomyelin d18:1-C18:0" ;
+            mbo:ch_compound_class "Natural Product; Sphingolipids; Phosphosphingolipids; Ceramide phosphocholines (sphingomyelins)" ;
+            mbo:ch_exact_mass 7.305989e+02 ;
+            rdfs:seeAlso cas:54336-69-5 ;
+            schema:inChI "InChI=1S/C41H83N2O6P/c1-6-8-10-12-14-16-18-20-21-23-25-27-29-31-33-35-41(45)42-39(38-49-50(46,47)48-37-36-43(3,4)5)40(44)34-32-30-28-26-24-22-19-17-15-13-11-9-7-2/h32,34,39-40,44H,6-31,33,35-38H2,1-5H3,(H-,42,45,46,47)/b34-32+/t39-,40+/m1/s1" ;
+            schema:inChIKey inchikey:LKQLRGMMMAHREN-GDBDMVKWSA-N ;
+            schema:molecularFormula "C41H83N2O6P" ;
+            schema:name "Sphingomyelin d18:1-C18:0" ;
+            schema:smiles "C(=CC(C(COP([O-1])(=O)OCC[N+1](C)(C)C)NC(=O)CCCCCCCCCCCCCCCCC)O)CCCCCCCCCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 1.211e+02 ;
+            mbo:mz 2.8333e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.98e+01 ;
+            mbo:mz 6.442e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.967701e+05 ;
+            mbo:mz 7.1534e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.197e+02 ;
+            mbo:mz 7.1601e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.061e+02 ;
+            mbo:mz 7.2872e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.0527e+03 ;
+            mbo:mz 7.3024e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.443e+02 ;
+            mbo:mz 7.7592e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 7.8961e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-014i-0000000900-eb40f241b20be3bce256" ;
+    skos:definition "Sphingomyelin d18:1-C18:0; LC-ESI-ITFT; MS2; [M+CH3COO]-; RT: 28.08; Exp: 2" .
+

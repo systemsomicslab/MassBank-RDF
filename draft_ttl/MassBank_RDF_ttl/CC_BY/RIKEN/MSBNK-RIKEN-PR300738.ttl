@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR300738 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR300738" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.977767" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cephaeline" ;
+            mbo:ch_compound_class "Emetine alkaloids" ;
+            mbo:ch_exact_mass 4.66622e+02 ;
+            schema:inChI "InChI=1S/C28H38N2O4/c1-5-17-16-30-9-7-19-13-27(33-3)28(34-4)15-22(19)24(30)11-20(17)10-23-21-14-26(32-2)25(31)12-18(21)6-8-29-23/h12-15,17,20,23-24,29,31H,5-11,16H2,1-4H3/t17-,20-,23+,24-/m0/s1" ;
+            schema:inChIKey inchikey:DTGZHCFJNDAHEN-OZEXIGSWSA-N ;
+            schema:molecularFormula "C28H38N2O4" ;
+            schema:name "Cephaeline" ;
+            schema:smiles "CC[C@H]1CN2CCC3=CC(OC)=C(OC)C=C3[C@@H]2C[C@@H]1C[C@H]1NCCC2=CC(O)=C(OC)C=C12" ] ;
+    mbo:has_peak [ mbo:intensity 3.2e+01 ;
+            mbo:mz 4.65262e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 4.652778e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 8.7e+01 ;
+            mbo:mz 4.66276e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 6e+00 ;
+            mbo:mz 4.671956e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6e+00 ;
+            mbo:mz 4.672341e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1e+03 ;
+            mbo:mz 4.672909e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.672904e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-014i-0000900000-1584a7d6c7805b2a9fe5" ;
+    rdfs:comment "registered in RIKEN PlaSMA" ;
+    skos:definition "Cephaeline; LC-ESI-QTOF; MS2" .
+

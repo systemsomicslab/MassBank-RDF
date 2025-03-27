@@ -1,0 +1,86 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU105901 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU105901" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "13.853 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-((Dimethylamino)methyl)-4-(3-methyl-4-(methylthio)phenoxy)benzenesulfonamide",
+                "3-[(dimethylamino)methyl]-4-(3-methyl-4-methylsulfanylphenoxy)benzenesulfonamide",
+                "UK-416244" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.661072e+02 ;
+            rdfs:seeAlso chemspider:8144769,
+                pubchem:CID9969177 ;
+            schema:inChI "InChI=1S/C17H22N2O3S2/c1-12-9-14(5-8-17(12)23-4)22-16-7-6-15(24(18,20)21)10-13(16)11-19(2)3/h5-10H,11H2,1-4H3,(H2,18,20,21)" ;
+            schema:inChIKey inchikey:QIWQQMZFTOCFGF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H22N2O3S2" ;
+            schema:name "3-((Dimethylamino)methyl)-4-(3-methyl-4-(methylthio)phenoxy)benzenesulfonamide",
+                "3-[(dimethylamino)methyl]-4-(3-methyl-4-methylsulfanylphenoxy)benzenesulfonamide",
+                "UK-416244" ;
+            schema:smiles "CSC1=CC=C(OC2=CC=C(C=C2CN(C)C)S(N)(=O)=O)C=C1C" ] ;
+    mbo:has_peak [ mbo:intensity 1.225671e+05 ;
+            mbo:mz 2.42076e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 4.78603e+04 ;
+            mbo:mz 2.600387e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 7.6095e+04 ;
+            mbo:mz 2.740526e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.401047e+05 ;
+            mbo:mz 2.75061e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.322e+04 ;
+            mbo:mz 3.040889e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.418546e+06 ;
+            mbo:mz 3.220565e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 1.318451e+07 ;
+            mbo:mz 3.671143e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90212e+01 ;
+            mbo:precursor_mz 3.671145e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-014i-0009000000-2fb0237b829ead0e156a" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "UK-416244; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

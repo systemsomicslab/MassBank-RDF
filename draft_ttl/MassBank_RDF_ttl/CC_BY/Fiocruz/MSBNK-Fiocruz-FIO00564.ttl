@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00564 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-04-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00564" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Lapachol" ;
+            mbo:ch_compound_class "Natural Product; Naphtoquinone" ;
+            mbo:ch_exact_mass 2.420943e+02 ;
+            rdfs:seeAlso cas:84-79-7,
+                knapsack:C00002835,
+                pubchem:CID12554 ;
+            schema:inChI "InChI=1S/C15H14O3/c1-9(2)7-8-12-13(16)10-5-3-4-6-11(10)14(17)15(12)18/h3-7,18H,8H2,1-2H3" ;
+            schema:inChIKey inchikey:CIEYTVIYYGTCCI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H14O3" ;
+            schema:name "Lapachol" ;
+            schema:smiles "CC(C)=CCc(c(O)1)c(=O)c(c2)c(ccc2)c(=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.8008e+04 ;
+            mbo:mz 1.860327e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 669 ],
+        [ mbo:intensity 4.309e+03 ;
+            mbo:mz 2.420908e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 5.09e+02 ;
+            mbo:mz 2.430951e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.085e+03 ;
+            mbo:mz 1.870358e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 2.77e+02 ;
+            mbo:mz 1.980327e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.23e+03 ;
+            mbo:mz 2.130924e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 3.06e+02 ;
+            mbo:mz 2.140962e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.98e+02 ;
+            mbo:mz 2.220689e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.198e+03 ;
+            mbo:mz 2.230768e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 1.913e+03 ;
+            mbo:mz 2.26064e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 2.6894e+04 ;
+            mbo:mz 2.410876e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.410876e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-000f-0490000000-9fceb1f377aa1f9a7734" ;
+    rdfs:comment "[Raw Data] CB290_Lapachol_neg_20eV_000049.txt" ;
+    skos:definition "Lapachol; LC-ESI-QTOF; MS2; [M-H]-; CE: 20eV" .
+

@@ -1,0 +1,85 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000841 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-03-25, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000841" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-hydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+                "Daidzein" ;
+            mbo:ch_compound_class "Natural Product; Isoflavone" ;
+            mbo:ch_exact_mass 2.540579e+02 ;
+            rdfs:seeAlso pubchem:CID5281708 ;
+            schema:inChI "InChI=1S/C15H10O4/c16-10-3-1-9(2-4-10)13-8-19-14-7-11(17)5-6-12(14)15(13)18/h1-8,16-17H" ;
+            schema:inChIKey inchikey:ZQSIJRDFPHDXIC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O4" ;
+            schema:name "7-hydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+                "Daidzein" ;
+            schema:smiles "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.43329e+02 ;
+            mbo:mz 1.37011e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 74 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 2.55065e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.1025e+02 ;
+            mbo:mz 2.56077e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 1.65227e+02 ;
+            mbo:mz 1.45017e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 8.9496e+01 ;
+            mbo:mz 1.5306e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.10292e+02 ;
+            mbo:mz 1.57057e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 8.992e+01 ;
+            mbo:mz 1.71076e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.49301e+02 ;
+            mbo:mz 1.81063e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.441762e+03 ;
+            mbo:mz 1.99075e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 9.91953e+02 ;
+            mbo:mz 2.27072e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 3.90343e+02 ;
+            mbo:mz 2.3706e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0a4i-0290000000-d64d585a2d69c5127b54" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Daidzein; LC-ESI-QTOF; MS2; CE:25 eV; [M+H]+" .
+

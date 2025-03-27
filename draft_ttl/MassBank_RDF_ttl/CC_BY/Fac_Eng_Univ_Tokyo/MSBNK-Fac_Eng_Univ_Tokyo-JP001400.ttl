@@ -1,0 +1,49 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP001400 a mbo:MassSpectrum ;
+    dcterms:creator "HASHIMOTO K, KYOTO COLLEGE OF PHARMACY" ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP001400" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "HITACHI M-80" ;
+            mbo:instrument_type "EI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-ETHYL-5-(3,4-METHYLENEDIOXYPHENYL)-N-PHENYL-2,4-PENTADIENAMIDE",
+                "N-PIPEROYL-N-ETHYLANILINE" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.211365e+02 ;
+            schema:inChI "InChI=1S/C20H19NO3/c1-2-21(17-9-4-3-5-10-17)20(22)11-7-6-8-16-12-13-18-19(14-16)24-15-23-18/h3-14H,2,15H2,1H3/b8-6+,11-7+" ;
+            schema:inChIKey inchikey:YIOPYDKKDRORTK-JMFBPXTISA-N ;
+            schema:molecularFormula "C20H19NO3" ;
+            schema:name "N-ETHYL-5-(3,4-METHYLENEDIOXYPHENYL)-N-PHENYL-2,4-PENTADIENAMIDE",
+                "N-PIPEROYL-N-ETHYLANILINE" ;
+            schema:smiles "CCN(C(=O)C=CC=Cc(c2)cc(O3)c(OC3)c2)c(c1)cccc1" ] ;
+    mbo:has_peak [ mbo:intensity 9.999e+01 ;
+            mbo:mz 2.01e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.25e+01 ;
+            mbo:mz 2.02e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 6.5e+00 ;
+            mbo:mz 3.21e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 65 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-0090000000-c5fa83cec89f2c101c0f" ;
+    skos:definition "N-PIPEROYL-N-ETHYLANILINE; EI-B; MS" .
+

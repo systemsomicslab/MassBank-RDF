@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT106950 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT106950" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,3S)-2-Amino-3-hydroxybutyric Acid",
+                "(2S,3S)-2-amino-3-hydroxybutanoic acid",
+                "L-Allothreonine",
+                "L-allo-threonine",
+                "allo-Thr" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Threonine" ;
+            mbo:ch_exact_mass 1.1912e+02 ;
+            rdfs:seeAlso cas:28954-12-3 ;
+            schema:inChI "InChI=1S/C4H9NO3/c1-2(6)3(5)4(7)8/h2-3,6H,5H2,1H3,(H,7,8)" ;
+            schema:inChIKey inchikey:AYFVYJQAPQTCCC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H9NO3" ;
+            schema:name "(2S,3S)-2-Amino-3-hydroxybutyric Acid",
+                "(2S,3S)-2-amino-3-hydroxybutanoic acid",
+                "L-Allothreonine",
+                "L-allo-threonine",
+                "allo-Thr" ;
+            schema:smiles "CC(C(C(=O)O)N)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.857e+01 ;
+            mbo:mz 5.60505e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 216 ],
+        [ mbo:intensity 1.696e+02 ;
+            mbo:mz 7.40604e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 950 ],
+        [ mbo:intensity 8.926e+01 ;
+            mbo:mz 8.40442e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 1.783e+02 ;
+            mbo:mz 1.020545e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.635e+01 ;
+            mbo:mz 1.20066e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 316 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.20066e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0fk9-9700000000-af60cc91d30ce48f55f0" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "L-allo-threonine, L-Allothreonine, (2S,3S)-2-Amino-3-hydroxybutyric Acid, (2S,3S)-2-amino-3-hydroxybutanoic acid, allo-Thr; LC-ESI-QTOF; MS2" .
+

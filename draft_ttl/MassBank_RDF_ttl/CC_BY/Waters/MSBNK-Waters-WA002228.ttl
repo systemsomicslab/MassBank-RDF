@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002228 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002228" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "14.800 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Levomepromazine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.281609e+02 ;
+            rdfs:seeAlso cas:60-99-1 ;
+            schema:inChI "InChI=1S/C19H24N2OS/c1-14(12-20(2)3)13-21-16-7-5-6-8-18(16)23-19-10-9-15(22-4)11-17(19)21/h5-11,14H,12-13H2,1-4H3/t14-/m1/s1" ;
+            schema:inChIKey inchikey:VRQVVMDWGGWHTJ-CQSZACIVSA-N ;
+            schema:molecularFormula "C19H24N2OS" ;
+            schema:name "Levomepromazine" ;
+            schema:smiles "CN(C)CC([H])(C)CN(c21)c(c3)c(ccc(OC)3)Sc(cccc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.53e+02 ;
+            mbo:mz 1e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.29e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.62e+02 ;
+            mbo:mz 3.3e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 262 ],
+        [ mbo:intensity 8.6e+01 ;
+            mbo:mz 3.31e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 3.32e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0109000000-baeb5532fe2817468d0f" ;
+    skos:definition "Levomepromazine; LC-ESI-Q; MS; POS; 30 V" .
+

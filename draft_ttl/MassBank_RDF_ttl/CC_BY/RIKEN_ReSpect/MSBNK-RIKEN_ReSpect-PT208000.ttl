@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT208000 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT208000" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3R,4S)-3-Amino-4-methylhexanoic acid hydrochloride",
+                "L-beta-Homoisoleucine hydrochloride" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Isoleucine" ;
+            mbo:ch_exact_mass 1.45202e+02 ;
+            rdfs:seeAlso cas:219310-10-8 ;
+            schema:inChI "InChI=1S/C7H15NO2/c1-3-5(2)6(8)4-7(9)10/h5-6H,3-4,8H2,1-2H3,(H,9,10)" ;
+            schema:inChIKey inchikey:JHEDYGILOIBOTL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H15NO2" ;
+            schema:name "(3R,4S)-3-Amino-4-methylhexanoic acid hydrochloride",
+                "L-beta-Homoisoleucine hydrochloride" ;
+            schema:smiles "CCC(C)C(CC(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 5.492e+00 ;
+            mbo:mz 1.428891e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 2.812e+01 ;
+            mbo:mz 1.438999e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 517 ],
+        [ mbo:intensity 5.433e+01 ;
+            mbo:mz 1.441025e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.441025e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-0900000000-128fb5b161d360a359b4" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "L-beta-Homoisoleucine hydrochloride, (3R,4S)-3-Amino-4-methylhexanoic acid hydrochloride; LC-ESI-QTOF; MS2" .
+

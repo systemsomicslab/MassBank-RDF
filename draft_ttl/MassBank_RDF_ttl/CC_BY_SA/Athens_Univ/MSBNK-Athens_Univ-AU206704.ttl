@@ -1,0 +1,89 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU206704 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-04"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU206704" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.6 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3R,4R,5S)-4-acetamido-5-azaniumyl-3-pentan-3-yloxycyclohexene-1-carboxylate",
+                "Oseltamivir acid",
+                "Oseltamivir-carboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.841736e+02 ;
+            rdfs:seeAlso cas:187227-45-8,
+                chemspider:395929,
+                pubchem:CID449381 ;
+            schema:inChI "InChI=1S/C14H24N2O4/c1-4-10(5-2)20-12-7-9(14(18)19)6-11(15)13(12)16-8(3)17/h7,10-13H,4-6,15H2,1-3H3,(H,16,17)(H,18,19)/t11-,12+,13+/m0/s1" ;
+            schema:inChIKey inchikey:NENPYTRHICXVCS-YNEHKIRRSA-N ;
+            schema:molecularFormula "C14H24N2O4" ;
+            schema:name "(3R,4R,5S)-4-acetamido-5-azaniumyl-3-pentan-3-yloxycyclohexene-1-carboxylate",
+                "Oseltamivir acid",
+                "Oseltamivir-carboxylate" ;
+            schema:smiles "CCC(CC)O[C@@H]1C=C(C[C@H](N)[C@H]1NC(C)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.088e+03 ;
+            mbo:mz 1.200441e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 579 ],
+        [ mbo:intensity 4.68e+02 ;
+            mbo:mz 1.210462e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 3.08e+02 ;
+            mbo:mz 1.340601e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 1.784e+03 ;
+            mbo:mz 1.370702e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 334 ],
+        [ mbo:intensity 5.328e+03 ;
+            mbo:mz 1.380541e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.96e+02 ;
+            mbo:mz 1.390565e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 3.8e+02 ;
+            mbo:mz 1.560637e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 5.12e+02 ;
+            mbo:mz 1.620551e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 96 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.851804e+02 ;
+            mbo:precursor_mz 2.851809e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-000i-0900000000-6a55d96635b66f8c6405" ;
+    rdfs:comment "INTERNAL_ID 2067" ;
+    skos:definition "Oseltamivir-carboxylate; LC-ESI-QTOF; MS2; CE: 40 eV; R=35000; [M+H]+" .
+

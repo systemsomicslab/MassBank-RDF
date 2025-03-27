@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU213752 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU213752" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.684 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-ethoxy-3-[[4-[2-(2H-tetrazol-5-yl)phenyl]phenyl]methyl]benzimidazole-4-carboxylic acid",
+                "Candesartan" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.401597e+02 ;
+            rdfs:seeAlso cas:139481-59-7,
+                chemspider:2445,
+                pubchem:CID2541 ;
+            schema:inChI "InChI=1S/C24H20N6O3/c1-2-33-24-25-20-9-5-8-19(23(31)32)21(20)30(24)14-15-10-12-16(13-11-15)17-6-3-4-7-18(17)22-26-28-29-27-22/h3-13H,2,14H2,1H3,(H,31,32)(H,26,27,28,29)" ;
+            schema:inChIKey inchikey:HTQMVQVXFRQIKW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H20N6O3" ;
+            schema:name "2-ethoxy-3-[[4-[2-(2H-tetrazol-5-yl)phenyl]phenyl]methyl]benzimidazole-4-carboxylic acid",
+                "Candesartan" ;
+            schema:smiles "CCOC1=NC2=CC=CC(C(O)=O)=C2N1CC1=CC=C(C=C1)C1=CC=CC=C1C1=NNN=N1" ] ;
+    mbo:has_peak [ mbo:intensity 3.28e+02 ;
+            mbo:mz 1.320315e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 268 ],
+        [ mbo:intensity 4.32e+02 ;
+            mbo:mz 1.330394e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 353 ],
+        [ mbo:intensity 3.04e+02 ;
+            mbo:mz 2.050617e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 248 ],
+        [ mbo:intensity 1.224e+03 ;
+            mbo:mz 3.091011e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.2e+02 ;
+            mbo:mz 3.101079e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 343 ],
+        [ mbo:intensity 3.64e+02 ;
+            mbo:mz 3.541044e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 297 ],
+        [ mbo:intensity 1.188e+03 ;
+            mbo:mz 4.39149e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 970 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.391501e+02 ;
+            mbo:precursor_mz 4.391524e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4r-0319500000-3993447974e9c0f96e19" ;
+    rdfs:comment "INTERNAL_ID 2137" ;
+    skos:definition "Candesartan; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M-H]-" .
+

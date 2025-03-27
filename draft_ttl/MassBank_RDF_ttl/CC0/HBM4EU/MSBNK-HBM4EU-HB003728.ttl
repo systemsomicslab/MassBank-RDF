@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003728 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003728" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "21.708 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(R)Semivioxanthin",
+                "3-Methyl-7-methoxy-9,10-dihydroxy-3,4-dihydro-1H-naphtho[2,3-c]pyran-1-one",
+                "9,10-dihydroxy-7-methoxy-3-methyl-3,4-dihydrobenzo[g]isochromen-1-one" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.740841e+02 ;
+            rdfs:seeAlso cas:70477-26-8,
+                chemspider:8598883,
+                pubchem:CID10423455 ;
+            schema:inChI "InChI=1S/C15H14O5/c1-7-3-8-4-9-5-10(19-2)6-11(16)12(9)14(17)13(8)15(18)20-7/h4-7,16-17H,3H2,1-2H3" ;
+            schema:inChIKey inchikey:BWNCKEBBYADFPQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H14O5" ;
+            schema:name "(R)Semivioxanthin",
+                "3-Methyl-7-methoxy-9,10-dihydroxy-3,4-dihydro-1H-naphtho[2,3-c]pyran-1-one",
+                "9,10-dihydroxy-7-methoxy-3-methyl-3,4-dihydrobenzo[g]isochromen-1-one" ;
+            schema:smiles "CC1CC2=CC3=CC(=CC(=C3C(=C2C(=O)O1)O)O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 6.3968e+03 ;
+            mbo:mz 2.05086e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.8216e+03 ;
+            mbo:mz 2.250552e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.048563e+05 ;
+            mbo:mz 2.290859e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 2.87051e+04 ;
+            mbo:mz 2.470965e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 8.072498e+05 ;
+            mbo:mz 2.570808e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.13254e+05 ;
+            mbo:mz 2.750916e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 388 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.750918e+02 ;
+            mbo:precursor_mz 2.750914e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a6r-0090000000-4b8b3de91d8d2c738431" ;
+    rdfs:comment "INTERNAL_ID 79" ;
+    skos:definition "(R)Semivioxanthin; LC-ESI-ITFT; MS2; CE: 40%; R=7500; [M+H]+" .
+

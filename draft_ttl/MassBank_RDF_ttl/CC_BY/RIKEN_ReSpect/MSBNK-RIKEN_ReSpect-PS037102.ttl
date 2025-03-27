@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS037102 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS037102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "UDP-GlcA",
+                "UDP-Glucopyranosuronic Acid",
+                "UDP-Glucuronate",
+                "UDPGA",
+                "Uridine-5'-diphosphoglucuronic acid trisodium salt",
+                "Uridine-diphosphate-glucuronic acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Uridine phosphate" ;
+            mbo:ch_exact_mass 5.80289e+02 ;
+            rdfs:seeAlso cas:2616-64-0,
+                pubchem:CID17473 ;
+            schema:inChI "InChI=1S/C15H22N2O18P2/c18-5-1-2-17(15(26)16-5)12-9(22)6(19)4(32-12)3-31-36(27,28)35-37(29,30)34-14-10(23)7(20)8(21)11(33-14)13(24)25/h1-2,4,6-12,14,19-23H,3H2,(H,24,25)(H,27,28)(H,29,30)(H,16,18,26)" ;
+            schema:inChIKey inchikey:HDYANYHVCAPMJV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H22N2O18P2" ;
+            schema:name "UDP-GlcA",
+                "UDP-Glucopyranosuronic Acid",
+                "UDP-Glucuronate",
+                "UDPGA",
+                "Uridine-5'-diphosphoglucuronic acid trisodium salt",
+                "Uridine-diphosphate-glucuronic acid" ;
+            schema:smiles "C1=CN(C(=O)NC1=O)C2C(C(C(O2)COP(=O)(O)OP(=O)(O)OC3C(C(C(C(O3)C(=O)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.4824e+04 ;
+            mbo:mz 3.25e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 9.0665e+04 ;
+            mbo:mz 4.05e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.8135e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0002900000-08cd98a102db9b92ed8d" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Uridine-diphosphate-glucuronic acid, Uridine-5'-diphosphoglucuronic acid trisodium salt , UDP-GlcA, UDP-Glucuronate, UDPGA, UDP-Glucopyranosuronic Acid ; LC-ESI-QQ; MS2" .
+

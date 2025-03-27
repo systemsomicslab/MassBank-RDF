@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00466 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-02-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00466" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "60 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Creatinine" ;
+            mbo:ch_compound_class "Natural product; Imidazolidinone" ;
+            mbo:ch_exact_mass 1.130589e+02 ;
+            rdfs:seeAlso cas:60-27-5,
+                chemspider:568,
+                pubchem:CID588 ;
+            schema:inChI "InChI=1S/C4H7N3O/c1-7-2-3(8)6-4(7)5/h2H2,1H3,(H2,5,6,8)" ;
+            schema:inChIKey inchikey:DDRJAANPRJIHGJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H7N3O" ;
+            schema:name "Creatinine" ;
+            schema:smiles "CN1CC(=O)N=C1N" ] ;
+    mbo:has_peak [ mbo:intensity 3.56e+00 ;
+            mbo:mz 2.80181e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 1.01e+00 ;
+            mbo:mz 2.90133e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.06e+00 ;
+            mbo:mz 3.00338e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.56e+00 ;
+            mbo:mz 4.20339e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 2.46e+01 ;
+            mbo:mz 4.30291e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.616e+01 ;
+            mbo:mz 4.40495e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 656 ],
+        [ mbo:intensity 2.02e+00 ;
+            mbo:mz 5.59347e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 82 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.140662e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0006-9000000000-1a99dc19e837ee0afc3b" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Creatinine; ESI-QTOF; MS2; POSITIVE; [M+H]+; CID; 60 V" .
+

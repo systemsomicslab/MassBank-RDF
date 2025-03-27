@@ -1,0 +1,112 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00409 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-18, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00409" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.490005 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "L-2-Amino-4-mercaptobutyric acid",
+                "L-Homocysteine" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.350354e+02 ;
+            rdfs:seeAlso cas:6027-13-0,
+                knapsack:C00001365,
+                pubchem:CID3455 ;
+            schema:inChI "InChI=1S/C4H9NO2S/c5-3(1-2-8)4(6)7/h3,8H,1-2,5H2,(H,6,7)/t3-/m0/s1" ;
+            schema:inChIKey inchikey:FFFHZYDWPBMWHY-VKHMYHEASA-N ;
+            schema:molecularFormula "C4H9NO2S" ;
+            schema:name "L-2-Amino-4-mercaptobutyric acid",
+                "L-Homocysteine" ;
+            schema:smiles "SCC[C@H](N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.089458e+00 ;
+            mbo:mz 5.611898e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.462511e+03 ;
+            mbo:mz 8.995526e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.857778e+00 ;
+            mbo:mz 9.099587e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6.996762e+00 ;
+            mbo:mz 9.725401e+01 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.793681e+01 ;
+            mbo:mz 1.000701e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.714601e+01 ;
+            mbo:mz 1.010175e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.370361e+00 ;
+            mbo:mz 1.060635e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 7.821252e+00 ;
+            mbo:mz 5.803648e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.897098e+00 ;
+            mbo:mz 5.873358e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 4.505684e+00 ;
+            mbo:mz 6.191615e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.804119e+02 ;
+            mbo:mz 7.196571e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 328 ],
+        [ mbo:intensity 5.263762e+00 ;
+            mbo:mz 7.296122e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.525542e+00 ;
+            mbo:mz 7.587913e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.089425e+00 ;
+            mbo:mz 7.695238e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.310037e+00 ;
+            mbo:mz 8.254131e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.995526e+01 ;
+            mbo:precursor_mz 1.1803e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-000i-9000000000-025c9e1f4fb58138c43b" ;
+    skos:definition "L-Homocysteine; LC-ESI-ITFT; MS2; m/z:118.03; POS" .
+

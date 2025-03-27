@@ -1,0 +1,104 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA004305 a mbo:MassSpectrum ;
+    dcterms:creator "C. Gallampois (Umea), E. Schymanski (Eawag), W. Brack (UFZ)" ;
+    dcterms:date "2014-06-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA004305" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Multi-criteria approach for tentative identification of polyaromatic river mutagens" ] ;
+    dcterms:rights "Copyright (C) Eawag, 2014 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "Direct infusion experiment" ;
+            mbo:flow_rate "5 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "APCI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "N/A min" ;
+            mbo:solvent "A methanol",
+                "B N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,4-dichloro-1-(4-nitrophenoxy)benzene",
+                "NIP",
+                "Nitrofen" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.829803e+02 ;
+            rdfs:seeAlso cas:1836-75-5,
+                chemspider:15010,
+                pubchem:CID15787 ;
+            schema:inChI "InChI=1S/C12H7Cl2NO3/c13-8-1-6-12(11(14)7-8)18-10-4-2-9(3-5-10)15(16)17/h1-7H" ;
+            schema:inChIKey inchikey:XITQUSLLOSKDTB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H7Cl2NO3" ;
+            schema:name "2,4-dichloro-1-(4-nitrophenoxy)benzene",
+                "NIP",
+                "Nitrofen" ;
+            schema:smiles "C1=CC(=CC=C1[N+](=O)[O-])OC2=C(C=C(C=C2)Cl)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 2.6224e+03 ;
+            mbo:mz 1.170584e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.3007e+03 ;
+            mbo:mz 2.689757e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.43705e+04 ;
+            mbo:mz 2.819727e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 6.203755e+05 ;
+            mbo:mz 1.380196e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.2708e+03 ;
+            mbo:mz 1.609566e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.064712e+05 ;
+            mbo:mz 1.719806e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 171 ],
+        [ mbo:intensity 5.979e+03 ;
+            mbo:mz 2.359796e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 8.8305e+03 ;
+            mbo:mz 2.369879e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.51821e+04 ;
+            mbo:mz 2.470038e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 3.1248e+04 ;
+            mbo:mz 2.519747e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 8.7257e+03 ;
+            mbo:mz 2.529785e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.829808e+02 ;
+            mbo:precursor_mz 2.829808e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-000i-0910000000-89c47b05edc3903bf1db" ;
+    rdfs:comment "INTERNAL_ID 43" ;
+    skos:definition "Nitrofen; APCI-ITFT; MS2; CE: 35%; R=30000; [M]-" .
+

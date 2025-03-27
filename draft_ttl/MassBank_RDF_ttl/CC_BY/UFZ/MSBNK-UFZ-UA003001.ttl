@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA003001 a mbo:MassSpectrum ;
+    dcterms:creator "C. Gallampois (Umea), E. Schymanski (Eawag), W. Brack (UFZ)" ;
+    dcterms:date "2014-06-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA003001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Multi-criteria approach for tentative identification of polyaromatic river mutagens" ] ;
+    dcterms:rights "Copyright (C) Eawag, 2014 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "Direct infusion experiment" ;
+            mbo:flow_rate "5 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "N/A min" ;
+            mbo:solvent "A methanol",
+                "B N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carbamazepine",
+                "benzo[b][1]benzazepine-11-carboxamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.36095e+02 ;
+            rdfs:seeAlso cas:298-46-4,
+                chemspider:2457,
+                pubchem:CID2554 ;
+            schema:inChI "InChI=1S/C15H12N2O/c16-15(18)17-13-7-3-1-5-11(13)9-10-12-6-2-4-8-14(12)17/h1-10H,(H2,16,18)" ;
+            schema:inChIKey inchikey:FFGPTBGBLSHEPO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H12N2O" ;
+            schema:name "Carbamazepine",
+                "benzo[b][1]benzazepine-11-carboxamide" ;
+            schema:smiles "c1ccc2c(c1)C=Cc1ccccc1N2C(=O)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.409893e+06 ;
+            mbo:mz 1.920811e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 6.17498e+04 ;
+            mbo:mz 1.930886e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.282582e+07 ;
+            mbo:mz 1.940965e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.566804e+06 ;
+            mbo:mz 2.20076e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 69 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.371022e+02 ;
+            mbo:precursor_mz 2.371022e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-0900000000-ff23826da10bdf95f991" ;
+    rdfs:comment "INTERNAL_ID 30" ;
+    skos:definition "Carbamazepine; ESI-ITFT; MS2; CE: 35%; R=30000; [M+H]+" .
+

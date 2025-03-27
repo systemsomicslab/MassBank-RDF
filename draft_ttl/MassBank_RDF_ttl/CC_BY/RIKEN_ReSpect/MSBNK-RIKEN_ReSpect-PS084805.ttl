@@ -1,0 +1,69 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS084805 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS084805" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,5,7,3',4'-Pentahydroxy-8-O-glucosylflavone",
+                "3,5,7,8,3',4'-Hexahydroxyflavone-8-glucoside",
+                "Gosp-8-Glc",
+                "Gossypin",
+                "gossypetin-8-glucoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavonol CLASS3 Gossypetin glycoside" ;
+            mbo:ch_exact_mass 4.80378e+02 ;
+            rdfs:seeAlso cas:652-78-8,
+                pubchem:CID5281621 ;
+            schema:inChI "InChI=1S/C21H20O13/c22-5-11-13(27)15(29)17(31)21(32-11)34-19-10(26)4-9(25)12-14(28)16(30)18(33-20(12)19)6-1-2-7(23)8(24)3-6/h1-4,11,13,15,17,21-27,29-31H,5H2" ;
+            schema:inChIKey inchikey:SJRXVLUZMMDCNG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H20O13" ;
+            schema:name "3,5,7,3',4'-Pentahydroxy-8-O-glucosylflavone",
+                "3,5,7,8,3',4'-Hexahydroxyflavone-8-glucoside",
+                "Gosp-8-Glc",
+                "Gossypin",
+                "gossypetin-8-glucoside" ;
+            schema:smiles "C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C(=C(C=C3O)O)OC4C(C(C(C(O4)CO)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.109e+03 ;
+            mbo:mz 3.17e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 2.2514e+04 ;
+            mbo:mz 3.18e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 305 ],
+        [ mbo:intensity 7.3806e+04 ;
+            mbo:mz 3.19e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.47e+03 ;
+            mbo:mz 3.2e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 88 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.8139e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0009000000-b550f81893bc2f7950bf" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "3,5,7,8,3',4'-Hexahydroxyflavone-8-glucoside, Gosp-8-Glc, gossypetin-8-glucoside, 3,5,7,3',4'-Pentahydroxy-8-O-glucosylflavone, Gossypin; LC-ESI-QQ; MS2" .
+

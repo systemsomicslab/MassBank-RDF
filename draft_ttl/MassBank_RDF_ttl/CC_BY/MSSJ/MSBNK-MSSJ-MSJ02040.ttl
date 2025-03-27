@@ -1,0 +1,77 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02040 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2022-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02040" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mori K, Osada K, Amaike M. Tetrahedron: Asymmetry. 2015 August 31; 26(15-16):861-867. doi:10.1016/j.tetasy.2015.06.011." ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.54 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,3R)-(+)-Methyl syn-2,3-dihydroxyoctanoate" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.901205e+02 ;
+            rdfs:seeAlso chemspider:110567630,
+                pubchem:CID129322515 ;
+            schema:inChI "InChI=1S/C9H18O4/c1-3-4-5-6-7(10)8(11)9(12)13-2/h7-8,10-11H,3-6H2,1-2H3/t7-,8+/m1/s1" ;
+            schema:inChIKey inchikey:FLIBQUYKZOKSLL-SFYZADRCSA-N ;
+            schema:molecularFormula "C9H18O4" ;
+            schema:name "(2S,3R)-(+)-Methyl syn-2,3-dihydroxyoctanoate" ;
+            schema:smiles "O[C@H](CCCCC)[C@H](O)C(=O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 4.1809e+00 ;
+            mbo:mz 8.3085e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2.52138e+01 ;
+            mbo:mz 8.9025e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 252 ],
+        [ mbo:intensity 1.20529e+01 ;
+            mbo:mz 9.0031e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.01097e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.4141e+00 ;
+            mbo:mz 1.021e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 4.1149e+00 ;
+            mbo:mz 1.90122e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 2.61602e+01 ;
+            mbo:mz 1.91128e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 261 ],
+        [ mbo:intensity 3.8277e+00 ;
+            mbo:mz 1.92129e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 38 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0udi-2900000000-fd8dcc1788977dbf0c0c" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "(2S,3R)-(+)-Methyl syn-2,3-dihydroxyoctanoate; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

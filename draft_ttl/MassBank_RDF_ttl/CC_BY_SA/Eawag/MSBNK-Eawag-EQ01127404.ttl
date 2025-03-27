@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01127404 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01127404" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.650 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Iprobenfos",
+                "di(propan-2-yloxy)phosphorylsulfanylmethylbenzene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.880949e+02 ;
+            rdfs:seeAlso cas:26087-47-8,
+                chemspider:30753,
+                pubchem:CID33294 ;
+            schema:inChI "InChI=1S/C13H21O3PS/c1-11(2)15-17(14,16-12(3)4)18-10-13-8-6-5-7-9-13/h5-9,11-12H,10H2,1-4H3" ;
+            schema:inChIKey inchikey:FCOAHACKGGIURQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H21O3PS" ;
+            schema:name "Iprobenfos",
+                "di(propan-2-yloxy)phosphorylsulfanylmethylbenzene" ;
+            schema:smiles "CC(C)OP(=O)(OC(C)C)SCC1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 5.361974e+05 ;
+            mbo:mz 6.50387e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.725184e+08 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.891021e+02 ;
+            mbo:precursor_mz 2.891022e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-9000000000-0c37489ebb7d58a94778" ;
+    rdfs:comment "UCHEM_ID 11274" ;
+    skos:definition "Iprobenfos; LC-ESI-QFT; MS2; CE: 60%; R=17500; [M+H]+" .
+

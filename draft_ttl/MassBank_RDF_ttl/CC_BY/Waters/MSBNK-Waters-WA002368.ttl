@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002368 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2012-05-21)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002368" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "15.600 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phenprobamate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.790946e+02 ;
+            rdfs:seeAlso cas:673-31-4 ;
+            schema:inChI "InChI=1S/C10H13NO2/c11-10(12)13-8-4-7-9-5-2-1-3-6-9/h1-3,5-6H,4,7-8H2,(H2,11,12)" ;
+            schema:inChIKey inchikey:CAMYKONBWHRPDD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H13NO2" ;
+            schema:name "Phenprobamate" ;
+            schema:smiles "NC(=O)OCCCc(c1)cccc1" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 9.1e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.1e+01 ;
+            mbo:mz 9.2e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 5.76e+02 ;
+            mbo:mz 1.19e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 576 ],
+        [ mbo:intensity 4.7e+01 ;
+            mbo:mz 1.2e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.37e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 1.49e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 1.51e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 1.8e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.05e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-00kf-9600000000-f1d12fd68ed30a1c7a4c" ;
+    skos:definition "Phenprobamate; LC-ESI-Q; MS; POS; 30 V" .
+

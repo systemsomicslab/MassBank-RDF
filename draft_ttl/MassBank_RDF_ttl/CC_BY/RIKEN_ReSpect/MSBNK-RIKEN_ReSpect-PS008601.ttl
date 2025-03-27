@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS008601 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS008601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Butyric acid",
+                "1-Propanecarboxylic acid",
+                "Butyric acid",
+                "Ethylacetic acid",
+                "Tetranoic Acid",
+                "butyrate",
+                "n-Butanic Acid",
+                "n-Propylformic Acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Tetranoic acid" ;
+            mbo:ch_exact_mass 8.8106e+01 ;
+            rdfs:seeAlso cas:107-92-6,
+                pubchem:CID264 ;
+            schema:inChI "InChI=1S/C4H8O2/c1-2-3-4(5)6/h2-3H2,1H3,(H,5,6)" ;
+            schema:inChIKey inchikey:FERIUCNNQQJTOY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H8O2" ;
+            schema:name "1-Butyric acid",
+                "1-Propanecarboxylic acid",
+                "Butyric acid",
+                "Ethylacetic acid",
+                "Tetranoic Acid",
+                "butyrate",
+                "n-Butanic Acid",
+                "n-Propylformic Acid" ;
+            schema:smiles "CCCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.773e+04 ;
+            mbo:mz 5.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 172 ],
+        [ mbo:intensity 1.03022e+05 ;
+            mbo:mz 6e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 639 ],
+        [ mbo:intensity 2.6438e+04 ;
+            mbo:mz 8.7e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 1.61183e+05 ;
+            mbo:mz 8.8e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.807e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-01p9-9000000000-6bf516cb79c1e8f6bc3c" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Butyric acid, butyrate, 1-Propanecarboxylic acid, Tetranoic Acid, Ethylacetic acid, n-Propylformic Acid, 1-Butyric acid, n-Butanic Acid; LC-ESI-QQ; MS2" .
+

@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001801 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001801" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Piperazineethanol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.301106e+02 ;
+            rdfs:seeAlso cas:103-76-4,
+                pubchem:CID7677 ;
+            schema:inChI "InChI=1S/C6H14N2O/c9-6-5-8-3-1-7-2-4-8/h7,9H,1-6H2" ;
+            schema:inChIKey inchikey:WFCSWCVEJLETKA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H14N2O" ;
+            schema:name "1-Piperazineethanol" ;
+            schema:smiles "OCCN1CCNCC1" ] ;
+    mbo:has_peak [ mbo:intensity 2.452318e+00 ;
+            mbo:mz 4.404948e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 2.302059e+00 ;
+            mbo:mz 1.291022e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.311179e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.892857e+00 ;
+            mbo:mz 5.604948e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.271866e+00 ;
+            mbo:mz 5.806513e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.126638e+00 ;
+            mbo:mz 7.006513e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 3.880392e+00 ;
+            mbo:mz 7.901784e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.112562e+00 ;
+            mbo:mz 8.40682e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.369082e+00 ;
+            mbo:mz 8.408078e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 8.152643e+00 ;
+            mbo:mz 8.807569e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 2.066657e+00 ;
+            mbo:mz 1.131073e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.311179e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-001i-2900000000-1297a4d08539be283d73" ;
+    skos:definition "1-Piperazineethanol; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

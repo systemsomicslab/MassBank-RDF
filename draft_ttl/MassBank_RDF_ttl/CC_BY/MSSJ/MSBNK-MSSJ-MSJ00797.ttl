@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00797 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-11-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00797" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "50 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "UDP-glucose" ;
+            mbo:ch_compound_class "UDP-sugar" ;
+            mbo:ch_exact_mass 5.66055e+02 ;
+            rdfs:seeAlso cas:133-89-1,
+                chemspider:8308,
+                pubchem:CID8629 ;
+            schema:inChI "InChI=1S/C15H24N2O17P2/c18-3-5-8(20)10(22)12(24)14(32-5)33-36(28,29)34-35(26,27)30-4-6-9(21)11(23)13(31-6)17-2-1-7(19)16-15(17)25/h1-2,5-6,8-14,18,20-24H,3-4H2,(H,26,27)(H,28,29)(H,16,19,25)/t5-,6-,8-,9-,10+,11-,12-,13-,14-/m1/s1" ;
+            schema:inChIKey inchikey:HSCJRCZFDFQWRP-JZMIEXBBSA-N ;
+            schema:molecularFormula "C15H24N2O17P2" ;
+            schema:name "UDP-glucose" ;
+            schema:smiles "C1=CN(C(=O)NC1=O)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)OP(=O)(O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.49086e+00 ;
+            mbo:mz 7.89579e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.6533e-01 ;
+            mbo:mz 3.230268e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 446 ],
+        [ mbo:intensity 8.9202e-01 ;
+            mbo:mz 9.69685e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 598 ],
+        [ mbo:intensity 2.1628e-01 ;
+            mbo:mz 1.110189e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 1.2595e-01 ;
+            mbo:mz 1.389789e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 1.341e-01 ;
+            mbo:mz 1.509788e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 4.3939e-01 ;
+            mbo:mz 1.58924e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 294 ],
+        [ mbo:intensity 2.8166e-01 ;
+            mbo:mz 2.109995e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 5.2756e-01 ;
+            mbo:mz 2.4101e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 354 ],
+        [ mbo:intensity 3.9853e-01 ;
+            mbo:mz 2.729555e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 267 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.650477e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00ba-9342000000-07fbb72e4505e19c6c59" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "UDP-glucose; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 50 V" .
+

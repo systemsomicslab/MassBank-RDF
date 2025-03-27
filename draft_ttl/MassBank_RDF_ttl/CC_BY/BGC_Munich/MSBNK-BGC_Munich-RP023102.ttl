@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP023102 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP023102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.576 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3R,4S,5S,6R)-2-[(2S,3S,4R,5R)-4-hydroxy-2,5-bis(hydroxymethyl)-2-[(2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxolan-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+                "D(+)-Melezitose",
+                "Melezitose" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 5.04169e+02 ;
+            rdfs:seeAlso cas:597-12-6,
+                chemspider:83787,
+                pubchem:CID92817 ;
+            schema:inChI "InChI=1S/C18H32O16/c19-1-5-8(23)11(26)13(28)16(30-5)32-15-10(25)7(3-21)33-18(15,4-22)34-17-14(29)12(27)9(24)6(2-20)31-17/h5-17,19-29H,1-4H2/t5-,6-,7-,8-,9-,10-,11+,12+,13-,14-,15+,16-,17-,18+/m1/s1" ;
+            schema:inChIKey inchikey:QWIZNVHXZXRPDR-WSCXOGSTSA-N ;
+            schema:molecularFormula "C18H32O16" ;
+            schema:name "(2R,3R,4S,5S,6R)-2-[(2S,3S,4R,5R)-4-hydroxy-2,5-bis(hydroxymethyl)-2-[(2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxolan-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+                "D(+)-Melezitose",
+                "Melezitose" ;
+            schema:smiles "O1[C@H](CO)[C@@H](O)[C@H](O)[C@@H](O)[C@H]1O[C@@]3(O[C@@H]([C@@H](O)[C@@H]3O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)CO)CO" ] ;
+    mbo:has_peak [ mbo:intensity 1.14e+02 ;
+            mbo:mz 1.450497e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 483 ],
+        [ mbo:intensity 1.06e+02 ;
+            mbo:mz 1.460525e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 449 ],
+        [ mbo:intensity 2.36e+02 ;
+            mbo:mz 1.630594e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.8e+01 ;
+            mbo:mz 2.051099e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 161 ],
+        [ mbo:intensity 5.4e+01 ;
+            mbo:mz 2.890926e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 229 ],
+        [ mbo:intensity 5.6e+01 ;
+            mbo:mz 3.071055e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 237 ],
+        [ mbo:intensity 4.2e+01 ;
+            mbo:mz 3.081086e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 178 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.251128e+02 ;
+            mbo:precursor_mz 5.051763e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-08fs-0911000000-0cd0debb1546a419c619" ;
+    rdfs:comment "INTERNAL_ID 231" ;
+    skos:definition "D(+)-Melezitose; LC-ESI-QTOF; MS2; CE: 20; R=; [M+H]+" .
+

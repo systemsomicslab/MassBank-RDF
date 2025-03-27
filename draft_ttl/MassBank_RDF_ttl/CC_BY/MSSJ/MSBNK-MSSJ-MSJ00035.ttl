@@ -1,0 +1,83 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00035 a mbo:MassSpectrum ;
+    dcterms:creator "Hiroshi Moriwaki, Shinshu University" ;
+    dcterms:date "2017-07-13 (Created 2016-06-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00035" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Abstract 1C-O1-1605 of the 64th Annual Conference on Mass Spectrometry, Japan (May 18, 2016)" ] ;
+    dcterms:rights "Hiroshi Moriwaki, Shinshu University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-MS2010A, Shimadzu" ;
+            mbo:column_name "TSK-gel ODS-120Z (C18 5.0 microm, 2.0 x 150 mm)" ;
+            mbo:flow_gradient "90/10 at 0-5 min, 10/90 at 10-20 min." ;
+            mbo:flow_rate "200 microL/min." ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "14.6 min" ;
+            mbo:solvent " ",
+                ".",
+                "A",
+                "B",
+                "E",
+                "L",
+                "N",
+                "O",
+                "S",
+                "T",
+                "V",
+                "a",
+                "c",
+                "e",
+                "i",
+                "l",
+                "n",
+                "o",
+                "r",
+                "s",
+                "t",
+                "w" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Perylene" ;
+            mbo:ch_compound_class "Non-Natural Product" ;
+            mbo:ch_exact_mass 2.520939e+02 ;
+            rdfs:seeAlso pubchem:CID9142 ;
+            schema:inChI "InChI=1S/C20H12/c1-5-13-6-2-11-17-18-12-4-8-14-7-3-10-16(20(14)18)15(9-1)19(13)17/h1-12H" ;
+            schema:inChIKey inchikey:CSHWQDPOILHKBI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H12" ;
+            schema:name "Perylene" ;
+            schema:smiles "C1=CC2=C3C(=C1)C4=CC=CC5=C4C(=CC=C5)C3=CC=C2" ] ;
+    mbo:has_peak [ mbo:intensity 4.6575e+04 ;
+            mbo:mz 1.0495e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 420 ],
+        [ mbo:intensity 1.5977e+04 ;
+            mbo:mz 1.059e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 2.7688e+04 ;
+            mbo:mz 1.4595e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 1.10777e+05 ;
+            mbo:mz 2.52e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0udi-0790000000-0f7e9b0f1d46494100c8" ;
+    rdfs:comment "Concentration of perylene solution 1 mg/ L; Injection volume 10 microL;. Post column addition of NaAuCl4 acetonitrile solution (5 mg /L) at 0.05 mL/min." ;
+    skos:definition "Perylene; LC-ESI-Q; MS; Positive" .
+

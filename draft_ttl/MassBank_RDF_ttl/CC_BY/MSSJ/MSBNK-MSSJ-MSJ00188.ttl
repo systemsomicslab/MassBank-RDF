@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00188 a mbo:MassSpectrum ;
+    dcterms:creator "Hidenori Takahashi, Mass Spectrometry Research Laboratory, Shimadzu Corporation, 1 Nishinokyo-Kuwabaracho Nakagyo-ku, Kyoto, 604-8511, Japan." ;
+    dcterms:date "2020-02-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00188" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Hidenori Takahashi, Yuji Shimabukuro, Daiki Asakawa, Shosei Yamauchi, Sadanori Sekiya, Shinichi Iwamoto, Motoi Wada, Koichi Tanaka, \"Structural Analysis of Phospholipid Using Hydrogen Abstraction Dissociation and Oxygen Attachment Dissociation in Tandem Mass Spectrometry\", Anal. Chem., 90 (12), 7230-7238 (2018). DOI:10.1021/acs.analchem.8b00322." ] ;
+    dcterms:rights "Hidenori Takahashi, Mass Spectrometry Research Laboratory, Shimadzu Corporation, 1 Nishinokyo-Kuwabaracho Nakagyo-ku, Kyoto, 604-8511, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "MALDI-QITTOF noncommercial prototype model (Shimadzu Corporation, Kyoto, Japan)" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "MALDI-QITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS3" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(9Z-Octadecenoyl)-sn-glycero-3-phosphocholine",
+                "Lyso-PC 18:1(9Z)" ;
+            mbo:ch_compound_class "Natural product; Phospholipid" ;
+            mbo:ch_exact_mass 5.213481e+02 ;
+            rdfs:seeAlso chemspider:4033747,
+                pubchem:CID16081932 ;
+            schema:inChI "InChI=1S/C26H52NO7P/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-26(29)32-23-25(28)24-34-35(30,31)33-22-21-27(2,3)4/h12-13,25,28H,5-11,14-24H2,1-4H3/b13-12-/t25-/m1/s1" ;
+            schema:inChIKey inchikey:YAMUFBLWGFFICM-PTGWMXDISA-N ;
+            schema:molecularFormula "C26H52NO7P" ;
+            schema:name "1-(9Z-Octadecenoyl)-sn-glycero-3-phosphocholine",
+                "Lyso-PC 18:1(9Z)" ;
+            schema:smiles "CCCCCCCC/C=C\\CCCCCCCC(=O)OC[C@H](COP(=O)([O-])OCC[N+](C)(C)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 1.84073e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.58e+00 ;
+            mbo:mz 3.44488e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 3.816e+00 ;
+            mbo:mz 3.51287e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.047e+00 ;
+            mbo:mz 3.59056e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.959e+00 ;
+            mbo:mz 3.88226e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.587e+00 ;
+            mbo:mz 4.2527e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.081e+00 ;
+            mbo:mz 4.53708e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.383503e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-001i-0900000000-63318e7991daf258cfca" ;
+    rdfs:comment "The lipid standard was purchased from Avanti Polar Lipids (Alabaster, AL)." ;
+    skos:definition "1-(9Z-Octadecenoyl)-sn-glycero-3-phosphocholine; MALDI-QITTOF; MS3; POSITIVE; [M+H+O]+; Low-energy CID" .
+

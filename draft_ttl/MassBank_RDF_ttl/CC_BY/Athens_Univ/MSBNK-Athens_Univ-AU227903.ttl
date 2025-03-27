@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU227903 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2018-12-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU227903" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.693 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-chloro-N-(2-morpholin-4-ylethyl)benzamide",
+                "Moclobemide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.680979e+02 ;
+            rdfs:seeAlso cas:71320-77-9,
+                chemspider:4087,
+                pubchem:CID4235 ;
+            schema:inChI "InChI=1S/C13H17ClN2O2/c14-12-3-1-11(2-4-12)13(17)15-5-6-16-7-9-18-10-8-16/h1-4H,5-10H2,(H,15,17)" ;
+            schema:inChIKey inchikey:YHXISWVBGDMDLQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H17ClN2O2" ;
+            schema:name "4-chloro-N-(2-morpholin-4-ylethyl)benzamide",
+                "Moclobemide" ;
+            schema:smiles "c1cc(ccc1C(=O)NCCN2CCOCC2)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 7.12364e+05 ;
+            mbo:mz 1.389933e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 352 ],
+        [ mbo:intensity 4.2584e+04 ;
+            mbo:mz 1.399966e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.7466e+05 ;
+            mbo:mz 1.409903e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 2.022728e+06 ;
+            mbo:mz 1.820355e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.07436e+05 ;
+            mbo:mz 1.830386e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 3.52244e+05 ;
+            mbo:mz 1.840327e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 174 ],
+        [ mbo:intensity 1.6072e+04 ;
+            mbo:mz 1.850357e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.891018e+02 ;
+            mbo:precursor_mz 2.691051e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-001i-0900000000-7c6da118140b06ffb12d" ;
+    rdfs:comment "INTERNAL_ID 2279" ;
+    skos:definition "Moclobemide; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

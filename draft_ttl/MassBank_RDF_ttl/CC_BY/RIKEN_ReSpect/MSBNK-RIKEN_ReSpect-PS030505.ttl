@@ -1,0 +1,81 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS030505 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS030505" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Butyryl-CoA",
+                "butanoyl-CoA",
+                "n-Butyryl coenzyme A lithium salt hydrate" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 CoA" ;
+            mbo:ch_exact_mass 8.37636e+02 ;
+            rdfs:seeAlso cas:2140-48-9,
+                pubchem:CID439173 ;
+            schema:inChI "InChI=1S/C25H42N7O17P3S/c1-4-5-16(34)53-9-8-27-15(33)6-7-28-23(37)20(36)25(2,3)11-46-52(43,44)49-51(41,42)45-10-14-19(48-50(38,39)40)18(35)24(47-14)32-13-31-17-21(26)29-12-30-22(17)32/h12-14,18-20,24,35-36H,4-11H2,1-3H3,(H,27,33)(H,28,37)(H,41,42)(H,43,44)(H2,26,29,30)(H2,38,39,40)" ;
+            schema:inChIKey inchikey:CRFNGMNYKDXRTN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H42N7O17P3S" ;
+            schema:name "Butyryl-CoA",
+                "butanoyl-CoA",
+                "n-Butyryl coenzyme A lithium salt hydrate" ;
+            schema:smiles "CCCC(=O)SCCNC(=O)CCNC(=O)C(C(C)(C)COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)N2C=NC3=C2N=CN=C3N)O)OP(=O)(O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.069e+03 ;
+            mbo:mz 2.29e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 2.9014e+04 ;
+            mbo:mz 3.3e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 539 ],
+        [ mbo:intensity 5.3791e+04 ;
+            mbo:mz 3.31e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.6503e+04 ;
+            mbo:mz 3.32e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 492 ],
+        [ mbo:intensity 3.907e+03 ;
+            mbo:mz 4.27e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 73 ],
+        [ mbo:intensity 1.9915e+04 ;
+            mbo:mz 4.28e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 370 ],
+        [ mbo:intensity 6.079e+03 ;
+            mbo:mz 8.38e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 3.964e+03 ;
+            mbo:mz 8.4e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 74 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.3773e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-001i-0009100000-476900e65eae2602eeaf" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Butyryl-CoA, butanoyl-CoA, n-Butyryl coenzyme A lithium salt hydrate; LC-ESI-QQ; MS2" .
+

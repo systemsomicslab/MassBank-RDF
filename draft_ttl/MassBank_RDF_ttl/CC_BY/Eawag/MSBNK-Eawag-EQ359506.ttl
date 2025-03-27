@@ -1,0 +1,111 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ359506 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ359506" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "90 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "3.1 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Benzenesulfonamide",
+                "Benzenesulfonimidic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.570197e+02 ;
+            rdfs:seeAlso cas:98-10-2,
+                chemspider:7092,
+                pubchem:CID7370 ;
+            schema:inChI "InChI=1S/C6H7NO2S/c7-10(8,9)6-4-2-1-3-5-6/h1-5H,(H2,7,8,9)" ;
+            schema:inChIKey inchikey:KHBQMWCZKVMBLN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H7NO2S" ;
+            schema:name "Benzenesulfonamide",
+                "Benzenesulfonimidic acid" ;
+            schema:smiles "c1ccc(cc1)S(=N)(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.179551e+05 ;
+            mbo:mz 5.00151e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 2.90583e+04 ;
+            mbo:mz 7.998e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.711408e+05 ;
+            mbo:mz 8.10334e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 8.62791e+04 ;
+            mbo:mz 9.40413e+01 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 9.990334e+06 ;
+            mbo:mz 9.5049e+01 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.049032e+06 ;
+            mbo:mz 1.050446e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 705 ],
+        [ mbo:intensity 7.237874e+05 ;
+            mbo:mz 5.10229e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 3.053876e+06 ;
+            mbo:mz 5.30386e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 305 ],
+        [ mbo:intensity 1.939113e+05 ;
+            mbo:mz 5.50178e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 3.54084e+04 ;
+            mbo:mz 6.50022e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 4.82827e+04 ;
+            mbo:mz 6.70542e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.31479e+04 ;
+            mbo:mz 6.8997e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.12584e+04 ;
+            mbo:mz 7.50228e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 5.6776e+06 ;
+            mbo:mz 7.70384e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 568 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.580266e+02 ;
+            mbo:precursor_mz 1.58027e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-054k-9300000000-a07e15d8e1579565b0ec" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3595" ;
+    skos:definition "Benzenesulfonamide; LC-ESI-QFT; MS2; CE: 90; R=35000; [M+H]+" .
+

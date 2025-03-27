@@ -1,0 +1,66 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00249 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00249" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Solanine" ;
+            mbo:ch_compound_class "Natural Product; Alkaloid" ;
+            mbo:ch_exact_mass 8.67498e+02 ;
+            rdfs:seeAlso cas:20562-02-1,
+                knapsack:C00002262,
+                pubchem:CID13003 ;
+            schema:inChI "InChI=1S/C45H73NO15/c1-19-6-9-27-20(2)31-28(46(27)16-19)15-26-24-8-7-22-14-23(10-12-44(22,4)25(24)11-13-45(26,31)5)57-43-40(61-41-37(54)35(52)32(49)21(3)56-41)39(34(51)30(18-48)59-43)60-42-38(55)36(53)33(50)29(17-47)58-42/h7,19-21,23-43,47-55H,6,8-18H2,1-5H3/t19-,20+,21-,23-,24+,25-,26-,27-,28-,29+,30+,31-,32-,33+,34-,35+,36-,37+,38+,39-,40+,41-,42-,43+,44-,45-/m0/s1" ;
+            schema:inChIKey inchikey:ZGVSETXHNHBTRK-NPQOSWHTSA-N ;
+            schema:molecularFormula "C45H73NO15" ;
+            schema:name "Solanine" ;
+            schema:smiles "[C@@H](O1)(O[C@H](C9)CC[C@@](C)(C9=8)[C@]([C@](CC8)([H])4)(CC[C@]([C@]57[H])([C@]([H])4C[C@]([H])(N(C6)[C@]([H])([C@H]7C)CC[C@@H]6C)5)C)[H])[C@H](O[C@@H]([C@@H]3O)O[C@H]([C@@H]([C@@H](O)3)O)C)[C@@H](O[C@@H]([C@@H]2O)O[C@@H]([C@H]([C@@H]2O)O)CO)[C@@H](O)[C@H]1CO" ] ;
+    mbo:has_peak [ mbo:intensity 4.43622e+05 ;
+            mbo:mz 8.685069e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.1068e+05 ;
+            mbo:mz 8.6951e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 474 ],
+        [ mbo:intensity 5.4543e+04 ;
+            mbo:mz 8.705128e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 8.903e+03 ;
+            mbo:mz 8.715153e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.685069e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0000000090-49ce944ac41783926a06" ;
+    rdfs:comment "[Raw Data] CB083_Solanine_pos_50eV_isCID-10eV_rep000003.txt" ;
+    skos:definition "Solanine; LC-ESI-QTOF; MS2; [M+H]+; CE: 50eV" .
+

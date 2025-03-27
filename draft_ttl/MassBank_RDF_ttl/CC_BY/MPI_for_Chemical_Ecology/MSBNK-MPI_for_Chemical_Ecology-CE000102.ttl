@@ -1,0 +1,59 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000102 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-11)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, A. Svatos, R.K. Maddula, C. Boettcher and S. Boecker. Computing fragmentation trees from tandem mass spectrometry data. Anal. Chem., 2011, 83, 1243-1251 doi:10.1021/ac101825k" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "738.349 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,4,5-Trimethoxycinnamic_acid" ;
+            mbo:ch_compound_class "Natural Product; Carboxylic acid" ;
+            mbo:ch_exact_mass 2.380841e+02 ;
+            rdfs:seeAlso pubchem:CID735755 ;
+            schema:inChI "InChI=1S/C12H14O5/c1-15-9-6-8(4-5-11(13)14)7-10(16-2)12(9)17-3/h4-7H,1-3H3,(H,13,14)/b5-4+" ;
+            schema:inChIKey inchikey:YTFVRYKNXDADBI-SNAWJCMRSA-N ;
+            schema:molecularFormula "C12H14O5" ;
+            schema:name "3,4,5-Trimethoxycinnamic_acid" ;
+            schema:smiles "COC1=CC(=CC(=C1OC)OC)/C=C/C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.609947e+06 ;
+            mbo:mz 2.390922e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.83427e+05 ;
+            mbo:mz 2.400954e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 1.127752e+05 ;
+            mbo:mz 2.410974e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-0090000000-8e90af2ac5bbe294b8f8" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "3,4,5-Trimethoxycinnamic_acid; LC-ESI-ITFT; MS; [M+H]+; isotope pattern" .
+

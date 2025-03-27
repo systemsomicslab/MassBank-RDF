@@ -1,0 +1,86 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02353 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2022-09-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02353" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Santa Clara, CA, USA) gas chromatograph." ;
+            mbo:column_name "DB-5MS UI 122-5532UI US0462866H (Agilent, Wilmington, USA) with the length 30 m, I.D. 0.25 mm, and thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.76 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-Ethylglycine" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso chemspider:280126,
+                pubchem:CID316542 ;
+            schema:inChI "InChI=1S/C4H9NO2/c1-2-5-3-4(6)7/h5H,2-3H2,1H3,(H,6,7)" ;
+            schema:inChIKey inchikey:YPIGGYHFMKJNKV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "N-Ethylglycine" ;
+            schema:smiles "CCNCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.4033e+00 ;
+            mbo:mz 5.7071e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 6.0084e+00 ;
+            mbo:mz 2.19152e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 1.4259e+00 ;
+            mbo:mz 2.20153e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.8281e+00 ;
+            mbo:mz 1.15093e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.26847e+01 ;
+            mbo:mz 1.6008e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 127 ],
+        [ mbo:intensity 1.0611e+00 ;
+            mbo:mz 1.6108e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 7.127e-01 ;
+            mbo:mz 1.62077e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.658e-01 ;
+            mbo:mz 2.0213e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.2931e+00 ;
+            mbo:mz 2.16143e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.1715e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.75539e+01 ;
+            mbo:mz 2.18154e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 275 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014i-0190000000-b45719480d077a4e9d39" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. The m/z value was adjusted with 217.1498." ;
+    skos:definition "N-Ethylglycine; GC-FI-TOF; MS; POSITIVE; FI; 10 kV; TBDMS" .
+

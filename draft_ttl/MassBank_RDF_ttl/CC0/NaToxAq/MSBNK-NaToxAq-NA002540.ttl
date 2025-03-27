@@ -1,0 +1,101 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002540 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2020-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002540" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2020 by Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30% (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "6.351 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(+)-Isocorydin",
+                "(6aS)-1,2,10-trimethoxy-6-methyl-5,6,6a,7-tetrahydro-4H-dibenzo[de,g]quinolin-11-ol",
+                "Isocorydine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.411627e+02 ;
+            rdfs:seeAlso cas:475-67-2,
+                chemspider:9737,
+                pubchem:CID10143 ;
+            schema:inChI "InChI=1S/C20H23NO4/c1-21-8-7-12-10-15(24-3)20(25-4)18-16(12)13(21)9-11-5-6-14(23-2)19(22)17(11)18/h5-6,10,13,22H,7-9H2,1-4H3/t13-/m0/s1" ;
+            schema:inChIKey inchikey:QELDJEKNFOQJOY-ZDUSSCGKSA-N ;
+            schema:molecularFormula "C20H23NO4" ;
+            schema:name "(+)-Isocorydin",
+                "(6aS)-1,2,10-trimethoxy-6-methyl-5,6,6a,7-tetrahydro-4H-dibenzo[de,g]quinolin-11-ol",
+                "Isocorydine" ;
+            schema:smiles "CN1CCC2=CC(=C(C3=C2[C@@H]1CC4=C3C(=C(C=C4)OC)O)OC)OC" ] ;
+    mbo:has_peak [ mbo:intensity 1.70751e+04 ;
+            mbo:mz 2.470754e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 3.521541e+05 ;
+            mbo:mz 3.111279e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 923 ],
+        [ mbo:intensity 2.191045e+05 ;
+            mbo:mz 3.421701e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 575 ],
+        [ mbo:intensity 4.75926e+04 ;
+            mbo:mz 2.480833e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 3.77144e+04 ;
+            mbo:mz 2.511067e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 6.7794e+03 ;
+            mbo:mz 2.640778e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.02216e+04 ;
+            mbo:mz 2.671017e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 3.809448e+05 ;
+            mbo:mz 2.791016e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.63695e+04 ;
+            mbo:mz 2.801094e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 6.16804e+04 ;
+            mbo:mz 2.961043e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 7.1605e+03 ;
+            mbo:mz 2.991277e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 19 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.421697e+02 ;
+            mbo:precursor_mz 3.4217e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-01tc-0097000000-b298b2a76f865b348e6f" ;
+    rdfs:comment "INTERNAL_ID 2324" ;
+    skos:definition "(+)-Isocorydin; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

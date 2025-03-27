@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN118301 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN118301" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "5 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.114 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Triphenyl phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.260708e+02 ;
+            rdfs:seeAlso cas:115-86-6,
+                chemspider:7988,
+                pubchem:CID8289 ;
+            schema:inChI "InChI=1S/C18H15O4P/c19-23(20-16-10-4-1-5-11-16,21-17-12-6-2-7-13-17)22-18-14-8-3-9-15-18/h1-15H" ;
+            schema:inChIKey inchikey:XZZNDPSIHUTMOC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H15O4P" ;
+            schema:name "Triphenyl phosphate" ;
+            schema:smiles "C1=CC=C(C=C1)OP(=O)(OC2=CC=CC=C2)OC3=CC=CC=C3" ] ;
+    mbo:has_peak [ mbo:intensity 2.498e+02 ;
+            mbo:mz 5.10228e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.079e+02 ;
+            mbo:mz 3.090676e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 5.75175e+04 ;
+            mbo:mz 3.270781e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.74e+02 ;
+            mbo:mz 7.70387e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 9.634e+02 ;
+            mbo:mz 1.520612e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 7.945e+02 ;
+            mbo:mz 1.530699e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.454e+02 ;
+            mbo:mz 1.680568e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 6.611e+02 ;
+            mbo:mz 2.150271e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.136e+02 ;
+            mbo:mz 2.280908e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.95e+02 ;
+            mbo:mz 2.330378e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.532e+02 ;
+            mbo:mz 2.510479e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 6 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.27078e+02 ;
+            mbo:precursor_mz 3.270781e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-004i-0009000000-8daf3c3dcdac8a84bf12" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Triphenyl phosphate; LC-ESI-QTOF; MS2; CE: 5eV; R=7000; [M+H]+" .
+

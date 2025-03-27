@@ -1,0 +1,47 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002165 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002165" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "C.I. Direct Yellow 12",
+                "DTXSID5041728" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.361349e+02 ;
+            rdfs:seeAlso cas:2870-32-8,
+                pubchem:CID17880 ;
+            schema:inChI "InChI=1S/C30H28N4O8S2/c1-3-41-27-15-11-23(12-16-27)31-33-25-9-7-21(29(19-25)43(35,36)37)5-6-22-8-10-26(20-30(22)44(38,39)40)34-32-24-13-17-28(18-14-24)42-4-2/h5-20H,3-4H2,1-2H3,(H,35,36,37)(H,38,39,40)/b6-5+,33-31+,34-32+" ;
+            schema:inChIKey inchikey:AVERNFJXXRIVQN-NLXQZVPMSA-N ;
+            schema:molecularFormula "C30H28N4O8S2" ;
+            schema:name "C.I. Direct Yellow 12",
+                "DTXSID5041728" ;
+            schema:smiles "CCOC1C=CC(=CC=1)/N=N/C1C=C(C(/C=C/C2=CC=C(C=C2S(O)(=O)=O)/N=N/C2C=CC(=CC=2)OCC)=CC=1)S(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 6.351276e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.351276e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-000i-0000009000-55ac2536c7e7b663a756" ;
+    skos:definition "C.I. Direct Yellow 12; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

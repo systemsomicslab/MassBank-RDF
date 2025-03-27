@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00644 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00644" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.271" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Psoralen" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.860317e+02 ;
+            rdfs:seeAlso cas:66-97-7,
+                chemspider:5964,
+                pubchem:CID6199 ;
+            schema:inChI "InChI=1S/C11H6O3/c12-11-2-1-7-5-8-3-4-13-9(8)6-10(7)14-11/h1-6H" ;
+            schema:inChIKey inchikey:ZCCUUQDIBDJBTK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H6O3" ;
+            schema:name "Psoralen" ;
+            schema:smiles "C1=CC(=O)OC2=CC3=C(C=CO3)C=C21" ] ;
+    mbo:has_peak [ mbo:intensity 1.03e+02 ;
+            mbo:mz 1.049912e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 2.2e+02 ;
+            mbo:mz 1.150531e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 1.150666e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.98e+02 ;
+            mbo:mz 1.310473e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 2.78e+02 ;
+            mbo:mz 1.430476e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 127 ],
+        [ mbo:intensity 4.2e+01 ;
+            mbo:mz 1.590431e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 3.4e+01 ;
+            mbo:mz 1.590492e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 2.18e+03 ;
+            mbo:mz 1.870377e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.87e+02 ;
+            mbo:precursor_mz 1.87039e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-000i-0900000000-75211365e04f08273288" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.851" ;
+    skos:definition "Psoralen; LC-ESI-QTOF; MS2; CE 10 ev; [M+H]+" .
+

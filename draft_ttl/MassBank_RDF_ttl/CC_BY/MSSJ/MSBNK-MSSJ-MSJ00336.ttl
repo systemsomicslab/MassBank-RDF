@@ -1,0 +1,58 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00336 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2020-11-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00336" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "p-Cresol sulfate" ;
+            mbo:ch_compound_class "Non-natural product; Aryl sulfate" ;
+            mbo:ch_exact_mass 1.880143e+02 ;
+            rdfs:seeAlso cas:3233-58-7,
+                chemspider:3806481,
+                pubchem:CID4615423 ;
+            schema:inChI "InChI=1S/C7H8O4S/c1-6-2-4-7(5-3-6)11-12(8,9)10/h2-5H,1H3,(H,8,9,10)" ;
+            schema:inChIKey inchikey:WGNAKZGUSRVWRH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H8O4S" ;
+            schema:name "p-Cresol sulfate" ;
+            schema:smiles "CC1=CC=C(C=C1)OS(=O)(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.1488e+03 ;
+            mbo:mz 1.070499e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 2.29345e+04 ;
+            mbo:mz 1.870049e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.183e+03 ;
+            mbo:mz 1.880095e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 1.377e+03 ;
+            mbo:mz 1.890031e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 60 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000i-0900000000-e3312ebc9179a1a8d066" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "p-Cresol sulfate; ESI-QTOF; MS; NEGATIVE" .
+

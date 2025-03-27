@@ -1,0 +1,57 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS084308 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS084308" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-deoxyphloridzin",
+                "Depz-pl" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Other CLASS3 Phloridzin" ;
+            mbo:ch_exact_mass 4.20414e+02 ;
+            rdfs:seeAlso pubchem:CID5080434 ;
+            schema:inChI "InChI=1S/C21H24O9/c22-10-16-18(26)19(27)20(28)21(30-16)29-15-9-12(23)8-14(25)17(15)13(24)7-6-11-4-2-1-3-5-11/h1-5,8-9,16,18-23,25-28H,6-7,10H2" ;
+            schema:inChIKey inchikey:NLGUKXQDDTZCDG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H24O9" ;
+            schema:name "4-deoxyphloridzin",
+                "Depz-pl" ;
+            schema:smiles "C1=CC=C(C=C1)CCC(=O)C2=C(C=C(C=C2OC3C(C(C(C(O3)CO)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.1479e+04 ;
+            mbo:mz 2.56e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2.73061e+05 ;
+            mbo:mz 2.57e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.1925e+04 ;
+            mbo:mz 4.19e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 80 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.194e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-8fd5aa1e0e2940b06dae" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Depz-pl, 4-deoxyphloridzin; LC-ESI-QQ; MS2" .
+

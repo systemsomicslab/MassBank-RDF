@@ -1,0 +1,125 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET201701 a mbo:MassSpectrum ;
+    dcterms:creator "A. Roesch, E. Schymanski, J. Hollender, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-01"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET201701" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Rösch, A.; Anliker, S.; Hollender, J. How Biotransformation Influences Toxicokinetics of Azole Fungicides in the Aquatic Invertebrate Gammarus Pulex. Environmental Science & Technology 2016, 50 (13), 7175–88. DOI:10.1021/acs.est.6b01301" ] ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "10 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters with guard column" ;
+            mbo:flow_gradient "87/13/0 at 0 min, 7/93/0 at 20 min, 0/0/100 at 20.2-26 min, 87/13/0 at 26.2 min, 87/13/0 at 32.3 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid",
+                "C isopropanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "PRZ_M477" ;
+            mbo:ch_compound_class "N/A; Environmental Transformation Products" ;
+            mbo:ch_exact_mass 4.760688e+02 ;
+            rdfs:seeAlso pubchem:CID133052774 ;
+            schema:inChI "InChI=1S/C18H22Cl2N4O5S/c1-2-4-23(18(28)24-5-3-22-10-24)6-7-29-15-11(19)8-13(25)16(14(15)20)30-9-12(21)17(26)27/h3,5,8,10,12,25H,2,4,6-7,9,21H2,1H3,(H,26,27)" ;
+            schema:inChIKey inchikey:IENWMYMSXABSSK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H22Cl2N4O5S" ;
+            schema:name "PRZ_M477" ;
+            schema:smiles "CCCN(CCOC1=C(Cl)C=C(O)C(SCC(N)C(O)=O)=C1Cl)C(=O)N1C=CN=C1" ] ;
+    mbo:has_peak [ mbo:intensity 7.4547e+03 ;
+            mbo:mz 6.90447e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 6.71884e+04 ;
+            mbo:mz 3.370539e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 730 ],
+        [ mbo:intensity 1.7322e+03 ;
+            mbo:mz 3.461431e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.2873e+03 ;
+            mbo:mz 3.710811e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 8.80299e+04 ;
+            mbo:mz 3.81044e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 956 ],
+        [ mbo:intensity 7.18601e+04 ;
+            mbo:mz 4.090387e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 780 ],
+        [ mbo:intensity 1.274e+03 ;
+            mbo:mz 4.221031e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.5613e+03 ;
+            mbo:mz 4.579037e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.3858e+03 ;
+            mbo:mz 4.710924e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 9.20061e+04 ;
+            mbo:mz 4.77076e+02 ;
+            mbo:peak_sequential_number 18 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.6236e+03 ;
+            mbo:mz 8.60964e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 5.2513e+03 ;
+            mbo:mz 2.31116e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 1.7814e+03 ;
+            mbo:mz 2.45113e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.408e+03 ;
+            mbo:mz 2.471303e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.3576e+03 ;
+            mbo:mz 2.581092e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 8.9603e+03 ;
+            mbo:mz 2.631399e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 7.6369e+03 ;
+            mbo:mz 2.931496e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 1.4256e+03 ;
+            mbo:mz 3.131647e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.912845e+02 ;
+            mbo:precursor_mz 4.770761e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 18 ;
+    mbo:pk_splash "splash10-057r-0018900000-55619e02aa2c0a0c3d36" ;
+    rdfs:comment "INTERNAL_ID 2017" ;
+    skos:definition "PRZ_M477; LC-ESI-QFT; MS2; CE: 10; R=35000; [M+H]+" .
+

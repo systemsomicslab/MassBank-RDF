@@ -1,0 +1,130 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00022 a mbo:MassSpectrum ;
+    dcterms:creator "Lege S, Zwiener C, Environmental Analytical Chemistry (EAC), University of Tuebingen" ;
+    dcterms:date "2015-11-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00022" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015, Environmental Analytical Chemistry (EAC), University of Tuebingen, Germany under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "6550 Q-TOF (Agilent Technologies)" ;
+            mbo:collision_energy "20.0V" ;
+            mbo:column_name "Flow injection" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "12000 (m/z 120) - 26000 (m/z 1000)" ;
+            mbo:solvent " ",
+                "%",
+                "(",
+                ")",
+                "+",
+                ".",
+                "0",
+                "1",
+                "2",
+                "5",
+                ":",
+                "A",
+                "H",
+                "M",
+                "N",
+                "O",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "m",
+                "n",
+                "o",
+                "t",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,6-Xylidine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.210892e+02 ;
+            rdfs:seeAlso chemspider:6630,
+                pubchem:CID6896 ;
+            schema:inChI "InChI=1S/C8H11N/c1-6-4-3-5-7(2)8(6)9/h3-5H,9H2,1-2H3" ;
+            schema:inChIKey inchikey:UFFBMTHBGFGIHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H11N" ;
+            schema:name "2,6-Xylidine" ;
+            schema:smiles "Cc1cccc(c1N)C" ] ;
+    mbo:has_peak [ mbo:intensity 9e+01 ;
+            mbo:mz 4.04934e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.141e+03 ;
+            mbo:mz 1.03054e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 288 ],
+        [ mbo:intensity 3.961e+03 ;
+            mbo:mz 1.050699e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.3e+02 ;
+            mbo:mz 1.060653e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 1.26e+03 ;
+            mbo:mz 1.070727e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 318 ],
+        [ mbo:intensity 1.13e+02 ;
+            mbo:mz 1.200803e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 9.72e+02 ;
+            mbo:mz 1.220959e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 245 ],
+        [ mbo:intensity 1.11e+02 ;
+            mbo:mz 5.10224e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 5.4e+01 ;
+            mbo:mz 6.70293e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.23e+02 ;
+            mbo:mz 6.80323e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.72e+03 ;
+            mbo:mz 7.70387e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 434 ],
+        [ mbo:intensity 1.92e+03 ;
+            mbo:mz 7.90542e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 484 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 9.40401e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 5.7e+01 ;
+            mbo:mz 9.50394e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.06e+02 ;
+            mbo:mz 9.50433e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 77 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.220964e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-0a6r-5900000000-a6314a94dc1796788f21" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "2,6-Xylidine; LC-ESI-QTOF; MS2; CE: 20.0V; [M+H]+" .
+

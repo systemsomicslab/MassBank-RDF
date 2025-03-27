@@ -1,0 +1,54 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP010211 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP010211" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "3.956 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-10-(3,5-dihydroxy-6-methyloxan-2-yl)oxyundec-2-enoic acid",
+                "ascr#17" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.302042e+02 ;
+            rdfs:seeAlso pubchem:CID86289688 ;
+            schema:inChI "InChI=1S/C17H30O6/c1-12(9-7-5-3-4-6-8-10-16(20)21)22-17-15(19)11-14(18)13(2)23-17/h8,10,12-15,17-19H,3-7,9,11H2,1-2H3,(H,20,21)/b10-8+" ;
+            schema:inChIKey inchikey:NEVPBIQTDNVVMK-CSKARUKUSA-N ;
+            schema:molecularFormula "C17H30O6" ;
+            schema:name "(E)-10-(3,5-dihydroxy-6-methyloxan-2-yl)oxyundec-2-enoic acid",
+                "ascr#17" ;
+            schema:smiles "CC(CCCCCC\\C=C\\C(O)=O)OC1OC(C)C(O)CC1O" ] ;
+    mbo:has_peak [ mbo:intensity 2.31578e+05 ;
+            mbo:mz 3.291994e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.291994e+02 ;
+            mbo:precursor_mz 3.29197e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-0009000000-cae06e1bda81715ee0d1" ;
+    rdfs:comment "INTERNAL_ID 102" ;
+    skos:definition "ascr#17; LC-ESI-QTOF; MS2; CE: 10; R=; [M-H]-" .
+

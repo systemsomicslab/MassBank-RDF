@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000214 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000214" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5S)-5-Hydroxy-1-(4-hydroxy-3-methoxyphenyl)-3-decanone",
+                "6-Gingerol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.941831e+02 ;
+            rdfs:seeAlso cas:23513-14-6,
+                pubchem:CID442793 ;
+            schema:inChI "InChI=1S/C17H26O4/c1-3-4-5-6-14(18)12-15(19)9-7-13-8-10-16(20)17(11-13)21-2/h8,10-11,14,18,20H,3-7,9,12H2,1-2H3/t14-/m0/s1" ;
+            schema:inChIKey inchikey:NLDDIKRKFXEWBK-AWEZNQCLSA-N ;
+            schema:molecularFormula "C17H26O4" ;
+            schema:name "(5S)-5-Hydroxy-1-(4-hydroxy-3-methoxyphenyl)-3-decanone",
+                "6-Gingerol" ;
+            schema:smiles "CCCCC[C@@H](CC(=O)CCC1=CC(=C(C=C1)O)OC)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.01183e+02 ;
+            mbo:mz 6.60465e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.76654e+02 ;
+            mbo:mz 1.170727e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 3.884884e+03 ;
+            mbo:mz 1.220375e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 388 ],
+        [ mbo:intensity 2.41151e+02 ;
+            mbo:mz 1.310502e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.370607e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.7036e+02 ;
+            mbo:mz 1.450659e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.51157e+02 ;
+            mbo:mz 1.62069e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.10382e+02 ;
+            mbo:mz 7.70393e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.08445e+02 ;
+            mbo:mz 7.90561e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.48306e+02 ;
+            mbo:mz 8.10723e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 3.92254e+02 ;
+            mbo:mz 9.10556e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.554599e+03 ;
+            mbo:mz 9.40427e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 155 ],
+        [ mbo:intensity 6.94459e+02 ;
+            mbo:mz 1.030571e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 1.40936e+02 ;
+            mbo:mz 1.070481e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.88112e+02 ;
+            mbo:mz 1.150578e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 29 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.951911e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-000i-1900000000-aefaf0623f9721907b4d" ;
+    skos:definition "Gingerol; LC-ESI-QTOF; MS2; CE:40 eV; [M+H]+" .
+

@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU156808 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU156808" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "1.014 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[2-[4-(6-fluoro-1,2-benzoxazol-3-yl)piperidin-1-yl]ethyl]-9-hydroxy-6,7,8,9-tetrahydropyrido[1,2-a]pyrimidin-4-one",
+                "9-OH-Risperidone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.121911e+02 ;
+            rdfs:seeAlso cas:144598-75-4,
+                pubchem:CID57568992 ;
+            schema:inChI "InChI=1S/C22H25FN4O3/c23-16-3-4-17-19(12-16)30-25-20(17)14-5-9-26(10-6-14)11-7-15-13-24-21-18(28)2-1-8-27(21)22(15)29/h3-4,12-14,18,28H,1-2,5-11H2" ;
+            schema:inChIKey inchikey:CSQXUYGPAMNXJT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H25FN4O3" ;
+            schema:name "3-[2-[4-(6-fluoro-1,2-benzoxazol-3-yl)piperidin-1-yl]ethyl]-9-hydroxy-6,7,8,9-tetrahydropyrido[1,2-a]pyrimidin-4-one",
+                "9-OH-Risperidone" ;
+            schema:smiles "C1=C(CCN2CCC(CC2)C2=NOC3=CC(F)=CC=C23)C(=O)N2CCCC(O)C2=N1" ] ;
+    mbo:has_peak [ mbo:intensity 5.68e+02 ;
+            mbo:mz 1.510957e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 446 ],
+        [ mbo:intensity 8.2e+02 ;
+            mbo:mz 3.011411e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 644 ],
+        [ mbo:intensity 1.228e+03 ;
+            mbo:mz 3.551516e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 964 ],
+        [ mbo:intensity 6.2e+02 ;
+            mbo:mz 3.711635e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 487 ],
+        [ mbo:intensity 1.272e+03 ;
+            mbo:mz 4.131916e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.269506e+02 ;
+            mbo:precursor_mz 4.131983e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-114i-0109400000-17a40a59a1a249f82330" ;
+    rdfs:comment "INTERNAL_ID 1568" ;
+    skos:definition "9-OH-Risperidone; LC-ESI-QTOF; MS2; HILIC; CE: 20 eV; R=35000; [M+H]+" .
+

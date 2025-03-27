@@ -1,0 +1,86 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02373 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2022-09-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02373" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Santa Clara, CA, USA) gas chromatograph." ;
+            mbo:column_name "DB-5MS UI 122-5532UI US0462866H (Agilent, Wilmington, USA) with the length 30 m, I.D. 0.25 mm, and thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "10.07 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Aminobutanoic acid" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso chemspider:116,
+                pubchem:CID119 ;
+            schema:inChI "InChI=1S/C4H9NO2/c5-3-1-2-4(6)7/h1-3,5H2,(H,6,7)" ;
+            schema:inChIKey inchikey:BTCSSZJGUNDROE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "4-Aminobutanoic acid" ;
+            schema:smiles "C(CC(=O)O)CN" ] ;
+    mbo:has_peak [ mbo:intensity 2.7496e+00 ;
+            mbo:mz 5.7071e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.5354e+00 ;
+            mbo:mz 3.33245e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.0479e+00 ;
+            mbo:mz 3.34243e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.0301e+00 ;
+            mbo:mz 1.37082e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.74166e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.38229e+01 ;
+            mbo:mz 2.75168e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 238 ],
+        [ mbo:intensity 9.0902e+00 ;
+            mbo:mz 2.76165e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 91 ],
+        [ mbo:intensity 1.5348e+00 ;
+            mbo:mz 2.77166e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.5037e+00 ;
+            mbo:mz 3.3023e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.0255e+00 ;
+            mbo:mz 3.31236e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 5.5205e+00 ;
+            mbo:mz 3.32243e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 55 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00di-0090000000-1090a93de348e29c4972" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. The m/z value was adjusted with 274.16586." ;
+    skos:definition "4-Aminobutanoic acid; GC-FI-TOF; MS; POSITIVE; FI; 10 kV; 2TBDMS" .
+

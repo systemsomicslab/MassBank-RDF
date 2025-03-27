@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100838 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100838" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Methyl-beta-alanine",
+                "3-Amino-2-methylpropanoate",
+                "3-Aminoisobutanoate",
+                "3-Aminoisobutyrate",
+                "BAIB",
+                "DL-3-Aminoisobutyric acid",
+                "alpha-Methyl-beta-alanine",
+                "beta-Aminoisobutyric acid" ;
+            mbo:ch_compound_class "Fatty acids" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso cas:144-90-1,
+                chemspider:58481,
+                pubchem:CID64956 ;
+            schema:inChI "InChI=1S/C4H9NO2/c1-3(2-5)4(6)7/h3H,2,5H2,1H3,(H,6,7)" ;
+            schema:inChIKey inchikey:QCHPKSFMDHPSNR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "2-Methyl-beta-alanine",
+                "3-Amino-2-methylpropanoate",
+                "3-Aminoisobutanoate",
+                "3-Aminoisobutyrate",
+                "BAIB",
+                "DL-3-Aminoisobutyric acid",
+                "alpha-Methyl-beta-alanine",
+                "beta-Aminoisobutyric acid" ;
+            schema:smiles "NCC(C)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.556e+00 ;
+            mbo:mz 7.30306e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 331 ],
+        [ mbo:intensity 1.072e+01 ;
+            mbo:mz 1.020555e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.020555e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0udi-2900000000-d13f4bc606699ca79bda" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "DL-3-Aminoisobutyric acid; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA294008 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA294008" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "12.6 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Fenoxycarb",
+                "N-[2-(4-phenoxyphenoxy)ethyl]carbamic acid ethyl ester" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.011314e+02 ;
+            rdfs:seeAlso cas:72490-01-8,
+                chemspider:46739,
+                pubchem:CID51605 ;
+            schema:inChI "InChI=1S/C17H19NO4/c1-2-20-17(19)18-12-13-21-14-8-10-16(11-9-14)22-15-6-4-3-5-7-15/h3-11H,2,12-13H2,1H3,(H,18,19)" ;
+            schema:inChIKey inchikey:HJUFTIJOISQSKQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H19NO4" ;
+            schema:name "Fenoxycarb",
+                "N-[2-(4-phenoxyphenoxy)ethyl]carbamic acid ethyl ester" ;
+            schema:smiles "O=C(OCC)NCCOc2ccc(Oc1ccccc1)cc2" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 6.790763e+06 ;
+            mbo:mz 8.80394e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 580 ],
+        [ mbo:intensity 1.17044e+07 ;
+            mbo:mz 1.160706e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.20925e+04 ;
+            mbo:mz 2.301176e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.814235e+06 ;
+            mbo:mz 2.56097e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 326 ],
+        [ mbo:intensity 3.72271e+04 ;
+            mbo:mz 2.58149e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.099584e+07 ;
+            mbo:mz 3.021388e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 939 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.021394e+02 ;
+            mbo:precursor_mz 3.021387e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0gbi-5938000000-78e6afbd953aa215b85f" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2940" ;
+    skos:definition "Fenoxycarb; LC-ESI-ITFT; MS2; CE: 15%; R=15000; [M+H]+" .
+

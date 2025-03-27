@@ -1,0 +1,92 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ416903 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], M. Stravs [com]" ;
+    dcterms:date "2019-12-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ416903" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K.; Mueller, A.; Singer, H.; Hollender, J. New relevant pesticide transformation products in groundwater detected using target and suspect screening for agricultural and urban micropollutants with LC-HRMS. Water Research 2019, 165. DOI: https://doi.org/10.1016/j.watres.2019.114972" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.247 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4,6-Dimethyl-1,2,4-triazine-3,5(2H,4H)-dione",
+                "4,6-dimethyl-2H-1,2,4-triazine-3,5-dione",
+                "Pymetrozine-TP CGA371075" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.410538e+02 ;
+            rdfs:seeAlso cas:62764-56-1,
+                chemspider:215171,
+                pubchem:CID245931 ;
+            schema:inChI "InChI=1S/C5H7N3O2/c1-3-4(9)8(2)5(10)7-6-3/h1-2H3,(H,7,10)" ;
+            schema:inChIKey inchikey:YDZNYNCVEANOBE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H7N3O2" ;
+            schema:name "4,6-Dimethyl-1,2,4-triazine-3,5(2H,4H)-dione",
+                "4,6-dimethyl-2H-1,2,4-triazine-3,5-dione",
+                "Pymetrozine-TP CGA371075" ;
+            schema:smiles "CN1C(=O)NN=C(C)C1=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.74692e+04 ;
+            mbo:mz 5.60495e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 1.214655e+05 ;
+            mbo:mz 5.70447e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 342 ],
+        [ mbo:intensity 2.89325e+04 ;
+            mbo:mz 5.80288e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 3.72472e+04 ;
+            mbo:mz 8.30242e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 1.86757e+04 ;
+            mbo:mz 8.50397e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 1.59397e+04 ;
+            mbo:mz 9.60556e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 2.787149e+05 ;
+            mbo:mz 1.140663e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 784 ],
+        [ mbo:intensity 3.549301e+05 ;
+            mbo:mz 1.420613e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.649846e+02 ;
+            mbo:precursor_mz 1.420611e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-01ox-3900000000-cbaabb86744acff0493f" ;
+    rdfs:comment "UCHEM_ID 4169" ;
+    skos:definition "Pymetrozine-TP CGA371075; LC-ESI-QFT; MS2; CE: 45%; R=17500; [M+H]+" .
+

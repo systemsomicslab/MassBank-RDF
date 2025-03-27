@@ -1,0 +1,73 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN121127 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN121127" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "1.190 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "BPS glucuronide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.260621e+02 ;
+            schema:inChI "InChI=1S/C18H18O10S/c19-9-1-5-11(6-2-9)29(25,26)12-7-3-10(4-8-12)27-18-15(22)13(20)14(21)16(28-18)17(23)24/h1-8,13-16,18-22H,(H,23,24)/t13?,14-,15?,16?,18-/m1/s1" ;
+            schema:inChIKey inchikey:CUMWGMLODONKKD-OIJGMWSASA-N ;
+            schema:molecularFormula "C18H18O10S" ;
+            schema:name "BPS glucuronide" ;
+            schema:smiles "C1=CC(=CC=C1O)S(=O)(=O)C2=CC=C(C=C2)O[C@H]3C(C([C@H](C(O3)C(=O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.333e+02 ;
+            mbo:mz 5.50197e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 281 ],
+        [ mbo:intensity 3.259e+02 ;
+            mbo:mz 5.90138e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 2.976e+02 ;
+            mbo:mz 8.70083e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 251 ],
+        [ mbo:intensity 3.912e+02 ;
+            mbo:mz 9.20259e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 329 ],
+        [ mbo:intensity 1.1863e+03 ;
+            mbo:mz 1.080228e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.651e+02 ;
+            mbo:mz 1.559878e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 307 ],
+        [ mbo:intensity 1.076e+03 ;
+            mbo:mz 2.49022e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 906 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 4.250548e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-7960000000-31a7c6a61d13c761bfbd" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "BPS glucuronide; LC-ESI-QTOF; MS2; CE: 40eV; R=7000; [M-H]-" .
+

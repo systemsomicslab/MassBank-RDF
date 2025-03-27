@@ -1,0 +1,116 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET190105 a mbo:MassSpectrum ;
+    dcterms:creator "R. Gulde, E. Schymanski, K. Fenner, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-17 (Created 2015-09-25, modified 2016-02-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET190105" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde, R.; Meier, U.; Schymanski, E. L.; Kohler, H.-P. E.; Helbling, D. E.; Derrer, S.; Rentsch, D.; Fenner, K. Systematic Exploration of Biotransformation Reactions of Amine-Containing Micropollutants in Activated Sludge. Environmental Science & Technology 2016, 50 (6), 2908–20. DOI:10.1021/acs.est.5b05186" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15, 30, 45, 60, 70 or 90 (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters with guard column" ;
+            mbo:flow_gradient "95/5 at 0 min, 5/95 at 15 min, 5/95 at 20 min, 95/5 at 20.1 min, 95/5 at 25 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "11.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-[2-(dimethylamino)-1-(1-hydroxycyclohexyl)ethyl]phenol",
+                "O-Desmethylvenlafaxine",
+                "VEN_264.1959_10.8" ;
+            mbo:ch_compound_class "N/A; Environmental Reference Standard" ;
+            mbo:ch_exact_mass 2.631885e+02 ;
+            rdfs:seeAlso cas:93413-62-8,
+                chemspider:111300,
+                pubchem:CID125017 ;
+            schema:inChI "InChI=1S/C16H25NO2/c1-17(2)12-15(13-6-8-14(18)9-7-13)16(19)10-4-3-5-11-16/h6-9,15,18-19H,3-5,10-12H2,1-2H3" ;
+            schema:inChIKey inchikey:KYYIDSXMWOZKMP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H25NO2" ;
+            schema:name "4-[2-(dimethylamino)-1-(1-hydroxycyclohexyl)ethyl]phenol",
+                "O-Desmethylvenlafaxine",
+                "VEN_264.1959_10.8" ;
+            schema:smiles "CN(C)CC(C1=CC=C(O)C=C1)C1(O)CCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 4.205174e+07 ;
+            mbo:mz 5.80655e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.277011e+05 ;
+            mbo:mz 1.641072e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.570657e+05 ;
+            mbo:mz 1.730961e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.545155e+06 ;
+            mbo:mz 2.011274e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 1.393761e+07 ;
+            mbo:mz 2.461852e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 331 ],
+        [ mbo:intensity 7.030219e+06 ;
+            mbo:mz 2.641957e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 1.501411e+05 ;
+            mbo:mz 8.10698e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.291147e+06 ;
+            mbo:mz 1.070491e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 4.22818e+04 ;
+            mbo:mz 1.190491e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 9.12725e+04 ;
+            mbo:mz 1.210648e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.688322e+06 ;
+            mbo:mz 1.330647e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 4.21781e+05 ;
+            mbo:mz 1.450647e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 4.63747e+04 ;
+            mbo:mz 1.521435e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.058814e+05 ;
+            mbo:mz 1.590802e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.641958e+02 ;
+            mbo:precursor_mz 2.641958e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0a4i-9150000000-383ebf283bfe27d5b20f" ;
+    rdfs:comment "INTERNAL_ID 1901" ;
+    skos:definition "VEN_264.1959_10.8; LC-ESI-QFT; MS2; CE: 15-90; R=17500; [M+H]+" .
+

@@ -1,0 +1,80 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML002851 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML002851" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "5.2 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-hydroxy-2-methylbutanedioic acid",
+                "citramalic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.480372e+02 ;
+            rdfs:seeAlso chemspider:1051,
+                pubchem:CID1081 ;
+            schema:inChI "InChI=1S/C5H8O5/c1-5(10,4(8)9)2-3(6)7/h10H,2H2,1H3,(H,6,7)(H,8,9)" ;
+            schema:inChIKey inchikey:XFTRTWQBIOMVPK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H8O5" ;
+            schema:name "2-hydroxy-2-methylbutanedioic acid",
+                "citramalic acid" ;
+            schema:smiles "CC(O)(CC(=O)O)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.072048e+05 ;
+            mbo:mz 8.50295e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 1.68977e+05 ;
+            mbo:mz 8.70087e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 3.3598e+03 ;
+            mbo:mz 1.010245e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.81947e+04 ;
+            mbo:mz 1.030401e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 7.06535e+04 ;
+            mbo:mz 1.290193e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 1.028225e+06 ;
+            mbo:mz 1.470298e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.470298e+02 ;
+            mbo:precursor_mz 1.470299e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0002-2900000000-be1cc6b0ea685f5d7ac2" ;
+    rdfs:comment "ML_ID 28" ;
+    skos:definition "citramalic acid; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M-H]-" .
+

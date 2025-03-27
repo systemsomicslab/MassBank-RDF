@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000894 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000894" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3alpha,7alpha,12alpha-Trihydroxy-5beta-cholan-24-oylglycine",
+                "Glycocholate",
+                "Glycocholic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.65309e+02 ;
+            rdfs:seeAlso cas:475-31-0,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5027> ;
+            schema:inChI "InChI=1S/C26H43NO6/c1-14(4-7-22(31)27-13-23(32)33)17-5-6-18-24-19(12-21(30)26(17,18)3)25(2)9-8-16(28)10-15(25)11-20(24)29/h14-21,24,28-30H,4-13H2,1-3H3,(H,27,31)(H,32,33)/t14-,15+,16-,17-,18+,19+,20-,21+,24+,25+,26-/m1/s1" ;
+            schema:inChIKey inchikey:RFDAIACWWDREDC-FRVQLJSFSA-N ;
+            schema:molecularFormula "C26H43NO6" ;
+            schema:name "3alpha,7alpha,12alpha-Trihydroxy-5beta-cholan-24-oylglycine",
+                "Glycocholate",
+                "Glycocholic acid" ;
+            schema:smiles "C(C(C([H])(C4(C)1)CCC1([H])C(C(O)3)(C(CC(O)4)([H])C(C)(C([H])2C3)CCC(C2)O)[H])C)CC(=O)NCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.103962e+07 ;
+            mbo:mz 4.648e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.64e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-03di-0000900000-54209075e1d169ccb287" ;
+    rdfs:comment "KEIO_ID G050" ;
+    skos:definition "Glycocholic acid; LC-ESI-QQ; MS2; CE:20 V; [M-H]-" .
+

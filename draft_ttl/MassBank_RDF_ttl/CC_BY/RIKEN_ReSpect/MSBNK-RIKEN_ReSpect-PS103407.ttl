@@ -1,0 +1,59 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS103407 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS103407" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,4-Dihydroxymandelate",
+                "3,4-Dihydroxyphenylglycolic acid",
+                "DL-3,4-Dihydroxymandelic acid",
+                "alpha,3,4-Trihydroxyphenylacetic Acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Mandelic acid" ;
+            mbo:ch_exact_mass 1.84147e+02 ;
+            rdfs:seeAlso cas:775-01-9,
+                pubchem:CID85782 ;
+            schema:inChI "InChI=1S/C8H8O5/c9-5-2-1-4(3-6(5)10)7(11)8(12)13/h1-3,7,9-11H,(H,12,13)" ;
+            schema:inChIKey inchikey:RGHMISIYKIHAJW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8O5" ;
+            schema:name "3,4-Dihydroxymandelate",
+                "3,4-Dihydroxyphenylglycolic acid",
+                "DL-3,4-Dihydroxymandelic acid",
+                "alpha,3,4-Trihydroxyphenylacetic Acid" ;
+            schema:smiles "C1=CC(=C(C=C1C(C(=O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.153e+03 ;
+            mbo:mz 1.82e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 2.00562e+05 ;
+            mbo:mz 1.83e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.8315e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0900000000-46ce514cf6de9fb1439b" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "alpha,3,4-Trihydroxyphenylacetic Acid, DL-3,4-Dihydroxymandelic acid , 3,4-Dihydroxyphenylglycolic acid, 3,4-Dihydroxymandelate; LC-ESI-QQ; MS2" .
+

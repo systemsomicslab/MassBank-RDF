@@ -1,0 +1,103 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS069305 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS069305" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,9-Dioxy-3,10-dimethoxyberbine",
+                "3,10-Dimethoxy-13a-alpha-berbine-2,9-diol",
+                "Aequaline",
+                "Scoulerin",
+                "Scoulerine",
+                "discretamine" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavone CLASS3 Scoulerin" ;
+            mbo:ch_exact_mass 3.2738e+02 ;
+            rdfs:seeAlso cas:6451-73-6,
+                pubchem:CID439654 ;
+            schema:inChI "InChI=1S/C19H21NO4/c1-23-17-4-3-11-7-15-13-9-16(21)18(24-2)8-12(13)5-6-20(15)10-14(11)19(17)22/h3-4,8-9,15,21-22H,5-7,10H2,1-2H3" ;
+            schema:inChIKey inchikey:KNWVMRVOBAFFMH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H21NO4" ;
+            schema:name "2,9-Dioxy-3,10-dimethoxyberbine",
+                "3,10-Dimethoxy-13a-alpha-berbine-2,9-diol",
+                "Aequaline",
+                "Scoulerin",
+                "Scoulerine",
+                "discretamine" ;
+            schema:smiles "COC1=C(C2=C(CC3C4=CC(=C(C=C4CCN3C2)OC)O)C=C1)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.5899e+04 ;
+            mbo:mz 9.1e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 2.05395e+05 ;
+            mbo:mz 1.78e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.518e+03 ;
+            mbo:mz 3.27e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.2046e+04 ;
+            mbo:mz 3.28e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1.4432e+04 ;
+            mbo:mz 1.19e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 9.556e+03 ;
+            mbo:mz 1.5e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 2.5148e+04 ;
+            mbo:mz 1.51e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 1.19e+04 ;
+            mbo:mz 1.62e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 4.2084e+04 ;
+            mbo:mz 1.63e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 205 ],
+        [ mbo:intensity 7.34e+03 ;
+            mbo:mz 1.75e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.5489e+04 ;
+            mbo:mz 1.76e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 4.714e+04 ;
+            mbo:mz 1.77e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 229 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.2835e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-004i-0900000000-37f4678aaee7eaf12ee7" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "3,10-Dimethoxy-13a-alpha-berbine-2,9-diol, discretamine, 2,9-Dioxy-3,10-dimethoxyberbine, Aequaline, Scoulerin, Scoulerine; LC-ESI-QQ; MS2" .
+

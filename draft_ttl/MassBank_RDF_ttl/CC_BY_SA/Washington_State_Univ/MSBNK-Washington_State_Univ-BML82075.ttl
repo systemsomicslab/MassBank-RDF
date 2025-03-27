@@ -1,0 +1,58 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML82075 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML82075" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "4.254" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7,8-dimethyl-10-(2,3,4,5-tetrahydroxypentyl)-3,10-dihydrobenzo[g]pteridine-2,4 -dione",
+                "Riboflavin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.761383e+02 ;
+            rdfs:seeAlso cas:83-88-5,
+                chemspider:1043,
+                pubchem:CID1072 ;
+            schema:inChI "InChI=1S/C17H20N4O6/c1-7-3-9-10(4-8(7)2)21(5-11(23)14(25)12(24)6-22)15-13(18-9)16(26)20-17(27)19-15/h3-4,11-12,14,22-25H,5-6H2,1-2H3,(H,20,26,27)" ;
+            schema:inChIKey inchikey:AUNGANRZJHBGPY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H20N4O6" ;
+            schema:name "7,8-dimethyl-10-(2,3,4,5-tetrahydroxypentyl)-3,10-dihydrobenzo[g]pteridine-2,4 -dione",
+                "Riboflavin" ;
+            schema:smiles "CC1=CC2=C(C=C1C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.42468e+05 ;
+            mbo:mz 3.771456e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.0603e+04 ;
+            mbo:mz 3.991275e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 32 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004i-0009000000-37a4f83c9e1d39dcea8d" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.582" ;
+    skos:definition "Riboflavin; LC-ESI-QTOF; MS; POSITIVE" .
+

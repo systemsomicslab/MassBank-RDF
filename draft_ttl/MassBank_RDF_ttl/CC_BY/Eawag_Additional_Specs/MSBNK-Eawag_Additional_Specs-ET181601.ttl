@@ -1,0 +1,108 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET181601 a mbo:MassSpectrum ;
+    dcterms:creator "R. Gulde, E. Schymanski, K. Fenner, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-17 (Created 2015-09-25, modified 2016-02-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET181601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde, R.; Meier, U.; Schymanski, E. L.; Kohler, H.-P. E.; Helbling, D. E.; Derrer, S.; Rentsch, D.; Fenner, K. Systematic Exploration of Biotransformation Reactions of Amine-Containing Micropollutants in Activated Sludge. Environmental Science & Technology 2016, 50 (6), 2908–20. DOI:10.1021/acs.est.5b05186" ] ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35 (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters with guard column" ;
+            mbo:flow_gradient "95/5 at 0 min, 5/95 at 15 min, 5/95 at 20 min, 95/5 at 20.1 min, 95/5 at 25 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "SPI_300.2536_10.7" ;
+            mbo:ch_compound_class "N/A; Environmental Transformation Products" ;
+            mbo:ch_exact_mass 2.99246e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C17H33NO3" ;
+            schema:name "SPI_300.2536_10.7" ;
+            schema:smiles "N/A" ] ;
+    mbo:has_peak [ mbo:intensity 1.2469e+03 ;
+            mbo:mz 5.69739e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.9908e+04 ;
+            mbo:mz 1.441385e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 406 ],
+        [ mbo:intensity 1.4619e+03 ;
+            mbo:mz 1.586715e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.2716e+03 ;
+            mbo:mz 1.990134e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.3989e+03 ;
+            mbo:mz 2.719814e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.3591e+03 ;
+            mbo:mz 2.763094e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 5.0912e+03 ;
+            mbo:mz 3.002524e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 1.1089e+03 ;
+            mbo:mz 6.11388e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.5657e+03 ;
+            mbo:mz 6.72448e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.3015e+03 ;
+            mbo:mz 8.42844e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.9589e+03 ;
+            mbo:mz 8.80759e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 2.7623e+03 ;
+            mbo:mz 8.90596e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 5.9583e+03 ;
+            mbo:mz 1.001123e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 7.3559e+04 ;
+            mbo:mz 1.210648e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.4826e+03 ;
+            mbo:mz 1.421104e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.210648e+02 ;
+            mbo:precursor_mz 3.002536e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-00di-0900000000-022e42e02060866ade65" ;
+    rdfs:comment "INTERNAL_ID 1816" ;
+    skos:definition "SPI_300.2536_10.7; LC-ESI-QFT; MS2; CE: 35; R=17500; [M+H]+" .
+

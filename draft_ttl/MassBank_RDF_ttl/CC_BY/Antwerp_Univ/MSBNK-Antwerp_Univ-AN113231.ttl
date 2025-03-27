@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN113231 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN113231" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "35 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "3.476 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-(2-ethyl-5-oxohexoxy)-6-oxohexanoic acid",
+                "Mono(2-ethyl-5-oxohexyl) adipate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.721624e+02 ;
+            rdfs:seeAlso cas:134998-72-4,
+                chemspider:131140,
+                pubchem:CID148780 ;
+            schema:inChI "InChI=1S/C14H24O5/c1-3-12(9-8-11(2)15)10-19-14(18)7-5-4-6-13(16)17/h12H,3-10H2,1-2H3,(H,16,17)" ;
+            schema:inChIKey inchikey:XLMWFRRVVDGMRV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H24O5" ;
+            schema:name "6-(2-ethyl-5-oxohexoxy)-6-oxohexanoic acid",
+                "Mono(2-ethyl-5-oxohexyl) adipate" ;
+            schema:smiles "CCC(CCC(=O)C)COC(=O)CCCCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.267e+02 ;
+            mbo:mz 5.30391e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 2.054e+02 ;
+            mbo:mz 5.70345e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 5.4601e+03 ;
+            mbo:mz 8.10347e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.4131e+03 ;
+            mbo:mz 8.30505e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 442 ],
+        [ mbo:intensity 3.057e+02 ;
+            mbo:mz 1.010603e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 2.14e+02 ;
+            mbo:mz 1.110812e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 2.711551e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-9000000000-8c6865dd78f6d93c9f5d" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Mono(2-ethyl-5-oxohexyl) adipate; LC-ESI-QTOF; MS2; CE: 35eV; R=7000; [M-H]-" .
+

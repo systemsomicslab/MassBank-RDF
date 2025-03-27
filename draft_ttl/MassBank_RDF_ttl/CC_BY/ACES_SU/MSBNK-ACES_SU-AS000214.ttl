@@ -1,0 +1,71 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000214 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000214" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "11.478400" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,4-D",
+                "2,4-Dichlorophenoxyacetic Acid" ;
+            mbo:ch_compound_class "Pesticides; Herbicides; Glycolates; Phenoxyacetates" ;
+            mbo:ch_exact_mass 2.199694e+02 ;
+            schema:inChI "InChI=1S/C8H6Cl2O3/c9-5-1-2-7(6(10)3-5)13-4-8(11)12/h1-3H,4H2,(H,11,12)" ;
+            schema:molecularFormula "C8H6Cl2O3" ;
+            schema:name "2,4-D",
+                "2,4-Dichlorophenoxyacetic Acid" ;
+            schema:smiles "O=C(O)COC1=CC=C(Cl)C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 6.83813e+05 ;
+            mbo:mz 7.302969e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 3.16245e+05 ;
+            mbo:mz 1.150395e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.270728e+06 ;
+            mbo:mz 1.249804e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 91 ],
+        [ mbo:intensity 3.38776e+05 ;
+            mbo:mz 1.43034e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.500915e+07 ;
+            mbo:mz 1.609569e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.61296e+05 ;
+            mbo:mz 2.18962e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 26 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.599317e+02 ;
+            mbo:precursor_mz 2.599314e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0900000000-1ba770baff4a84931617" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "2,4-Dichlorophenoxyacetic Acid; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M-H]-" .
+

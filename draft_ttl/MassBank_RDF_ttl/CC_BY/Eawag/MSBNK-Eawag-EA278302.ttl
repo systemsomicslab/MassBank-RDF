@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA278302 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA278302" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "8.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(8S,9S,10R,11S,13S,14S,17R)-10,13-dimethyl-11,17-bis(oxidanyl)-17-(2-oxidanylethanoyl)-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
+                "1-Dehydrohydrocortisone",
+                "Prednisolone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.601937e+02 ;
+            rdfs:seeAlso cas:50-24-8,
+                chemspider:5552,
+                pubchem:CID5755 ;
+            schema:inChI "InChI=1S/C21H28O5/c1-19-7-5-13(23)9-12(19)3-4-14-15-6-8-21(26,17(25)11-22)20(15,2)10-16(24)18(14)19/h5,7,9,14-16,18,22,24,26H,3-4,6,8,10-11H2,1-2H3/t14-,15-,16-,18+,19-,20-,21-/m0/s1" ;
+            schema:inChIKey inchikey:OIGNJSKKLXVSLS-VWUMJDOOSA-N ;
+            schema:molecularFormula "C21H28O5" ;
+            schema:name "(8S,9S,10R,11S,13S,14S,17R)-10,13-dimethyl-11,17-bis(oxidanyl)-17-(2-oxidanylethanoyl)-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
+                "1-Dehydrohydrocortisone",
+                "Prednisolone" ;
+            schema:smiles "C1[C@H]2[C@H]3[C@@H]([C@@]4(C(=CC(=O)C=C4)CC3)C)[C@@H](O)C[C@@]2([C@](C(CO)=O)(O)C1)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 5.9808e+03 ;
+            mbo:mz 1.470809e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 2.9207e+03 ;
+            mbo:mz 2.791745e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 4.1671e+03 ;
+            mbo:mz 2.891597e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 1.52463e+04 ;
+            mbo:mz 3.071694e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 321 ],
+        [ mbo:intensity 2.78926e+04 ;
+            mbo:mz 3.25179e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 587 ],
+        [ mbo:intensity 4.74661e+04 ;
+            mbo:mz 3.431902e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.5051e+04 ;
+            mbo:mz 3.612007e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 317 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.61202e+02 ;
+            mbo:precursor_mz 3.61201e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-002f-0009000000-4a00ac3c2f4930e108cc" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2783" ;
+    skos:definition "Prednisolone; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

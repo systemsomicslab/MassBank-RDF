@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL23111014414 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111014414" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "17.714 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bisphenol-A bis(diphenyl phosphate)" ;
+            mbo:ch_compound_class "Industrial_process" ;
+            mbo:ch_exact_mass 6.921729e+02 ;
+            rdfs:seeAlso cas:5945-33-5 ;
+            schema:inChI "InChI=1S/C39H34O8P2/c1-39(2,31-23-27-37(28-24-31)46-48(40,42-33-15-7-3-8-16-33)43-34-17-9-4-10-18-34)32-25-29-38(30-26-32)47-49(41,44-35-19-11-5-12-20-35)45-36-21-13-6-14-22-36/h3-30H,1-2H3" ;
+            schema:inChIKey inchikey:BQPNUOYXSVUVMY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C39H34O8P2" ;
+            schema:name "Bisphenol-A bis(diphenyl phosphate)" ;
+            schema:smiles "CC(C)(C1=CC=C(C=C1)OP(=O)(OC2=CC=CC=C2)OC3=CC=CC=C3)C4=CC=C(C=C4)OP(=O)(OC5=CC=CC=C5)OC6=CC=CC=C6" ] ;
+    mbo:has_peak [ mbo:intensity 2.06e+01 ;
+            mbo:mz 3.270784e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 5.305e+02 ;
+            mbo:mz 3.671101e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.284e+02 ;
+            mbo:mz 6.931814e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 618 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.931802e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014l-0009005000-3074c08956cb447ce407" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Bisphenol-A bis(diphenyl phosphate); LC-ESI-QTOF; MS2; 40 V" .
+

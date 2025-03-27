@@ -1,0 +1,93 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02079 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2023-03-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02079" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "S. Takahashi, D. Satoh, M. Hayashi, K. Takahashi, K. Yamaguchi, T. Nakamura, H. Koshino. Total Synthesis of the Proposed Structure for Aromin and Its Structural Revision. J. Org. Chem. 2016, 81, 22, 11222-11234. doi: 10.1021/acs.joc.6b02187" ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A gas chromatograph." ;
+            mbo:column_name "ZB-1MS 7HM-G011-11 sn:313446, length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.03 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "rac-(3R,5S)-Nona-1,8-diene-3,5-diol" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.56115e+02 ;
+            schema:inChI "InChI=1S/C9H16O2/c1-3-5-6-9(11)7-8(10)4-2/h3-4,8-11H,1-2,5-7H2/t8-,9-/m0/s1" ;
+            schema:inChIKey inchikey:MFDQNLCCXGCDAB-IUCAKERBSA-N ;
+            schema:molecularFormula "C9H16O2" ;
+            schema:name "rac-(3R,5S)-Nona-1,8-diene-3,5-diol" ;
+            schema:smiles "C=CCC[C@H](O)C[C@@H](O)C=C" ] ;
+    mbo:has_peak [ mbo:intensity 3.5373e+00 ;
+            mbo:mz 5.7034e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 6.706e-01 ;
+            mbo:mz 1.5629e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.94164e+01 ;
+            mbo:mz 1.5712e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 294 ],
+        [ mbo:intensity 7.133e-01 ;
+            mbo:mz 1.57227e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.9757e+00 ;
+            mbo:mz 1.58124e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 2.3016e+00 ;
+            mbo:mz 7.006e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 4.2857e+00 ;
+            mbo:mz 8.5064e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 3.2442e+00 ;
+            mbo:mz 1.0106e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.702e+00 ;
+            mbo:mz 1.02067e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.3599e+00 ;
+            mbo:mz 1.20092e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.69828e+01 ;
+            mbo:mz 1.38102e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 270 ],
+        [ mbo:intensity 3.7834e+00 ;
+            mbo:mz 1.39107e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.56115e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-7d7a166791e76f608a78" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. Postrun m/z adjustment with known mass was 156.11503." ;
+    skos:definition "rac-(3R,5S)-Nona-1,8-diene-3,5-diol; GC-FI-TOF; MS; POSITIVE; FI; 10 kV" .
+

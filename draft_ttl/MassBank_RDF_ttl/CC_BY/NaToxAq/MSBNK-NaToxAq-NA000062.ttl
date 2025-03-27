@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA000062 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Hubert Schupke, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2018-08-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA000062" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "115 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "8.610 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,5,5-trimethylcyclohex-2-en-1-one",
+                "Isophorone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.381045e+02 ;
+            rdfs:seeAlso cas:78-59-1,
+                chemspider:6296,
+                pubchem:CID6544 ;
+            schema:inChI "InChI=1S/C9H14O/c1-7-4-8(10)6-9(2,3)5-7/h4H,5-6H2,1-3H3" ;
+            schema:inChIKey inchikey:HJOVHMDZYOCNQW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H14O" ;
+            schema:name "3,5,5-trimethylcyclohex-2-en-1-one",
+                "Isophorone" ;
+            schema:smiles "CC1=CC(=O)CC(C)(C)C1" ] ;
+    mbo:has_peak [ mbo:intensity 9.7505e+03 ;
+            mbo:mz 7.90539e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.08521e+04 ;
+            mbo:mz 1.111166e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 6.558679e+05 ;
+            mbo:mz 1.211006e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.41527e+04 ;
+            mbo:mz 8.10695e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 3.247295e+05 ;
+            mbo:mz 8.30488e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 495 ],
+        [ mbo:intensity 9.9461e+04 ;
+            mbo:mz 9.30695e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 151 ],
+        [ mbo:intensity 2.089245e+05 ;
+            mbo:mz 9.50852e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 318 ],
+        [ mbo:intensity 1.619919e+05 ;
+            mbo:mz 9.70645e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 247 ],
+        [ mbo:intensity 2.53375e+04 ;
+            mbo:mz 9.71008e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 6.96e+03 ;
+            mbo:mz 1.050694e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.50074e+04 ;
+            mbo:mz 1.1108e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 69 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.391114e+02 ;
+            mbo:precursor_mz 1.391117e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00dj-9700000000-5edc5b2883297c58bab1" ;
+    rdfs:comment "NaToxAq - Natural Toxins and Drinking Water Quality - From Source to Tap (https://natoxaq.ku.dk)" ;
+    skos:definition "Isophorone; LC-ESI-ITFT; MS2; CE: 115%; R=15000; [M+H]+" .
+

@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000084 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000084" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1261.745 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5S)-5-Hydroxy-1-(4-hydroxy-3-methoxyphenyl)-3-decanone",
+                "6-Gingerol" ;
+            mbo:ch_compound_class "Natural Product; Capsaicinoid" ;
+            mbo:ch_exact_mass 2.941831e+02 ;
+            rdfs:seeAlso cas:23513-14-6,
+                pubchem:CID442793 ;
+            schema:inChI "InChI=1S/C17H26O4/c1-3-4-5-6-14(18)12-15(19)9-7-13-8-10-16(20)17(11-13)21-2/h8,10-11,14,18,20H,3-7,9,12H2,1-2H3/t14-/m0/s1" ;
+            schema:inChIKey inchikey:NLDDIKRKFXEWBK-AWEZNQCLSA-N ;
+            schema:molecularFormula "C17H26O4" ;
+            schema:name "(5S)-5-Hydroxy-1-(4-hydroxy-3-methoxyphenyl)-3-decanone",
+                "6-Gingerol" ;
+            schema:smiles "CCCCC[C@@H](CC(=O)CCC1=CC(=C(C=C1)O)OC)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.731137e+07 ;
+            mbo:mz 1.930853e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 2.975241e+08 ;
+            mbo:mz 2.931746e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.258172e+07 ;
+            mbo:mz 2.941768e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 177 ],
+        [ mbo:intensity 6.722738e+07 ;
+            mbo:mz 3.531921e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 226 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-0091000000-73ec3fb557f4b6d487ef" ;
+    skos:definition "[6]-Gingerol; LC-ESI-ITTOF; MS; [M-H]-" .
+

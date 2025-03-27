@@ -1,0 +1,111 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UF413902 a mbo:MassSpectrum ;
+    dcterms:creator "Schulze T, Krauss M, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-01-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UF413902" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "80 (nominal)" ;
+            mbo:column_name "Kinetex Core-Shell C18 2.6 um, 3.0 x 100 mm, Phenomenex" ;
+            mbo:flow_gradient "90/10 at 0 min, 80/20 at 3.2 min, 5/95 at 17.8 min, 5/95 at 37.8 min, 90/10 at 37.9 min, 90/10 at 47 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "26.816 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-Phenyl-1-naphthylamine",
+                "N-Phenylnaphthalen-1-amine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.191048e+02 ;
+            rdfs:seeAlso cas:90-30-2,
+                chemspider:6746,
+                pubchem:CID7013 ;
+            schema:inChI "InChI=1S/C16H13N/c1-2-9-14(10-3-1)17-16-12-6-8-13-7-4-5-11-15(13)16/h1-12,17H" ;
+            schema:inChIKey inchikey:XQVWYOYUZDUNRW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H13N" ;
+            schema:name "N-Phenyl-1-naphthylamine",
+                "N-Phenylnaphthalen-1-amine" ;
+            schema:smiles "N(C1=CC=CC=C1)C1=CC=CC2=CC=CC=C12" ] ;
+    mbo:has_peak [ mbo:intensity 2.966928e+05 ;
+            mbo:mz 9.20499e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 3.18258e+04 ;
+            mbo:mz 1.780784e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.558417e+05 ;
+            mbo:mz 2.020786e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 6.69576e+04 ;
+            mbo:mz 2.030865e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 5.73105e+04 ;
+            mbo:mz 2.040818e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.47938e+04 ;
+            mbo:mz 2.040944e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.800983e+05 ;
+            mbo:mz 9.30577e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 5.4994e+03 ;
+            mbo:mz 1.0405e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.088454e+05 ;
+            mbo:mz 1.150547e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 118 ],
+        [ mbo:intensity 6.3877e+03 ;
+            mbo:mz 1.170701e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.078327e+05 ;
+            mbo:mz 1.280626e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 6.77051e+04 ;
+            mbo:mz 1.420658e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 4.304033e+06 ;
+            mbo:mz 1.430735e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.122759e+05 ;
+            mbo:mz 1.550611e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 26 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.201126e+02 ;
+            mbo:precursor_mz 2.201121e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0006-0900000000-037571d016330dcb57f5" ;
+    rdfs:comment "INTERNAL_ID 4139" ;
+    skos:definition "N-Phenyl-1-naphthylamine; LC-ESI-ITFT; MS2; CE: 80; R=15000; [M+H]+" .
+

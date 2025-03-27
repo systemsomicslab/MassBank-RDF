@@ -1,0 +1,90 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL23111013771 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111013771" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "8.6 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Reserpine" ;
+            mbo:ch_compound_class "Natural_product; Pharmaceutical" ;
+            mbo:ch_exact_mass 6.082734e+02 ;
+            rdfs:seeAlso cas:50-55-5 ;
+            schema:inChI "InChI=1S/C33H40N2O9/c1-38-19-7-8-20-21-9-10-35-16-18-13-27(44-32(36)17-11-25(39-2)30(41-4)26(12-17)40-3)31(42-5)28(33(37)43-6)22(18)15-24(35)29(21)34-23(20)14-19/h7-8,11-12,14,18,22,24,27-28,31,34H,9-10,13,15-16H2,1-6H3" ;
+            schema:inChIKey inchikey:QEVHRUUCFGRFIF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C33H40N2O9" ;
+            schema:name "Reserpine" ;
+            schema:smiles "COC1C(CC2CN3CCC4=C(C3CC2C1C(=O)OC)NC5=C4C=CC(=C5)OC)OC(=O)C6=CC(=C(C(=C6)OC)OC)OC" ] ;
+    mbo:has_peak [ mbo:intensity 6e-01 ;
+            mbo:mz 1.810158e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 1.2e+00 ;
+            mbo:mz 2.110616e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 154 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 3.801775e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 1.4e+00 ;
+            mbo:mz 5.77218e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 179 ],
+        [ mbo:intensity 5.2e+00 ;
+            mbo:mz 5.922357e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 666 ],
+        [ mbo:intensity 7.8e+00 ;
+            mbo:mz 6.07261e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.072661e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4l-0010079000-a8706674d5db1ab8d2d4" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Reserpine; LC-ESI-QTOF; MS2; 40 V" .
+

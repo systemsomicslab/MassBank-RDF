@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU066452 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU066452" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "9.798 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Adipic acid",
+                "Hexanedioic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.460579e+02 ;
+            rdfs:seeAlso cas:124-04-9,
+                chemspider:191,
+                pubchem:CID196 ;
+            schema:inChI "InChI=1S/C6H10O4/c7-5(8)3-1-2-4-6(9)10/h1-4H2,(H,7,8)(H,9,10)" ;
+            schema:inChIKey inchikey:WNLRTRBMVRJNCN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H10O4" ;
+            schema:name "Adipic acid",
+                "Hexanedioic acid" ;
+            schema:smiles "OC(=O)CCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 5.2393e+03 ;
+            mbo:mz 8.10347e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 3.87736e+04 ;
+            mbo:mz 8.30503e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 969 ],
+        [ mbo:intensity 3.99777e+04 ;
+            mbo:mz 1.010608e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.8009e+03 ;
+            mbo:mz 1.450505e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 195 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.169285e+02 ;
+            mbo:precursor_mz 1.450506e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0f89-8900000000-bfb812626b6e42de9c8c" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Hexanedioic acid; LC-ESI-QFT; MS2; CE: 30; R=17500; [M-H]-" .
+

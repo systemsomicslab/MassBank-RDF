@@ -1,0 +1,93 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET320155 a mbo:MassSpectrum ;
+    dcterms:creator "Michael Stravs, Francesco Pomati, Juliane Hollender" ;
+    dcterms:date "2016-12-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET320155" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Michael Stravs @ Eawag under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive + Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "87/13 at 0 min, 87/13 at 5 min, 5/95 at 20 min, 5/95 at 29 min, 87/13 at 29.5 min, 87/13 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "22.730 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "MEF-Glu" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.701529e+02 ;
+            rdfs:seeAlso pubchem:CID133052791 ;
+            schema:inChI "InChI=1S/C20H22N2O5/c1-12-6-5-9-15(13(12)2)21-16-8-4-3-7-14(16)19(25)22-17(20(26)27)10-11-18(23)24/h3-9,17,21H,10-11H2,1-2H3,(H,22,25)(H,23,24)(H,26,27)" ;
+            schema:inChIKey inchikey:HLEKOHRJHVCEKY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H22N2O5" ;
+            schema:name "MEF-Glu" ;
+            schema:smiles "O=C(CCC(NC(C1=C(C=CC=C1)NC2=CC=CC(C)=C2C)=O)C(O)=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.5046e+03 ;
+            mbo:mz 5.90138e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 148 ],
+        [ mbo:intensity 2.36467e+04 ;
+            mbo:mz 1.961129e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.9777e+03 ;
+            mbo:mz 2.211092e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 168 ],
+        [ mbo:intensity 6.8107e+03 ;
+            mbo:mz 8.40454e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 288 ],
+        [ mbo:intensity 1.9475e+03 ;
+            mbo:mz 9.19751e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 8.5408e+03 ;
+            mbo:mz 9.20507e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 361 ],
+        [ mbo:intensity 2.9868e+03 ;
+            mbo:mz 1.280355e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 2.0899e+03 ;
+            mbo:mz 1.79087e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 1.02663e+04 ;
+            mbo:mz 1.800823e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 434 ],
+        [ mbo:intensity 9.4521e+03 ;
+            mbo:mz 1.920818e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 399 ],
+        [ mbo:intensity 1.1181e+04 ;
+            mbo:mz 1.940972e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 472 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.931757e+02 ;
+            mbo:precursor_mz 3.691456e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-000y-3900000000-cdd5335fb3a5c80f6365" ;
+    rdfs:comment "ALGAE_TP_ID 3201" ;
+    skos:definition "MEF-Glu; LC-ESI-QFT; MS2; CE: 75%; R=17500; [M-H]-" .
+

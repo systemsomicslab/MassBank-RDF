@@ -1,0 +1,105 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-KWR-KW108701 a mbo:MassSpectrum ;
+    dcterms:creator "Erik Emke, Andrea Brunner, KWR" ;
+    dcterms:date "2017-03-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-KWR-KW108701" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 KWR watercycle research institute under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Classic, Thermo Scientific" ;
+            mbo:collision_energy "35 eV IT-MS" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x150mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 0/100 at 40 min, 0/100 at 45 min, 95/5 at 47 min, 95/5 at 52 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "nominal" ;
+            mbo:retention_time "26.137 min" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-dioxacyclohexadecane-5,16-dione" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.561675e+02 ;
+            rdfs:seeAlso cas:54982-83-1,
+                chemspider:37664,
+                pubchem:CID41270 ;
+            schema:inChI "InChI=1S/C14H24O4/c15-13-9-7-5-3-1-2-4-6-8-10-14(16)18-12-11-17-13/h1-12H2" ;
+            schema:inChIKey inchikey:GJJSUPSPZIZYPM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H24O4" ;
+            schema:name "1,4-dioxacyclohexadecane-5,16-dione" ;
+            schema:smiles "O=C(OCCOC(=O)CCCCCCCCC1)C1" ] ;
+    mbo:has_peak [ mbo:intensity 5.9617e+03 ;
+            mbo:mz 8.11272e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 6.86e+01 ;
+            mbo:mz 1.791429e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.004e+02 ;
+            mbo:mz 1.850913e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 8.29e+01 ;
+            mbo:mz 2.031887e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 5.1617e+03 ;
+            mbo:mz 2.391598e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 4.5582e+03 ;
+            mbo:mz 1.11004e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 8.8831e+03 ;
+            mbo:mz 1.21065e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 2.4289e+03 ;
+            mbo:mz 1.250345e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 2.742e+02 ;
+            mbo:mz 1.271331e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 4.427e+02 ;
+            mbo:mz 1.400917e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.61e+02 ;
+            mbo:mz 1.430492e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 5.41796e+04 ;
+            mbo:mz 1.490597e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.3011e+03 ;
+            mbo:mz 1.771147e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 98 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.571748e+02 ;
+            mbo:precursor_mz 2.571747e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0002-0900000000-6fa11863ae6ebeb8f583" ;
+    rdfs:comment "INTERNAL_ID 1087" ;
+    skos:definition "1,4-dioxacyclohexadecane-5,16-dione; LC-ESI-ITFT; MS2; CE: 35 eV; R=nominal; [M+H]+" .
+

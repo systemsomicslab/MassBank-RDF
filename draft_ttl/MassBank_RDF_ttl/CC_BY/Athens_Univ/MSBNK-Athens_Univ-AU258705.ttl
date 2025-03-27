@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU258705 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU258705" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.794 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-cyclododecyl-2,6-dimethylmorpholine",
+                "Dodemorph" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.812719e+02 ;
+            rdfs:seeAlso cas:1593-77-7,
+                chemspider:55760,
+                pubchem:CID61899 ;
+            schema:inChI "InChI=1S/C18H35NO/c1-16-14-19(15-17(2)20-16)18-12-10-8-6-4-3-5-7-9-11-13-18/h16-18H,3-15H2,1-2H3" ;
+            schema:inChIKey inchikey:JMXKCYUTURMERF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H35NO" ;
+            schema:name "4-cyclododecyl-2,6-dimethylmorpholine",
+                "Dodemorph" ;
+            schema:smiles "CC1CN(CC(C)O1)C1CCCCCCCCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 2.108e+03 ;
+            mbo:mz 1.161059e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.04e+02 ;
+            mbo:mz 1.500111e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 5.04e+02 ;
+            mbo:mz 1.601098e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 239 ],
+        [ mbo:intensity 4.2e+02 ;
+            mbo:mz 1.62126e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 199 ],
+        [ mbo:intensity 3e+02 ;
+            mbo:mz 1.170551e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 7.24e+02 ;
+            mbo:mz 1.300642e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 343 ],
+        [ mbo:intensity 1.152e+03 ;
+            mbo:mz 1.320796e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 546 ],
+        [ mbo:intensity 1.012e+03 ;
+            mbo:mz 1.34095e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 480 ],
+        [ mbo:intensity 5.32e+02 ;
+            mbo:mz 1.440791e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 252 ],
+        [ mbo:intensity 6.68e+02 ;
+            mbo:mz 1.450874e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 317 ],
+        [ mbo:intensity 3.48e+02 ;
+            mbo:mz 1.460934e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 165 ],
+        [ mbo:intensity 6.92e+02 ;
+            mbo:mz 1.481105e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 328 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.82279e+02 ;
+            mbo:precursor_mz 2.822791e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00ls-0900000000-3f09fb4fd11db343fde4" ;
+    rdfs:comment "INTERNAL_ID 2587" ;
+    skos:definition "Dodemorph; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M+H]+" .
+

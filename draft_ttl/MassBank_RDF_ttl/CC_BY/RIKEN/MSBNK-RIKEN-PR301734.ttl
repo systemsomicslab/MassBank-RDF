@@ -1,0 +1,59 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR301734 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR301734" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.30245" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chelerythrine" ;
+            mbo:ch_compound_class "Quaternary benzophenanthridine alkaloids" ;
+            mbo:ch_exact_mass 3.48378e+02 ;
+            schema:inChI "InChI=1S/C21H18NO4/c1-22-10-16-13(6-7-17(23-2)21(16)24-3)14-5-4-12-8-18-19(26-11-25-18)9-15(12)20(14)22/h4-10H,11H2,1-3H3/q+1" ;
+            schema:inChIKey inchikey:LLEJIEBFSOEYIV-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C21H18NO4]+" ;
+            schema:name "Chelerythrine" ;
+            schema:smiles "COC1=C(OC)C2=C[N+](C)=C3C4=CC5=C(OCO5)C=C4C=CC3=C2C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 7e+00 ;
+            mbo:mz 3.48077e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1e+03 ;
+            mbo:mz 3.481221e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.2e+01 ;
+            mbo:mz 3.481747e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 22 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.481225e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-0009000000-bf0600cfed196c052d2b" ;
+    rdfs:comment "registered in RIKEN PlaSMA" ;
+    skos:definition "Chelerythrine; LC-ESI-QTOF; MS2" .
+

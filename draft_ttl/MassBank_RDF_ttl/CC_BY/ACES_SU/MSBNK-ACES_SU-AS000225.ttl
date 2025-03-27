@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000225 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000225" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "7.166200" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[4-[2-hydroxy-3-(propan-2-ylamino)propoxy]phenyl]acetamide",
+                "Atenolol" ;
+            mbo:ch_compound_class "Drugs; Agent Affecting Nervous System; Beta-Adrenergic Antagonist" ;
+            mbo:ch_exact_mass 2.66163e+02 ;
+            schema:inChI "InChI=1S/C14H22N2O3/c1-10(2)16-8-12(17)9-19-13-5-3-11(4-6-13)7-14(15)18/h3-6,10,12,16-17H,7-9H2,1-2H3,(H2,15,18)" ;
+            schema:molecularFormula "C14H22N2O3" ;
+            schema:name "2-[4-[2-hydroxy-3-(propan-2-ylamino)propoxy]phenyl]acetamide",
+                "Atenolol" ;
+            schema:smiles "O=C(N)CC1=CC=C(OCC(O)CNC(C)C)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.12535e+05 ;
+            mbo:mz 1.060425e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.96392e+05 ;
+            mbo:mz 1.190498e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.63727e+05 ;
+            mbo:mz 1.19051e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 8.3969e+04 ;
+            mbo:mz 1.210664e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.27082e+05 ;
+            mbo:mz 1.310379e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 8.177316e+06 ;
+            mbo:mz 1.490481e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.85418e+05 ;
+            mbo:mz 1.50057e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 1.09717e+05 ;
+            mbo:mz 2.221505e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.940083e+06 ;
+            mbo:mz 2.651559e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 481 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.490481e+02 ;
+            mbo:precursor_mz 2.651559e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0930000000-e62796e19cb640d9681f" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Atenolol; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M-H]-" .
+

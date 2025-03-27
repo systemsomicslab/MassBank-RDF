@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100870 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100870" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,7-Dimethyl-1H-purine-2,6-dione",
+                "1,7-Dimethylxanthine",
+                "2,6-Dihydroxy-1,7-dimethylpurine",
+                "ParaXanthine" ;
+            mbo:ch_compound_class "Purines" ;
+            mbo:ch_exact_mass 1.800647e+02 ;
+            rdfs:seeAlso cas:611-59-6,
+                chemspider:4525,
+                pubchem:CID4687 ;
+            schema:inChI "InChI=1S/C7H8N4O2/c1-10-3-8-5-4(10)6(12)11(2)7(13)9-5/h3H,1-2H3,(H,9,13)" ;
+            schema:inChIKey inchikey:QUNWUDVFRNGTCO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H8N4O2" ;
+            schema:name "1,7-Dimethyl-1H-purine-2,6-dione",
+                "1,7-Dimethylxanthine",
+                "2,6-Dihydroxy-1,7-dimethylpurine",
+                "ParaXanthine" ;
+            schema:smiles "O=C(N1)N(C)C(=O)c(n(C)2)c(nc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 3.488e+00 ;
+            mbo:mz 1.070114e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 8.499e+01 ;
+            mbo:mz 1.790569e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 997 ],
+        [ mbo:intensity 5.052e+00 ;
+            mbo:mz 1.080235e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 8.515e+01 ;
+            mbo:mz 1.220357e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.067e+00 ;
+            mbo:mz 1.350126e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.038e+01 ;
+            mbo:mz 1.618861e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 3.742e+00 ;
+            mbo:mz 1.628907e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.894e+01 ;
+            mbo:mz 1.640334e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 222 ],
+        [ mbo:intensity 2.705e+00 ;
+            mbo:mz 1.788629e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 4.774e+00 ;
+            mbo:mz 1.788889e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 56 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.790569e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00fr-0900000000-1aa733a1b7e41b994d8d" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "ParaXanthine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

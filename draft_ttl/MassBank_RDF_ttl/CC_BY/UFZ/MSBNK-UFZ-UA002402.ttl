@@ -1,0 +1,70 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA002402 a mbo:MassSpectrum ;
+    dcterms:creator "C. Gallampois (Umea), E. Schymanski (Eawag), W. Brack (UFZ)" ;
+    dcterms:date "2014-06-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA002402" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Multi-criteria approach for tentative identification of polyaromatic river mutagens" ] ;
+    dcterms:rights "Copyright (C) Eawag, 2014 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "Direct infusion experiment" ;
+            mbo:flow_rate "5 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "N/A min" ;
+            mbo:solvent "A methanol",
+                "B N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Hydroxyanthraquinone",
+                "2-hydroxyanthracene-9,10-dione" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.240473e+02 ;
+            rdfs:seeAlso cas:605-32-3,
+                chemspider:11303,
+                pubchem:CID11796 ;
+            schema:inChI "InChI=1S/C14H8O3/c15-8-5-6-11-12(7-8)14(17)10-4-2-1-3-9(10)13(11)16/h1-7,15H" ;
+            schema:inChIKey inchikey:GCDBEYOJCZLKMC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H8O3" ;
+            schema:name "2-Hydroxyanthraquinone",
+                "2-hydroxyanthracene-9,10-dione" ;
+            schema:smiles "c1ccc2c(c1)C(=O)c1c(C2=O)cc(cc1)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.1044e+03 ;
+            mbo:mz 1.540377e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.125564e+05 ;
+            mbo:mz 1.950452e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.843291e+05 ;
+            mbo:mz 2.230398e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 944 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.230401e+02 ;
+            mbo:precursor_mz 2.230401e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-006t-0980000000-7018b5b1bac4bcefabe0" ;
+    rdfs:comment "INTERNAL_ID 24" ;
+    skos:definition "2-Hydroxyanthraquinone; ESI-ITFT; MS2; CE: 35%; R=30000; [M-H]-" .
+

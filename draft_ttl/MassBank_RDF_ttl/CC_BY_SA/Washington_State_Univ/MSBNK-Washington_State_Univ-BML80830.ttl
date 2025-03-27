@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80830 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80830" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "3.543" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Boldine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.271471e+02 ;
+            rdfs:seeAlso cas:476-70-0,
+                chemspider:217564,
+                pubchem:CID10154 ;
+            schema:inChI "InChI=1S/C19H21NO4/c1-20-5-4-10-7-15(22)19(24-3)18-12-9-16(23-2)14(21)8-11(12)6-13(20)17(10)18/h7-9,13,21-22H,4-6H2,1-3H3/t13-/m0/s1" ;
+            schema:inChIKey inchikey:LZJRNLRASBVRRX-ZDUSSCGKSA-N ;
+            schema:molecularFormula "C19H21NO4" ;
+            schema:name "Boldine" ;
+            schema:smiles "CN1CCC2=CC(=C(C3=C2[C@@H]1CC4=CC(=C(C=C43)OC)O)OC)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.579502e+06 ;
+            mbo:mz 3.281544e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-0009000000-b1b8fd90097329fccfd4" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.482" ;
+    skos:definition "Boldine; LC-ESI-QTOF; MS; POSITIVE" .
+

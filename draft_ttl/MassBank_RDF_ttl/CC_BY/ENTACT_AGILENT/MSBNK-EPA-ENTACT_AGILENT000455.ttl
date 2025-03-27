@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000455 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000455" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-Hydroxy-2-naphthyl disulfide",
+                "DTXSID7025429" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.500435e+02 ;
+            rdfs:seeAlso cas:6088-51-3,
+                pubchem:CID22463 ;
+            schema:inChI "InChI=1S/C20H14O2S2/c21-17-5-1-15-11-19(7-3-13(15)9-17)23-24-20-8-4-14-10-18(22)6-2-16(14)12-20/h1-12,21-22H" ;
+            schema:inChIKey inchikey:AHXGXXJEEHFHDK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H14O2S2" ;
+            schema:name "6-Hydroxy-2-naphthyl disulfide",
+                "DTXSID7025429" ;
+            schema:smiles "OC1C=C2C=CC(=CC2=CC=1)SSC1C=C2C=CC(O)=CC2=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 1.740145e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.221167e+00 ;
+            mbo:mz 1.740686e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.007791e+01 ;
+            mbo:mz 1.750223e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 101 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.490362e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0900000000-abb874e7e77268f86d04" ;
+    skos:definition "6-Hydroxy-2-naphthyl disulfide; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

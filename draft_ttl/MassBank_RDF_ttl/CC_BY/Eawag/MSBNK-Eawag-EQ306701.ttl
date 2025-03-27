@@ -1,0 +1,72 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ306701 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ306701" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "14.4 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2-butyl-1-benzofuran-3-yl)-[4-(2-diethylaminoethyloxy)-3,5-bis(iodanyl)phenyl]methanone",
+                "Amiodarone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 6.450237e+02 ;
+            rdfs:seeAlso cas:1951-25-3,
+                chemspider:2072,
+                pubchem:CID2157 ;
+            schema:inChI "InChI=1S/C25H29I2NO3/c1-4-7-11-22-23(18-10-8-9-12-21(18)31-22)24(29)17-15-19(26)25(20(27)16-17)30-14-13-28(5-2)6-3/h8-10,12,15-16H,4-7,11,13-14H2,1-3H3" ;
+            schema:inChIKey inchikey:IYIKLHRQXLHMJQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H29I2NO3" ;
+            schema:name "(2-butyl-1-benzofuran-3-yl)-[4-(2-diethylaminoethyloxy)-3,5-bis(iodanyl)phenyl]methanone",
+                "Amiodarone" ;
+            schema:smiles "Ic1cc(cc(I)c1OCCN(CC)CC)C(=O)c2c3ccccc3oc2CCCC" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.063885e+06 ;
+            mbo:mz 5.80652e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.935583e+06 ;
+            mbo:mz 8.60964e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.688079e+06 ;
+            mbo:mz 1.001121e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.896324e+08 ;
+            mbo:mz 6.460308e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.460309e+02 ;
+            mbo:precursor_mz 6.46031e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0002-0000009000-8cbab89986761a7a1bc9" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3067" ;
+    skos:definition "Amiodarone; LC-ESI-QFT; MS2; CE: 15; R=35000; [M+H]+" .
+

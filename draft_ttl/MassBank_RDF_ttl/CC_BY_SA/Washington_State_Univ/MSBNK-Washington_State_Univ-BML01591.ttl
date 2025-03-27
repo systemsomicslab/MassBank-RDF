@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML01591 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML01591" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "7.367" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Pectolinarin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.221898e+02 ;
+            rdfs:seeAlso cas:28978-02-1,
+                chemspider:3044621,
+                pubchem:CID3818047 ;
+            schema:inChI "InChI=1S/C29H34O15/c1-11-20(31)23(34)25(36)28(41-11)40-10-18-21(32)24(35)26(37)29(44-18)43-17-9-16-19(22(33)27(17)39-3)14(30)8-15(42-16)12-4-6-13(38-2)7-5-12/h4-9,11,18,20-21,23-26,28-29,31-37H,10H2,1-3H3" ;
+            schema:inChIKey inchikey:DUXQKCCELUKXOE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C29H34O15" ;
+            schema:name "Pectolinarin" ;
+            schema:smiles "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(C(=C4C(=C3)OC(=CC4=O)C5=CC=C(C=C5)OC)O)OC)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.4e+01 ;
+            mbo:mz 3.000578e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 2.8e+01 ;
+            mbo:mz 4.781394e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 7.9e+02 ;
+            mbo:mz 6.231956e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 469 ],
+        [ mbo:intensity 1.684e+03 ;
+            mbo:mz 3.150849e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.2e+01 ;
+            mbo:mz 3.151382e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 3.151628e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 3.151952e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.636e+03 ;
+            mbo:mz 4.771383e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 971 ],
+        [ mbo:intensity 3.9e+01 ;
+            mbo:mz 4.772057e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.3e+01 ;
+            mbo:mz 4.772387e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.2e+01 ;
+            mbo:mz 4.772885e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.15e+02 ;
+            mbo:precursor_mz 6.231971e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-016r-0009803000-f30982f24f4b16da2c55" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.998" ;
+    skos:definition "Pectolinarin; LC-ESI-QTOF; MS2; CE 10 ev; [M+H]+" .
+

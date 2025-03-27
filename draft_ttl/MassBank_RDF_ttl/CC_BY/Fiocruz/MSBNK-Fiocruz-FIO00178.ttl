@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00178 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-04-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00178" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Kaempferol-7-neohesperidoside" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 5.941585e+02 ;
+            rdfs:seeAlso cas:17353-03-6,
+                chemspider:4588328,
+                pubchem:CID5483905 ;
+            schema:inChI "InChI=1S/C27H30O15/c1-9-17(31)20(34)23(37)26(38-9)42-25-21(35)18(32)15(8-28)41-27(25)39-12-6-13(30)16-14(7-12)40-24(22(36)19(16)33)10-2-4-11(29)5-3-10/h2-7,9,15,17-18,20-21,23,25-32,34-37H,8H2,1H3/t9-,15+,17-,18+,20+,21-,23+,25+,26-,27+/m0/s1" ;
+            schema:inChIKey inchikey:ZEJXENDZTYVXDP-CSJHBIPPSA-N ;
+            schema:molecularFormula "C27H30O15" ;
+            schema:name "Kaempferol-7-neohesperidoside" ;
+            schema:smiles "O([C@H]5C)[C@H]([C@@H]([C@@H]([C@H]5O)O)O)O[C@H]([C@H]4O)[C@@H](O[C@@H]([C@H]4O)CO)Oc(c3)cc(O1)c(c3O)C(C(=C(c(c2)ccc(O)c2)1)O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 5.45e+02 ;
+            mbo:mz 2.840332e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 5.908e+03 ;
+            mbo:mz 2.850408e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.125e+03 ;
+            mbo:mz 2.860445e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 1.73e+02 ;
+            mbo:mz 2.870474e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.23e+02 ;
+            mbo:mz 4.290839e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 7.8e+02 ;
+            mbo:mz 5.931512e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 2.95e+02 ;
+            mbo:mz 5.941551e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 50 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.850408e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-000i-0090010000-8c76f2b94219fd1151fc" ;
+    rdfs:comment "[Raw Data] CB054_Kaempferol-7-neohesperidoside_neg_40eV_000018.txt" ;
+    skos:definition "Kaempferol-7-neohesperidoside; LC-ESI-QTOF; MS2; [M-H]-; CE: 40eV" .
+

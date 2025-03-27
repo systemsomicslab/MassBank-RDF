@@ -1,0 +1,126 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET150205 a mbo:MassSpectrum ;
+    dcterms:creator "R. Gulde, E. Schymanski, K. Fenner, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-17 (Created 2015-09-25, modified 2016-02-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET150205" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde, R.; Meier, U.; Schymanski, E. L.; Kohler, H.-P. E.; Helbling, D. E.; Derrer, S.; Rentsch, D.; Fenner, K. Systematic Exploration of Biotransformation Reactions of Amine-Containing Micropollutants in Activated Sludge. Environmental Science & Technology 2016, 50 (6), 2908–20. DOI:10.1021/acs.est.5b05186" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15, 30, 45, 60, 70 or 90 (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters with guard column" ;
+            mbo:flow_gradient "95/5 at 0 min, 5/95 at 15 min, 5/95 at 20 min, 95/5 at 20.1 min, 95/5 at 25 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.5 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N,N-dimethyl-3-phenyl-3-pyridin-2-ylpropan-1-amine oxide",
+                "PHE_257.1648_10.4",
+                "Pheniramine N-Oxide" ;
+            mbo:ch_compound_class "N/A; Environmental Reference Standard" ;
+            mbo:ch_exact_mass 2.561576e+02 ;
+            rdfs:seeAlso chemspider:193269,
+                pubchem:CID222605 ;
+            schema:inChI "InChI=1S/C16H20N2O/c1-18(2,19)13-11-15(14-8-4-3-5-9-14)16-10-6-7-12-17-16/h3-10,12,15H,11,13H2,1-2H3" ;
+            schema:inChIKey inchikey:OBBDJQMNZLQVAZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H20N2O" ;
+            schema:name "N,N-dimethyl-3-phenyl-3-pyridin-2-ylpropan-1-amine oxide",
+                "PHE_257.1648_10.4",
+                "Pheniramine N-Oxide" ;
+            schema:smiles "C[N+](C)([O-])CCC(C1=CC=CC=C1)C1=NC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 8.310387e+06 ;
+            mbo:mz 9.10544e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 173 ],
+        [ mbo:intensity 3.352391e+07 ;
+            mbo:mz 1.670734e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 698 ],
+        [ mbo:intensity 4.800489e+07 ;
+            mbo:mz 1.680811e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.47861e+04 ;
+            mbo:mz 1.790863e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 8.735696e+05 ;
+            mbo:mz 1.800812e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 6.866259e+05 ;
+            mbo:mz 1.810887e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.109e+06 ;
+            mbo:mz 1.940969e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 7.211814e+05 ;
+            mbo:mz 1.95105e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 4.1118e+07 ;
+            mbo:mz 1.961124e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 856 ],
+        [ mbo:intensity 1.243942e+05 ;
+            mbo:mz 1.030545e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 7.578368e+05 ;
+            mbo:mz 1.100602e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 2.024146e+05 ;
+            mbo:mz 1.150545e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.141672e+06 ;
+            mbo:mz 1.170575e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 6.498808e+06 ;
+            mbo:mz 1.180653e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 1.573219e+06 ;
+            mbo:mz 1.190731e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.37728e+05 ;
+            mbo:mz 1.290705e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.604168e+05 ;
+            mbo:mz 1.66065e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 5 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.571654e+02 ;
+            mbo:precursor_mz 2.571648e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 17 ;
+    mbo:pk_splash "splash10-014i-0900000000-1164a8f761c8b4344239" ;
+    rdfs:comment "INTERNAL_ID 1502" ;
+    skos:definition "PHE_257.1648_10.4; LC-ESI-QFT; MS2; CE: 15-90; R=17500; [M+H]+" .
+

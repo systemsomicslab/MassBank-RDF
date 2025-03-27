@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT101420 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT101420" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2'-Deoxy-AMP",
+                "2'-Deoxyadenosine-5'-monophosphate",
+                "2'-Deoxyadenylic acid",
+                "[(2R,3S,5R)-5-(6-aminopurin-9-yl)-3-hydroxyoxolan-2-yl]methyl dihydrogen phosphate",
+                "dAMP" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Adenosine phosphate" ;
+            mbo:ch_exact_mass 3.31227e+02 ;
+            rdfs:seeAlso cas:653-63-4 ;
+            schema:inChI "InChI=1S/C10H14N5O6P/c11-9-8-10(13-3-12-9)15(4-14-8)7-1-5(16)6(21-7)2-20-22(17,18)19/h3-7,16H,1-2H2,(H2,11,12,13)(H2,17,18,19)" ;
+            schema:inChIKey inchikey:KHWCHTKSEGGWEX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H14N5O6P" ;
+            schema:name "2'-Deoxy-AMP",
+                "2'-Deoxyadenosine-5'-monophosphate",
+                "2'-Deoxyadenylic acid",
+                "[(2R,3S,5R)-5-(6-aminopurin-9-yl)-3-hydroxyoxolan-2-yl]methyl dihydrogen phosphate",
+                "dAMP" ;
+            schema:smiles "C1C(C(OC1N2C=NC3=C2N=CN=C3N)COP(=O)(O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.503e+02 ;
+            mbo:mz 1.360633e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 269 ],
+        [ mbo:intensity 5.586e+02 ;
+            mbo:mz 3.32076e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.32076e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0209000000-05ded3b31c4db3d6c016" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "[(2R,3S,5R)-5-(6-aminopurin-9-yl)-3-hydroxyoxolan-2-yl]methyl dihydrogen phosphate, 2'-Deoxyadenosine-5'-monophosphate, 2'-Deoxyadenylic acid, 2'-Deoxy-AMP, dAMP; LC-ESI-QTOF; MS2" .
+

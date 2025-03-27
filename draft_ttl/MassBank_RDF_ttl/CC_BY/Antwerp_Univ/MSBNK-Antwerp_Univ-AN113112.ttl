@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN113112 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN113112" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "60 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "5.518 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,5-Di-tert-butyl-4-hydroxybenzaldehyde",
+                "3,5-Ditert-butyl-4-hydroxybenzaldehyde" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.34162e+02 ;
+            rdfs:seeAlso cas:1620-98-0,
+                chemspider:65974,
+                pubchem:CID73219 ;
+            schema:inChI "InChI=1S/C15H22O2/c1-14(2,3)11-7-10(9-16)8-12(13(11)17)15(4,5)6/h7-9,17H,1-6H3" ;
+            schema:inChIKey inchikey:DOZRDZLFLOODMB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H22O2" ;
+            schema:name "3,5-Di-tert-butyl-4-hydroxybenzaldehyde",
+                "3,5-Ditert-butyl-4-hydroxybenzaldehyde" ;
+            schema:smiles "CC(C)(C)C1=CC(=CC(=C1O)C(C)(C)C)C=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.922e+02 ;
+            mbo:mz 5.70704e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 325 ],
+        [ mbo:intensity 8.991e+02 ;
+            mbo:mz 7.70386e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.834e+02 ;
+            mbo:mz 9.10545e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 759 ],
+        [ mbo:intensity 2.04e+02 ;
+            mbo:mz 1.170708e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 227 ],
+        [ mbo:intensity 2.032e+02 ;
+            mbo:mz 1.280599e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 226 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.351693e+02 ;
+            mbo:precursor_mz 2.351693e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004l-9100000000-89a8d0f211b4f894ba83" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "3,5-Ditert-butyl-4-hydroxybenzaldehyde; LC-ESI-QTOF; MS2; CE: 60eV; R=7000; [M+H]+" .
+

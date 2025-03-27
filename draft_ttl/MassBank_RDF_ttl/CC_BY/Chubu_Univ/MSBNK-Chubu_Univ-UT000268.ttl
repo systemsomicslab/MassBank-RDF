@@ -1,0 +1,62 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT000268 a mbo:MassSpectrum ;
+    dcterms:creator "Nakanishi H, Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2007-10-19, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT000268" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "4000Q TRAP, Applied Biosystems" ;
+            mbo:collision_energy "40 V" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9(S)-HpOTrE",
+                "9-HpOTrE",
+                "9S-hydroperoxy-10E,12Z,15Z-octadecatrienoic acid" ;
+            mbo:ch_compound_class "Natural Product; Lipid; Fatty acid" ;
+            mbo:ch_exact_mass 3.102144e+02 ;
+            rdfs:seeAlso cas:111004-08-1 ;
+            schema:inChI "InChI=1S/C18H30O4/c1-2-3-4-5-6-8-11-14-17(22-21)15-12-9-7-10-13-16-18(19)20/h3-4,6,8,11,14,17,21H,2,5,7,9-10,12-13,15-16H2,1H3,(H,19,20)/b4-3-,8-6?,14-11+" ;
+            schema:inChIKey inchikey:RWKJTIHNYSIIHW-WYVZXCPWSA-N ;
+            schema:molecularFormula "C18H30O4" ;
+            schema:name "9(S)-HpOTrE",
+                "9-HpOTrE",
+                "9S-hydroperoxy-10E,12Z,15Z-octadecatrienoic acid" ;
+            schema:smiles "CCC=CCC=CC=CC(OO)CCCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 6.25e+03 ;
+            mbo:mz 1.7104e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 333 ],
+        [ mbo:intensity 6.25e+03 ;
+            mbo:mz 1.852e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 333 ],
+        [ mbo:intensity 1.875e+04 ;
+            mbo:mz 2.0914e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.25e+04 ;
+            mbo:mz 2.2712e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 666 ],
+        [ mbo:intensity 1.25e+04 ;
+            mbo:mz 2.2728e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 666 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-056r-0290000000-ea2640a6cb224ba6e8ba" ;
+    skos:definition "9-HpOTrE; LC-ESI-QIT; MS2; CE:40 V; [M-H]-" .
+

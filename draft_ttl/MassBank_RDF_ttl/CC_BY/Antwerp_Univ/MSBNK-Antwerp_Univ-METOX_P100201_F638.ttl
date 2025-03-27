@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_P100201_F638 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2021-12-04"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_P100201_F638" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6530 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "5000" ;
+            mbo:retention_time "0.215 min" ;
+            mbo:solvent "A 90/10 water with 10mM ammonium formate + 0.1% formic acid/methanol",
+                "B acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,4R)-4-hydroxypyrrolidine-2-carboxylic acid",
+                "Hydroxy-L-Proline Standard",
+                "Hydroxyproline" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.310582e+02 ;
+            rdfs:seeAlso cas:51-35-4,
+                chemspider:5605,
+                pubchem:CID5810 ;
+            schema:inChI "InChI=1S/C5H9NO3/c7-3-1-4(5(8)9)6-2-3/h3-4,6-7H,1-2H2,(H,8,9)/t3-,4+/m1/s1" ;
+            schema:inChIKey inchikey:PMMYEEVYMWASQN-DMTCNVIQSA-N ;
+            schema:molecularFormula "C5H9NO3" ;
+            schema:name "(2S,4R)-4-hydroxypyrrolidine-2-carboxylic acid",
+                "Hydroxy-L-Proline Standard",
+                "Hydroxyproline" ;
+            schema:smiles "C1[C@H](CN[C@@H]1C(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.4987e+03 ;
+            mbo:mz 4.10395e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 3.03264e+04 ;
+            mbo:mz 6.80505e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 612 ],
+        [ mbo:intensity 4.94733e+04 ;
+            mbo:mz 8.60606e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.422e+02 ;
+            mbo:mz 9.60432e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.004e+02 ;
+            mbo:mz 1.14054e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.15142e+04 ;
+            mbo:mz 1.320654e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 434 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.320655e+02 ;
+            mbo:precursor_mz 1.320655e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00kr-9200000000-9a9142f642b2c3c818a7" ;
+    rdfs:comment "INTERNAL_ID 1002" ;
+    skos:definition "Hydroxy-L-Proline Standard; LC-ESI-QTOF; MS2; CE: 10eV; R=5000; [M+H]+" .
+

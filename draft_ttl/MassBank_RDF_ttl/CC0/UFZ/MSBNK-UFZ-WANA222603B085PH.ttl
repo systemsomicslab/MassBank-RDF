@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA222603B085PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA222603B085PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.492 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(6S,8S,9S,10R,11S,13S,14S,17R)-11,17-dihydroxy-17-(2-hydroxyacetyl)-6,10,13-trimethyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
+                "6alpha Methylprednisolone",
+                "Methylprednisolone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.742093e+02 ;
+            rdfs:seeAlso cas:83-43-2,
+                chemspider:6485,
+                pubchem:CID6741 ;
+            schema:inChI "InChI=1S/C22H30O5/c1-12-8-14-15-5-7-22(27,18(26)11-23)21(15,3)10-17(25)19(14)20(2)6-4-13(24)9-16(12)20/h4,6,9,12,14-15,17,19,23,25,27H,5,7-8,10-11H2,1-3H3/t12-,14-,15-,17-,19+,20-,21-,22-/m0/s1" ;
+            schema:inChIKey inchikey:VHRSUDSXCMQTMA-PJHHCJLFSA-N ;
+            schema:molecularFormula "C22H30O5" ;
+            schema:name "(6S,8S,9S,10R,11S,13S,14S,17R)-11,17-dihydroxy-17-(2-hydroxyacetyl)-6,10,13-trimethyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
+                "6alpha Methylprednisolone",
+                "Methylprednisolone" ;
+            schema:smiles "[H][C@@]12CC[C@](O)(C(=O)CO)[C@@]1(C)C[C@H](O)[C@@]1([H])[C@@]2([H])C[C@H](C)C2=CC(=O)C=C[C@]12C" ] ;
+    mbo:has_peak [ mbo:intensity 1.9932e+03 ;
+            mbo:mz 1.610963e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 358 ],
+        [ mbo:intensity 1.7355e+03 ;
+            mbo:mz 2.531586e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 311 ],
+        [ mbo:intensity 1.2278e+03 ;
+            mbo:mz 3.031737e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 220 ],
+        [ mbo:intensity 3.0579e+03 ;
+            mbo:mz 3.211842e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 549 ],
+        [ mbo:intensity 2.5783e+03 ;
+            mbo:mz 3.391955e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 463 ],
+        [ mbo:intensity 5.5665e+03 ;
+            mbo:mz 3.572058e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.752162e+02 ;
+            mbo:precursor_mz 3.752166e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0pi0-0119000000-10ec4d46046ce55eaa18" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "6alpha Methylprednisolone; LC-ESI-ITFT; MS2; CE: 20%; R=15000; [M+H]+" .
+

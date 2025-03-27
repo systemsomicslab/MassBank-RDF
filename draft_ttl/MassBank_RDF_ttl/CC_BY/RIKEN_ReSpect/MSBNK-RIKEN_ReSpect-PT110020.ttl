@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT110020 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT110020" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[[(E)-2-methylbut-2-enoyl]amino]acetic acid",
+                "N-Tigloylglycine",
+                "Tiglylglycine" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Glycine" ;
+            mbo:ch_exact_mass 1.57169e+02 ;
+            rdfs:seeAlso cas:35842-45-6 ;
+            schema:inChI "InChI=1S/C7H11NO3/c1-3-5(2)7(11)8-4-6(9)10/h3H,4H2,1-2H3,(H,8,11)(H,9,10)" ;
+            schema:inChIKey inchikey:WRUSVQOKJIDBLP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H11NO3" ;
+            schema:name "2-[[(E)-2-methylbut-2-enoyl]amino]acetic acid",
+                "N-Tigloylglycine",
+                "Tiglylglycine" ;
+            schema:smiles "CC=C(C)C(=O)NCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.498e+01 ;
+            mbo:mz 5.50551e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 3.332e+00 ;
+            mbo:mz 8.29897e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.2e+00 ;
+            mbo:mz 8.30142e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.787e+02 ;
+            mbo:mz 8.30492e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.999e+00 ;
+            mbo:mz 9.89613e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 4.565e+00 ;
+            mbo:mz 9.95114e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.173e+00 ;
+            mbo:mz 1.069914e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.657e+00 ;
+            mbo:mz 1.169775e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.25e+01 ;
+            mbo:mz 1.580817e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 22 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.580817e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-001i-9000000000-6fdd0ba2be939d0a161a" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Tiglylglycine, N-Tigloylglycine, 2-[[(E)-2-methylbut-2-enoyl]amino]acetic acid; LC-ESI-QTOF; MS2" .
+

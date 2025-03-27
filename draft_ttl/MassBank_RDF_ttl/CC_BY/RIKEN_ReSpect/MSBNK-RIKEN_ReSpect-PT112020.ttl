@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT112020 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT112020" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3S,4R)-oxolane-2,3,4-triol",
+                "D(-)-Threose",
+                "D-Threo-tetrose",
+                "D-threo-Aldose" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Sugar CLASS3 Monosaccharide" ;
+            mbo:ch_exact_mass 1.20104e+02 ;
+            rdfs:seeAlso cas:95-43-2 ;
+            schema:inChI "InChI=1S/C4H8O4/c5-2-1-8-4(7)3(2)6/h2-7H,1H2" ;
+            schema:inChIKey inchikey:FMAORJIQYMIRHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H8O4" ;
+            schema:name "(3S,4R)-oxolane-2,3,4-triol",
+                "D(-)-Threose",
+                "D-Threo-tetrose",
+                "D-threo-Aldose" ;
+            schema:smiles "C1C(C(C(O1)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.067e+01 ;
+            mbo:mz 7.70297e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 436 ],
+        [ mbo:intensity 2.771e+01 ;
+            mbo:mz 9.10425e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 394 ],
+        [ mbo:intensity 7.027e+01 ;
+            mbo:mz 9.30575e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.917e+01 ;
+            mbo:mz 1.210501e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 273 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.210501e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-9100000000-edfb137ecf5421bcda1b" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "D-Threo-tetrose, (3S,4R)-oxolane-2,3,4-triol, D(-)-Threose, D-threo-Aldose; LC-ESI-QTOF; MS2" .
+

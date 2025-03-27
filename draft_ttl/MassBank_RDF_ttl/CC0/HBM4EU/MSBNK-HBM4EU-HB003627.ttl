@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003627 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003627" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "8.651 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8,9-dihydroxy-2-methyl-4-oxo-5H-pyrano[3,2-c]chromene-10-carboxylic acid",
+                "Citromycetin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.900427e+02 ;
+            rdfs:seeAlso cas:478-60-4,
+                chemspider:58541,
+                pubchem:CID65029 ;
+            schema:inChI "InChI=1S/C14H10O7/c1-5-2-7(15)6-4-20-9-3-8(16)12(17)11(14(18)19)10(9)13(6)21-5/h2-3,16-17H,4H2,1H3,(H,18,19)" ;
+            schema:inChIKey inchikey:PKEPGKZPVDAVKI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H10O7" ;
+            schema:name "8,9-dihydroxy-2-methyl-4-oxo-5H-pyrano[3,2-c]chromene-10-carboxylic acid",
+                "Citromycetin" ;
+            schema:smiles "CC1=CC(=O)C2=C(O1)C3=C(C=C(C(=C3C(=O)O)O)O)OC2" ] ;
+    mbo:has_peak [ mbo:intensity 2.8099e+03 ;
+            mbo:mz 2.010189e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.4711e+03 ;
+            mbo:mz 2.030329e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.84207e+05 ;
+            mbo:mz 2.450437e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 534 ],
+        [ mbo:intensity 3.446478e+05 ;
+            mbo:mz 2.730385e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.991748e+02 ;
+            mbo:precursor_mz 2.910499e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00dj-0090000000-c746119dee2569eaed38" ;
+    rdfs:comment "INTERNAL_ID 50" ;
+    skos:definition "Citromycetin; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M+H]+" .
+

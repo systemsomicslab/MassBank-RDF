@@ -1,0 +1,62 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU592717 a mbo:MassSpectrum ;
+    dcterms:creator "Dimitrios E. Damalas, Stefanos Kokolakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU592717" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness (Restek)" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "17.265 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-dichloro-2-(2,5-dichlorophenyl)benzene",
+                "2,2`,5,5`-Tetrachlorobiphenyl",
+                "PCB 52" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.899224e+02 ;
+            rdfs:seeAlso cas:35693-99-3,
+                chemspider:34189,
+                pubchem:CID37248 ;
+            schema:inChI "InChI=1S/C12H6Cl4/c13-7-1-3-11(15)9(5-7)10-6-8(14)2-4-12(10)16/h1-6H" ;
+            schema:inChIKey inchikey:HCWZEPKLWVAEOV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H6Cl4" ;
+            schema:name "1,4-dichloro-2-(2,5-dichlorophenyl)benzene",
+                "2,2`,5,5`-Tetrachlorobiphenyl",
+                "PCB 52" ;
+            schema:smiles "ClC1=CC(=C(Cl)C=C1)C1=C(Cl)C=CC(Cl)=C1" ] ;
+    mbo:has_peak [ mbo:intensity 9.76e+02 ;
+            mbo:mz 2.549528e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 3.3096e+04 ;
+            mbo:mz 2.899206e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.89921e+02 ;
+            mbo:precursor_mz 2.899218e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0090000000-773eabee5b71bb504069" ;
+    rdfs:comment "INTERNAL_ID 5927" ;
+    skos:definition "PCB 52; GC-APCI-QTOF; MS2; CE: 10 eV; R=35000; [M]+" .
+

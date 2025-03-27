@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR040070 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2007-12-14, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR040070" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-[(2S,3R,4S,5R,6R)-4,5-dihydroxy-6-(hydroxymethyl)-3-[(2S,3R,4R,5S,6S)-3,4,5-trihydroxy-6-methyl-oxan-2-yl]oxy-oxan-2-yl]oxy-5-hydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+                "Rhoifolin",
+                "apigenin-7-O-neohesperidoside" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 5.781636e+02 ;
+            rdfs:seeAlso cas:17306-46-6,
+                pubchem:CID5282150 ;
+            schema:inChI "InChI=1S/C27H30O14/c1-10-20(32)22(34)24(36)26(37-10)41-25-23(35)21(33)18(9-28)40-27(25)38-13-6-14(30)19-15(31)8-16(39-17(19)7-13)11-2-4-12(29)5-3-11/h2-8,10,18,20-30,32-36H,9H2,1H3/t10-,18+,20-,21+,22+,23-,24+,25+,26-,27+/m0/s1" ;
+            schema:inChIKey inchikey:RPMNUQRUHXIGHK-PYXJVEIZSA-N ;
+            schema:molecularFormula "C27H30O14" ;
+            schema:name "7-[(2S,3R,4S,5R,6R)-4,5-dihydroxy-6-(hydroxymethyl)-3-[(2S,3R,4R,5S,6S)-3,4,5-trihydroxy-6-methyl-oxan-2-yl]oxy-oxan-2-yl]oxy-5-hydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+                "Rhoifolin",
+                "apigenin-7-O-neohesperidoside" ;
+            schema:smiles "O([C@H]5C)[C@H]([C@@H]([C@@H]([C@H]5O)O)O)O[C@H]([C@H]4O)[C@@H](O[C@@H]([C@H]4O)CO)Oc(c3)cc(O1)c(c3O)C(C=C(c(c2)ccc(O)c2)1)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.67e+02 ;
+            mbo:mz 7.5113e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 5.86e+02 ;
+            mbo:mz 4.130966e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 2.362e+03 ;
+            mbo:mz 5.771622e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 3.42e+02 ;
+            mbo:mz 2.227845e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 7.21e+02 ;
+            mbo:mz 2.668629e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.958e+03 ;
+            mbo:mz 2.680587e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 2.8449e+04 ;
+            mbo:mz 2.690685e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.396e+03 ;
+            mbo:mz 2.69977e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 154 ],
+        [ mbo:intensity 1.228e+03 ;
+            mbo:mz 2.708726e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 6.49e+02 ;
+            mbo:mz 2.717892e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.92e+02 ;
+            mbo:mz 2.727102e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014i-0090000000-c0ce3576cd0c7e784176" ;
+    skos:definition "Rhoifolin; LC-ESI-QTOF; MS2; CE:30 eV; [M-H]-" .
+

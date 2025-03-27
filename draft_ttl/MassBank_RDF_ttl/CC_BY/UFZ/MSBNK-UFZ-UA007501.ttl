@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA007501 a mbo:MassSpectrum ;
+    dcterms:creator "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-08-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA007501" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W (2017) Environ. Sci. Technol. 51:1830-1839, DOI:10.1021/acs.est.6b05468. Mutagenicity in surface waters - synergistic effects of carboline alkaloids and aromatic amines" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "61.67 % (nominal)" ;
+            mbo:column_name "Accucore PhenylHexyl 2.6um, 3x150mm, Thermo" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 3.2 min, 5/95 at 21 min, 5/95 at 41 min, 90/10 at 50 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "16.816 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9H-Pyrido[3,4-b]indole",
+                "Norharman" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.680687e+02 ;
+            rdfs:seeAlso cas:244-63-3,
+                chemspider:58486,
+                pubchem:CID64961 ;
+            schema:inChI "InChI=1S/C11H8N2/c1-2-4-10-8(3-1)9-5-6-12-7-11(9)13-10/h1-7,13H" ;
+            schema:inChIKey inchikey:AIFRHYZBTHREPW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H8N2" ;
+            schema:name "9H-Pyrido[3,4-b]indole",
+                "Norharman" ;
+            schema:smiles "c1ccc2c(c1)c3ccncc3[nH]2" ] ;
+    mbo:has_peak [ mbo:intensity 3.535944e+07 ;
+            mbo:mz 1.150542e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 7.478506e+06 ;
+            mbo:mz 1.420651e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.310643e+07 ;
+            mbo:mz 1.680683e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 3.227015e+08 ;
+            mbo:mz 1.69076e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.690758e+02 ;
+            mbo:precursor_mz 1.69076e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0900000000-a9e032550aa2941aa98c" ;
+    rdfs:comment "INTERNAL_ID 75" ;
+    skos:definition "Norharman; LC-ESI-QFT; MS2; CE: 61.67%; R=35000; [M+H]+" .
+

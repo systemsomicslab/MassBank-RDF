@@ -1,0 +1,69 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS088102 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS088102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,7,11-Trimethyl-2,6,10-dodecatrien-1-ol",
+                "3,7,11-Trimethyldodeca-2,6,10-trien-1-ol",
+                "Dihydrofarnesol",
+                "Farnesol (mixture of isomers)",
+                "Farnesyl alcohol",
+                "Polyprenol",
+                "Stirrup" ;
+            mbo:ch_compound_class "CLASS1 Terpenoid CLASS2 Sesquiterpenoid CLASS3 Farnesol" ;
+            mbo:ch_exact_mass 2.22372e+02 ;
+            rdfs:seeAlso cas:4602-84-0,
+                pubchem:CID445070 ;
+            schema:inChI "InChI=1S/C15H26O/c1-13(2)7-5-8-14(3)9-6-10-15(4)11-12-16/h7,9,11,16H,5-6,8,10,12H2,1-4H3" ;
+            schema:inChIKey inchikey:CRDAMVZIKSXKFV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H26O" ;
+            schema:name "3,7,11-Trimethyl-2,6,10-dodecatrien-1-ol",
+                "3,7,11-Trimethyldodeca-2,6,10-trien-1-ol",
+                "Dihydrofarnesol",
+                "Farnesol (mixture of isomers)",
+                "Farnesyl alcohol",
+                "Polyprenol",
+                "Stirrup" ;
+            schema:smiles "CC(=CCCC(=CCCC(=CCO)C)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 5.608e+04 ;
+            mbo:mz 2.06e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 183 ],
+        [ mbo:intensity 3.05348e+05 ;
+            mbo:mz 2.07e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.8216e+04 ;
+            mbo:mz 2.23e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 125 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.2323e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-d1f17cd38710b6885058" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Farnesol (mixture of isomers), Dihydrofarnesol, 3,7,11-Trimethyl-2,6,10-dodecatrien-1-ol, 3,7,11-Trimethyldodeca-2,6,10-trien-1-ol, Polyprenol, Stirrup, Farnesyl alcohol; LC-ESI-QQ; MS2" .
+

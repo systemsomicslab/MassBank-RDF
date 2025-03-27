@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000936 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000936" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carbazole" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.670735e+02 ;
+            rdfs:seeAlso cas:86-74-8,
+                pubchem:CID6854 ;
+            schema:inChI "InChI=1S/C12H9N/c1-3-7-11-9(5-1)10-6-2-4-8-12(10)13-11/h1-8,13H" ;
+            schema:inChIKey inchikey:UJOBWOGCFQCDNV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H9N" ;
+            schema:name "Carbazole" ;
+            schema:smiles "C1=CC=CC2NC3=CC=CC=C3C=21" ] ;
+    mbo:has_peak [ mbo:intensity 6.176271e+00 ;
+            mbo:mz 4.900837e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 3.468548e+01 ;
+            mbo:mz 1.650584e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 347 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.660662e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.251762e+00 ;
+            mbo:mz 5.000362e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.701164e+00 ;
+            mbo:mz 6.401927e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 4.609348e+00 ;
+            mbo:mz 9.003492e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 3.972915e+00 ;
+            mbo:mz 1.130397e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 6.337225e+00 ;
+            mbo:mz 1.160506e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 3.571269e+00 ;
+            mbo:mz 1.170584e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.412722e+01 ;
+            mbo:mz 1.400506e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 141 ],
+        [ mbo:intensity 2.683677e+01 ;
+            mbo:mz 1.640506e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 268 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.660662e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014i-0900000000-98a5eb918455e5ad964e" ;
+    skos:definition "Carbazole; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

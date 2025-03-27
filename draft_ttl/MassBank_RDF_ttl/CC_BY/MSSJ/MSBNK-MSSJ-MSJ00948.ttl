@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00948 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-10-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00948" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "40 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acetylgenistin" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 4.741162e+02 ;
+            rdfs:seeAlso cas:73566-30-0,
+                chemspider:4475040,
+                pubchem:CID5315831 ;
+            schema:inChI "InChI=1S/C23H22O11/c1-10(24)31-9-17-20(28)21(29)22(30)23(34-17)33-13-6-15(26)18-16(7-13)32-8-14(19(18)27)11-2-4-12(25)5-3-11/h2-8,17,20-23,25-26,28-30H,9H2,1H3/t17-,20-,21+,22-,23-/m1/s1" ;
+            schema:inChIKey inchikey:DXWGBJJLEDQBKS-LDBVRRDLSA-N ;
+            schema:molecularFormula "C23H22O11" ;
+            schema:name "Acetylgenistin" ;
+            schema:smiles "CC(=O)OC[C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)OC2=CC(=C3C(=C2)OC=C(C3=O)C4=CC=C(C=C4)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.04379e+02 ;
+            mbo:mz 2.680377e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 757 ],
+        [ mbo:intensity 1.37711e+02 ;
+            mbo:mz 2.690452e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.7928e+01 ;
+            mbo:mz 4.731091e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 130 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.731089e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-0090000000-f6f72bbcbfaa667d7ba2" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Acetylgenistin; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 40 V" .
+

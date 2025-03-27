@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311092871 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311092871" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "100" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "7.476 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sulisobenzone" ;
+            mbo:ch_compound_class "Personal_care_product" ;
+            mbo:ch_exact_mass 3.080355e+02 ;
+            rdfs:seeAlso cas:4065-45-6 ;
+            schema:inChI "InChI=1S/C14H12O6S/c1-20-12-8-11(15)10(7-13(12)21(17,18)19)14(16)9-5-3-2-4-6-9/h2-8,15H,1H3,(H,17,18,19)" ;
+            schema:inChIKey inchikey:CXVGEDCSTKKODG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H12O6S" ;
+            schema:name "Sulisobenzone" ;
+            schema:smiles "COc1c(S(O)(=O)=O)cc(C(c2ccccc2)=O)c(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 4.82e+01 ;
+            mbo:mz 7.99558e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.8e+00 ;
+            mbo:mz 8.09639e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 3.6e+00 ;
+            mbo:mz 1.010387e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 75 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.070282e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-9000000000-8696ce5d873743ac26b8" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Sulisobenzone; LC-ESI-QTOF; MS2; 100 V" .
+

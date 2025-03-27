@@ -1,0 +1,80 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fukuyama_Univ-FU000163 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuura F, Ohta M, Kittaka M, Faculty of Life Science and Biotechnology, Fukuyama University" ;
+    dcterms:date "2016-01-19 (Created 2009-08-19, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fukuyama_Univ-FU000163" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Matsuura, F., and Jones, M. Z. (1985) Structural Characterization of Novel Complex Oligosacharides Accumulated in the Caprine beta-Mannosidosis Kidney. J. Biol. Chem. 260, 15239-15245. [PMID: 4066670]" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "2695 HPLC Quadro Micro API, Waters" ;
+            mbo:collision_energy "10.0 V" ;
+            mbo:column_name "TSK-GEL Amide-80 2.0 mm X 250 mm (TOSOH)" ;
+            mbo:flow_gradient "74/26 at 0 min, 50/50 at 60 min." ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.637 min" ;
+            mbo:solvent "A CH3CN",
+                "B H2O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Man-beta-1-4GlcNAc-beta-1-4GlcNAc",
+                "ManGlcNAc2" ;
+            mbo:ch_compound_class "Natural Product; Oligosaccharide; N-linked glycan; High-mannose Type" ;
+            mbo:ch_exact_mass 5.862221e+02 ;
+            rdfs:seeAlso chemspider:9642227 ;
+            schema:inChI "InChI=1S/C22H38N2O16/c1-6(28)23-11-14(31)18(9(4-26)36-20(11)35)39-21-12(24-7(2)29)15(32)19(10(5-27)38-21)40-22-17(34)16(33)13(30)8(3-25)37-22/h8-22,25-27,30-35H,3-5H2,1-2H3,(H,23,28)(H,24,29)/t8-,9-,10-,11-,12-,13-,14-,15-,16+,17+,18-,19-,20-,21+,22+/m1/s1" ;
+            schema:inChIKey inchikey:OCPQLCXSCTTXMX-NOOLRNBNSA-N ;
+            schema:molecularFormula "C22H38N2O16" ;
+            schema:name "Man-beta-1-4GlcNAc-beta-1-4GlcNAc",
+                "ManGlcNAc2" ;
+            schema:smiles "CC(=O)NC(C(O)3)C(O)C(C(CO)O3)OC(O1)C(NC(C)=O)C(O)C(OC(O2)C(O)C(O)C(O)C(CO)2)C(CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.644e+04 ;
+            mbo:mz 3.66e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 4.075e+03 ;
+            mbo:mz 3.707e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.971e+03 ;
+            mbo:mz 5.743e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 7.846e+03 ;
+            mbo:mz 7.35e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.929e+05 ;
+            mbo:mz 7.355e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 592 ],
+        [ mbo:intensity 3.257e+05 ;
+            mbo:mz 7.364e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.109e+04 ;
+            mbo:mz 7.37e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 95 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 7.36e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-000i-0000000900-4d42f0a2b7ce69c4fe98" ;
+    rdfs:comment "[Chemical] Source; bovine beta-mannosidosis kidney" ;
+    skos:definition "ManGlcNAc2; LC-ESI-QQ; MS2; CE:10V; Amide" .
+

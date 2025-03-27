@@ -1,0 +1,102 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00833 a mbo:MassSpectrum ;
+    dcterms:creator "Lege S, Zwiener C, Environmental Analytical Chemistry (EAC), University of Tuebingen" ;
+    dcterms:date "2019-01-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00833" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Environmental Analytical Chemistry (EAC), University of Tuebingen, Germany under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "6550 QTOF (Agilent Technologies)" ;
+            mbo:collision_energy "40.0V" ;
+            mbo:column_name "Flow injection" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "13000 (m/z 118) - 26000 (m/z 922)" ;
+            mbo:solvent " ",
+                "%",
+                "(",
+                ")",
+                "+",
+                ".",
+                "0",
+                "1",
+                "2",
+                "5",
+                ":",
+                "A",
+                "H",
+                "M",
+                "N",
+                "O",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "m",
+                "n",
+                "o",
+                "t",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Benzyldiethylamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.631361e+02 ;
+            rdfs:seeAlso chemspider:55154,
+                pubchem:CID61211 ;
+            schema:inChI "InChI=1S/C11H17N/c1-3-12(4-2)10-11-8-6-5-7-9-11/h5-9H,3-4,10H2,1-2H3" ;
+            schema:inChIKey inchikey:ZWRDBWDXRLPESY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H17N" ;
+            schema:name "Benzyldiethylamine" ;
+            schema:smiles "CCN(CC)Cc1ccccc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.2846e+04 ;
+            mbo:mz 3.90221e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.3192e+04 ;
+            mbo:mz 4.10377e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 6.408e+03 ;
+            mbo:mz 4.40489e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 4.64e+03 ;
+            mbo:mz 5.10223e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 8.675e+03 ;
+            mbo:mz 6.30226e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 2.30772e+05 ;
+            mbo:mz 6.50385e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 583 ],
+        [ mbo:intensity 3.782e+03 ;
+            mbo:mz 8.19372e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.95273e+05 ;
+            mbo:mz 9.1054e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.641434e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00kf-9000000000-bd3179cea9446fa33205" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Benzyldiethylamine; LC-ESI-QTOF; MS2; CE: 40.0V; [M+H]+" .
+

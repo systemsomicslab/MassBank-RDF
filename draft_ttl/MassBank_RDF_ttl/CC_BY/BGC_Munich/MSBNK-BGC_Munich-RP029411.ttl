@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP029411 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP029411" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.354 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-hydroxy-2-(4-hydroxyphenyl)propanoic acid",
+                "DL-4-Hydroxyphenyllactic acid" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.820579e+02 ;
+            rdfs:seeAlso cas:23508-35-2,
+                chemspider:10807549,
+                pubchem:CID22056978 ;
+            schema:inChI "InChI=1S/C9H10O4/c1-9(13,8(11)12)6-2-4-7(10)5-3-6/h2-5,10,13H,1H3,(H,11,12)" ;
+            schema:inChIKey inchikey:HXIPUYVSSGKLFF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H10O4" ;
+            schema:name "2-hydroxy-2-(4-hydroxyphenyl)propanoic acid",
+                "DL-4-Hydroxyphenyllactic acid" ;
+            schema:smiles "CC(c1ccc(cc1)O)(C(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.38e+02 ;
+            mbo:mz 7.29938e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 2.5574e+04 ;
+            mbo:mz 1.810507e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.2e+01 ;
+            mbo:mz 7.40032e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 9.30354e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.8e+01 ;
+            mbo:mz 1.000057e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.92e+02 ;
+            mbo:mz 1.350462e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 1.360481e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.8e+01 ;
+            mbo:mz 1.370491e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 4.868e+03 ;
+            mbo:mz 1.630401e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 2.98e+02 ;
+            mbo:mz 1.640436e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.810506e+02 ;
+            mbo:precursor_mz 1.810506e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-0900000000-e46b1516c9bc474ebda0" ;
+    rdfs:comment "INTERNAL_ID 294" ;
+    skos:definition "DL-4-Hydroxyphenyllactic acid; LC-ESI-QTOF; MS2; CE: 10; R=; [M-H]-" .
+

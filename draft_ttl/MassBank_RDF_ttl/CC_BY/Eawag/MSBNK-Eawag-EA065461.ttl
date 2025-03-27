@@ -1,0 +1,60 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA065461 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA065461" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "1.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,7-Naphthalenedisulfonic acid",
+                "naphthalene-2,7-disulfonic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.879762e+02 ;
+            rdfs:seeAlso cas:92-41-1,
+                chemspider:60073,
+                pubchem:CID66707 ;
+            schema:inChI "InChI=1S/C10H8O6S2/c11-17(12,13)9-3-1-7-2-4-10(18(14,15)16)6-8(7)5-9/h1-6H,(H,11,12,13)(H,14,15,16)" ;
+            schema:inChIKey inchikey:VILFVXYKHXVYAB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8O6S2" ;
+            schema:name "2,7-Naphthalenedisulfonic acid",
+                "naphthalene-2,7-disulfonic acid" ;
+            schema:smiles "O=S(O)(C1=CC(C=C(C=C2)S(=O)(O)=O)=C2C=C1)=O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.7608e+03 ;
+            mbo:mz 2.070118e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.429815e+02 ;
+            mbo:precursor_mz 2.86969e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-6cbccf86b065e2f2104d" ;
+    rdfs:comment "EAWAG_UCHEM_ID 654" ;
+    skos:definition "2,7-Naphthalenedisulfonic acid; LC-ESI-ITFT; MS2; CE: 60%; R=15000; [M-H]-" .
+

@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_P200101_F638 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2021-12-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_P200101_F638" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6530 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "5000" ;
+            mbo:retention_time "0.185 min" ;
+            mbo:solvent "A 90/10 water with 10mM ammonium formate + 0.1% formic acid/methanol",
+                "B acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-METHYLCYTOSINE",
+                "6-amino-5-methyl-1H-pyrimidin-2-one" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.250589e+02 ;
+            rdfs:seeAlso cas:554-01-8,
+                chemspider:58551,
+                pubchem:CID65040 ;
+            schema:inChI "InChI=1S/C5H7N3O/c1-3-2-7-5(9)8-4(3)6/h2H,1H3,(H3,6,7,8,9)" ;
+            schema:inChIKey inchikey:LRSASMSXMSNRBT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H7N3O" ;
+            schema:name "5-METHYLCYTOSINE",
+                "6-amino-5-methyl-1H-pyrimidin-2-one" ;
+            schema:smiles "CC1=C(N)NC(=O)N=C1" ] ;
+    mbo:has_peak [ mbo:intensity 2.52026e+04 ;
+            mbo:mz 5.40335e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 1.311758e+05 ;
+            mbo:mz 1.090377e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 255 ],
+        [ mbo:intensity 5.13406e+05 ;
+            mbo:mz 1.260637e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.88663e+04 ;
+            mbo:mz 5.60491e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 2.4916e+03 ;
+            mbo:mz 6.60326e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 7.302e+02 ;
+            mbo:mz 6.90092e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.4757e+03 ;
+            mbo:mz 7.10236e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.69089e+04 ;
+            mbo:mz 8.10433e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 1.7485e+04 ;
+            mbo:mz 8.20275e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 6.78961e+04 ;
+            mbo:mz 8.30592e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 6.72086e+04 ;
+            mbo:mz 1.080537e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 131 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.260664e+02 ;
+            mbo:precursor_mz 1.260662e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-004i-2900000000-ce1507655ef41fc6051f" ;
+    rdfs:comment "INTERNAL_ID 2001" ;
+    skos:definition "5-METHYLCYTOSINE; LC-ESI-QTOF; MS2; CE: 10eV; R=5000; [M+H]+" .
+

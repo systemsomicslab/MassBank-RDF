@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS042101 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS042101" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-((6-O-(6-Deoxy-alpha-L-mannopyranosyl)-beta-D-galactopyranosyl)oxy)-7-((6-deoxy-alpha-L-mannopyranosyl)oxy)-5-hydroxy-2-(4-hydroxyphenyl)-4H-1-benzopyran-4-one",
+                "Kaem-3-Gal-Rha-7-Rha",
+                "Kaem-3-Rob-7-Rha",
+                "Kaempferol-3-O-galactose-rhamnose-7-O-rhamnose",
+                "Robinin",
+                "kaempferol-3-O-robinoside-7-O-rhamnoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavonol CLASS3 Kaempferol glycoside" ;
+            mbo:ch_exact_mass 7.40664e+02 ;
+            rdfs:seeAlso cas:301-19-9,
+                pubchem:CID5281693 ;
+            schema:inChI "InChI=1S/C33H40O19/c1-10-19(36)23(40)26(43)31(47-10)46-9-17-21(38)25(42)28(45)33(51-17)52-30-22(39)18-15(35)7-14(49-32-27(44)24(41)20(37)11(2)48-32)8-16(18)50-29(30)12-3-5-13(34)6-4-12/h3-8,10-11,17,19-21,23-28,31-38,40-45H,9H2,1-2H3" ;
+            schema:inChIKey inchikey:PEFASEPMJYRQBW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C33H40O19" ;
+            schema:name "3-((6-O-(6-Deoxy-alpha-L-mannopyranosyl)-beta-D-galactopyranosyl)oxy)-7-((6-deoxy-alpha-L-mannopyranosyl)oxy)-5-hydroxy-2-(4-hydroxyphenyl)-4H-1-benzopyran-4-one",
+                "Kaem-3-Gal-Rha-7-Rha",
+                "Kaem-3-Rob-7-Rha",
+                "Kaempferol-3-O-galactose-rhamnose-7-O-rhamnose",
+                "Robinin",
+                "kaempferol-3-O-robinoside-7-O-rhamnoside" ;
+            schema:smiles "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)OC5C(C(C(C(O5)C)O)O)O)C6=CC=C(C=C6)O)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.7121e+04 ;
+            mbo:mz 4.33e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.28291e+05 ;
+            mbo:mz 7.4e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 283 ],
+        [ mbo:intensity 4.52506e+05 ;
+            mbo:mz 7.41e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.89117e+05 ;
+            mbo:mz 7.42e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 638 ],
+        [ mbo:intensity 5.3013e+04 ;
+            mbo:mz 7.43e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 117 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 7.4167e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0006-0000000900-79ab4ff9735116853356" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "3-((6-O-(6-Deoxy-alpha-L-mannopyranosyl)-beta-D-galactopyranosyl)oxy)-7-((6-deoxy-alpha-L-mannopyranosyl)oxy)-5-hydroxy-2-(4-hydroxyphenyl)-4H-1-benzopyran-4-one, Kaempferol-3-O-galactose-rhamnose-7-O-rhamnose, Kaem-3-Rob-7-Rha, kaempferol-3-O-robinoside-7-O-rhamnoside, Robinin, Kaem-3-Gal-Rha-7-Rha; LC-ESI-QQ; MS2" .
+

@@ -1,0 +1,104 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00371 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00371" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N,N-Diethyl-4-methoxybenzamide" ;
+            mbo:ch_compound_class "unknown" ;
+            mbo:ch_exact_mass 2.071259e+02 ;
+            rdfs:seeAlso cas:7465-86-3,
+                chemspider:201668 ;
+            schema:inChI "InChI=1S/C12H17NO2/c1-4-13(5-2)12(14)10-6-8-11(15-3)9-7-10/h6-9H,4-5H2,1-3H3" ;
+            schema:inChIKey inchikey:HCJXEOFLVIFFDG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H17NO2" ;
+            schema:name "N,N-Diethyl-4-methoxybenzamide" ;
+            schema:smiles "COc(c1)ccc(c1)C(=O)N(CC)CC" ] ;
+    mbo:has_peak [ mbo:intensity 5.9e+02 ;
+            mbo:mz 7.70372e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 3.05e+02 ;
+            mbo:mz 1.190369e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.719e+03 ;
+            mbo:mz 1.2506e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 196 ],
+        [ mbo:intensity 5.16e+02 ;
+            mbo:mz 1.340602e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 8.743e+03 ;
+            mbo:mz 1.350446e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.87e+02 ;
+            mbo:mz 1.360479e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.25e+02 ;
+            mbo:mz 7.90526e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 4.54e+03 ;
+            mbo:mz 9.20259e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 519 ],
+        [ mbo:intensity 3.39e+02 ;
+            mbo:mz 9.30288e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.434e+03 ;
+            mbo:mz 9.50492e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 1.31e+02 ;
+            mbo:mz 9.60523e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.659e+03 ;
+            mbo:mz 1.050451e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 761 ],
+        [ mbo:intensity 2.89e+02 ;
+            mbo:mz 1.060483e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.114e+03 ;
+            mbo:mz 1.070494e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 127 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.350446e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-052u-3900000000-a64f45115a79540296cc" ;
+    rdfs:comment "N-Diethyl-4-methoxybenzamide_pos_50eV_CB000058.txt" ;
+    skos:definition "N,N-Diethyl-4-methoxybenzamide; LC-ESI-QTOF; MS2; [M+H]+; CE: 50eV" .
+

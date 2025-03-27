@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01131803 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01131803" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "4.036 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2,2-trichloro-1-dimethoxyphosphorylethanol",
+                "Trichlorfon" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.559226e+02 ;
+            rdfs:seeAlso cas:52-68-6,
+                chemspider:5644,
+                pubchem:CID5853 ;
+            schema:inChI "InChI=1S/C4H8Cl3O4P/c1-10-12(9,11-2)3(8)4(5,6)7/h3,8H,1-2H3" ;
+            schema:inChIKey inchikey:NFACJZMKEDPNKN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H8Cl3O4P" ;
+            schema:name "2,2,2-trichloro-1-dimethoxyphosphorylethanol",
+                "Trichlorfon" ;
+            schema:smiles "COP(=O)(C(C(Cl)(Cl)Cl)O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 1.318078e+06 ;
+            mbo:mz 7.89944e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 98 ],
+        [ mbo:intensity 3.8026e+05 ;
+            mbo:mz 8.29449e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 1.006277e+05 ;
+            mbo:mz 9.69604e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.49242e+06 ;
+            mbo:mz 1.090049e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 408 ],
+        [ mbo:intensity 1.394801e+05 ;
+            mbo:mz 1.110205e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.345805e+07 ;
+            mbo:mz 1.270154e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.365745e+05 ;
+            mbo:mz 2.209531e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 25 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.880486e+02 ;
+            mbo:precursor_mz 2.569299e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-004i-0900000000-bda4e5fff9ea55cbd73c" ;
+    rdfs:comment "UCHEM_ID 11318" ;
+    skos:definition "Trichlorfon; LC-ESI-QFT; MS2; CE: 45%; R=17500; [M+H]+" .
+

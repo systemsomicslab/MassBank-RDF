@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000371 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000371" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent QTof 6545, Agilent Technologies [MS:1000490]" ;
+            mbo:collision_energy "20.0 eV" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "LTC4-[d5]" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 6.253033e+02 ;
+            rdfs:seeAlso pubchem:CID5280493 ;
+            schema:inChI "InChI=1S/C30H47N3O9S/c1-2-3-4-5-6-7-8-9-10-11-12-13-16-25(24(34)15-14-17-27(36)37)43-21-23(29(40)32-20-28(38)39)33-26(35)19-18-22(31)30(41)42/h6-7,9-13,16,22-25,34H,2-5,8,14-15,17-21,31H2,1H3,(H,32,40)(H,33,35)(H,36,37)(H,38,39)(H,41,42)/b7-6-,10-9-,12-11+,16-13+/t22-,23-,24-,25+/m0/s1" ;
+            schema:inChIKey inchikey:GWNVDXQDILPJIG-NXOLIXFESA-N ;
+            schema:molecularFormula "C30H47N3O9S" ;
+            schema:name "LTC4-[d5]" ;
+            schema:smiles "CCCCC\\C=C/C\\C=C/C=C/C=C/[C@@H](SC[C@H](NC(=O)CC[C@H](N)C(O)=O)C(=O)NCC(O)=O)[C@@H](O)CCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.341175e+02 ;
+            mbo:mz 1.280353e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 2.231537e+03 ;
+            mbo:mz 6.293266e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.727149e+02 ;
+            mbo:mz 1.430464e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 1.362564e+02 ;
+            mbo:mz 2.100887e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 6.892041e+02 ;
+            mbo:mz 2.540785e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 309 ],
+        [ mbo:intensity 1.651114e+03 ;
+            mbo:mz 2.720888e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 739 ],
+        [ mbo:intensity 2.610516e+02 ;
+            mbo:mz 2.880657e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 1.073243e+02 ;
+            mbo:mz 3.06077e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.938373e+02 ;
+            mbo:mz 5.132795e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 3.838826e+02 ;
+            mbo:mz 6.113201e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 172 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.293274e+02 ;
+            mbo:precursor_mz 6.293274e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00b9-0190008000-fedf8e9446c580146bd1" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 20.0 eV within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "LTC4-[d5]; LC-ESI-QTOF; MS2; CE: 20.0; R=N/A; [M-H]-" .
+

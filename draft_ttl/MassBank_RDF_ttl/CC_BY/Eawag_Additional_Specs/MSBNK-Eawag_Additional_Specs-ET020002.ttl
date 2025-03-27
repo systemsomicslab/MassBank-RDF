@@ -1,0 +1,84 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET020002 a mbo:MassSpectrum ;
+    dcterms:creator "R. Gulde, E. Schymanski, K. Fenner, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-17 (Created 2015-09-25, modified 2016-02-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET020002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde, R.; Meier, U.; Schymanski, E. L.; Kohler, H.-P. E.; Helbling, D. E.; Derrer, S.; Rentsch, D.; Fenner, K. Systematic Exploration of Biotransformation Reactions of Amine-Containing Micropollutants in Activated Sludge. Environmental Science & Technology 2016, 50 (6), 2908–20. DOI:10.1021/acs.est.5b05186" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15, 30, 45, 60, 70 or 90 (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters with guard column" ;
+            mbo:flow_gradient "95/5 at 0 min, 5/95 at 15 min, 5/95 at 20 min, 95/5 at 20.1 min, 95/5 at 25 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "12.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(4-amino-3,5-dichlorophenyl)-2-(3-methylbutylamino)ethanol",
+                "CLE_291.1026_12.2",
+                "Clensiopenterol" ;
+            mbo:ch_compound_class "N/A; Environmental Reference Standard" ;
+            mbo:ch_exact_mass 2.900953e+02 ;
+            rdfs:seeAlso pubchem:CID71312596 ;
+            schema:inChI "InChI=1S/C13H20Cl2N2O/c1-8(2)3-4-17-7-12(18)9-5-10(14)13(16)11(15)6-9/h5-6,8,12,17-18H,3-4,7,16H2,1-2H3" ;
+            schema:inChIKey inchikey:KWAPEXIWYNEGAV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H20Cl2N2O" ;
+            schema:name "1-(4-amino-3,5-dichlorophenyl)-2-(3-methylbutylamino)ethanol",
+                "CLE_291.1026_12.2",
+                "Clensiopenterol" ;
+            schema:smiles "CC(C)CCNCC(O)C1=CC(Cl)=C(N)C(Cl)=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.545866e+05 ;
+            mbo:mz 1.530331e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.223641e+05 ;
+            mbo:mz 1.739859e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.82644e+06 ;
+            mbo:mz 1.880022e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 8.151192e+05 ;
+            mbo:mz 2.030128e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.974573e+07 ;
+            mbo:mz 2.170288e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 3.096024e+08 ;
+            mbo:mz 2.73091e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.650689e+07 ;
+            mbo:mz 2.911014e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 86 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.911019e+02 ;
+            mbo:precursor_mz 2.911025e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-0090000000-86441a2df80b12280057" ;
+    rdfs:comment "INTERNAL_ID 200" ;
+    skos:definition "CLE_291.1026_12.2; LC-ESI-QFT; MS2; CE: 15-90; R=17500; [M+H]+" .
+

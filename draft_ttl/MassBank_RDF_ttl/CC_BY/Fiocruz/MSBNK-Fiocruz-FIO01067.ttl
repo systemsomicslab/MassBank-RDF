@@ -1,0 +1,63 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO01067 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO01067" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-Curcumol" ;
+            mbo:ch_compound_class "Natural Product; Terpenoids" ;
+            mbo:ch_exact_mass 2.361777e+02 ;
+            schema:inChI "InChI=1S/C15H24O2/c1-9(2)13-8-14-11(4)5-6-12(14)10(3)7-15(13,16)17-14/h9,11-13,16H,3,5-8H2,1-2,4H3/t11-,12-,13-,14-,15+/m0/s1" ;
+            schema:inChIKey inchikey:QRMPRVXWPCLVNI-YYFQZIEXSA-N ;
+            schema:molecularFormula "C15H24O2" ;
+            schema:name "(-)-Curcumol" ;
+            schema:smiles "CC(C)C(C1)C(O)(C2)OC(C(C)3)1C([H])(CC3)C(=C)2" ] ;
+    mbo:has_peak [ mbo:intensity 9.64e+02 ;
+            mbo:mz 1.190786e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 321 ],
+        [ mbo:intensity 1.228e+03 ;
+            mbo:mz 1.210609e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 409 ],
+        [ mbo:intensity 1.024e+03 ;
+            mbo:mz 1.210966e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 341 ],
+        [ mbo:intensity 1.692e+03 ;
+            mbo:mz 1.330977e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 564 ],
+        [ mbo:intensity 2.996e+03 ;
+            mbo:mz 1.351138e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0080-0900000000-a8cab5a4764eda5f3945" ;
+    rdfs:comment "[Raw Data] CBA93_(-)-Curcumol_pos_40eV.txt" ;
+    skos:definition "(-)-Curcumol; LC-ESI-QTOF; MS2; [M+H]+; CE: 40eV" .
+

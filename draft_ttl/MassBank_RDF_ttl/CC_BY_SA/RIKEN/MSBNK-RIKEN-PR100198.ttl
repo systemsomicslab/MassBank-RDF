@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100198 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100198" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5'-Deoxy-S-adenosyl-L-homocysteine",
+                "AdoHcy",
+                "Formycinylhomocysteine",
+                "S-(5'-Deoxyadenosine-5')-L-homocysteine",
+                "S-Adenosyl-L-homocysteine",
+                "S-Adenosylhomocysteine" ;
+            mbo:ch_compound_class "Amino acids" ;
+            mbo:ch_exact_mass 3.841216e+02 ;
+            rdfs:seeAlso cas:979-92-0,
+                chemspider:388301,
+                knapsack:C00007230,
+                pubchem:CID439155 ;
+            schema:inChI "InChI=1S/C14H20N6O5S/c15-6(14(23)24)1-2-26-3-7-9(21)10(22)13(25-7)20-5-19-8-11(16)17-4-18-12(8)20/h4-7,9-10,13,21-22H,1-3,15H2,(H,23,24)(H2,16,17,18)/t6-,7+,9+,10+,13+/m0/s1" ;
+            schema:inChIKey inchikey:ZJUKTBDSGOFHSH-WFMPWKQPSA-N ;
+            schema:molecularFormula "C14H20N6O5S" ;
+            schema:name "5'-Deoxy-S-adenosyl-L-homocysteine",
+                "AdoHcy",
+                "Formycinylhomocysteine",
+                "S-(5'-Deoxyadenosine-5')-L-homocysteine",
+                "S-Adenosyl-L-homocysteine",
+                "S-Adenosylhomocysteine" ;
+            schema:smiles "OC(=O)[C@@H](N)CCSC[C@@H](O1)[C@@H](O)[C@@H](O)[C@@H]1n(c3)c(n2)c(n3)c(N)nc2" ] ;
+    mbo:has_peak [ mbo:intensity 1.401e+03 ;
+            mbo:mz 8.80226e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 511 ],
+        [ mbo:intensity 1.814e+03 ;
+            mbo:mz 1.340285e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 662 ],
+        [ mbo:intensity 2.738e+03 ;
+            mbo:mz 1.360631e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.376e+02 ;
+            mbo:mz 2.500764e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 5.502e+02 ;
+            mbo:mz 3.851294e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 201 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.851294e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000i-2901000000-6c40a4a43a8c3e142ece" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "S-Adenosyl-L-homocysteine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

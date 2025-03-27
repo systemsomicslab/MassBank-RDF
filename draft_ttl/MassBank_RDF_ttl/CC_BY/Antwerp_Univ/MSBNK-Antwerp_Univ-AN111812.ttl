@@ -1,0 +1,110 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN111812 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN111812" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "60 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.145 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Di-n-butyl sebacate",
+                "Dibutyl sebacate",
+                "dibutyl decanedioate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.142457e+02 ;
+            rdfs:seeAlso cas:39393-66-3,
+                chemspider:13837584,
+                pubchem:CID7986 ;
+            schema:inChI "InChI=1S/C18H34O4/c1-3-5-15-21-17(19)13-11-9-7-8-10-12-14-18(20)22-16-6-4-2/h3-16H2,1-2H3" ;
+            schema:inChIKey inchikey:PYGXAGIECVVIOZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H34O4" ;
+            schema:name "Di-n-butyl sebacate",
+                "Dibutyl sebacate",
+                "dibutyl decanedioate" ;
+            schema:smiles "CCCCOC(=O)CCCCCCCCC(=O)OCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 4.96e+02 ;
+            mbo:mz 5.50182e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 3.124e+02 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.1963e+03 ;
+            mbo:mz 9.30691e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 166 ],
+        [ mbo:intensity 5.728e+02 ;
+            mbo:mz 9.50842e+01 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 5.835e+02 ;
+            mbo:mz 9.70652e+01 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 3.37e+02 ;
+            mbo:mz 1.050684e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 7.2075e+03 ;
+            mbo:mz 5.50542e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.299e+02 ;
+            mbo:mz 5.70701e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.3498e+03 ;
+            mbo:mz 6.70544e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 187 ],
+        [ mbo:intensity 2.1985e+03 ;
+            mbo:mz 6.907e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 305 ],
+        [ mbo:intensity 6.55e+02 ;
+            mbo:mz 7.70386e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 91 ],
+        [ mbo:intensity 1.1274e+03 ;
+            mbo:mz 7.90538e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 156 ],
+        [ mbo:intensity 1.3617e+03 ;
+            mbo:mz 8.10699e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 3.45e+02 ;
+            mbo:mz 8.30492e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 48 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.372371e+02 ;
+            mbo:precursor_mz 3.15253e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-89787d6f2d4dbff73683" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Di-n-butyl sebacate; LC-ESI-QTOF; MS2; CE: 60eV; R=7000; [M+H]+" .
+

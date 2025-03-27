@@ -1,0 +1,92 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA271201 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA271201" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "7.6 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4,6-dimethylpyrimidin-2-yl)-phenyl-amine",
+                "Pyrimethanil" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.991109e+02 ;
+            rdfs:seeAlso cas:53112-28-0,
+                chemspider:82753,
+                pubchem:CID91650 ;
+            schema:inChI "InChI=1S/C12H13N3/c1-9-8-10(2)14-12(13-9)15-11-6-4-3-5-7-11/h3-8H,1-2H3,(H,13,14,15)" ;
+            schema:inChIKey inchikey:ZLIBICFPKPWGIZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H13N3" ;
+            schema:name "(4,6-dimethylpyrimidin-2-yl)-phenyl-amine",
+                "Pyrimethanil" ;
+            schema:smiles "c(ccc1N-c(nc(c2)C)nc2C)cc1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 2.71473e+04 ;
+            mbo:mz 8.00497e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 5.94502e+04 ;
+            mbo:mz 8.20652e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.874151e+05 ;
+            mbo:mz 1.070604e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 3.06477e+04 ;
+            mbo:mz 1.180654e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 7.5658e+04 ;
+            mbo:mz 1.430604e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 6.43153e+04 ;
+            mbo:mz 1.590919e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.693386e+05 ;
+            mbo:mz 1.830916e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 3.95087e+04 ;
+            mbo:mz 1.850947e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 8.949848e+06 ;
+            mbo:mz 2.001184e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.001185e+02 ;
+            mbo:precursor_mz 2.001182e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0udi-0090000000-7ca5cc1b1c35b22f7dc3" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2712" ;
+    skos:definition "Pyrimethanil; LC-ESI-ITFT; MS2; CE: 35%; R=7500; [M+H]+" .
+

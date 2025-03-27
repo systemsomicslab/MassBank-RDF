@@ -1,0 +1,62 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00045 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00045" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Demissidine" ;
+            mbo:ch_compound_class "Natural Product; Alkaloid" ;
+            mbo:ch_exact_mass 3.993501e+02 ;
+            rdfs:seeAlso cas:474-08-8,
+                chemspider:310164,
+                pubchem:CID101379 ;
+            schema:inChI "InChI=1S/C27H45NO/c1-16-5-8-23-17(2)25-24(28(23)15-16)14-22-20-7-6-18-13-19(29)9-11-26(18,3)21(20)10-12-27(22,25)4/h16-25,29H,5-15H2,1-4H3/t16-,17+,18-,19-,20+,21-,22-,23+,24-,25-,26-,27-/m0/s1" ;
+            schema:inChIKey inchikey:JALVTHFTYRPDMB-HRRTYWNUSA-N ;
+            schema:molecularFormula "C27H45NO" ;
+            schema:name "Demissidine" ;
+            schema:smiles "C[C@H]1CC[C@@H]2[C@H]([C@H]3[C@@H](N2C1)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC[C@@H]6[C@@]5(CC[C@@H](C6)O)C)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.5807e+05 ;
+            mbo:mz 4.003569e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.9467e+04 ;
+            mbo:mz 4.013601e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 249 ],
+        [ mbo:intensity 5.462e+03 ;
+            mbo:mz 4.023635e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 35 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.003569e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-0000900000-24efc7cf338de9bfcdbe" ;
+    rdfs:comment "[Raw Data] CB019_Demissidine_pos_40eV_rep000003.txt" ;
+    skos:definition "Demissidine; LC-ESI-QTOF; MS2; [M+H]+; CE: 40eV" .
+

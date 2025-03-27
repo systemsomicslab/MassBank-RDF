@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU205603 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-04"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU205603" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.5 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[4-(4-chlorobenzoyl)phenoxy]-2-methylpropanoic acid",
+                "Fenofibric acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.180659e+02 ;
+            rdfs:seeAlso cas:42017-89-0,
+                chemspider:58457,
+                pubchem:CID64929 ;
+            schema:inChI "InChI=1S/C17H15ClO4/c1-17(2,16(20)21)22-14-9-5-12(6-10-14)15(19)11-3-7-13(18)8-4-11/h3-10H,1-2H3,(H,20,21)" ;
+            schema:inChIKey inchikey:MQOBSOSZFYZQOK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H15ClO4" ;
+            schema:name "2-[4-(4-chlorobenzoyl)phenoxy]-2-methylpropanoic acid",
+                "Fenofibric acid" ;
+            schema:smiles "CC(C)(OC1=CC=C(C=C1)C(=O)C1=CC=C(Cl)C=C1)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 5.652e+03 ;
+            mbo:mz 1.210274e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 357 ],
+        [ mbo:intensity 6.12e+02 ;
+            mbo:mz 1.220316e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.3672e+04 ;
+            mbo:mz 1.389932e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 864 ],
+        [ mbo:intensity 1.048e+03 ;
+            mbo:mz 1.399971e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 4.332e+03 ;
+            mbo:mz 1.409906e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 1.5816e+04 ;
+            mbo:mz 2.330357e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.636e+03 ;
+            mbo:mz 2.340387e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 166 ],
+        [ mbo:intensity 4.928e+03 ;
+            mbo:mz 2.350332e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 311 ],
+        [ mbo:intensity 5.16e+02 ;
+            mbo:mz 2.360351e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 33 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.501115e+02 ;
+            mbo:precursor_mz 3.190732e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0019-0980000000-3ad6ba9802e2a2b7b641" ;
+    rdfs:comment "INTERNAL_ID 2056" ;
+    skos:definition "Fenofibric acid; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

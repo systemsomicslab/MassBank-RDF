@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU160002 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU160002" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.4 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-chloro-6-(4-methylpiperazin-1-yl)-5H-benzo[b][1,4]benzodiazepine",
+                "Clozapine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.261298e+02 ;
+            rdfs:seeAlso cas:5786-21-0,
+                chemspider:2716,
+                pubchem:CID135398737 ;
+            schema:inChI "InChI=1S/C18H19ClN4/c1-22-8-10-23(11-9-22)18-14-4-2-3-5-15(14)20-16-7-6-13(19)12-17(16)21-18/h2-7,12,20H,8-11H2,1H3" ;
+            schema:inChIKey inchikey:QZUDBNBUXVUHMW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H19ClN4" ;
+            schema:name "3-chloro-6-(4-methylpiperazin-1-yl)-5H-benzo[b][1,4]benzodiazepine",
+                "Clozapine" ;
+            schema:smiles "CN1CCN(CC1)C2=NC3=C(C=CC(=C3)Cl)NC4=CC=CC=C42" ] ;
+    mbo:has_peak [ mbo:intensity 5.4608e+05 ;
+            mbo:mz 2.700787e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 647 ],
+        [ mbo:intensity 1.359e+05 ;
+            mbo:mz 3.281406e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 161 ],
+        [ mbo:intensity 2.10432e+05 ;
+            mbo:mz 3.291346e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 249 ],
+        [ mbo:intensity 2.0532e+04 ;
+            mbo:mz 3.301372e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 6.57e+04 ;
+            mbo:mz 2.710818e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.15352e+05 ;
+            mbo:mz 2.720763e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 1.1244e+04 ;
+            mbo:mz 2.730759e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.8136e+04 ;
+            mbo:mz 2.960945e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 5.296e+03 ;
+            mbo:mz 2.970981e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.896e+03 ;
+            mbo:mz 2.980919e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.032e+03 ;
+            mbo:mz 2.990947e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 8.43184e+05 ;
+            mbo:mz 3.271374e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.271368e+02 ;
+            mbo:precursor_mz 3.271371e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00b9-0059000000-911f01423e019c5b5cd2" ;
+    rdfs:comment "INTERNAL_ID 1600" ;
+    skos:definition "Clozapine; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

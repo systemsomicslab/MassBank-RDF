@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML002451 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML002451" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "8.1 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "adipic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.460579e+02 ;
+            rdfs:seeAlso chemspider:191,
+                pubchem:CID196 ;
+            schema:inChI "InChI=1S/C6H10O4/c7-5(8)3-1-2-4-6(9)10/h1-4H2,(H,7,8)(H,9,10)" ;
+            schema:inChIKey inchikey:WNLRTRBMVRJNCN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H10O4" ;
+            schema:name "adipic acid" ;
+            schema:smiles "O=C(O)CCCCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.6939e+03 ;
+            mbo:mz 8.10347e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 7.41622e+04 ;
+            mbo:mz 8.30502e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 342 ],
+        [ mbo:intensity 7.81786e+04 ;
+            mbo:mz 1.010608e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 360 ],
+        [ mbo:intensity 1.7248e+03 ;
+            mbo:mz 1.2704e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.168913e+05 ;
+            mbo:mz 1.450506e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.450502e+02 ;
+            mbo:precursor_mz 1.450506e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-2900000000-983aa19fb3183a9bc5ab" ;
+    rdfs:comment "ML_ID 24" ;
+    skos:definition "adipic acid; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M-H]-" .
+

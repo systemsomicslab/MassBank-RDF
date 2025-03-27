@@ -1,0 +1,70 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT002604 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT002604" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "36.23 min (in paper: 36.5 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phosphatidylethanolamine 18:1-19:0" ;
+            mbo:ch_compound_class "Natural Product; Glycerophospholipids; Glycerophosphoethanolamines; Diacylglycerophosphoethanolamines" ;
+            mbo:ch_exact_mass 7.595778e+02 ;
+            schema:inChI "InChI=1S/C42H82NO8P/c1-3-5-7-9-11-13-15-17-19-21-23-25-27-29-31-33-35-42(45)51-40(39-50-52(46,47)49-37-36-43)38-48-41(44)34-32-30-28-26-24-22-20-18-16-14-12-10-8-6-4-2/h28,30,40H,3-27,29,31-39,43H2,1-2H3,(H,46,47)/b30-28-" ;
+            schema:inChIKey inchikey:VDFCHVPNRGGNPX-HYOGKJQXSA-N ;
+            schema:molecularFormula "C42H82NO8P" ;
+            schema:name "Phosphatidylethanolamine 18:1-19:0" ;
+            schema:smiles "O(C(CCCCCCCCCCCCCCCCCC)=O)C(COC(CCC=CCCCCCCCCCCCCC)=O)COP(OCCN)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 8.8e+00 ;
+            mbo:mz 2.8114e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 486 ],
+        [ mbo:intensity 1.81e+01 ;
+            mbo:mz 2.9706e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.52e+01 ;
+            mbo:mz 5.8276e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 839 ],
+        [ mbo:intensity 1.03e+01 ;
+            mbo:mz 6.1462e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 568 ],
+        [ mbo:intensity 1.05e+01 ;
+            mbo:mz 6.666e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 580 ],
+        [ mbo:intensity 4.9e+00 ;
+            mbo:mz 6.9668e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 270 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 7.5859e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001j-0090058000-b20d750aa3dee6182fca" ;
+    skos:definition "Phosphatidylethanolamine 18:1-19:0; LC-ESI-ITFT; MS2; [M-H]-; RT: 36.53; Exp: 3" .
+

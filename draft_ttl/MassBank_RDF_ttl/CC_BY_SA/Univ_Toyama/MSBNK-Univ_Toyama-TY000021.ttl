@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000021 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-09-24, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000021" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "737.099 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "18beta-Glycyrrhizic acid",
+                "30-Noroleanane, alpha-D-glucopyranosiduronic acid deriv",
+                "Glycyron",
+                "Glycyrrhetinic acid glycoside",
+                "Glycyrrhizic acid",
+                "Glycyrrhizin",
+                "Glycyrrhizinic acid",
+                "NSC 167409",
+                "NSC 234419",
+                "Potenlini",
+                "alpha-D-Glucopyranosiduronic acid, (3beta,20beta)-20-carboxy-11-oxo-30-norolean-12-en-3-yl 2-O-beta-D-glucopyranuronosyl-",
+                "beta-Glycyrrhizin" ;
+            mbo:ch_compound_class "Natural Product; Saponin" ;
+            mbo:ch_exact_mass 8.224038e+02 ;
+            rdfs:seeAlso cas:1405-86-3,
+                pubchem:CID14982 ;
+            schema:inChI "InChI=1S/C42H62O16/c1-37(2)21-8-11-42(7)31(20(43)16-18-19-17-39(4,36(53)54)13-12-38(19,3)14-15-41(18,42)6)40(21,5)10-9-22(37)55-35-30(26(47)25(46)29(57-35)33(51)52)58-34-27(48)23(44)24(45)28(56-34)32(49)50/h16,19,21-31,34-35,44-48H,8-15,17H2,1-7H3,(H,49,50)(H,51,52)(H,53,54)/t19-,21-,22-,23-,24-,25-,26-,27+,28-,29-,30+,31+,34-,35-,38+,39-,40-,41+,42+/m0/s1" ;
+            schema:inChIKey inchikey:LPLVUJXQOOQHMX-QWBHMCJMSA-N ;
+            schema:molecularFormula "C42H62O16" ;
+            schema:name "18beta-Glycyrrhizic acid",
+                "30-Noroleanane, alpha-D-glucopyranosiduronic acid deriv",
+                "Glycyron",
+                "Glycyrrhetinic acid glycoside",
+                "Glycyrrhizic acid",
+                "Glycyrrhizin",
+                "Glycyrrhizinic acid",
+                "NSC 167409",
+                "NSC 234419",
+                "Potenlini",
+                "alpha-D-Glucopyranosiduronic acid, (3beta,20beta)-20-carboxy-11-oxo-30-norolean-12-en-3-yl 2-O-beta-D-glucopyranuronosyl-",
+                "beta-Glycyrrhizin" ;
+            schema:smiles "OC(=O)C(C)(C7)CC(C(C)(C7)1)(C(=C6)C(C)(C(C5([H])C6=O)(CCC([H])(C25C)C(C)(C)C(OC(O3)C(OC(O4)C(O)C(C(C4C(O)=O)O)O)C(C(C3C(O)=O)O)O)CC2)C)CC1)[H]" ] ;
+    mbo:has_peak [ mbo:intensity 1.364961e+07 ;
+            mbo:mz 8.213965e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.769481e+06 ;
+            mbo:mz 8.223966e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 495 ],
+        [ mbo:intensity 2.113181e+06 ;
+            mbo:mz 8.233983e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 155 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0000000090-ed5ea18f40ccd285a9d0" ;
+    skos:definition "Glycyrrhizin; LC-ESI-ITTOF; MS; [M-H]-" .
+

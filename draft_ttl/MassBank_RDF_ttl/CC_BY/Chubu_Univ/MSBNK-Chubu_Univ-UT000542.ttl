@@ -1,0 +1,91 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT000542 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT000542" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Ikeda, K.; Oike, Y.; Shimizu, T.; Taguchi, R. Global Analysis of Triacylglycerols Including Oxidized Molecular Species by Reverse-Phase High Resolution LC/ESI-QTOF MS/MS. Journal of Chromatography B 2009, 877 (25), 2639–47. DOI:10.1016/j.jchromb.2009.03.047" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ACQUITY UPLC System, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:column_name "ACQUITY UPLC BEH C18 column, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 7.5 min, 70/30 at 40 min, 60/40 at 41 min, 40/60 at 65 min, 40/60 at 90 min" ;
+            mbo:flow_rate "50 uL/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "52.258835 min" ;
+            mbo:solvent "A acetonitrile/methanol/water 19/19/2 (0.1% formic acid + 0.028% ammonia)",
+                "B isopropanol (0.1% formic acid + 0.028% ammonia)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Triacylglycerol 10:0-16:0-18:2" ;
+            mbo:ch_compound_class "Natural Product; Glycerolipid; Triradylglycerol" ;
+            mbo:ch_exact_mass 7.466424e+02 ;
+            schema:inChI "InChI=1S/C47H86O6/c1-4-7-10-13-16-18-20-22-23-25-26-28-31-34-37-40-46(49)52-43-44(42-51-45(48)39-36-33-30-15-12-9-6-3)53-47(50)41-38-35-32-29-27-24-21-19-17-14-11-8-5-2/h25-26,31,34,44H,4-24,27-30,32-33,35-43H2,1-3H3/b26-25-,34-31-" ;
+            schema:inChIKey inchikey:WIECKRBAELCFOB-WCVPGHNESA-N ;
+            schema:molecularFormula "C47H86O6" ;
+            schema:name "Triacylglycerol 10:0-16:0-18:2" ;
+            schema:smiles "C(C(COC(=O)CCCCCCCCC)OC(CCCCCCCCCCCCCCC)=O)OC(CCC=CCC=CCCCCCCCCCC)=O" ] ;
+    mbo:has_peak [ mbo:intensity 5e-01 ;
+            mbo:mz 4.382871e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 6.055252e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 6.234822e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 4.673883e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 4.683264e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 4.755436e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 4.91383e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 5.010376e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 5.194686e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 5.755248e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 5.765271e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 500 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.194686e+02 ;
+            mbo:precursor_mz 7.646e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-016r-0000962000-39ed00ceefa636af358c" ;
+    skos:definition "Triacylglycerol 10:0-16:0-18:2; LC-ESI-QTOF; MS; mouse liver" .
+

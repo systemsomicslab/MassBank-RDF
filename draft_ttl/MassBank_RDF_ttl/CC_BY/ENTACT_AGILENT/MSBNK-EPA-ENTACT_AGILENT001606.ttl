@@ -1,0 +1,51 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001606 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001606" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4,4'-(9H-Fluorene-9,9-diyl)diphenol",
+                "DTXSID5037731" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.501307e+02 ;
+            rdfs:seeAlso cas:3236-71-3,
+                pubchem:CID76716 ;
+            schema:inChI "InChI=1S/C25H18O2/c26-19-13-9-17(10-14-19)25(18-11-15-20(27)16-12-18)23-7-3-1-5-21(23)22-6-2-4-8-24(22)25/h1-16,26-27H" ;
+            schema:inChIKey inchikey:YWFPGFJLYRKYJZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H18O2" ;
+            schema:name "4,4'-(9H-Fluorene-9,9-diyl)diphenol",
+                "DTXSID5037731" ;
+            schema:smiles "OC1C=CC(=CC=1)C1(C2C=CC=CC=2C2C=CC=CC1=2)C1C=CC(O)=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 3.287913e+00 ;
+            mbo:mz 2.560894e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.491234e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.491234e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-0009000000-58bf8ed968fb5404af1f" ;
+    skos:definition "4,4'-(9H-Fluorene-9,9-diyl)diphenol; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

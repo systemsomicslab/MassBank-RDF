@@ -1,0 +1,73 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB002595 a mbo:MassSpectrum ;
+    dcterms:creator "Noelia Caballero-Casero, Adrian Covaci, Toxicological Center, University of Antwerp, Wilrijk, Belgium" ;
+    dcterms:date "2020-02-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB002595" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Oberacher H, Sasse M, Antignac J-P, Guitton Y, Debrauwer L, Jamin E L, Schulze T, Krauss M, Covaci A, Caballero-Casero N, Rosseau K, Damont A, Fenaille F, Lamoree M, Schymanski E, A European proposal for quality control and quality assurance of tandem mass spectral libraries, Environmental Sciences Europe, https://doi.org/10.1186/s12302-020-00314-9" ] ;
+    dcterms:rights "Copyright (c) by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "6656 QTOF Agilent" ;
+            mbo:collision_energy "35 eV" ;
+            mbo:flow_gradient "50/50" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "3600" ;
+            mbo:solvent "A water",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Methyl-1-phenylpropan-2-amine",
+                "Phentermine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.491204e+02 ;
+            rdfs:seeAlso cas:0122-09-08,
+                pubchem:CID4771 ;
+            schema:inChI "InChI=1S/C10H15N/c1-10(2,11)8-9-6-4-3-5-7-9/h3-7H,8,11H2,1-2H3" ;
+            schema:inChIKey inchikey:DHHVAGZRUROJKS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H15N" ;
+            schema:name "2-Methyl-1-phenylpropan-2-amine",
+                "Phentermine" ;
+            schema:smiles "CC(C)(N)CC1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.27868e+04 ;
+            mbo:mz 5.10231e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 186 ],
+        [ mbo:intensity 7.94e+03 ;
+            mbo:mz 6.30232e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 5.293e+04 ;
+            mbo:mz 6.50387e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 769 ],
+        [ mbo:intensity 6.6293e+03 ;
+            mbo:mz 7.70388e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 96 ],
+        [ mbo:intensity 6.87367e+04 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.501278e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-00kf-9000000000-356c0f3eb16f8fe213c0" ;
+    rdfs:comment "Flow Injection" ;
+    skos:definition "Phentermine; LC-ESI-QTOF; MS2; CE: 35 eV; R=3600; [M+H]+" .
+

@@ -1,0 +1,83 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02410 a mbo:MassSpectrum ;
+    dcterms:creator "Yoshinao Wada, Osaka Women's and Children's Hospital, Osaka Prefectural Hospital Organization, 840 Murodou, Izumi City, Osaka 594-1101, Japan." ;
+    dcterms:date "2023-02-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02410" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Yoshinao Wada, Osaka Women's and Children's Hospital, Osaka Prefectural Hospital Organization, 840 Murodou, Izumi City, Osaka 594-1101, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Triple Quad 4500 (AB Sciex Pte. Ltd., USA)" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Beta-D-GlcNAc-1->N-Asn",
+                "GlcNAcAsn",
+                "N4-(beta-N-Acetyl-D-glucosaminyl)-L-asparagine" ;
+            mbo:ch_compound_class "Non-natural product." ;
+            mbo:ch_exact_mass 3.351329e+02 ;
+            rdfs:seeAlso chemspider:110370,
+                pubchem:CID123826 ;
+            schema:inChI "InChI=1S/C12H21N3O8/c1-4(17)14-8-10(20)9(19)6(3-16)23-11(8)15-7(18)2-5(13)12(21)22/h5-6,8-11,16,19-20H,2-3,13H2,1H3,(H,14,17)(H,15,18)(H,21,22)/t5-,6+,8+,9+,10+,11+/m0/s1" ;
+            schema:inChIKey inchikey:YTTRPBWEMMPYSW-HRRFRDKFSA-N ;
+            schema:molecularFormula "C12H21N3O8" ;
+            schema:name "Beta-D-GlcNAc-1->N-Asn",
+                "GlcNAcAsn",
+                "N4-(beta-N-Acetyl-D-glucosaminyl)-L-asparagine" ;
+            schema:smiles "CC(=O)N[C@@H]1[C@H]([C@@H]([C@H](O[C@H]1NC(=O)C[C@@H](C(=O)O)N)CO)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.3692e+04 ;
+            mbo:mz 1.128749e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.769e+03 ;
+            mbo:mz 1.189503e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.673e+03 ;
+            mbo:mz 1.788878e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.6365e+04 ;
+            mbo:mz 1.95922e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.865e+03 ;
+            mbo:mz 2.017929e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 8.981e+03 ;
+            mbo:mz 2.139592e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.404e+03 ;
+            mbo:mz 2.989515e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.746e+05 ;
+            mbo:mz 3.159957e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 234 ],
+        [ mbo:intensity 7.4544e+05 ;
+            mbo:mz 3.340177e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.341256e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-001i-0009000000-e64b4366d39273fb84bf" ;
+    rdfs:comment "The sample was injected by direct infusion." ;
+    skos:definition "GlcNAcAsn; ESI-QQ; MS2; Negative; [M-H]-; CID; CE: 10 eV" .
+

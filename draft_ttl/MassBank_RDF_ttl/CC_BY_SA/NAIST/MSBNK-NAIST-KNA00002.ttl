@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00002 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-16, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00002" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.567235 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(R)-2-Aminobutanoic acid",
+                "D-2-Aminobutanoic acid",
+                "D-2-Aminobutyrate",
+                "D-2-Aminobutyric acid" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso cas:2623-91-8,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5323> ;
+            schema:inChI "InChI=1S/C4H9NO2/c1-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)/t3-/m1/s1" ;
+            schema:inChIKey inchikey:QWCKQJZIFLGMSD-GSVOUGTGSA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "(R)-2-Aminobutanoic acid",
+                "D-2-Aminobutanoic acid",
+                "D-2-Aminobutyrate",
+                "D-2-Aminobutyric acid" ;
+            schema:smiles "CCC(N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 8.02534e+02 ;
+            mbo:mz 6.900131e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.816014e+05 ;
+            mbo:mz 8.603281e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 395 ],
+        [ mbo:intensity 7.118722e+05 ;
+            mbo:mz 8.694943e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.694943e+01 ;
+            mbo:precursor_mz 1.0407e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-9000000000-0c48c0d7bd360678818d" ;
+    skos:definition "D-2-Aminobutyric acid; LC-ESI-ITFT; MS2; m/z:104.07; POS" .
+

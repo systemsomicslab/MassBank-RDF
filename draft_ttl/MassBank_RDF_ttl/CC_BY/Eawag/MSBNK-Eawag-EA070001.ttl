@@ -1,0 +1,100 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA070001 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA070001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "11.5 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-chloro-N-(2-ethoxyethyl)-N-(2-methyl-1-phenylprop-1-enyl)acetamide",
+                "Pethoxamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.951334e+02 ;
+            rdfs:seeAlso cas:106700-29-2,
+                chemspider:4953376,
+                pubchem:CID6450826 ;
+            schema:inChI "InChI=1S/C16H22ClNO2/c1-4-20-11-10-18(15(19)12-17)16(13(2)3)14-8-6-5-7-9-14/h5-9H,4,10-12H2,1-3H3" ;
+            schema:inChIKey inchikey:CSWIKHNSBZVWNQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H22ClNO2" ;
+            schema:name "2-chloro-N-(2-ethoxyethyl)-N-(2-methyl-1-phenylprop-1-enyl)acetamide",
+                "Pethoxamide" ;
+            schema:smiles "ClCC(=O)N(CCOCC)\\C(=C(\\C)C)c1ccccc1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.56354e+04 ;
+            mbo:mz 7.30648e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.90751e+04 ;
+            mbo:mz 2.201697e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 6.115418e+06 ;
+            mbo:mz 2.500998e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.15458e+04 ;
+            mbo:mz 9.1054e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.52908e+04 ;
+            mbo:mz 1.16062e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.30007e+04 ;
+            mbo:mz 1.200212e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.58598e+04 ;
+            mbo:mz 1.290699e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 7.038188e+05 ;
+            mbo:mz 1.310856e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 2.067525e+05 ;
+            mbo:mz 1.340368e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 5.07534e+04 ;
+            mbo:mz 1.480525e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.20279e+04 ;
+            mbo:mz 1.761071e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.961418e+02 ;
+            mbo:precursor_mz 2.961412e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0udi-0190000000-724a9416faaadbf789e3" ;
+    rdfs:comment "EAWAG_UCHEM_ID 700" ;
+    skos:definition "Pethoxamide; LC-ESI-ITFT; MS2; CE: 35%; R=7500; [M+H]+" .
+

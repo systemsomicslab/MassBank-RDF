@@ -1,0 +1,112 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ETS00116 a mbo:MassSpectrum ;
+    dcterms:creator "Huntscha S, Schymanski E, Hofstetter TB, Spahr S, Hollender J, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-02-03 (Created 2014-06-25)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ETS00116" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Huntscha, S.; Hofstetter, T. B.; Schymanski, E. L.; Spahr, S.; Hollender, J. Biotransformation of Benzotriazoles: Insights from Transformation Product Identification and Compound-Specific Isotope Analysis. Environmental Science & Technology 2014, 48 (8), 4435–43. DOI:10.1021/es405694z" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "scaled 80 (m/z=200) to 110 (m/z=120)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0-8 min, 5/95 at 18-21 min" ;
+            mbo:flow_rate "300 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "21.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Methoxymethyl-1H-benzotriazole",
+                "1-Methoxymethylbenzotriazole" ;
+            mbo:ch_compound_class "N/A; Biotransformation Product" ;
+            mbo:ch_exact_mass 1.631766e+02 ;
+            rdfs:seeAlso chemspider:472332,
+                pubchem:CID542390 ;
+            schema:inChI "InChI=1S/C8H9N3O/c1-12-6-11-8-5-3-2-4-7(8)9-10-11/h2-5H,6H2,1H3" ;
+            schema:inChIKey inchikey:QEIXBXXKTUNWDK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H9N3O" ;
+            schema:name "1-Methoxymethyl-1H-benzotriazole",
+                "1-Methoxymethylbenzotriazole" ;
+            schema:smiles "n1nn(c2ccccc12)COC" ] ;
+    mbo:has_peak [ mbo:intensity 5.519969e+05 ;
+            mbo:mz 5.30377e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 237 ],
+        [ mbo:intensity 2.791054e+05 ;
+            mbo:mz 1.040486e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 8.641443e+05 ;
+            mbo:mz 1.050439e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 372 ],
+        [ mbo:intensity 7.601866e+05 ;
+            mbo:mz 1.060644e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 327 ],
+        [ mbo:intensity 3.184673e+05 ;
+            mbo:mz 1.200438e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 2.322346e+06 ;
+            mbo:mz 1.340705e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.23377e+05 ;
+            mbo:mz 6.50375e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 1.398985e+05 ;
+            mbo:mz 6.50594e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 9.59975e+05 ;
+            mbo:mz 7.70378e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 413 ],
+        [ mbo:intensity 2.072564e+05 ;
+            mbo:mz 7.80455e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 6.976423e+05 ;
+            mbo:mz 7.90534e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 300 ],
+        [ mbo:intensity 3.730748e+05 ;
+            mbo:mz 9.1041e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 9.47552e+04 ;
+            mbo:mz 9.3056e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.556105e+05 ;
+            mbo:mz 9.50482e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 67 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.641839e+02 ;
+            mbo:precursor_mz 1.641839e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0560-6900000000-4f44a16e9a39e253be95" ;
+    rdfs:comment "Source; 1MeOMeBT_MSMS.txt" ;
+    skos:definition "1-Methoxymethylbenzotriazole; LC-ESI-ITFT; MS2; 80-110; R=7500; [M+H]+" .
+

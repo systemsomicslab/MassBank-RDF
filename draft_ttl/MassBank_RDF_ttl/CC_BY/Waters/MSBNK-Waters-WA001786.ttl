@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA001786 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2012-05-21)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA001786" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "10.740 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bretylium" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.420544e+02 ;
+            rdfs:seeAlso cas:59-41-6,
+                pubchem:CID2431 ;
+            schema:inChI "InChI=1S/C11H17BrN/c1-4-13(2,3)9-10-7-5-6-8-11(10)12/h5-8H,4,9H2,1-3H3/q+1" ;
+            schema:inChIKey inchikey:AAQOQKQBGPPFNS-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C11H17BrN]+" ;
+            schema:name "Bretylium" ;
+            schema:smiles "CC[N+1](C)(C)Cc(c1)c(Br)ccc1" ] ;
+    mbo:has_peak [ mbo:intensity 8e+00 ;
+            mbo:mz 1.3e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.43e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.45e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 9.83e+02 ;
+            mbo:mz 1.69e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 983 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.71e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.7e+01 ;
+            mbo:mz 1.72e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.1e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.12e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00xr-0900000000-60e423da47aa719cf700" ;
+    skos:definition "Bretylium; LC-ESI-Q; MS; POS; 60 V, 90 V" .
+

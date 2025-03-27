@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA050256 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA050256" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "7.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[(2-Ethyl-6-methylphenyl)(1-methoxy-2-propanyl)amino]-2-oxoethanesulfonic acid",
+                "Metolachlor ESA" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.291297e+02 ;
+            rdfs:seeAlso cas:171118-09-5,
+                chemspider:4932269,
+                pubchem:CID6426849 ;
+            schema:inChI "InChI=1S/C15H23NO5S/c1-5-13-8-6-7-11(2)15(13)16(12(3)9-21-4)14(17)10-22(18,19)20/h6-8,12H,5,9-10H2,1-4H3,(H,18,19,20)" ;
+            schema:inChIKey inchikey:CIGKZVUEZXGYSV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H23NO5S" ;
+            schema:name "2-[(2-Ethyl-6-methylphenyl)(1-methoxy-2-propanyl)amino]-2-oxoethanesulfonic acid",
+                "Metolachlor ESA" ;
+            schema:smiles "O=S(O)(CC(N(C(C)COC)C1=C(CC)C=CC=C1C)=O)=O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.999474e+05 ;
+            mbo:mz 7.69704e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 1.926733e+06 ;
+            mbo:mz 7.99575e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.75792e+04 ;
+            mbo:mz 9.39732e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 3.37195e+04 ;
+            mbo:mz 1.199764e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.00834e+05 ;
+            mbo:mz 1.209601e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1.272785e+05 ;
+            mbo:mz 1.350818e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 2.63733e+04 ;
+            mbo:mz 3.281225e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.281225e+02 ;
+            mbo:precursor_mz 3.281224e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-004i-9100000000-d8886b219f333935b78b" ;
+    rdfs:comment "EAWAG_UCHEM_ID 502" ;
+    skos:definition "Metolachlor ESA; LC-ESI-ITFT; MS2; CE: 75%; R=7500; [M-H]-" .
+

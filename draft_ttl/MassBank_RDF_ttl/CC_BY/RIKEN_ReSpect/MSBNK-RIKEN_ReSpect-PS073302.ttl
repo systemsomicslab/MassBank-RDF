@@ -1,0 +1,83 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS073302 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS073302" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3R,3'R)-beta,beta-Carotene-3,3'-diol",
+                "Zeaxanthin" ;
+            mbo:ch_compound_class "CLASS1 Terpenoid CLASS2 Carotenoid CLASS3 Zeaxanthin" ;
+            mbo:ch_exact_mass 5.68886e+02 ;
+            rdfs:seeAlso cas:144-68-3,
+                pubchem:CID5280899 ;
+            schema:inChI "InChI=1S/C40H56O2/c1-29(17-13-19-31(3)21-23-37-33(5)25-35(41)27-39(37,7)8)15-11-12-16-30(2)18-14-20-32(4)22-24-38-34(6)26-36(42)28-40(38,9)10/h11-24,35-36,41-42H,25-28H2,1-10H3" ;
+            schema:inChIKey inchikey:JKQXZKUSFCKOGQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C40H56O2" ;
+            schema:name "(3R,3'R)-beta,beta-Carotene-3,3'-diol",
+                "Zeaxanthin" ;
+            schema:smiles "CC1=C(C(CC(C1)O)(C)C)C=CC(=CC=CC(=CC=CC=C(C)C=CC=C(C)C=CC2=C(CC(CC2(C)C)O)C)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.702e+03 ;
+            mbo:mz 9.4e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 2.557e+03 ;
+            mbo:mz 1.62e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 4.242e+03 ;
+            mbo:mz 2.72e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 2.626e+03 ;
+            mbo:mz 2.85e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 3.525e+03 ;
+            mbo:mz 3.6e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 73 ],
+        [ mbo:intensity 2.965e+03 ;
+            mbo:mz 4.76e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 6.449e+03 ;
+            mbo:mz 4.78e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 133 ],
+        [ mbo:intensity 4.3251e+04 ;
+            mbo:mz 5.69e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 891 ],
+        [ mbo:intensity 4.8506e+04 ;
+            mbo:mz 5.7e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.6976e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-00xr-0000090000-a2f3a5a2ede5265be566" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "(3R,3'R)-beta,beta-Carotene-3,3'-diol, Zeaxanthin; LC-ESI-QQ; MS2" .
+

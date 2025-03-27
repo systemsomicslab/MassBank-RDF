@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA001147 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA001147" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.492 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R)-6-(2-hydroxyethyl)-2,5,7-trimethyl-2,3-dihydroinden-1-one",
+                "Pterosin B" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.181307e+02 ;
+            rdfs:seeAlso cas:35349-03-2,
+                chemspider:102965,
+                pubchem:CID115049 ;
+            schema:inChI "InChI=1S/C14H18O2/c1-8-6-11-7-9(2)14(16)13(11)10(3)12(8)4-5-15/h6,9,15H,4-5,7H2,1-3H3/t9-/m1/s1" ;
+            schema:inChIKey inchikey:SJNCSXMTBXDZQA-SECBINFHSA-N ;
+            schema:molecularFormula "C14H18O2" ;
+            schema:name "(2R)-6-(2-hydroxyethyl)-2,5,7-trimethyl-2,3-dihydroinden-1-one",
+                "Pterosin B" ;
+            schema:smiles "C[C@@H]1CC2=C(C1=O)C(=C(C(=C2)C)CCO)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.5884e+03 ;
+            mbo:mz 1.451007e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 4.3209e+03 ;
+            mbo:mz 1.731322e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 3.4999e+03 ;
+            mbo:mz 1.831166e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 1.1219e+03 ;
+            mbo:mz 1.861035e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 4.65164e+04 ;
+            mbo:mz 2.01127e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 702 ],
+        [ mbo:intensity 6.62391e+04 ;
+            mbo:mz 2.191374e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.490116e+02 ;
+            mbo:precursor_mz 2.19138e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0gb9-0090000000-43e2cb71b5666a5a340b" ;
+    rdfs:comment "INTERNAL_ID 33" ;
+    skos:definition "Pterosin B; LC-ESI-ITFT; MS2; CE: 40%; R=15000; [M+H]+" .
+

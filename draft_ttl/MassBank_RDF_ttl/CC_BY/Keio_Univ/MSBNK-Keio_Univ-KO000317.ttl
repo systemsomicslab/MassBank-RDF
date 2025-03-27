@@ -1,0 +1,55 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000317 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000317" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "30 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(S)-2-Aminobutanoate",
+                "(S)-2-Aminobutanoic acid",
+                "(S)-2-Aminobutyrate",
+                "(S)-2-Aminobutyric acid",
+                "L-2-Aminobutyric acid" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5403> ;
+            schema:inChI "InChI=1S/C4H9NO2/c1-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)/t3-/m0/s1" ;
+            schema:inChIKey inchikey:QWCKQJZIFLGMSD-VKHMYHEASA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "(S)-2-Aminobutanoate",
+                "(S)-2-Aminobutanoic acid",
+                "(S)-2-Aminobutyrate",
+                "(S)-2-Aminobutyric acid",
+                "L-2-Aminobutyric acid" ;
+            schema:smiles "CC[C@H](N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 9.901e+03 ;
+            mbo:mz 5.4e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 133 ],
+        [ mbo:intensity 7.42575e+04 ;
+            mbo:mz 1.018e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.02e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0udi-1900000000-ddc187aaa752f4b10f2b" ;
+    rdfs:comment "KEIO_ID A240" ;
+    skos:definition "L-2-Aminobutyric acid; LC-ESI-QQ; MS2; CE:30 V; [M-H]-" .
+

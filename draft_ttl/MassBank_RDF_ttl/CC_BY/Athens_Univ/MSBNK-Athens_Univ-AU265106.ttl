@@ -1,0 +1,101 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU265106 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU265106" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "Ramp 19.1-28.7 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.110 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(6-Methoxy-2-naphthyl)propionic acid",
+                "2-(6-methoxynaphthalen-2-yl)propanoic acid",
+                "Naproxen" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.300943e+02 ;
+            rdfs:seeAlso cas:26159-31-9,
+                chemspider:1262,
+                pubchem:CID1302 ;
+            schema:inChI "InChI=1S/C14H14O3/c1-9(14(15)16)10-3-4-12-8-13(17-2)6-5-11(12)7-10/h3-9H,1-2H3,(H,15,16)" ;
+            schema:inChIKey inchikey:CMWTZPSULFXXJA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H14O3" ;
+            schema:name "2-(6-Methoxy-2-naphthyl)propionic acid",
+                "2-(6-methoxynaphthalen-2-yl)propanoic acid",
+                "Naproxen" ;
+            schema:smiles "COC1=CC2=CC=C(C=C2C=C1)C(C)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.28e+02 ;
+            mbo:mz 1.420772e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.2788e+04 ;
+            mbo:mz 1.850951e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.42e+03 ;
+            mbo:mz 1.860989e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 1.324e+03 ;
+            mbo:mz 1.530692e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 2.524e+03 ;
+            mbo:mz 1.540767e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 1.344e+03 ;
+            mbo:mz 1.55083e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 5.04e+02 ;
+            mbo:mz 1.560586e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 5.48e+02 ;
+            mbo:mz 1.570655e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.768e+03 ;
+            mbo:mz 1.580717e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 5.624e+03 ;
+            mbo:mz 1.700711e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 171 ],
+        [ mbo:intensity 1.176e+03 ;
+            mbo:mz 1.710732e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 36 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.192694e+02 ;
+            mbo:precursor_mz 2.311016e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-000i-0900000000-db845e60c72eadf14ec6" ;
+    rdfs:comment "INTERNAL_ID 2651" ;
+    skos:definition "Naproxen; LC-ESI-QTOF; MS2; CE: Ramp 19.1-28.7 eV; R=35000; [M+H]+" .
+

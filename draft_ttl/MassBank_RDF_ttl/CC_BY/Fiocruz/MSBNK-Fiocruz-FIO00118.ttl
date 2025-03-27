@@ -1,0 +1,90 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00118 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-04-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00118" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Harman" ;
+            mbo:ch_compound_class "Natural Product; Alkaloid" ;
+            mbo:ch_exact_mass 1.820844e+02 ;
+            rdfs:seeAlso cas:486-84-0,
+                knapsack:C00001736,
+                pubchem:CID11400 ;
+            schema:inChI "InChI=1S/C12H10N2/c1-8-12-10(6-7-13-8)9-4-2-3-5-11(9)14-12/h2-7,14H,1H3" ;
+            schema:inChIKey inchikey:PSFDQSOCUJVVGF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H10N2" ;
+            schema:name "Harman" ;
+            schema:smiles "CC1=NC=CC2=C1NC3=CC=CC=C23" ] ;
+    mbo:has_peak [ mbo:intensity 1.46e+02 ;
+            mbo:mz 1.390421e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 4.29e+02 ;
+            mbo:mz 1.8208e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 4.56e+02 ;
+            mbo:mz 1.400502e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 149 ],
+        [ mbo:intensity 1.15e+02 ;
+            mbo:mz 1.530588e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.08e+02 ;
+            mbo:mz 1.540659e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 3.064e+03 ;
+            mbo:mz 1.650458e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.15e+02 ;
+            mbo:mz 1.660501e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 1.14e+02 ;
+            mbo:mz 1.670607e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.697e+03 ;
+            mbo:mz 1.800693e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 553 ],
+        [ mbo:intensity 2.981e+03 ;
+            mbo:mz 1.810769e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 972 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.650458e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00lr-0900000000-a0630fe37a9dae900711" ;
+    rdfs:comment "[Raw Data] CB042_Harman_neg_40eV_000012.txt" ;
+    skos:definition "Harman; LC-ESI-QTOF; MS2; [M-H]-; CE: 40eV" .
+

@@ -1,0 +1,49 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000495 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-01-02, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000495" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(1H-indol-3-yl)ethanone",
+                "3-Acetylindole" ;
+            mbo:ch_compound_class "Natural Product; indole" ;
+            mbo:ch_exact_mass 1.590684e+02 ;
+            rdfs:seeAlso pubchem:CID12802 ;
+            schema:inChI "InChI=1S/C10H9NO/c1-7(12)9-6-11-10-5-3-2-4-8(9)10/h2-6,11H,1H3" ;
+            schema:inChIKey inchikey:VUIMBZIZZFSQEE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H9NO" ;
+            schema:name "1-(1H-indol-3-yl)ethanone",
+                "3-Acetylindole" ;
+            schema:smiles "CC(=O)C1=CNC2=CC=CC=C21" ] ;
+    mbo:has_peak [ mbo:intensity 9.7166e+01 ;
+            mbo:mz 1.18066e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.60076e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-03di-0900000000-5687f5479ba231f59eac" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "3-Acetylindole; LC-ESI-QTOF; MS2; CE:10 eV; [M+H]+" .
+

@@ -1,0 +1,54 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU593002 a mbo:MassSpectrum ;
+    dcterms:creator "Dimitrios E. Damalas, Stefanos Kokolakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU593002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness (Restek)" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "15.628 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phenanthrene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.780783e+02 ;
+            rdfs:seeAlso cas:85-01-8,
+                chemspider:970,
+                pubchem:CID995 ;
+            schema:inChI "InChI=1S/C14H10/c1-3-7-13-11(5-1)9-10-12-6-2-4-8-14(12)13/h1-10H" ;
+            schema:inChIKey inchikey:YNPNZTXNASCQKK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H10" ;
+            schema:name "Phenanthrene" ;
+            schema:smiles "C1=CC2=C(C=C1)C1=C(C=CC=C1)C=C2" ] ;
+    mbo:has_peak [ mbo:intensity 2.2384e+04 ;
+            mbo:mz 1.78074e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.79081e+02 ;
+            mbo:precursor_mz 1.790855e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-0900000000-495e5eaa1a0a8fa9be90" ;
+    rdfs:comment "INTERNAL_ID 5930" ;
+    skos:definition "Phenanthrene; GC-APCI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

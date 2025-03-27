@@ -1,0 +1,49 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT002387 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT002387" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS3" ;
+            mbo:retention_time "28.75 min (in paper: 28.7 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sphingomyelin d18:2-C20:0" ;
+            mbo:ch_compound_class "Natural Product; Sphingolipids; Phosphosphingolipids; Ceramide phosphocholines (sphingomyelins)" ;
+            mbo:ch_exact_mass 7.566145e+02 ;
+            schema:inChI "InChI=1S/C43H85N2O6P/c1-6-8-10-12-14-16-18-20-21-22-23-25-27-29-31-33-35-37-43(47)44-41(40-51-52(48,49)50-39-38-45(3,4)5)42(46)36-34-32-30-28-26-24-19-17-15-13-11-9-7-2/h26,28,34,36,41-42,46H,6-25,27,29-33,35,37-40H2,1-5H3,(H-,44,47,48,49)/b28-26+,36-34+/t41-,42+/m1/s1" ;
+            schema:inChIKey inchikey:RIQUZAZTFMJZDT-IOZXCLFOSA-N ;
+            schema:molecularFormula "C43H85N2O6P" ;
+            schema:name "Sphingomyelin d18:2-C20:0" ;
+            schema:smiles "C(CCCCC)CCCC=CCCC=CC(C(COP(OCC[N+1](C)(C)C)([O-1])=O)NC(=O)CCCCCCCCCCCCCCCCCCC)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.44e+01 ;
+            mbo:mz 4.4726e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0002-0000900000-567c07031a7b8a26324d" ;
+    skos:definition "Sphingomyelin d18:2-C20:0; LC-ESI-ITFT; MS3; [M+CH3COO]-/[M-CH3]-; RT: 28.66; Exp: 2" .
+

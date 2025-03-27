@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR020043 a mbo:MassSpectrum ;
+    dcterms:creator "Tohge T, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2007-08-31, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR020043" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "5.0 V" ;
+            mbo:column_name "ACQUITY UPLC BEH C18 2.1 by 100 mm (Waters, Milford, MA,USA)" ;
+            mbo:flow_gradient "0/100 at 0 min, 15/85 at 5 min, 21/79 at 20 min, 90/10 at 24 min, 95/5 at 26 min, 0/100, 30 min." ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "16.2 min" ;
+            mbo:solvent "A CH3CN(0.1%TFA)",
+                "B H2O(0.1%TFA)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(4-methoxyphenyl)-7-[(2S,3R,4S,5R,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-chromen-4-one",
+                "Formononetin-7-O-glucoside",
+                "Ononin",
+                "formononetin-7-O-glucoside" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.301264e+02 ;
+            rdfs:seeAlso cas:486-62-4,
+                pubchem:CID442813 ;
+            schema:inChI "InChI=1S/C22H22O9/c1-28-12-4-2-11(3-5-12)15-10-29-16-8-13(6-7-14(16)18(15)24)30-22-21(27)20(26)19(25)17(9-23)31-22/h2-8,10,17,19-23,25-27H,9H2,1H3/t17-,19-,20+,21-,22-/m1/s1" ;
+            schema:inChIKey inchikey:MGJLSBDCWOSMHL-MIUGBVLSSA-N ;
+            schema:molecularFormula "C22H22O9" ;
+            schema:name "3-(4-methoxyphenyl)-7-[(2S,3R,4S,5R,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-chromen-4-one",
+                "Formononetin-7-O-glucoside",
+                "Ononin",
+                "formononetin-7-O-glucoside" ;
+            schema:smiles "COc(c4)ccc(c4)C(=C3)C(=O)c(c2)c(O3)cc(c2)O[C@H](O1)[C@H](O)[C@@H](O)[C@H](O)[C@@H](CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 7.776e+02 ;
+            mbo:mz 2.690883e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 1.26e+02 ;
+            mbo:mz 2.700974e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 7.156e+03 ;
+            mbo:mz 4.311317e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.14e+03 ;
+            mbo:mz 4.321534e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 1.983e+02 ;
+            mbo:mz 4.331426e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 7.66e+01 ;
+            mbo:mz 4.340737e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0000900000-c2d377d0b3d5d4de46a7" ;
+    skos:definition "Ononin; LC-ESI-QTOF; MS" .
+

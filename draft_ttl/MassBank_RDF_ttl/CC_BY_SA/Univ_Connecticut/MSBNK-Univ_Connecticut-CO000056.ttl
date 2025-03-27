@@ -1,0 +1,50 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000056 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000056" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Anileridine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.522151e+02 ;
+            rdfs:seeAlso pubchem:CID8944 ;
+            schema:inChI "InChI=1S/C22H28N2O2/c1-2-26-21(25)22(19-6-4-3-5-7-19)13-16-24(17-14-22)15-12-18-8-10-20(23)11-9-18/h3-11H,2,12-17,23H2,1H3" ;
+            schema:inChIKey inchikey:LKYQLAWMNBFNJT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H28N2O2" ;
+            schema:name "Anileridine" ;
+            schema:smiles "[H]N([H])c(c([H])3)c([H])c([H])c(c([H])3)C([H])([H])C([H])([H])N(C([H])([H])1)C([H])([H])C([H])([H])C(C(=O)OC([H])([H])C([H])([H])[H])(c(c([H])2)c([H])c([H])c([H])c([H])2)C([H])([H])1" ] ;
+    mbo:has_peak [ mbo:intensity 1.23138e+02 ;
+            mbo:mz 1.200818e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 3.532232e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.53223e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0udi-0009000000-51d5aa3665f062055774" ;
+    skos:definition "Anileridine; LC-ESI-QTOF; MS2; CE:10 eV; [M+H]+" .
+

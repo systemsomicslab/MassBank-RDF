@@ -1,0 +1,58 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML82050 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML82050" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.531" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,8-dimethoxy-4-(methoxycarbonyl)-1,2,3,4,5,11,14,14a,4a,5a-decahydrobenzo[3,4 -g]indolo[2,3-a]quinolizin-2-yl 3,4,5-trimethoxybenzoate",
+                "Reserpine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.082734e+02 ;
+            rdfs:seeAlso cas:50-55-5,
+                chemspider:5566,
+                pubchem:CID5770 ;
+            schema:inChI "InChI=1S/C33H40N2O9/c1-38-19-7-8-20-21-9-10-35-16-18-13-27(44-32(36)17-11-25(39-2)30(41-4)26(12-17)40-3)31(42-5)28(33(37)43-6)22(18)15-24(35)29(21)34-23(20)14-19/h7-8,11-12,14,18,22,24,27-28,31,34H,9-10,13,15-16H2,1-6H3/t18-,22+,24-,27-,28+,31+/m1/s1" ;
+            schema:inChIKey inchikey:QEVHRUUCFGRFIF-MDEJGZGSSA-N ;
+            schema:molecularFormula "C33H40N2O9" ;
+            schema:name "3,8-dimethoxy-4-(methoxycarbonyl)-1,2,3,4,5,11,14,14a,4a,5a-decahydrobenzo[3,4 -g]indolo[2,3-a]quinolizin-2-yl 3,4,5-trimethoxybenzoate",
+                "Reserpine" ;
+            schema:smiles "CO[C@H]1[C@@H](C[C@@H]2CN3CCC4=C([C@H]3C[C@@H]2[C@@H]1C(=O)OC)NC5=C4C=CC(=C5)OC)OC(=O)C6=CC(=C(C(=C6)OC)OC)OC" ] ;
+    mbo:has_peak [ mbo:intensity 2.276895e+06 ;
+            mbo:mz 6.092807e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.472e+04 ;
+            mbo:mz 6.312626e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0000009000-ac5a9b0534e8a7bc04de" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.021" ;
+    skos:definition "Reserpine; LC-ESI-QTOF; MS; POSITIVE" .
+

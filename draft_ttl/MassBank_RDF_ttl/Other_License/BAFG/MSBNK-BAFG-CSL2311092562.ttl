@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311092562 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311092562" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "10.786 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Losartan carboxylic acid" ;
+            mbo:ch_compound_class "Pharmaceutical" ;
+            mbo:ch_exact_mass 4.361415e+02 ;
+            rdfs:seeAlso cas:124750-92-1 ;
+            schema:inChI "InChI=1S/C22H21ClN6O2/c1-2-3-8-18-24-20(23)19(22(30)31)29(18)13-14-9-11-15(12-10-14)16-6-4-5-7-17(16)21-25-27-28-26-21/h4-7,9-12H,2-3,8,13H2,1H3,(H,30,31)(H,25,26,27,28)" ;
+            schema:inChIKey inchikey:ZEUXAIYYDDCIRX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H21ClN6O2" ;
+            schema:name "Losartan carboxylic acid" ;
+            schema:smiles "CCCCc1nc(Cl)c(n1Cc2ccc(cc2)c3ccccc3c4n[nH]nn4)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.25e+01 ;
+            mbo:mz 1.13999e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 5.509e+02 ;
+            mbo:mz 1.570538e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.351342e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-32e5cef9ba9e41400aaa" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Losartan carboxylic acid; LC-ESI-QTOF; MS2; 40 V" .
+

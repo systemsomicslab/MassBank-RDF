@@ -1,0 +1,77 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS045204 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS045204" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(R)-O-(3,4-Dihydroxycinnamoyl)-3-(3,4- dihydroxyphenyl)lactic acid",
+                "7-Hydroxy-PIPAT",
+                "Rosemary acid",
+                "Rosmarinate",
+                "rosmarinic acid" ;
+            mbo:ch_compound_class "CLASS1 Phenylpropanoid CLASS2 Phenylpropanoid ester CLASS3 Rosmarinic acid" ;
+            mbo:ch_exact_mass 3.60318e+02 ;
+            rdfs:seeAlso cas:537-15-5,
+                pubchem:CID639655 ;
+            schema:inChI "InChI=1S/C18H16O8/c19-12-4-1-10(7-14(12)21)3-6-17(23)26-16(18(24)25)9-11-2-5-13(20)15(22)8-11/h1-8,16,19-22H,9H2,(H,24,25)" ;
+            schema:inChIKey inchikey:DOUMFZQKYFQNTF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H16O8" ;
+            schema:name "(R)-O-(3,4-Dihydroxycinnamoyl)-3-(3,4- dihydroxyphenyl)lactic acid",
+                "7-Hydroxy-PIPAT",
+                "Rosemary acid",
+                "Rosmarinate",
+                "rosmarinic acid" ;
+            schema:smiles "C1=CC(=C(C=C1CC(C(=O)O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.565e+03 ;
+            mbo:mz 1.34e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 9.954e+03 ;
+            mbo:mz 1.35e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 3.617e+03 ;
+            mbo:mz 1.38e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.0764e+04 ;
+            mbo:mz 1.39e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 2.1574e+04 ;
+            mbo:mz 1.62e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 301 ],
+        [ mbo:intensity 7.1489e+04 ;
+            mbo:mz 1.63e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.6135e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0900000000-4308abd409e836c1b169" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Rosemary acid, rosmarinic acid, Rosmarinate, (R)-O-(3,4-Dihydroxycinnamoyl)-3-(3,4- dihydroxyphenyl)lactic acid, 7-Hydroxy-PIPAT; LC-ESI-QQ; MS2" .
+

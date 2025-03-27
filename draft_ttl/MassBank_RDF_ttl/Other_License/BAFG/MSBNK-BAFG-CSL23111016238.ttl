@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL23111016238 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111016238" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
+            mbo:collision_energy "110" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "1.307 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Glycidyltrimethylaminium" ;
+            mbo:ch_compound_class "Industrial_process" ;
+            mbo:ch_exact_mass 1.16107e+02 ;
+            rdfs:seeAlso cas:45633-15-6 ;
+            schema:inChI "InChI=1S/C6H14NO/c1-7(2,3)4-6-5-8-6/h6H,4-5H2,1-3H3/q+1" ;
+            schema:inChIKey inchikey:LRQFRDLKOBFOSG-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C6H14NO]+" ;
+            schema:name "Glycidyltrimethylaminium" ;
+            schema:smiles "C[N+](C)(C)CC1CO1" ] ;
+    mbo:has_peak [ mbo:intensity 2.49e+01 ;
+            mbo:mz 4.10258e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 2.137e+02 ;
+            mbo:mz 4.20339e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.16107e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-9000000000-1049447c8473e044a3a3" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Glycidyltrimethylaminium; LC-ESI-QTOF; MS2; 110 V" .
+

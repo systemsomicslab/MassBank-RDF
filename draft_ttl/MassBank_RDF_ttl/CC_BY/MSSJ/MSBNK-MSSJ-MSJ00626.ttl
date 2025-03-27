@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00626 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2021-02-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00626" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kenji Mori and Kazuaki Akasaka, Tetrahedron: Asymmetry 27 (2016) 182-187, DOI:10.1016/j.tetasy.2016.01.014." ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "6.43 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4S)-Ethyl 4-methylheptanoate" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 1.721464e+02 ;
+            rdfs:seeAlso pubchem:CID92981437 ;
+            schema:inChI "InChI=1S/C10H20O2/c1-4-6-9(3)7-8-10(11)12-5-2/h9H,4-8H2,1-3H3/t9-/m0/s1" ;
+            schema:inChIKey inchikey:NYSADWJQUICPEE-VIFPVBQESA-N ;
+            schema:molecularFormula "C10H20O2" ;
+            schema:name "(4S)-Ethyl 4-methylheptanoate" ;
+            schema:smiles "O=C(CC[C@@H](C)CCC)OCC" ] ;
+    mbo:has_peak [ mbo:intensity 4.32e+00 ;
+            mbo:mz 2.904e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 2.08e+00 ;
+            mbo:mz 8.4092e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.312e+01 ;
+            mbo:mz 1.15074e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 8.6e+00 ;
+            mbo:mz 1.29092e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 3.63e+00 ;
+            mbo:mz 1.43107e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.72146e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.454e+01 ;
+            mbo:mz 1.7315e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 1.91e+00 ;
+            mbo:mz 1.74153e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 19 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-0900000000-148690612121ed310605" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "(4S)-Ethyl 4-methylheptanoate; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

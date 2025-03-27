@@ -1,0 +1,73 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02056 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2023-03-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02056" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mori K, Osada K, Amaike M. Mammalian blood odorant and chirality: synthesis and sensory evaluation by humans and mice of the racemate and enantiomers of trans-4,5-epoxy-(E)-2-decenal. Tetrahedron: Asymmetry. 2015 August 31;26(15-16):861-67. doi: 10.1016/j.tetasy.2015.06.011" ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A gas chromatograph." ;
+            mbo:column_name "HP-5 19091J-413 USD364547H (Agilent), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.61 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2E,4S,5S)-(-)-4,5-epoxy-(E)-2-decenal" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.68115e+02 ;
+            rdfs:seeAlso chemspider:19079332,
+                pubchem:CID15825667 ;
+            schema:inChI "InChI=1S/C10H16O2/c1-2-3-4-6-9-10(12-9)7-5-8-11/h5,7-10H,2-4,6H2,1H3/b7-5+/t9-,10-/m0/s1" ;
+            schema:inChIKey inchikey:HIOMEXREAUSUBP-MLXLLJIISA-N ;
+            schema:molecularFormula "C10H16O2" ;
+            schema:name "(2E,4S,5S)-(-)-4,5-epoxy-(E)-2-decenal" ;
+            schema:smiles "CCCCC[C@@H]1O[C@H]1/C=C/C=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.51676e+01 ;
+            mbo:mz 8.4058e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 152 ],
+        [ mbo:intensity 6.0955e+00 ;
+            mbo:mz 1.26105e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 8.7073e+00 ;
+            mbo:mz 1.39112e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 5.8686e+00 ;
+            mbo:mz 1.52122e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.68115e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.18215e+01 ;
+            mbo:mz 1.6912e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 218 ],
+        [ mbo:intensity 3.9376e+00 ;
+            mbo:mz 1.70123e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-014i-0900000000-2b800633722ffc2bcd09" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. Postrun m/z adjustment with known mass was 168.11503." ;
+    skos:definition "(2E,4S,5S)-(-)-4,5-epoxy-(E)-2-decenal; GC-FI-TOF; MS; POSITIVE; FI; 10 kV" .
+

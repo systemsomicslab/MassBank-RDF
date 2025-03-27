@@ -1,0 +1,92 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ436005 a mbo:MassSpectrum ;
+    dcterms:creator "E. Janssen [dtc], B. Lauper [com]" ;
+    dcterms:date "2020-02-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ436005" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "7.897 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-[[(3S,6S,9S,12S,15R)-3-benzyl-12-[(2R)-butan-2-yl]-9-[2-(4-hydroxyphenyl)ethyl]-6,7-dimethyl-2,5,8,11,14-pentaoxo-1,4,7,10,13-pentazacyclononadec-15-yl]carbamoylamino]-3-(4-hydroxyphenyl)propanoic acid",
+                "Oscillamide Y" ;
+            mbo:ch_exact_mass 8.574323e+02 ;
+            rdfs:seeAlso chemspider:24687556,
+                pubchem:CID15342746 ;
+            schema:inChI "InChI=1S/C45H59N7O10/c1-5-27(2)38-42(58)47-35(23-18-29-14-19-32(53)20-15-29)43(59)52(4)28(3)39(55)48-36(25-30-11-7-6-8-12-30)40(56)46-24-10-9-13-34(41(57)51-38)49-45(62)50-37(44(60)61)26-31-16-21-33(54)22-17-31/h6-8,11-12,14-17,19-22,27-28,34-38,53-54H,5,9-10,13,18,23-26H2,1-4H3,(H,46,56)(H,47,58)(H,48,55)(H,51,57)(H,60,61)(H2,49,50,62)/t27-,28+,34-,35+,36+,37+,38+/m1/s1" ;
+            schema:inChIKey inchikey:KCAKUFQSCADGHZ-JNFDXLRCSA-N ;
+            schema:molecularFormula "C45H59N7O10" ;
+            schema:name "(2S)-2-[[(3S,6S,9S,12S,15R)-3-benzyl-12-[(2R)-butan-2-yl]-9-[2-(4-hydroxyphenyl)ethyl]-6,7-dimethyl-2,5,8,11,14-pentaoxo-1,4,7,10,13-pentazacyclononadec-15-yl]carbamoylamino]-3-(4-hydroxyphenyl)propanoic acid",
+                "Oscillamide Y" ;
+            schema:smiles "CC[C@@H](C)[C@@H]1NC(=O)[C@@H](CCCCNC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](C)N(C)C(=O)[C@H](CCc3ccc(O)cc3)NC1=O)NC(=O)N[C@@H](Cc4ccc(O)cc4)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.48818e+05 ;
+            mbo:mz 8.40808e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.8708e+03 ;
+            mbo:mz 1.550809e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 3.58734e+04 ;
+            mbo:mz 8.60601e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 1.13736e+04 ;
+            mbo:mz 8.60965e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 1.25898e+04 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.46247e+04 ;
+            mbo:mz 1.030542e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 5.6583e+03 ;
+            mbo:mz 1.050695e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 4.54142e+04 ;
+            mbo:mz 1.070492e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 9.72812e+04 ;
+            mbo:mz 1.200808e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 391 ],
+        [ mbo:intensity 1.19281e+04 ;
+            mbo:mz 1.360756e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 48 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.649846e+02 ;
+            mbo:precursor_mz 8.584396e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-9500000000-ed07aa64aa7d4fbdb4ee" ;
+    rdfs:comment "NaToxAq - Natural Toxins and Drinking Water Quality - From Source to Tap (https://natoxaq.ku.dk)" ;
+    skos:definition "Oscillamide Y; LC-ESI-QFT; MS2; CE: 75%; R=17500; [M+H]+" .
+

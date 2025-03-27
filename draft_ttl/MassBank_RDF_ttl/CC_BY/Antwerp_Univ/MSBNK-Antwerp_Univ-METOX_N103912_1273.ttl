@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N103912_1273 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N103912_1273" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.186 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3-hydroxy-2-octanoyloxypropyl) octanoate",
+                "1,2-Dioctanoylglycerol",
+                "1,2-dioctanoyl-sn-glycerol" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.442563e+02 ;
+            rdfs:seeAlso cas:6226-22-8,
+                chemspider:1283,
+                pubchem:CID1323 ;
+            schema:inChI "InChI=1S/C19H36O5/c1-3-5-7-9-11-13-18(21)23-16-17(15-20)24-19(22)14-12-10-8-6-4-2/h17,20H,3-16H2,1-2H3" ;
+            schema:inChIKey inchikey:ZQBULZYTDGUSSK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H36O5" ;
+            schema:name "(3-hydroxy-2-octanoyloxypropyl) octanoate",
+                "1,2-Dioctanoylglycerol",
+                "1,2-dioctanoyl-sn-glycerol" ;
+            schema:smiles "CCCCCCCC(=O)OCC(CO)OC(=O)CCCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 5.6e+02 ;
+            mbo:mz 1.090995e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.637e+02 ;
+            mbo:mz 1.271106e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 470 ],
+        [ mbo:intensity 3.3e+01 ;
+            mbo:mz 2.651269e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 59 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.672467e+02 ;
+            mbo:precursor_mz 3.27253e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-053c6cd1fbf93aea55fa" ;
+    rdfs:comment "INTERNAL_ID 1039" ;
+    skos:definition "1,2-dioctanoyl-sn-glycerol; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M-H2O+H]+" .
+

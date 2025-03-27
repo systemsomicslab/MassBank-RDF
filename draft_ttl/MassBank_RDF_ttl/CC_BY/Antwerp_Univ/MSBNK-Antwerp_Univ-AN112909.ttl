@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN112909 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN112909" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "45 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.149 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bis(2-ethylhexyl) phthalate",
+                "Di(2-ethylhexyl) phthalate",
+                "bis(2-ethylhexyl) benzene-1,2-dicarboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.90277e+02 ;
+            rdfs:seeAlso cas:82208-43-3,
+                chemspider:21106505,
+                pubchem:CID8343 ;
+            schema:inChI "InChI=1S/C24H38O4/c1-5-9-13-19(7-3)17-27-23(25)21-15-11-12-16-22(21)24(26)28-18-20(8-4)14-10-6-2/h11-12,15-16,19-20H,5-10,13-14,17-18H2,1-4H3" ;
+            schema:inChIKey inchikey:BJQHLKABXJIVAM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H38O4" ;
+            schema:name "Bis(2-ethylhexyl) phthalate",
+                "Di(2-ethylhexyl) phthalate",
+                "bis(2-ethylhexyl) benzene-1,2-dicarboxylate" ;
+            schema:smiles "CCCCC(CC)COC(=O)C1=CC=CC=C1C(=O)OCC(CC)CCCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.0779e+03 ;
+            mbo:mz 5.70703e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 2.9476e+03 ;
+            mbo:mz 6.50394e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 4.499e+02 ;
+            mbo:mz 7.10853e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.5345e+03 ;
+            mbo:mz 9.30336e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 4.5482e+03 ;
+            mbo:mz 1.210283e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 227 ],
+        [ mbo:intensity 1.99987e+04 ;
+            mbo:mz 1.490232e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.132674e+02 ;
+            mbo:precursor_mz 3.912843e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0002-2900000000-13042b445a95fc64f522" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Di(2-ethylhexyl) phthalate; LC-ESI-QTOF; MS2; CE: 45eV; R=7000; [M+H]+" .
+

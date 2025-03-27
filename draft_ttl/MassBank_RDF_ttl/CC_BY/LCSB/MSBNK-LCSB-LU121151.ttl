@@ -1,0 +1,88 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU121151 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU121151" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.825 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-chloro-N-[2-[4-(cyclohexylcarbamoylsulfamoyl)phenyl]ethyl]-2-methoxybenzamide",
+                "Glybenclamide",
+                "Glyburide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.931438e+02 ;
+            rdfs:seeAlso cas:10238-21-8,
+                chemspider:3368,
+                pubchem:CID3488 ;
+            schema:inChI "InChI=1S/C23H28ClN3O5S/c1-32-21-12-9-17(24)15-20(21)22(28)25-14-13-16-7-10-19(11-8-16)33(30,31)27-23(29)26-18-5-3-2-4-6-18/h7-12,15,18H,2-6,13-14H2,1H3,(H,25,28)(H2,26,27,29)" ;
+            schema:inChIKey inchikey:ZNNLBTZKUZBEKO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C23H28ClN3O5S" ;
+            schema:name "5-chloro-N-[2-[4-(cyclohexylcarbamoylsulfamoyl)phenyl]ethyl]-2-methoxybenzamide",
+                "Glybenclamide",
+                "Glyburide" ;
+            schema:smiles "COC1=C(C=C(Cl)C=C1)C(=O)NCCC1=CC=C(C=C1)S(=O)(=O)NC(=O)NC1CCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 9.399954e+05 ;
+            mbo:mz 1.700015e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 5.7467e+03 ;
+            mbo:mz 1.960077e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.5194e+03 ;
+            mbo:mz 1.96044e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.954833e+06 ;
+            mbo:mz 3.670524e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 572 ],
+        [ mbo:intensity 2.057468e+05 ;
+            mbo:mz 3.780321e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 7.719551e+05 ;
+            mbo:mz 4.601105e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 149 ],
+        [ mbo:intensity 5.161704e+06 ;
+            mbo:mz 4.921366e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.129856e+02 ;
+            mbo:precursor_mz 4.921365e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00kf-0104900000-c4e66a21357c7ad991d3" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Glybenclamide; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

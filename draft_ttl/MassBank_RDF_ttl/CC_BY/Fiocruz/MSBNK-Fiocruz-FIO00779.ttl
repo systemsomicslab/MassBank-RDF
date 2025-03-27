@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00779 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2014-10-14)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00779" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack C18 2.2um" ;
+            mbo:flow_gradient "5-100%B in 12min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Myriocin" ;
+            mbo:ch_compound_class "Natural Product; Lipids" ;
+            mbo:ch_exact_mass 4.012777e+02 ;
+            rdfs:seeAlso cas:35891-70-4,
+                chemspider:4942874,
+                knapsack:C00016936,
+                pubchem:CID135626380 ;
+            schema:inChI "InChI=1S/C21H39NO6/c1-2-3-4-10-13-17(24)14-11-8-6-5-7-9-12-15-18(25)19(26)21(22,16-23)20(27)28/h9,12,18-19,23,25-26H,2-8,10-11,13-16,22H2,1H3,(H,27,28)/b12-9+/t18-,19+,21+/m1/s1" ;
+            schema:inChIKey inchikey:ZZIKIHCNFWXKDY-GNTQXERDSA-N ;
+            schema:molecularFormula "C21H39NO6" ;
+            schema:name "Myriocin" ;
+            schema:smiles "CCCCCCC(=O)CCCCCCC=CCC(O)C(O)C(N)(CO)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.31e+02 ;
+            mbo:mz 8.6025e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.2821e+04 ;
+            mbo:mz 4.002708e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.53e+03 ;
+            mbo:mz 4.012745e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 242 ],
+        [ mbo:intensity 1.014e+03 ;
+            mbo:mz 4.022784e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 2.423e+03 ;
+            mbo:mz 1.040357e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 1.599e+03 ;
+            mbo:mz 2.952281e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 2.37e+02 ;
+            mbo:mz 2.962324e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.855e+03 ;
+            mbo:mz 3.342385e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 6.83e+02 ;
+            mbo:mz 3.352423e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.414e+03 ;
+            mbo:mz 3.522496e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 2.77e+02 ;
+            mbo:mz 3.53252e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.15e+02 ;
+            mbo:mz 3.7026e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 23 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0udi-0001900000-064237cf06a9987512c0" ;
+    rdfs:comment "[Raw Data] CBA29_Myriocin_neg_20eV_1-3_01_1588.txt" ;
+    skos:definition "Myriocin; LC-ESI-QTOF; MS2; [M-H]-; CE: 20eV" .
+

@@ -1,0 +1,60 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN118104 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN118104" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.146 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Triisobutyl phosphate",
+                "tris(2-methylpropyl) phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.661647e+02 ;
+            rdfs:seeAlso cas:126-71-6,
+                chemspider:29088,
+                pubchem:CID31355 ;
+            schema:inChI "InChI=1S/C12H27O4P/c1-10(2)7-14-17(13,15-8-11(3)4)16-9-12(5)6/h10-12H,7-9H2,1-6H3" ;
+            schema:inChIKey inchikey:HRKAMJBPFPHCSD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H27O4P" ;
+            schema:name "Triisobutyl phosphate",
+                "tris(2-methylpropyl) phosphate" ;
+            schema:smiles "CC(C)COP(=O)(OCC(C)C)OCC(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 6.321e+02 ;
+            mbo:mz 5.70706e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 73 ],
+        [ mbo:intensity 8.6081e+03 ;
+            mbo:mz 9.89846e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.891553e+02 ;
+            mbo:precursor_mz 2.67172e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-9000000000-b41274391c9b1e2da169" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Triisobutyl phosphate; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M+H]+" .
+

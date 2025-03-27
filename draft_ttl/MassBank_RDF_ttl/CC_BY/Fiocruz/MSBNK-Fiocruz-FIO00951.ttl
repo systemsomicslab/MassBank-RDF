@@ -1,0 +1,107 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00951 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00951" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Scopoletin" ;
+            mbo:ch_compound_class "Natural Product; Phenylpropanoids" ;
+            mbo:ch_exact_mass 1.920423e+02 ;
+            schema:inChI "InChI=1S/C10H8O4/c1-13-9-4-6-2-3-10(12)14-8(6)5-7(9)11/h2-5,11H,1H3" ;
+            schema:inChIKey inchikey:RODXRVNMMDRFIK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8O4" ;
+            schema:name "Scopoletin" ;
+            schema:smiles "COc(c1)c(O)cc(O2)c(C=CC(=O)2)1" ] ;
+    mbo:has_peak [ mbo:intensity 6.744e+03 ;
+            mbo:mz 1.21023e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 7.196e+03 ;
+            mbo:mz 1.510326e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 1.1764e+04 ;
+            mbo:mz 1.610224e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 1.296e+03 ;
+            mbo:mz 1.620268e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 3.5352e+04 ;
+            mbo:mz 1.78026e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 492 ],
+        [ mbo:intensity 4.42e+03 ;
+            mbo:mz 1.790292e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 8.72e+02 ;
+            mbo:mz 1.800304e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.668e+03 ;
+            mbo:mz 1.930498e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.4992e+04 ;
+            mbo:mz 1.220309e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 487 ],
+        [ mbo:intensity 3.356e+03 ;
+            mbo:mz 1.230349e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 2.69e+04 ;
+            mbo:mz 1.330249e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 374 ],
+        [ mbo:intensity 4.124e+03 ;
+            mbo:mz 1.340292e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 1.2304e+04 ;
+            mbo:mz 1.370566e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 171 ],
+        [ mbo:intensity 1.72e+03 ;
+            mbo:mz 1.380602e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.816e+03 ;
+            mbo:mz 1.490216e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 7.1772e+04 ;
+            mbo:mz 1.500295e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 16 ;
+    mbo:pk_splash "splash10-0udi-0900000000-620a62f03433f6004cfe" ;
+    rdfs:comment "[Raw Data] CBA72_Scopoletin_pos_40eV.txt" ;
+    skos:definition "Scopoletin; LC-ESI-QTOF; MS2; [M+H]+; CE: 40eV" .
+

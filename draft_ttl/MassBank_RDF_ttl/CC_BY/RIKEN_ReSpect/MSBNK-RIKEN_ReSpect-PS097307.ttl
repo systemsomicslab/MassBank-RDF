@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS097307 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS097307" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Hydroxy-3-(4-hydroxyphenyl)propanoate",
+                "3-(4-Hydroxyphenyl)-2-hydroxypropanoic acid",
+                "4-Hydroxyphenyllactate",
+                "DL-p-Hydroxyphenyllactic acid",
+                "HPLA",
+                "p-Hydroxyphenyllactate" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Other CLASS3 BAIB" ;
+            mbo:ch_exact_mass 1.82175e+02 ;
+            rdfs:seeAlso cas:306-23-0,
+                pubchem:CID9378 ;
+            schema:inChI "InChI=1S/C9H10O4/c10-7-3-1-6(2-4-7)5-8(11)9(12)13/h1-4,8,10-11H,5H2,(H,12,13)" ;
+            schema:inChIKey inchikey:JVGVDSSUAVXRDY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H10O4" ;
+            schema:name "2-Hydroxy-3-(4-hydroxyphenyl)propanoate",
+                "3-(4-Hydroxyphenyl)-2-hydroxypropanoic acid",
+                "4-Hydroxyphenyllactate",
+                "DL-p-Hydroxyphenyllactic acid",
+                "HPLA",
+                "p-Hydroxyphenyllactate" ;
+            schema:smiles "C1=CC(=CC=C1CC(C(=O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.248e+04 ;
+            mbo:mz 1.8e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 3.79878e+05 ;
+            mbo:mz 1.81e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.8116e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0900000000-9611d1858bfdb95a7e48" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "2-Hydroxy-3-(4-hydroxyphenyl)propanoate, 4-Hydroxyphenyllactate, DL-p-Hydroxyphenyllactic acid, p-Hydroxyphenyllactate, 3-(4-Hydroxyphenyl)-2-hydroxypropanoic acid, HPLA; LC-ESI-QQ; MS2" .
+

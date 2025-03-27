@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA066612 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA066612" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "5.6 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(N-isopropylanilino)-2-keto-acetic acid",
+                "N-(1-Methylethyl)-N-(phenyl)oxalamic acid",
+                "Propachlor OXA" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.070895e+02 ;
+            rdfs:seeAlso cas:70628-36-3,
+                chemspider:136883,
+                pubchem:CID155385 ;
+            schema:inChI "InChI=1S/C11H13NO3/c1-8(2)12(10(13)11(14)15)9-6-4-3-5-7-9/h3-8H,1-2H3,(H,14,15)" ;
+            schema:inChIKey inchikey:HYHJOUPYTUBFIX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H13NO3" ;
+            schema:name "2-(N-isopropylanilino)-2-keto-acetic acid",
+                "N-(1-Methylethyl)-N-(phenyl)oxalamic acid",
+                "Propachlor OXA" ;
+            schema:smiles "CC(C)N(C(=O)C(O)=O)c1ccccc1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.4116e+03 ;
+            mbo:mz 5.30385e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 4.9525e+03 ;
+            mbo:mz 6.50385e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 4.6482e+04 ;
+            mbo:mz 7.70386e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 484 ],
+        [ mbo:intensity 9.59115e+04 ;
+            mbo:mz 9.20494e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.6841e+03 ;
+            mbo:mz 9.50491e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 1.667e+04 ;
+            mbo:mz 1.050447e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 174 ],
+        [ mbo:intensity 6.82765e+04 ;
+            mbo:mz 1.200444e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 711 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.080971e+02 ;
+            mbo:precursor_mz 2.080968e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-006x-9400000000-0881ce2841a3726e4ff9" ;
+    rdfs:comment "EAWAG_UCHEM_ID 666" ;
+    skos:definition "Propachlor OXA; LC-ESI-ITFT; MS2; CE: 75%; R=15000; [M+H]+" .
+

@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO004051 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO004051" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sulindac" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.560882e+02 ;
+            rdfs:seeAlso cas:38194-50-2,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:4693> ;
+            schema:inChI "InChI=1S/C20H17FO3S/c1-12-17(9-13-3-6-15(7-4-13)25(2)24)16-8-5-14(21)10-19(16)18(12)11-20(22)23/h3-10H,11H2,1-2H3,(H,22,23)/b17-9-" ;
+            schema:inChIKey inchikey:MLKXDPUZXIRXEP-MFOYZWKCSA-N ;
+            schema:molecularFormula "C20H17FO3S" ;
+            schema:name "Sulindac" ;
+            schema:smiles "OC(=O)CC(=C(C)1)c(c3)c(ccc(F)3)C(=Cc(c2)ccc(S(C)=O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.9802e+04 ;
+            mbo:mz 6.27e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 6.93e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 5.594065e+05 ;
+            mbo:mz 2.332e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.45545e+04 ;
+            mbo:mz 2.341e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 1.039605e+05 ;
+            mbo:mz 2.475e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 186 ],
+        [ mbo:intensity 1.633665e+05 ;
+            mbo:mz 2.483e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 292 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.57e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0090000000-8bf873219e6e4353be1e" ;
+    rdfs:comment "KEIO_ID S054" ;
+    skos:definition "Sulindac; LC-ESI-QQ; MS2; CE:50 V; [M+H]+" .
+

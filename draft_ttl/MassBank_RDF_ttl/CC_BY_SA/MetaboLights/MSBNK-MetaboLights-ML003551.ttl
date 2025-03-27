@@ -1,0 +1,84 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML003551 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML003551" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "1.4 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "D-fructose 1-phosphate",
+                "[(3S,4R,5R)-3,4,5,6-tetrahydroxy-2-oxohexyl] dihydrogen phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.600297e+02 ;
+            rdfs:seeAlso chemspider:58741,
+                pubchem:CID65246 ;
+            schema:inChI "InChI=1S/C6H13O9P/c7-1-3(8)5(10)6(11)4(9)2-15-16(12,13)14/h3,5-8,10-11H,1-2H2,(H2,12,13,14)/t3-,5-,6-/m1/s1" ;
+            schema:inChIKey inchikey:ZKLLSNQJRLJIGT-UYFOZJQFSA-N ;
+            schema:molecularFormula "C6H13O9P" ;
+            schema:name "D-fructose 1-phosphate",
+                "[(3S,4R,5R)-3,4,5,6-tetrahydroxy-2-oxohexyl] dihydrogen phosphate" ;
+            schema:smiles "O=C(COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H](O)CO" ] ;
+    mbo:has_peak [ mbo:intensity 1.16158e+04 ;
+            mbo:mz 7.89591e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 148 ],
+        [ mbo:intensity 7.85921e+04 ;
+            mbo:mz 9.69696e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.6678e+03 ;
+            mbo:mz 1.010244e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.741e+02 ;
+            mbo:mz 1.610453e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.2109e+03 ;
+            mbo:mz 1.689909e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 9.73e+01 ;
+            mbo:mz 1.870014e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.9321e+04 ;
+            mbo:mz 2.590224e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 246 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.74956e+02 ;
+            mbo:precursor_mz 2.590224e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0002-9010000000-09fb21847135e58a6be8" ;
+    rdfs:comment "ML_ID 35" ;
+    skos:definition "D-fructose 1-phosphate; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M-H]-" .
+

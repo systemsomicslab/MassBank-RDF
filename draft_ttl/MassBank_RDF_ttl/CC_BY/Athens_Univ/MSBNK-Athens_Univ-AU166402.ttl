@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU166402 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU166402" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.266 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Norbuprenorphine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.132566e+02 ;
+            rdfs:seeAlso cas:78715-23-8,
+                chemspider:102911,
+                pubchem:CID114976 ;
+            schema:inChI "InChI=1S/C25H35NO4/c1-21(2,3)22(4,28)16-13-23-8-9-25(16,29-5)20-24(23)10-11-26-17(23)12-14-6-7-15(27)19(30-20)18(14)24/h6-7,16-17,20,26-28H,8-13H2,1-5H3/t16-,17-,20-,22+,23-,24+,25-/m1/s1" ;
+            schema:inChIKey inchikey:YOYLLRBMGQRFTN-IOMBULRVSA-N ;
+            schema:molecularFormula "C25H35NO4" ;
+            schema:name "Norbuprenorphine" ;
+            schema:smiles "C[C@]([C@H]1C[C@@]23CC[C@@]1([C@H]4[C@@]25CCN[C@@H]3Cc6c5c(c(cc6)O)O4)OC)(C(C)(C)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.466e+04 ;
+            mbo:mz 4.142654e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.152e+04 ;
+            mbo:mz 4.152692e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 332 ],
+        [ mbo:intensity 1.376e+03 ;
+            mbo:mz 4.162736e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 40 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.142645e+02 ;
+            mbo:precursor_mz 4.142639e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-03di-0000900000-b04b0200f02b897bb6ef" ;
+    rdfs:comment "INTERNAL_ID 1664" ;
+    skos:definition "Norbuprenorphine; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

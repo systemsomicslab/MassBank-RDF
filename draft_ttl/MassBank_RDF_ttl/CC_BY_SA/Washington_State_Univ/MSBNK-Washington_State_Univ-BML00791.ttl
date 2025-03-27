@@ -1,0 +1,99 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00791 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00791" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "20 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "3.273" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "11-acetyl-6-oxo-7,11-diazatricyclo[7.3.1.0<2,7>]trideca-2,4-diene",
+                "N-acetylcytisine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.321212e+02 ;
+            rdfs:seeAlso chemspider:2947995,
+                pubchem:CID3716901 ;
+            schema:inChI "InChI=1S/C13H16N2O2/c1-9(16)14-6-10-5-11(8-14)12-3-2-4-13(17)15(12)7-10/h2-4,10-11H,5-8H2,1H3" ;
+            schema:inChIKey inchikey:WCRIKJOQMRFVPX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H16N2O2" ;
+            schema:name "11-acetyl-6-oxo-7,11-diazatricyclo[7.3.1.0<2,7>]trideca-2,4-diene",
+                "N-acetylcytisine" ;
+            schema:smiles "CC(=O)N1CC2CC(C1)C3=CC=CC(=O)N3C2" ] ;
+    mbo:has_peak [ mbo:intensity 3.5e+01 ;
+            mbo:mz 1.170556e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 6.6e+01 ;
+            mbo:mz 1.911525e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 2.9e+01 ;
+            mbo:mz 1.911675e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.367e+03 ;
+            mbo:mz 2.331265e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.2e+01 ;
+            mbo:mz 1.420592e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.176e+03 ;
+            mbo:mz 1.480744e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 859 ],
+        [ mbo:intensity 3.2e+01 ;
+            mbo:mz 1.481107e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 1.481179e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 1.481866e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 3.04e+02 ;
+            mbo:mz 1.600756e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 222 ],
+        [ mbo:intensity 8.2e+01 ;
+            mbo:mz 1.62089e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 1.047e+03 ;
+            mbo:mz 1.911162e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 765 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.33e+02 ;
+            mbo:precursor_mz 2.331285e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-001m-0940000000-089ffc42cf5a4f7e255c" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.447" ;
+    skos:definition "N-acetylcytisine; LC-ESI-QTOF; MS2; CE 20 ev; [M+H]+" .
+

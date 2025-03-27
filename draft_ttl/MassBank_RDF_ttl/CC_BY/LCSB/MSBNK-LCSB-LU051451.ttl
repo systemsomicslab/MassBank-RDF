@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU051451 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU051451" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "8.152 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-chloro-1,1-dioxo-3,4-dihydro-2H-1lambda6,2,4-benzothiadiazine-7-sulfonamide",
+                "Hydrochlorothiazide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.969645e+02 ;
+            rdfs:seeAlso cas:58-93-5,
+                chemspider:3513,
+                pubchem:CID3639 ;
+            schema:inChI "InChI=1S/C7H8ClN3O4S2/c8-4-1-5-7(2-6(4)16(9,12)13)17(14,15)11-3-10-5/h1-2,10-11H,3H2,(H2,9,12,13)" ;
+            schema:inChIKey inchikey:JZUFKLXOESDKRF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H8ClN3O4S2" ;
+            schema:name "6-chloro-1,1-dioxo-3,4-dihydro-2H-1lambda6,2,4-benzothiadiazine-7-sulfonamide",
+                "Hydrochlorothiazide" ;
+            schema:smiles "NS(=O)(=O)C1=CC2=C(NCNS2(=O)=O)C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 6.3478e+03 ;
+            mbo:mz 7.79657e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 8.59044e+04 ;
+            mbo:mz 2.049844e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 7.0865e+03 ;
+            mbo:mz 2.169848e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.17455e+04 ;
+            mbo:mz 2.31995e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.368759e+05 ;
+            mbo:mz 2.689464e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 2.700758e+06 ;
+            mbo:mz 2.959571e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.181034e+02 ;
+            mbo:precursor_mz 2.959572e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0002-0090000000-bac41273b5269587b463" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Hydrochlorothiazide; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

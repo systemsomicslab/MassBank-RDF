@@ -1,0 +1,101 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100326 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100326" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-L-Glutamyl-L-cysteine",
+                "Des-Gly-glutathione Reduced Form",
+                "L-gamma-Glutamyl-L-cysteine",
+                "L-gamma-Glutamylcysteine",
+                "gamma-Glu-Cys" ;
+            mbo:ch_compound_class "Amino acids" ;
+            mbo:ch_exact_mass 2.500623e+02 ;
+            rdfs:seeAlso cas:636-58-8,
+                chemspider:110467,
+                knapsack:C00007507,
+                pubchem:CID123938 ;
+            schema:inChI "InChI=1S/C8H14N2O5S/c9-4(7(12)13)1-2-6(11)10-5(3-16)8(14)15/h4-5,16H,1-3,9H2,(H,10,11)(H,12,13)(H,14,15)/t4-,5-/m0/s1" ;
+            schema:inChIKey inchikey:RITKHVBHSGLULN-WHFBIAKZSA-N ;
+            schema:molecularFormula "C8H14N2O5S" ;
+            schema:name "5-L-Glutamyl-L-cysteine",
+                "Des-Gly-glutathione Reduced Form",
+                "L-gamma-Glutamyl-L-cysteine",
+                "L-gamma-Glutamylcysteine",
+                "gamma-Glu-Cys" ;
+            schema:smiles "SC[C@@H](C(O)=O)NC(=O)CC[C@H](N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 7.429e+00 ;
+            mbo:mz 7.40229e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 1.008e+01 ;
+            mbo:mz 2.410334e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 4.29e+00 ;
+            mbo:mz 2.510701e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 8.242e+01 ;
+            mbo:mz 8.40455e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.891e+00 ;
+            mbo:mz 8.50449e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 6.746e+00 ;
+            mbo:mz 1.200135e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 9.162e+00 ;
+            mbo:mz 1.22029e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 1.948e+01 ;
+            mbo:mz 1.300507e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 236 ],
+        [ mbo:intensity 9.318e+00 ;
+            mbo:mz 1.51986e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 9.09e+00 ;
+            mbo:mz 1.860245e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 4.171e+00 ;
+            mbo:mz 1.880435e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 51 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.510701e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-001i-9510000000-5f29ca903abe05256c83" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "gamma-Glu-Cys; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

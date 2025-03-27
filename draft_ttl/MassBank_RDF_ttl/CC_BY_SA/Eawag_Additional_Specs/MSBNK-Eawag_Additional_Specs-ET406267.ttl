@@ -1,0 +1,92 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET406267 a mbo:MassSpectrum ;
+    dcterms:creator "B. Clerc, R. Gulde, B. Lauper [com],  C. McArdell, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2020-12-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET406267" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde et al. 2020, Formation of transformation products during ozonation of secondary wastewater effluent and their fate in post-treatment: From laboratory- to full-scale, Water Research" ] ;
+    dcterms:rights "Copyright (C) Eawag 2020 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "C18 Atlantis T3 5 um, 3x150 mm, Waters" ;
+            mbo:flow_gradient "260/40 at 0 min, 260/40 at 5 min, 15/285 at 20 min, 15/285 at 29 min, 260/40 at 29.5 min, 260/40 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "19.224 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,5-bis(2,2,2-trifluoroethoxy)benzamide",
+                "FLE_n_362.04655_19.2" ;
+            mbo:ch_compound_class "identified ozonation transformation product" ;
+            mbo:ch_exact_mass 3.170487e+02 ;
+            rdfs:seeAlso chemspider:2009117,
+                pubchem:CID2727065 ;
+            schema:inChI "InChI=1S/C11H9F6NO3/c12-10(13,14)4-20-6-1-2-8(7(3-6)9(18)19)21-5-11(15,16)17/h1-3H,4-5H2,(H2,18,19)" ;
+            schema:inChIKey inchikey:DCKYXXJKJFMWFZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H9F6NO3" ;
+            schema:name "2,5-bis(2,2,2-trifluoroethoxy)benzamide",
+                "FLE_n_362.04655_19.2" ;
+            schema:smiles "FC(F)(COC1=CC(C(N)=O)=C(C=C1)OCC(F)(F)F)F" ] ;
+    mbo:has_peak [ mbo:intensity 8.4645e+03 ;
+            mbo:mz 6.19882e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 4.4106e+03 ;
+            mbo:mz 1.780314e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 4.57328e+04 ;
+            mbo:mz 2.270201e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 381 ],
+        [ mbo:intensity 1.26127e+04 ;
+            mbo:mz 2.280282e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 2.04865e+04 ;
+            mbo:mz 2.560229e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 171 ],
+        [ mbo:intensity 2.43315e+04 ;
+            mbo:mz 2.760292e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 203 ],
+        [ mbo:intensity 5.06687e+04 ;
+            mbo:mz 2.96035e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 422 ],
+        [ mbo:intensity 1.198209e+05 ;
+            mbo:mz 3.160415e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.4997e+03 ;
+            mbo:mz 3.622349e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 38 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.10038e+01 ;
+            mbo:precursor_mz 3.620469e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-016r-0097000000-4209fd88410c96b3ae26" ;
+    rdfs:comment "UCHEM_ID 4062" ;
+    skos:definition "FLE_n_362.04655_19.2; LC-ESI-QFT; MS2; CE: 15%; R=17500; [M+HCOO-]-" .
+

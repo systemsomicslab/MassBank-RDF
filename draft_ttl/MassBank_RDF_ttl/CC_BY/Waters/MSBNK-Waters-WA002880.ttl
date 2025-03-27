@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002880 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002880" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "11.200 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,5-Dimethoxy amphetamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.951259e+02 ;
+            rdfs:seeAlso cas:2801-68-5 ;
+            schema:inChI "InChI=1S/C11H17NO2/c1-8(12)6-9-7-10(13-2)4-5-11(9)14-3/h4-5,7-8H,6,12H2,1-3H3/t8-/m0/s1" ;
+            schema:inChIKey inchikey:LATVFYDIBMDBSY-QMMMGPOBSA-N ;
+            schema:molecularFormula "C11H17NO2" ;
+            schema:name "2,5-Dimethoxy amphetamine" ;
+            schema:smiles "COc(c1)cc(CC([H])(C)N)c(OC)c1" ] ;
+    mbo:has_peak [ mbo:intensity 1.41e+02 ;
+            mbo:mz 1.79e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 141 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.8e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.96e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.6e+01 ;
+            mbo:mz 1.97e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 86 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0002-0900000000-9d56a419eace33aa9d1b" ;
+    skos:definition "2,5-Dimethoxy amphetamine; LC-ESI-Q; MS; POS; 15 V" .
+

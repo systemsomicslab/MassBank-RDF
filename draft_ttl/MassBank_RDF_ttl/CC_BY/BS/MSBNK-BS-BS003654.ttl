@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS003654 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2014-01-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS003654" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "447 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Neohesperidin" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 6.101898e+02 ;
+            rdfs:seeAlso cas:13241-33-3 ;
+            schema:inChI "InChI=1S/C28H34O15/c1-10-21(33)23(35)25(37)27(39-10)43-26-24(36)22(34)19(9-29)42-28(26)40-12-6-14(31)20-15(32)8-17(41-18(20)7-12)11-3-4-16(38-2)13(30)5-11/h3-7,10,17,19,21-31,33-37H,8-9H2,1-2H3/t10-,17-,19+,21-,22+,23+,24-,25+,26+,27-,28+/m0/s1" ;
+            schema:inChIKey inchikey:ARGKVCXINMKCAZ-UZRWAPQLSA-N ;
+            schema:molecularFormula "C28H34O15" ;
+            schema:name "Neohesperidin" ;
+            schema:smiles "C(C1(C(C(C(C(O1)(OC2(C(C(C(OC2(OC=3C(=C(C4=C(C3[H])OC(C(C4=O)([H])[H])(C=5C(=C(C(=C(C5[H])O[H])OC([H])([H])[H])[H])[H])[H])O[H])[H])[H])(C(O[H])([H])[H])[H])(O[H])[H])(O[H])[H])[H])[H])(O[H])[H])(O[H])[H])(O[H])[H])[H])([H])([H])[H]" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 6.091805e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.84e+02 ;
+            mbo:mz 6.101848e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 284 ],
+        [ mbo:intensity 5.1e+01 ;
+            mbo:mz 6.11185e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 51 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.091805e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0a4i-0000009000-04cc3791b0a80ce12a35" ;
+    skos:definition "Neohesperidin; LC-ESI-QTOF; MS2; CE:10 eV; [M-H]-" .
+

@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00704 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2014-10-02)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00704" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Supelco Titan C18 1.9um" ;
+            mbo:flow_gradient "5-100%B in 12min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Orientin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoids" ;
+            mbo:ch_exact_mass 4.481006e+02 ;
+            rdfs:seeAlso cas:28608-75-5,
+                chemspider:4444994,
+                knapsack:C00001078,
+                pubchem:CID12300 ;
+            schema:inChI "InChI=1S/C21H20O11/c22-6-14-17(28)18(29)19(30)21(32-14)16-11(26)4-10(25)15-12(27)5-13(31-20(15)16)7-1-2-8(23)9(24)3-7/h1-5,14,17-19,21-26,28-30H,6H2/t14-,17-,18+,19-,21+/m1/s1" ;
+            schema:inChIKey inchikey:PLAPMLGJVGLZOV-VPRICQMDSA-N ;
+            schema:molecularFormula "C21H20O11" ;
+            schema:name "Orientin" ;
+            schema:smiles "OC[C@H]([C@@H](O)4)O[C@H]([C@H](O)[C@@H](O)4)c(c(O)3)c(O1)c(c(O)c3)C(=O)C=C(c(c2)cc(O)c(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 4.258e+03 ;
+            mbo:mz 3.2705e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 531 ],
+        [ mbo:intensity 9.15e+02 ;
+            mbo:mz 3.280537e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 114 ],
+        [ mbo:intensity 1.699e+03 ;
+            mbo:mz 3.570605e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 212 ],
+        [ mbo:intensity 3.44e+02 ;
+            mbo:mz 3.580638e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.029e+03 ;
+            mbo:mz 4.450766e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 3.59e+02 ;
+            mbo:mz 4.460806e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 8.018e+03 ;
+            mbo:mz 4.470917e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.825e+03 ;
+            mbo:mz 4.480957e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 227 ],
+        [ mbo:intensity 3.74e+02 ;
+            mbo:mz 4.490982e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 47 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0005900000-01af12bfb51667c30994" ;
+    rdfs:comment "[Raw Data] CBA20_Orientin_neg_20eV_1-2_01_1405.txt" ;
+    skos:definition "Orientin; LC-ESI-QTOF; MS2; [M-H]-; CE: 20eV" .
+

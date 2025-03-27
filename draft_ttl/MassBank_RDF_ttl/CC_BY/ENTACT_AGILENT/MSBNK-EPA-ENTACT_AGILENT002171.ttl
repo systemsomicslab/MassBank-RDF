@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002171 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002171" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Acrylamido-2-methyl-1-propanesulfonic acid",
+                "DTXSID5027770" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.070565e+02 ;
+            rdfs:seeAlso cas:15214-89-8,
+                pubchem:CID65360 ;
+            schema:inChI "InChI=1S/C7H13NO4S/c1-4-6(9)8-7(2,3)5-13(10,11)12/h4H,1,5H2,2-3H3,(H,8,9)(H,10,11,12)" ;
+            schema:inChIKey inchikey:XHZPRMZZQOIPDS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H13NO4S" ;
+            schema:name "2-Acrylamido-2-methyl-1-propanesulfonic acid",
+                "DTXSID5027770" ;
+            schema:smiles "CC(C)(CS(O)(=O)=O)NC(=O)C=C" ] ;
+    mbo:has_peak [ mbo:intensity 5.029504e+00 ;
+            mbo:mz 4.199854e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 2.186715e+01 ;
+            mbo:mz 7.002984e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 218 ],
+        [ mbo:intensity 7.61806e+01 ;
+            mbo:mz 7.995736e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 761 ],
+        [ mbo:intensity 1.842968e+00 ;
+            mbo:mz 7.999038e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 5.046442e+00 ;
+            mbo:mz 8.096519e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.350121e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.575291e+00 ;
+            mbo:mz 1.350537e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 4.557675e+01 ;
+            mbo:mz 2.060493e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 455 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.060493e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-002r-9830000000-8cc2985c0a5cb730fc3f" ;
+    skos:definition "2-Acrylamido-2-methyl-1-propanesulfonic acid; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

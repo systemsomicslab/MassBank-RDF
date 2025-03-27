@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO009055 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO009055" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "0.60/1.00/0.90" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS4" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Minocycline" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.571849e+02 ;
+            rdfs:seeAlso cas:10118-90-8,
+                pubchem:CID9434 ;
+            schema:inChI "InChI=1S/C23H27N3O7/c1-25(2)12-5-6-13(27)15-10(12)7-9-8-11-17(26(3)4)19(29)16(22(24)32)21(31)23(11,33)20(30)14(9)18(15)28/h5-6,9,11,17,27,29-30,33H,7-8H2,1-4H3,(H2,24,32)/t9-,11-,17-,23-/m0/s1" ;
+            schema:inChIKey inchikey:DYKFCLLONBREIL-KVUCHLLUSA-N ;
+            schema:molecularFormula "C23H27N3O7" ;
+            schema:name "Minocycline" ;
+            schema:smiles "CN(C)c(c4)c(C3)c(c(O)c4)C(=O)C(C32)=C(O)C(O)(C(=O)1)C(C2)C(N(C)C)C(O)=C(C(N)=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.196e+01 ;
+            mbo:mz 1.87e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 1.1266e+02 ;
+            mbo:mz 2.15e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 767 ],
+        [ mbo:intensity 4.29e+00 ;
+            mbo:mz 2.281e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.835e+01 ;
+            mbo:mz 2.291e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 6.79e+00 ;
+            mbo:mz 2.4e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 1.937e+01 ;
+            mbo:mz 2.552e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 1.4672e+02 ;
+            mbo:mz 2.68e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.266e+01 ;
+            mbo:mz 2.832e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 86 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-014i-0090000000-8cd4180953959c180bda" ;
+    rdfs:comment "[MS3] KO009052" ;
+    skos:definition "Minocycline; LC-ESI-IT; MS4; m/z: 458/441/283; [M+H]+" .
+

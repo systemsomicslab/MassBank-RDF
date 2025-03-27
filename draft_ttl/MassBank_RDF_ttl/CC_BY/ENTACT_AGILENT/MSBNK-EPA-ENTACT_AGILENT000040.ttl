@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000040 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000040" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "C.I. Pigment Red 22",
+                "DTXSID1052329" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.261328e+02 ;
+            rdfs:seeAlso cas:6448-95-9,
+                pubchem:CID57273426 ;
+            schema:inChI "InChI=1S/C24H18N4O4/c1-15-11-12-18(28(31)32)14-21(15)26-27-22-19-10-6-5-7-16(19)13-20(23(22)29)24(30)25-17-8-3-2-4-9-17/h2-14,29H,1H3,(H,25,30)/b27-26+" ;
+            schema:inChIKey inchikey:XYZMEPHFXJHGIX-CYYJNZCTSA-N ;
+            schema:molecularFormula "C24H18N4O4" ;
+            schema:name "C.I. Pigment Red 22",
+                "DTXSID1052329" ;
+            schema:smiles "CC1=CC=C(C=C1/N=N/C1=C(O)C(=CC2=CC=CC=C21)C(=O)NC1C=CC=CC=1)[N+]([O-])=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.210558e+00 ;
+            mbo:mz 2.880779e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.838017e+00 ;
+            mbo:mz 3.971194e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 8.348843e+00 ;
+            mbo:mz 4.07115e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.251255e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.251255e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-0000900000-9dbadd8fa1af0efc5c4a" ;
+    skos:definition "C.I. Pigment Red 22; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

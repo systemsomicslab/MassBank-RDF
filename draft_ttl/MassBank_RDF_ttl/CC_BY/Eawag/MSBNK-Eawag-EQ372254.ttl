@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ372254 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ372254" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "60 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "2.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-cyano-2-methyl-3-[2-[(5-methyl-1H-imidazol-4-yl)methylsulfanyl]ethyl]guanidine",
+                "Cimetidine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.521157e+02 ;
+            rdfs:seeAlso cas:51481-61-9,
+                chemspider:2654,
+                pubchem:CID2756 ;
+            schema:inChI "InChI=1S/C10H16N6S/c1-8-9(16-7-15-8)5-17-4-3-13-10(12-2)14-6-11/h7H,3-5H2,1-2H3,(H,15,16)(H2,12,13,14)" ;
+            schema:inChIKey inchikey:AQIXAKUUQRKLND-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H16N6S" ;
+            schema:name "1-cyano-2-methyl-3-[2-[(5-methyl-1H-imidazol-4-yl)methylsulfanyl]ethyl]guanidine",
+                "Cimetidine" ;
+            schema:smiles "CC1=C(N=CN1)CSCCNC(=NC)NC#N" ] ;
+    mbo:has_peak [ mbo:intensity 1.800411e+06 ;
+            mbo:mz 5.50301e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 5.91368e+04 ;
+            mbo:mz 6.60097e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.32588e+04 ;
+            mbo:mz 7.60226e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.251304e+07 ;
+            mbo:mz 9.70519e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.913785e+05 ;
+            mbo:mz 1.230676e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.51108e+02 ;
+            mbo:precursor_mz 2.511084e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-9000000000-85640be9b2799889fd02" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3722" ;
+    skos:definition "Cimetidine; LC-ESI-QFT; MS2; CE: 60; R=35000; [M-H]-" .
+

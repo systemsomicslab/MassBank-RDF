@@ -1,0 +1,94 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fukuyama_Univ-FU000005 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuura F, Ohta M, Kittaka M, Faculty of Life Science and Biotechnology, Fukuyama University" ;
+    dcterms:date "2016-01-19 (Created 2009-02-18, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fukuyama_Univ-FU000005" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "2695 HPLC Quadro Micro API, Waters" ;
+            mbo:collision_energy "20.0 V" ;
+            mbo:column_name "Wakosil 5C18-200 2.0 mm X 250 mm (Wako)" ;
+            mbo:flow_gradient "9/91 at 0 min, 11/89 at 60 min." ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "45.327 min" ;
+            mbo:solvent "A CH3CN",
+                "B H2O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Man2GlcNAc",
+                "Man-alpha-1-3Man-beta-1-5GlcNac" ;
+            mbo:ch_compound_class "Natural Product; Oligosaccharide; N-linked glycan; High-mannose type" ;
+            mbo:ch_exact_mass 5.451956e+02 ;
+            rdfs:seeAlso chemspider:24606097,
+                pubchem:CID137628474 ;
+            schema:inChI "InChI=1S/C20H35NO16/c1-5(25)21-9-12(28)16(8(4-24)33-18(9)32)36-20-15(31)17(11(27)7(3-23)35-20)37-19-14(30)13(29)10(26)6(2-22)34-19/h6-20,22-24,26-32H,2-4H2,1H3,(H,21,25)/t6-,7-,8-,9-,10-,11-,12-,13+,14-,15+,16-,17+,18+,19-,20+/m1/s1" ;
+            schema:inChIKey inchikey:NNISLDGFPWIBDF-NGHSNJJFSA-N ;
+            schema:molecularFormula "C20H35NO16" ;
+            schema:name "3-Man2GlcNAc",
+                "Man-alpha-1-3Man-beta-1-5GlcNac" ;
+            schema:smiles "CC(=O)N[C@@H]1[C@H]([C@@H]([C@H](O[C@@H]1O)CO)O[C@H]2[C@H]([C@H]([C@@H]([C@H](O2)CO)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.016e+04 ;
+            mbo:mz 3.248e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 1.489e+05 ;
+            mbo:mz 6.947e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 199 ],
+        [ mbo:intensity 3.976e+04 ;
+            mbo:mz 6.954e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 2.882e+04 ;
+            mbo:mz 3.702e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 7.479e+05 ;
+            mbo:mz 3.708e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.859e+04 ;
+            mbo:mz 3.714e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 2.116e+04 ;
+            mbo:mz 4.868e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 1.574e+04 ;
+            mbo:mz 5.32e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 2.711e+05 ;
+            mbo:mz 5.326e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 362 ],
+        [ mbo:intensity 7.704e+04 ;
+            mbo:mz 5.332e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 103 ],
+        [ mbo:intensity 3.447e+04 ;
+            mbo:mz 6.939e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 46 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.95e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00di-0009032000-f2484d3dfb38a3df532d" ;
+    skos:definition "3-Man2GlcNAc; LC-ESI-QQ; MS2; CE:20V; ODS" .
+

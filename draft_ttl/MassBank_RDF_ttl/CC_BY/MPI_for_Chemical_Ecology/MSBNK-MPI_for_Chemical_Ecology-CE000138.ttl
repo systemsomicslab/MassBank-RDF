@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000138 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-11)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000138" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, A. Svatos, R.K. Maddula, C. Boettcher and S. Boecker. Computing fragmentation trees from tandem mass spectrometry data. Anal. Chem., 2011, 83, 1243-1251 doi:10.1021/ac101825k" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "55eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "584.925 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Rutin" ;
+            mbo:ch_compound_class "Natural Product; Benzopyran" ;
+            mbo:ch_exact_mass 6.101534e+02 ;
+            rdfs:seeAlso pubchem:CID5280805 ;
+            schema:inChI "InChI=1S/C27H30O16/c1-8-17(32)20(35)22(37)26(40-8)39-7-15-18(33)21(36)23(38)27(42-15)43-25-19(34)16-13(31)5-10(28)6-14(16)41-24(25)9-2-3-11(29)12(30)4-9/h2-6,8,15,17-18,20-23,26-33,35-38H,7H2,1H3/t8-,15+,17-,18+,20+,21-,22+,23+,26+,27-/m0/s1" ;
+            schema:inChIKey inchikey:IKGXIBQEEMLURG-NVPNHPEKSA-N ;
+            schema:molecularFormula "C27H30O16" ;
+            schema:name "Rutin" ;
+            schema:smiles "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)O)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.215317e+03 ;
+            mbo:mz 1.762018e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 237 ],
+        [ mbo:intensity 1.618521e+03 ;
+            mbo:mz 3.547536e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 315 ],
+        [ mbo:intensity 1.316368e+03 ;
+            mbo:mz 4.176815e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 256 ],
+        [ mbo:intensity 1.194405e+03 ;
+            mbo:mz 4.842085e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 233 ],
+        [ mbo:intensity 1.308919e+03 ;
+            mbo:mz 5.030706e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 255 ],
+        [ mbo:intensity 1.311949e+03 ;
+            mbo:mz 5.41314e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 256 ],
+        [ mbo:intensity 1.276816e+03 ;
+            mbo:mz 1.767392e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 249 ],
+        [ mbo:intensity 1.079157e+03 ;
+            mbo:mz 1.811442e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 210 ],
+        [ mbo:intensity 1.250046e+03 ;
+            mbo:mz 1.944532e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 244 ],
+        [ mbo:intensity 1.274305e+03 ;
+            mbo:mz 2.569855e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 248 ],
+        [ mbo:intensity 1.14939e+03 ;
+            mbo:mz 2.726022e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 224 ],
+        [ mbo:intensity 1.18716e+03 ;
+            mbo:mz 2.824448e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 231 ],
+        [ mbo:intensity 5.126933e+03 ;
+            mbo:mz 3.030494e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.230135e+03 ;
+            mbo:mz 3.262582e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 240 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.111607e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0udi-0549220000-79a7fad4164d8e1f5d57" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "Rutin; LC-ESI-ITFT; MS2; CE 55 eV; [M+H]+" .
+

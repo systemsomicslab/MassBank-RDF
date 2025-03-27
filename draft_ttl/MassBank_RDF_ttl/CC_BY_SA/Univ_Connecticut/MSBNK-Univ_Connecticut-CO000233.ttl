@@ -1,0 +1,90 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000233 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000233" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hydroxyphenethylamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.370841e+02 ;
+            rdfs:seeAlso pubchem:CID5610 ;
+            schema:inChI "InChI=1S/C8H11NO/c9-6-5-7-1-3-8(10)4-2-7/h1-4,10H,5-6,9H2" ;
+            schema:inChIKey inchikey:DZGWFCGJZKJUFP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H11NO" ;
+            schema:name "Hydroxyphenethylamine" ;
+            schema:smiles "[H]Oc(c([H])1)c([H])c([H])c(c([H])1)C([H])([H])C([H])([H])N([H])[H]" ] ;
+    mbo:has_peak [ mbo:intensity 2.31013e+02 ;
+            mbo:mz 5.10235e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.877705e+03 ;
+            mbo:mz 1.030548e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 287 ],
+        [ mbo:intensity 1.84463e+02 ;
+            mbo:mz 1.180655e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.79808e+02 ;
+            mbo:mz 1.210644e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 7.14884e+02 ;
+            mbo:mz 6.50384e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 7.70388e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.2305e+02 ;
+            mbo:mz 7.8046e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 3.733156e+03 ;
+            mbo:mz 9.10546e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 373 ],
+        [ mbo:intensity 4.67436e+02 ;
+            mbo:mz 9.30702e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 4.76419e+02 ;
+            mbo:mz 9.40417e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 3.351368e+03 ;
+            mbo:mz 9.50496e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 335 ],
+        [ mbo:intensity 3.67599e+02 ;
+            mbo:mz 1.020476e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 37 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.38092e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-004i-9100000000-7746910836d04eaa190b" ;
+    skos:definition "Hydroxyphenethylamine; LC-ESI-QTOF; MS2; CE:30 eV; [M+H]+" .
+

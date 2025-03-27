@@ -1,0 +1,64 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT000116 a mbo:MassSpectrum ;
+    dcterms:creator "Nakanishi H, Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2007-10-19, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT000116" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "4000Q TRAP, Applied Biosystems" ;
+            mbo:collision_energy "55 V" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate",
+                "(15S)-15-Hydroxy-5,8,11-cis-13-trans-icosatetraenoate",
+                "(5Z,8Z,11Z,13E)-(15S)-15-Hydroxyicosa-5,8,11,13-tetraenoic acid",
+                "(5Z,8Z,11Z,14Z)-15-Hydroxy-5,8,11,14-icosatetraenoic acid",
+                "15(S)-HETE",
+                "15-HETE",
+                "15S-hydroxy-5Z,8Z,11Z,13E-eicosatetraenoic acid" ;
+            mbo:ch_compound_class "Natural Product; Lipid; Fatty acid" ;
+            mbo:ch_exact_mass 3.202351e+02 ;
+            rdfs:seeAlso cas:54845-95-3,
+                pubchem:CID5280724 ;
+            schema:inChI "InChI=1S/C20H32O3/c1-2-3-13-16-19(21)17-14-11-9-7-5-4-6-8-10-12-15-18-20(22)23/h4-5,8-11,14,17,19,21H,2-3,6-7,12-13,15-16,18H2,1H3,(H,22,23)/b5-4-,10-8-,11-9-,17-14+/t19-/m0/s1" ;
+            schema:inChIKey inchikey:JSFATNQSLKRBCI-VAEKSGALSA-N ;
+            schema:molecularFormula "C20H32O3" ;
+            schema:name "(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate",
+                "(15S)-15-Hydroxy-5,8,11-cis-13-trans-icosatetraenoate",
+                "(5Z,8Z,11Z,13E)-(15S)-15-Hydroxyicosa-5,8,11,13-tetraenoic acid",
+                "(5Z,8Z,11Z,14Z)-15-Hydroxy-5,8,11,14-icosatetraenoic acid",
+                "15(S)-HETE",
+                "15-HETE",
+                "15S-hydroxy-5Z,8Z,11Z,13E-eicosatetraenoic acid" ;
+            schema:smiles "CCCCC[C@@H](/C=C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 8.3333e+03 ;
+            mbo:mz 9.696e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 666 ],
+        [ mbo:intensity 8.3333e+03 ;
+            mbo:mz 1.0928e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 666 ],
+        [ mbo:intensity 1.25e+04 ;
+            mbo:mz 1.4288e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-052g-3900000000-084e1bd7da1469eba9c3" ;
+    skos:definition "15-HETE; LC-ESI-QIT; MS2; CE:55 V; [M-H]-" .
+

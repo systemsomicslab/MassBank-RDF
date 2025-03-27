@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002352 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002352" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-Bis[2-(3,5-dichloropyridyloxy)]benzene",
+                "DTXSID8020175" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.99934e+02 ;
+            rdfs:seeAlso cas:76150-91-9,
+                pubchem:CID5382 ;
+            schema:inChI "InChI=1S/C16H8Cl4N2O2/c17-9-5-13(19)15(21-7-9)23-11-1-2-12(4-3-11)24-16-14(20)6-10(18)8-22-16/h1-8H" ;
+            schema:inChIKey inchikey:BAFKRPOFIYPKBQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H8Cl4N2O2" ;
+            schema:name "1,4-Bis[2-(3,5-dichloropyridyloxy)]benzene",
+                "DTXSID8020175" ;
+            schema:smiles "ClC1C=C(Cl)C=NC=1OC1C=CC(=CC=1)OC1=NC=C(Cl)C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 1.219502e+00 ;
+            mbo:mz 2.030128e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 4.301025e+01 ;
+            mbo:mz 2.379816e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 430 ],
+        [ mbo:intensity 7.443509e+00 ;
+            mbo:mz 2.389894e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 74 ],
+        [ mbo:intensity 1.518713e+00 ;
+            mbo:mz 3.649646e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.009413e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.009413e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0040900000-1879e9016120d184d416" ;
+    skos:definition "1,4-Bis[2-(3,5-dichloropyridyloxy)]benzene; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

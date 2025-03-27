@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS001070 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2014-10-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS001070" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1672.2 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "a-Linolenic acid (NMR)" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 2.782246e+02 ;
+            rdfs:seeAlso pubchem:CID5280934 ;
+            schema:inChI "InChI=1S/C18H30O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20/h3-4,6-7,9-10H,2,5,8,11-17H2,1H3,(H,19,20)/b4-3-,7-6-,10-9-" ;
+            schema:inChIKey inchikey:DTOSIQBPPRVQHS-PDBXOOCHSA-N ;
+            schema:molecularFormula "C18H30O2" ;
+            schema:name "a-Linolenic acid (NMR)" ;
+            schema:smiles "OC(CCCCCCC/C=C\\C/C=C\\C/C=C\\CC)=O" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.772182e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.75e+02 ;
+            mbo:mz 2.782214e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 175 ],
+        [ mbo:intensity 4.2e+01 ;
+            mbo:mz 2.859673e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 6.7e+01 ;
+            mbo:mz 3.452055e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 4.6e+01 ;
+            mbo:mz 5.560032e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 7.1e+01 ;
+            mbo:mz 5.77425e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 71 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-004i-0090000000-53ddfaed6ce13c37d957" ;
+    skos:definition "a-Linolenic acid (NMR); LC-ESI-QTOF; MS" .
+

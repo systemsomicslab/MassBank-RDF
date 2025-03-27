@@ -1,0 +1,98 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM838102 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM838102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.106 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,1-dimethyl-3-(4-propan-2-ylphenyl)urea",
+                "Isoproturon" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.061419e+02 ;
+            rdfs:seeAlso cas:34123-59-6,
+                chemspider:33695,
+                pubchem:CID36679 ;
+            schema:inChI "InChI=1S/C12H18N2O/c1-9(2)10-5-7-11(8-6-10)13-12(15)14(3)4/h5-9H,1-4H3,(H,13,15)" ;
+            schema:inChIKey inchikey:PUIYMUZLKQOUOZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H18N2O" ;
+            schema:name "1,1-dimethyl-3-(4-propan-2-ylphenyl)urea",
+                "Isoproturon" ;
+            schema:smiles "CC(C)c1ccc(NC(=O)N(C)C)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 4.424252e+05 ;
+            mbo:mz 5.60132e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.281077e+08 ;
+            mbo:mz 2.071492e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 823 ],
+        [ mbo:intensity 2.770532e+08 ;
+            mbo:mz 7.20444e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.624673e+05 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.336773e+05 ;
+            mbo:mz 9.20495e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.05152e+05 ;
+            mbo:mz 1.070856e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.036911e+06 ;
+            mbo:mz 1.200444e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 8.940434e+06 ;
+            mbo:mz 1.340964e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 3.594215e+06 ;
+            mbo:mz 1.620913e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 4.451452e+07 ;
+            mbo:mz 1.651023e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 161 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.071489e+02 ;
+            mbo:precursor_mz 2.071492e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-05fr-9170000000-5667661dde8219753312" ;
+    rdfs:comment "INTERNAL_ID 8381" ;
+    skos:definition "Isoproturon; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M+H]+" .
+

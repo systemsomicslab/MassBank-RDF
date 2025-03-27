@@ -1,0 +1,64 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU406505 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU406505" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Alygizakis, N. A.; Gago-Ferrero, P.; Hollender, J.; Thomaidis, N. S. Untargeted Time-Pattern Analysis of LC-HRMS Data to Detect Spills and Compounds with High Fluctuation in Influent Wastewater. Journal of Hazardous Materials 2019, 361, 19–29. DOI:10.1016/j.jhazmat.2018.08.073" ] ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "13.5 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[2-[2-(2-dodecoxyethoxy)ethoxy]ethoxy]ethanol",
+                "3,6,9,12-Tetraoxatetracosan-1-ol",
+                "Tetraethylene glycol monododecyl ether" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.623032e+02 ;
+            rdfs:seeAlso cas:5274-68-0,
+                chemspider:71267,
+                pubchem:CID78933 ;
+            schema:inChI "InChI=1S/C20H42O5/c1-2-3-4-5-6-7-8-9-10-11-13-22-15-17-24-19-20-25-18-16-23-14-12-21/h21H,2-20H2,1H3" ;
+            schema:inChIKey inchikey:WPMWEFXCIYCJSA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H42O5" ;
+            schema:name "2-[2-[2-(2-dodecoxyethoxy)ethoxy]ethoxy]ethanol",
+                "3,6,9,12-Tetraoxatetracosan-1-ol",
+                "Tetraethylene glycol monododecyl ether" ;
+            schema:smiles "CCCCCCCCCCCCOCCOCCOCCOCCO" ] ;
+    mbo:has_peak [ mbo:intensity 3.2e+02 ;
+            mbo:mz 1.330854e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.803382e+02 ;
+            mbo:precursor_mz 3.633105e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-001i-0900000000-871e37c2defe10bb1695" ;
+    rdfs:comment "INTERNAL_ID 4065" ;
+    skos:definition "3,6,9,12-Tetraoxatetracosan-1-ol; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,92 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA258005 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA258005" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "13.6 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,3-thiazol-5-ylmethyl N-[(2S,5S)-3-hydroxy-5-[[3-methyl-2-[[methyl-[(2-propan-2-yl-1,3-thiazol-4-yl)methyl]carbamoyl]amino]butanoyl]amino]-1,6-diphenylhexan-2-yl]carbamate",
+                "Ritonavir" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 7.203128e+02 ;
+            rdfs:seeAlso cas:155213-67-5,
+                chemspider:54917,
+                pubchem:CID60954 ;
+            schema:inChI "InChI=1S/C37H48N6O5S2/c1-24(2)33(42-36(46)43(5)20-29-22-49-35(40-29)25(3)4)34(45)39-28(16-26-12-8-6-9-13-26)18-32(44)31(17-27-14-10-7-11-15-27)41-37(47)48-21-30-19-38-23-50-30/h6-15,19,22-25,28,31-33,44H,16-18,20-21H2,1-5H3,(H,39,45)(H,41,47)(H,42,46)/t28-,31-,32?,33?/m0/s1" ;
+            schema:inChIKey inchikey:NCDNCNXCDXHOMX-FDEOAKKQSA-N ;
+            schema:molecularFormula "C37H48N6O5S2" ;
+            schema:name "1,3-thiazol-5-ylmethyl N-[(2S,5S)-3-hydroxy-5-[[3-methyl-2-[[methyl-[(2-propan-2-yl-1,3-thiazol-4-yl)methyl]carbamoyl]amino]butanoyl]amino]-1,6-diphenylhexan-2-yl]carbamate",
+                "Ritonavir" ;
+            schema:smiles "CC(C)C(NC(=O)N(C)CC1=CSC(=N1)C(C)C)C(=O)N[C@H](CC(O)[C@H](CC2=CC=CC=C2)NC(=O)OCC3=CN=CS3)CC4=CC=CC=C4" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.23998e+04 ;
+            mbo:mz 7.09949e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 3.2597e+03 ;
+            mbo:mz 9.10546e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.08303e+04 ;
+            mbo:mz 9.80059e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 141 ],
+        [ mbo:intensity 7.4089e+03 ;
+            mbo:mz 1.1707e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 2.902235e+05 ;
+            mbo:mz 1.400528e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.3974e+03 ;
+            mbo:mz 1.71095e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 4.2147e+03 ;
+            mbo:mz 1.720786e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.05345e+04 ;
+            mbo:mz 1.97074e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 4.0645e+03 ;
+            mbo:mz 2.501605e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.213214e+02 ;
+            mbo:precursor_mz 7.2132e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0006-1900000000-0be5df057c6429e4f6c2" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2580" ;
+    skos:definition "Ritonavir; LC-ESI-ITFT; MS2; CE: 60%; R=7500; [M+H]+" .
+

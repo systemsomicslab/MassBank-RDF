@@ -1,0 +1,103 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000812 a mbo:MassSpectrum ;
+    dcterms:creator "Megan J. Kelman, Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000812" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "40(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.45" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3E,5aS,10bR,11aS)-5a-Methyl-10b-(2-methyl-3-buten-2-yl)-3-{[1-(2-methyl-4-oxo-2-pentanyl)-1H-imidazol-4-yl]methylene}-6,10b,11,11a-tetrahydro-2H-pyrazino[1',2':1,5]pyrrolo[2,3-b]indole-1,4(3H,5aH)-di one",
+                "Roquefortine H" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 4.872583e+02 ;
+            rdfs:seeAlso chemspider:27024819,
+                pubchem:CID102041046 ;
+            schema:inChI "InChI=1S/C28H33N5O3/c1-7-26(3,4)28-14-22-23(35)30-21(12-18-15-32(16-29-18)27(5,6)13-17(2)34)24(36)33(22)25(28)31-20-11-9-8-10-19(20)28/h7-12,15-16,22,25,31H,1,13-14H2,2-6H3,(H,30,35)/b21-12-/t22-,25+,28-/m1/s1" ;
+            schema:inChIKey inchikey:IOMOQUZQAXSJJI-MOLGQSPVSA-N ;
+            schema:molecularFormula "C28H33N5O3" ;
+            schema:name "(3E,5aS,10bR,11aS)-5a-Methyl-10b-(2-methyl-3-buten-2-yl)-3-{[1-(2-methyl-4-oxo-2-pentanyl)-1H-imidazol-4-yl]methylene}-6,10b,11,11a-tetrahydro-2H-pyrazino[1',2':1,5]pyrrolo[2,3-b]indole-1,4(3H,5aH)-di one",
+                "Roquefortine H" ;
+            schema:smiles "CC(=O)CC(C)(C)N1C=C(N=C1)/C=C\\2/C(=O)N3[C@H](C[C@@]4([C@H]3NC5=CC=CC=C54)C(C)(C)C=C)C(=O)N2" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 1.680922e+05 ;
+            mbo:mz 1.73022e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.337424e+04 ;
+            mbo:mz 1.740244e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 496 ],
+        [ mbo:intensity 1.610477e+04 ;
+            mbo:mz 1.851073e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 96 ],
+        [ mbo:intensity 2.063794e+04 ;
+            mbo:mz 2.050482e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 1.290945e+04 ;
+            mbo:mz 2.060513e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 1.424719e+04 ;
+            mbo:mz 2.131022e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 1.093296e+04 ;
+            mbo:mz 2.48065e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 65 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.4e+00 ] ;
+            mbo:mz 1.730212e+02 ;
+            mbo:tentative_formula "C8H3N3O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.7e-01 ] ;
+            mbo:mz 1.851073e+02 ;
+            mbo:tentative_formula "C12H13N2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.32e+00 ] ;
+            mbo:mz 2.050477e+02 ;
+            mbo:tentative_formula "C9H7N3O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.68e+00 ] ;
+            mbo:mz 2.131026e+02 ;
+            mbo:tentative_formula "C13H13N2O1+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.730212e+02 ;
+            mbo:precursor_mz 4.882651e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-0910000000-51e01077313011376843" ;
+    rdfs:comment "CONFIDENCE Penicillium bissettii" ;
+    skos:definition "Roquefortine H; LC-ESI-ITFT; MS2; CE: 40; R=17500; [M+H]+" .
+

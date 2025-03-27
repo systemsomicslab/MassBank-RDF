@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Nihon_Univ-NU000110 a mbo:MassSpectrum ;
+    dcterms:creator "Takashi Iida, Department of Chemistry, College of Humanities and Sciences, Nihon University" ;
+    dcterms:date "2016-01-19 (Created 2013-01-28)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Nihon_Univ-NU000110" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) Takashi Iida, Department of Chemistry, College of Humanities and Sciences, Nihon University under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100LP, JEOL Ltd." ;
+            mbo:instrument_type "LC-ESI-TOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3beta-Hydroxy-5beta-cholan-24-oic acid",
+                "Isolithocholic acid" ;
+            mbo:ch_compound_class "Natural Product; BILE ACID" ;
+            mbo:ch_exact_mass 3.762978e+02 ;
+            rdfs:seeAlso cas:1534-35-6 ;
+            schema:inChI "InChI=1S/C24H40O3/c1-15(4-9-22(26)27)19-7-8-20-18-6-5-16-14-17(25)10-12-23(16,2)21(18)11-13-24(19,20)3/h15-21,25H,4-14H2,1-3H3,(H,26,27)/t15-,16-,17+,18+,19-,20+,21+,23+,24-/m1/s1" ;
+            schema:inChIKey inchikey:SMEROWZSTRWXGI-WFVDQZAMSA-N ;
+            schema:molecularFormula "C24H40O3" ;
+            schema:name "3beta-Hydroxy-5beta-cholan-24-oic acid",
+                "Isolithocholic acid" ;
+            schema:smiles "C(C1(C)4)([H])(C(C)CCC(O)=O)CCC1(C(C3([H])CC4)([H])CCC(C3(C)2)([H])CC(O)CC2)[H]" ] ;
+    mbo:has_peak [ mbo:intensity 2.875e+03 ;
+            mbo:mz 6.898e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 8.532e+03 ;
+            mbo:mz 2.4896e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 255 ],
+        [ mbo:intensity 3.349e+04 ;
+            mbo:mz 3.7529e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.478e+03 ;
+            mbo:mz 3.7629e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 283 ],
+        [ mbo:intensity 3.184e+03 ;
+            mbo:mz 3.8493e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 9.494e+03 ;
+            mbo:mz 5.2091e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 283 ],
+        [ mbo:intensity 3.897e+03 ;
+            mbo:mz 6.5689e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 116 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.7529e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-004i-0019010000-f521f4198260b3d5a02c" ;
+    rdfs:comment "[Analytical] Sample of 1 micorL methanol solution was flow injected." ;
+    skos:definition "3beta-Hydroxy-5beta-cholan-24-oic acid; LC-ESI-TOF; MS; -150 V" .
+

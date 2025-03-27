@@ -1,0 +1,70 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN120230 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN120230" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.155 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4,4`-(1-Phenylethylidene)bisphenol",
+                "4-[1-(4-hydroxyphenyl)-1-phenylethyl]phenol",
+                "Bisphenol AP" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.901307e+02 ;
+            rdfs:seeAlso cas:1571-75-1,
+                chemspider:541979,
+                pubchem:CID623849 ;
+            schema:inChI "InChI=1S/C20H18O2/c1-20(15-5-3-2-4-6-15,16-7-11-18(21)12-8-16)17-9-13-19(22)14-10-17/h2-14,21-22H,1H3" ;
+            schema:inChIKey inchikey:VOWWYDCFAISREI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H18O2" ;
+            schema:name "4,4`-(1-Phenylethylidene)bisphenol",
+                "4-[1-(4-hydroxyphenyl)-1-phenylethyl]phenol",
+                "Bisphenol AP" ;
+            schema:smiles "CC(C1=CC=CC=C1)(C2=CC=C(C=C2)O)C3=CC=C(C=C3)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.109e+02 ;
+            mbo:mz 6.30227e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 4.85e+02 ;
+            mbo:mz 1.95081e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 337 ],
+        [ mbo:intensity 3.698e+02 ;
+            mbo:mz 2.110748e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 257 ],
+        [ mbo:intensity 1.4368e+03 ;
+            mbo:mz 2.730925e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.891239e+02 ;
+            mbo:precursor_mz 2.891234e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00di-1290000000-bd6255751f19fe23fad0" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Bisphenol AP; LC-ESI-QTOF; MS2; CE: 30eV; R=7000; [M-H]-" .
+

@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001724 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001724" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Pyridoxamine 5'-phosphate",
+                "Pyridoxamine 5-phosphate",
+                "Pyridoxamine phosphate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.480562e+02 ;
+            rdfs:seeAlso cas:529-96-4,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3919> ;
+            schema:inChI "InChI=1S/C8H13N2O5P/c1-5-8(11)7(2-9)6(3-10-5)4-15-16(12,13)14/h3,11H,2,4,9H2,1H3,(H2,12,13,14)" ;
+            schema:inChIKey inchikey:ZMJGSOSNSPKHNH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H13N2O5P" ;
+            schema:name "Pyridoxamine 5'-phosphate",
+                "Pyridoxamine 5-phosphate",
+                "Pyridoxamine phosphate" ;
+            schema:smiles "NCc(c(O)1)c(cnc(C)1)COP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 6.43565e+04 ;
+            mbo:mz 5.93e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.9703e+04 ;
+            mbo:mz 7.69e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.821785e+06 ;
+            mbo:mz 7.9e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.326735e+05 ;
+            mbo:mz 9.71e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 3.46535e+04 ;
+            mbo:mz 1.2e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 8.9109e+04 ;
+            mbo:mz 1.209e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.18812e+05 ;
+            mbo:mz 1.223e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 9.901e+04 ;
+            mbo:mz 1.5e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 35 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.47e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-9000000000-a5aaa4d9b60dc24fd818" ;
+    rdfs:comment "KEIO_ID P113" ;
+    skos:definition "Pyridoxamine 5'-phosphate; LC-ESI-QQ; MS2; CE:50 V; [M-H]-" .
+

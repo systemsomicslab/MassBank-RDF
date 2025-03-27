@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002095 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002095" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "105 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.109 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Psoralen",
+                "furo[3,2-g]chromen-7-one" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.860317e+02 ;
+            rdfs:seeAlso cas:66-97-7,
+                chemspider:5964,
+                pubchem:CID6199 ;
+            schema:inChI "InChI=1S/C11H6O3/c12-11-2-1-7-5-8-3-4-13-9(8)6-10(7)14-11/h1-6H" ;
+            schema:inChIKey inchikey:ZCCUUQDIBDJBTK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H6O3" ;
+            schema:name "Psoralen",
+                "furo[3,2-g]chromen-7-one" ;
+            schema:smiles "O=C1OC2=CC3=C(C=CO3)C=C2C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 4.3467e+03 ;
+            mbo:mz 6.50385e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.666445e+05 ;
+            mbo:mz 1.310491e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.2015e+03 ;
+            mbo:mz 1.430489e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 6.1088e+03 ;
+            mbo:mz 1.590439e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.919853e+05 ;
+            mbo:mz 7.70386e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 3.72116e+04 ;
+            mbo:mz 8.90386e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.6107e+03 ;
+            mbo:mz 9.40416e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.7152e+04 ;
+            mbo:mz 9.50491e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 2.43225e+04 ;
+            mbo:mz 1.020464e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.729674e+05 ;
+            mbo:mz 1.030542e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 225 ],
+        [ mbo:intensity 1.2955e+03 ;
+            mbo:mz 1.130386e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.518678e+05 ;
+            mbo:mz 1.150542e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 328 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.870389e+02 ;
+            mbo:precursor_mz 1.87039e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-001i-1900000000-abbfd7f996615af5dcbb" ;
+    rdfs:comment "INTERNAL_ID 18" ;
+    skos:definition "Psoralen; LC-ESI-ITFT; MS2; CE: 105%; R=15000; [M+H]+" .
+

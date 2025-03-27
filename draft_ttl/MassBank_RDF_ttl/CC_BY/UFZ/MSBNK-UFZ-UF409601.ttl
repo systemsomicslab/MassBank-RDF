@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UF409601 a mbo:MassSpectrum ;
+    dcterms:creator "Schulze T, Krauss M, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-01-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UF409601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "55 (nominal)" ;
+            mbo:column_name "Kinetex Core-Shell C18 2.6 um, 3.0 x 100 mm, Phenomenex" ;
+            mbo:flow_gradient "90/10 at 0 min, 80/20 at 3.2 min, 5/95 at 17.8 min, 5/95 at 37.8 min, 90/10 at 37.9 min, 90/10 at 47 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "16.540 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Cyclopropyl-7-(4-ethylpiperazin-4-ium-1-yl)-6-fluoro-4-oxoquinoline-3-carboxylate",
+                "Enrofloxacin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.591645e+02 ;
+            rdfs:seeAlso cas:93106-60-6,
+                chemspider:64326,
+                pubchem:CID71188 ;
+            schema:inChI "InChI=1S/C19H22FN3O3/c1-2-21-5-7-22(8-6-21)17-10-16-13(9-15(17)20)18(24)14(19(25)26)11-23(16)12-3-4-12/h9-12H,2-8H2,1H3,(H,25,26)" ;
+            schema:inChIKey inchikey:SPFYMRJSYKOXGV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H22FN3O3" ;
+            schema:name "1-Cyclopropyl-7-(4-ethylpiperazin-4-ium-1-yl)-6-fluoro-4-oxoquinoline-3-carboxylate",
+                "Enrofloxacin" ;
+            schema:smiles "CCN1CCN(CC1)C1=C(F)C=C2C(=O)C(=CN(C3CC3)C2=C1)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.60789e+04 ;
+            mbo:mz 2.611038e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.631329e+02 ;
+            mbo:precursor_mz 3.601718e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-03di-0090000000-4993689e3911744859f5" ;
+    rdfs:comment "INTERNAL_ID 4096" ;
+    skos:definition "Enrofloxacin; LC-ESI-ITFT; MS2; CE: 55; R=15000; [M+H]+" .
+

@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-KWR-KW107303 a mbo:MassSpectrum ;
+    dcterms:creator "Erik Emke, Andrea Brunner, KWR" ;
+    dcterms:date "2017-03-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-KWR-KW107303" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 KWR watercycle research institute under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Classic, Thermo Scientific" ;
+            mbo:collision_energy "35 eV FT-MS II" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x150mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 0/100 at 40 min, 0/100 at 45 min, 95/5 at 47 min, 95/5 at 52 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "12.085 min" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carbamazepine10,11-epoxide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.520899e+02 ;
+            rdfs:seeAlso cas:36507-30-9,
+                chemspider:2458,
+                pubchem:CID2555 ;
+            schema:inChI "InChI=1S/C15H12N2O2/c16-15(18)17-11-7-3-1-5-9(11)13-14(19-13)10-6-2-4-8-12(10)17/h1-8,13-14H,(H2,16,18)" ;
+            schema:inChIKey inchikey:ZRWWEEVEIOGMMT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H12N2O2" ;
+            schema:name "Carbamazepine10,11-epoxide" ;
+            schema:smiles "NC(=O)N1c2ccccc2C3OC3c4ccccc14" ] ;
+    mbo:has_peak [ mbo:intensity 2.68541e+04 ;
+            mbo:mz 7.50313e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.407792e+07 ;
+            mbo:mz 2.360704e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.81414e+04 ;
+            mbo:mz 9.59995e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.77396e+04 ;
+            mbo:mz 1.290083e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.12415e+04 ;
+            mbo:mz 1.491071e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.55389e+06 ;
+            mbo:mz 1.800807e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 2.68581e+04 ;
+            mbo:mz 1.82082e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.65729e+05 ;
+            mbo:mz 1.820963e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 7.41406e+05 ;
+            mbo:mz 2.080757e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.263301e+07 ;
+            mbo:mz 2.100912e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 524 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.530968e+02 ;
+            mbo:precursor_mz 2.530972e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-01p9-0090000000-0c7e7af0139accdefc73" ;
+    rdfs:comment "INTERNAL_ID 1073" ;
+    skos:definition "Carbamazepine10,11-epoxide; LC-ESI-ITFT; MS2; CE: 35 eV; R=30000; [M+H]+" .
+

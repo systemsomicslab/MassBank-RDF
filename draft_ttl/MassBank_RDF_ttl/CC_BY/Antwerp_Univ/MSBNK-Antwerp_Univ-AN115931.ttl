@@ -1,0 +1,85 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN115931 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN115931" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "35 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.721 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2-ethyl-5-oxohexoxy)carbonylterephthalic acid",
+                "Mono(2-ethyl-oxo-hexyl) trimelliate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.361209e+02 ;
+            rdfs:seeAlso pubchem:CID155898861 ;
+            schema:inChI "InChI=1S/C17H20O7/c1-3-11(5-4-10(2)18)9-24-17(23)14-8-12(15(19)20)6-7-13(14)16(21)22/h6-8,11H,3-5,9H2,1-2H3,(H,19,20)(H,21,22)" ;
+            schema:inChIKey inchikey:BAIGYCWXMXEZKY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H20O7" ;
+            schema:name "2-(2-ethyl-5-oxohexoxy)carbonylterephthalic acid",
+                "Mono(2-ethyl-oxo-hexyl) trimelliate" ;
+            schema:smiles "CCC(CCC(C)=O)COC(=O)c1cc(C(=O)O)ccc1C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.528e+02 ;
+            mbo:mz 5.70344e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 2.295e+02 ;
+            mbo:mz 7.10502e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.66197e+04 ;
+            mbo:mz 7.70399e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.861e+02 ;
+            mbo:mz 9.90809e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.791e+02 ;
+            mbo:mz 1.19013e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 4.819e+02 ;
+            mbo:mz 1.1905e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.66927e+04 ;
+            mbo:mz 1.210292e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 626 ],
+        [ mbo:intensity 1.377e+03 ;
+            mbo:mz 1.470093e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 4.979e+02 ;
+            mbo:mz 1.650174e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 19 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.351128e+02 ;
+            mbo:precursor_mz 3.351136e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-00b9-9600000000-62f54c884da8006857b4" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Mono(2-ethyl-oxo-hexyl) trimelliate; LC-ESI-QTOF; MS2; CE: 35eV; R=7000; [M-H]-" .
+

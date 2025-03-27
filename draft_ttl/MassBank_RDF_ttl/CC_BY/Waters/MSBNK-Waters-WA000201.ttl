@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000201 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2012-10-22)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000201" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QuattroPremier XE, Waters" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cyclanilide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.729959e+02 ;
+            rdfs:seeAlso cas:113136-77-9 ;
+            schema:inChI "InChI=1S/C11H9Cl2NO3/c12-6-1-2-8(7(13)5-6)14-9(15)11(3-4-11)10(16)17/h1-2,5H,3-4H2,(H,14,15)(H,16,17)" ;
+            schema:inChIKey inchikey:GLWWLNJJJCTFMZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H9Cl2NO3" ;
+            schema:name "Cyclanilide" ;
+            schema:smiles "OC(=O)C(C2)(C2)C(=O)Nc(c1)c(Cl)cc(Cl)c1" ] ;
+    mbo:has_peak [ mbo:intensity 8e+00 ;
+            mbo:mz 1.58e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.6e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.7e+01 ;
+            mbo:mz 1.92e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 2.26e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.28e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 2.29e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 2.7e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.96e+02 ;
+            mbo:mz 2.72e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 196 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.719e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03i0-0790000000-3e7ac54e667fd0e6adfb" ;
+    skos:definition "Cyclanilide; LC-ESI-QQ; MS2; CE:20 V; [M-H]-" .
+

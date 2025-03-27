@@ -1,0 +1,102 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM847401 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM847401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.051 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-cyclohexyl-6-(dimethylamino)-1-methyl-1,3,5-triazine-2,4-dione",
+                "Hexazinone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.521586e+02 ;
+            rdfs:seeAlso cas:51235-04-2,
+                chemspider:36542,
+                pubchem:CID39965 ;
+            schema:inChI "InChI=1S/C12H20N4O2/c1-14(2)10-13-11(17)16(12(18)15(10)3)9-7-5-4-6-8-9/h9H,4-8H2,1-3H3" ;
+            schema:inChIKey inchikey:CAWXEEYDBZRFPE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H20N4O2" ;
+            schema:name "3-cyclohexyl-6-(dimethylamino)-1-methyl-1,3,5-triazine-2,4-dione",
+                "Hexazinone" ;
+            schema:smiles "CN(C)C1=NC(=O)N(C2CCCCC2)C(=O)N1C" ] ;
+    mbo:has_peak [ mbo:intensity 6.04515e+05 ;
+            mbo:mz 5.50544e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.809692e+08 ;
+            mbo:mz 1.710876e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.69579e+07 ;
+            mbo:mz 2.531659e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 314 ],
+        [ mbo:intensity 2.971065e+07 ;
+            mbo:mz 7.10604e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 8.363266e+05 ;
+            mbo:mz 7.20444e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 9.740767e+05 ;
+            mbo:mz 8.3024e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.211133e+06 ;
+            mbo:mz 8.30855e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.928138e+07 ;
+            mbo:mz 8.5076e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 1.869148e+06 ;
+            mbo:mz 1.010346e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.679625e+06 ;
+            mbo:mz 1.140661e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 5.632559e+05 ;
+            mbo:mz 1.28082e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.240914e+02 ;
+            mbo:precursor_mz 2.531659e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00di-2920000000-61b844f132ad49edc4fb" ;
+    rdfs:comment "INTERNAL_ID 8474" ;
+    skos:definition "Hexazinone; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M+H]+" .
+

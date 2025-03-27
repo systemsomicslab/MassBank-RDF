@@ -1,0 +1,95 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS102905 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS102905" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,3-Dimethyl-2,6,8-trihydroxypurine",
+                "1,3-Dimethylurate",
+                "1,3-Dimethyluric acid",
+                "Oxytheophylline" ;
+            mbo:ch_compound_class "CLASS1 Alkaloid CLASS2 Xanthine CLASS3 Luric acid" ;
+            mbo:ch_exact_mass 1.96166e+02 ;
+            rdfs:seeAlso cas:944-73-0,
+                pubchem:CID70346 ;
+            schema:inChI "InChI=1S/C7H8N4O3/c1-10-4-3(8-6(13)9-4)5(12)11(2)7(10)14/h1-2H3,(H2,8,9,13)" ;
+            schema:inChIKey inchikey:OTSBKHHWSQYEHK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H8N4O3" ;
+            schema:name "1,3-Dimethyl-2,6,8-trihydroxypurine",
+                "1,3-Dimethylurate",
+                "1,3-Dimethyluric acid",
+                "Oxytheophylline" ;
+            schema:smiles "CN1C2=C(C(=O)N(C1=O)C)NC(=O)N2" ] ;
+    mbo:has_peak [ mbo:intensity 1.827e+03 ;
+            mbo:mz 3.8e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 2.534e+03 ;
+            mbo:mz 1.94e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 1.476e+03 ;
+            mbo:mz 1.97e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 5.809e+03 ;
+            mbo:mz 4.1e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 1.4862e+04 ;
+            mbo:mz 4.2e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 326 ],
+        [ mbo:intensity 1.9625e+04 ;
+            mbo:mz 5.6e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 431 ],
+        [ mbo:intensity 4.549e+04 ;
+            mbo:mz 5.7e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.292e+03 ;
+            mbo:mz 6.9e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 2.353e+03 ;
+            mbo:mz 8.4e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1.429e+03 ;
+            mbo:mz 1.36e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 2.54e+03 ;
+            mbo:mz 1.69e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 56 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.9722e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-94944f4d453ebc992571" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "1,3-Dimethylurate, Oxytheophylline, 1,3-Dimethyl-2,6,8-trihydroxypurine, 1,3-Dimethyluric acid; LC-ESI-QQ; MS2" .
+

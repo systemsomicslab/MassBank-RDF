@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001030 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001030" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Tolualdehyde",
+                "DTXSID1022051" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.200575e+02 ;
+            rdfs:seeAlso cas:529-20-4,
+                pubchem:CID10722 ;
+            schema:inChI "InChI=1S/C8H8O/c1-7-4-2-3-5-8(7)6-9/h2-6H,1H3" ;
+            schema:inChIKey inchikey:BTFQKIATRPGRBS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8O" ;
+            schema:name "2-Tolualdehyde",
+                "DTXSID1022051" ;
+            schema:smiles "CC1C=CC=CC=1C=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.022019e+00 ;
+            mbo:mz 4.103858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.507824e+00 ;
+            mbo:mz 1.040257e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 3.865716e+00 ;
+            mbo:mz 4.305423e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.359858e+00 ;
+            mbo:mz 4.503349e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.267439e+00 ;
+            mbo:mz 6.399437e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.159942e+00 ;
+            mbo:mz 6.503858e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.512295e+00 ;
+            mbo:mz 7.703858e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.642415e+00 ;
+            mbo:mz 8.002567e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.220244e+00 ;
+            mbo:mz 9.105423e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 9.404132e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.210648e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0006-9000000000-bbfbb47007202705e0d5" ;
+    skos:definition "2-Tolualdehyde; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

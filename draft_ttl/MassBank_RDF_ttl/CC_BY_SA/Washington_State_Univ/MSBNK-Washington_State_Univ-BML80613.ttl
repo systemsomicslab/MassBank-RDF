@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80613 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80613" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-APCI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "8.533" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-Hydroxy-3-Methylflavone" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.520786e+02 ;
+            rdfs:seeAlso cas:18651-15-5,
+                chemspider:4536759,
+                pubchem:CID5391151 ;
+            schema:inChI "InChI=1S/C16H12O3/c1-10-15(18)13-8-7-12(17)9-14(13)19-16(10)11-5-3-2-4-6-11/h2-9,17H,1H3" ;
+            schema:inChIKey inchikey:SUNCCQBNDWHMPR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H12O3" ;
+            schema:name "7-Hydroxy-3-Methylflavone" ;
+            schema:smiles "CC1=C(OC2=C(C1=O)C=CC(=C2)O)C3=CC=CC=C3" ] ;
+    mbo:has_peak [ mbo:intensity 2.89331e+05 ;
+            mbo:mz 2.510713e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0udi-0090000000-594ef13c8588247d588c" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.155" ;
+    skos:definition "7-Hydroxy-3-Methylflavone; LC-APCI-QTOF; MS; NEGATIVE" .
+

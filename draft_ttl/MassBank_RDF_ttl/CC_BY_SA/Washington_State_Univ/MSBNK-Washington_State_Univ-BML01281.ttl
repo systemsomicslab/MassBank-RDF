@@ -1,0 +1,111 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML01281 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML01281" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.410" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-Methyltryptamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.741157e+02 ;
+            rdfs:seeAlso cas:55795-89-6,
+                chemspider:14987,
+                pubchem:CID15760 ;
+            schema:inChI "InChI=1S/C11H14N2/c1-8-2-3-11-10(6-8)9(4-5-12)7-13-11/h2-3,6-7,13H,4-5,12H2,1H3" ;
+            schema:inChIKey inchikey:PYOUAIQXJALPKW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H14N2" ;
+            schema:name "5-Methyltryptamine" ;
+            schema:smiles "CC1=CC2=C(C=C1)NC=C2CCN" ] ;
+    mbo:has_peak [ mbo:intensity 3.3e+01 ;
+            mbo:mz 1.010079e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.3e+02 ;
+            mbo:mz 1.581317e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 3.8e+01 ;
+            mbo:mz 1.581492e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 1.581572e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.4e+01 ;
+            mbo:mz 1.581749e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5e+01 ;
+            mbo:mz 1.582108e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 1.59095e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.29e+02 ;
+            mbo:mz 1.149476e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 3.3e+01 ;
+            mbo:mz 1.150513e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.160636e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 1.30064e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.4e+01 ;
+            mbo:mz 1.310869e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 4.1e+01 ;
+            mbo:mz 1.329567e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.01e+02 ;
+            mbo:mz 1.43073e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 4.529e+03 ;
+            mbo:mz 1.580955e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.58e+02 ;
+            mbo:precursor_mz 1.75123e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-550f165f81a130339508" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.329" ;
+    skos:definition "5-Methyltryptamine; LC-ESI-QTOF; MS2; CE 10 ev; [M+H]+" .
+

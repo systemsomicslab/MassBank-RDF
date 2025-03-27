@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000097 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2009-05-19, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000097" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "702.300 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-Citrinin",
+                "3H-2-Benzopyran-7-carboxylic acid, 4,6-dihydro-8-hydroxy-3,4,5-trimethyl-6-oxo-, (3R,4S)-",
+                "3H-2-Benzopyran-7-carboxylic acid, 4,6-dihydro-8-hydroxy-3,4,5-trimethyl-6-oxo-, (3R-trans)-",
+                "4,6-Dihydro-8-hydroxy-3,4,5-trimethyl-6-oxo-3H-2-benzopyran-7-carboxylic acid",
+                "Citrinin",
+                "NSC 186" ;
+            mbo:ch_compound_class "Natural Product; Benzopyran" ;
+            mbo:ch_exact_mass 2.500841e+02 ;
+            rdfs:seeAlso cas:518-75-2 ;
+            schema:inChI "InChI=1S/C13H14O5/c1-5-7(3)18-4-8-9(5)6(2)11(14)10(12(8)15)13(16)17/h4-5,7,15H,1-3H3,(H,16,17)/t5-,7-/m1/s1" ;
+            schema:inChIKey inchikey:CQIUKKVOEOPUDV-IYSWYEEDSA-N ;
+            schema:molecularFormula "C13H14O5" ;
+            schema:name "(-)-Citrinin",
+                "3H-2-Benzopyran-7-carboxylic acid, 4,6-dihydro-8-hydroxy-3,4,5-trimethyl-6-oxo-, (3R,4S)-",
+                "3H-2-Benzopyran-7-carboxylic acid, 4,6-dihydro-8-hydroxy-3,4,5-trimethyl-6-oxo-, (3R-trans)-",
+                "4,6-Dihydro-8-hydroxy-3,4,5-trimethyl-6-oxo-3H-2-benzopyran-7-carboxylic acid",
+                "Citrinin",
+                "NSC 186" ;
+            schema:smiles "OC(=O)c(c(=O)1)c(O)c(=C2)c(C(C)C(C)O2)c(C)1" ] ;
+    mbo:has_peak [ mbo:intensity 7.177971e+06 ;
+            mbo:mz 2.330801e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 633 ],
+        [ mbo:intensity 9.97658e+05 ;
+            mbo:mz 2.340819e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 1.132498e+07 ;
+            mbo:mz 2.510907e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.638638e+06 ;
+            mbo:mz 2.520942e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 2.250886e+06 ;
+            mbo:mz 2.730727e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 199 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0ue9-0090000000-d3058403c5f57d76339f" ;
+    skos:definition "Citrinin; LC-ESI-ITTOF; MS; [M+H]+" .
+

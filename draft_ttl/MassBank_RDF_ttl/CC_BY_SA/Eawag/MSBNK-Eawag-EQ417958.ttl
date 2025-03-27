@@ -1,0 +1,76 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ417958 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], M. Stravs [com]" ;
+    dcterms:date "2019-12-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ417958" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K.; Mueller, A.; Singer, H.; Hollender, J. New relevant pesticide transformation products in groundwater detected using target and suspect screening for agricultural and urban micropollutants with LC-HRMS. Water Research 2019, 165. DOI: https://doi.org/10.1016/j.watres.2019.114972" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "150 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "5.475 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2-ethyl-6-methyl-N-(2-sulfoacetyl)anilino)propanoic acid",
+                "Metolachlor-TP NOA413173" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.290933e+02 ;
+            rdfs:seeAlso chemspider:72389081,
+                pubchem:CID124040761 ;
+            schema:inChI "InChI=1S/C14H19NO6S/c1-4-11-7-5-6-9(2)13(11)15(10(3)14(17)18)12(16)8-22(19,20)21/h5-7,10H,4,8H2,1-3H3,(H,17,18)(H,19,20,21)" ;
+            schema:inChIKey inchikey:WOXWIWNBIJDJHI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H19NO6S" ;
+            schema:name "2-(2-ethyl-6-methyl-N-(2-sulfoacetyl)anilino)propanoic acid",
+                "Metolachlor-TP NOA413173" ;
+            schema:smiles "CCC1=C(N(C(C)C(O)=O)C(=O)CS(O)(=O)=O)C(C)=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.669342e+06 ;
+            mbo:mz 6.39625e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 1.794198e+06 ;
+            mbo:mz 7.69703e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 2.781267e+07 ;
+            mbo:mz 7.99574e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.551706e+05 ;
+            mbo:mz 8.0965e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.138153e+05 ;
+            mbo:mz 9.39729e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.280861e+02 ;
+            mbo:precursor_mz 3.28086e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-9000000000-5a4a9a58c58916496640" ;
+    rdfs:comment "UCHEM_ID 4179" ;
+    skos:definition "Metolachlor-TP NOA413173; LC-ESI-QFT; MS2; CE: 150%; R=17500; [M-H]-" .
+

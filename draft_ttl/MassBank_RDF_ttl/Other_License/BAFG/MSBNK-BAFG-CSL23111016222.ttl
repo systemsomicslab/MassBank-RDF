@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL23111016222 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111016222" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
+            mbo:collision_energy "130" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "12.265 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bis(triphenylphosphonio)amine" ;
+            mbo:ch_exact_mass 5.381848e+02 ;
+            rdfs:seeAlso cas:21050-13-5 ;
+            schema:inChI "InChI=1S/C36H30NP2/c1-7-19-31(20-8-1)38(32-21-9-2-10-22-32,33-23-11-3-12-24-33)37-39(34-25-13-4-14-26-34,35-27-15-5-16-28-35)36-29-17-6-18-30-36/h1-30H/q+1" ;
+            schema:inChIKey inchikey:FXCZFAOTGUCDBE-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C36H30NP2]+" ;
+            schema:name "Bis(triphenylphosphonio)amine" ;
+            schema:smiles "C1=CC=C(C=C1)P(=N[P+](C2=CC=CC=C2)(C3=CC=CC=C3)C4=CC=CC=C4)(C5=CC=CC=C5)C6=CC=CC=C6" ] ;
+    mbo:has_peak [ mbo:intensity 3.25e+01 ;
+            mbo:mz 1.070025e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 2.11e+01 ;
+            mbo:mz 1.22014e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 3.09e+01 ;
+            mbo:mz 1.520611e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 2.494e+02 ;
+            mbo:mz 1.830357e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.381848e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001i-0900000000-b3e84480ff4cb40cb86a" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Bis(triphenylphosphonio)amine; LC-ESI-QTOF; MS2; 130 V" .
+

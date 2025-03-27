@@ -1,0 +1,102 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP024902 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP024902" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.393 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-decanoyloxy-4-(trimethylazaniumyl)butanoate",
+                "Decanoyl-L-Carnitine",
+                "Decanoylcarnitine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.15241e+02 ;
+            rdfs:seeAlso chemspider:8420677,
+                pubchem:CID10245190 ;
+            schema:inChI "InChI=1S/C17H33NO4/c1-5-6-7-8-9-10-11-12-17(21)22-15(13-16(19)20)14-18(2,3)4/h15H,5-14H2,1-4H3" ;
+            schema:inChIKey inchikey:LZOSYCMHQXPBFU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H33NO4" ;
+            schema:name "3-decanoyloxy-4-(trimethylazaniumyl)butanoate",
+                "Decanoyl-L-Carnitine",
+                "Decanoylcarnitine" ;
+            schema:smiles "CCCCCCCCCC(=O)OC(CC(=O)[O-])C[N+](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 9.44e+03 ;
+            mbo:mz 7.1085e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.968e+03 ;
+            mbo:mz 2.591805e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.54978e+05 ;
+            mbo:mz 3.162479e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 453 ],
+        [ mbo:intensity 1.2404e+04 ;
+            mbo:mz 3.182541e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 9.624e+03 ;
+            mbo:mz 8.10692e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.442982e+06 ;
+            mbo:mz 8.50283e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.676e+03 ;
+            mbo:mz 9.50851e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.554e+03 ;
+            mbo:mz 1.371319e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.2468e+04 ;
+            mbo:mz 1.441021e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.6782e+04 ;
+            mbo:mz 1.551428e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.518e+03 ;
+            mbo:mz 1.731533e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.70496e+05 ;
+            mbo:mz 2.571743e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 118 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.162494e+02 ;
+            mbo:precursor_mz 3.162482e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-000i-9014000000-84dabb4152e9e792bba3" ;
+    rdfs:comment "INTERNAL_ID 249" ;
+    skos:definition "Decanoyl-L-Carnitine; LC-ESI-QTOF; MS2; CE: 20; R=; [M+H]+" .
+

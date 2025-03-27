@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000560 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000560" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-Nitroisophthalic acid",
+                "DTXSID7041540" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.110117e+02 ;
+            rdfs:seeAlso cas:618-88-2,
+                pubchem:CID12069 ;
+            schema:inChI "InChI=1S/C8H5NO6/c10-7(11)4-1-5(8(12)13)3-6(2-4)9(14)15/h1-3H,(H,10,11)(H,12,13)" ;
+            schema:inChIKey inchikey:NBDAHKQJXVLAID-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H5NO6" ;
+            schema:name "5-Nitroisophthalic acid",
+                "DTXSID7041540" ;
+            schema:smiles "[O-][N+](=O)C1C=C(C=C(C=1)C(O)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 6.084583e+01 ;
+            mbo:mz 4.599345e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 608 ],
+        [ mbo:intensity 3.326241e+01 ;
+            mbo:mz 7.502402e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 332 ],
+        [ mbo:intensity 2.352711e+01 ;
+            mbo:mz 9.202676e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 235 ],
+        [ mbo:intensity 9.999999e+01 ;
+            mbo:mz 1.190139e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.235129e+01 ;
+            mbo:mz 1.360166e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 4.565138e+01 ;
+            mbo:mz 1.660146e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 456 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.100044e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-014i-6900000000-912863def5c2705907f0" ;
+    skos:definition "5-Nitroisophthalic acid; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N110026_B8BB a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N110026_B8BB" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.144 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4R)-4-[(3R,5S,7S,8R,9S,10S,13R,14S,17R)-3,7-dihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoic acid",
+                "Ursodeoxycholic acid" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.922927e+02 ;
+            rdfs:seeAlso cas:128-13-2,
+                chemspider:29131,
+                pubchem:CID31401 ;
+            schema:inChI "InChI=1S/C24H40O4/c1-14(4-7-21(27)28)17-5-6-18-22-19(9-11-24(17,18)3)23(2)10-8-16(25)12-15(23)13-20(22)26/h14-20,22,25-26H,4-13H2,1-3H3,(H,27,28)/t14-,15+,16-,17-,18+,19+,20+,22+,23+,24-/m1/s1" ;
+            schema:inChIKey inchikey:RUDATBOHQWOJDD-UZVSRGJWSA-N ;
+            schema:molecularFormula "C24H40O4" ;
+            schema:name "(4R)-4-[(3R,5S,7S,8R,9S,10S,13R,14S,17R)-3,7-dihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoic acid",
+                "Ursodeoxycholic acid" ;
+            schema:smiles "[H][C@@]1(CC[C@@]2([H])[C@]3([H])[C@@H](O)C[C@]4([H])C[C@H](O)CC[C@]4(C)[C@@]3([H])CC[C@]12C)[C@H](C)CCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.9e+01 ;
+            mbo:mz 1.670161e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.52e+01 ;
+            mbo:mz 1.821718e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.86e+01 ;
+            mbo:mz 1.932389e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.344e+02 ;
+            mbo:mz 2.211525e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.89e+01 ;
+            mbo:mz 2.752232e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.928e+02 ;
+            mbo:mz 3.251784e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.4e+01 ;
+            mbo:mz 3.712625e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.89e+01 ;
+            mbo:mz 3.732817e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.48977e+04 ;
+            mbo:mz 3.912858e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.912861e+02 ;
+            mbo:precursor_mz 3.912854e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0006-0009000000-9e9db8431370acff7e07" ;
+    rdfs:comment "INTERNAL_ID 1100" ;
+    skos:definition "Ursodeoxycholic acid; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M-H]-" .
+

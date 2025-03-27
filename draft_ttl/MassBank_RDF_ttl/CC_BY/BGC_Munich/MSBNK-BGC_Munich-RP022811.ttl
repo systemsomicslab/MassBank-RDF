@@ -1,0 +1,76 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP022811 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP022811" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.576 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,3R,4S,5R,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol",
+                "D-Galactose",
+                "alpha-D-galactose" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.800634e+02 ;
+            rdfs:seeAlso cas:59-23-4,
+                chemspider:388480,
+                pubchem:CID439357 ;
+            schema:inChI "InChI=1S/C6H12O6/c7-1-2-3(8)4(9)5(10)6(11)12-2/h2-11H,1H2/t2-,3+,4+,5-,6+/m1/s1" ;
+            schema:inChIKey inchikey:WQZGKKKJIJFFOK-PHYPRBDBSA-N ;
+            schema:molecularFormula "C6H12O6" ;
+            schema:name "(2S,3R,4S,5R,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol",
+                "D-Galactose",
+                "alpha-D-galactose" ;
+            schema:smiles "O[C@H]1[C@@H](O)[C@H](O[C@H](O)[C@@H]1O)CO" ] ;
+    mbo:has_peak [ mbo:intensity 1.72e+02 ;
+            mbo:mz 5.90143e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 641 ],
+        [ mbo:intensity 1.86e+02 ;
+            mbo:mz 7.10137e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 693 ],
+        [ mbo:intensity 2.68e+02 ;
+            mbo:mz 8.90248e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.6e+01 ;
+            mbo:mz 1.010252e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 209 ],
+        [ mbo:intensity 2.8e+01 ;
+            mbo:mz 1.130246e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 104 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.790573e+02 ;
+            mbo:precursor_mz 1.790561e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-059i-9100000000-33aacf4c62b17cfa394e" ;
+    rdfs:comment "INTERNAL_ID 228" ;
+    skos:definition "D-Galactose; LC-ESI-QTOF; MS2; CE: 10; R=; [M-H]-" .
+

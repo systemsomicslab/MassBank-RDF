@@ -1,0 +1,64 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ318656 a mbo:MassSpectrum ;
+    dcterms:creator "Huntscha S, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ318656" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "90 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "1.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1H-1,2,3-Triazol-4-ol",
+                "1H-1,2,3-triazole-5-OH" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 8.502761e+01 ;
+            rdfs:seeAlso cas:124531-95-9,
+                chemspider:14060344,
+                pubchem:CID17887248 ;
+            schema:inChI "InChI=1S/C2H3N3O/c6-2-1-3-5-4-2/h1H,(H2,3,4,5,6)" ;
+            schema:inChIKey inchikey:QEASJVYPHMYPJM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C2H3N3O" ;
+            schema:name "1H-1,2,3-Triazol-4-ol",
+                "1H-1,2,3-triazole-5-OH" ;
+            schema:smiles "Oc1cnn[nH]1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 5.74084e+04 ;
+            mbo:mz 6.60097e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 419 ],
+        [ mbo:intensity 1.369721e+05 ;
+            mbo:mz 8.40203e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.40199e+01 ;
+            mbo:precursor_mz 8.40203e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-9000000000-1802d5a9beb6227640d7" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3186" ;
+    skos:definition "1H-1,2,3-triazole-5-OH; LC-ESI-QFT; MS2; CE: 90; R=35000; [M-H]-" .
+

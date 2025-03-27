@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ346106 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ346106" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "90 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Methyl(1-phenyl-2-propanyl)2-propyn-1-ylamine oxide",
+                "N-methyl-1-phenyl-N-prop-2-ynylpropan-2-amine oxide",
+                "R-Deprenyl N-Oxide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.03131e+02 ;
+            rdfs:seeAlso cas:366462-61-5,
+                chemspider:9621885,
+                pubchem:CID11447032 ;
+            schema:inChI "InChI=1S/C13H17NO/c1-4-10-14(3,15)12(2)11-13-8-6-5-7-9-13/h1,5-9,12H,10-11H2,2-3H3" ;
+            schema:inChIKey inchikey:IVFPCTFUZXEDKP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H17NO" ;
+            schema:name "Methyl(1-phenyl-2-propanyl)2-propyn-1-ylamine oxide",
+                "N-methyl-1-phenyl-N-prop-2-ynylpropan-2-amine oxide",
+                "R-Deprenyl N-Oxide" ;
+            schema:smiles "CC(CC1=CC=CC=C1)[N+](C)(CC#C)[O-]" ] ;
+    mbo:has_peak [ mbo:intensity 1.129623e+06 ;
+            mbo:mz 6.30228e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.108216e+07 ;
+            mbo:mz 6.50386e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.148959e+07 ;
+            mbo:mz 6.80495e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.162684e+06 ;
+            mbo:mz 6.90573e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.283603e+06 ;
+            mbo:mz 7.90543e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.785474e+06 ;
+            mbo:mz 8.60601e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 9.414851e+08 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.041383e+02 ;
+            mbo:precursor_mz 2.041383e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0006-9000000000-dd5468b3a1dcd7c5ec97" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3461" ;
+    skos:definition "R-Deprenyl N-Oxide; LC-ESI-QFT; MS2; CE: 90; R=35000; [M+H]+" .
+

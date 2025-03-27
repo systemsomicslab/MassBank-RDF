@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001181 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001181" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Methylpropanoate",
+                "2-Methylpropanoic acid",
+                "Dimethylacetic acid",
+                "Isobutanoate",
+                "Isobutyrate",
+                "Isobutyric acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 8.805243e+01 ;
+            rdfs:seeAlso cas:79-31-2,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5612> ;
+            schema:inChI "InChI=1S/C4H8O2/c1-3(2)4(5)6/h3H,1-2H3,(H,5,6)" ;
+            schema:inChIKey inchikey:KQNPFQTWMSNSAP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H8O2" ;
+            schema:name "2-Methylpropanoate",
+                "2-Methylpropanoic acid",
+                "Dimethylacetic acid",
+                "Isobutanoate",
+                "Isobutyrate",
+                "Isobutyric acid" ;
+            schema:smiles "CC(C)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 4.11e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 4.31e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.311884e+06 ;
+            mbo:mz 8.73e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.7e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-9000000000-3b1bc720943b7b4b9b7b" ;
+    rdfs:comment "KEIO_ID I012" ;
+    skos:definition "Isobutyric acid; LC-ESI-QQ; MS2; CE:20 V; [M-H]-" .
+

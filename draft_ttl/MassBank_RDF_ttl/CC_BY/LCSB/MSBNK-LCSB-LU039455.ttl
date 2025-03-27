@@ -1,0 +1,90 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU039455 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU039455" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "75" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "14.834 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-amino-4-nitrobenzoic acid",
+                "4-Nitroanthranilic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.820328e+02 ;
+            rdfs:seeAlso cas:619-17-0,
+                chemspider:11579,
+                pubchem:CID12076 ;
+            schema:inChI "InChI=1S/C7H6N2O4/c8-6-3-4(9(12)13)1-2-5(6)7(10)11/h1-3H,8H2,(H,10,11)" ;
+            schema:inChIKey inchikey:UEALKTCRMBVTFN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H6N2O4" ;
+            schema:name "2-amino-4-nitrobenzoic acid",
+                "4-Nitroanthranilic acid" ;
+            schema:smiles "NC1=C(C=CC(=C1)[N+]([O-])=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.509e+03 ;
+            mbo:mz 7.90428e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 9.41798e+04 ;
+            mbo:mz 8.00268e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 255 ],
+        [ mbo:intensity 1.84398e+04 ;
+            mbo:mz 9.0035e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 2.5501e+03 ;
+            mbo:mz 9.29938e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.0434e+03 ;
+            mbo:mz 1.060299e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.68364e+05 ;
+            mbo:mz 1.070377e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.16896e+04 ;
+            mbo:mz 1.240165e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 7.68313e+04 ;
+            mbo:mz 1.370357e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 208 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.070282e+02 ;
+            mbo:precursor_mz 1.810255e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0a4i-2900000000-1b7e56f69fc36153259e" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "4-Nitroanthranilic acid; LC-ESI-QFT; MS2; CE: 75; R=17500; [M-H]-" .
+

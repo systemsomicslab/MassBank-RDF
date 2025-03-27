@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100992 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100992" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Quer-3-Rha-7-Rha",
+                "Quercetin-3,7-O-alpha-L-dirhamnopyranoside",
+                "Quercetin-3-rhamnoside-7-rhamnoside" ;
+            mbo:ch_compound_class "Flavonoid" ;
+            mbo:ch_exact_mass 5.941585e+02 ;
+            rdfs:seeAlso cas:28638-13-3,
+                knapsack:C00005432 ;
+            schema:inChI "InChI=1S/C27H30O15/c1-8-17(31)20(34)22(36)26(38-8)40-11-6-14(30)16-15(7-11)41-24(10-3-4-12(28)13(29)5-10)25(19(16)33)42-27-23(37)21(35)18(32)9(2)39-27/h3-9,17-18,20-23,26-32,34-37H,1-2H3/t8-,9-,17-,18-,20+,21+,22+,23+,26-,27-/m0/s1" ;
+            schema:inChIKey inchikey:GXLQUHPXGLZNGE-BJBZVNFPSA-N ;
+            schema:molecularFormula "C27H30O15" ;
+            schema:name "Quer-3-Rha-7-Rha",
+                "Quercetin-3,7-O-alpha-L-dirhamnopyranoside",
+                "Quercetin-3-rhamnoside-7-rhamnoside" ;
+            schema:smiles "C(C1O)(C)OC(Oc(c5)cc(O2)c(c5O)C(C(OC(O4)C(C(C(C4C)O)O)O)=C(c(c3)ccc(O)c3O)2)=O)C(C1O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.114e+02 ;
+            mbo:mz 2.830244e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 5.888e+02 ;
+            mbo:mz 2.850393e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 4.183e+03 ;
+            mbo:mz 2.990185e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 661 ],
+        [ mbo:intensity 5.913e+02 ;
+            mbo:mz 3.000269e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 6.32e+03 ;
+            mbo:mz 3.010345e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.371e+02 ;
+            mbo:mz 4.300894e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 5.907e+03 ;
+            mbo:mz 4.460841e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 934 ],
+        [ mbo:intensity 3.211e+03 ;
+            mbo:mz 4.47093e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 508 ],
+        [ mbo:intensity 4.996e+02 ;
+            mbo:mz 5.931506e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 79 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.931506e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0046900000-73a97445a5429fdde45b" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Quercetin-3,7-O-alpha-L-dirhamnopyranoside; LC-ESI-QTOF; MS2; CE:30 V; [M-H]-" .
+

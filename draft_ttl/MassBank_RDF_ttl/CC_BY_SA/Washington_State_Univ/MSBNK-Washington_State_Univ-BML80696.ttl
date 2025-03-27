@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80696 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80696" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "3.073" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Adenosine 5'-succinate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.671128e+02 ;
+            rdfs:seeAlso cas:102029-71-0,
+                chemspider:2569684,
+                pubchem:CID3322184 ;
+            schema:inChI "InChI=1S/C14H17N5O7/c15-12-9-13(17-4-16-12)19(5-18-9)14-11(24)10(23)6(26-14)3-25-8(22)2-1-7(20)21/h4-6,10-11,14,23-24H,1-3H2,(H,20,21)(H2,15,16,17)" ;
+            schema:inChIKey inchikey:SOVSEJILHKLDOS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H17N5O7" ;
+            schema:name "Adenosine 5'-succinate" ;
+            schema:smiles "C1=NC2=C(C(=N1)N)N=CN2C3C(C(C(O3)COC(=O)CCC(=O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.0491e+05 ;
+            mbo:mz 3.661055e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-014i-0009000000-7ecf3290c76ae4c752d3" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.417" ;
+    skos:definition "Adenosine 5'-succinate; LC-ESI-QTOF; MS; NEGATIVE" .
+

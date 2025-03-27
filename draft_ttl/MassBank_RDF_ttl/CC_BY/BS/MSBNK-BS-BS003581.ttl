@@ -1,0 +1,68 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS003581 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2013-11-22)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS003581" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "745.2 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3',4'-Dimethoxy-7-hydroxyflavanone" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 2.980841e+02 ;
+            rdfs:seeAlso pubchem:CID5378518 ;
+            schema:inChI "InChI=1S/C17H14O5/c1-20-14-6-3-10(7-17(14)21-2)15-9-13(19)12-5-4-11(18)8-16(12)22-15/h3-9,18H,1-2H3" ;
+            schema:inChIKey inchikey:MEDOAKSPIIOKFU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H14O5" ;
+            schema:name "3',4'-Dimethoxy-7-hydroxyflavanone" ;
+            schema:smiles "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C=C3)O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 2e+01 ;
+            mbo:mz 2.960676e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.110921e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.81e+02 ;
+            mbo:mz 3.12095e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 181 ],
+        [ mbo:intensity 1.9e+01 ;
+            mbo:mz 3.13097e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 3.2e+01 ;
+            mbo:mz 6.231899e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.1e+01 ;
+            mbo:mz 6.241929e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0009000000-fee0a9e3178a94bb0612" ;
+    skos:definition "3',4'-Dimethoxy-7-hydroxyflavanone; LC-ESI-QTOF; MS; CE:10 eV; [M-H]-" .
+

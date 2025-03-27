@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ358903 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ358903" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "11.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tri-n-butylphosphine oxide",
+                "Tributylphosphine oxide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.181799e+02 ;
+            rdfs:seeAlso cas:814-29-9,
+                chemspider:12586,
+                pubchem:CID13138 ;
+            schema:inChI "InChI=1S/C12H27OP/c1-4-7-10-14(13,11-8-5-2)12-9-6-3/h4-12H2,1-3H3" ;
+            schema:inChIKey inchikey:MNZAKDODWSQONA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H27OP" ;
+            schema:name "Tri-n-butylphosphine oxide",
+                "Tributylphosphine oxide" ;
+            schema:smiles "CCCCP(=O)(CCCC)CCCC" ] ;
+    mbo:has_peak [ mbo:intensity 1.567356e+07 ;
+            mbo:mz 7.80226e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.37271e+07 ;
+            mbo:mz 9.20384e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.928433e+06 ;
+            mbo:mz 1.060541e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.93528e+06 ;
+            mbo:mz 1.2007e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.229477e+06 ;
+            mbo:mz 1.611089e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.29297e+07 ;
+            mbo:mz 1.631246e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.610748e+06 ;
+            mbo:mz 1.751247e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 8.78091e+06 ;
+            mbo:mz 1.911557e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.598128e+09 ;
+            mbo:mz 2.191872e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.191869e+02 ;
+            mbo:precursor_mz 2.191872e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-014i-0090000000-ebdda7fae10c09dd184a" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3589" ;
+    skos:definition "Tributylphosphine oxide; LC-ESI-QFT; MS2; CE: 45; R=35000; [M+H]+" .
+

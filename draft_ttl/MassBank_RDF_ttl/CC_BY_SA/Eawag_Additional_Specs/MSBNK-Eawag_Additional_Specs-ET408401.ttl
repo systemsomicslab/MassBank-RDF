@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET408401 a mbo:MassSpectrum ;
+    dcterms:creator "B. Clerc, R. Gulde, B. Lauper [com],  C. McArdell, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2020-12-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET408401" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde et al. 2020, Formation of transformation products during ozonation of secondary wastewater effluent and their fate in post-treatment: From laboratory- to full-scale, Water Research" ] ;
+    dcterms:rights "Copyright (C) Eawag 2020 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "80 % (nominal)" ;
+            mbo:column_name "C18 Atlantis T3 5 um, 3x150 mm, Waters" ;
+            mbo:flow_gradient "260/40 at 0 min, 260/40 at 5 min, 15/285 at 20 min, 15/285 at 29 min, 260/40 at 29.5 min, 260/40 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.030 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Methyl-2-pentanamidobutanoic acid",
+                "VAL_n_200.1289_18.1",
+                "pentanoylvaline" ;
+            mbo:ch_compound_class "identified ozonation transformation product" ;
+            mbo:ch_exact_mass 2.011365e+02 ;
+            rdfs:seeAlso chemspider:3024621,
+                pubchem:CID3797167 ;
+            schema:inChI "InChI=1S/C10H19NO3/c1-4-5-6-8(12)11-9(7(2)3)10(13)14/h7,9H,4-6H2,1-3H3,(H,11,12)(H,13,14)" ;
+            schema:inChIKey inchikey:KYADTFSCDZLZBP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H19NO3" ;
+            schema:name "3-Methyl-2-pentanamidobutanoic acid",
+                "VAL_n_200.1289_18.1",
+                "pentanoylvaline" ;
+            schema:smiles "CC(C(C(O)=O)NC(CCCC)=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.8242e+03 ;
+            mbo:mz 5.70343e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 406 ],
+        [ mbo:intensity 2.2865e+03 ;
+            mbo:mz 5.80297e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 329 ],
+        [ mbo:intensity 5.5887e+03 ;
+            mbo:mz 6.84811e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 803 ],
+        [ mbo:intensity 6.9498e+03 ;
+            mbo:mz 1.391128e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.10037e+01 ;
+            mbo:precursor_mz 2.001292e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-05n0-9500000000-f588ffd5da84e01103eb" ;
+    rdfs:comment "UCHEM_ID 4084" ;
+    skos:definition "VAL_n_200.1289_18.1; LC-ESI-QFT; MS2; CE: 80%; R=17500; [M-H]-" .
+

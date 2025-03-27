@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET310257 a mbo:MassSpectrum ;
+    dcterms:creator "Michael Stravs, Francesco Pomati, Juliane Hollender" ;
+    dcterms:date "2016-12-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET310257" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Michael Stravs @ Eawag under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive + Thermo Scientific" ;
+            mbo:collision_energy "120 % (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "87/13 at 0 min, 87/13 at 5 min, 5/95 at 20 min, 5/95 at 29 min, 87/13 at 29.5 min, 87/13 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "16.758 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "SMZ-Pt" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.281015e+02 ;
+            rdfs:seeAlso pubchem:CID137195719 ;
+            schema:inChI "InChI=1S/C17H16N8O4S/c1-9-6-13(24-29-9)25-30(27,28)12-4-2-10(3-5-12)19-7-11-8-20-15-14(21-11)16(26)23-17(18)22-15/h2-6,8,19H,7H2,1H3,(H,24,25)(H3,18,20,22,23,26)" ;
+            schema:inChIKey inchikey:LVUVWJASQQPDSL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H16N8O4S" ;
+            schema:name "SMZ-Pt" ;
+            schema:smiles "CC1=CC(NS(=O)(C2=CC=C(NCC3=NC(C(NC(N)=N4)=O)=C4N=C3)C=C2)=O)=NO1" ] ;
+    mbo:has_peak [ mbo:intensity 2.7103e+03 ;
+            mbo:mz 6.39623e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 185 ],
+        [ mbo:intensity 1.46624e+04 ;
+            mbo:mz 6.60097e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.033e+03 ;
+            mbo:mz 1.320444e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 207 ],
+        [ mbo:intensity 2.0441e+03 ;
+            mbo:mz 3.010721e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 139 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.10036e+01 ;
+            mbo:precursor_mz 4.270942e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-9101000000-0f8a5c0f52c39bee34c5" ;
+    rdfs:comment "ALGAE_TP_ID 3102" ;
+    skos:definition "SMZ-Pt; LC-ESI-QFT; MS2; CE: 120%; R=17500; [M-H]-" .
+

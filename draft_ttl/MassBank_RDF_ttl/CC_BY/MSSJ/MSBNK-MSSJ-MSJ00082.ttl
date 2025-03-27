@@ -1,0 +1,61 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00082 a mbo:MassSpectrum ;
+    dcterms:creator "Motoshi Sakakura, Application Development, AMR, Tokyo, Japan" ;
+    dcterms:date "2018-12-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00082" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Motoshi Sakakura, J. Mass Spectrom. Soc. Jpn., 66(1), 15-24 (2018)." ] ;
+    dcterms:rights "Motoshi Sakakura, Application Development, AMR, Tokyo, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LCMS-2020 (SHIMADZU Corp., Kyoto, Japan) coupled to Vapur Interface (AMR. Inc., Tokyo, Japan)." ;
+            mbo:instrument_type "APCI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Azulene",
+                "Cyclopentacycloheptene" ;
+            mbo:ch_compound_class "Natural products; Monoterpenes" ;
+            mbo:ch_exact_mass 1.280626e+02 ;
+            rdfs:seeAlso chemspider:8876,
+                pubchem:CID9231 ;
+            schema:inChI "InChI=1S/C10H8/c1-2-5-9-7-4-8-10(9)6-3-1/h1-8H" ;
+            schema:inChIKey inchikey:CUFNKYGDVFVPHO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8" ;
+            schema:name "Azulene",
+                "Cyclopentacycloheptene" ;
+            schema:smiles "C1=CC=C2C=CC=C2C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 2.5215e+05 ;
+            mbo:mz 1.2902e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.9916e+04 ;
+            mbo:mz 1.3008e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 2.4698e+04 ;
+            mbo:mz 1.4498e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 98 ],
+        [ mbo:intensity 1.4333e+04 ;
+            mbo:mz 3.763e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 57 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-0900000000-e2aa8d221bfd7e496dd1" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 16HP2005 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Azulene; APCI-Q; MS; Positive; DART" .
+

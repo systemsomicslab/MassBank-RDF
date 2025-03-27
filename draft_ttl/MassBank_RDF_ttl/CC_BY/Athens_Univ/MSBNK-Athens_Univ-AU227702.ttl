@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU227702 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2018-12-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU227702" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.565 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Hydroxymidazolam",
+                "[8-chloro-6-(2-fluorophenyl)-4H-imidazo[1,5-a][1,4]benzodiazepin-1-yl]methanol",
+                "alpha-Hydroxymidazolam" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.410731e+02 ;
+            rdfs:seeAlso cas:59468-90-5,
+                chemspider:97043,
+                pubchem:CID107917 ;
+            schema:inChI "InChI=1S/C18H13ClFN3O/c19-11-5-6-16-14(7-11)18(13-3-1-2-4-15(13)20)22-9-12-8-21-17(10-24)23(12)16/h1-8,24H,9-10H2" ;
+            schema:inChIKey inchikey:QHSMEGADRFZVNE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H13ClFN3O" ;
+            schema:name "1-Hydroxymidazolam",
+                "[8-chloro-6-(2-fluorophenyl)-4H-imidazo[1,5-a][1,4]benzodiazepin-1-yl]methanol",
+                "alpha-Hydroxymidazolam" ;
+            schema:smiles "C1C2=CN=C(N2C3=C(C=C(C=C3)Cl)C(=N1)C4=CC=CC=C4F)CO" ] ;
+    mbo:has_peak [ mbo:intensity 3.0268e+04 ;
+            mbo:mz 2.030357e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 2.1726e+05 ;
+            mbo:mz 3.440776e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 263 ],
+        [ mbo:intensity 8.308e+03 ;
+            mbo:mz 2.050327e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 7.596e+03 ;
+            mbo:mz 2.970581e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.997e+05 ;
+            mbo:mz 3.240695e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 363 ],
+        [ mbo:intensity 4.3796e+04 ;
+            mbo:mz 3.250725e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 7.3784e+04 ;
+            mbo:mz 3.260667e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 8.448e+03 ;
+            mbo:mz 3.270695e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 8.25172e+05 ;
+            mbo:mz 3.420802e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.46e+05 ;
+            mbo:mz 3.430833e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 177 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.4208e+02 ;
+            mbo:precursor_mz 3.420804e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0006-0009000000-4f73303d4a3eeb4373c7" ;
+    rdfs:comment "INTERNAL_ID 2277" ;
+    skos:definition "alpha-Hydroxymidazolam; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

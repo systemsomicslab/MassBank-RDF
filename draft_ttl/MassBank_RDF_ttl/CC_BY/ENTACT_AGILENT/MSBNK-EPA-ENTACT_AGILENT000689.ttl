@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000689 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000689" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Morpholinoethylamine",
+                "DTXSID4044408" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.301106e+02 ;
+            rdfs:seeAlso cas:2038-03-1,
+                pubchem:CID408285 ;
+            schema:inChI "InChI=1S/C6H14N2O/c7-1-2-8-3-5-9-6-4-8/h1-7H2" ;
+            schema:inChIKey inchikey:RWIVICVCHVMHMU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H14N2O" ;
+            schema:name "2-Morpholinoethylamine",
+                "DTXSID4044408" ;
+            schema:smiles "NCCN1CCOCC1" ] ;
+    mbo:has_peak [ mbo:intensity 3.510013e+00 ;
+            mbo:mz 4.404948e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 2.650235e+00 ;
+            mbo:mz 7.006513e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.061199e+00 ;
+            mbo:mz 8.408078e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.143666e+00 ;
+            mbo:mz 8.807569e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.140913e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.342347e+01 ;
+            mbo:mz 1.311179e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 434 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.311179e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0900000000-772393fa4b87be192a6a" ;
+    skos:definition "2-Morpholinoethylamine; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

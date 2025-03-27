@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002385 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002385" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Evista",
+                "Keoxifene",
+                "Raloxifene" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.731661e+02 ;
+            rdfs:seeAlso cas:84449-90-1,
+                chemspider:4859 ;
+            schema:inChI "InChI=1S/C28H27NO4S/c30-21-8-4-20(5-9-21)28-26(24-13-10-22(31)18-25(24)34-28)27(32)19-6-11-23(12-7-19)33-17-16-29-14-2-1-3-15-29/h4-13,18,30-31H,1-3,14-17H2" ;
+            schema:inChIKey inchikey:GZUITABIAKMVPG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C28H27NO4S" ;
+            schema:name "Evista",
+                "Keoxifene",
+                "Raloxifene" ;
+            schema:smiles "OC1C=CC(=CC=1)C1SC2=CC(O)=CC=C2C=1C(=O)C1C=CC(=CC=1)OCCN1CCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 4.499655e+00 ;
+            mbo:mz 3.600462e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 8.997982e+00 ;
+            mbo:mz 3.61054e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.721588e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.721588e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0001900000-bcd8afbd8eccb34afb0a" ;
+    skos:definition "Raloxifene; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

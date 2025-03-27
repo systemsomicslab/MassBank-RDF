@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001051 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001051" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[4-(Diethylamino)-2-hydroxybenzoyl]benzoic acid",
+                "DTXSID4027604" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.131314e+02 ;
+            rdfs:seeAlso cas:5809-23-4,
+                pubchem:CID79878 ;
+            schema:inChI "InChI=1S/C18H19NO4/c1-3-19(4-2)12-9-10-15(16(20)11-12)17(21)13-7-5-6-8-14(13)18(22)23/h5-11,20H,3-4H2,1-2H3,(H,22,23)" ;
+            schema:inChIKey inchikey:FQNKTJPBXAZUGC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H19NO4" ;
+            schema:name "2-[4-(Diethylamino)-2-hydroxybenzoyl]benzoic acid",
+                "DTXSID4027604" ;
+            schema:smiles "CCN(CC)C1=CC(O)=C(C=C1)C(=O)C1C=CC=CC=1C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.322607e+00 ;
+            mbo:mz 1.210295e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.456861e+01 ;
+            mbo:mz 1.641081e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 146 ],
+        [ mbo:intensity 2.137762e+01 ;
+            mbo:mz 2.240717e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 214 ],
+        [ mbo:intensity 5.306923e+00 ;
+            mbo:mz 2.390952e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 2.657279e+00 ;
+            mbo:mz 2.40103e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 3.288986e+00 ;
+            mbo:mz 2.501237e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.681343e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.121241e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-014i-0190000000-68d5a5a1e79824f015de" ;
+    skos:definition "2-[4-(Diethylamino)-2-hydroxybenzoyl]benzoic acid; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000094 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-14, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000094" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1424.469 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6,7-Dihydrocapsaicin",
+                "Capsaicin, dihydro-",
+                "Dihydrocapsaicin",
+                "Nonanamide, 8-methyl-N-vanillyl-",
+                "Nonanamide, N-[(4-hydroxy-3-methoxyphenyl)methyl]-8-methyl-" ;
+            mbo:ch_compound_class "Natural Product; Capsaicinoid" ;
+            mbo:ch_exact_mass 3.072147e+02 ;
+            rdfs:seeAlso cas:19408-84-5,
+                pubchem:CID107982 ;
+            schema:inChI "InChI=1S/C18H29NO3/c1-14(2)8-6-4-5-7-9-18(21)19-13-15-10-11-16(20)17(12-15)22-3/h10-12,14,20H,4-9,13H2,1-3H3,(H,19,21)" ;
+            schema:inChIKey inchikey:XJQPQKLURWNAAH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H29NO3" ;
+            schema:name "6,7-Dihydrocapsaicin",
+                "Capsaicin, dihydro-",
+                "Dihydrocapsaicin",
+                "Nonanamide, 8-methyl-N-vanillyl-",
+                "Nonanamide, N-[(4-hydroxy-3-methoxyphenyl)methyl]-8-methyl-" ;
+            schema:smiles "CC(C)CCCCCCC(=O)NCc(c1)cc(OC)c(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 4.980628e+08 ;
+            mbo:mz 3.062068e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.599916e+07 ;
+            mbo:mz 3.072102e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 1.280702e+08 ;
+            mbo:mz 3.662285e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 257 ],
+        [ mbo:intensity 3.389921e+07 ;
+            mbo:mz 3.672305e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.628936e+07 ;
+            mbo:mz 6.11407e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 4.366569e+07 ;
+            mbo:mz 6.134202e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 88 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-d78b5f33ed27ef76b59a" ;
+    skos:definition "Dihydrocapsaicin; LC-ESI-ITTOF; MS; [M-H]-" .
+

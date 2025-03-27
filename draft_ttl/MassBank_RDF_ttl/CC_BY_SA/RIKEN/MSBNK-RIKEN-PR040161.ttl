@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR040161 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2008-02-14, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR040161" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Callistephin",
+                "pelargonidin 3-O-beta-D-glucopyranoside",
+                "pelargonidin-3-O-glucoside" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 4.331135e+02 ;
+            rdfs:seeAlso cas:18466-51-8,
+                knapsack:C00006630,
+                pubchem:CID443648 ;
+            schema:inChI "InChI=1S/C21H20O10/c22-8-16-17(26)18(27)19(28)21(31-16)30-15-7-12-13(25)5-11(24)6-14(12)29-20(15)9-1-3-10(23)4-2-9/h1-7,16-19,21-22,26-28H,8H2,(H2-,23,24,25)/p+1/t16-,17-,18+,19-,21-/m1/s1" ;
+            schema:inChIKey inchikey:ABVCUBUIXWJYSE-GQUPQBGVSA-O ;
+            schema:molecularFormula "[C21H21O10]+" ;
+            schema:name "Callistephin",
+                "pelargonidin 3-O-beta-D-glucopyranoside",
+                "pelargonidin-3-O-glucoside" ;
+            schema:smiles "OCC(O1)C(O)C(O)C(O)C1Oc(c3)c([o+1]c(c4)c(c(O)cc(O)4)3)c(c2)ccc(O)c2" ] ;
+    mbo:has_peak [ mbo:intensity 3.661e+04 ;
+            mbo:mz 2.710656e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.089e+03 ;
+            mbo:mz 2.711515e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 1.937e+03 ;
+            mbo:mz 2.720694e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 53 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0090000000-8c4c8cb400c69dc5402f" ;
+    skos:definition "Callistephin; LC-ESI-QTOF; MS2; CE:30 V; [M]+" .
+

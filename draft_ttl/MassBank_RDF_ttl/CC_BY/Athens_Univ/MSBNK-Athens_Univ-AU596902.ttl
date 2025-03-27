@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU596902 a mbo:MassSpectrum ;
+    dcterms:creator "Varvara Nikolopoulou, Anthi Panara, Reza Aalizadeh, Nikolaos Thomaidis" ;
+    dcterms:date "2020-04-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU596902" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2020 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.396 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[2-[19-amino-6-(3,4-dicarboxybutanoyloxy)-16,18-dihydroxy-5,9-dimethylicosan-7-yl]oxy-2-oxoethyl]butanedioic acid",
+                "Fumonisin B2",
+                "Fumonisin B2, Fusarium moniliforme" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 7.053936e+02 ;
+            rdfs:seeAlso cas:116355-84-1,
+                chemspider:3314,
+                pubchem:CID3432 ;
+            schema:inChI "InChI=1S/C34H59NO14/c1-5-6-12-21(3)32(49-31(43)18-24(34(46)47)16-29(40)41)27(48-30(42)17-23(33(44)45)15-28(38)39)14-20(2)11-9-7-8-10-13-25(36)19-26(37)22(4)35/h20-27,32,36-37H,5-19,35H2,1-4H3,(H,38,39)(H,40,41)(H,44,45)(H,46,47)" ;
+            schema:inChIKey inchikey:UXDPXZQHTDAXOZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C34H59NO14" ;
+            schema:name "2-[2-[19-amino-6-(3,4-dicarboxybutanoyloxy)-16,18-dihydroxy-5,9-dimethylicosan-7-yl]oxy-2-oxoethyl]butanedioic acid",
+                "Fumonisin B2",
+                "Fumonisin B2, Fusarium moniliforme" ;
+            schema:smiles "CCCCC(C)C(C(CC(C)CCCCCCC(CC(C(C)N)O)O)OC(=O)CC(CC(=O)O)C(=O)O)OC(=O)CC(CC(=O)O)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.28e+02 ;
+            mbo:mz 3.36326e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 4.8e+02 ;
+            mbo:mz 3.543349e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 3.68e+02 ;
+            mbo:mz 5.123553e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 5e+02 ;
+            mbo:mz 5.30368e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 7.64e+02 ;
+            mbo:mz 6.883881e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 143 ],
+        [ mbo:intensity 3.76e+02 ;
+            mbo:mz 6.893807e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 5.34e+03 ;
+            mbo:mz 7.064031e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.064006e+02 ;
+            mbo:precursor_mz 7.064008e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-0001011900-cccb8a9890ae1d6c0152" ;
+    rdfs:comment "INTERNAL_ID 5969" ;
+    skos:definition "Fumonisin B2; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

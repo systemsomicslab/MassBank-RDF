@@ -1,0 +1,62 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000404 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham" ;
+    dcterms:date "2023-04-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000404" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100% (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.012 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3-Methyl-4-(2,2,2-trifluoroethoxy)pyridin-2-yl)methanol",
+                "[3-methyl-4-(2,2,2-trifluoroethoxy)pyridin-2-yl]methanol",
+                "lansoprazole_BTP_M5" ;
+            mbo:ch_compound_class "N/A; Biotransformation product" ;
+            mbo:ch_exact_mass 2.210664e+02 ;
+            rdfs:seeAlso cas:103577-66-8,
+                chemspider:9404808,
+                pubchem:CID11229760 ;
+            schema:inChI "InChI=1S/C9H10F3NO2/c1-6-7(4-14)13-3-2-8(6)15-5-9(10,11)12/h2-3,14H,4-5H2,1H3" ;
+            schema:inChIKey inchikey:GNILTGRCVCMPFJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H10F3NO2" ;
+            schema:name "(3-Methyl-4-(2,2,2-trifluoroethoxy)pyridin-2-yl)methanol",
+                "[3-methyl-4-(2,2,2-trifluoroethoxy)pyridin-2-yl]methanol",
+                "lansoprazole_BTP_M5" ;
+            schema:smiles "CC1=C(C=CN=C1CO)OCC(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 1.82991e+04 ;
+            mbo:mz 4.20338e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.220735e+02 ;
+            mbo:precursor_mz 2.220736e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0006-9000000000-f1fb6b9ea966d1fad31b" ;
+    rdfs:comment "INTERNAL_ID 4230" ;
+    skos:definition "lansoprazole_BTP_M5; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

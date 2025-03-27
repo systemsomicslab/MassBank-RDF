@@ -1,0 +1,68 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA280814 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA280814" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "9.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-6-(4-hydroxy-3-keto-6-methoxy-7-methyl-phthalan-5-yl)-4-methyl-hex-4-enoic acid",
+                "Mycophenolic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.20126e+02 ;
+            rdfs:seeAlso cas:24280-93-1,
+                chemspider:4122,
+                pubchem:CID4272 ;
+            schema:inChI "InChI=1S/C17H20O6/c1-9(5-7-13(18)19)4-6-11-15(20)14-12(8-23-17(14)21)10(2)16(11)22-3/h4,20H,5-8H2,1-3H3,(H,18,19)/b9-4+" ;
+            schema:inChIKey inchikey:HPNSFSBZBAHARI-RUDMXATFSA-N ;
+            schema:molecularFormula "C17H20O6" ;
+            schema:name "(E)-6-(4-hydroxy-3-keto-6-methoxy-7-methyl-phthalan-5-yl)-4-methyl-hex-4-enoic acid",
+                "Mycophenolic acid" ;
+            schema:smiles "c12c(c(c(C\\C=C(\\CCC(O)=O)C)c(c1C)OC)O)C(=O)OC2" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 6.2771e+03 ;
+            mbo:mz 2.75127e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.169818e+06 ;
+            mbo:mz 3.031227e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.805038e+05 ;
+            mbo:mz 3.211333e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 29 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.211329e+02 ;
+            mbo:precursor_mz 3.211333e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-0009000000-77bcd201c9d0349c0389" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2808" ;
+    skos:definition "Mycophenolic acid; LC-ESI-ITFT; MS2; CE: 35%; R=30000; [M+H]+" .
+

@@ -1,0 +1,107 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00632 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2021-02-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00632" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kenji Mori and Kazuaki Akasaka, Tetrahedron: Asymmetry 27 (2016) 182-187, DOI:10.1016/j.tetasy.2016.01.014." ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.05 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4S)-4-Methyloctanoic acid" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 1.581307e+02 ;
+            rdfs:seeAlso cas:128342-72-3,
+                chemspider:5365044,
+                pubchem:CID6997335 ;
+            schema:inChI "InChI=1S/C9H18O2/c1-3-4-5-8(2)6-7-9(10)11/h8H,3-7H2,1-2H3,(H,10,11)/t8-/m0/s1" ;
+            schema:inChIKey inchikey:LEGGANXCVQPIAI-QMMMGPOBSA-N ;
+            schema:molecularFormula "C9H18O2" ;
+            schema:name "(4S)-4-Methyloctanoic acid" ;
+            schema:smiles "O=C(O)CC[C@H](CCCC)C" ] ;
+    mbo:has_peak [ mbo:intensity 5.03e+00 ;
+            mbo:mz 2.904e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1.08e+00 ;
+            mbo:mz 1.41708e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.6e+00 ;
+            mbo:mz 1.57125e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.58131e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.9e-01 ;
+            mbo:mz 1.58322e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.845e+01 ;
+            mbo:mz 1.59136e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 184 ],
+        [ mbo:intensity 2.17e+00 ;
+            mbo:mz 1.60137e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.24e+00 ;
+            mbo:mz 5.8399e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.23e+00 ;
+            mbo:mz 8.5104e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 5.12e+00 ;
+            mbo:mz 9.9116e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.488e+01 ;
+            mbo:mz 1.01059e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 149 ],
+        [ mbo:intensity 1.28e+00 ;
+            mbo:mz 1.0207e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.7e+00 ;
+            mbo:mz 1.22108e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.41e+00 ;
+            mbo:mz 1.29091e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.73e+00 ;
+            mbo:mz 1.41129e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 17 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-0788a9fb665f1ab7cc1e" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "(4S)-4-Methyloctanoic acid; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

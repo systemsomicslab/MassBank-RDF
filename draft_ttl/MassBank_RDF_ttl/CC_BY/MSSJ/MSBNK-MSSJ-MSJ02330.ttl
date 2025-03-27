@@ -1,0 +1,70 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02330 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2022-03-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02330" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ExionLC AD, AB Sciex LLC, USA; X500R QTOF, AB Sciex LLC, USA." ;
+            mbo:collision_energy "20 V" ;
+            mbo:column_name "AQ-C18HP 3 microm, 2.1 mm × 150 mm, GL Science (Tokyo Japan)" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 3 min, 0/100 at 13 min, 0/100 at 23 min, 95/5 at 23.1 min, 95/5 at 28 min" ;
+            mbo:flow_rate "200 microl/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "18.3 min" ;
+            mbo:solvent "A water with 2 mM Ammonium bicarbonate",
+                "B methanol with 2 mM Ammmonium bicarbonate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Silafluofen" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 4.081921e+02 ;
+            rdfs:seeAlso cas:105024-66-6,
+                chemspider:83448,
+                pubchem:CID92430 ;
+            schema:inChI "InChI=1S/C25H29FO2Si/c1-4-27-21-13-15-23(16-14-21)29(2,3)18-8-9-20-12-17-24(26)25(19-20)28-22-10-6-5-7-11-22/h5-7,10-17,19H,4,8-9,18H2,1-3H3" ;
+            schema:inChIKey inchikey:HPYNBECUCCGGPA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H29FO2Si" ;
+            schema:name "Silafluofen" ;
+            schema:smiles "CCOc1ccc([Si](C)(C)CCCc2ccc(F)c(Oc3ccccc3)c2)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 9.571e-01 ;
+            mbo:mz 1.680572e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 7.797e-01 ;
+            mbo:mz 1.810656e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.87124e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.519e-01 ;
+            mbo:mz 2.871575e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 7.666e+00 ;
+            mbo:mz 2.881294e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 77 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.262259e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000i-0090000000-fb7453602b07c0351ed3" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 22HP8019 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Silafluofen; LC-ESI-QTOF; MS2; ESI; POSITIVE; [M+NH4]+; CE 20 V" .
+

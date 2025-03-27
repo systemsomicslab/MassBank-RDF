@@ -1,0 +1,168 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000091 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, J. David Miller, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000091" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "20(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.82" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chaetoglobosin C" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 5.282624e+02 ;
+            rdfs:seeAlso cas:50645-76-6,
+                chemspider:10235105,
+                knapsack:C00011309,
+                pubchem:CID102093917 ;
+            schema:inChI "InChI=1S/C32H36N2O5/c1-17-8-7-10-22-29-31(4,39-29)19(3)27-24(15-20-16-33-23-11-6-5-9-21(20)23)34-30(38)32(22,27)26(36)13-12-25(35)28(37)18(2)14-17/h5-7,9-11,14,16-17,19,22,24,27,29,33H,8,12-13,15H2,1-4H3,(H,34,38)/b10-7-,18-14-/t17-,19-,22-,24-,27-,29-,31+,32+/m0/s1" ;
+            schema:inChIKey inchikey:RIZAHVBYKWUPHQ-MASOQXDXSA-N ;
+            schema:molecularFormula "C32H36N2O5" ;
+            schema:name "Chaetoglobosin C" ;
+            schema:smiles "C[C@H]/1C/C=C\\[C@H]2[C@H]3[C@](O3)([C@H]([C@@H]4[C@@]2(C(=O)CCC(=O)C(=O)/C(=C1)/C)C(=O)N[C@H]4CC5=CNC6=CC=CC=C65)C)C" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 1.327888e+05 ;
+            mbo:mz 1.300651e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.703795e+04 ;
+            mbo:mz 4.002119e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 203 ],
+        [ mbo:intensity 5.836291e+03 ;
+            mbo:mz 4.932486e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 2.892082e+04 ;
+            mbo:mz 5.112591e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 218 ],
+        [ mbo:intensity 1.099334e+05 ;
+            mbo:mz 5.292697e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 827 ],
+        [ mbo:intensity 1.824039e+04 ;
+            mbo:mz 1.320808e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 7.380359e+03 ;
+            mbo:mz 1.850709e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 1.845396e+04 ;
+            mbo:mz 2.451172e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 1.557869e+04 ;
+            mbo:mz 3.101438e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 3.155159e+04 ;
+            mbo:mz 3.281543e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 237 ],
+        [ mbo:intensity 5.01338e+03 ;
+            mbo:mz 3.311778e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 5.456584e+03 ;
+            mbo:mz 3.331935e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 2.174179e+04 ;
+            mbo:mz 3.822013e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 164 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.32e+00 ] ;
+            mbo:mz 1.300647e+02 ;
+            mbo:tentative_formula "C9H8N1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.88e+00 ] ;
+            mbo:mz 4.002111e+02 ;
+            mbo:tentative_formula "C23H30N1O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.65e+00 ] ;
+            mbo:mz 4.932453e+02 ;
+            mbo:tentative_formula "C32H33N2O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.43e+00 ] ;
+            mbo:mz 5.112579e+02 ;
+            mbo:tentative_formula "C32H35N2O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.85e+00 ] ;
+            mbo:mz 5.292682e+02 ;
+            mbo:tentative_formula "C32H37N2O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.39e+00 ] ;
+            mbo:mz 1.320806e+02 ;
+            mbo:tentative_formula "C9H10N1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.45e+00 ] ;
+            mbo:mz 1.850703e+02 ;
+            mbo:tentative_formula "C11H9N2O1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.74e+00 ] ;
+            mbo:mz 2.451168e+02 ;
+            mbo:tentative_formula "C15H17O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.17e+00 ] ;
+            mbo:mz 3.101431e+02 ;
+            mbo:tentative_formula "C19H20N1O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.77e+00 ] ;
+            mbo:mz 3.281531e+02 ;
+            mbo:tentative_formula "C19H22N1O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.6e-01 ] ;
+            mbo:mz 3.31178e+02 ;
+            mbo:tentative_formula "C19H25N1O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4e+00 ] ;
+            mbo:mz 3.331948e+02 ;
+            mbo:tentative_formula "C19H27N1O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.38e+00 ] ;
+            mbo:mz 3.822e+02 ;
+            mbo:tentative_formula "C23H28N1O4+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.300647e+02 ;
+            mbo:precursor_mz 5.292692e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-003r-0914170000-3a94354a228a768cdf34" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Chaetoglobosin C; LC-ESI-ITFT; MS2; CE: 20; R=17500; [M+H]+" .
+

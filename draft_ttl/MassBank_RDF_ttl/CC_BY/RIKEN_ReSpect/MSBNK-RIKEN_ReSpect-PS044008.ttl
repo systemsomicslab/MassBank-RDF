@@ -1,0 +1,65 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS044008 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS044008" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-O-(2-O-beta-D-Glucopyranuronosyl-alpha-D-glucopyranuronosyl)-18beta-glycyrrhetinic acid",
+                "Glycyrrhizin",
+                "glycyrrhizic Acid" ;
+            mbo:ch_compound_class "CLASS1 Terpenoid CLASS2 Triterpenoid CLASS3 Glycyrrhetinic acid" ;
+            mbo:ch_exact_mass 8.22942e+02 ;
+            rdfs:seeAlso cas:1405-86-3,
+                pubchem:CID14982 ;
+            schema:inChI "InChI=1S/C42H62O16/c1-37(2)21-8-11-42(7)31(20(43)16-18-19-17-39(4,36(53)54)13-12-38(19,3)14-15-41(18,42)6)40(21,5)10-9-22(37)55-35-30(26(47)25(46)29(57-35)33(51)52)58-34-27(48)23(44)24(45)28(56-34)32(49)50/h16,19,21-31,34-35,44-48H,8-15,17H2,1-7H3,(H,49,50)(H,51,52)(H,53,54)" ;
+            schema:inChIKey inchikey:LPLVUJXQOOQHMX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C42H62O16" ;
+            schema:name "3-O-(2-O-beta-D-Glucopyranuronosyl-alpha-D-glucopyranuronosyl)-18beta-glycyrrhetinic acid",
+                "Glycyrrhizin",
+                "glycyrrhizic Acid" ;
+            schema:smiles "CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.55598e+05 ;
+            mbo:mz 8.2e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 9.30902e+05 ;
+            mbo:mz 8.21e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.07678e+05 ;
+            mbo:mz 8.22e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 974 ],
+        [ mbo:intensity 2.61845e+05 ;
+            mbo:mz 8.23e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 281 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.2197e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00di-0000000090-3707f7ac86205c6c34bf" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Glycyrrhizin, glycyrrhizic Acid, 3-O-(2-O-beta-D-Glucopyranuronosyl-alpha-D-glucopyranuronosyl)-18beta-glycyrrhetinic acid; LC-ESI-QQ; MS2" .
+

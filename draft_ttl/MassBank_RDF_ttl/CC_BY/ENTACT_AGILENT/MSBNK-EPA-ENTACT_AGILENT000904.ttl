@@ -1,0 +1,45 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000904 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000904" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Dehydrothio-4-toluidine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.400721e+02 ;
+            rdfs:seeAlso cas:92-36-4,
+                pubchem:CID7087 ;
+            schema:inChI "InChI=1S/C14H12N2S/c1-9-2-7-12-13(8-9)17-14(16-12)10-3-5-11(15)6-4-10/h2-8H,15H2,1H3" ;
+            schema:inChIKey inchikey:XRTJYEIMLZALBD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H12N2S" ;
+            schema:name "Dehydrothio-4-toluidine" ;
+            schema:smiles "CC1C=C2SC(=NC2=CC=1)C1C=CC(N)=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 2.410794e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.410794e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0006-0090000000-d6af3f28868651e75533" ;
+    skos:definition "Dehydrothio-4-toluidine; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

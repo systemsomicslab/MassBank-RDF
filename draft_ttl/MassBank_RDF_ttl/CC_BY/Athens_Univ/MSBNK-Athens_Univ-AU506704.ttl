@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU506704 a mbo:MassSpectrum ;
+    dcterms:creator "Chrysoula Kanakaki, Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2021-04-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU506704" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2021 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness, Restek" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "16.322 min" ;
+            mbo:solvent " ",
+                "A",
+                "H",
+                "e",
+                "i",
+                "l",
+                "m",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isophorone diisocyanate" ;
+            mbo:ch_compound_class "N/A; Food Contact Material" ;
+            mbo:ch_exact_mass 2.221368e+02 ;
+            rdfs:seeAlso cas:4098-71-9,
+                chemspider:147926,
+                pubchem:CID169132 ;
+            schema:inChI "InChI=1S/C12H18N2O2/c1-11(2)4-10(14-9-16)5-12(3,6-11)7-13-8-15/h10H,4-7H2,1-3H3" ;
+            schema:inChIKey inchikey:NIMLQBUJDJZYEJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H18N2O2" ;
+            schema:name "Isophorone diisocyanate" ;
+            schema:smiles "CC1(CC(CC(C1)(C)CN=C=O)N=C=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.12e+02 ;
+            mbo:mz 6.50397e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.72e+02 ;
+            mbo:mz 1.110441e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.256e+03 ;
+            mbo:mz 1.210287e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 367 ],
+        [ mbo:intensity 1.4288e+04 ;
+            mbo:mz 1.490258e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.64e+02 ;
+            mbo:mz 1.670389e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.490249e+02 ;
+            mbo:precursor_mz 2.231441e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-0900000000-870fddd59a25bcb23605" ;
+    rdfs:comment "INTERNAL_ID 5067" ;
+    skos:definition "Isophorone diisocyanate; GC-APCI-QTOF; MS2; CE: 40 eV; R=35000; [M+H]+" .
+

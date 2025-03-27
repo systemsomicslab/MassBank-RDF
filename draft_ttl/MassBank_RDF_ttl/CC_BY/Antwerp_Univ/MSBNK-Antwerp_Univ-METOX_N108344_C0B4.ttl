@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N108344_C0B4 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N108344_C0B4" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.219 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-[(1R,2S)-2-[(E,3S)-3-hydroxyoct-1-enyl]-5-oxocyclopent-3-en-1-yl]heptanoic acid",
+                "Prostaglandin A1" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.362301e+02 ;
+            rdfs:seeAlso cas:14152-28-4,
+                chemspider:4445196,
+                pubchem:CID5281912 ;
+            schema:inChI "InChI=1S/C20H32O4/c1-2-3-6-9-17(21)14-12-16-13-15-19(22)18(16)10-7-4-5-8-11-20(23)24/h12-18,21H,2-11H2,1H3,(H,23,24)/b14-12+/t16-,17-,18+/m0/s1" ;
+            schema:inChIKey inchikey:BGKHCLZFGPIKKU-LDDQNKHRSA-N ;
+            schema:molecularFormula "C20H32O4" ;
+            schema:name "7-[(1R,2S)-2-[(E,3S)-3-hydroxyoct-1-enyl]-5-oxocyclopent-3-en-1-yl]heptanoic acid",
+                "Prostaglandin A1" ;
+            schema:smiles "CCCCC[C@@H](/C=C/[C@H]1C=CC(=O)[C@@H]1CCCCCCC(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.75e+01 ;
+            mbo:mz 8.91354e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 7.5e+01 ;
+            mbo:mz 1.09161e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 143 ],
+        [ mbo:intensity 7.42e+01 ;
+            mbo:mz 2.229992e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 5.229e+02 ;
+            mbo:mz 2.230274e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.32e+01 ;
+            mbo:mz 2.230751e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 4.67e+01 ;
+            mbo:mz 2.231529e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 2.03e+01 ;
+            mbo:mz 2.829587e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.172126e+02 ;
+            mbo:precursor_mz 3.711995e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-0090000000-2b9cd50e34c07b2359f1" ;
+    rdfs:comment "INTERNAL_ID 1083" ;
+    skos:definition "Prostaglandin A1; LC-ESI-QTOF; MS2; CE: 40eV; R=7000; [M+Cl]-" .
+

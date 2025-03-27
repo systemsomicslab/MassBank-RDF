@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000954 a mbo:MassSpectrum ;
+    dcterms:creator "Piraud M, et al." ;
+    dcterms:date "2006-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000954" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Piraud, M.; Vianey-Saban, C.; Petritis, K.; Elfakir, C.; Steghens, J.-P.; Morla, A.; Bouchu, D. ESI-MS/MS Analysis of Underivatised Amino Acids: A New Tool for the Diagnosis of Inherited Disorders of Amino Acid Metabolism. Fragmentation Study of 79 Molecules of Biological Interest in Positive and Negative Ionisation Mode. Rapid Communications in Mass Spectrometry 2003, 17 (12), 1297–311. DOI:10.1002/rcm.1054" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API 2000 ESI-MS/MS system triple quadrupole mass spectrometer (Sciex Applied Biosystems, Toronto, Canada)" ;
+            mbo:collision_energy "16" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "H",
+                "M",
+                "O",
+                "e" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "L-Homocitrulline" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Homocitrulline" ;
+            mbo:ch_exact_mass 1.89215e+02 ;
+            rdfs:seeAlso cas:1190-49-4,
+                pubchem:CID65072 ;
+            schema:inChI "InChI=1S/C7H15N3O3/c8-5(6(11)12)3-1-2-4-10-7(9)13/h5H,1-4,8H2,(H,11,12)(H3,9,10,13)/t5-/m0/s1" ;
+            schema:inChIKey inchikey:XIGSAGMEBXLVJJ-YFKPBYRVSA-N ;
+            schema:molecularFormula "C7H15N3O3" ;
+            schema:name "L-Homocitrulline" ;
+            schema:smiles "N=C(O)NCCCC[C@H](N)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.1e+01 ;
+            mbo:mz 5.6e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 210 ],
+        [ mbo:intensity 5.3e+01 ;
+            mbo:mz 8.4e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 529 ],
+        [ mbo:intensity 2.1e+01 ;
+            mbo:mz 1e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 210 ],
+        [ mbo:intensity 7.5e+01 ;
+            mbo:mz 1.27e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 749 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.73e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.9e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-00gi-3900000000-de8bfbc0d5a64c1945a5" ;
+    rdfs:comment "732" ;
+    skos:definition "L-Homocitrulline; LC-ESI-QQ; MS2" .
+

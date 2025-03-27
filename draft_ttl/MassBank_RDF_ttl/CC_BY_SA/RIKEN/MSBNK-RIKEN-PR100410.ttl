@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100410 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100410" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Methylpyridinium-3-carboxylate",
+                "Betaine nicotinate",
+                "Caffearin",
+                "Coffearine",
+                "Gynesine",
+                "N-Methylnicotinate",
+                "N-Methylnicotinic acid betaine",
+                "Trigonelline" ;
+            mbo:ch_compound_class "Iminium betaine" ;
+            mbo:ch_exact_mass 1.370477e+02 ;
+            rdfs:seeAlso cas:535-83-1,
+                chemspider:5369,
+                knapsack:C00001555,
+                pubchem:CID5570 ;
+            schema:inChI "InChI=1S/C7H7NO2/c1-8-4-2-3-6(5-8)7(9)10/h2-5H,1H3" ;
+            schema:inChIKey inchikey:WWNNZCOKKKDOPX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H7NO2" ;
+            schema:name "1-Methylpyridinium-3-carboxylate",
+                "Betaine nicotinate",
+                "Caffearin",
+                "Coffearine",
+                "Gynesine",
+                "N-Methylnicotinate",
+                "N-Methylnicotinic acid betaine",
+                "Trigonelline" ;
+            schema:smiles "C[n+1](c1)cc(cc1)C([O-1])=O" ] ;
+    mbo:has_peak [ mbo:intensity 9.348e+01 ;
+            mbo:mz 6.5039e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 357 ],
+        [ mbo:intensity 2.756e+01 ;
+            mbo:mz 6.70507e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 1.198e+02 ;
+            mbo:mz 7.80342e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 458 ],
+        [ mbo:intensity 6.535e+01 ;
+            mbo:mz 7.90415e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 2.613e+02 ;
+            mbo:mz 9.20496e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.58e+01 ;
+            mbo:mz 9.30575e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 366 ],
+        [ mbo:intensity 2.192e+02 ;
+            mbo:mz 9.40654e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 838 ],
+        [ mbo:intensity 2.541e+01 ;
+            mbo:mz 1.100602e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 8.934e+01 ;
+            mbo:mz 1.380555e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 342 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.380555e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0006-9100000000-d147503f87ded3d41c26" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Trigonelline; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

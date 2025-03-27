@@ -1,0 +1,67 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00642 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2021-02-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00642" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kenji Mori and Jun Tabata, Tetrahedron 73 (2017) 6530-6541, DOI:10.1016/j.tet.2017.09.046." ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "6.47 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,5-Heptanedione" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 1.280837e+02 ;
+            rdfs:seeAlso cas:1703-51-1,
+                chemspider:14803,
+                pubchem:CID15559 ;
+            schema:inChI "InChI=1S/C7H12O2/c1-3-7(9)5-4-6(2)8/h3-5H2,1-2H3" ;
+            schema:inChIKey inchikey:HGRGPAAXHOTBAM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H12O2" ;
+            schema:name "2,5-Heptanedione" ;
+            schema:smiles "CC(=O)CCC(=O)CC" ] ;
+    mbo:has_peak [ mbo:intensity 6.52e+00 ;
+            mbo:mz 9.8034e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.88e+00 ;
+            mbo:mz 9.9044e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.28084e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.526e+01 ;
+            mbo:mz 1.29089e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 152 ],
+        [ mbo:intensity 1.49e+00 ;
+            mbo:mz 1.3009e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0900000000-230745b7484677524036" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "2,5-Heptanedione; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

@@ -1,0 +1,94 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000164 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000164" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Enalaprilat" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.481685e+02 ;
+            rdfs:seeAlso pubchem:CID5362033 ;
+            schema:inChI "InChI=1S/C18H24N2O5/c1-12(16(21)20-11-5-8-15(20)18(24)25)19-14(17(22)23)10-9-13-6-3-2-4-7-13/h2-4,6-7,12,14-15,19H,5,8-11H2,1H3,(H,22,23)(H,24,25)/t12-,14+,15+/m0/s1" ;
+            schema:inChIKey inchikey:LZFZMUMEGBBDTC-NWANDNLSSA-N ;
+            schema:molecularFormula "C18H24N2O5" ;
+            schema:name "Enalaprilat" ;
+            schema:smiles "[H]OC(=O)C([H])(N([H])C([H])(C([H])([H])[H])C(=O)N(C([H])([H])2)C([H])(C(=O)O[H])C([H])([H])C([H])([H])2)C([H])([H])C([H])([H])c(c([H])1)c([H])c([H])c([H])c([H])1" ] ;
+    mbo:has_peak [ mbo:intensity 1.551897e+03 ;
+            mbo:mz 5.60505e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 155 ],
+        [ mbo:intensity 1.390371e+03 ;
+            mbo:mz 1.340974e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 1.20863e+02 ;
+            mbo:mz 1.430866e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.920592e+03 ;
+            mbo:mz 1.601132e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 2.19258e+02 ;
+            mbo:mz 2.061185e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 8.94539e+02 ;
+            mbo:mz 7.00657e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 1.25115e+02 ;
+            mbo:mz 7.40249e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 8.920383e+03 ;
+            mbo:mz 9.10549e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 891 ],
+        [ mbo:intensity 2.892872e+03 ;
+            mbo:mz 1.020559e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 289 ],
+        [ mbo:intensity 1.80409e+02 ;
+            mbo:mz 1.05071e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 3.06169e+02 ;
+            mbo:mz 1.150551e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 4.84368e+02 ;
+            mbo:mz 1.160712e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.170705e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.491765e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-014l-5900000000-e4610d537b272c8a62ad" ;
+    skos:definition "Enalaprilat; LC-ESI-QTOF; MS2; CE:40 eV; [M+H]+" .
+

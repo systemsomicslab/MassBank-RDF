@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ311801 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ311801" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "13.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-chloranyl-N-[[4-(trifluoromethyloxy)phenyl]carbamoyl]benzamide",
+                "Triflumuron" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.580332e+02 ;
+            rdfs:seeAlso cas:64628-44-0,
+                chemspider:43172,
+                pubchem:CID47445 ;
+            schema:inChI "InChI=1S/C15H10ClF3N2O3/c16-12-4-2-1-3-11(12)13(22)21-14(23)20-9-5-7-10(8-6-9)24-15(17,18)19/h1-8H,(H2,20,21,22,23)" ;
+            schema:inChIKey inchikey:XAIPTRIXGHTTNT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10ClF3N2O3" ;
+            schema:name "2-chloranyl-N-[[4-(trifluoromethyloxy)phenyl]carbamoyl]benzamide",
+                "Triflumuron" ;
+            schema:smiles "O=C(c1ccccc1Cl)NC(=O)Nc2ccc(OC(F)(F)F)cc2" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.013488e+05 ;
+            mbo:mz 1.109993e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.581963e+05 ;
+            mbo:mz 1.130151e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.459984e+07 ;
+            mbo:mz 1.389944e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 2.036625e+08 ;
+            mbo:mz 1.560211e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.292429e+06 ;
+            mbo:mz 1.780474e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.136323e+08 ;
+            mbo:mz 3.590403e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 557 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.590407e+02 ;
+            mbo:precursor_mz 3.590405e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-0904000000-f386e954d3a55bb7c04b" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3118" ;
+    skos:definition "Triflumuron; LC-ESI-QFT; MS2; CE: 15; R=35000; [M+H]+" .
+

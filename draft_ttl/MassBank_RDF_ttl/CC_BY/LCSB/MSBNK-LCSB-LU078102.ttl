@@ -1,0 +1,98 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU078102 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU078102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "11.252 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Kinetin",
+                "N-(furan-2-ylmethyl)-7H-purin-6-amine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.150807e+02 ;
+            rdfs:seeAlso cas:87-42-3,
+                chemspider:3698,
+                pubchem:CID3830 ;
+            schema:inChI "InChI=1S/C10H9N5O/c1-2-7(16-3-1)4-11-9-8-10(13-5-12-8)15-6-14-9/h1-3,5-6H,4H2,(H2,11,12,13,14,15)" ;
+            schema:inChIKey inchikey:QANMHLXAZMSUEX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H9N5O" ;
+            schema:name "Kinetin",
+                "N-(furan-2-ylmethyl)-7H-purin-6-amine" ;
+            schema:smiles "C(NC1=C2N=CN=C2N=CN1)C1=CC=CO1" ] ;
+    mbo:has_peak [ mbo:intensity 5.19068e+04 ;
+            mbo:mz 5.30385e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.948458e+06 ;
+            mbo:mz 2.160878e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 668 ],
+        [ mbo:intensity 5.903764e+06 ;
+            mbo:mz 8.10334e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.069186e+05 ;
+            mbo:mz 1.360617e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.367301e+06 ;
+            mbo:mz 1.480616e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 231 ],
+        [ mbo:intensity 7.3345e+03 ;
+            mbo:mz 1.660722e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.9353e+03 ;
+            mbo:mz 1.710666e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.392155e+05 ;
+            mbo:mz 1.730695e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 4.193901e+05 ;
+            mbo:mz 1.880929e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 2.29442e+04 ;
+            mbo:mz 1.980774e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 4 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 2.16088e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00lr-9350000000-b4721d24d11e1b4b11df" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Kinetin; LC-ESI-QFT; MS2; CE: 30; R=17500; [M+H]+" .
+

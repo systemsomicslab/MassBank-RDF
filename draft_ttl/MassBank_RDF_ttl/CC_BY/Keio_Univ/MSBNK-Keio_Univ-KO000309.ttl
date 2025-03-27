@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000309 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000309" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(Aminomethyl)phosphonate",
+                "(Aminomethyl)phosphonic acid",
+                "1-Aminomethylphosphonic acid",
+                "AMPA" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.110085e+02 ;
+            rdfs:seeAlso cas:1066-51-9,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:13216> ;
+            schema:inChI "InChI=1S/CH6NO3P/c2-1-6(3,4)5/h1-2H2,(H2,3,4,5)" ;
+            schema:inChIKey inchikey:MGRVRXRGTBOSHW-UHFFFAOYSA-N ;
+            schema:molecularFormula "CH6NO3P" ;
+            schema:name "(Aminomethyl)phosphonate",
+                "(Aminomethyl)phosphonic acid",
+                "1-Aminomethylphosphonic acid",
+                "AMPA" ;
+            schema:smiles "NCP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.222776e+06 ;
+            mbo:mz 6.3e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 669 ],
+        [ mbo:intensity 4.811886e+06 ;
+            mbo:mz 7.9e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.9604e+04 ;
+            mbo:mz 8.03e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.1e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-01t9-9000000000-46a71b7b0105614ea189" ;
+    rdfs:comment "KEIO_ID A235" ;
+    skos:definition "(Aminomethyl)phosphonic acid; LC-ESI-QQ; MS2; CE:50 V; [M-H]-" .
+

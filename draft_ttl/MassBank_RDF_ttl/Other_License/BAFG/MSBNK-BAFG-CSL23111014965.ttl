@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL23111014965 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111014965" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "8 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(Ethoxycarbonylmethyl)triphenylphosphonium" ;
+            mbo:ch_exact_mass 3.491352e+02 ;
+            rdfs:seeAlso cas:1530-45-6 ;
+            schema:inChI "InChI=1S/C22H22O2P/c1-2-24-22(23)18-25(19-12-6-3-7-13-19,20-14-8-4-9-15-20)21-16-10-5-11-17-21/h3-17H,2,18H2,1H3/q+1" ;
+            schema:inChIKey inchikey:BDBCCQWLFKVQRT-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C22H22O2P]+" ;
+            schema:name "(Ethoxycarbonylmethyl)triphenylphosphonium" ;
+            schema:smiles "CCOC(=O)C[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3" ] ;
+    mbo:has_peak [ mbo:intensity 1.09891e+04 ;
+            mbo:mz 3.49136e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.491352e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0002-0009000000-f7c42da14158bc5a2615" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "(Ethoxycarbonylmethyl)triphenylphosphonium; LC-ESI-QTOF; MS2; 10 V" .
+

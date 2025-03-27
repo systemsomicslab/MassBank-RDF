@@ -1,0 +1,73 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00612 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2021-02-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00612" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kenji Mori, Tetrahedron 75 (2019) 3387-3398, DOI:10.1016/j.tet.2019.04.055." ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "11.02 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-((4-Methoxybenzyl)oxy)-2,2-dimethylcycloheptan-1-one" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 2.761726e+02 ;
+            schema:inChI "InChI=1S/C17H24O3/c1-17(2)15(18)6-4-5-7-16(17)20-12-13-8-10-14(19-3)11-9-13/h8-11,16H,4-7,12H2,1-3H3" ;
+            schema:inChIKey inchikey:BIKYCJZSFIHCBE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H24O3" ;
+            schema:name "3-((4-Methoxybenzyl)oxy)-2,2-dimethylcycloheptan-1-one" ;
+            schema:smiles "COC1=CC=C(COC2CCCCC(=O)C2(C)C)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 2.11e+00 ;
+            mbo:mz 4.6542e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 4.07e+00 ;
+            mbo:mz 1.37055e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 4.24e+00 ;
+            mbo:mz 1.40111e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 5.9e+00 ;
+            mbo:mz 1.78085e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.76173e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.25e+00 ;
+            mbo:mz 2.76351e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.69e+01 ;
+            mbo:mz 2.77177e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 169 ],
+        [ mbo:intensity 2.94e+00 ;
+            mbo:mz 2.78168e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 29 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-0190000000-2ff75f8d373c6256d3ac" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "3-((4-Methoxybenzyl)oxy)-2,2-dimethylcycloheptan-1-one; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

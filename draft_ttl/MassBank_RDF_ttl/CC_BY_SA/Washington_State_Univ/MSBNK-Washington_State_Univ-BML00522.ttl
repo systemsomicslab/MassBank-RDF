@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00522 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00522" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.743" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Kinetin-9-riboside" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.47123e+02 ;
+            rdfs:seeAlso cas:4338-47-0,
+                chemspider:19164,
+                pubchem:CID20345 ;
+            schema:inChI "InChI=1S/C15H17N5O5/c21-5-9-11(22)12(23)15(25-9)20-7-19-10-13(17-6-18-14(10)20)16-4-8-2-1-3-24-8/h1-3,6-7,9,11-12,15,21-23H,4-5H2,(H,16,17,18)/t9-,11-,12-,15-/m1/s1" ;
+            schema:inChIKey inchikey:CAGLGYNQQSIUGX-SDBHATRESA-N ;
+            schema:molecularFormula "C15H17N5O5" ;
+            schema:name "Kinetin-9-riboside" ;
+            schema:smiles "C1=COC(=C1)CNC2=NC=NC3=C2N=CN3[C@H]4[C@@H]([C@@H]([C@H](O4)CO)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.466e+03 ;
+            mbo:mz 1.480612e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 197 ],
+        [ mbo:intensity 3.692e+03 ;
+            mbo:mz 3.481272e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 496 ],
+        [ mbo:intensity 6.6e+01 ;
+            mbo:mz 1.48093e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 7.432e+03 ;
+            mbo:mz 2.160864e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.7e+02 ;
+            mbo:mz 2.161277e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 9.2e+01 ;
+            mbo:mz 2.161599e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 6.2e+01 ;
+            mbo:mz 2.161867e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.26e+02 ;
+            mbo:mz 2.162204e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 4.1e+01 ;
+            mbo:mz 2.162718e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 2.801057e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.16e+02 ;
+            mbo:precursor_mz 3.481303e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-014j-0194000000-ab2f8f29515a9050a52e" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.644" ;
+    skos:definition "Kinetin-9-riboside; LC-ESI-QTOF; MS2; CE 10 ev; [M+H]+" .
+

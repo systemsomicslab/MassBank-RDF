@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT110270 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT110270" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Methylnicotinamide chloride",
+                "1-methylpyridin-1-ium-3-carboxamide",
+                "3-Carbamoyl-1-methylpyridinium",
+                "N-Methylnicotinic acid amide",
+                "Nicotinamide methiodide" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Vitamin" ;
+            mbo:ch_exact_mass 1.37162e+02 ;
+            rdfs:seeAlso cas:3106-60-3 ;
+            schema:inChI "InChI=1S/C7H8N2O/c1-9-4-2-3-6(5-9)7(8)10/h2-5H,1H3,(H-,8,10)/p+1" ;
+            schema:inChIKey inchikey:LDHMAVIPBRSVRG-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C7H9N2O]+" ;
+            schema:name "1-Methylnicotinamide chloride",
+                "1-methylpyridin-1-ium-3-carboxamide",
+                "3-Carbamoyl-1-methylpyridinium",
+                "N-Methylnicotinic acid amide",
+                "Nicotinamide methiodide" ;
+            schema:smiles "C[N+]1=CC=CC(=C1)C(=O)N" ] ;
+    mbo:has_peak [ mbo:intensity 4.579e+02 ;
+            mbo:mz 7.8037e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 9.441e+02 ;
+            mbo:mz 9.20527e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 191 ],
+        [ mbo:intensity 2.298e+03 ;
+            mbo:mz 9.40681e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 466 ],
+        [ mbo:intensity 4.928e+03 ;
+            mbo:mz 1.370715e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.370715e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000l-6900000000-360fb882a925f7e9edc9" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "3-Carbamoyl-1-methylpyridinium, Nicotinamide methiodide, 1-Methylnicotinamide chloride, N-Methylnicotinic acid amide, 1-methylpyridin-1-ium-3-carboxamide; LC-ESI-QTOF; MS2" .
+

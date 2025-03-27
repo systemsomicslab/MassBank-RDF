@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100107 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100107" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Aminobenzene",
+                "Aminophen",
+                "Aniline",
+                "Anyvim",
+                "Arylamine",
+                "Benzamine",
+                "Benzeneamine",
+                "Benzidam",
+                "Krystallin",
+                "kyanol",
+                "phenylamine" ;
+            mbo:ch_compound_class "Amine" ;
+            mbo:ch_exact_mass 9.305785e+01 ;
+            rdfs:seeAlso cas:62-53-3,
+                chemspider:5889,
+                pubchem:CID6115 ;
+            schema:inChI "InChI=1S/C6H7N/c7-6-4-2-1-3-5-6/h1-5H,7H2" ;
+            schema:inChIKey inchikey:PAYRUJLWNCNPSJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H7N" ;
+            schema:name "Aminobenzene",
+                "Aminophen",
+                "Aniline",
+                "Anyvim",
+                "Arylamine",
+                "Benzamine",
+                "Benzeneamine",
+                "Benzidam",
+                "Krystallin",
+                "kyanol",
+                "phenylamine" ;
+            schema:smiles "Nc(c1)cccc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.177e+01 ;
+            mbo:mz 9.40349e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 5.661e+02 ;
+            mbo:mz 9.40657e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.406565e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-9000000000-a5bc25b5010f2044b435" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Aniline; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

@@ -1,0 +1,70 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU590903 a mbo:MassSpectrum ;
+    dcterms:creator "Dimitrios E. Damalas, Stefanos Kokolakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU590903" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness (Restek)" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "23.772 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chrysene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.280939e+02 ;
+            rdfs:seeAlso cas:218-01-9,
+                chemspider:8817,
+                pubchem:CID9171 ;
+            schema:inChI "InChI=1S/C18H12/c1-3-7-15-13(5-1)9-11-18-16-8-4-2-6-14(16)10-12-17(15)18/h1-12H" ;
+            schema:inChIKey inchikey:WDECIBYCCFPHNR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H12" ;
+            schema:name "Chrysene" ;
+            schema:smiles "C1=CC2=C(C=C1)C1=C(C=C2)C2=C(C=CC=C2)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 5.2e+02 ;
+            mbo:mz 2.020739e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 6e+02 ;
+            mbo:mz 2.260791e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.312e+03 ;
+            mbo:mz 2.270841e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 1.8988e+04 ;
+            mbo:mz 2.280903e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.012e+03 ;
+            mbo:mz 2.290957e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 316 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.290963e+02 ;
+            mbo:precursor_mz 2.291012e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0090000000-004654f27d068df49dae" ;
+    rdfs:comment "INTERNAL_ID 5909" ;
+    skos:definition "Chrysene; GC-APCI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

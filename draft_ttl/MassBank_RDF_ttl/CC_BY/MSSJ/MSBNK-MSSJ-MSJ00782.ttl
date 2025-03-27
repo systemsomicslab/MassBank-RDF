@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00782 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00782" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "50 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2'-Methylenebis[6-(1-methylcyclohexyl)-p-cresol]" ;
+            mbo:ch_compound_class "Natural product" ;
+            mbo:ch_exact_mass 4.203028e+02 ;
+            rdfs:seeAlso cas:77-62-3,
+                chemspider:6241,
+                pubchem:CID6486 ;
+            schema:inChI "InChI=1S/C29H40O2/c1-20-15-22(26(30)24(17-20)28(3)11-7-5-8-12-28)19-23-16-21(2)18-25(27(23)31)29(4)13-9-6-10-14-29/h15-18,30-31H,5-14,19H2,1-4H3" ;
+            schema:inChIKey inchikey:PHXLONCQBNATSL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C29H40O2" ;
+            schema:name "2,2'-Methylenebis[6-(1-methylcyclohexyl)-p-cresol]" ;
+            schema:smiles "CC1=CC(=C(C(=C1)C2(CCCCC2)C)O)CC3=C(C(=CC(=C3)C)C4(CCCCC4)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.56715e+02 ;
+            mbo:mz 2.031414e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.192955e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0udi-0090000000-8b06b06ac28352e58edd" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "2,2'-Methylenebis[6-(1-methylcyclohexyl)-p-cresol]; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 50 V" .
+

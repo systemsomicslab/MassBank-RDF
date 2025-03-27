@@ -1,0 +1,124 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU406402 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU406402" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Alygizakis, N. A.; Gago-Ferrero, P.; Hollender, J.; Thomaidis, N. S. Untargeted Time-Pattern Analysis of LC-HRMS Data to Detect Spills and Compounds with High Fluctuation in Influent Wastewater. Journal of Hazardous Materials 2019, 361, 19–29. DOI:10.1016/j.jhazmat.2018.08.073" ] ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "2.6 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N,N,N`,N`-Tetrakis(2-hydroxyethyl)hexanediamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.201947e+02 ;
+            rdfs:seeAlso cas:6334-25-4,
+                chemspider:85980,
+                pubchem:CID95283 ;
+            schema:inChI "InChI=1S/C14H28N2O6/c17-9-5-15(6-10-18)13(21)3-1-2-4-14(22)16(7-11-19)8-12-20/h17-20H,1-12H2" ;
+            schema:inChIKey inchikey:OKRNLSUTBJUVKA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H28N2O6" ;
+            schema:name "N,N,N`,N`-Tetrakis(2-hydroxyethyl)hexanediamide" ;
+            schema:smiles "C(CCC(=O)N(CCO)CCO)CC(=O)N(CCO)CCO" ] ;
+    mbo:has_peak [ mbo:intensity 1.452e+03 ;
+            mbo:mz 1.550695e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.724e+03 ;
+            mbo:mz 2.341326e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 5.88e+02 ;
+            mbo:mz 2.60147e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.01172e+05 ;
+            mbo:mz 3.031913e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 989 ],
+        [ mbo:intensity 1.4812e+04 ;
+            mbo:mz 3.041939e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 2.26e+03 ;
+            mbo:mz 3.051963e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 2.036e+04 ;
+            mbo:mz 3.21202e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 199 ],
+        [ mbo:intensity 4.14e+03 ;
+            mbo:mz 3.222044e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 7.92e+02 ;
+            mbo:mz 3.232053e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 6.636e+03 ;
+            mbo:mz 1.730799e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 5.44e+02 ;
+            mbo:mz 1.741099e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 6.76e+02 ;
+            mbo:mz 1.881271e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.4264e+04 ;
+            mbo:mz 1.981117e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 1.668e+03 ;
+            mbo:mz 1.991147e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.02144e+05 ;
+            mbo:mz 2.161226e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.1404e+04 ;
+            mbo:mz 2.171257e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 1.312e+03 ;
+            mbo:mz 2.181266e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.212018e+02 ;
+            mbo:precursor_mz 3.21202e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 17 ;
+    mbo:pk_splash "splash10-0uxr-0179000000-a391c40e9b353bc1ede6" ;
+    rdfs:comment "INTERNAL_ID 4064" ;
+    skos:definition "N,N,N`,N`-Tetrakis(2-hydroxyethyl)hexanediamide; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

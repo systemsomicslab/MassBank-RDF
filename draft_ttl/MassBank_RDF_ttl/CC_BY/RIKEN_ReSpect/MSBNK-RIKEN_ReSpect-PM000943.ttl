@@ -1,0 +1,91 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000943 a mbo:MassSpectrum ;
+    dcterms:creator "Piraud M, et al." ;
+    dcterms:date "2006-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000943" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Piraud, M.; Vianey-Saban, C.; Petritis, K.; Elfakir, C.; Steghens, J.-P.; Morla, A.; Bouchu, D. ESI-MS/MS Analysis of Underivatised Amino Acids: A New Tool for the Diagnosis of Inherited Disorders of Amino Acid Metabolism. Fragmentation Study of 79 Molecules of Biological Interest in Positive and Negative Ionisation Mode. Rapid Communications in Mass Spectrometry 2003, 17 (12), 1297–311. DOI:10.1002/rcm.1054" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API 2000 ESI-MS/MS system triple quadrupole mass spectrometer (Sciex Applied Biosystems, Toronto, Canada)" ;
+            mbo:collision_energy "28" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "H",
+                "M",
+                "O",
+                "e" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N1-methyl-L-histidine" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Histidine" ;
+            mbo:ch_exact_mass 1.69184e+02 ;
+            rdfs:seeAlso cas:332-80-9,
+                pubchem:CID92105 ;
+            schema:inChI "InChI=1S/C7H11N3O2/c1-10-3-5(9-4-10)2-6(8)7(11)12/h3-4,6H,2,8H2,1H3,(H,11,12)/t6-/m0/s1" ;
+            schema:inChIKey inchikey:BRMWTNUJHUMWMS-LURJTMIESA-N ;
+            schema:molecularFormula "C7H11N3O2" ;
+            schema:name "N1-methyl-L-histidine" ;
+            schema:smiles "Cn1cnc(C[C@H](N)C(=O)O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+01 ;
+            mbo:mz 5.4e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 1.53e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 2.2e+01 ;
+            mbo:mz 6.8e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 220 ],
+        [ mbo:intensity 1e+01 ;
+            mbo:mz 8.1e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 6e+00 ;
+            mbo:mz 8.3e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 9.5e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 9.6e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.7e+01 ;
+            mbo:mz 9.7e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 170 ],
+        [ mbo:intensity 4.2e+01 ;
+            mbo:mz 1.09e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 420 ],
+        [ mbo:intensity 2.3e+01 ;
+            mbo:mz 1.26e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 230 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.7e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0002-9300000000-f24715afb1be66ab592d" ;
+    rdfs:comment "732" ;
+    skos:definition "N1-methyl-L-histidine; LC-ESI-QQ; MS2" .
+

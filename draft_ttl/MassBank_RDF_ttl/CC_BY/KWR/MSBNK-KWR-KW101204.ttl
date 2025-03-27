@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-KWR-KW101204 a mbo:MassSpectrum ;
+    dcterms:creator "Erik Emke, Andrea Brunner, KWR" ;
+    dcterms:date "2017-03-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-KWR-KW101204" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 KWR watercycle research institute under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Classic, Thermo Scientific" ;
+            mbo:collision_energy "65 eV FT-MS" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x150mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 0/100 at 40 min, 0/100 at 45 min, 95/5 at 47 min, 95/5 at 52 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "26.193 min" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-lauroylsarcosine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.712147e+02 ;
+            rdfs:seeAlso cas:97-78-9,
+                chemspider:7071,
+                pubchem:CID7348 ;
+            schema:inChI "InChI=1S/C15H29NO3/c1-3-4-5-6-7-8-9-10-11-12-14(17)16(2)13-15(18)19/h3-13H2,1-2H3,(H,18,19)" ;
+            schema:inChIKey inchikey:BACYUWVYYTXETD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H29NO3" ;
+            schema:name "N-lauroylsarcosine" ;
+            schema:smiles "CCCCCCCCCCCC(=O)N(C)CC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 6.050872e+06 ;
+            mbo:mz 9.00547e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.472576e+05 ;
+            mbo:mz 2.542107e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 3.47217e+04 ;
+            mbo:mz 1.021407e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.84765e+04 ;
+            mbo:mz 1.181099e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.53149e+04 ;
+            mbo:mz 1.780858e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.00078e+04 ;
+            mbo:mz 1.891847e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.81098e+04 ;
+            mbo:mz 1.892095e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 7.90288e+04 ;
+            mbo:mz 1.892197e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 4.26738e+04 ;
+            mbo:mz 1.901916e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 4.03367e+04 ;
+            mbo:mz 2.090137e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.72222e+02 ;
+            mbo:precursor_mz 2.72222e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0006-9000000000-f15bf301a3c890d8ba5a" ;
+    rdfs:comment "INTERNAL_ID 1012" ;
+    skos:definition "N-lauroylsarcosine; LC-ESI-ITFT; MS2; CE: 65 eV; R=30000; [M+H]+" .
+

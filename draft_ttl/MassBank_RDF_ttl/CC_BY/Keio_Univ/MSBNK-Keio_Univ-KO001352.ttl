@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001352 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001352" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Methylbenzoate",
+                "3-Methylbenzoic acid",
+                "beta-Bethylbenzoic acid",
+                "m-Methylbenzoate",
+                "m-Toluic Acid",
+                "m-Toluylic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.360524e+02 ;
+            rdfs:seeAlso cas:99-04-7,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:9420> ;
+            schema:inChI "InChI=1S/C8H8O2/c1-6-3-2-4-7(5-6)8(9)10/h2-5H,1H3,(H,9,10)" ;
+            schema:inChIKey inchikey:GPSDUZXPYCFOSQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8O2" ;
+            schema:name "3-Methylbenzoate",
+                "3-Methylbenzoic acid",
+                "beta-Bethylbenzoic acid",
+                "m-Methylbenzoate",
+                "m-Toluic Acid",
+                "m-Toluylic acid" ;
+            schema:smiles "Cc(c1)cc(cc1)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.9604e+04 ;
+            mbo:mz 5.89e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 9.901e+03 ;
+            mbo:mz 8.9e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 2.222774e+06 ;
+            mbo:mz 9.11e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 1.168e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 4.593569e+07 ;
+            mbo:mz 1.349e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.35e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-001i-0900000000-b4f04edb8fb7c40bb5ef" ;
+    rdfs:comment "KEIO_ID M018" ;
+    skos:definition "3-Methylbenzoic acid; LC-ESI-QQ; MS2; CE:10 V; [M-H]-" .
+

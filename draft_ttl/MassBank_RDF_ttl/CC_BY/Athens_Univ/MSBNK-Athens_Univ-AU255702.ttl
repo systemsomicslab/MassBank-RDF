@@ -1,0 +1,93 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU255702 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU255702" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.911 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-(2-ethyl-6-methyl-N-(2-sulfoacetyl)anilino)propanoic acid",
+                "Metolachlor-NOA 413173" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.290933e+02 ;
+            rdfs:seeAlso chemspider:57334360,
+                pubchem:CID71312478 ;
+            schema:inChI "InChI=1S/C14H19NO6S/c1-4-11-7-5-6-9(2)13(11)15(10(3)14(17)18)12(16)8-22(19,20)21/h5-7,10H,4,8H2,1-3H3,(H,17,18)(H,19,20,21)/t10-/m0/s1" ;
+            schema:inChIKey inchikey:WOXWIWNBIJDJHI-JTQLQIEISA-N ;
+            schema:molecularFormula "C14H19NO6S" ;
+            schema:name "(2S)-2-(2-ethyl-6-methyl-N-(2-sulfoacetyl)anilino)propanoic acid",
+                "Metolachlor-NOA 413173" ;
+            schema:smiles "CCC1=CC=CC(C)=C1N([C@@H](C)C(O)=O)C(=O)CS(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.28e+02 ;
+            mbo:mz 1.290726e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 4.72e+02 ;
+            mbo:mz 3.301023e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 5.26e+03 ;
+            mbo:mz 1.310845e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.084e+03 ;
+            mbo:mz 1.320879e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 206 ],
+        [ mbo:intensity 6.24e+02 ;
+            mbo:mz 1.490584e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 119 ],
+        [ mbo:intensity 3.8e+02 ;
+            mbo:mz 2.23065e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 1.324e+03 ;
+            mbo:mz 2.840589e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 251 ],
+        [ mbo:intensity 4.24e+02 ;
+            mbo:mz 2.850664e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 8.8e+02 ;
+            mbo:mz 2.860567e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 3e+02 ;
+            mbo:mz 2.970434e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 57 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.23063e+02 ;
+            mbo:precursor_mz 3.301006e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-0940000000-6e6fd408418900738d10" ;
+    rdfs:comment "INTERNAL_ID 2557" ;
+    skos:definition "Metolachlor-NOA 413173; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

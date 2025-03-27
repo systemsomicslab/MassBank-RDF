@@ -1,0 +1,96 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ500404 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], B. Lauper [com]" ;
+    dcterms:date "2021-03-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ500404" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K., Du, L., Singer, H., Hollender, J.. Identification of LC-HRMS Nontarget Signals in Groundwater After Source Related Prioritization. Water Research 2021, 196. DOI: https://doi.org/10.1016/j.watres.2021.116994" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Exploris 240 Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "Atlantis C18 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 100/0 at 1.5 min, 5/95 at 18.5 min, 5/95 at 28.5 min, 100/0 at 29 min, 100/0 at 33 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.024 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Benzenephosphonic acid",
+                "Phenylphosphonic Acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.580133e+02 ;
+            rdfs:seeAlso cas:1571-33-1,
+                chemspider:14560,
+                pubchem:CID15295 ;
+            schema:inChI "InChI=1S/C6H7O3P/c7-10(8,9)6-4-2-1-3-5-6/h1-5H,(H2,7,8,9)" ;
+            schema:inChIKey inchikey:QLZHNIAADXEJJP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H7O3P" ;
+            schema:name "Benzenephosphonic acid",
+                "Phenylphosphonic Acid" ;
+            schema:smiles "C1=CC=C(C=C1)P(=O)(O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.082212e+05 ;
+            mbo:mz 5.30385e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.630206e+05 ;
+            mbo:mz 1.730362e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 8.486994e+05 ;
+            mbo:mz 7.70385e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 3.703897e+06 ;
+            mbo:mz 7.90542e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 286 ],
+        [ mbo:intensity 2.874398e+05 ;
+            mbo:mz 8.09736e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 4.563931e+05 ;
+            mbo:mz 9.50492e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 7.962039e+05 ;
+            mbo:mz 9.89841e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 5.378904e+05 ;
+            mbo:mz 1.050446e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 4.007213e+06 ;
+            mbo:mz 1.4101e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 310 ],
+        [ mbo:intensity 1.292983e+07 ;
+            mbo:mz 1.590205e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.590205e+02 ;
+            mbo:precursor_mz 1.590206e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0a4i-3900000000-524a8e4343773ce4c469" ;
+    rdfs:comment "UCHEM_ID 5004" ;
+    skos:definition "Phenylphosphonic Acid; LC-ESI-QFT; MS2; CE: 60%; R=15000; [M+H]+" .
+

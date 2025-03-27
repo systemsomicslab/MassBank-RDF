@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001509 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001509" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "o-(Chloroacetylcarbamoyl)fumagillol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.011605e+02 ;
+            rdfs:seeAlso cas:129298-91-5,
+                pubchem:CID369976 ;
+            schema:inChI "InChI=1S/C19H28ClNO6/c1-11(2)5-6-13-18(3,27-13)16-15(24-4)12(7-8-19(16)10-25-19)26-17(23)21-14(22)9-20/h5,12-13,15-16H,6-10H2,1-4H3,(H,21,22,23)" ;
+            schema:inChIKey inchikey:MSHZHSPISPJWHW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H28ClNO6" ;
+            schema:name "o-(Chloroacetylcarbamoyl)fumagillol" ;
+            schema:smiles "CC1(OC1CC=C(C)C)C1C(OC)C(CCC21CO2)OC(=O)NC(=O)CCl" ] ;
+    mbo:has_peak [ mbo:intensity 1.203082e+01 ;
+            mbo:mz 4.199854e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 1.587995e+00 ;
+            mbo:mz 9.199086e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.00004e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.521844e+00 ;
+            mbo:mz 1.000404e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.014625e+00 ;
+            mbo:mz 1.00053e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 4.666523e+00 ;
+            mbo:mz 1.179701e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 1.986798e+00 ;
+            mbo:mz 4.001532e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.001532e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0udi-1900000000-c58bdeb5ef5d309522ff" ;
+    skos:definition "o-(Chloroacetylcarbamoyl)fumagillol; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

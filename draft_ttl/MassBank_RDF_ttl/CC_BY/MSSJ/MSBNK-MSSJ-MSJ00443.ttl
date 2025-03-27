@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00443 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2020-10-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00443" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "40 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Dehydroeburicoic acid" ;
+            mbo:ch_compound_class "Non-natural product; Bile acid" ;
+            mbo:ch_exact_mass 4.683603e+02 ;
+            rdfs:seeAlso cas:6879-05-6,
+                chemspider:26344258,
+                pubchem:CID15250826 ;
+            schema:inChI "InChI=1S/C31H48O3/c1-19(2)20(3)9-10-21(27(33)34)22-13-17-31(8)24-11-12-25-28(4,5)26(32)15-16-29(25,6)23(24)14-18-30(22,31)7/h11,14,19,21-22,25-26,32H,3,9-10,12-13,15-18H2,1-2,4-8H3,(H,33,34)/t21-,22-,25+,26+,29-,30-,31+/m1/s1" ;
+            schema:inChIKey inchikey:ONFPYGOMAADWAT-OXUZYLMNSA-N ;
+            schema:molecularFormula "C31H48O3" ;
+            schema:name "Dehydroeburicoic acid" ;
+            schema:smiles "CC(C)C(=C)CC[C@H]([C@H]1CC[C@@]2([C@@]1(CC=C3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.85e+01 ;
+            mbo:mz 3.372528e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 3.63e+01 ;
+            mbo:mz 3.392686e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 2.174e+01 ;
+            mbo:mz 3.712586e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 4.6108e+02 ;
+            mbo:mz 4.67349e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.673531e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0002900000-76888a62699498848b11" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Dehydroeburicoic acid; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 40 V" .
+

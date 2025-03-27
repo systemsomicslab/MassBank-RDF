@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Metabolon-MT000136 a mbo:MassSpectrum ;
+    dcterms:creator "Evans A M, Mitchell M, DeHaven C D, Barrett T, Milgram E, Metabolon Inc." ;
+    dcterms:date "2016-01-19 (Created 2009-08-07, modified 2012-10-30)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Metabolon-MT000136" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2003-2009 Metabolon, Inc. under CC BY-NC-ND" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ XL, Thermo Finnigan" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bilirubin" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 5.842635e+02 ;
+            rdfs:seeAlso cas:635-65-4 ;
+            schema:inChI "InChI=1S/C33H36N4O6/c1-7-20-19(6)32(42)37-27(20)14-25-18(5)23(10-12-31(40)41)29(35-25)15-28-22(9-11-30(38)39)17(4)24(34-28)13-26-16(3)21(8-2)33(43)36-26/h7-8,13-14,34-35H,1-2,9-12,15H2,3-6H3,(H,36,43)(H,37,42)(H,38,39)(H,40,41)/b26-13-,27-14-" ;
+            schema:inChIKey inchikey:BPYKTIZUTYGOLE-IFADSCNNSA-N ;
+            schema:molecularFormula "C33H36N4O6" ;
+            schema:name "Bilirubin" ;
+            schema:smiles "CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\\4/C(=C(C(=O)N4)C=C)C" ] ;
+    mbo:has_peak [ mbo:intensity 3e+00 ;
+            mbo:mz 2.132e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 9e+00 ;
+            mbo:mz 2.412e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 9e+00 ;
+            mbo:mz 2.532e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.851e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4e+00 ;
+            mbo:mz 2.861e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 5.392e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 120 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.832e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-0090000000-50ff729317f07f6120b5" ;
+    skos:definition "Bilirubin; LC-ESI-IT; MS2; m/z: 583.2; [M-H]-" .
+

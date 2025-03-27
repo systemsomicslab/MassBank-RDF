@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002673 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002673" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "3.120 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Niacinamide",
+                "Nicotinamide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.22048e+02 ;
+            rdfs:seeAlso cas:98-92-0 ;
+            schema:inChI "InChI=1S/C6H6N2O/c7-6(9)5-2-1-3-8-4-5/h1-4H,(H2,7,9)" ;
+            schema:inChIKey inchikey:DFPAKSUCGFBDDF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H6N2O" ;
+            schema:name "Niacinamide",
+                "Nicotinamide" ;
+            schema:smiles "NC(=O)c(c1)cncc1" ] ;
+    mbo:has_peak [ mbo:intensity 2e+02 ;
+            mbo:mz 7.8e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 8.62e+02 ;
+            mbo:mz 8e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 862 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 8.1e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 2e+02 ;
+            mbo:mz 9.6e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 8.2e+01 ;
+            mbo:mz 1.06e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.23e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.2e+01 ;
+            mbo:mz 1.24e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 82 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00e9-9800000000-52e8984014c2ab42c47f" ;
+    skos:definition "Niacinamide; LC-ESI-Q; MS; POS; 45 V" .
+

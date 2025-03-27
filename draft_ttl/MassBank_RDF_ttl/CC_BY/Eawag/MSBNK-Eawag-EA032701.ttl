@@ -1,0 +1,76 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA032701 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA032701" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "12.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(4-chlorophenyl)-4,4-dimethyl-3-(1,2,4-triazol-1-ylmethyl)-3-pentanol",
+                "Tebuconazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.071446e+02 ;
+            rdfs:seeAlso cas:107534-96-3,
+                chemspider:77680,
+                pubchem:CID86102 ;
+            schema:inChI "InChI=1S/C16H22ClN3O/c1-15(2,3)16(21,10-20-12-18-11-19-20)9-8-13-4-6-14(17)7-5-13/h4-7,11-12,21H,8-10H2,1-3H3" ;
+            schema:inChIKey inchikey:PXMNMQRDXWABCY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H22ClN3O" ;
+            schema:name "1-(4-chlorophenyl)-4,4-dimethyl-3-(1,2,4-triazol-1-ylmethyl)-3-pentanol",
+                "Tebuconazole" ;
+            schema:smiles "CC(C)(C)C(CCC1=CC=C(C=C1)Cl)(CN2C=NC=N2)O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.38759e+04 ;
+            mbo:mz 1.390311e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 437 ],
+        [ mbo:intensity 6.16397e+04 ;
+            mbo:mz 1.510309e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 794 ],
+        [ mbo:intensity 3.97012e+04 ;
+            mbo:mz 1.65046e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 512 ],
+        [ mbo:intensity 1.44868e+04 ;
+            mbo:mz 1.810786e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 187 ],
+        [ mbo:intensity 7.75101e+04 ;
+            mbo:mz 2.901418e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.081531e+02 ;
+            mbo:precursor_mz 3.081524e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0fr6-0940000000-766e01c29780dcc7942f" ;
+    rdfs:comment "EAWAG_UCHEM_ID 327" ;
+    skos:definition "Tebuconazole; LC-ESI-ITFT; MS2; CE: 35%; R=7500; [M+H]+" .
+

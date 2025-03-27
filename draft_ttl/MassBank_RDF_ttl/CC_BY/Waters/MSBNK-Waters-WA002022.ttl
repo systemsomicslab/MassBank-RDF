@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002022 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002022" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "2.650 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sulpiride" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.411409e+02 ;
+            rdfs:seeAlso cas:15676-16-1 ;
+            schema:inChI "InChI=1S/C15H23N3O4S/c1-3-18-8-4-5-11(18)10-17-15(19)13-9-12(23(16,20)21)6-7-14(13)22-2/h6-7,9,11H,3-5,8,10H2,1-2H3,(H,17,19)(H2,16,20,21)" ;
+            schema:inChIKey inchikey:BGRJTUBHPOOWDU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H23N3O4S" ;
+            schema:name "Sulpiride" ;
+            schema:smiles "CCN(C2)C(CC2)CNC(=O)c(c(OC)1)cc(cc1)S(N)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.43e+02 ;
+            mbo:mz 1.12e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 243 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.14e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.42e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.37e+02 ;
+            mbo:mz 3.43e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 6.3e+01 ;
+            mbo:mz 3.44e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 63 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0006-0109000000-b941e7417b27143ab66e" ;
+    skos:definition "Sulpiride; LC-ESI-Q; MS; POS; 45 V" .
+

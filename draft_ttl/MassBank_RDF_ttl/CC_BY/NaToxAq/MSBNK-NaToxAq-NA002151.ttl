@@ -1,0 +1,65 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002151 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002151" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "8.619 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3aR,7S,7aR)-7-hydroxy-2,5,7-trimethyl-3a-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyspiro[3,7a-dihydro-2H-indene-6,1`-cyclopropane]-1-one",
+                "Ptaquiloside" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.981941e+02 ;
+            rdfs:seeAlso chemspider:10312775,
+                pubchem:CID13962857 ;
+            schema:inChI "InChI=1S/C20H30O8/c1-9-6-20(28-17-15(25)14(24)13(23)11(8-21)27-17)7-10(2)19(4-5-19)18(3,26)16(20)12(9)22/h7,9,11,13-17,21,23-26H,4-6,8H2,1-3H3/t9-,11-,13-,14+,15-,16-,17+,18+,20-/m1/s1" ;
+            schema:inChIKey inchikey:GPHSJPVUEZFIDE-YVPLJZHISA-N ;
+            schema:molecularFormula "C20H30O8" ;
+            schema:name "(2R,3aR,7S,7aR)-7-hydroxy-2,5,7-trimethyl-3a-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyspiro[3,7a-dihydro-2H-indene-6,1`-cyclopropane]-1-one",
+                "Ptaquiloside" ;
+            schema:smiles "C[C@@H]1C[C@]2(C=C(C3(CC3)[C@@]([C@H]2C1=O)(C)O)C)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.9177e+03 ;
+            mbo:mz 2.030527e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 586 ],
+        [ mbo:intensity 2.1122e+03 ;
+            mbo:mz 2.231099e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 316 ],
+        [ mbo:intensity 6.6828e+03 ;
+            mbo:mz 2.411198e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.490118e+02 ;
+            mbo:precursor_mz 4.211833e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0f6x-0090000000-0cfd3377280940bc687f" ;
+    rdfs:comment "INTERNAL_ID 30" ;
+    skos:definition "Ptaquiloside; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+Na]+" .
+

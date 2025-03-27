@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000102 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(2-Hydroxyethyl)pyrrolidin-2-one",
+                "DTXSID7044922" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.29079e+02 ;
+            rdfs:seeAlso cas:3445-11-2,
+                pubchem:CID76980 ;
+            schema:inChI "InChI=1S/C6H11NO2/c8-5-4-7-3-1-2-6(7)9/h8H,1-5H2" ;
+            schema:inChIKey inchikey:WDQFELCEOPFLCZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H11NO2" ;
+            schema:name "1-(2-Hydroxyethyl)pyrrolidin-2-one",
+                "DTXSID7044922" ;
+            schema:smiles "OCCN1CCCC1=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.810412e+00 ;
+            mbo:mz 4.103858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.620058e+00 ;
+            mbo:mz 4.404948e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.70223e+01 ;
+            mbo:mz 6.903349e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 170 ],
+        [ mbo:intensity 2.755727e+00 ;
+            mbo:mz 6.906988e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 1.425969e+00 ;
+            mbo:mz 7.104914e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.037579e+01 ;
+            mbo:mz 8.408078e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.120757e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.539629e+01 ;
+            mbo:mz 1.300863e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 853 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.300863e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03e9-1900000000-b18fea1a35ad9cfa19a6" ;
+    skos:definition "1-(2-Hydroxyethyl)pyrrolidin-2-one; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

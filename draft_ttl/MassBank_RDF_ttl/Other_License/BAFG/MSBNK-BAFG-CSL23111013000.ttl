@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL23111013000 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111013000" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "10.796 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Rhein" ;
+            mbo:ch_compound_class "Metabolite" ;
+            mbo:ch_exact_mass 2.840321e+02 ;
+            rdfs:seeAlso cas:478-43-3 ;
+            schema:inChI "InChI=1S/C15H8O6/c16-9-3-1-2-7-11(9)14(19)12-8(13(7)18)4-6(15(20)21)5-10(12)17/h1-5,16-17H,(H,20,21)" ;
+            schema:inChIKey inchikey:FCDLCPWAQCPTKC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H8O6" ;
+            schema:name "Rhein" ;
+            schema:smiles "C1=CC2=C(C(=C1)O)C(=O)C3=C(C=C(C=C3C2=O)C(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.917e+02 ;
+            mbo:mz 2.390352e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.522e+02 ;
+            mbo:mz 2.830249e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 257 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.830248e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0090000000-8417b2dc732eb2ccc7c8" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Rhein; LC-ESI-QTOF; MS2; 20 V" .
+

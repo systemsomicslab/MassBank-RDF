@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01127904 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01127904" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "11.563 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[4-(4-chlorophenoxy)-2-(trifluoromethyl)phenyl]-1-(1,2,4-triazol-1-yl)propan-2-ol",
+                "Mefentrifluconazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.970805e+02 ;
+            rdfs:seeAlso cas:1417782-03-6,
+                chemspider:32699369,
+                pubchem:CID71230671 ;
+            schema:inChI "InChI=1S/C18H15ClF3N3O2/c1-17(26,9-25-11-23-10-24-25)15-7-6-14(8-16(15)18(20,21)22)27-13-4-2-12(19)3-5-13/h2-8,10-11,26H,9H2,1H3" ;
+            schema:inChIKey inchikey:JERZEQUMJNCPRJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H15ClF3N3O2" ;
+            schema:name "2-[4-(4-chlorophenoxy)-2-(trifluoromethyl)phenyl]-1-(1,2,4-triazol-1-yl)propan-2-ol",
+                "Mefentrifluconazole" ;
+            schema:smiles "CC(CN1C=NC=N1)(C2=C(C=C(C=C2)OC3=CC=C(C=C3)Cl)C(F)(F)F)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.786513e+08 ;
+            mbo:mz 7.00399e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.960115e+06 ;
+            mbo:mz 2.690374e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 9.746229e+05 ;
+            mbo:mz 9.89994e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.990951e+06 ;
+            mbo:mz 1.269944e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.489996e+06 ;
+            mbo:mz 1.340528e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.968955e+06 ;
+            mbo:mz 1.620476e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.025339e+06 ;
+            mbo:mz 1.630552e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.192227e+06 ;
+            mbo:mz 1.670302e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 8.898112e+05 ;
+            mbo:mz 1.810465e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.454646e+07 ;
+            mbo:mz 1.820537e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 88 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.980878e+02 ;
+            mbo:precursor_mz 3.980878e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00di-9100000000-a9e024304086de1621d9" ;
+    rdfs:comment "UCHEM_ID 11279" ;
+    skos:definition "Mefentrifluconazole; LC-ESI-QFT; MS2; CE: 60%; R=17500; [M+H]+" .
+

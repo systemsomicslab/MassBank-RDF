@@ -1,0 +1,109 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01128303 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01128303" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "4.868 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-dimethoxyphosphinothioylsulfanyl-1-morpholin-4-ylethanone",
+                "Morphothion" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.850258e+02 ;
+            rdfs:seeAlso cas:144-41-2,
+                chemspider:8608,
+                pubchem:CID8952 ;
+            schema:inChI "InChI=1S/C8H16NO4PS2/c1-11-14(15,12-2)16-7-8(10)9-3-5-13-6-4-9/h3-7H2,1-2H3" ;
+            schema:inChIKey inchikey:NTHGWXIWFHGPLK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H16NO4PS2" ;
+            schema:name "2-dimethoxyphosphinothioylsulfanyl-1-morpholin-4-ylethanone",
+                "Morphothion" ;
+            schema:smiles "COP(=S)(OC)SCC(=O)N1CCOCC1" ] ;
+    mbo:has_peak [ mbo:intensity 1.008448e+06 ;
+            mbo:mz 7.89944e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 4.077261e+06 ;
+            mbo:mz 1.600426e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 5.264926e+07 ;
+            mbo:mz 1.709698e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 781 ],
+        [ mbo:intensity 1.775844e+06 ;
+            mbo:mz 1.760198e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.668872e+07 ;
+            mbo:mz 1.989647e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 248 ],
+        [ mbo:intensity 1.683332e+06 ;
+            mbo:mz 2.540069e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 7.767551e+05 ;
+            mbo:mz 8.606e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.270214e+06 ;
+            mbo:mz 8.80758e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 6.73538e+07 ;
+            mbo:mz 1.249821e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.31656e+06 ;
+            mbo:mz 1.320478e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.333899e+07 ;
+            mbo:mz 1.429926e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 198 ],
+        [ mbo:intensity 1.158426e+07 ;
+            mbo:mz 1.440478e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 172 ],
+        [ mbo:intensity 8.232455e+06 ;
+            mbo:mz 1.56954e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 2.316774e+06 ;
+            mbo:mz 1.570081e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 34 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.86033e+02 ;
+            mbo:precursor_mz 2.860331e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-00di-0900000000-7726696ab7e1362ad74f" ;
+    rdfs:comment "UCHEM_ID 11283" ;
+    skos:definition "Morphothion; LC-ESI-QFT; MS2; CE: 45%; R=17500; [M+H]+" .
+

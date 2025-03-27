@@ -1,0 +1,61 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000444 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-01-02, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000444" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-amino-3-(2-amino-3-hydroxy-3-oxopropyl)disulfanylpropanoic acid",
+                "Cystine" ;
+            mbo:ch_compound_class "Natural Product; amino acid" ;
+            mbo:ch_exact_mass 2.400239e+02 ;
+            rdfs:seeAlso pubchem:CID595 ;
+            schema:inChI "InChI=1S/C6H12N2O4S2/c7-3(5(9)10)1-13-14-2-4(8)6(11)12/h3-4H,1-2,7-8H2,(H,9,10)(H,11,12)" ;
+            schema:inChIKey inchikey:LEVWYRKDKASIDU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H12N2O4S2" ;
+            schema:name "2-amino-3-(2-amino-3-hydroxy-3-oxopropyl)disulfanylpropanoic acid",
+                "Cystine" ;
+            schema:smiles "C(C(C(=O)O)N)SSCC(C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 2.39318e+02 ;
+            mbo:mz 1.51984e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 5.4425e+01 ;
+            mbo:mz 1.54e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 9.4251e+01 ;
+            mbo:mz 1.95024e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 2.41031e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.9614e+01 ;
+            mbo:mz 2.42033e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0006-0090000000-af3f7f01ab3650406cbd" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Cystine; LC-ESI-QTOF; MS2; CE:10 eV; [M+H]+" .
+

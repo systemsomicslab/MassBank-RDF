@@ -1,0 +1,102 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00355 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00355" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hycanthone" ;
+            mbo:ch_compound_class "Non-Natural Product; Drug" ;
+            mbo:ch_exact_mass 3.561558e+02 ;
+            rdfs:seeAlso cas:3105-97-3,
+                chemspider:3508,
+                pubchem:CID3634 ;
+            schema:inChI "InChI=1S/C20H24N2O2S/c1-3-22(4-2)12-11-21-16-10-9-14(13-23)20-18(16)19(24)15-7-5-6-8-17(15)25-20/h5-10,21,23H,3-4,11-13H2,1-2H3" ;
+            schema:inChIKey inchikey:MFZWMTSUNYWVBU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H24N2O2S" ;
+            schema:name "Hycanthone" ;
+            schema:smiles "CCN(CC)CCN([H])c(c1)c(C(=O)2)c(Sc(c3)c(ccc3)2)c(CO)c1" ] ;
+    mbo:has_peak [ mbo:intensity 6.7325e+04 ;
+            mbo:mz 1.001125e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.122e+03 ;
+            mbo:mz 2.560599e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.3198e+04 ;
+            mbo:mz 2.660631e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 196 ],
+        [ mbo:intensity 1.947e+03 ;
+            mbo:mz 2.670661e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 2.645e+03 ;
+            mbo:mz 2.840737e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.083e+03 ;
+            mbo:mz 1.011155e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 9.38e+02 ;
+            mbo:mz 1.370059e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.347e+03 ;
+            mbo:mz 2.360524e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.193e+03 ;
+            mbo:mz 2.42063e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.211e+03 ;
+            mbo:mz 2.520474e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 4.533e+03 ;
+            mbo:mz 2.53055e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 2.8548e+04 ;
+            mbo:mz 2.540631e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 424 ],
+        [ mbo:intensity 3.883e+03 ;
+            mbo:mz 2.550661e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 58 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.001125e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0udi-0970000000-76e23bee7b84847729db" ;
+    rdfs:comment "[Raw Data] CB147_Hycanthone_pos_40eV_CB000056.txt" ;
+    skos:definition "Hycanthone; LC-ESI-QTOF; MS2; [M+H]+; CE: 40eV" .
+

@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU259002 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU259002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.015 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-1-[2-[6-(2-chlorophenoxy)-5-fluoropyrimidin-4-yl]oxyphenyl]-1-(5,6-dihydro-1,4,2-dioxazin-3-yl)-N-methoxymethanimine",
+                "Fluoxastrobin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.580793e+02 ;
+            rdfs:seeAlso cas:361377-29-9,
+                chemspider:9223963,
+                pubchem:CID11048796 ;
+            schema:inChI "InChI=1S/C21H16ClFN4O5/c1-28-26-18(21-27-30-11-10-29-21)13-6-2-4-8-15(13)31-19-17(23)20(25-12-24-19)32-16-9-5-3-7-14(16)22/h2-9,12H,10-11H2,1H3/b26-18+" ;
+            schema:inChIKey inchikey:UFEODZBUAFNAEU-NLRVBDNBSA-N ;
+            schema:molecularFormula "C21H16ClFN4O5" ;
+            schema:name "(E)-1-[2-[6-(2-chlorophenoxy)-5-fluoropyrimidin-4-yl]oxyphenyl]-1-(5,6-dihydro-1,4,2-dioxazin-3-yl)-N-methoxymethanimine",
+                "Fluoxastrobin" ;
+            schema:smiles "CO\\N=C(\\C1=NOCCO1)C1=C(OC2=C(F)C(OC3=C(Cl)C=CC=C3)=NC=N2)C=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.8316e+04 ;
+            mbo:mz 1.880365e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.17616e+05 ;
+            mbo:mz 4.61084e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 1.9516e+04 ;
+            mbo:mz 3.670384e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.2e+04 ;
+            mbo:mz 3.830334e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.085248e+06 ;
+            mbo:mz 4.270606e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.02508e+05 ;
+            mbo:mz 4.280633e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 5.79116e+05 ;
+            mbo:mz 4.29058e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 277 ],
+        [ mbo:intensity 6.0092e+04 ;
+            mbo:mz 4.300599e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 4.54428e+05 ;
+            mbo:mz 4.590867e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 218 ],
+        [ mbo:intensity 9.5828e+04 ;
+            mbo:mz 4.600893e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 46 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.590862e+02 ;
+            mbo:precursor_mz 4.590866e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-004i-0000900000-9924c5f8e1ec9a9912b8" ;
+    rdfs:comment "INTERNAL_ID 2590" ;
+    skos:definition "Fluoxastrobin; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

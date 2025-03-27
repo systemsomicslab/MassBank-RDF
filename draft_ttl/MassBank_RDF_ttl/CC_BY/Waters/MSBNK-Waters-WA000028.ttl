@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000028 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000028" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QuattroPremier XE, Waters" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Indoxacarb" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 5.270707e+02 ;
+            rdfs:seeAlso cas:173584-44-6 ;
+            schema:inChI "InChI=1S/C22H17ClF3N3O7/c1-33-18(30)21-10-12-9-13(23)3-8-16(12)17(21)27-28(11-35-21)19(31)29(20(32)34-2)14-4-6-15(7-5-14)36-22(24,25)26/h3-9H,10-11H2,1-2H3/t21-/m0/s1" ;
+            schema:inChIKey inchikey:VBCVPMMZEGZULK-NRFANRHFSA-N ;
+            schema:molecularFormula "C22H17ClF3N3O7" ;
+            schema:name "Indoxacarb" ;
+            schema:smiles "COC(=O)N(c(c4)ccc(OC(F)(F)F)c4)C(=O)N(C3)N=C(c21)C(O3)(C(=O)OC)Cc(cc(Cl)cc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 8e+00 ;
+            mbo:mz 2.49e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 2.93e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.53e+02 ;
+            mbo:mz 5.27e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 5.28e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.7e+01 ;
+            mbo:mz 5.3e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 67 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.2825e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0000090000-ac29fd5e6cfd1a44e5ee" ;
+    skos:definition "Indoxacarb; LC-ESI-QQ; MS2; CE:10 V; [M+H]+" .
+

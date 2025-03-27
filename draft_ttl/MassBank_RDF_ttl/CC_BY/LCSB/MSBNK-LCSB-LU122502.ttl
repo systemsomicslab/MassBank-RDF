@@ -1,0 +1,90 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU122502 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU122502" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "19.637 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2-tert-butylpyrimidin-5-yl)oxy-ethoxy-propan-2-yloxy-sulfanylidene-lambda5-phosphane",
+                "Tebupirimfos" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.181167e+02 ;
+            rdfs:seeAlso cas:96182-53-5,
+                chemspider:84419,
+                pubchem:CID93516 ;
+            schema:inChI "InChI=1S/C13H23N2O3PS/c1-7-16-19(20,17-10(2)3)18-11-8-14-12(15-9-11)13(4,5)6/h8-10H,7H2,1-6H3" ;
+            schema:inChIKey inchikey:AWYOMXWDGWUJHS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H23N2O3PS" ;
+            schema:name "(2-tert-butylpyrimidin-5-yl)oxy-ethoxy-propan-2-yloxy-sulfanylidene-lambda5-phosphane",
+                "Tebupirimfos" ;
+            schema:smiles "CCOP(=S)(OC(C)C)OC1=CN=C(N=C1)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.482642e+06 ;
+            mbo:mz 1.531022e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 402 ],
+        [ mbo:intensity 1.064736e+05 ;
+            mbo:mz 1.690794e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.379685e+06 ;
+            mbo:mz 2.310352e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 2.927522e+06 ;
+            mbo:mz 2.490458e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 338 ],
+        [ mbo:intensity 2.552208e+05 ;
+            mbo:mz 2.630614e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 8.654836e+06 ;
+            mbo:mz 2.77077e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.15658e+04 ;
+            mbo:mz 2.910932e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.116576e+05 ;
+            mbo:mz 3.191237e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 3.19124e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-0290000000-07230e53a692042ecd04" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Tebupirimfos; LC-ESI-QFT; MS2; CE: 30; R=17500; [M+H]+" .
+

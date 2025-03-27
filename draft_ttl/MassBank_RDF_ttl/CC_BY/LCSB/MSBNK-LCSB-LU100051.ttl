@@ -1,0 +1,94 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU100051 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU100051" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "14.968 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2',4,4'-Tetrahydroxybenzophenone",
+                "bis(2,4-dihydroxyphenyl)methanone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.460528e+02 ;
+            rdfs:seeAlso cas:131-55-5,
+                chemspider:8253,
+                pubchem:CID8571 ;
+            schema:inChI "InChI=1S/C13H10O5/c14-7-1-3-9(11(16)5-7)13(18)10-4-2-8(15)6-12(10)17/h1-6,14-17H" ;
+            schema:inChIKey inchikey:WXNRYSGJLQFHBR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H10O5" ;
+            schema:name "2,2',4,4'-Tetrahydroxybenzophenone",
+                "bis(2,4-dihydroxyphenyl)methanone" ;
+            schema:smiles "OC1=CC(O)=C(C=C1)C(=O)C1=CC=C(O)C=C1O" ] ;
+    mbo:has_peak [ mbo:intensity 1.318993e+05 ;
+            mbo:mz 9.10189e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 2.707776e+06 ;
+            mbo:mz 1.090295e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 413 ],
+        [ mbo:intensity 6.548433e+06 ;
+            mbo:mz 1.350088e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.140688e+06 ;
+            mbo:mz 1.530194e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 327 ],
+        [ mbo:intensity 9.8788e+03 ;
+            mbo:mz 1.590449e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.33834e+04 ;
+            mbo:mz 1.770557e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.3559e+04 ;
+            mbo:mz 2.010557e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 4.68684e+04 ;
+            mbo:mz 2.27035e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.058071e+06 ;
+            mbo:mz 2.450455e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 924 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.450455e+02 ;
+            mbo:precursor_mz 2.450455e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-000j-0940000000-e91eb900b19a64799982" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "2,2`,4,4`-Tetrahydroxybenzophenone; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

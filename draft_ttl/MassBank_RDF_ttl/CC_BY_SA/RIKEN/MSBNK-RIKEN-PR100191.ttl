@@ -1,0 +1,89 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100191 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100191" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-Piperazinediethanesulfonic acid",
+                "PIPES",
+                "Piperazine-1,4-bis(2-ethanesulfonic acid)",
+                "Piperazine-N,N'-bis(2-ethanesulfonic acid)" ;
+            mbo:ch_compound_class "N-(sulfoalkyl)piperazines" ;
+            mbo:ch_exact_mass 3.020606e+02 ;
+            rdfs:seeAlso cas:5625-37-6,
+                chemspider:72022,
+                pubchem:CID79723 ;
+            schema:inChI "InChI=1S/C8H18N2O6S2/c11-17(12,13)7-5-9-1-2-10(4-3-9)6-8-18(14,15)16/h1-8H2,(H,11,12,13)(H,14,15,16)" ;
+            schema:inChIKey inchikey:IHPYMWDTONKSCO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H18N2O6S2" ;
+            schema:name "1,4-Piperazinediethanesulfonic acid",
+                "PIPES",
+                "Piperazine-1,4-bis(2-ethanesulfonic acid)",
+                "Piperazine-N,N'-bis(2-ethanesulfonic acid)" ;
+            schema:smiles "OS(=O)(=O)CCN(C1)CCN(C1)CCS(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.797e+02 ;
+            mbo:mz 7.00658e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.006e+02 ;
+            mbo:mz 8.40808e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 359 ],
+        [ mbo:intensity 1.054e+02 ;
+            mbo:mz 9.70772e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 376 ],
+        [ mbo:intensity 1.812e+02 ;
+            mbo:mz 9.80848e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 647 ],
+        [ mbo:intensity 6.523e+01 ;
+            mbo:mz 1.121011e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 233 ],
+        [ mbo:intensity 8.21e+01 ;
+            mbo:mz 1.131082e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 293 ],
+        [ mbo:intensity 1.047e+02 ;
+            mbo:mz 1.271239e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 374 ],
+        [ mbo:intensity 2.704e+02 ;
+            mbo:mz 1.520387e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 966 ],
+        [ mbo:intensity 8.337e+01 ;
+            mbo:mz 1.92058e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 298 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.030684e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0h2b-9800000000-f010c9478ca6bbf12d1a" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "PIPES; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

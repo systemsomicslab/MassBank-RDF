@@ -1,0 +1,55 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000083 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-11, modified 2012-10-22)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000083" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, A. Svatos, R.K. Maddula, C. Boettcher and S. Boecker. Computing fragmentation trees from tandem mass spectrometry data. Anal. Chem., 2011, 83, 1243-1251 doi:10.1021/ac101825k" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "609.844 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "o-Anisic acid" ;
+            mbo:ch_compound_class "Natural Product; Carboxylic acid" ;
+            mbo:ch_exact_mass 1.520473e+02 ;
+            rdfs:seeAlso pubchem:CID11370 ;
+            schema:inChI "InChI=1S/C8H8O3/c1-11-7-5-3-2-4-6(7)8(9)10/h2-5H,1H3,(H,9,10)" ;
+            schema:inChIKey inchikey:ILUJQPXNXACGAN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8O3" ;
+            schema:name "o-Anisic acid" ;
+            schema:smiles "COC1=CC=CC=C1C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.834821e+06 ;
+            mbo:mz 1.530546e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.617902e+05 ;
+            mbo:mz 1.540578e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 88 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0udi-0900000000-52bd17a3cd27b2ba8348" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "o-Anisic acid; LC-ESI-ITFT; MS; [M+H]+; isotope pattern" .
+

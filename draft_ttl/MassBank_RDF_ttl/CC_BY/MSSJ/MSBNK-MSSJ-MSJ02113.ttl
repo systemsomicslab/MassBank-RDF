@@ -1,0 +1,61 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02113 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2023-03-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02113" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Yong Luo, Yuanhong Ma, Zhaomin Hou. alpha-C-H Alkylation of Methyl Sulfides with Alkenes by a Scandium Catalyst. J. Am. Chem. Soc. 2018, 140, 114-117. DOI: 10.1021/jacs.7b11245" ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A gas chromatograph." ;
+            mbo:column_name "HP-5 30x0.32 0.25um 19091J-413, length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "13.08 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "tert-butyl((4-methyl-5-(pentylthio)pentyl)oxy)diphenylsilane" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 4.422726e+02 ;
+            schema:inChI "InChI=1S/C27H42OSSi/c1-6-7-14-22-29-23-24(2)16-15-21-28-30(27(3,4)5,25-17-10-8-11-18-25)26-19-12-9-13-20-26/h8-13,17-20,24H,6-7,14-16,21-23H2,1-5H3" ;
+            schema:inChIKey inchikey:GVEGAFJMVIOKHS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C27H42OSSi" ;
+            schema:name "tert-butyl((4-methyl-5-(pentylthio)pentyl)oxy)diphenylsilane" ;
+            schema:smiles "CCCCCSCC(C)CCCO[Si](c1ccccc1)(c1ccccc1)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 5.0376e+00 ;
+            mbo:mz 5.7072e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.85202e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.18705e+01 ;
+            mbo:mz 3.86205e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 318 ],
+        [ mbo:intensity 1.20238e+01 ;
+            mbo:mz 3.87202e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 2.9729e+00 ;
+            mbo:mz 3.88203e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 30 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000i-0009000000-09a0e76128901457906c" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. Postrun m/z adjustment with known mass was 385.20214." ;
+    skos:definition "tert-butyl((4-methyl-5-(pentylthio)pentyl)oxy)diphenylsilane; GC-FI-TOF; MS; POSITIVE; FI; 10 kV" .
+

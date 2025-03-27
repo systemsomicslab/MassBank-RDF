@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU270202 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU270202" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.933 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,3aS,3bS,5aR,9aR,9bS,11aS)-N-tert-butyl-9a,11a-dimethyl-7-oxo-1,2,3,3a,3b,4,5,5a,6,9b,10,11-dodecahydroindeno[5,4-f]quinoline-1-carboxamide",
+                "Finasteride" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.722777e+02 ;
+            rdfs:seeAlso cas:98319-26-7,
+                chemspider:51714,
+                pubchem:CID57363 ;
+            schema:inChI "InChI=1S/C23H36N2O2/c1-21(2,3)25-20(27)17-8-7-15-14-6-9-18-23(5,13-11-19(26)24-18)16(14)10-12-22(15,17)4/h11,13-18H,6-10,12H2,1-5H3,(H,24,26)(H,25,27)/t14-,15-,16-,17+,18+,22-,23+/m0/s1" ;
+            schema:inChIKey inchikey:DBEPLOCGEIEOCV-WSBQPABSSA-N ;
+            schema:molecularFormula "C23H36N2O2" ;
+            schema:name "(1S,3aS,3bS,5aR,9aR,9bS,11aS)-N-tert-butyl-9a,11a-dimethyl-7-oxo-1,2,3,3a,3b,4,5,5a,6,9b,10,11-dodecahydroindeno[5,4-f]quinoline-1-carboxamide",
+                "Finasteride" ;
+            schema:smiles "CC(C)(C)NC(=O)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4NC(=O)C=C[C@]4(C)[C@H]3CC[C@]12C" ] ;
+    mbo:has_peak [ mbo:intensity 2.2056e+04 ;
+            mbo:mz 3.052586e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.66656e+05 ;
+            mbo:mz 3.172226e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 4.4988e+04 ;
+            mbo:mz 3.182258e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.4169e+06 ;
+            mbo:mz 3.732863e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.6248e+05 ;
+            mbo:mz 3.742888e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 356 ],
+        [ mbo:intensity 8.3324e+04 ;
+            mbo:mz 3.752917e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 34 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.732855e+02 ;
+            mbo:precursor_mz 3.73285e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00di-0009000000-b2922a64d37b4a6552b6" ;
+    rdfs:comment "INTERNAL_ID 2702" ;
+    skos:definition "Finasteride; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001785 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001785" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Butanedionic acid",
+                "Ethylenesuccinic acid",
+                "Succinate",
+                "Succinic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.180266e+02 ;
+            rdfs:seeAlso cas:110-15-6,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3344> ;
+            schema:inChI "InChI=1S/C4H6O4/c5-3(6)1-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)" ;
+            schema:inChIKey inchikey:KDYFGRWQOYBRFD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H6O4" ;
+            schema:name "Butanedionic acid",
+                "Ethylenesuccinic acid",
+                "Succinate",
+                "Succinic acid" ;
+            schema:smiles "OC(=O)CCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 7.42575e+04 ;
+            mbo:mz 3.5e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.732675e+05 ;
+            mbo:mz 5.49e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.18812e+05 ;
+            mbo:mz 5.93e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.9703e+04 ;
+            mbo:mz 7.09e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.78218e+05 ;
+            mbo:mz 7.24e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.926735e+07 ;
+            mbo:mz 7.3e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.118814e+06 ;
+            mbo:mz 9.92e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 3.034656e+06 ;
+            mbo:mz 1.171e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 157 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.17e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-9100000000-7a8bfa543dc087bea06d" ;
+    rdfs:comment "KEIO_ID S004" ;
+    skos:definition "Succinic acid; LC-ESI-QQ; MS2; CE:20 V; [M-H]-" .
+

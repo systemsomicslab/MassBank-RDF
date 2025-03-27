@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000076 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000076" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "117.700 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, (1S,4aS,7aS)-",
+                "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, [1S-(1alpha,4aalpha,7aalpha)]-",
+                "Cyclopenta[c]pyran-4-carboxylic acid, 1alpha-(beta-D-glucopyranosyloxy)-1,4aalpha,5,7aalpha-tetrahydro-7-(hydroxymethyl)-",
+                "Geniposidic acid" ;
+            mbo:ch_compound_class "Natural Product; Iridoid" ;
+            mbo:ch_exact_mass 3.741213e+02 ;
+            rdfs:seeAlso cas:27741-01-1,
+                pubchem:CID443354 ;
+            schema:inChI "InChI=1S/C16H22O10/c17-3-6-1-2-7-8(14(22)23)5-24-15(10(6)7)26-16-13(21)12(20)11(19)9(4-18)25-16/h1,5,7,9-13,15-21H,2-4H2,(H,22,23)/t7-,9-,10-,11-,12+,13-,15+,16+/m1/s1" ;
+            schema:inChIKey inchikey:ZJDOESGVOWAULF-OGJQONSISA-N ;
+            schema:molecularFormula "C16H22O10" ;
+            schema:name "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, (1S,4aS,7aS)-",
+                "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, [1S-(1alpha,4aalpha,7aalpha)]-",
+                "Cyclopenta[c]pyran-4-carboxylic acid, 1alpha-(beta-D-glucopyranosyloxy)-1,4aalpha,5,7aalpha-tetrahydro-7-(hydroxymethyl)-",
+                "Geniposidic acid" ;
+            schema:smiles "OCC(C(O)1)OC([H])(OC(O2)C([H])(C(CO)=3)C([H])(CC3)C(C(O)=O)=C2)C(O)C(O)1" ] ;
+    mbo:has_peak [ mbo:intensity 6.175587e+06 ;
+            mbo:mz 1.950637e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 197 ],
+        [ mbo:intensity 7.090249e+06 ;
+            mbo:mz 2.130734e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 226 ],
+        [ mbo:intensity 5.060927e+06 ;
+            mbo:mz 3.751273e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 161 ],
+        [ mbo:intensity 3.139526e+07 ;
+            mbo:mz 3.921525e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.936662e+06 ;
+            mbo:mz 3.931558e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 7.334436e+06 ;
+            mbo:mz 3.971058e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 233 ],
+        [ mbo:intensity 2.702406e+06 ;
+            mbo:mz 4.130825e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 86 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0006-0119000000-a1d074b7e61365f9bc18" ;
+    skos:definition "Geniposidic acid; LC-ESI-ITTOF; MS; [M+NH3+H]+" .
+

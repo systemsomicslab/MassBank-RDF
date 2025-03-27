@@ -1,0 +1,110 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN111303 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-01"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN111303" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.110 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acetyl tributyl citrate",
+                "Tributyl acetylcitrate",
+                "tributyl 2-acetyloxypropane-1,2,3-tricarboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.022254e+02 ;
+            rdfs:seeAlso cas:77-90-7,
+                chemspider:6259,
+                pubchem:CID6505 ;
+            schema:inChI "InChI=1S/C20H34O8/c1-5-8-11-25-17(22)14-20(28-16(4)21,19(24)27-13-10-7-3)15-18(23)26-12-9-6-2/h5-15H2,1-4H3" ;
+            schema:inChIKey inchikey:QZCLKYGREBVARF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H34O8" ;
+            schema:name "Acetyl tributyl citrate",
+                "Tributyl acetylcitrate",
+                "tributyl 2-acetyloxypropane-1,2,3-tricarboxylate" ;
+            schema:smiles "CCCCOC(=O)CC(CC(=O)OCCCC)(C(=O)OCCCC)OC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.419e+02 ;
+            mbo:mz 5.50178e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 7.0419e+03 ;
+            mbo:mz 1.570127e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 201 ],
+        [ mbo:intensity 4.733e+02 ;
+            mbo:mz 1.580168e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.782e+04 ;
+            mbo:mz 1.850806e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 508 ],
+        [ mbo:intensity 1.1473e+03 ;
+            mbo:mz 2.170349e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.6763e+03 ;
+            mbo:mz 2.591525e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 1.4894e+03 ;
+            mbo:mz 5.70705e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.8944e+03 ;
+            mbo:mz 6.10287e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 1.4463e+03 ;
+            mbo:mz 6.89979e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 2.745e+02 ;
+            mbo:mz 8.70077e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.9941e+03 ;
+            mbo:mz 1.110072e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 2.211e+02 ;
+            mbo:mz 1.130219e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.50371e+04 ;
+            mbo:mz 1.29018e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.86011e+04 ;
+            mbo:mz 1.390021e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 530 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.252143e+02 ;
+            mbo:precursor_mz 4.032326e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-002r-0900000000-abaf443ed9e18f2fb6f5" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Tributyl acetylcitrate; LC-ESI-QTOF; MS2; CE: 15eV; R=7000; [M+H]+" .
+

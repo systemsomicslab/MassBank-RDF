@@ -1,0 +1,73 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00054 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00054" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "20 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "10.302" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-phenyl[(9,11,13-trimethyl-8,15-dioxatetracyclo[10.2.2.0<2,7>.0<9,14>]hexadec a-2(7),3,5-trien-12-yl)methoxy]carboxamide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.072097e+02 ;
+            rdfs:seeAlso chemspider:2123322,
+                pubchem:CID2846880 ;
+            schema:inChI "InChI=1S/C25H29NO4/c1-16-13-24(3)21-17(2)25(16,15-29-23(27)26-18-9-5-4-6-10-18)14-28-22(21)19-11-7-8-12-20(19)30-24/h4-12,16-17,21-22H,13-15H2,1-3H3,(H,26,27)" ;
+            schema:inChIKey inchikey:UONFBIWUOHBYQS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H29NO4" ;
+            schema:name "N-phenyl[(9,11,13-trimethyl-8,15-dioxatetracyclo[10.2.2.0<2,7>.0<9,14>]hexadec a-2(7),3,5-trien-12-yl)methoxy]carboxamide" ;
+            schema:smiles "CC1CC2(C3C(C1(COC3C4=CC=CC=C4O2)COC(=O)NC5=CC=CC=C5)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.3161e+04 ;
+            mbo:mz 1.210288e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.4e+02 ;
+            mbo:mz 1.210635e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.95e+02 ;
+            mbo:mz 1.211315e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 3.116e+03 ;
+            mbo:mz 2.871642e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 237 ],
+        [ mbo:intensity 8.4e+01 ;
+            mbo:mz 2.872202e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.23e+02 ;
+            mbo:mz 4.06202e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 9 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.21e+02 ;
+            mbo:precursor_mz 4.062024e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00di-0920000000-e225c95a8c1886659d18" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.405" ;
+    skos:definition "N-phenyl[(9,11,13-trimethyl-8,15-dioxatetracyclo[10.2.2.0<2,7>.0<9,14>]hexadec a-2(7),3,5-trien-12-yl)methoxy]carboxamide; LC-ESI-QTOF; MS2; CE 20 ev; [M-H]-" .
+

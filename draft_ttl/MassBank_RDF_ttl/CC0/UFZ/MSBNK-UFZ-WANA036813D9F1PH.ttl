@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA036813D9F1PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA036813D9F1PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "8.447 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-Ethyl-o-toluenesulfonamide",
+                "N-ethyl-2-methylbenzenesulfonamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.990667e+02 ;
+            rdfs:seeAlso cas:1077-56-1,
+                chemspider:13488,
+                pubchem:CID14110 ;
+            schema:inChI "InChI=1S/C9H13NO2S/c1-3-10-13(11,12)9-7-5-4-6-8(9)2/h4-7,10H,3H2,1-2H3" ;
+            schema:inChIKey inchikey:NATWUQFQFMZVMT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H13NO2S" ;
+            schema:name "N-Ethyl-o-toluenesulfonamide",
+                "N-ethyl-2-methylbenzenesulfonamide" ;
+            schema:smiles "CCNS(=O)(=O)C1=CC=CC=C1C" ] ;
+    mbo:has_peak [ mbo:intensity 2.86273e+04 ;
+            mbo:mz 6.50385e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.354554e+06 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.50526e+04 ;
+            mbo:mz 1.080571e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 6.799479e+05 ;
+            mbo:mz 1.090649e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 288 ],
+        [ mbo:intensity 2.8844e+04 ;
+            mbo:mz 1.200573e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.319868e+05 ;
+            mbo:mz 1.550163e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 226 ],
+        [ mbo:intensity 4.01e+03 ;
+            mbo:mz 2.000731e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.000749e+02 ;
+            mbo:precursor_mz 2.00074e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-052f-9400000000-725477251318b0105408" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "N-Ethyl-o-toluenesulfonamide; LC-ESI-ITFT; MS2; CE: 50%; R=15000; [M+H]+" .
+

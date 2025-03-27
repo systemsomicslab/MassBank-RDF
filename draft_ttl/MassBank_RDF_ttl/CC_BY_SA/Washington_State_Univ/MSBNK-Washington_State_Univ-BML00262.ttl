@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00262 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00262" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "10.751" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Usnic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.440896e+02 ;
+            rdfs:seeAlso cas:125-46-2,
+                chemspider:5444,
+                pubchem:CID5646 ;
+            schema:inChI "InChI=1S/C18H16O7/c1-6-14(22)12(8(3)20)16-13(15(6)23)18(4)10(25-16)5-9(21)11(7(2)19)17(18)24/h5,11,22-23H,1-4H3" ;
+            schema:inChIKey inchikey:CUCUKLJLRRAKFN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H16O7" ;
+            schema:name "Usnic acid" ;
+            schema:smiles "CC1=C(C(=C2C(=C1O)C3(C(=CC(=O)C(C3=O)C(=O)C)O2)C)C(=O)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.3e+01 ;
+            mbo:mz 1.449712e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 9.999e+03 ;
+            mbo:mz 3.430811e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.12e+02 ;
+            mbo:mz 2.310684e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 5.79e+02 ;
+            mbo:mz 2.590604e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 3.65e+02 ;
+            mbo:mz 2.990909e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.93e+02 ;
+            mbo:mz 3.010717e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 7.3e+01 ;
+            mbo:mz 3.130308e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.6e+01 ;
+            mbo:mz 3.27181e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.437e+03 ;
+            mbo:mz 3.280582e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 3.281209e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.43e+02 ;
+            mbo:precursor_mz 3.430823e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0006-0009000000-2f7a7385c252c9d735eb" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.456" ;
+    skos:definition "Usnic acid; LC-ESI-QTOF; MS2; CE 10 ev; [M-H]-" .
+

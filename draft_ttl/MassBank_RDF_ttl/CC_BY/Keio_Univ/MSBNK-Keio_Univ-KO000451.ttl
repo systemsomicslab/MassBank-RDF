@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000451 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000451" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chlorzoxazone" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.689931e+02 ;
+            rdfs:seeAlso cas:95-25-0,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:10133> ;
+            schema:inChI "InChI=1S/C7H4ClNO2/c8-4-1-2-6-5(3-4)9-7(10)11-6/h1-3H,(H,9,10)" ;
+            schema:inChIKey inchikey:TZFWDZFKRBELIQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H4ClNO2" ;
+            schema:name "Chlorzoxazone" ;
+            schema:smiles "O=C(O1)Nc(c2)c(ccc(Cl)2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.9802e+04 ;
+            mbo:mz 9.71e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 9.40595e+04 ;
+            mbo:mz 1.098e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 9.901e+04 ;
+            mbo:mz 1.233e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.9802e+04 ;
+            mbo:mz 1.243e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.78218e+06 ;
+            mbo:mz 1.32e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.47525e+04 ;
+            mbo:mz 1.35e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 2.029705e+05 ;
+            mbo:mz 1.667e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.068783e+09 ;
+            mbo:mz 1.68e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.077674e+08 ;
+            mbo:mz 1.685e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 101 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.68e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-014i-0900000000-5049b81b3f21c5158973" ;
+    rdfs:comment "KEIO_ID C042" ;
+    skos:definition "Chlorzoxazone; LC-ESI-QQ; MS2; CE:10 V; [M-H]-" .
+

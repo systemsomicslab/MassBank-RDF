@@ -1,0 +1,93 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN115527 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN115527" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "3.734 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,2-Benzenedicarboxylic Acid 1-(7-Hydroxy-4-methyloctyl) Ester",
+                "2-(7-hydroxy-4-methyloctoxy)carbonylbenzoic acid",
+                "Mono-hydroxy-isononyl phthalate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.081624e+02 ;
+            rdfs:seeAlso chemspider:48059182,
+                pubchem:CID102401880 ;
+            schema:inChI "InChI=1S/C17H24O5/c1-12(9-10-13(2)18)6-5-11-22-17(21)15-8-4-3-7-14(15)16(19)20/h3-4,7-8,12-13,18H,5-6,9-11H2,1-2H3,(H,19,20)" ;
+            schema:inChIKey inchikey:RWCHSWLUPRJYEX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H24O5" ;
+            schema:name "1,2-Benzenedicarboxylic Acid 1-(7-Hydroxy-4-methyloctyl) Ester",
+                "2-(7-hydroxy-4-methyloctoxy)carbonylbenzoic acid",
+                "Mono-hydroxy-isononyl phthalate" ;
+            schema:smiles "CC(O)CCC(C)CCCOC(=O)C1=CC=CC=C1C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.55e+02 ;
+            mbo:mz 6.90348e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.1717e+03 ;
+            mbo:mz 3.071557e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.78828e+04 ;
+            mbo:mz 7.70399e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 272 ],
+        [ mbo:intensity 2.258e+02 ;
+            mbo:mz 1.050365e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.06e+02 ;
+            mbo:mz 1.130975e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6.57701e+04 ;
+            mbo:mz 1.210297e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.2893e+03 ;
+            mbo:mz 1.470079e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 2.678e+02 ;
+            mbo:mz 1.490248e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.7646e+03 ;
+            mbo:mz 1.571223e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2.8601e+03 ;
+            mbo:mz 1.591393e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 43 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.071555e+02 ;
+            mbo:precursor_mz 3.071551e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00di-2900000000-6eb4079668165d7147dc" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Mono-hydroxy-isononyl phthalate; LC-ESI-QTOF; MS2; CE: 15eV; R=7000; [M-H]-" .
+

@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS052002 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS052002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(16:0/16:0)PG",
+                "1,2-Dipalmitoyl-sn-glycero-3-phospho-rac-(1-glycerol) sodium salt",
+                "1,2-Dipalmitoyl-sn-glycero-3-phospho-rac-glycerol",
+                "1,2-dipalmitoylphosphatidylglycerol",
+                "DPPG",
+                "LHG" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Phospholipid CLASS3 Phosphatidylglycerol" ;
+            mbo:ch_exact_mass 7.22984e+02 ;
+            rdfs:seeAlso cas:4537-77-3,
+                pubchem:CID9547104 ;
+            schema:inChI "InChI=1S/C38H75O10P/c1-3-5-7-9-11-13-15-17-19-21-23-25-27-29-37(41)45-33-36(34-47-49(43,44)46-32-35(40)31-39)48-38(42)30-28-26-24-22-20-18-16-14-12-10-8-6-4-2/h35-36,39-40H,3-34H2,1-2H3,(H,43,44)" ;
+            schema:inChIKey inchikey:BIABMEZBCHDPBV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C38H75O10P" ;
+            schema:name "(16:0/16:0)PG",
+                "1,2-Dipalmitoyl-sn-glycero-3-phospho-rac-(1-glycerol) sodium salt",
+                "1,2-Dipalmitoyl-sn-glycero-3-phospho-rac-glycerol",
+                "1,2-dipalmitoylphosphatidylglycerol",
+                "DPPG",
+                "LHG" ;
+            schema:smiles "CCCCCCCCCCCCCCCC(=O)OCC(COP(=O)(O)OCC(CO)O)OC(=O)CCCCCCCCCCCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.2589e+04 ;
+            mbo:mz 3.87e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 103 ],
+        [ mbo:intensity 1.66391e+05 ;
+            mbo:mz 5.51e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 761 ],
+        [ mbo:intensity 2.1839e+05 ;
+            mbo:mz 5.52e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.8325e+04 ;
+            mbo:mz 5.53e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 175 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 7.2399e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0udi-0000090000-4938330e5422c5b5f333" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "1,2-dipalmitoylphosphatidylglycerol , (16:0/16:0)PG, LHG, DPPG, 1,2-Dipalmitoyl-sn-glycero-3-phospho-rac-glycerol, 1,2-Dipalmitoyl-sn-glycero-3-phospho-rac-(1-glycerol) sodium salt; LC-ESI-QQ; MS2" .
+

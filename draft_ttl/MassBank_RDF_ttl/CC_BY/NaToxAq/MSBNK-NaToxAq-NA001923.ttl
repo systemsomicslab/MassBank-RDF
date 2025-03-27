@@ -1,0 +1,53 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA001923 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA001923" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "80 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "0.763 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Gramine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.741157e+02 ;
+            rdfs:seeAlso pubchem:CID6890 ;
+            schema:inChI "InChI=1S/C11H14N2/c1-13(2)8-9-7-12-11-6-4-3-5-10(9)11/h3-7,12H,8H2,1-2H3" ;
+            schema:inChIKey inchikey:OCDGBSUVYYVKQZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H14N2" ;
+            schema:name "Gramine" ;
+            schema:smiles "CN(C)Cc1c[nH]c2c1cccc2" ] ;
+    mbo:has_peak [ mbo:intensity 1.139628e+06 ;
+            mbo:mz 1.300653e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.30065e+02 ;
+            mbo:precursor_mz 1.75123e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-001i-0900000000-06016462da9dcf60c975" ;
+    rdfs:comment "INTERNAL_ID 4" ;
+    skos:definition "Gramine; LC-ESI-ITFT; MS2; CE: 80%; R=15000; [M+H]+" .
+

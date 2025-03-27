@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00579 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-18, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00579" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.497272 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,4-Dihydroxy-L-phenylalanine",
+                "3-Hydroxy-L-tyrosine",
+                "DOPA",
+                "Dihydroxy-L-phenylalanine",
+                "L-Dopa",
+                "L-beta-(3,4-Dihydroxyphenyl)alanine",
+                "Levodopa" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.970688e+02 ;
+            rdfs:seeAlso cas:59-92-7,
+                knapsack:C00001357,
+                pubchem:CID3648 ;
+            schema:inChI "InChI=1S/C9H11NO4/c10-6(9(13)14)3-5-1-2-7(11)8(12)4-5/h1-2,4,6,11-12H,3,10H2,(H,13,14)/t6-/m0/s1" ;
+            schema:inChIKey inchikey:WTDRDQBEARUVNC-LURJTMIESA-N ;
+            schema:molecularFormula "C9H11NO4" ;
+            schema:name "3,4-Dihydroxy-L-phenylalanine",
+                "3-Hydroxy-L-tyrosine",
+                "DOPA",
+                "Dihydroxy-L-phenylalanine",
+                "L-Dopa",
+                "L-beta-(3,4-Dihydroxyphenyl)alanine",
+                "Levodopa" ;
+            schema:smiles "OC(=O)C([H])(N)Cc(c1)cc(O)c(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 1.829021e+02 ;
+            mbo:mz 1.350181e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.039562e+02 ;
+            mbo:mz 1.520636e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.920721e+02 ;
+            mbo:mz 1.790313e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 1.050383e+04 ;
+            mbo:mz 1.96067e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.157497e+01 ;
+            mbo:mz 3.748783e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.96067e+02 ;
+            mbo:precursor_mz 3.9313e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-0900000000-efc5dfd988dedf39f4f8" ;
+    skos:definition "DOPA; LC-ESI-ITFT; MS2; m/z:393.13; NEG" .
+

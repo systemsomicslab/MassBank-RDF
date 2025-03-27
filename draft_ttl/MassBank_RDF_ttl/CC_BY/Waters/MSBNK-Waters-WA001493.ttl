@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA001493 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA001493" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "14.780 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Floctafenic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.320773e+02 ;
+            rdfs:seeAlso cas:36783-34-3 ;
+            schema:inChI "InChI=1S/C17H11F3N2O2/c18-17(19,20)12-6-3-5-10-14(8-9-21-15(10)12)22-13-7-2-1-4-11(13)16(23)24/h1-9H,(H,21,22)(H,23,24)" ;
+            schema:inChIKey inchikey:RGUIKQRAZCQMBM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H11F3N2O2" ;
+            schema:name "Floctafenic acid" ;
+            schema:smiles "OC(=O)c(c3)c(ccc3)Nc(c2)c(c1)c(nc2)c(cc1)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.67e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 2.87e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.31e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.88e+02 ;
+            mbo:mz 3.32e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 188 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 3.33e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 24 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-001i-0009000000-234046ec98f4bedbaab1" ;
+    skos:definition "Floctafenic acid; LC-ESI-Q; MS; NEG; 30 V" .
+

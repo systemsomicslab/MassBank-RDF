@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN124901 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN124901" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "5 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.151 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5,6-Dimethyl-1H-benzotriazole",
+                "5,6-Dimethylbenzotriazole",
+                "5,6-dimethyl-2H-benzotriazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.470796e+02 ;
+            rdfs:seeAlso cas:4184-79-6,
+                chemspider:70242,
+                pubchem:CID77849 ;
+            schema:inChI "InChI=1S/C8H9N3/c1-5-3-7-8(4-6(5)2)10-11-9-7/h3-4H,1-2H3,(H,9,10,11)" ;
+            schema:inChIKey inchikey:MVPKIPGHRNIOPT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H9N3" ;
+            schema:name "5,6-Dimethyl-1H-benzotriazole",
+                "5,6-Dimethylbenzotriazole",
+                "5,6-dimethyl-2H-benzotriazole" ;
+            schema:smiles "CC1=CC2=NNN=C2C=C1C" ] ;
+    mbo:has_peak [ mbo:intensity 8.05e+02 ;
+            mbo:mz 7.70387e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.707e+02 ;
+            mbo:mz 8.00483e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 7.042e+02 ;
+            mbo:mz 9.10539e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.1468e+03 ;
+            mbo:mz 9.30699e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 4.372e+02 ;
+            mbo:mz 1.030544e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.262e+02 ;
+            mbo:mz 1.040479e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.2492e+03 ;
+            mbo:mz 1.200804e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 7.0971e+04 ;
+            mbo:mz 1.480868e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.480868e+02 ;
+            mbo:precursor_mz 1.480869e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0002-0900000000-340aa38c64bee2d14c5f" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "5,6-Dimethylbenzotriazole; LC-ESI-QTOF; MS2; CE: 5eV; R=7000; [M+H]+" .
+

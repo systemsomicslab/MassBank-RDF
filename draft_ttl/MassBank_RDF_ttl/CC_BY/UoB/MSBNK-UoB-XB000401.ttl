@@ -1,0 +1,60 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000401 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham" ;
+    dcterms:date "2023-04-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100% (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.018 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "lansoprazole_BTP_M2" ;
+            mbo:ch_compound_class "N/A; Biotransformation product" ;
+            mbo:ch_exact_mass 2.01046e+02 ;
+            schema:inChI "InChI=1S/C8H11NO3S/c1-6-7(4-13(12)5-10)9-3-2-8(6)11/h2-3,10H,4-5H2,1H3,(H,9,11)" ;
+            schema:inChIKey inchikey:WUBKCPXLWABXHI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H11NO3S" ;
+            schema:name "lansoprazole_BTP_M2" ;
+            schema:smiles "CC1=C(O)C=CN=C1CS(CO)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.95822e+04 ;
+            mbo:mz 9.4065e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 514 ],
+        [ mbo:intensity 1.28249e+04 ;
+            mbo:mz 1.020464e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 337 ],
+        [ mbo:intensity 3.80673e+04 ;
+            mbo:mz 1.230678e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.020532e+02 ;
+            mbo:precursor_mz 2.020532e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00dl-3900000000-33784df8744bbfa6361b" ;
+    rdfs:comment "INTERNAL_ID 3628" ;
+    skos:definition "lansoprazole_BTP_M2; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

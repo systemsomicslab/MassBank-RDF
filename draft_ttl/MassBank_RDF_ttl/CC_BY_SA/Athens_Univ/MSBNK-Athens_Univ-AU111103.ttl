@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU111103 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Anna Bletsou, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-09-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU111103" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.6 min" ;
+            mbo:solvent "A water with 0.01% formic acid and 5mM ammonium formate",
+                "B 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-chloro-N-(2-methyl-2,3-dihydroindol-1-yl)-3-sulfamoylbenzamide",
+                "Indapamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.650601e+02 ;
+            rdfs:seeAlso cas:26807-65-8,
+                chemspider:3574,
+                pubchem:CID3702 ;
+            schema:inChI "InChI=1S/C16H16ClN3O3S/c1-10-8-11-4-2-3-5-14(11)20(10)19-16(21)12-6-7-13(17)15(9-12)24(18,22)23/h2-7,9-10H,8H2,1H3,(H,19,21)(H2,18,22,23)" ;
+            schema:inChIKey inchikey:NDDAHWYSQHTHNT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H16ClN3O3S" ;
+            schema:name "4-chloro-N-(2-methyl-2,3-dihydroindol-1-yl)-3-sulfamoylbenzamide",
+                "Indapamide" ;
+            schema:smiles "CC1Cc2ccccc2N1NC(=O)c3ccc(c(c3)S(=O)(=O)N)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 2.58e+03 ;
+            mbo:mz 1.170568e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.2e+02 ;
+            mbo:mz 1.180639e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 201 ],
+        [ mbo:intensity 4.08e+02 ;
+            mbo:mz 1.300639e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 158 ],
+        [ mbo:intensity 1.752e+03 ;
+            mbo:mz 1.330846e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 678 ],
+        [ mbo:intensity 3e+02 ;
+            mbo:mz 2.179664e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 116 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.660674e+02 ;
+            mbo:precursor_mz 3.660674e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0159-0900000000-a843660d42ffb01666fe" ;
+    rdfs:comment "INTERNAL_ID 1111" ;
+    skos:definition "Indapamide; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

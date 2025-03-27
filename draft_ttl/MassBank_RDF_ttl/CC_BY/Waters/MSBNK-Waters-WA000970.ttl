@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000970 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000970" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "9.800 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chloroquine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.191815e+02 ;
+            rdfs:seeAlso cas:54-05-7 ;
+            schema:inChI "InChI=1S/C18H26ClN3/c1-4-22(5-2)12-6-7-14(3)21-17-10-11-20-18-13-15(19)8-9-16(17)18/h8-11,13-14H,4-7,12H2,1-3H3,(H,20,21)" ;
+            schema:inChIKey inchikey:WHTVZRBIWZFKQO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H26ClN3" ;
+            schema:name "Chloroquine" ;
+            schema:smiles "CCN(CC)CCCC(C)Nc(c2)c(c1)c(nc2)cc(Cl)c1" ] ;
+    mbo:has_peak [ mbo:intensity 3.41e+02 ;
+            mbo:mz 1.61e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 341 ],
+        [ mbo:intensity 7.8e+01 ;
+            mbo:mz 1.62e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.02e+02 ;
+            mbo:mz 1.81e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 1.82e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.2e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.37e+02 ;
+            mbo:mz 3.21e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 3.64e+02 ;
+            mbo:mz 3.22e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 364 ],
+        [ mbo:intensity 4.3e+01 ;
+            mbo:mz 3.23e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 43 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-0309000000-1a057c0ea492b42f9148" ;
+    skos:definition "Chloroquine; LC-ESI-Q; MS; POS; 15 V" .
+

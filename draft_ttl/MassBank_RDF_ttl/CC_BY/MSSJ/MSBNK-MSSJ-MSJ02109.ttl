@@ -1,0 +1,89 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02109 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2023-03-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02109" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Yong Luo, Yuanhong Ma, Zhaomin Hou. alpha-C-H Alkylation of Methyl Sulfides with Alkenes by a Scandium Catalyst. J. Am. Chem. Soc. 2018, 140, 114-117. DOI: 10.1021/jacs.7b11245" ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A gas chromatograph." ;
+            mbo:column_name "HP-5 30x0.32 0.25um 19091J-413, length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "11.15 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4-(2,6-dichlorophenyl)-2-methylbutyl)(pentyl)sulfane" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 3.180976e+02 ;
+            schema:inChI "InChI=1S/C16H24Cl2S/c1-3-4-5-11-19-12-13(2)9-10-14-15(17)7-6-8-16(14)18/h6-8,13H,3-5,9-12H2,1-2H3" ;
+            schema:inChIKey inchikey:GHNXJJUFIWWEGS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H24Cl2S" ;
+            schema:name "(4-(2,6-dichlorophenyl)-2-methylbutyl)(pentyl)sulfane" ;
+            schema:smiles "CCCCCSCC(C)CCc1c(Cl)cccc1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 9.7475e+00 ;
+            mbo:mz 2.82118e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 2.73082e+01 ;
+            mbo:mz 3.20094e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 273 ],
+        [ mbo:intensity 4.821e+00 ;
+            mbo:mz 3.21099e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 5.366e+00 ;
+            mbo:mz 3.22093e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.83125e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.09281e+01 ;
+            mbo:mz 2.84126e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 209 ],
+        [ mbo:intensity 3.83408e+01 ;
+            mbo:mz 2.85122e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 383 ],
+        [ mbo:intensity 6.4263e+00 ;
+            mbo:mz 2.86125e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 2.3188e+00 ;
+            mbo:mz 2.87121e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.4431e+00 ;
+            mbo:mz 2.88618e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.91042e+01 ;
+            mbo:mz 3.18098e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 391 ],
+        [ mbo:intensity 7.2886e+00 ;
+            mbo:mz 3.19101e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 73 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-001i-0094000000-bedad92321d12cb49674" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. Postrun m/z adjustment with known mass was 318.09758." ;
+    skos:definition "(4-(2,6-dichlorophenyl)-2-methylbutyl)(pentyl)sulfane; GC-FI-TOF; MS; POSITIVE; FI; 10 kV" .
+

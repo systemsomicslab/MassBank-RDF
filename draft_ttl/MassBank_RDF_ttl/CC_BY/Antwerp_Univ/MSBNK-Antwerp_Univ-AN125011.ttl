@@ -1,0 +1,92 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN125011 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN125011" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "55 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.153 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-Chlorobenzotriazole",
+                "5-chloro-2H-benzotriazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.530094e+02 ;
+            rdfs:seeAlso cas:94-97-3,
+                chemspider:60126,
+                pubchem:CID66760 ;
+            schema:inChI "InChI=1S/C6H4ClN3/c7-4-1-2-5-6(3-4)9-10-8-5/h1-3H,(H,8,9,10)" ;
+            schema:inChIKey inchikey:PZBQVZFITSVHAW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H4ClN3" ;
+            schema:name "5-Chlorobenzotriazole",
+                "5-chloro-2H-benzotriazole" ;
+            schema:smiles "C1=CC2=NNN=C2C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 3.06e+02 ;
+            mbo:mz 5.20173e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 4.328e+02 ;
+            mbo:mz 9.9e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 2.96e+02 ;
+            mbo:mz 6.10082e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 5.44e+02 ;
+            mbo:mz 6.20149e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 2.5015e+03 ;
+            mbo:mz 6.30232e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 494 ],
+        [ mbo:intensity 4.39e+02 ;
+            mbo:mz 6.40182e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 9.585e+02 ;
+            mbo:mz 6.40307e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 2.241e+02 ;
+            mbo:mz 6.50262e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 5.0564e+03 ;
+            mbo:mz 7.29841e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.798e+02 ;
+            mbo:mz 9.10417e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 55 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.540166e+02 ;
+            mbo:precursor_mz 1.540167e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0229-9000000000-d468b200ac94db240564" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "5-Chlorobenzotriazole; LC-ESI-QTOF; MS2; CE: 55eV; R=7000; [M+H]+" .
+

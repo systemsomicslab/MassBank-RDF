@@ -1,0 +1,91 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000103 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000103" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-APCI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "17.724300" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diazinon",
+                "Diethoxy-(6-methyl-2-propan-2-ylpyrimidin-4-yl)oxy-sulfanylidene-lambda5-phosphane" ;
+            mbo:ch_compound_class "Pesticides; Organophosphate Insecticides; Organothiophosphates" ;
+            mbo:ch_exact_mass 3.041011e+02 ;
+            schema:inChI "InChI=1S/C12H21N2O3PS/c1-6-15-18(19,16-7-2)17-11-8-10(5)13-12(14-11)9(3)4/h8-9H,6-7H2,1-5H3" ;
+            schema:molecularFormula "C12H21N2O3PS" ;
+            schema:name "Diazinon",
+                "Diethoxy-(6-methyl-2-propan-2-ylpyrimidin-4-yl)oxy-sulfanylidene-lambda5-phosphane" ;
+            schema:smiles "S=P(OC=1N=C(N=C(C1)C)C(C)C)(OCC)OCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.243533e+07 ;
+            mbo:mz 7.006519e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 3.48584e+06 ;
+            mbo:mz 2.141737e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.477824e+08 ;
+            mbo:mz 3.051081e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.272845e+07 ;
+            mbo:mz 8.404445e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 3.792845e+07 ;
+            mbo:mz 9.695043e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 8.325174e+06 ;
+            mbo:mz 9.898446e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 6.968218e+07 ;
+            mbo:mz 1.000215e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 8.02965e+06 ;
+            mbo:mz 1.090047e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 8.584755e+07 ;
+            mbo:mz 1.149614e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 247 ],
+        [ mbo:intensity 8.000819e+07 ;
+            mbo:mz 1.53102e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 230 ],
+        [ mbo:intensity 1.640783e+08 ;
+            mbo:mz 1.690798e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 471 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.140425e+02 ;
+            mbo:precursor_mz 3.051082e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0a4i-2907000000-11be020f671382fc3c1b" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Diazinon; LC-APCI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M+H]+" .
+

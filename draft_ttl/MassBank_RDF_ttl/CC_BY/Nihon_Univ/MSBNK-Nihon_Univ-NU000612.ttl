@@ -1,0 +1,98 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Nihon_Univ-NU000612 a mbo:MassSpectrum ;
+    dcterms:creator "Takashi Iida, Department of Chemistry, College of Humanities and Sciences, Nihon University" ;
+    dcterms:date "2018-02-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-Nihon_Univ-NU000612" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Takashi Iida, Department of Chemistry, College of Humanities and Sciences, Nihon University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100LP, JEOL" ;
+            mbo:instrument_type "LC-ESI-TOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3a,7a,14a-(OH)3-5b-cholanic acid",
+                "3alpha,7alpha,14alpha-Trihydroxy-5beta-cholane-24-oic acid" ;
+            mbo:ch_compound_class "Natural Product; Bile acids" ;
+            mbo:ch_exact_mass 4.082876e+02 ;
+            rdfs:seeAlso chemspider:10363042,
+                pubchem:CID12112087 ;
+            schema:inChI "InChI=1S/C24H40O5/c1-14(4-5-20(27)28)17-8-11-24(29)21-18(7-10-23(17,24)3)22(2)9-6-16(25)12-15(22)13-19(21)26/h14-19,21,25-26,29H,4-13H2,1-3H3,(H,27,28)/t14-,15+,16-,17-,18+,19-,21+,22+,23-,24-/m1/s1" ;
+            schema:inChIKey inchikey:OGSDYCPNYNWUNN-XJKBFLKTSA-N ;
+            schema:molecularFormula "C24H40O5" ;
+            schema:name "3a,7a,14a-(OH)3-5b-cholanic acid",
+                "3alpha,7alpha,14alpha-Trihydroxy-5beta-cholane-24-oic acid" ;
+            schema:smiles "C(C3(C)4)([H])(CC(O)CC4)CC(C(C3([H])2)(C(C1(C)CC2)(O)CCC1([H])C(C)CCC(O)=O)[H])O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+01 ;
+            mbo:mz 6.307e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 4.1e+01 ;
+            mbo:mz 4.0725e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 410 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 4.0825e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 7.9744e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 6e+00 ;
+            mbo:mz 8.1546e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 8.1645e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 6.996e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7e+00 ;
+            mbo:mz 7.978e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 4e+00 ;
+            mbo:mz 8.171e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.1e+01 ;
+            mbo:mz 1.1345e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 1.5518e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 2.1212e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 3.8923e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 3.9024e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-066r-9000300000-252f12032791a66e4aa0" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 17HP8021 (2017) to the MassBank database committee of the Mass Spectrometry Society of Japan." ;
+    skos:definition "3a,7a,14a-(OH)3-5b-cholanic acid; LC-ESI-TOF; MS; NEGATIVE; In source decay -60 V" .
+

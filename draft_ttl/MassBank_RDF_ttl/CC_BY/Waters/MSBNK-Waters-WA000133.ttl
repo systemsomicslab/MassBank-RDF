@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000133 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000133" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QuattroPremier XE, Waters" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phenmedipham" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.00111e+02 ;
+            rdfs:seeAlso cas:13684-63-4 ;
+            schema:inChI "InChI=1S/C16H16N2O4/c1-11-5-3-6-12(9-11)18-16(20)22-14-8-4-7-13(10-14)17-15(19)21-2/h3-10H,1-2H3,(H,17,19)(H,18,20)" ;
+            schema:inChIKey inchikey:IDOWTHOLJBTAFI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H16N2O4" ;
+            schema:name "Phenmedipham" ;
+            schema:smiles "COC(=O)Nc(c2)cc(cc2)OC(=O)Nc(c1)cc(C)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 4.3e+01 ;
+            mbo:mz 1.36e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.68e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.69e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 5.09e+02 ;
+            mbo:mz 3.01e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 509 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 3.02e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 3.18e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 55 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.182e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0gb9-0905000000-8fa09835705403e48f9c" ;
+    skos:definition "Phenmedipham; LC-ESI-QQ; MS2; CE:10 V; [M+H]+" .
+

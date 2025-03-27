@@ -1,0 +1,89 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ01504 a mbo:MassSpectrum ;
+    dcterms:creator "Kaori Shintani, Department of Forensic Medicine, Graduate School of Medical Science, Kyoto Prefectural University of Medicine, 465 Kajii-cho, Kamigyo-ku, Kyoto 602-8566, Japan." ;
+    dcterms:date "2022-07-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ01504" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Kaori Shintani, Department of Forensic Medicine, Graduate School of Medical Science, Kyoto Prefectural University of Medicine, 465 Kajii-cho, Kamigyo-ku, Kyoto 602-8566, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LCMS-8045 (Shimadzu, Kyoto, Japan)" ;
+            mbo:collision_energy "45 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Hydroxyethidium" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 3.301601e+02 ;
+            rdfs:seeAlso cas:854670-32-9,
+                chemspider:26001664,
+                pubchem:CID71414207 ;
+            schema:inChI "InChI=1S/C21H19N3O/c1-2-24-19-12-18(23)20(25)11-16(19)15-9-8-14(22)10-17(15)21(24)13-6-4-3-5-7-13/h3-12,23,25H,2,22H2,1H3/p+1" ;
+            schema:inChIKey inchikey:QZGDUYKVUMMZQQ-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C21H20N3O]+" ;
+            schema:name "2-Hydroxyethidium" ;
+            schema:smiles "CC[n+]1c2cc(c(cc2c3ccc(cc3c1c4ccccc4)N)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 6.496e+03 ;
+            mbo:mz 1.7915e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 4.6421e+04 ;
+            mbo:mz 3.001e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.149e+03 ;
+            mbo:mz 3.022e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.542e+03 ;
+            mbo:mz 1.969e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 2.599e+03 ;
+            mbo:mz 2.0595e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 5.433e+03 ;
+            mbo:mz 2.071e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 7.03e+03 ;
+            mbo:mz 2.4e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 151 ],
+        [ mbo:intensity 2.1383e+04 ;
+            mbo:mz 2.5505e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 460 ],
+        [ mbo:intensity 6.279e+03 ;
+            mbo:mz 2.561e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 5.552e+03 ;
+            mbo:mz 2.5715e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 119 ],
+        [ mbo:intensity 8.722e+03 ;
+            mbo:mz 2.851e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 188 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.301601e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0zfr-0197000000-9d527e883b8fed7bda91" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 22HP8019 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "2-Hydroxyethidium; ESI-QQ; MS2; [M]+, CID, CE 45 V" .
+

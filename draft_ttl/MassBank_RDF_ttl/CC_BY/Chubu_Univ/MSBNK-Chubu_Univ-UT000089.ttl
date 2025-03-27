@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT000089 a mbo:MassSpectrum ;
+    dcterms:creator "Nakanishi H, Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2007-10-19, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT000089" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "4000Q TRAP, Applied Biosystems" ;
+            mbo:collision_energy "45 V" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(9Z,11E,15Z)-13-Hydroperoxy-9,11,15-octadecatrienoic acid",
+                "13(S)-HpOTrE",
+                "13-HpOTrE",
+                "13S-hydroperoxy-9Z,11E,15Z-octadecatrienoic acid" ;
+            mbo:ch_compound_class "Natural Product; Lipid; Fatty acid" ;
+            mbo:ch_exact_mass 3.102144e+02 ;
+            rdfs:seeAlso cas:67597-26-6 ;
+            schema:inChI "InChI=1S/C18H30O4/c1-2-3-11-14-17(22-21)15-12-9-7-5-4-6-8-10-13-16-18(19)20/h3,7,9,11-12,15,17,21H,2,4-6,8,10,13-14,16H2,1H3,(H,19,20)/b9-7?,11-3-,15-12+" ;
+            schema:inChIKey inchikey:UYQGVDXDXBAABN-TUAAJWHTSA-N ;
+            schema:molecularFormula "C18H30O4" ;
+            schema:name "(9Z,11E,15Z)-13-Hydroperoxy-9,11,15-octadecatrienoic acid",
+                "13(S)-HpOTrE",
+                "13-HpOTrE",
+                "13S-hydroperoxy-9Z,11E,15Z-octadecatrienoic acid" ;
+            schema:smiles "CCC=CCC(OO)C=CC=CCCCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 6.25e+03 ;
+            mbo:mz 1.9704e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 3.125e+04 ;
+            mbo:mz 2.0902e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0190000000-a470c9622afb2fc316e0" ;
+    skos:definition "13-HpOTrE; LC-ESI-QIT; MS2; CE:45 V; [M-H]-" .
+

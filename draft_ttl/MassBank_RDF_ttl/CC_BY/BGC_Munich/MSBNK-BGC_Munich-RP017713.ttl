@@ -1,0 +1,114 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP017713 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP017713" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.069 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ethyl vanillate",
+                "ethyl 4-hydroxy-3-methoxybenzoate" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.960736e+02 ;
+            rdfs:seeAlso cas:617-05-0,
+                chemspider:11541,
+                pubchem:CID12038 ;
+            schema:inChI "InChI=1S/C10H12O4/c1-3-14-10(12)7-4-5-8(11)9(6-7)13-2/h4-6,11H,3H2,1-2H3" ;
+            schema:inChIKey inchikey:MWAYRGBWOVHDDZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H12O4" ;
+            schema:name "Ethyl vanillate",
+                "ethyl 4-hydroxy-3-methoxybenzoate" ;
+            schema:smiles "CCOC(=O)C1=CC(=C(C=C1)O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 1.142e+03 ;
+            mbo:mz 5.10238e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 1.9e+02 ;
+            mbo:mz 9.70293e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 5.4e+01 ;
+            mbo:mz 9.80342e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 8.9e+03 ;
+            mbo:mz 1.07014e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 1.230083e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 7.2e+02 ;
+            mbo:mz 1.25025e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 5.4e+02 ;
+            mbo:mz 1.510046e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 6.50037e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.36e+02 ;
+            mbo:mz 6.70189e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.632e+03 ;
+            mbo:mz 6.90344e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 183 ],
+        [ mbo:intensity 8.484e+03 ;
+            mbo:mz 7.90188e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 952 ],
+        [ mbo:intensity 1.78e+02 ;
+            mbo:mz 8.00235e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 5.198e+03 ;
+            mbo:mz 8.10346e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 583 ],
+        [ mbo:intensity 2.8e+01 ;
+            mbo:mz 8.30378e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 7.58e+02 ;
+            mbo:mz 9.50142e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 85 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.950666e+02 ;
+            mbo:precursor_mz 1.950663e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-0a7i-9500000000-cd92ce761ceeba3e4aa7" ;
+    rdfs:comment "INTERNAL_ID 177" ;
+    skos:definition "Ethyl vanillate; LC-ESI-QTOF; MS2; CE: 40; R=; [M-H]-" .
+

@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002062 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002062" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "13.040 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Metapramine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.38147e+02 ;
+            rdfs:seeAlso cas:21730-16-5 ;
+            schema:inChI "InChI=1S/C16H18N2/c1-17-14-11-12-7-3-5-9-15(12)18(2)16-10-6-4-8-13(14)16/h3-10,14,17H,11H2,1-2H3" ;
+            schema:inChIKey inchikey:YXVZOBVWVRFPTE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H18N2" ;
+            schema:name "Metapramine" ;
+            schema:smiles "CNC(C1)c(c3)c(ccc3)N(C)c(c2)c(ccc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.08e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.29e+02 ;
+            mbo:mz 2.09e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 5.9e+01 ;
+            mbo:mz 2.26e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 6.7e+01 ;
+            mbo:mz 2.39e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 67 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-387fbe1134a206bde069" ;
+    skos:definition "Metapramine; LC-ESI-Q; MS; POS; 15 V" .
+

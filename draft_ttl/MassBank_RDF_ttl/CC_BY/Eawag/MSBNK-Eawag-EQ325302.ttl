@@ -1,0 +1,76 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ325302 a mbo:MassSpectrum ;
+    dcterms:creator "Vogler B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ325302" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "0.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Guanylurea",
+                "diaminomethylideneurea" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.020542e+02 ;
+            rdfs:seeAlso cas:141-83-3,
+                chemspider:8527,
+                pubchem:CID8859 ;
+            schema:inChI "InChI=1S/C2H6N4O/c3-1(4)6-2(5)7/h(H6,3,4,5,6,7)" ;
+            schema:inChIKey inchikey:SQSPRWMERUQXNE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C2H6N4O" ;
+            schema:name "Guanylurea",
+                "diaminomethylideneurea" ;
+            schema:smiles "O=C(/N=C(\\N)N)N" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 2.966847e+07 ;
+            mbo:mz 6.00556e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.724506e+05 ;
+            mbo:mz 6.10396e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.545428e+05 ;
+            mbo:mz 6.90083e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 6.544084e+06 ;
+            mbo:mz 8.60349e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 220 ],
+        [ mbo:intensity 6.301423e+06 ;
+            mbo:mz 1.030614e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 212 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.030617e+02 ;
+            mbo:precursor_mz 1.030614e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-03di-9100000000-5432de2676451bfcf14e" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3253" ;
+    skos:definition "Guanylurea; LC-ESI-QFT; MS2; CE: 30; R=35000; [M+H]+" .
+

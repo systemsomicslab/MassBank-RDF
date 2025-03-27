@@ -1,0 +1,93 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA000834 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA000834" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "25 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "7.421 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Coniferaldehyde" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.78063e+02 ;
+            rdfs:seeAlso pubchem:CID5280536 ;
+            schema:inChI "InChI=1S/C10H10O3/c1-13-10-7-8(3-2-6-11)4-5-9(10)12/h2-7,12H,1H3/b3-2+" ;
+            schema:inChIKey inchikey:DKZBBWMURDFHNE-NSCUHMNNSA-N ;
+            schema:molecularFormula "C10H10O3" ;
+            schema:name "Coniferaldehyde" ;
+            schema:smiles "COC1=CC(\\C=C\\C=O)=CC=C1O" ] ;
+    mbo:has_peak [ mbo:intensity 6.5479e+03 ;
+            mbo:mz 5.50177e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.965846e+05 ;
+            mbo:mz 1.610598e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 502 ],
+        [ mbo:intensity 1.186579e+06 ;
+            mbo:mz 1.790703e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.7425e+03 ;
+            mbo:mz 9.50492e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.52434e+04 ;
+            mbo:mz 1.050699e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.04386e+04 ;
+            mbo:mz 1.190493e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.74339e+04 ;
+            mbo:mz 1.230441e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.80559e+04 ;
+            mbo:mz 1.330649e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 6.2869e+03 ;
+            mbo:mz 1.350443e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.85393e+05 ;
+            mbo:mz 1.470441e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 493 ],
+        [ mbo:intensity 8.0247e+03 ;
+            mbo:mz 1.510755e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.790699e+02 ;
+            mbo:precursor_mz 1.790703e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-01t9-0900000000-48e3e4f8aadb39a1bf76" ;
+    rdfs:comment "INTERNAL_ID 13" ;
+    skos:definition "Coniferaldehyde; LC-ESI-ITFT; MS2; CE: 25%; R=15000; [M+H]+" .
+

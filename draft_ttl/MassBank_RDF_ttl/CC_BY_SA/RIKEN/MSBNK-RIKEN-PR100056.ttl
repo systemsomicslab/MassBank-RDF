@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100056 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100056" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(Aminomethyl)-5-hydroxy-6-methyl-3-pyridinemethanol",
+                "Pyridoxamine",
+                "Pyridoxylamine" ;
+            mbo:ch_compound_class "Thiamine" ;
+            mbo:ch_exact_mass 1.680899e+02 ;
+            rdfs:seeAlso cas:85-87-0,
+                chemspider:1023,
+                knapsack:C00007504,
+                pubchem:CID1052 ;
+            schema:inChI "InChI=1S/C8H12N2O2/c1-5-8(12)7(2-9)6(4-11)3-10-5/h3,11-12H,2,4,9H2,1H3" ;
+            schema:inChIKey inchikey:NHZMQXZHNVQTQA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H12N2O2" ;
+            schema:name "4-(Aminomethyl)-5-hydroxy-6-methyl-3-pyridinemethanol",
+                "Pyridoxamine",
+                "Pyridoxylamine" ;
+            schema:smiles "OCc(c1)c(CN)c(O)c(C)n1" ] ;
+    mbo:has_peak [ mbo:intensity 1.505e+02 ;
+            mbo:mz 1.520691e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 163 ],
+        [ mbo:intensity 9.225e+02 ;
+            mbo:mz 1.690946e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.690977e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-014i-0900000000-6b5f1d606df91ae52eb4" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Pyridoxamine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

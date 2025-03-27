@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM861951 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM861951" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "5.838 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-1-[(2S)-2-methyl-3-sulfanylpropanoyl]pyrrolidine-2-carboxylic acid",
+                "Captopril" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.170773e+02 ;
+            rdfs:seeAlso cas:62571-86-2,
+                chemspider:40130,
+                pubchem:CID44093 ;
+            schema:inChI "InChI=1S/C9H15NO3S/c1-6(5-14)8(11)10-4-2-3-7(10)9(12)13/h6-7,14H,2-5H2,1H3,(H,12,13)/t6-,7+/m1/s1" ;
+            schema:inChIKey inchikey:FAKRSMQSSFJEIM-RQJHMYQMSA-N ;
+            schema:molecularFormula "C9H15NO3S" ;
+            schema:name "(2S)-1-[(2S)-2-methyl-3-sulfanylpropanoyl]pyrrolidine-2-carboxylic acid",
+                "Captopril" ;
+            schema:smiles "C[C@H](CS)C(=O)N1CCC[C@H]1C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.9256e+03 ;
+            mbo:mz 1.26092e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 4.0147e+03 ;
+            mbo:mz 1.30033e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 7.0913e+03 ;
+            mbo:mz 1.380926e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 5.363e+03 ;
+            mbo:mz 1.700823e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 1.185305e+05 ;
+            mbo:mz 1.820823e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.9528e+04 ;
+            mbo:mz 2.160704e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 165 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.1607e+02 ;
+            mbo:precursor_mz 2.1607e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0910000000-8797427ebbfead8313f9" ;
+    rdfs:comment "INTERNAL_ID 8619" ;
+    skos:definition "Captopril; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M-H]-" .
+

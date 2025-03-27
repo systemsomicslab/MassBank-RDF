@@ -1,0 +1,50 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80112 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80112" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "6.781" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(2,3-dibenzimidazol-2-ylpropyl)-2-methoxybenzene" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.821794e+02 ;
+            rdfs:seeAlso chemspider:2181687,
+                pubchem:CID2907920 ;
+            schema:inChI "InChI=1S/C24H22N4O/c1-29-22-13-7-2-8-16(22)14-17(24-27-20-11-5-6-12-21(20)28-24)15-23-25-18-9-3-4-10-19(18)26-23/h2-13,17H,14-15H2,1H3,(H,25,26)(H,27,28)" ;
+            schema:inChIKey inchikey:FQFJIJMMCVBRBL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H22N4O" ;
+            schema:name "1-(2,3-dibenzimidazol-2-ylpropyl)-2-methoxybenzene" ;
+            schema:smiles "COC1=CC=CC=C1CC(CC2=NC3=CC=CC=C3N2)C4=NC5=CC=CC=C5N4" ] ;
+    mbo:has_peak [ mbo:intensity 2.680307e+07 ;
+            mbo:mz 3.831867e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-001i-0009000000-e9c17c4c3a8d1da595ca" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.919" ;
+    skos:definition "1-(2,3-dibenzimidazol-2-ylpropyl)-2-methoxybenzene; LC-APCI-QTOF; MS; POSITIVE" .
+

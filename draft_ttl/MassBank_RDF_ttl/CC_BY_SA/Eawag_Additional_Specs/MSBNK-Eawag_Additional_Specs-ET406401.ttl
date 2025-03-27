@@ -1,0 +1,150 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET406401 a mbo:MassSpectrum ;
+    dcterms:creator "B. Clerc, R. Gulde, B. Lauper [com],  C. McArdell, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2020-12-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET406401" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde et al. 2020, Formation of transformation products during ozonation of secondary wastewater effluent and their fate in post-treatment: From laboratory- to full-scale, Water Research" ] ;
+    dcterms:rights "Copyright (C) Eawag 2020 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "C18 Atlantis T3 5 um, 3x150 mm, Waters" ;
+            mbo:flow_gradient "260/40 at 0 min, 260/40 at 5 min, 15/285 at 20 min, 15/285 at 29 min, 260/40 at 29.5 min, 260/40 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "11.076 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-chloro-4H-benzo[e][1,2,4]thiadiazine-7-sulfonamide 1,1-dioxide",
+                "Chlorothiazide",
+                "HCT_n_293.9415_10.8" ;
+            mbo:ch_compound_class "identified ozonation transformation product" ;
+            mbo:ch_exact_mass 2.949488e+02 ;
+            rdfs:seeAlso chemspider:2619,
+                pubchem:CID2720 ;
+            schema:inChI "InChI=1S/C7H6ClN3O4S2/c8-4-1-5-7(2-6(4)16(9,12)13)17(14,15)11-3-10-5/h1-3H,(H,10,11)(H2,9,12,13)" ;
+            schema:inChIKey inchikey:JBMKAUGHUNFTOL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H6ClN3O4S2" ;
+            schema:name "6-chloro-4H-benzo[e][1,2,4]thiadiazine-7-sulfonamide 1,1-dioxide",
+                "Chlorothiazide",
+                "HCT_n_293.9415_10.8" ;
+            schema:smiles "NS(C(C=C1C(NC=NS1(=O)=O)=C2)=C2Cl)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.82752e+04 ;
+            mbo:mz 6.59986e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6.053e+03 ;
+            mbo:mz 1.340119e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.7572e+03 ;
+            mbo:mz 1.470208e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.7288e+03 ;
+            mbo:mz 1.529859e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.32849e+04 ;
+            mbo:mz 1.549784e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.08841e+04 ;
+            mbo:mz 1.819796e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.94559e+04 ;
+            mbo:mz 1.829872e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.302839e+05 ;
+            mbo:mz 2.139609e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 2.377371e+05 ;
+            mbo:mz 2.149689e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 6.2206e+03 ;
+            mbo:mz 2.169475e+02 ;
+            mbo:peak_sequential_number 18 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 5.29866e+04 ;
+            mbo:mz 2.211512e+02 ;
+            mbo:peak_sequential_number 19 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 4.3863e+03 ;
+            mbo:mz 7.10139e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.61485e+04 ;
+            mbo:mz 2.299559e+02 ;
+            mbo:peak_sequential_number 20 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.23619e+04 ;
+            mbo:mz 2.299799e+02 ;
+            mbo:peak_sequential_number 21 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 5.2121e+03 ;
+            mbo:mz 2.579651e+02 ;
+            mbo:peak_sequential_number 22 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.829824e+06 ;
+            mbo:mz 2.939418e+02 ;
+            mbo:peak_sequential_number 23 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.6122e+03 ;
+            mbo:mz 7.79657e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.2878e+03 ;
+            mbo:mz 9.00223e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.08427e+04 ;
+            mbo:mz 1.180175e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.55022e+04 ;
+            mbo:mz 1.190014e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.1881e+03 ;
+            mbo:mz 1.19025e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.22081e+04 ;
+            mbo:mz 1.200093e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 8.4171e+03 ;
+            mbo:mz 1.26983e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.10037e+01 ;
+            mbo:precursor_mz 2.939415e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 23 ;
+    mbo:pk_splash "splash10-0006-0090000000-691385858424255980a2" ;
+    rdfs:comment "UCHEM_ID 4064" ;
+    skos:definition "HCT_n_293.9415_10.8; LC-ESI-QFT; MS2; CE: 40%; R=17500; [M-H]-" .
+

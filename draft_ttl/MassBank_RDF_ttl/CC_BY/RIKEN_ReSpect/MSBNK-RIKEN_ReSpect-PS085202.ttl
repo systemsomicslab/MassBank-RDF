@@ -1,0 +1,81 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS085202 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS085202" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acac-7-Glc-6pp-Rha",
+                "Acaciin",
+                "Buddieoflavonoloside",
+                "Linarin",
+                "acacetin-7-O-rutinoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavone CLASS3 Acacetin glycoside" ;
+            mbo:ch_exact_mass 5.9255e+02 ;
+            rdfs:seeAlso cas:480-36-4,
+                pubchem:CID5317025 ;
+            schema:inChI "InChI=1S/C28H32O14/c1-11-21(31)23(33)25(35)27(39-11)38-10-19-22(32)24(34)26(36)28(42-19)40-14-7-15(29)20-16(30)9-17(41-18(20)8-14)12-3-5-13(37-2)6-4-12/h3-9,11,19,21-29,31-36H,10H2,1-2H3" ;
+            schema:inChIKey inchikey:YFVGIJBUXMQFOF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C28H32O14" ;
+            schema:name "Acac-7-Glc-6pp-Rha",
+                "Acaciin",
+                "Buddieoflavonoloside",
+                "Linarin",
+                "acacetin-7-O-rutinoside" ;
+            schema:smiles "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=CC(=C4C(=C3)OC(=CC4=O)C5=CC=C(C=C5)OC)O)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.718e+03 ;
+            mbo:mz 2.85e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.622e+04 ;
+            mbo:mz 4.46e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 5.0654e+04 ;
+            mbo:mz 4.47e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 601 ],
+        [ mbo:intensity 1.8663e+04 ;
+            mbo:mz 4.48e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 2.1198e+04 ;
+            mbo:mz 5.92e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 252 ],
+        [ mbo:intensity 8.4194e+04 ;
+            mbo:mz 5.93e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.285e+04 ;
+            mbo:mz 5.94e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 746 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.9354e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0007-0000490000-5b7b1714772441e6fbca" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "acacetin-7-O-rutinoside, Linarin, Acaciin, Buddieoflavonoloside, Acac-7-Glc-6pp-Rha; LC-ESI-QQ; MS2" .
+

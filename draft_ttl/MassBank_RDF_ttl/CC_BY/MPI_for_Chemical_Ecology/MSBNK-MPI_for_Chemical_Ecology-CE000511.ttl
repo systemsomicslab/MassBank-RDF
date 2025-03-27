@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000511 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Marco Kai, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000511" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, K. Scheubert, F. Hufsky, T. Zichner, M. Kai, A. Svatos and S. Boecker. Identifying the unknowns by aligning fragmentation trees. Anal. Chem., 2012, 84, 3417-3426 doi:10.1021/ac300304u" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "85.0eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "146.718 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Hydroxypropyl-Glucosinolate" ;
+            mbo:ch_compound_class "Natural Product; Glucosinolate" ;
+            mbo:ch_exact_mass 3.77045e+02 ;
+            rdfs:seeAlso pubchem:CID25245521 ;
+            schema:inChI "InChI=1S/C10H19NO10S2/c12-3-1-2-6(11-21-23(17,18)19)22-10-9(16)8(15)7(14)5(4-13)20-10/h5,7-10,12-16H,1-4H2,(H,17,18,19)/b11-6+" ;
+            schema:inChIKey inchikey:WIGYSAIZPJAWDF-IZZDOVSWSA-N ;
+            schema:molecularFormula "C10H19NO10S2" ;
+            schema:name "3-Hydroxypropyl-Glucosinolate" ;
+            schema:smiles "[H]OC([H])([H])C([H])([H])C([H])([H])C(=NOS(O)(=O)=O)SC([H])(O1)C([H])(O)C([H])(O[H])C([H])(O[H])C([H])(CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.684595e+04 ;
+            mbo:mz 7.101447e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.566118e+04 ;
+            mbo:mz 1.340285e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.829146e+04 ;
+            mbo:mz 1.79998e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 3.73742e+04 ;
+            mbo:mz 2.590138e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 3.015241e+04 ;
+            mbo:mz 2.749906e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 2.149191e+04 ;
+            mbo:mz 3.760381e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 6.213259e+05 ;
+            mbo:mz 7.499159e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 568 ],
+        [ mbo:intensity 1.026249e+05 ;
+            mbo:mz 7.995789e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 2.463262e+04 ;
+            mbo:mz 8.096578e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.259969e+04 ;
+            mbo:mz 8.502985e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 7.585287e+05 ;
+            mbo:mz 9.595277e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 693 ],
+        [ mbo:intensity 1.291545e+04 ;
+            mbo:mz 9.694643e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.093675e+06 ;
+            mbo:mz 9.696039e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.46584e+04 ;
+            mbo:mz 1.010247e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.76e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0002-9000000000-1782302a40caa21acf65" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "3-Hydroxypropyl-Glucosinolate; LC-ESI-ITFT; MS2; HCD; CE 85.0 eV; [M-H]-" .
+

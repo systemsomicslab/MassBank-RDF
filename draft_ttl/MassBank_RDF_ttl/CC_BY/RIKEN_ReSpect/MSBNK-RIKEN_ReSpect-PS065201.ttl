@@ -1,0 +1,61 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS065201 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS065201" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Methyl-5-hydroxyethylthiazole",
+                "4-Methyl-5-thiazoleethanol",
+                "Hemineurine",
+                "MHT",
+                "Sulfurol" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Other CLASS3 Thiazole" ;
+            mbo:ch_exact_mass 1.43209e+02 ;
+            rdfs:seeAlso cas:137-00-8,
+                pubchem:CID1136 ;
+            schema:inChI "InChI=1S/C6H9NOS/c1-5-6(2-3-8)9-4-7-5/h4,8H,2-3H2,1H3" ;
+            schema:inChIKey inchikey:BKAWJIRCKVUVED-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H9NOS" ;
+            schema:name "4-Methyl-5-hydroxyethylthiazole",
+                "4-Methyl-5-thiazoleethanol",
+                "Hemineurine",
+                "MHT",
+                "Sulfurol" ;
+            schema:smiles "CC1=C(SC=N1)CCO" ] ;
+    mbo:has_peak [ mbo:intensity 6.3304e+05 ;
+            mbo:mz 1.43e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 7.147035e+06 ;
+            mbo:mz 1.44e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.4411e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-0900000000-c5d3a5c134efc2e8996e" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Sulfurol, 4-Methyl-5-hydroxyethylthiazole, MHT, Hemineurine, 4-Methyl-5-thiazoleethanol; LC-ESI-QQ; MS2" .
+

@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001490 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001490" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Tert-Butyl-5-methylphenol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.641201e+02 ;
+            rdfs:seeAlso cas:88-60-8,
+                pubchem:CID6937 ;
+            schema:inChI "InChI=1S/C11H16O/c1-8-5-6-9(10(12)7-8)11(2,3)4/h5-7,12H,1-4H3" ;
+            schema:inChIKey inchikey:XOUQAVYLRNOXDO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H16O" ;
+            schema:name "2-Tert-Butyl-5-methylphenol" ;
+            schema:smiles "CC1C=CC(=C(O)C=1)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.239658e+00 ;
+            mbo:mz 1.470815e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.631128e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.631128e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-03di-0900000000-76c8f147fff0953f297d" ;
+    skos:definition "2-Tert-Butyl-5-methylphenol; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

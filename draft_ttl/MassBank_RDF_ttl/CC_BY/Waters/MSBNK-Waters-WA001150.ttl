@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA001150 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA001150" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "14.700 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carbamazepine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.36095e+02 ;
+            rdfs:seeAlso cas:298-46-4 ;
+            schema:inChI "InChI=1S/C15H12N2O/c16-15(18)17-13-7-3-1-5-11(13)9-10-12-6-2-4-8-14(12)17/h1-10H,(H2,16,18)" ;
+            schema:inChIKey inchikey:FFGPTBGBLSHEPO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H12N2O" ;
+            schema:name "Carbamazepine" ;
+            schema:smiles "NC(=O)N(c21)c(c3)c(ccc3)C=Cc(cccc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.37e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 4.75e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 6.7e+01 ;
+            mbo:mz 4.95e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 4.96e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.45e+02 ;
+            mbo:mz 2.38e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.39e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 2.59e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 2.75e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.82e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 3.05e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.96e+02 ;
+            mbo:mz 4.73e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 196 ],
+        [ mbo:intensity 5.9e+01 ;
+            mbo:mz 4.74e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 59 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-000i-0090200000-341301de4b6398978020" ;
+    skos:definition "Carbamazepine; LC-ESI-Q; MS; POS; 15 V" .
+

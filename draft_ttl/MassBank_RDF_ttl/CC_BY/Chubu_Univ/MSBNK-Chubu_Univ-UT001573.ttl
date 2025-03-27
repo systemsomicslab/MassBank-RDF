@@ -1,0 +1,69 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT001573 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT001573" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS3" ;
+            mbo:retention_time "38.41 min (in paper: 38.2 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phosphatidylcholine 19:0-18:1" ;
+            mbo:ch_compound_class "Natural Product; Glycerophospholipids; Glycerophosphocholines; Diacylglycerophosphocholines" ;
+            mbo:ch_exact_mass 8.016248e+02 ;
+            schema:inChI "InChI=1S/C45H88NO8P/c1-6-8-10-12-14-16-18-20-22-24-25-27-29-31-33-35-37-44(47)51-41-43(42-53-55(49,50)52-40-39-46(3,4)5)54-45(48)38-36-34-32-30-28-26-23-21-19-17-15-13-11-9-7-2/h32,34,43H,6-31,33,35-42H2,1-5H3/b34-32-" ;
+            schema:inChIKey inchikey:QKEFIMCGHFOKRT-YJKCNMNRSA-N ;
+            schema:molecularFormula "C45H88NO8P" ;
+            schema:name "Phosphatidylcholine 19:0-18:1" ;
+            schema:smiles "C(CCCCCCCCCCCC(=O)OCC(OC(=O)CCC=CCCCCCCCCCCCCC)COP(OCC[N+1](C)(C)C)([O-1])=O)CCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 1.625e+02 ;
+            mbo:mz 2.8108e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.2e+00 ;
+            mbo:mz 2.8169e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.81e+01 ;
+            mbo:mz 2.9531e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 4.9e+01 ;
+            mbo:mz 2.9714e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 301 ],
+        [ mbo:intensity 3.83e+01 ;
+            mbo:mz 5.2195e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 235 ],
+        [ mbo:intensity 5.7e+00 ;
+            mbo:mz 5.2258e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0090010000-8b9d4fdde917fb072e18" ;
+    skos:definition "Phosphatidylcholine 19:0-18:1; LC-ESI-ITFT; MS3; [M+CH3COO]-/[M-CH3]-; RT: 38.20; Exp: 1" .
+

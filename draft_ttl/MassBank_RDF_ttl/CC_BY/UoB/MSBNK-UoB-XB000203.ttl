@@ -1,0 +1,80 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000203 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham" ;
+    dcterms:date "2023-04-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000203" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100% (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.122 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "KU60648_BTP_M11" ;
+            mbo:ch_compound_class "N/A; Biotransformation product" ;
+            mbo:ch_exact_mass 5.232013e+02 ;
+            schema:inChI "InChI=1S/C20H33N3O13/c1-2-22-3-5-23(6-4-22)18-13(29)9(25)11(27)15(35-18)17(31)21-7-8(24)34-20-14(30)10(26)12(28)16(36-20)19(32)33/h9-16,18,20,25-30H,2-7H2,1H3,(H,21,31)(H,32,33)" ;
+            schema:inChIKey inchikey:YCJXTVMUKTWLCR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H33N3O13" ;
+            schema:name "KU60648_BTP_M11" ;
+            schema:smiles "CCN1CCN(C2OC(C(NCC(OC3OC(C(O)=O)C(O)C(O)C3O)=O)=O)C(O)C(O)C2O)CC1" ] ;
+    mbo:has_peak [ mbo:intensity 4.5094e+03 ;
+            mbo:mz 5.60494e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 4.29493e+04 ;
+            mbo:mz 7.00651e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 973 ],
+        [ mbo:intensity 4.41009e+04 ;
+            mbo:mz 8.40808e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.0054e+03 ;
+            mbo:mz 9.80837e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 181 ],
+        [ mbo:intensity 4.23257e+04 ;
+            mbo:mz 1.27123e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 959 ],
+        [ mbo:intensity 2.87102e+04 ;
+            mbo:mz 3.701577e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 650 ],
+        [ mbo:intensity 6.6014e+03 ;
+            mbo:mz 3.71159e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 7.0497e+03 ;
+            mbo:mz 3.711611e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 160 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.242085e+02 ;
+            mbo:precursor_mz 5.242086e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00e9-9303000000-1cb8d13dc37b1b5aff5f" ;
+    rdfs:comment "INTERNAL_ID 26277" ;
+    skos:definition "KU60648_BTP_M11; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

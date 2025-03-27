@@ -1,0 +1,59 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR308941 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR308941" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.7" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Medicagenic acid base + O-dHex, O-Pen-Hex-CoumaroylHex" ;
+            mbo:ch_compound_class "Triterpene saponins" ;
+            mbo:ch_exact_mass 1.251376e+03 ;
+            schema:inChI "InChI=1S/C62H90O26/c1-27-39(68)42(71)45(74)51(81-27)87-50-32(65)23-58(4)36-14-13-30-31-22-57(2,3)18-20-62(31,21-19-59(30,5)60(36,6)17-16-37(58)61(50,7)55(77)78)56(79)88-54-49(48(33(66)26-80-54)86-53-47(76)44(73)41(70)35(25-64)84-53)85-38(67)15-10-28-8-11-29(12-9-28)82-52-46(75)43(72)40(69)34(24-63)83-52/h8-13,15,27,31-37,39-54,63-66,68-76H,14,16-26H2,1-7H3,(H,77,78)" ;
+            schema:inChIKey inchikey:JRXBWWBHVNZSMB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C62H90O26" ;
+            schema:name "Medicagenic acid base + O-dHex, O-Pen-Hex-CoumaroylHex" ;
+            schema:smiles "CC1OC(OC2C(O)CC3(C)C(CCC4(C)C3CC=C3C5CC(C)(C)CCC5(CCC43C)C(=O)OC3OCC(O)C(OC4OC(CO)C(O)C(O)C4O)C3OC(=O)C=CC3=CC=C(OC4OC(CO)C(O)C(O)C4O)C=C3)C2(C)C(O)=O)C(O)C(O)C1O" ] ;
+    mbo:has_peak [ mbo:intensity 1.8e+01 ;
+            mbo:mz 1.220506e+03 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 178 ],
+        [ mbo:intensity 5.6e+01 ;
+            mbo:mz 1.249498e+03 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 554 ],
+        [ mbo:intensity 1.01e+02 ;
+            mbo:mz 1.249561e+03 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.249547e+03 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-0090000000-1df56fdae411f3b4b220" ;
+    rdfs:comment "Annotation level-3" ;
+    skos:definition "Medicagenic acid base + O-dHex, O-Pen-Hex-CoumaroylHex; LC-ESI-QTOF; MS2" .
+

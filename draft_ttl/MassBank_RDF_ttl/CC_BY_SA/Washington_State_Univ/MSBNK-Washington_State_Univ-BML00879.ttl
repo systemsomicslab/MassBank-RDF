@@ -1,0 +1,89 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00879 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00879" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "20 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "8.265" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "11-(2-bromo-3,6-dimethoxyphenyl)-3,3-dimethyl-2,3,4-trihydro-5H,10H,11H-benzo[ b]benzo[2,1-f]1,4-diazepin-1-one" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.561049e+02 ;
+            rdfs:seeAlso chemspider:3763622,
+                pubchem:CID4570635 ;
+            schema:inChI "InChI=1S/C23H25BrN2O3/c1-23(2)11-15-19(16(27)12-23)22(26-14-8-6-5-7-13(14)25-15)20-17(28-3)9-10-18(29-4)21(20)24/h5-10,22,25-26H,11-12H2,1-4H3" ;
+            schema:inChIKey inchikey:AHTIKTYAZWVOGR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C23H25BrN2O3" ;
+            schema:name "11-(2-bromo-3,6-dimethoxyphenyl)-3,3-dimethyl-2,3,4-trihydro-5H,10H,11H-benzo[ b]benzo[2,1-f]1,4-diazepin-1-one" ;
+            schema:smiles "CC1(CC2=C(C(NC3=CC=CC=C3N2)C4=C(C=CC(=C4Br)OC)OC)C(=O)C1)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.5e+01 ;
+            mbo:mz 1.570753e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 4.571094e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6.3e+01 ;
+            mbo:mz 1.850705e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.3e+01 ;
+            mbo:mz 2.151174e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.566e+03 ;
+            mbo:mz 2.411313e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.97e+02 ;
+            mbo:mz 2.411745e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.412003e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 4e+01 ;
+            mbo:mz 2.412345e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.8e+01 ;
+            mbo:mz 2.412737e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.9e+01 ;
+            mbo:mz 2.41619e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 5 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.41e+02 ;
+            mbo:precursor_mz 4.571122e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0006-0090000000-16ee3dc7ae56ad9f8884" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.127" ;
+    skos:definition "11-(2-bromo-3,6-dimethoxyphenyl)-3,3-dimethyl-2,3,4-trihydro-5H,10H,11H-benzo[ b]benzo[2,1-f]1,4-diazepin-1-one; LC-ESI-QTOF; MS2; CE 20 ev; [M+H]+" .
+

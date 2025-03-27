@@ -1,0 +1,65 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00673 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2021-03-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00673" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kenji Mori and Jun Tabata, Tetrahedron 73 (2017) 6530-6541, DOI:10.1016/j.tet.2017.09.046." ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.09 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Methyl [(1S)-1,2-Dimethyl-3-methylenecyclopentyl]acetate" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 1.821307e+02 ;
+            schema:inChI "InChI=1S/C11H18O2/c1-8-5-6-11(3,9(8)2)7-10(12)13-4/h9H,1,5-7H2,2-4H3/t9?,11-/m0/s1" ;
+            schema:inChIKey inchikey:PCOASPYTNKYQGN-UMJHXOGRSA-N ;
+            schema:molecularFormula "C11H18O2" ;
+            schema:name "Methyl [(1S)-1,2-Dimethyl-3-methylenecyclopentyl]acetate" ;
+            schema:smiles "COC(=O)C[C@]1(C)CCC(=C)C1C" ] ;
+    mbo:has_peak [ mbo:intensity 3.06e+00 ;
+            mbo:mz 1.09099e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.35e+00 ;
+            mbo:mz 1.50106e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.82134e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.1e-01 ;
+            mbo:mz 1.82319e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.241e+01 ;
+            mbo:mz 1.83137e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 1.06e+00 ;
+            mbo:mz 1.8414e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0900000000-1960df9e6d2159994bbf" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Methyl [(1S)-1,2-Dimethyl-3-methylenecyclopentyl]acetate; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

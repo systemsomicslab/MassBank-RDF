@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000796 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000796" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Pyromellitic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.540063e+02 ;
+            rdfs:seeAlso cas:89-05-4,
+                pubchem:CID6961 ;
+            schema:inChI "InChI=1S/C10H6O8/c11-7(12)3-1-4(8(13)14)6(10(17)18)2-5(3)9(15)16/h1-2H,(H,11,12)(H,13,14)(H,15,16)(H,17,18)" ;
+            schema:inChIKey inchikey:CYIDZMCFTVVTJO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H6O8" ;
+            schema:name "Pyromellitic acid" ;
+            schema:smiles "OC(=O)C1=CC(=C(C=C1C(O)=O)C(O)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.303994e+00 ;
+            mbo:mz 7.703967e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.210295e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.860289e+00 ;
+            mbo:mz 1.650193e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 19 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.52999e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0900000000-2b05b725901f0662be50" ;
+    skos:definition "Pyromellitic acid; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

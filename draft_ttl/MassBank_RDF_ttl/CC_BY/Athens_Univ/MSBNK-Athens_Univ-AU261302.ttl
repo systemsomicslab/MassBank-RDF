@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU261302 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU261302" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.162 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-N-ethyl-6-methylsulfanyl-2-N-propan-2-yl-1,3,5-triazine-2,4-diamine",
+                "Ametryn" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.271205e+02 ;
+            rdfs:seeAlso cas:834-12-8,
+                chemspider:12705,
+                pubchem:CID13263 ;
+            schema:inChI "InChI=1S/C9H17N5S/c1-5-10-7-12-8(11-6(2)3)14-9(13-7)15-4/h6H,5H2,1-4H3,(H2,10,11,12,13,14)" ;
+            schema:inChIKey inchikey:RQVYBGPQFYCBGX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H17N5S" ;
+            schema:name "4-N-ethyl-6-methylsulfanyl-2-N-propan-2-yl-1,3,5-triazine-2,4-diamine",
+                "Ametryn" ;
+            schema:smiles "CCNC1=NC(SC)=NC(NC(C)C)=N1" ] ;
+    mbo:has_peak [ mbo:intensity 3.6912e+04 ;
+            mbo:mz 1.160273e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.567e+05 ;
+            mbo:mz 1.880764e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 2.512736e+06 ;
+            mbo:mz 2.281286e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 998 ],
+        [ mbo:intensity 1.65272e+05 ;
+            mbo:mz 2.301239e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 1.16232e+05 ;
+            mbo:mz 1.380768e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 9.2132e+04 ;
+            mbo:mz 1.381021e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.0956e+05 ;
+            mbo:mz 1.440585e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.0618e+05 ;
+            mbo:mz 1.580486e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.9096e+04 ;
+            mbo:mz 1.580739e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.8748e+04 ;
+            mbo:mz 1.801236e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.515232e+06 ;
+            mbo:mz 1.860812e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.32964e+05 ;
+            mbo:mz 1.870826e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 132 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.281292e+02 ;
+            mbo:precursor_mz 2.281277e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-002r-0960000000-3d9eb869f3fb6fffb272" ;
+    rdfs:comment "INTERNAL_ID 2613" ;
+    skos:definition "Ametryn; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

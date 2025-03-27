@@ -1,0 +1,61 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS064001 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS064001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-amino-4-(3-carboxypropanoyloxy)butanoic acid",
+                "O-Succinyl-L-homoserine",
+                "O-Succinylhomoserine" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Serine" ;
+            mbo:ch_exact_mass 2.19193e+02 ;
+            rdfs:seeAlso cas:1492-23-5,
+                pubchem:CID439406 ;
+            schema:inChI "InChI=1S/C8H13NO6/c9-5(8(13)14)3-4-15-7(12)2-1-6(10)11/h5H,1-4,9H2,(H,10,11)(H,13,14)" ;
+            schema:inChIKey inchikey:GNISQJGXJIDKDJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H13NO6" ;
+            schema:name "(2S)-2-amino-4-(3-carboxypropanoyloxy)butanoic acid",
+                "O-Succinyl-L-homoserine",
+                "O-Succinylhomoserine" ;
+            schema:smiles "C(COC(=O)CCC(=O)O)C(C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 8.1842e+04 ;
+            mbo:mz 1.02e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 1.5041e+05 ;
+            mbo:mz 2.19e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 1.156778e+06 ;
+            mbo:mz 2.2e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.2024e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0090000000-87eecf8bc8d6ed6ef8e3" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "O-Succinylhomoserine, O-Succinyl-L-homoserine, (2S)-2-amino-4-(3-carboxypropanoyloxy)butanoic acid; LC-ESI-QQ; MS2" .
+

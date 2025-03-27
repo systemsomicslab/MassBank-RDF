@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU227003 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2018-12-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU227003" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "3.941 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[(1R,2R)-2-[(dimethylamino)methyl]-1-hydroxycyclohexyl]phenol",
+                "4-Aminoantipyrine",
+                "O-Desmethyltramadol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.491729e+02 ;
+            rdfs:seeAlso cas:80456-81-1,
+                chemspider:8014523,
+                pubchem:CID9838803 ;
+            schema:inChI "InChI=1S/C15H23NO2/c1-16(2)11-13-6-3-4-9-15(13,18)12-7-5-8-14(17)10-12/h5,7-8,10,13,17-18H,3-4,6,9,11H2,1-2H3/t13-,15+/m1/s1" ;
+            schema:inChIKey inchikey:UWJUQVWARXYRCG-HIFRSBDPSA-N ;
+            schema:molecularFormula "C15H23NO2" ;
+            schema:name "3-[(1R,2R)-2-[(dimethylamino)methyl]-1-hydroxycyclohexyl]phenol",
+                "4-Aminoantipyrine",
+                "O-Desmethyltramadol" ;
+            schema:smiles "CN(C)C[C@H]1CCCC[C@@]1(C2=CC(=CC=C2)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.8e+02 ;
+            mbo:mz 1.21064e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 5.16e+02 ;
+            mbo:mz 1.310485e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 9.12e+02 ;
+            mbo:mz 1.330628e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 241 ],
+        [ mbo:intensity 3.776e+03 ;
+            mbo:mz 1.450635e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.16e+02 ;
+            mbo:mz 1.58074e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 1.368e+03 ;
+            mbo:mz 1.590777e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 362 ],
+        [ mbo:intensity 1.368e+03 ;
+            mbo:mz 1.871098e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 362 ],
+        [ mbo:intensity 9.28e+02 ;
+            mbo:mz 2.321697e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 246 ],
+        [ mbo:intensity 3.4e+02 ;
+            mbo:mz 2.501782e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 90 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.5018e+02 ;
+            mbo:precursor_mz 2.501802e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-000t-0910000000-e61d1a45f61e0989fe1c" ;
+    rdfs:comment "INTERNAL_ID 2270" ;
+    skos:definition "4-Aminoantipyrine; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

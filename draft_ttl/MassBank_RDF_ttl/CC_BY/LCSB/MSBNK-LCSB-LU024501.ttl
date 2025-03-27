@@ -1,0 +1,76 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU024501 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU024501" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "16.868 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,6-dichloro-N-[3-(2-hydroxypropan-2-yl)-2-methyl-1-benzofuran-7-yl]benzamide",
+                "Benzamide, 2,6-dichloro-N-(3-(1-hydroxy-1-methylethyl)-2-methyl-7-benzofuranyl)-",
+                "FR167356" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.770585e+02 ;
+            rdfs:seeAlso cas:174185-16-1,
+                chemspider:8243747,
+                pubchem:CID10068207 ;
+            schema:inChI "InChI=1S/C19H17Cl2NO3/c1-10-16(19(2,3)24)11-6-4-9-14(17(11)25-10)22-18(23)15-12(20)7-5-8-13(15)21/h4-9,24H,1-3H3,(H,22,23)" ;
+            schema:inChIKey inchikey:GCAOVMKRBUCSET-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H17Cl2NO3" ;
+            schema:name "2,6-dichloro-N-[3-(2-hydroxypropan-2-yl)-2-methyl-1-benzofuran-7-yl]benzamide",
+                "Benzamide, 2,6-dichloro-N-(3-(1-hydroxy-1-methylethyl)-2-methyl-7-benzofuranyl)-",
+                "FR167356" ;
+            schema:smiles "CC1=C(C2=C(O1)C(NC(=O)C1=C(Cl)C=CC=C1Cl)=CC=C2)C(C)(C)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.63425e+04 ;
+            mbo:mz 1.729567e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.9948e+03 ;
+            mbo:mz 3.200241e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.127e+06 ;
+            mbo:mz 3.600554e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 826 ],
+        [ mbo:intensity 1.363258e+06 ;
+            mbo:mz 3.780661e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 3.780658e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-01t9-0009000000-45909471f6c7c72179be" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "FR167356; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

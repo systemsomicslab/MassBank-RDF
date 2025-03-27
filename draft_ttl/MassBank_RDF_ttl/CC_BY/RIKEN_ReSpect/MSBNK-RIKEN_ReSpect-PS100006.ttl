@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS100006 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS100006" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "60" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "GP-OH",
+                "Gly-Pro",
+                "Glycyl-L-proline",
+                "Glycylproline" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Proline" ;
+            mbo:ch_exact_mass 1.72184e+02 ;
+            rdfs:seeAlso cas:704-15-4,
+                pubchem:CID3013625 ;
+            schema:inChI "InChI=1S/C7H12N2O3/c8-4-6(10)9-3-1-2-5(9)7(11)12/h5H,1-4,8H2,(H,11,12)" ;
+            schema:inChIKey inchikey:KZNQNBZMBZJQJO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H12N2O3" ;
+            schema:name "GP-OH",
+                "Gly-Pro",
+                "Glycyl-L-proline",
+                "Glycylproline" ;
+            schema:smiles "C1CC(N(C1)C(=O)CN)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.341e+03 ;
+            mbo:mz 2.8e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 4.993e+03 ;
+            mbo:mz 3e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 4.635e+03 ;
+            mbo:mz 6.7e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 4.7e+03 ;
+            mbo:mz 6.9e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 8.3599e+04 ;
+            mbo:mz 7e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.211e+03 ;
+            mbo:mz 1.71e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 86 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.732e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00di-9000000000-a5eb2f235c2156f89455" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Glycylproline, GP-OH, Glycyl-L-proline, Gly-Pro; LC-ESI-QQ; MS2" .
+

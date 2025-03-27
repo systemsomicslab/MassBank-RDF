@@ -1,0 +1,110 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU592020 a mbo:MassSpectrum ;
+    dcterms:creator "Dimitrios E. Damalas, Stefanos Kokolakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU592020" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness (Restek)" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.363 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Naphthalene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.280626e+02 ;
+            rdfs:seeAlso cas:91-20-3,
+                chemspider:906,
+                pubchem:CID931 ;
+            schema:inChI "InChI=1S/C10H8/c1-2-6-10-8-4-3-7-9(10)5-1/h1-8H" ;
+            schema:inChIKey inchikey:UFWIBTONFRDIAS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8" ;
+            schema:name "Naphthalene" ;
+            schema:smiles "C1=CC2=CC=CC=C2C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.812e+03 ;
+            mbo:mz 5.00144e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 3.652e+03 ;
+            mbo:mz 7.8046e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 3.4e+02 ;
+            mbo:mz 8.90368e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.492e+03 ;
+            mbo:mz 1.020464e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 4.692e+03 ;
+            mbo:mz 1.260452e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 176 ],
+        [ mbo:intensity 8.656e+03 ;
+            mbo:mz 1.270529e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 325 ],
+        [ mbo:intensity 2.6648e+04 ;
+            mbo:mz 1.280612e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.352e+03 ;
+            mbo:mz 5.10221e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 1.404e+03 ;
+            mbo:mz 5.20296e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 7.04e+02 ;
+            mbo:mz 5.30373e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 7.48e+02 ;
+            mbo:mz 6.30218e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 5.76e+02 ;
+            mbo:mz 7.40141e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 6.72e+02 ;
+            mbo:mz 7.50221e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.204e+03 ;
+            mbo:mz 7.60297e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 4.12e+02 ;
+            mbo:mz 7.70378e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.280613e+02 ;
+            mbo:precursor_mz 1.280621e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-004i-2900000000-5bfa98222a11b7653c53" ;
+    rdfs:comment "INTERNAL_ID 5920" ;
+    skos:definition "Naphthalene; GC-APCI-QTOF; MS2; CE: 40 eV; R=35000; [M]+" .
+

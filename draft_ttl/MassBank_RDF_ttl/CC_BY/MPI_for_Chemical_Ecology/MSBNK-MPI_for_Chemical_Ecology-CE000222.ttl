@@ -1,0 +1,118 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000222 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Marco Kai, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000222" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, K. Scheubert, F. Hufsky, T. Zichner, M. Kai, A. Svatos and S. Boecker. Identifying the unknowns by aligning fragmentation trees. Anal. Chem., 2012, 84, 3417-3426 doi:10.1021/ac300304u" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "12.0eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "7.819 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Trans-Zeatin-riboside-O-glucoside" ;
+            mbo:ch_compound_class "Natural Product; Zeatin" ;
+            mbo:ch_exact_mass 5.132071e+02 ;
+            rdfs:seeAlso pubchem:CID11713250 ;
+            schema:inChI "InChI=1S/C21H31N5O10/c1-9(6-34-21-17(33)15(31)13(29)11(5-28)36-21)2-3-22-18-12-19(24-7-23-18)26(8-25-12)20-16(32)14(30)10(4-27)35-20/h2,7-8,10-11,13-17,20-21,27-33H,3-6H2,1H3,(H,22,23,24)/b9-2+/t10-,11-,13-,14-,15+,16-,17-,20-,21-/m1/s1" ;
+            schema:inChIKey inchikey:MVMBTNNVZQRZQT-BPDSZQNASA-N ;
+            schema:molecularFormula "C21H31N5O10" ;
+            schema:name "Trans-Zeatin-riboside-O-glucoside" ;
+            schema:smiles "C/C(=C\\CNC1=NC=NC2=C1N=CN2[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)/CO[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.112628e+03 ;
+            mbo:mz 1.850816e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.217266e+03 ;
+            mbo:mz 3.821168e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.369037e+06 ;
+            mbo:mz 3.821707e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.412714e+03 ;
+            mbo:mz 3.82189e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.435019e+03 ;
+            mbo:mz 3.82278e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 7.856644e+03 ;
+            mbo:mz 5.134109e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 8.324817e+05 ;
+            mbo:mz 5.142122e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 607 ],
+        [ mbo:intensity 4.376545e+03 ;
+            mbo:mz 5.143577e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.475773e+04 ;
+            mbo:mz 5.144141e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 4.804283e+03 ;
+            mbo:mz 1.880632e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.676496e+04 ;
+            mbo:mz 2.021081e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.444579e+05 ;
+            mbo:mz 2.201186e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 1.176584e+04 ;
+            mbo:mz 2.916001e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 5.98364e+03 ;
+            mbo:mz 2.991172e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.289401e+04 ;
+            mbo:mz 2.99133e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 6.707264e+03 ;
+            mbo:mz 2.991497e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.314441e+04 ;
+            mbo:mz 3.521603e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.142144e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 17 ;
+    mbo:pk_splash "splash10-01q9-0019050000-18dc155b8aa3123d8b32" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "Trans-Zeatin-riboside-O-glucoside; LC-ESI-ITFT; MS2; CE 12.0 eV; [M+H]+" .
+

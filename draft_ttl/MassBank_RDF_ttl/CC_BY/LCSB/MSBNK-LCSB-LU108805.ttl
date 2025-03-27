@@ -1,0 +1,66 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU108805 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU108805" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "75" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "19.024 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-[4-chloro-2-(trifluoromethyl)phenyl]-1-imidazol-1-yl-2-propoxyethanimine",
+                "Triflumizole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.450856e+02 ;
+            rdfs:seeAlso cas:99387-89-0,
+                chemspider:24590136,
+                pubchem:CID91699 ;
+            schema:inChI "InChI=1S/C15H15ClF3N3O/c1-2-7-23-9-14(22-6-5-20-10-22)21-13-4-3-11(16)8-12(13)15(17,18)19/h3-6,8,10H,2,7,9H2,1H3" ;
+            schema:inChIKey inchikey:HSMVPDGQOIQYSR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H15ClF3N3O" ;
+            schema:name "N-[4-chloro-2-(trifluoromethyl)phenyl]-1-imidazol-1-yl-2-propoxyethanimine",
+                "Triflumizole" ;
+            schema:smiles "CCCOCC(=NC1=C(C=C(C=C1)Cl)C(F)(F)F)N2C=CN=C2" ] ;
+    mbo:has_peak [ mbo:intensity 3.3855e+03 ;
+            mbo:mz 5.50542e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 502 ],
+        [ mbo:intensity 6.74e+03 ;
+            mbo:mz 6.90448e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 3.460929e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-066r-9000000000-eabf0e553c201605e354" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Triflumizole; LC-ESI-QFT; MS2; CE: 75; R=17500; [M+H]+" .
+

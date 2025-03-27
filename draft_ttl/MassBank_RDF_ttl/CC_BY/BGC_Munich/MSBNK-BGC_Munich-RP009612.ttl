@@ -1,0 +1,68 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP009612 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP009612" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.778 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "dhas#18" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.642097e+02 ;
+            rdfs:seeAlso pubchem:CID137628431 ;
+            schema:inChI "InChI=1S/C17H32O8/c1-10(24-17-15(21)9-14(20)11(2)25-17)7-12(18)5-3-4-6-13(19)8-16(22)23/h10-15,17-21H,3-9H2,1-2H3,(H,22,23)/t10?,11?,12-,13-,14-,15?,17-/m1/s1" ;
+            schema:inChIKey inchikey:KOPWGKUEIMDQOP-YSEGPLCXSA-N ;
+            schema:molecularFormula "C17H32O8" ;
+            schema:name "dhas#18" ;
+            schema:smiles "CC(C[C@H](O)CCCC[C@@H](O)CC(O)=O)O[C@@H]1OC(C)[C@H](O)CC1O" ] ;
+    mbo:has_peak [ mbo:intensity 7e+01 ;
+            mbo:mz 1.470697e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.4e+01 ;
+            mbo:mz 2.331492e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 9.2e+01 ;
+            mbo:mz 3.031833e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.8e+01 ;
+            mbo:mz 3.46199e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.0828e+04 ;
+            mbo:mz 3.632045e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.632042e+02 ;
+            mbo:precursor_mz 3.632024e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-03di-0009000000-fd555f1430869ab62df1" ;
+    rdfs:comment "INTERNAL_ID 96" ;
+    skos:definition "dhas#18; LC-ESI-QTOF; MS2; CE: 20; R=; [M-H]-" .
+

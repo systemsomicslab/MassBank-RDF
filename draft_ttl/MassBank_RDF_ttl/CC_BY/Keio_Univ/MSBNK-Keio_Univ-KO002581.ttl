@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO002581 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO002581" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chlorogenate",
+                "Chlorogenic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.540951e+02 ;
+            rdfs:seeAlso cas:327-97-9,
+                chemspider:1405788,
+                pubchem:CID1794427 ;
+            schema:inChI "InChI=1S/C16H18O9/c17-9-3-1-8(5-10(9)18)2-4-13(20)25-12-7-16(24,15(22)23)6-11(19)14(12)21/h1-5,11-12,14,17-19,21,24H,6-7H2,(H,22,23)/b4-2+/t11-,12-,14-,16+/m1/s1" ;
+            schema:inChIKey inchikey:CWVRJTMFETXNAD-JUHZACGLSA-N ;
+            schema:molecularFormula "C16H18O9" ;
+            schema:name "Chlorogenate",
+                "Chlorogenic acid" ;
+            schema:smiles "C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.9802e+04 ;
+            mbo:mz 6.89e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 9.901e+03 ;
+            mbo:mz 1.809e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.732675e+05 ;
+            mbo:mz 8.44e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 522 ],
+        [ mbo:intensity 1.08911e+05 ;
+            mbo:mz 8.89e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 328 ],
+        [ mbo:intensity 2.67327e+05 ;
+            mbo:mz 1.172e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 805 ],
+        [ mbo:intensity 6.9307e+04 ;
+            mbo:mz 1.301e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 209 ],
+        [ mbo:intensity 3.316835e+05 ;
+            mbo:mz 1.352e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.930695e+05 ;
+            mbo:mz 1.454e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 582 ],
+        [ mbo:intensity 1.9802e+04 ;
+            mbo:mz 1.469e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.029705e+05 ;
+            mbo:mz 1.634e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 611 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.55e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00li-2900000000-2e3ac9f64136b977e2f7" ;
+    rdfs:comment "KEIO_ID C063" ;
+    skos:definition "Chlorogenic acid; LC-ESI-QQ; MS2; CE:50 V; [M+H]+" .
+

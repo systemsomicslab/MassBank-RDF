@@ -1,0 +1,75 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000213 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000213" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "8.847500" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Naphthalenesulfonic acid",
+                "Naphthalene-1-sulfonic acid" ;
+            mbo:ch_compound_class "Polycyclic Aromatic Hydrocarbons; Naphthalenes; Naphthalenesulfonates; Organosulfonic acids; Arenesulfonic acids" ;
+            mbo:ch_exact_mass 2.080194e+02 ;
+            schema:inChI "InChI=1S/C10H8O3S/c11-14(12,13)10-7-3-5-8-4-1-2-6-9(8)10/h1-7H,(H,11,12,13)" ;
+            schema:molecularFormula "C10H8O3S" ;
+            schema:name "1-Naphthalenesulfonic acid",
+                "Naphthalene-1-sulfonic acid" ;
+            schema:smiles "O=S(=O)(O)C1=CC=CC=2C=CC=CC21" ] ;
+    mbo:has_peak [ mbo:intensity 1.457186e+06 ;
+            mbo:mz 7.995752e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 315 ],
+        [ mbo:intensity 8.6198e+04 ;
+            mbo:mz 8.700912e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.52597e+05 ;
+            mbo:mz 1.110088e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.868756e+06 ;
+            mbo:mz 1.430502e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 403 ],
+        [ mbo:intensity 1.80652e+05 ;
+            mbo:mz 1.440537e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 4.627578e+06 ;
+            mbo:mz 2.070122e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.2787e+05 ;
+            mbo:mz 2.080152e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 92 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.170461e+02 ;
+            mbo:precursor_mz 1.170461e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-2490000000-55c9b21b49f53b7004af" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "1-Naphthalenesulfonic acid; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M-H]-" .
+

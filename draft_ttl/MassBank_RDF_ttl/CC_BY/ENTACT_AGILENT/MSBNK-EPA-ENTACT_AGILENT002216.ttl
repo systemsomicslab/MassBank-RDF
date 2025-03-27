@@ -1,0 +1,51 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002216 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002216" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID2029616",
+                "Imidazole" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.803745e+01 ;
+            rdfs:seeAlso cas:288-32-4,
+                pubchem:CID795 ;
+            schema:inChI "InChI=1S/C3H4N2/c1-2-5-3-4-1/h1-3H,(H,4,5)" ;
+            schema:inChIKey inchikey:RAXXELZNTBOGNW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C3H4N2" ;
+            schema:name "DTXSID2029616",
+                "Imidazole" ;
+            schema:smiles "C1NC=CN=1" ] ;
+    mbo:has_peak [ mbo:intensity 6.019986e+00 ;
+            mbo:mz 4.001927e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 6.703017e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.703017e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-014i-9000000000-bf8fc7eedddb03550ed8" ;
+    skos:definition "Imidazole; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

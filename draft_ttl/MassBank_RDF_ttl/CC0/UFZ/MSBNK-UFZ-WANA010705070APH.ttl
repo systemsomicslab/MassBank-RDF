@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA010705070APH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA010705070APH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.283 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Metalaxyl",
+                "methyl 2-(N-(2-methoxyacetyl)-2,6-dimethylanilino)propanoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.791471e+02 ;
+            rdfs:seeAlso cas:57837-19-1,
+                chemspider:38839,
+                pubchem:CID42586 ;
+            schema:inChI "InChI=1S/C15H21NO4/c1-10-7-6-8-11(2)14(10)16(13(17)9-19-4)12(3)15(18)20-5/h6-8,12H,9H2,1-5H3" ;
+            schema:inChIKey inchikey:ZQEIXNIJLIKNTD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H21NO4" ;
+            schema:name "Metalaxyl",
+                "methyl 2-(N-(2-methoxyacetyl)-2,6-dimethylanilino)propanoate" ;
+            schema:smiles "COCC(=O)N(C(C)C(=O)OC)C1=C(C)C=CC=C1C" ] ;
+    mbo:has_peak [ mbo:intensity 3.21907e+04 ;
+            mbo:mz 1.481125e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 4.85742e+04 ;
+            mbo:mz 1.601125e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 3.209548e+05 ;
+            mbo:mz 1.921388e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 824 ],
+        [ mbo:intensity 2.6405e+03 ;
+            mbo:mz 2.081336e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.890444e+05 ;
+            mbo:mz 2.201338e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.73875e+04 ;
+            mbo:mz 2.481287e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 1.46293e+04 ;
+            mbo:mz 2.801548e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 38 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.261345e+02 ;
+            mbo:precursor_mz 2.801543e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00dl-0790000000-ca2ad134b02e7800199b" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Metalaxyl; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

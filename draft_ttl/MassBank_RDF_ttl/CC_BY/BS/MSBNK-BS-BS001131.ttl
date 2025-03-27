@@ -1,0 +1,97 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS001131 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2014-12-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS001131" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "37 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "433.2 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-Glu tricin (NMR)" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 4.921268e+02 ;
+            rdfs:seeAlso pubchem:CID5322022 ;
+            schema:inChI "InChI=1S/C23H24O12/c1-31-15-3-9(4-16(32-2)19(15)27)13-7-12(26)18-11(25)5-10(6-14(18)34-13)33-23-22(30)21(29)20(28)17(8-24)35-23/h3-7,17,20-25,27-30H,8H2,1-2H3/t17-,20-,21+,22-,23-/m1/s1" ;
+            schema:inChIKey inchikey:JGXFMIJHKASCIZ-LDBVRRDLSA-N ;
+            schema:molecularFormula "C23H24O12" ;
+            schema:name "7-Glu tricin (NMR)" ;
+            schema:smiles "C1(=CC(=C2C(=C1)OC(=CC2=O)C3=CC(=C(C(=C3)OC)O)OC)O)O[C@@H]4O[C@@H]([C@H]([C@@H]([C@H]4O)O)O)CO" ] ;
+    mbo:has_peak [ mbo:intensity 4.52e+02 ;
+            mbo:mz 2.260275e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 452 ],
+        [ mbo:intensity 7.04e+02 ;
+            mbo:mz 4.610706e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 704 ],
+        [ mbo:intensity 7.12e+02 ;
+            mbo:mz 4.760921e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 712 ],
+        [ mbo:intensity 1.09e+02 ;
+            mbo:mz 4.771078e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 1.33e+02 ;
+            mbo:mz 4.911147e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 133 ],
+        [ mbo:intensity 1.3e+02 ;
+            mbo:mz 2.270339e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 1.28e+02 ;
+            mbo:mz 2.430282e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 1.15e+02 ;
+            mbo:mz 2.700121e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 1.62e+02 ;
+            mbo:mz 2.710274e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 4.33e+02 ;
+            mbo:mz 2.850377e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 433 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.13033e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.11e+02 ;
+            mbo:mz 3.140395e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 2.22e+02 ;
+            mbo:mz 3.280591e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 222 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.911277e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-03fr-0077900000-5c874f5bd065f3a9ad36" ;
+    skos:definition "7-Glu tricin (NMR); LC-ESI-QTOF; MS2; CE:37 eV; [M-H]-" .
+

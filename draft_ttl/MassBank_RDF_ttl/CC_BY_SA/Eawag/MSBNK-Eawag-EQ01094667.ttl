@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01094667 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-06-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01094667" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "150 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "16.514 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[3-[4-(4-bromophenyl)phenyl]-1,2,3,4-tetrahydronaphthalen-1-yl]-4-hydroxychromen-2-one",
+                "Brodifacoum" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.220831e+02 ;
+            rdfs:seeAlso cas:13356-08-6,
+                chemspider:10444663,
+                pubchem:CID54680676 ;
+            schema:inChI "InChI=1S/C31H23BrO3/c32-24-15-13-20(14-16-24)19-9-11-21(12-10-19)23-17-22-5-1-2-6-25(22)27(18-23)29-30(33)26-7-3-4-8-28(26)35-31(29)34/h1-16,23,27,33H,17-18H2" ;
+            schema:inChIKey inchikey:VEUZZDOCACZPRY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C31H23BrO3" ;
+            schema:name "3-[3-[4-(4-bromophenyl)phenyl]-1,2,3,4-tetrahydronaphthalen-1-yl]-4-hydroxychromen-2-one",
+                "Brodifacoum" ;
+            schema:smiles "C1C(CC2=CC=CC=C2C1C3=C(C4=CC=CC=C4OC3=O)O)C5=CC=C(C=C5)C6=CC=C(C=C6)Br" ] ;
+    mbo:has_peak [ mbo:intensity 1.47521e+04 ;
+            mbo:mz 5.90138e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.860323e+05 ;
+            mbo:mz 6.50397e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 6.67193e+04 ;
+            mbo:mz 6.70189e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 6.987904e+06 ;
+            mbo:mz 7.89189e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.891094e+05 ;
+            mbo:mz 9.30346e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 2.62925e+05 ;
+            mbo:mz 1.150553e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 4.34935e+04 ;
+            mbo:mz 1.170346e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.81106e+04 ;
+            mbo:mz 1.430499e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.210756e+02 ;
+            mbo:precursor_mz 5.210758e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-9000000000-0c2328416f52ef312306" ;
+    rdfs:comment "UCHEM_ID 10946" ;
+    skos:definition "Brodifacoum; LC-ESI-QFT; MS2; CE: 150%; R=17500; [M-H]-" .
+

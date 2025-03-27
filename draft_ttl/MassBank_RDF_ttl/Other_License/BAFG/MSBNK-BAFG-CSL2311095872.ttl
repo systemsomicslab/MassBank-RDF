@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311095872 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311095872" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.207 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tramadol" ;
+            mbo:ch_compound_class "Pharmaceutical" ;
+            mbo:ch_exact_mass 2.631885e+02 ;
+            rdfs:seeAlso cas:27203-92-5 ;
+            schema:inChI "InChI=1S/C16H25NO2/c1-17(2)12-14-7-4-5-10-16(14,18)13-8-6-9-15(11-13)19-3/h6,8-9,11,14,18H,4-5,7,10,12H2,1-3H3/t14-,16+/m1/s1" ;
+            schema:inChIKey inchikey:TVYLLZQTGLZFBW-ZBFHGGJFSA-N ;
+            schema:molecularFormula "C16H25NO2" ;
+            schema:name "Tramadol" ;
+            schema:smiles "COc1cccc(c1)[C@@]2(O)CCCC[C@@H]2CN(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.046e+02 ;
+            mbo:mz 5.80719e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.11e+01 ;
+            mbo:mz 2.461849e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 3.961e+02 ;
+            mbo:mz 2.641963e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 978 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.641958e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0bt9-8090000000-675f2e08b58fc64022a2" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Tramadol; LC-ESI-QTOF; MS2; 20 V" .
+

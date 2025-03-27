@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000026 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000026" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID8041955",
+                "Ethyl diethanolamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.331103e+02 ;
+            rdfs:seeAlso cas:139-87-7,
+                pubchem:CID8769 ;
+            schema:inChI "InChI=1S/C6H15NO2/c1-2-7(3-5-8)4-6-9/h8-9H,2-6H2,1H3" ;
+            schema:inChIKey inchikey:AKNUHUCEWALCOI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H15NO2" ;
+            schema:name "DTXSID8041955",
+                "Ethyl diethanolamine" ;
+            schema:smiles "CCN(CCO)CCO" ] ;
+    mbo:has_peak [ mbo:intensity 5.861924e+00 ;
+            mbo:mz 4.404948e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.341176e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.14131e+00 ;
+            mbo:mz 4.503349e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 3.877564e+00 ;
+            mbo:mz 7.006513e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.825074e+01 ;
+            mbo:mz 7.208078e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 3.238881e+00 ;
+            mbo:mz 8.807569e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 2.627564e+00 ;
+            mbo:mz 9.009134e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 3.491363e+00 ;
+            mbo:mz 1.020913e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 2.918602e+01 ;
+            mbo:mz 1.16107e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 292 ],
+        [ mbo:intensity 1.92523e+00 ;
+            mbo:mz 1.171148e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 19 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.341176e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-2900000000-c9c970538a9e6c5c4b5d" ;
+    skos:definition "Ethyl diethanolamine; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

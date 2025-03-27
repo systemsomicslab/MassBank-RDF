@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003473 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003473" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "11.342 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,7,8-trihydroxy-3-methyl-10-oxo-1,4-dihydropyrano[4,3-b]chromene-9-carboxylic acid",
+                "Fulvic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.080532e+02 ;
+            rdfs:seeAlso cas:479-66-3,
+                chemspider:4514278,
+                pubchem:CID5359407 ;
+            schema:inChI "InChI=1S/C14H12O8/c1-14(20)3-8-5(4-21-14)11(16)9-7(22-8)2-6(15)12(17)10(9)13(18)19/h2,15,17,20H,3-4H2,1H3,(H,18,19)" ;
+            schema:inChIKey inchikey:FCYKAQOGGFGCMD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H12O8" ;
+            schema:name "3,7,8-trihydroxy-3-methyl-10-oxo-1,4-dihydropyrano[4,3-b]chromene-9-carboxylic acid",
+                "Fulvic acid" ;
+            schema:smiles "CC1(CC2=C(CO1)C(=O)C3=C(O2)C=C(C(=C3C(=O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 8.7776e+03 ;
+            mbo:mz 2.030347e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.06208e+04 ;
+            mbo:mz 2.630562e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.021357e+06 ;
+            mbo:mz 3.070457e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.070459e+02 ;
+            mbo:precursor_mz 3.070459e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-abd3d2c5bb28469e4247" ;
+    rdfs:comment "INTERNAL_ID 140" ;
+    skos:definition "Fulvic acid; LC-ESI-ITFT; MS2; CE: 20%; R=7500; [M-H]-" .
+

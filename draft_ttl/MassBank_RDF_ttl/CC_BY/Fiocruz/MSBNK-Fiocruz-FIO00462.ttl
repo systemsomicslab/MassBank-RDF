@@ -1,0 +1,100 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00462 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00462" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Primaquine" ;
+            mbo:ch_compound_class "Non-Natural Product; drug" ;
+            mbo:ch_exact_mass 2.591685e+02 ;
+            rdfs:seeAlso cas:90-34-6,
+                pubchem:CID96025106 ;
+            schema:inChI "InChI=1S/C15H21N3O/c1-11(5-3-7-16)18-14-10-13(19-2)9-12-6-4-8-17-15(12)14/h4,6,8-11,18H,3,5,7,16H2,1-2H3" ;
+            schema:inChIKey inchikey:INDBQLZJXZLFIT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H21N3O" ;
+            schema:name "Primaquine" ;
+            schema:smiles "NCCCC(C)Nc(c1)c(n2)c(ccc2)cc(OC)1" ] ;
+    mbo:has_peak [ mbo:intensity 5.867e+03 ;
+            mbo:mz 8.60957e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 6.294e+03 ;
+            mbo:mz 2.411332e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 8.83e+02 ;
+            mbo:mz 2.421365e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 8.171e+03 ;
+            mbo:mz 2.431488e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 149 ],
+        [ mbo:intensity 1.33e+03 ;
+            mbo:mz 2.441522e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 8.32e+02 ;
+            mbo:mz 1.320681e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.687e+03 ;
+            mbo:mz 1.600631e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 4.832e+03 ;
+            mbo:mz 1.740785e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 5.486e+04 ;
+            mbo:mz 1.750864e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.805e+03 ;
+            mbo:mz 1.760895e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 8.85e+03 ;
+            mbo:mz 1.870863e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 161 ],
+        [ mbo:intensity 9.95e+02 ;
+            mbo:mz 1.880897e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.193e+03 ;
+            mbo:mz 2.011018e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 22 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.750864e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-004i-0920000000-65f7b4135f0db6eee15e" ;
+    rdfs:comment "[Raw Data] CB203_Primaquine_pos_30eV_CB000073.txt" ;
+    skos:definition "Primaquine; LC-ESI-QTOF; MS2; [M+H]+; CE: 30eV" .
+

@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU270606 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU270606" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "Ramp 23.9-35.9 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.398 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-[2-(2,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxy]ethyl]imidazole",
+                "Miconazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.13986e+02 ;
+            rdfs:seeAlso cas:75319-47-0,
+                chemspider:4044,
+                pubchem:CID4189 ;
+            schema:inChI "InChI=1S/C18H14Cl4N2O/c19-13-2-1-12(16(21)7-13)10-25-18(9-24-6-5-23-11-24)15-4-3-14(20)8-17(15)22/h1-8,11,18H,9-10H2" ;
+            schema:inChIKey inchikey:BYBLEWFAAKGYCD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H14Cl4N2O" ;
+            schema:name "1-[2-(2,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxy]ethyl]imidazole",
+                "Miconazole" ;
+            schema:smiles "ClC1=CC(Cl)=C(COC(CN2C=CN=C2)C2=C(Cl)C=C(Cl)C=C2)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 4.88e+02 ;
+            mbo:mz 1.070845e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 3.72e+02 ;
+            mbo:mz 1.15053e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.8164e+04 ;
+            mbo:mz 1.190852e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.576e+03 ;
+            mbo:mz 1.200883e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 7.36e+02 ;
+            mbo:mz 1.29053e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 3.88e+02 ;
+            mbo:mz 1.330651e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 7.012e+03 ;
+            mbo:mz 1.350795e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 386 ],
+        [ mbo:intensity 1.096e+03 ;
+            mbo:mz 1.360825e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 60 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.322387e+02 ;
+            mbo:precursor_mz 4.149933e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-014i-0900000000-36f03e6d15ef04eeb8d7" ;
+    rdfs:comment "INTERNAL_ID 2706" ;
+    skos:definition "Miconazole; LC-ESI-QTOF; MS2; CE: Ramp 23.9-35.9 eV; R=35000; [M+H]+" .
+

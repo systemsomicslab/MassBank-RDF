@@ -1,0 +1,85 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N101316_CC60 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N101316_CC60" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.185 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-octadeca-9,12-dienoyloxy-4-(trimethylazaniumyl)butanoate",
+                "9(Z),12(Z)-octadecadienoyl-L-carnitine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 4.233349e+02 ;
+            rdfs:seeAlso chemspider:21238938,
+                pubchem:CID75598966 ;
+            schema:inChI "InChI=1S/C25H45NO4/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-25(29)30-23(21-24(27)28)22-26(2,3)4/h9-10,12-13,23H,5-8,11,14-22H2,1-4H3" ;
+            schema:inChIKey inchikey:MJLXQSQYKZWZCB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H45NO4" ;
+            schema:name "3-octadeca-9,12-dienoyloxy-4-(trimethylazaniumyl)butanoate",
+                "9(Z),12(Z)-octadecadienoyl-L-carnitine" ;
+            schema:smiles "CCCCCC=CCC=CCCCCCCCC(=O)OC(CC(=O)[O-])C[N+](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.8e+02 ;
+            mbo:mz 1.070111e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 214 ],
+        [ mbo:intensity 7.77e+01 ;
+            mbo:mz 1.660828e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 8.52e+01 ;
+            mbo:mz 2.069895e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 6.11e+01 ;
+            mbo:mz 2.82973e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 4.68e+01 ;
+            mbo:mz 3.04988e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 5.21e+01 ;
+            mbo:mz 3.430172e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.2436e+03 ;
+            mbo:mz 3.872503e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.99e+01 ;
+            mbo:mz 3.88256e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 31 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.243441e+02 ;
+            mbo:precursor_mz 4.463241e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-000i-0209000000-52ae3511ff11be1bc421" ;
+    rdfs:comment "INTERNAL_ID 1013" ;
+    skos:definition "9(Z),12(Z)-octadecadienoyl-L-carnitine; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M+Na]+" .
+

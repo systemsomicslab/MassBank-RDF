@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU224734 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU224734" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "12.263 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,4S)-4-cyclohexyl-1-[2-[(2-methyl-1-propanoyloxypropoxy)-(4-phenylbutyl)phosphoryl]acetyl]pyrrolidine-2-carboxylic acid",
+                "Fosinopril" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.633012e+02 ;
+            rdfs:seeAlso cas:98048-97-6,
+                chemspider:50469,
+                pubchem:CID55891 ;
+            schema:inChI "InChI=1S/C30H46NO7P/c1-4-28(33)37-30(22(2)3)38-39(36,18-12-11-15-23-13-7-5-8-14-23)21-27(32)31-20-25(19-26(31)29(34)35)24-16-9-6-10-17-24/h5,7-8,13-14,22,24-26,30H,4,6,9-12,15-21H2,1-3H3,(H,34,35)/t25-,26+,30?,39?/m1/s1" ;
+            schema:inChIKey inchikey:BIDNLKIUORFRQP-FKDWWROVSA-N ;
+            schema:molecularFormula "C30H46NO7P" ;
+            schema:name "(2S,4S)-4-cyclohexyl-1-[2-[(2-methyl-1-propanoyloxypropoxy)-(4-phenylbutyl)phosphoryl]acetyl]pyrrolidine-2-carboxylic acid",
+                "Fosinopril" ;
+            schema:smiles "O=C(CP(=O)(CCCCc1ccccc1)OC(OC(=O)CC)C(C)C)N2C[C@@H](C[C@H]2C(O)=O)C3CCCCC3" ] ;
+    mbo:has_peak [ mbo:intensity 4.32e+02 ;
+            mbo:mz 2.190549e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 1.992e+03 ;
+            mbo:mz 4.59212e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 325 ],
+        [ mbo:intensity 1.328e+03 ;
+            mbo:mz 2.201321e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 217 ],
+        [ mbo:intensity 1.764e+03 ;
+            mbo:mz 2.370666e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 288 ],
+        [ mbo:intensity 4.52e+02 ;
+            mbo:mz 2.441331e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 74 ],
+        [ mbo:intensity 7.48e+02 ;
+            mbo:mz 2.610655e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 1.4e+03 ;
+            mbo:mz 2.621445e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 228 ],
+        [ mbo:intensity 4.764e+03 ;
+            mbo:mz 2.790773e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 777 ],
+        [ mbo:intensity 4.68e+02 ;
+            mbo:mz 2.800818e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 6.124e+03 ;
+            mbo:mz 4.582093e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.53278e+02 ;
+            mbo:precursor_mz 5.862904e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0a6r-0090600000-3e056ad413ae1424e539" ;
+    rdfs:comment "INTERNAL_ID 2247" ;
+    skos:definition "Fosinopril; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M+Na]+" .
+

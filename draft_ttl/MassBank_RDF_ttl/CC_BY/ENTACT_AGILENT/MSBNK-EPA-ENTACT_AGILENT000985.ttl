@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000985 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000985" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID7047358",
+                "Nelivaptan" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.291599e+02 ;
+            rdfs:seeAlso cas:439687-69-1,
+                pubchem:CID9895468 ;
+            schema:inChI "InChI=1S/C30H32ClN3O8S/c1-32(2)28(36)24-15-19(35)17-33(24)30(21-8-6-7-9-25(21)41-4)22-14-18(31)10-12-23(22)34(29(30)37)43(38,39)27-13-11-20(40-3)16-26(27)42-5/h6-14,16,19,24,35H,15,17H2,1-5H3" ;
+            schema:inChIKey inchikey:NJXZWIIMWNEOGJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C30H32ClN3O8S" ;
+            schema:name "DTXSID7047358",
+                "Nelivaptan" ;
+            schema:smiles "CN(C)C(=O)C1CC(O)CN1C1(C(=O)N(C2=CC=C(Cl)C=C12)S(=O)(=O)C1=CC=C(C=C1OC)OC)C1=CC=CC=C1OC" ] ;
+    mbo:has_peak [ mbo:intensity 2.047991e+00 ;
+            mbo:mz 1.510754e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 9.009425e+00 ;
+            mbo:mz 2.010216e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 5.646128e+01 ;
+            mbo:mz 4.720616e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 564 ],
+        [ mbo:intensity 1.94492e+00 ;
+            mbo:mz 4.721429e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.419934e+00 ;
+            mbo:mz 4.730654e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 6.301671e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.301671e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0089-0000509000-86ee4b306590b3a4b147" ;
+    skos:definition "Nelivaptan; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

@@ -1,0 +1,64 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET050506 a mbo:MassSpectrum ;
+    dcterms:creator "R. Gulde, E. Schymanski, K. Fenner, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-17 (Created 2015-09-25, modified 2016-02-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET050506" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde, R.; Meier, U.; Schymanski, E. L.; Kohler, H.-P. E.; Helbling, D. E.; Derrer, S.; Rentsch, D.; Fenner, K. Systematic Exploration of Biotransformation Reactions of Amine-Containing Micropollutants in Activated Sludge. Environmental Science & Technology 2016, 50 (6), 2908–20. DOI:10.1021/acs.est.5b05186" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "90 (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters with guard column" ;
+            mbo:flow_gradient "95/5 at 0 min, 5/95 at 15 min, 5/95 at 20 min, 95/5 at 20.1 min, 95/5 at 25 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "15.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DEP_202.1225_16.0" ;
+            mbo:ch_compound_class "N/A; Environmental Transformation Products" ;
+            mbo:ch_exact_mass 2.011154e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C13H15NO" ;
+            schema:name "DEP_202.1225_16.0" ;
+            schema:smiles "N/A" ] ;
+    mbo:has_peak [ mbo:intensity 1.7946e+03 ;
+            mbo:mz 5.50543e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 4.62193e+04 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.0043e+03 ;
+            mbo:mz 1.170572e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 1.22739e+04 ;
+            mbo:mz 1.300651e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 265 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.00809e+01 ;
+            mbo:precursor_mz 2.021226e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-9300000000-88571ab4a30548fb7ca2" ;
+    rdfs:comment "INTERNAL_ID 505" ;
+    skos:definition "DEP_202.1225_16.0; LC-ESI-QFT; MS2; CE: 90; R=17500; [M+H]+" .
+

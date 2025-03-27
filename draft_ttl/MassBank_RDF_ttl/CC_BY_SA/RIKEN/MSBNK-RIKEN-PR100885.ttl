@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100885 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100885" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-Hydroxybut-3-enylglucosinolate",
+                "(S)--2-Hydroxy-3-butenyl-glucosinolate",
+                "Epiprogoitrin" ;
+            mbo:ch_compound_class "Alkenylglucosinolate" ;
+            mbo:ch_exact_mass 3.89045e+02 ;
+            rdfs:seeAlso cas:19237-18-4,
+                chemspider:7851092,
+                pubchem:CID9576649 ;
+            schema:inChI "InChI=1S/C11H19NO10S2/c1-2-5(14)3-7(12-22-24(18,19)20)23-11-10(17)9(16)8(15)6(4-13)21-11/h2,5-6,8-11,13-17H,1,3-4H2,(H,18,19,20)/b12-7+/t5-,6-,8-,9+,10-,11+/m1/s1" ;
+            schema:inChIKey inchikey:MYHSVHWQEVDFQT-QSKOKFRPSA-N ;
+            schema:molecularFormula "C11H19NO10S2" ;
+            schema:name "(2S)-2-Hydroxybut-3-enylglucosinolate",
+                "(S)--2-Hydroxy-3-butenyl-glucosinolate",
+                "Epiprogoitrin" ;
+            schema:smiles "C=CC(O)CC(=NOS(O)(=O)=O)SC(O1)C(O)C(O)C(O)C(CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 2.156e+00 ;
+            mbo:mz 6.39582e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 2.269e+00 ;
+            mbo:mz 2.078909e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 199 ],
+        [ mbo:intensity 3.242e+00 ;
+            mbo:mz 2.639186e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 284 ],
+        [ mbo:intensity 1.139e+01 ;
+            mbo:mz 4.259931e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.606e+00 ;
+            mbo:mz 7.19806e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 141 ],
+        [ mbo:intensity 2.169e+00 ;
+            mbo:mz 7.4987e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 5.622e+00 ;
+            mbo:mz 9.59418e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 493 ],
+        [ mbo:intensity 1.025e+01 ;
+            mbo:mz 9.6951e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 899 ],
+        [ mbo:intensity 1.58e+00 ;
+            mbo:mz 9.79443e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 3.078e+00 ;
+            mbo:mz 9.89487e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 270 ],
+        [ mbo:intensity 3.664e+00 ;
+            mbo:mz 1.349032e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 321 ],
+        [ mbo:intensity 5.038e+00 ;
+            mbo:mz 1.908317e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 442 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.259931e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-002b-9210300000-1234a7fc4824390c29c0" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "(2S)-2-Hydroxybut-3-enylglucosinolate; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+K-2H]-" .
+

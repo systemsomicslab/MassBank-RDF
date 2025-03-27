@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN117902 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN117902" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.113 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tris(tert-butylphenyl) phosphate",
+                "tris(2-tert-butylphenyl) phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.942586e+02 ;
+            rdfs:seeAlso cas:28777-70-0,
+                chemspider:2298846,
+                pubchem:CID3034371 ;
+            schema:inChI "InChI=1S/C30H39O4P/c1-28(2,3)22-16-10-13-19-25(22)32-35(31,33-26-20-14-11-17-23(26)29(4,5)6)34-27-21-15-12-18-24(27)30(7,8)9/h10-21H,1-9H3" ;
+            schema:inChIKey inchikey:SPUXJWDKFVXXBI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C30H39O4P" ;
+            schema:name "Tris(tert-butylphenyl) phosphate",
+                "tris(2-tert-butylphenyl) phosphate" ;
+            schema:smiles "CC(C)(C)C1=CC=CC=C1OP(=O)(OC2=CC=CC=C2C(C)(C)C)OC3=CC=CC=C3C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.1209e+03 ;
+            mbo:mz 5.70703e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 4.2492e+03 ;
+            mbo:mz 3.270775e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 2.67e+02 ;
+            mbo:mz 3.280804e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.4356e+03 ;
+            mbo:mz 3.831408e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 8.196e+02 ;
+            mbo:mz 3.841426e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.02639e+04 ;
+            mbo:mz 4.392023e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 127 ],
+        [ mbo:intensity 2.6224e+03 ;
+            mbo:mz 4.402064e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 8.10089e+04 ;
+            mbo:mz 4.952647e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.95265e+02 ;
+            mbo:precursor_mz 4.952659e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0002-0000900000-c95449d6ab645d288012" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Tris(tert-butylphenyl) phosphate; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M+H]+" .
+

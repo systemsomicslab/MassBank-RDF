@@ -1,0 +1,77 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00735 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2014-10-02)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00735" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Supelco Titan C18 1.9um" ;
+            mbo:flow_gradient "5-100%B in 12min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Nicotiflorine" ;
+            mbo:ch_compound_class "Natural Product; Flavonoids" ;
+            mbo:ch_exact_mass 5.941585e+02 ;
+            rdfs:seeAlso chemspider:4477257 ;
+            schema:inChI "InChI=1S/C27H30O15/c1-9-17(31)20(34)22(36)26(39-9)38-8-15-18(32)21(35)23(37)27(41-15)42-25-19(33)16-13(30)6-12(29)7-14(16)40-24(25)10-2-4-11(28)5-3-10/h2-7,9,15,17-18,20-23,26-32,34-37H,8H2,1H3/t9-,15+,17-,18+,20+,21-,22+,23+,26+,27-/m0/s1" ;
+            schema:inChIKey inchikey:RTATXGUCZHCSNG-QHWHWDPRSA-N ;
+            schema:molecularFormula "C27H30O15" ;
+            schema:name "Nicotiflorine" ;
+            schema:smiles "c(c5)(O)cc(c(c51)C(C(O[C@H](O3)[C@@H]([C@H]([C@@H]([C@H]3CO[C@@H]([C@@H]4O)O[C@H]([C@@H]([C@H]4O)O)C)O)O)O)=C(c(c2)ccc(O)c2)O1)=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.708e+03 ;
+            mbo:mz 2.840331e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 6.689e+03 ;
+            mbo:mz 2.850406e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 2.122e+03 ;
+            mbo:mz 2.860458e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 7.34e+02 ;
+            mbo:mz 2.990565e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 3.0267e+04 ;
+            mbo:mz 5.931525e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.5385e+04 ;
+            mbo:mz 5.941568e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 508 ],
+        [ mbo:intensity 4.175e+03 ;
+            mbo:mz 5.951601e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 138 ],
+        [ mbo:intensity 7.34e+02 ;
+            mbo:mz 5.961632e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 24 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0006-0020090000-c48ad9578443f501001f" ;
+    rdfs:comment "[Raw Data] CBA23_Nicotiflorine_neg_30eV_1-5_01_1418.txt" ;
+    skos:definition "Nicotiflorine; LC-ESI-QTOF; MS2; [M-H]-; CE: 30eV" .
+

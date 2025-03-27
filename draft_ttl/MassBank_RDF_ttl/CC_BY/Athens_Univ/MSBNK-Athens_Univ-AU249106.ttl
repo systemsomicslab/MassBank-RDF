@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU249106 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-04-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU249106" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "Ramp 16.1-24.1 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.084 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1H-quinolin-2-one",
+                "2-Hydroxyquinoline" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.450528e+02 ;
+            rdfs:seeAlso cas:59-31-4,
+                chemspider:5816,
+                pubchem:CID6038 ;
+            schema:inChI "InChI=1S/C9H7NO/c11-9-6-5-7-3-1-2-4-8(7)10-9/h1-6H,(H,10,11)" ;
+            schema:inChIKey inchikey:LISFMEBWQUVKPJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H7NO" ;
+            schema:name "1H-quinolin-2-one",
+                "2-Hydroxyquinoline" ;
+            schema:smiles "OC1=NC2=CC=CC=C2C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 5.32e+02 ;
+            mbo:mz 9.10559e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 9.4e+02 ;
+            mbo:mz 1.170566e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.64e+03 ;
+            mbo:mz 1.180643e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.256e+03 ;
+            mbo:mz 1.280488e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.05492e+05 ;
+            mbo:mz 1.460597e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.3372e+04 ;
+            mbo:mz 1.470627e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 127 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.460595e+02 ;
+            mbo:precursor_mz 1.4606e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0002-0900000000-66b9308d3da3d44dde7a" ;
+    rdfs:comment "INTERNAL_ID 2491" ;
+    skos:definition "2-Hydroxyquinoline; LC-ESI-QTOF; MS2; CE: Ramp 16.1-24.1 eV; R=35000; [M+H]+" .
+

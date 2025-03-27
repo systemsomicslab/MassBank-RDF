@@ -1,0 +1,104 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU019804 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU019804" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "60" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.885 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Xanthone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.960524e+02 ;
+            rdfs:seeAlso cas:90-47-1,
+                chemspider:6753,
+                pubchem:CID7020 ;
+            schema:inChI "InChI=1S/C13H8O2/c14-13-9-5-1-3-7-11(9)15-12-8-4-2-6-10(12)13/h1-8H" ;
+            schema:inChIKey inchikey:JNELGWHKGNBSMD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H8O2" ;
+            schema:name "Xanthone" ;
+            schema:smiles "O=C1C2=C(OC3=C1C=CC=C3)C=CC=C2" ] ;
+    mbo:has_peak [ mbo:intensity 6.4263e+03 ;
+            mbo:mz 5.30386e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.88113e+04 ;
+            mbo:mz 1.690649e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 5.5359e+03 ;
+            mbo:mz 1.960526e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.873297e+06 ;
+            mbo:mz 1.970599e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.9692e+03 ;
+            mbo:mz 7.70387e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.62711e+04 ;
+            mbo:mz 9.50492e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.5586e+03 ;
+            mbo:mz 1.050335e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.77346e+04 ;
+            mbo:mz 1.150543e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.66775e+04 ;
+            mbo:mz 1.210285e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.039954e+05 ;
+            mbo:mz 1.4107e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 3.4595e+03 ;
+            mbo:mz 1.520619e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.82205e+04 ;
+            mbo:mz 1.68057e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 6 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90212e+01 ;
+            mbo:precursor_mz 1.970597e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0002-0900000000-bfcde984f22fc44d60df" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Xanthone; LC-ESI-QFT; MS2; CE: 60; R=17500; [M+H]+" .
+

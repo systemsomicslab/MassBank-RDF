@@ -1,0 +1,78 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ501054 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], B. Lauper [com]" ;
+    dcterms:date "2021-03-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ501054" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K.; Mueller, A.; Singer, H.; Hollender, J. New relevant pesticide transformation products in groundwater detected using target and suspect screening for agricultural and urban micropollutants with LC-HRMS. Water Research 2019, 165. DOI: https://doi.org/10.1016/j.watres.2019.114972" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Exploris 240 Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "Atlantis C18 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 100/0 at 1.5 min, 5/95 at 18.5 min, 5/95 at 28.5 min, 100/0 at 29 min, 100/0 at 33 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "16.752 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,5-Dichlorobenzenesulfonic Acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.259258e+02 ;
+            rdfs:seeAlso cas:88-42-6,
+                chemspider:59983,
+                pubchem:CID66616 ;
+            schema:inChI "InChI=1S/C6H4Cl2O3S/c7-4-1-2-5(8)6(3-4)12(9,10)11/h1-3H,(H,9,10,11)" ;
+            schema:inChIKey inchikey:LFXZSGVZSSMCMB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H4Cl2O3S" ;
+            schema:name "2,5-Dichlorobenzenesulfonic Acid" ;
+            schema:smiles "C1=CC(=C(C=C1Cl)S(=O)(=O)O)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 7.900266e+06 ;
+            mbo:mz 7.99574e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 388 ],
+        [ mbo:intensity 1.471164e+06 ;
+            mbo:mz 1.149263e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 3.634704e+06 ;
+            mbo:mz 1.249799e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 179 ],
+        [ mbo:intensity 1.934872e+05 ;
+            mbo:mz 1.449617e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.031887e+07 ;
+            mbo:mz 1.609567e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.496938e+07 ;
+            mbo:mz 2.249187e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 736 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.249186e+02 ;
+            mbo:precursor_mz 2.249185e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03k9-2950000000-1c4cdbc2c249c00b613f" ;
+    rdfs:comment "UCHEM_ID 5010" ;
+    skos:definition "2,5-Dichlorobenzenesulfonic Acid; LC-ESI-QFT; MS2; CE: 60%; R=15000; [M-H]-" .
+

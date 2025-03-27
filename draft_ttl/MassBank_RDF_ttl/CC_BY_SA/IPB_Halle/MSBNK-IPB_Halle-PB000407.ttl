@@ -1,0 +1,69 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000407 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-01-02, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000407" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-amino-3-phenylpropanoic acid",
+                "Phenylalanine" ;
+            mbo:ch_compound_class "Natural Product; amiono acid" ;
+            mbo:ch_exact_mass 1.65079e+02 ;
+            rdfs:seeAlso pubchem:CID6140 ;
+            schema:inChI "InChI=1S/C9H11NO2/c10-8(9(11)12)6-7-4-2-1-3-5-7/h1-5,8H,6,10H2,(H,11,12)/t8-/m0/s1" ;
+            schema:inChIKey inchikey:COLNVLDHVKWLRT-QMMMGPOBSA-N ;
+            schema:molecularFormula "C9H11NO2" ;
+            schema:name "2-amino-3-phenylpropanoic acid",
+                "Phenylalanine" ;
+            schema:smiles "C1=CC=C(C=C1)C[C@@H](C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.32601e+02 ;
+            mbo:mz 1.03055e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 6.8184e+01 ;
+            mbo:mz 1.0705e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.20083e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.8797e+01 ;
+            mbo:mz 1.21085e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.44203e+02 ;
+            mbo:mz 1.3105e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 3.92862e+02 ;
+            mbo:mz 1.4906e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 2.433026e+03 ;
+            mbo:mz 1.66089e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 243 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-0900000000-6ca8e29805bf8d189cf2" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Phenylalanine; LC-ESI-QTOF; MS2; CE:15 eV; [M+H]+" .
+

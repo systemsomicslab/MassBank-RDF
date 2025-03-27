@@ -1,0 +1,105 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU222802 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU222802" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "2.7 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(pyrrolidin-2-yl)pyridine",
+                "3-pyrrolidin-2-ylpyridine",
+                "Nornicotine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.481e+02 ;
+            rdfs:seeAlso cas:5746-86-1,
+                chemspider:21108497,
+                pubchem:CID412 ;
+            schema:inChI "InChI=1S/C9H12N2/c1-3-8(7-10-5-1)9-4-2-6-11-9/h1,3,5,7,9,11H,2,4,6H2" ;
+            schema:inChIKey inchikey:MYKUKUCHPMASKF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H12N2" ;
+            schema:name "3-(pyrrolidin-2-yl)pyridine",
+                "3-pyrrolidin-2-ylpyridine",
+                "Nornicotine" ;
+            schema:smiles "C1CNC(C1)C1=CC=CN=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.32e+02 ;
+            mbo:mz 1.140927e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.824e+03 ;
+            mbo:mz 1.330836e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 1.8392e+04 ;
+            mbo:mz 1.491065e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 559 ],
+        [ mbo:intensity 8.904e+03 ;
+            mbo:mz 1.501108e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 271 ],
+        [ mbo:intensity 8.92e+02 ;
+            mbo:mz 1.150543e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.3384e+04 ;
+            mbo:mz 1.170566e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 407 ],
+        [ mbo:intensity 1.868e+03 ;
+            mbo:mz 1.180619e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 2.704e+03 ;
+            mbo:mz 1.200805e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 3.286e+04 ;
+            mbo:mz 1.300646e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.536e+03 ;
+            mbo:mz 1.310684e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 3.0688e+04 ;
+            mbo:mz 1.320798e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 933 ],
+        [ mbo:intensity 7.152e+03 ;
+            mbo:mz 1.32101e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 217 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.491064e+02 ;
+            mbo:precursor_mz 1.491073e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-001i-0900000000-f9d65ea20e70d97b17a7" ;
+    rdfs:comment "INTERNAL_ID 2228" ;
+    skos:definition "Nornicotine; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

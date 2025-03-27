@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR304254 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR304254" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.807217" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "epsilon-Viniferin" ;
+            mbo:ch_compound_class "2-arylbenzofuran flavonoids" ;
+            mbo:ch_exact_mass 4.54478e+02 ;
+            schema:inChI "InChI=1S/C28H22O6/c29-20-7-2-16(3-8-20)1-4-18-11-24(33)15-25-26(18)27(19-12-22(31)14-23(32)13-19)28(34-25)17-5-9-21(30)10-6-17/h1-15,27-33H/b4-1+/t27-,28+/m1/s1" ;
+            schema:inChIKey inchikey:FQWLMRXWKZGLFI-YVYUXZJTSA-N ;
+            schema:molecularFormula "C28H22O6" ;
+            schema:name "epsilon-Viniferin" ;
+            schema:smiles "OC1=CC=C(\\C=C\\C2=CC(O)=CC3=C2[C@H]([C@@H](O3)C2=CC=C(O)C=C2)C2=CC(O)=CC(O)=C2)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 5e+00 ;
+            mbo:mz 3.451179e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 3.491065e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1e+01 ;
+            mbo:mz 3.50115e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 3.611085e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 4.541423e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1e+01 ;
+            mbo:mz 4.550922e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1e+03 ;
+            mbo:mz 4.551477e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.551489e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-0000900000-7c4d866728636df75d0d" ;
+    rdfs:comment "registered in RIKEN PlaSMA" ;
+    skos:definition "epsilon-Viniferin; LC-ESI-QTOF; MS2" .
+

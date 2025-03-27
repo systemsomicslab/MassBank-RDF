@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001449 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001449" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,3'-Sulphonyldianiline",
+                "DTXSID3044962" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.480619e+02 ;
+            rdfs:seeAlso cas:599-61-1,
+                pubchem:CID11741 ;
+            schema:inChI "InChI=1S/C12H12N2O2S/c13-9-3-1-5-11(7-9)17(15,16)12-6-2-4-10(14)8-12/h1-8H,13-14H2" ;
+            schema:inChIKey inchikey:LJGHYPLBDBRCRZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H12N2O2S" ;
+            schema:name "3,3'-Sulphonyldianiline",
+                "DTXSID3044962" ;
+            schema:smiles "NC1C=C(C=CC=1)S(=O)(=O)C1=CC(N)=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.421304e+00 ;
+            mbo:mz 6.396245e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.280339e+00 ;
+            mbo:mz 1.070377e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.831084e+00 ;
+            mbo:mz 1.449754e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.140683e+00 ;
+            mbo:mz 1.550046e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.324499e+01 ;
+            mbo:mz 1.560125e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 232 ],
+        [ mbo:intensity 3.460877e+00 ;
+            mbo:mz 1.830928e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.470547e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.470547e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0002-0290000000-72691a0a658f8e4950c9" ;
+    skos:definition "3,3'-Sulphonyldianiline; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

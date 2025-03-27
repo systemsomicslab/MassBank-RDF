@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO008859 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO008859" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "0.65/0.65/0.50" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS4" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Dimethylaminoantipyrine",
+                "Amidopyrine",
+                "Aminopyrine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.311372e+02 ;
+            rdfs:seeAlso cas:58-15-1,
+                pubchem:CID9742 ;
+            schema:inChI "InChI=1S/C13H17N3O/c1-10-12(14(2)3)13(17)16(15(10)4)11-8-6-5-7-9-11/h5-9H,1-4H3" ;
+            schema:inChIKey inchikey:RMMXTBMQSGEXHJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H17N3O" ;
+            schema:name "4-Dimethylaminoantipyrine",
+                "Amidopyrine",
+                "Aminopyrine" ;
+            schema:smiles "CN(C)C(=C(C)1)C(=O)N(c(c2)cccc2)N(C)1" ] ;
+    mbo:has_peak [ mbo:intensity 2.1e+00 ;
+            mbo:mz 1.17e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 7.47e+00 ;
+            mbo:mz 1.3e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 5.25e+00 ;
+            mbo:mz 1.419e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 2.384e+01 ;
+            mbo:mz 1.58e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 407 ],
+        [ mbo:intensity 5.327e+01 ;
+            mbo:mz 1.591e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 910 ],
+        [ mbo:intensity 5.847e+01 ;
+            mbo:mz 1.6e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0bt9-0900000000-eedcbffdd157eb00b6e7" ;
+    rdfs:comment "[MS3] KO008857" ;
+    skos:definition "Amidopyrine; LC-ESI-IT; MS4; m/z: 232/187/159; [M+H]+" .
+

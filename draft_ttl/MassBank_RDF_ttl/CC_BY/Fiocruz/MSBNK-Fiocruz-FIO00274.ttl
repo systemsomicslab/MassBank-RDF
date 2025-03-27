@@ -1,0 +1,106 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00274 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00274" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Quercetin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 3.020426e+02 ;
+            rdfs:seeAlso cas:117-39-5,
+                knapsack:C00004631,
+                pubchem:CID3679 ;
+            schema:inChI "InChI=1S/C15H10O7/c16-7-4-10(19)12-11(5-7)22-15(14(21)13(12)20)6-1-2-8(17)9(18)3-6/h1-5,16-19,21H" ;
+            schema:inChIKey inchikey:REFJWTPEDVJJIY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O7" ;
+            schema:name "Quercetin" ;
+            schema:smiles "Oc(c3)c(O)cc(c3)C(O1)=C(O)C(=O)c(c(O)2)c(cc(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 4.488e+03 ;
+            mbo:mz 1.370236e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.92e+03 ;
+            mbo:mz 2.740472e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 3.904e+03 ;
+            mbo:mz 2.850394e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.06503e+05 ;
+            mbo:mz 3.030502e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.4743e+04 ;
+            mbo:mz 3.040535e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 138 ],
+        [ mbo:intensity 2.43e+03 ;
+            mbo:mz 3.050554e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 7.105e+03 ;
+            mbo:mz 1.530184e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 1.155e+03 ;
+            mbo:mz 1.630392e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.609e+03 ;
+            mbo:mz 1.650184e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.362e+03 ;
+            mbo:mz 1.830288e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.352e+03 ;
+            mbo:mz 2.010546e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 8.141e+03 ;
+            mbo:mz 2.290495e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 2.335e+03 ;
+            mbo:mz 2.470601e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 6.395e+03 ;
+            mbo:mz 2.570444e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 60 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.030502e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0udi-0119000000-240815bff9a5d73c6d37" ;
+    rdfs:comment "[Raw Data] CB109_Quercetin_pos_30eV_CB000041.txt" ;
+    skos:definition "Quercetin; LC-ESI-QTOF; MS2; [M+H]+; CE: 30eV" .
+

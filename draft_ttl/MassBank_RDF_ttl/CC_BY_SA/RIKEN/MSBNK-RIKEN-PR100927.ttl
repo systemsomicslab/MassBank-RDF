@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100927 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2012-05-21)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100927" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "E-3,4,5'-Trihydroxy-3'-glucopyranosylstilbene",
+                "E-Astringin" ;
+            mbo:ch_compound_class "Stilbene" ;
+            mbo:ch_exact_mass 4.061264e+02 ;
+            rdfs:seeAlso cas:29884-49-9,
+                chemspider:4445028,
+                knapsack:C00002870,
+                pubchem:CID5281712 ;
+            schema:inChI "InChI=1S/C20H22O9/c21-9-16-17(25)18(26)19(27)20(29-16)28-13-6-11(5-12(22)8-13)2-1-10-3-4-14(23)15(24)7-10/h1-8,16-27H,9H2/b2-1+/t16-,17-,18+,19-,20-/m1/s1" ;
+            schema:inChIKey inchikey:PERPNFLGJXUDDW-CUYWLFDKSA-N ;
+            schema:molecularFormula "C20H22O9" ;
+            schema:name "E-3,4,5'-Trihydroxy-3'-glucopyranosylstilbene",
+                "E-Astringin" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H](O)[C@H](Oc(c2)cc(C=Cc(c3)cc(O)c(O)c3)cc(O)2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.501e+01 ;
+            mbo:mz 1.590434e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 161 ],
+        [ mbo:intensity 1.165e+01 ;
+            mbo:mz 2.010559e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 4.259e+01 ;
+            mbo:mz 2.410499e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 457 ],
+        [ mbo:intensity 2.826e+01 ;
+            mbo:mz 2.420522e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 303 ],
+        [ mbo:intensity 9.304e+01 ;
+            mbo:mz 2.430645e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.971e+01 ;
+            mbo:mz 4.051158e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 212 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.05e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-0090100000-e038f7f50b54cde4da01" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "E-3,4,5'-Trihydroxy-3'-glucopyranosylstilbene; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002338 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002338" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-hydroxynaphthalene-2-sulfonate",
+                "DTXSID7029166",
+                "Schaffer's acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.240143e+02 ;
+            rdfs:seeAlso cas:93-01-6 ;
+            schema:inChI "InChI=1S/C10H8O4S/c11-9-3-1-8-6-10(15(12,13)14)4-2-7(8)5-9/h1-6,11H,(H,12,13,14)" ;
+            schema:inChIKey inchikey:VVPHSMHEYVOVLH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8O4S" ;
+            schema:name "6-hydroxynaphthalene-2-sulfonate",
+                "DTXSID7029166",
+                "Schaffer's acid" ;
+            schema:smiles "OC1C=CC2C=C(C=CC=2C=1)S(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 7.995736e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.552234e+00 ;
+            mbo:mz 7.999038e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.308438e+00 ;
+            mbo:mz 8.001151e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.614734e+00 ;
+            mbo:mz 8.096519e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.83261e+00 ;
+            mbo:mz 1.300424e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.416003e+00 ;
+            mbo:mz 1.430502e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 2.329831e+01 ;
+            mbo:mz 1.580373e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 233 ],
+        [ mbo:intensity 5.125249e+00 ;
+            mbo:mz 1.590452e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 51 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.230071e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-9200000000-e25fa1dafb61dd825ed8" ;
+    skos:definition "Schaffer's acid; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

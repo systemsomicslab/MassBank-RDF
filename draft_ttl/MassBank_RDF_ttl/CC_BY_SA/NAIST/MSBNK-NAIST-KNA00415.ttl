@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00415 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-18, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00415" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.090478 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(S)-2-Amino-5-guanidinovaleric acid",
+                "L-(+)-Arginine",
+                "L-Arginine" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.741117e+02 ;
+            rdfs:seeAlso cas:74-79-3,
+                knapsack:C00001340,
+                pubchem:CID3362 ;
+            schema:inChI "InChI=1S/C6H14N4O2/c7-4(5(11)12)2-1-3-10-6(8)9/h4H,1-3,7H2,(H,11,12)(H4,8,9,10)/t4-/m0/s1" ;
+            schema:inChIKey inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N ;
+            schema:molecularFormula "C6H14N4O2" ;
+            schema:name "(S)-2-Amino-5-guanidinovaleric acid",
+                "L-(+)-Arginine",
+                "L-Arginine" ;
+            schema:smiles "NC(=N)NCCC[C@H](N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.433245e+03 ;
+            mbo:mz 1.370484e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.453025e+03 ;
+            mbo:mz 1.381485e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 3.289222e+02 ;
+            mbo:mz 1.622146e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 8.127505e+04 ;
+            mbo:mz 1.790532e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.678729e+03 ;
+            mbo:mz 1.80041e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 82 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.790532e+02 ;
+            mbo:precursor_mz 1.971e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0900000000-3425ee9829935182c0d5" ;
+    skos:definition "L-(+)-Arginine; LC-ESI-ITFT; MS2; m/z:197.10; POS" .
+

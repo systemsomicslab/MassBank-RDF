@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS003613 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2013-11-23)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS003613" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "621 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hispidulin" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 3.000634e+02 ;
+            rdfs:seeAlso cas:1447-88-7,
+                pubchem:CID5281628 ;
+            schema:inChI "InChI=1S/C16H12O6/c1-21-16-11(19)7-13-14(15(16)20)10(18)6-12(22-13)8-2-4-9(17)5-3-8/h2-7,17,19-20H,1H3" ;
+            schema:inChIKey inchikey:IHFBPDAQLQOCBX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H12O6" ;
+            schema:name "Hispidulin" ;
+            schema:smiles "C(OC1=C(C2=C(C(=C1O[H])[H])OC(=C(C2=O)[H])C3=C(C(=C(C(=C3[H])[H])O[H])[H])[H])O[H])([H])([H])[H]" ] ;
+    mbo:has_peak [ mbo:intensity 2e+00 ;
+            mbo:mz 1.369888e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 2.860385e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.08e+02 ;
+            mbo:mz 2.990562e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 3.000593e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 3.010624e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 2.270356e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 2.280431e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 2.33215e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 2.550299e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 2.560378e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4e+00 ;
+            mbo:mz 2.830253e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.840331e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.9e+01 ;
+            mbo:mz 2.850363e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 99 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.990562e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-001i-0090000000-4a82ea952bce7ac89d70" ;
+    skos:definition "Hispidulin; LC-ESI-QTOF; MS2; CE:20 eV; [M-H]-" .
+

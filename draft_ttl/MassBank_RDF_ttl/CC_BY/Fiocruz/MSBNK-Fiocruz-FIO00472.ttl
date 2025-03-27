@@ -1,0 +1,96 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00472 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-04-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00472" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Mepacrine" ;
+            mbo:ch_compound_class "Non-Natural Product; Drug" ;
+            mbo:ch_exact_mass 3.992077e+02 ;
+            rdfs:seeAlso cas:83-89-6,
+                pubchem:CID96024869 ;
+            schema:inChI "InChI=1S/C23H30ClN3O/c1-5-27(6-2)13-7-8-16(3)25-23-19-11-9-17(24)14-22(19)26-21-12-10-18(28-4)15-20(21)23/h9-12,14-16H,5-8,13H2,1-4H3,(H,25,26)" ;
+            schema:inChIKey inchikey:GPKJTRJOBQGKQK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C23H30ClN3O" ;
+            schema:name "Mepacrine" ;
+            schema:smiles "CCN(CC)CCCC(C)Nc(c21)c(c3)c(ccc(OC)3)nc(cc(Cl)cc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 4.58e+02 ;
+            mbo:mz 2.690475e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 399 ],
+        [ mbo:intensity 2.96e+02 ;
+            mbo:mz 3.992035e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 258 ],
+        [ mbo:intensity 4.1e+02 ;
+            mbo:mz 4.001989e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 357 ],
+        [ mbo:intensity 1.02e+02 ;
+            mbo:mz 4.012015e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 1.48e+02 ;
+            mbo:mz 2.710456e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 6.68e+02 ;
+            mbo:mz 3.472014e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 582 ],
+        [ mbo:intensity 1.66e+02 ;
+            mbo:mz 3.482038e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 1.97e+02 ;
+            mbo:mz 3.54139e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 172 ],
+        [ mbo:intensity 8.51e+02 ;
+            mbo:mz 3.831766e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 741 ],
+        [ mbo:intensity 2.31e+02 ;
+            mbo:mz 3.841808e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 201 ],
+        [ mbo:intensity 2.88e+02 ;
+            mbo:mz 3.851735e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 251 ],
+        [ mbo:intensity 1.147e+03 ;
+            mbo:mz 3.982002e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.982002e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0002-0019100000-85abeddd06ff2cce1fc9" ;
+    rdfs:comment "[Raw Data] CB204_Mepacrine_neg_30eV_000037.txt" ;
+    skos:definition "Mepacrine; LC-ESI-QTOF; MS2; [M-H]-; CE: 30eV" .
+

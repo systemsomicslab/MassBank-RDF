@@ -1,0 +1,100 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA016262 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA016262" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(2,2-difluoro-1,3-benzodioxol-4-yl)-1H-pyrrole-3-carbonitrile",
+                "Fludioxonil" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.480397e+02 ;
+            rdfs:seeAlso cas:131341-86-1,
+                chemspider:77916,
+                pubchem:CID86398 ;
+            schema:inChI "InChI=1S/C12H6F2N2O2/c13-12(14)17-10-3-1-2-8(11(10)18-12)9-6-16-5-7(9)4-15/h1-3,5-6,16H" ;
+            schema:inChIKey inchikey:MUJOIMFVNIBMKC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H6F2N2O2" ;
+            schema:name "4-(2,2-difluoro-1,3-benzodioxol-4-yl)-1H-pyrrole-3-carbonitrile",
+                "Fludioxonil" ;
+            schema:smiles "C1(Oc2c(cccc2O1)c1c(c[nH]c1)C#N)(F)F" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.21914e+04 ;
+            mbo:mz 8.90143e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 3.56357e+04 ;
+            mbo:mz 1.970355e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 2.403403e+05 ;
+            mbo:mz 2.470319e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 452 ],
+        [ mbo:intensity 5.312645e+05 ;
+            mbo:mz 1.260348e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.21521e+05 ;
+            mbo:mz 1.5103e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 229 ],
+        [ mbo:intensity 7.15502e+04 ;
+            mbo:mz 1.52038e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 4.05317e+04 ;
+            mbo:mz 1.530459e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 2.304148e+05 ;
+            mbo:mz 1.690406e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 433 ],
+        [ mbo:intensity 3.62006e+04 ;
+            mbo:mz 1.790244e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 4.928804e+05 ;
+            mbo:mz 1.800327e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 927 ],
+        [ mbo:intensity 8.05299e+04 ;
+            mbo:mz 1.810404e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 151 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.470324e+02 ;
+            mbo:precursor_mz 2.470325e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-003r-0910000000-02abb5b9dc42263ab3f4" ;
+    rdfs:comment "EAWAG_UCHEM_ID 162" ;
+    skos:definition "Fludioxonil; LC-ESI-ITFT; MS2; CE: 75%; R=15000; [M-H]-" .
+

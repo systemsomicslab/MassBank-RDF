@@ -1,0 +1,101 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00574 a mbo:MassSpectrum ;
+    dcterms:creator "Masayo Sekimoto, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2021-03-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00574" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kenji Mori and Kazuaki Akasaka, Tetrahedron 71 (2015) 4102-4115, DOI:10.1016/j.tet.2015.04.107." ] ;
+    dcterms:rights "Masayo Sekimoto, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "8.04 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4R)-4-Methyl-6-pivaloyloxyhexanal" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 2.141569e+02 ;
+            schema:inChI "InChI=1S/C12H22O3/c1-10(6-5-8-13)7-9-15-11(14)12(2,3)4/h8,10H,5-7,9H2,1-4H3/t10-/m1/s1" ;
+            schema:inChIKey inchikey:AMPHWNHWLZLCCL-SNVBAGLBSA-N ;
+            schema:molecularFormula "C12H22O3" ;
+            schema:name "(4R)-4-Methyl-6-pivaloyloxyhexanal" ;
+            schema:smiles "O=CCC[C@@H](C)CCOC(=O)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.02e+00 ;
+            mbo:mz 4.4025e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.04e+00 ;
+            mbo:mz 1.13096e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.07e+00 ;
+            mbo:mz 2.11134e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.81e+00 ;
+            mbo:mz 2.13147e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 2.778e+01 ;
+            mbo:mz 2.14157e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 278 ],
+        [ mbo:intensity 3.956e+01 ;
+            mbo:mz 2.15164e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 395 ],
+        [ mbo:intensity 4.64e+00 ;
+            mbo:mz 2.16166e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 5.707e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4e-01 ;
+            mbo:mz 5.7392e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.93e+00 ;
+            mbo:mz 5.8073e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.25e+01 ;
+            mbo:mz 8.5066e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 8.5e-01 ;
+            mbo:mz 8.6069e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.34e+00 ;
+            mbo:mz 9.5086e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 6.3e-01 ;
+            mbo:mz 1.07082e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.26e+00 ;
+            mbo:mz 1.12089e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 23 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-0a4i-9050000000-24381e2920f0640882d8" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "(4R)-4-Methyl-6-pivaloyloxyhexanal; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

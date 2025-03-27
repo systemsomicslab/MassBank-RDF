@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU116401 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Anna Bletsou, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-07-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU116401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "Ramp 21.5-32.2 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.3 min" ;
+            mbo:solvent "A water with 0.01% formic acid and 5mM ammonium formate",
+                "B 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Mebendazole",
+                "methyl N-(6-benzoyl-1H-benzimidazol-2-yl)carbamate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.950957e+02 ;
+            rdfs:seeAlso cas:31431-39-7,
+                chemspider:3890,
+                pubchem:CID4030 ;
+            schema:inChI "InChI=1S/C16H13N3O3/c1-22-16(21)19-15-17-12-8-7-11(9-13(12)18-15)14(20)10-5-3-2-4-6-10/h2-9H,1H3,(H2,17,18,19,21)" ;
+            schema:inChIKey inchikey:OPXLLQIJSORQAM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H13N3O3" ;
+            schema:name "Mebendazole",
+                "methyl N-(6-benzoyl-1H-benzimidazol-2-yl)carbamate" ;
+            schema:smiles "COC(=O)Nc1[nH]c2ccc(cc2n1)C(=O)c3ccccc3" ] ;
+    mbo:has_peak [ mbo:intensity 4.868e+03 ;
+            mbo:mz 1.050336e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.056e+03 ;
+            mbo:mz 1.860306e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.15336e+05 ;
+            mbo:mz 2.64078e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.3148e+04 ;
+            mbo:mz 2.650811e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 5.448e+03 ;
+            mbo:mz 2.66084e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 7.042e+04 ;
+            mbo:mz 2.961045e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 1.2728e+04 ;
+            mbo:mz 2.971071e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 40 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.961045e+02 ;
+            mbo:precursor_mz 2.96103e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-03di-0090000000-d291ee80ffb822eea9c1" ;
+    rdfs:comment "INTERNAL_ID 1164" ;
+    skos:definition "Mebendazole; LC-ESI-QTOF; MS2; CE: Ramp 21.5-32.2 eV; R=35000; [M+H]+" .
+

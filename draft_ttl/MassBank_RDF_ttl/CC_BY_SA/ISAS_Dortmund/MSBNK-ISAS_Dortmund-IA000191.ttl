@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000191 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000191" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive HF, Thermo Scientific [MS:1002523]" ;
+            mbo:collision_energy "20.0 eV" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8-HDoHE" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 3.442351e+02 ;
+            rdfs:seeAlso pubchem:CID11976798 ;
+            schema:inChI "InChI=1S/C22H32O3/c1-2-3-4-5-6-7-8-9-10-11-12-15-18-21(23)19-16-13-14-17-20-22(24)25/h3-4,6-7,9-10,12-16,19,21,23H,2,5,8,11,17-18,20H2,1H3,(H,24,25)/b4-3-,7-6-,10-9-,14-13-,15-12-,19-16+" ;
+            schema:inChIKey inchikey:ZHBVYDMSPDDAKE-VTIZNUJUSA-N ;
+            schema:molecularFormula "C22H32O3" ;
+            schema:name "8-HDoHE" ;
+            schema:smiles "CC\\C=C/C\\C=C/C\\C=C/C\\C=C/CC(O)\\C=C\\C=C/CCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 9.433334e+04 ;
+            mbo:mz 6.90343e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 5.691119e+05 ;
+            mbo:mz 3.432274e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 276 ],
+        [ mbo:intensity 1.285805e+05 ;
+            mbo:mz 1.070866e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 2.061922e+06 ;
+            mbo:mz 1.090658e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.089202e+04 ;
+            mbo:mz 1.211022e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 8.588254e+05 ;
+            mbo:mz 1.351179e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 416 ],
+        [ mbo:intensity 1.862197e+06 ;
+            mbo:mz 1.891648e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 902 ],
+        [ mbo:intensity 1.227471e+05 ;
+            mbo:mz 2.431752e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1.632991e+05 ;
+            mbo:mz 2.812272e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 1.846178e+05 ;
+            mbo:mz 2.992378e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 89 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.432279e+02 ;
+            mbo:precursor_mz 3.432279e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-052r-0901000000-d3a1cd0206a1b63a3476" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 20.0 eV within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "8-HDoHE; LC-ESI-QTOF; MS2; CE: 20.0; R=N/A; [M-H]-" .
+

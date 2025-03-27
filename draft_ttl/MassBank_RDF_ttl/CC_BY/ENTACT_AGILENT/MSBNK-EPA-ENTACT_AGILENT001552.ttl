@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001552 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001552" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Methoxybenzenamine",
+                "DTXSID3020093" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.230684e+02 ;
+            rdfs:seeAlso cas:104-94-9,
+                pubchem:CID7732 ;
+            schema:inChI "InChI=1S/C7H9NO/c1-9-7-4-2-6(8)3-5-7/h2-5H,8H2,1H3" ;
+            schema:inChIKey inchikey:BHAAPTBBJKJZER-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H9NO" ;
+            schema:name "4-Methoxybenzenamine",
+                "DTXSID3020093" ;
+            schema:smiles "COC1C=CC(N)=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 1.268469e+00 ;
+            mbo:mz 4.606513e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.700481e+00 ;
+            mbo:mz 1.230679e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.240757e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.268442e+00 ;
+            mbo:mz 6.503858e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 4.153457e+00 ;
+            mbo:mz 7.703858e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 3.426056e+00 ;
+            mbo:mz 8.10573e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 2.59893e+00 ;
+            mbo:mz 9.202567e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.499334e+01 ;
+            mbo:mz 9.204948e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 2.975032e+01 ;
+            mbo:mz 9.30573e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 297 ],
+        [ mbo:intensity 1.534969e+00 ;
+            mbo:mz 1.070491e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.124651e+01 ;
+            mbo:mz 1.090522e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 112 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.240757e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00di-4900000000-fe0e098244a7bf1f343b" ;
+    skos:definition "4-Methoxybenzenamine; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

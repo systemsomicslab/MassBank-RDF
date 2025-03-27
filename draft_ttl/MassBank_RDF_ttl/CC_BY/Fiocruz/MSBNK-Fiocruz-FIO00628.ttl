@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00628 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2014-10-02)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00628" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack C18 2.2um" ;
+            mbo:flow_gradient "5-100%B in 12min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tryptophan" ;
+            mbo:ch_compound_class "Natural Product; Amino acids" ;
+            mbo:ch_exact_mass 2.040899e+02 ;
+            rdfs:seeAlso cas:73-22-3,
+                chemspider:6066,
+                knapsack:C00001396,
+                pubchem:CID6305 ;
+            schema:inChI "InChI=1S/C11H12N2O2/c12-9(11(14)15)5-7-6-13-10-4-2-1-3-8(7)10/h1-4,6,9,13H,5,12H2,(H,14,15)/t9-/m0/s1" ;
+            schema:inChIKey inchikey:QIVBCDIJIAJPQS-VIFPVBQESA-N ;
+            schema:molecularFormula "C11H12N2O2" ;
+            schema:name "Tryptophan" ;
+            schema:smiles "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 2.694e+03 ;
+            mbo:mz 1.460599e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.201e+03 ;
+            mbo:mz 1.590916e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.16656e+05 ;
+            mbo:mz 1.880703e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.3422e+04 ;
+            mbo:mz 1.890736e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 1.7715e+04 ;
+            mbo:mz 2.050968e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 152 ],
+        [ mbo:intensity 2.175e+03 ;
+            mbo:mz 2.061001e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 19 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-0910000000-b2a15c37af9ae0c2c71b" ;
+    rdfs:comment "[Raw Data] CBA09_Tryptophan_pos_10eV_1-1_01_660.txt" ;
+    skos:definition "Tryptophan; LC-ESI-QTOF; MS2; [M+H]+; CE: 10eV" .
+

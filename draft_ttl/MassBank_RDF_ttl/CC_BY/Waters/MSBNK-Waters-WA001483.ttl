@@ -1,0 +1,51 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA001483 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA001483" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "14.300 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Beclamide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.970607e+02 ;
+            rdfs:seeAlso cas:501-68-8 ;
+            schema:inChI "InChI=1S/C10H12ClNO/c11-7-6-10(13)12-8-9-4-2-1-3-5-9/h1-5H,6-8H2,(H,12,13)" ;
+            schema:inChIKey inchikey:JPYQFYIEOUVJDU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H12ClNO" ;
+            schema:name "Beclamide" ;
+            schema:smiles "ClCCC(=O)NCc(c1)cccc1" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 9.1e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.1e+01 ;
+            mbo:mz 9.2e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.06e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-9000000000-7b272c7194aebaffd25f" ;
+    skos:definition "Beclamide; LC-ESI-Q; MS; POS; 60 V, 90 V" .
+

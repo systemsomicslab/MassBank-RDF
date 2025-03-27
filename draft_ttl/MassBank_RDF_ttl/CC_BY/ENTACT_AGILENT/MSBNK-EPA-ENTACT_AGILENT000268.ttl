@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000268 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000268" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Methoxypropylamine",
+                "DTXSID7027596" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 8.908406e+01 ;
+            rdfs:seeAlso cas:5332-73-0,
+                pubchem:CID1672 ;
+            schema:inChI "InChI=1S/C4H11NO/c1-6-4-2-3-5/h2-5H2,1H3" ;
+            schema:inChIKey inchikey:FAXDZWQIWUSWJH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H11NO" ;
+            schema:name "3-Methoxypropylamine",
+                "DTXSID7027596" ;
+            schema:smiles "COCCCN" ] ;
+    mbo:has_peak [ mbo:intensity 1.178574e+01 ;
+            mbo:mz 3.003383e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 118 ],
+        [ mbo:intensity 3.230634e+00 ;
+            mbo:mz 3.902293e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 3.920903e+01 ;
+            mbo:mz 4.103858e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 392 ],
+        [ mbo:intensity 8.423903e+00 ;
+            mbo:mz 4.304165e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 2.073576e+00 ;
+            mbo:mz 4.404948e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.503349e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.718432e+00 ;
+            mbo:mz 4.50573e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 8.73156e+01 ;
+            mbo:mz 5.806513e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 872 ],
+        [ mbo:intensity 4.677802e+00 ;
+            mbo:mz 7.306479e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 47 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.009134e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-052b-9000000000-fdea0cccc260f3be4c56" ;
+    skos:definition "3-Methoxypropylamine; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

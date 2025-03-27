@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00935 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-10-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00935" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "20 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Malonylgenistin" ;
+            mbo:ch_compound_class "7-Hydroxyisoflavone" ;
+            mbo:ch_exact_mass 5.18106e+02 ;
+            rdfs:seeAlso cas:51011-05-3,
+                chemspider:22912861,
+                pubchem:CID15934091 ;
+            schema:inChI "InChI=1S/C24H22O13/c25-11-3-1-10(2-4-11)13-8-34-15-6-12(5-14(26)19(15)20(13)30)36-24-23(33)22(32)21(31)16(37-24)9-35-18(29)7-17(27)28/h1-6,8,16,21-26,31-33H,7,9H2,(H,27,28)/t16-,21-,22+,23-,24-/m1/s1" ;
+            schema:inChIKey inchikey:FRAUJUKWSKMNJY-RSEYPYQYSA-N ;
+            schema:molecularFormula "C24H22O13" ;
+            schema:name "Malonylgenistin" ;
+            schema:smiles "C1=CC(=CC=C1C2=COC3=CC(=CC(=C3C2=O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)COC(=O)CC(=O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.09009e+02 ;
+            mbo:mz 2.690447e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.6453e+01 ;
+            mbo:mz 2.700491e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 3.19802e+02 ;
+            mbo:mz 3.110557e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 451 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.170988e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-0093000000-7c4b8a0cd13e6cd70b5c" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Malonylgenistin; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 20 V" .
+

@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA3096213166PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA3096213166PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "70 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "6.547 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-methoxy-1-methyl-9H-pyrido[3,4-b]indole",
+                "Harmine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.12095e+02 ;
+            rdfs:seeAlso cas:442-51-3,
+                chemspider:4444445,
+                pubchem:CID5280953 ;
+            schema:inChI "InChI=1S/C13H12N2O/c1-8-13-11(5-6-14-8)10-4-3-9(16-2)7-12(10)15-13/h3-7,15H,1-2H3" ;
+            schema:inChIKey inchikey:BXNJHAXVSOCGBA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H12N2O" ;
+            schema:name "7-methoxy-1-methyl-9H-pyrido[3,4-b]indole",
+                "Harmine" ;
+            schema:smiles "COC1=CC2=C(C=C1)C1=C(N2)C(C)=NC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 8.13552e+04 ;
+            mbo:mz 1.690762e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 9.292594e+06 ;
+            mbo:mz 1.700839e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 515 ],
+        [ mbo:intensity 3.02708e+04 ;
+            mbo:mz 1.810767e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 8.29167e+04 ;
+            mbo:mz 1.851072e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.802229e+07 ;
+            mbo:mz 1.980788e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.077038e+07 ;
+            mbo:mz 2.131023e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 597 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.13103e+02 ;
+            mbo:precursor_mz 2.131022e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-01vk-0930000000-dfb6c183b0167d068625" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Harmine; LC-ESI-ITFT; MS2; CE: 70%; R=15000; [M+H]+" .
+

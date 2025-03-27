@@ -1,0 +1,99 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2012-SMI00141 a mbo:MassSpectrum ;
+    dcterms:creator "S. Neumann: IPB-Halle, Germany & E. Schymanski: Eawag, Switzerland" ;
+    dcterms:date "2012-08-31 (Created 2012-08-31)"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2012-SMI00141" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E.; Neumann, S. The Critical Assessment of Small Molecule Identification (CASMI): Challenges and Solutions. Metabolites 2013, 3 (3), 517–38. DOI:10.3390/metabo3030517" ] ;
+    dcterms:rights "CASMI2012 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ-Orbitrap" ;
+            mbo:collision_energy "120 HCD" ;
+            mbo:instrument_type "LC-APCI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "22.62 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1H-Benzo[g]indole" ;
+            mbo:ch_compound_class "N/A; Unknown for CASMI" ;
+            mbo:ch_exact_mass 1.67073e+02 ;
+            rdfs:seeAlso chemspider:89061,
+                pubchem:CID98617 ;
+            schema:inChI "InChI=1S/C12H9N/c1-2-4-11-9(3-1)5-6-10-7-8-13-12(10)11/h1-8,13H" ;
+            schema:inChIKey inchikey:HIYWOHBEPVGIQN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H9N" ;
+            schema:name "1H-Benzo[g]indole" ;
+            schema:smiles "C1=CC=C2C(=C1)C=CC3=C2NC=C3" ] ;
+    mbo:has_peak [ mbo:intensity 2.59109e+04 ;
+            mbo:mz 9.10537e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.200745e+05 ;
+            mbo:mz 1.660648e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 1.057542e+06 ;
+            mbo:mz 1.670725e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.37882e+04 ;
+            mbo:mz 1.68076e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 9.42502e+04 ;
+            mbo:mz 1.680803e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 7.537769e+05 ;
+            mbo:mz 1.150537e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 712 ],
+        [ mbo:intensity 1.16967e+04 ;
+            mbo:mz 1.160615e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 8.70846e+04 ;
+            mbo:mz 1.390539e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 1.154153e+05 ;
+            mbo:mz 1.400573e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 1.61792e+05 ;
+            mbo:mz 1.400616e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 3.66634e+04 ;
+            mbo:mz 1.410652e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 9.571501e+05 ;
+            mbo:mz 1.410693e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 904 ],
+        [ mbo:intensity 1.22463e+04 ;
+            mbo:mz 1.53057e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.67073e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-014l-0900000000-8d1ae42b510442c4e57a" ;
+    rdfs:comment "CASMI2012 LC Challenge 14" ;
+    skos:definition "1H-Benzo[g]indole; LC-APCI-ITFT; MS2; CE:120 HCD;" .
+

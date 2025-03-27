@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU151707 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU151707" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.731 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Olanzapine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.121409e+02 ;
+            rdfs:seeAlso cas:132539-06-1,
+                chemspider:10442212,
+                pubchem:CID135398745 ;
+            schema:inChI "InChI=1S/C17H20N4S/c1-12-11-13-16(21-9-7-20(2)8-10-21)18-14-5-3-4-6-15(14)19-17(13)22-12/h3-6,11,19H,7-10H2,1-2H3" ;
+            schema:inChIKey inchikey:KVWDHTXUZHCGIO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H20N4S" ;
+            schema:name "Olanzapine" ;
+            schema:smiles "Cc1cc2c(s1)Nc3ccccc3N=C2N4CCN(CC4)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.8248e+04 ;
+            mbo:mz 2.560897e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.066e+04 ;
+            mbo:mz 3.111327e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.00966e+06 ;
+            mbo:mz 3.131487e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.65864e+05 ;
+            mbo:mz 3.141516e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 6.2944e+04 ;
+            mbo:mz 3.151464e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 31 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.131483e+02 ;
+            mbo:precursor_mz 3.131481e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-03di-0009000000-cb9da090a925e38bb055" ;
+    rdfs:comment "INTERNAL_ID 1517" ;
+    skos:definition "Olanzapine; LC-ESI-QTOF; MS2; HILIC; CE: 10 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000202 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000202" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID6047369",
+                "SR146131 trifluoroacetate (1:1)" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.092064e+02 ;
+            rdfs:seeAlso cas:221671-62-1,
+                pubchem:CID60196406 ;
+            schema:inChI "InChI=1S/C32H36ClN3O5S/c1-18-12-19(2)30-21(13-18)14-24(36(30)17-28(37)38)31(39)35-32-34-29(22-15-26(41-4)23(33)16-25(22)40-3)27(42-32)11-10-20-8-6-5-7-9-20/h12-16,20H,5-11,17H2,1-4H3,(H,37,38)(H,34,35,39)" ;
+            schema:inChIKey inchikey:NFDFTMICKVDYLQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C32H36ClN3O5S" ;
+            schema:name "DTXSID6047369",
+                "SR146131 trifluoroacetate (1:1)" ;
+            schema:smiles "CC1C=C2C=C(C(=O)NC3=NC(C4C=C(OC)C(Cl)=CC=4OC)=C(CCC4CCCCC4)S3)N(CC(O)=O)C2=C(C)C=1" ] ;
+    mbo:has_peak [ mbo:intensity 2.905629e+00 ;
+            mbo:mz 2.020863e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.912561e+00 ;
+            mbo:mz 2.300805e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 9.266665e+00 ;
+            mbo:mz 3.811398e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 5.338741e+01 ;
+            mbo:mz 4.071191e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 533 ],
+        [ mbo:intensity 1.231527e+00 ;
+            mbo:mz 4.08123e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.418822e+00 ;
+            mbo:mz 5.662239e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 6.102137e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.102137e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-08fr-0000409000-ffbc6c4b8ce1caa950b0" ;
+    skos:definition "SR146131 trifluoroacetate (1:1); ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

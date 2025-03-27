@@ -1,0 +1,77 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA000933 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA000933" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.230 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Alpinetin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.700892e+02 ;
+            rdfs:seeAlso pubchem:CID4053302 ;
+            schema:inChI "InChI=1S/C16H14O4/c1-19-14-7-11(17)8-15-16(14)12(18)9-13(20-15)10-5-3-2-4-6-10/h2-8,13,17H,9H2,1H3" ;
+            schema:inChIKey inchikey:QQQCWVDPMPFUGF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H14O4" ;
+            schema:name "Alpinetin" ;
+            schema:smiles "COC1=C2C(=O)CC(OC2=CC(=C1)O)C3=CC=CC=C3" ] ;
+    mbo:has_peak [ mbo:intensity 4.6476e+03 ;
+            mbo:mz 1.030543e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.081755e+05 ;
+            mbo:mz 1.310492e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 2.126388e+06 ;
+            mbo:mz 1.670339e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 578 ],
+        [ mbo:intensity 9.0886e+03 ;
+            mbo:mz 2.031067e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.771597e+05 ;
+            mbo:mz 2.290862e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 2.37032e+04 ;
+            mbo:mz 2.530863e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.673524e+06 ;
+            mbo:mz 2.710967e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.170493e+02 ;
+            mbo:precursor_mz 2.710965e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00xr-0590000000-0089ed174370491d0e06" ;
+    rdfs:comment "INTERNAL_ID 7" ;
+    skos:definition "Alpinetin; LC-ESI-ITFT; MS2; CE: 20%; R=15000; [M+H]+" .
+

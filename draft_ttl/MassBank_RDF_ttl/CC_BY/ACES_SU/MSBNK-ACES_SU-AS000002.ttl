@@ -1,0 +1,95 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000002 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Martin Group" ;
+    dcterms:date "2020-05-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "Acquity UPLC BEH C18, 3.0 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "95/5 at 0-15 min, 5/95 at 15.1-24 min, 95/5 at 24.1-28 min" ;
+            mbo:flow_rate "0.4mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "11.453540" ;
+            mbo:solvent "A 10 mM ammonium acetate in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Nitrophenol",
+                "Mononitrophenol" ;
+            mbo:ch_compound_class "Benzene Derivatives; Phenols; Nitrophenols" ;
+            mbo:ch_exact_mass 1.390269e+02 ;
+            schema:inChI "InChI=1S/C6H5NO3/c8-6-4-2-1-3-5(6)7(9)10/h1-4,8H" ;
+            schema:molecularFormula "C6H5NO3" ;
+            schema:name "2-Nitrophenol",
+                "Mononitrophenol" ;
+            schema:smiles "Oc1ccccc1[N+]([O-])=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.032768e+06 ;
+            mbo:mz 5.900502e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 2.891546e+07 ;
+            mbo:mz 1.080216e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.920181e+06 ;
+            mbo:mz 1.090252e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 2.324518e+07 ;
+            mbo:mz 1.380203e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 803 ],
+        [ mbo:intensity 3.016134e+06 ;
+            mbo:mz 5.901377e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 1.94238e+05 ;
+            mbo:mz 6.500318e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.53373e+05 ;
+            mbo:mz 6.899598e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.897192e+07 ;
+            mbo:mz 8.002704e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 655 ],
+        [ mbo:intensity 1.00564e+06 ;
+            mbo:mz 8.10301e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 2.309474e+06 ;
+            mbo:mz 9.101885e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 2.89352e+05 ;
+            mbo:mz 9.202216e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.89352e+05 ;
+            mbo:mz 9.202689e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.080216e+02 ;
+            mbo:precursor_mz 1.384893e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0a5i-4900000000-78176847964b268f585b" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "2-Nitrophenol; LC-ESI-QFT; MS2; CE:40; R=30000; [M-H]-" .
+

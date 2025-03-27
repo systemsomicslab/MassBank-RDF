@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ326301 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ326301" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "16.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,4aS,6aR,6aS,6bR,8aR,10S,12aS,14bR)-10-hydroxy-2,4a,6a,6b,9,9,12a-heptamethyl-13-oxo-3,4,5,6,6a,7,8,8a,10,11,12,14b-dodecahydro-1H-picene-2-carboxylic acid",
+                "18-beta-Glycyrrhetin acid",
+                "Glycyrrhetinic Acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.703396e+02 ;
+            rdfs:seeAlso cas:471-53-4,
+                chemspider:9710,
+                pubchem:CID10114 ;
+            schema:inChI "InChI=1S/C30H46O4/c1-25(2)21-8-11-30(7)23(28(21,5)10-9-22(25)32)20(31)16-18-19-17-27(4,24(33)34)13-12-26(19,3)14-15-29(18,30)6/h16,19,21-23,32H,8-15,17H2,1-7H3,(H,33,34)/t19-,21-,22-,23+,26+,27-,28-,29+,30+/m0/s1" ;
+            schema:inChIKey inchikey:MPDGHEJMBKOTSU-YKLVYJNSSA-N ;
+            schema:molecularFormula "C30H46O4" ;
+            schema:name "(2S,4aS,6aR,6aS,6bR,8aR,10S,12aS,14bR)-10-hydroxy-2,4a,6a,6b,9,9,12a-heptamethyl-13-oxo-3,4,5,6,6a,7,8,8a,10,11,12,14b-dodecahydro-1H-picene-2-carboxylic acid",
+                "18-beta-Glycyrrhetin acid",
+                "Glycyrrhetinic Acid" ;
+            schema:smiles "C[C@]1([C@H](CC[C@]2([C@H]1CC[C@@]3([C@@H]2C(=O)C=C4[C@]3(CC[C@@]5([C@H]4C[C@](CC5)(C(=O)O)C)C)C)C)C)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.196469e+08 ;
+            mbo:mz 4.713468e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.713465e+02 ;
+            mbo:precursor_mz 4.713469e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-00di-0000900000-e21afd83e613142870d5" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3263" ;
+    skos:definition "Glycyrrhetinic Acid; LC-ESI-QFT; MS2; CE: 15; R=35000; [M+H]+" .
+

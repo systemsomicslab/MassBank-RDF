@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100150 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100150" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(?)-Inosine",
+                "9-beta-D-ribofuranosylhypoxanthine",
+                "Hypoxanthine 9-beta-D-ribofuranoside",
+                "Hypoxanthine ribonucleoside",
+                "INO",
+                "Inosine",
+                "Oxiamin",
+                "Ribonosine",
+                "Trophicardyl",
+                "beta-Inosine" ;
+            mbo:ch_compound_class "Nucleoside" ;
+            mbo:ch_exact_mass 2.680808e+02 ;
+            rdfs:seeAlso cas:58-63-9,
+                chemspider:5799,
+                knapsack:C00019692,
+                pubchem:CID135398641 ;
+            schema:inChI "InChI=1S/C10H12N4O5/c15-1-4-6(16)7(17)10(19-4)14-3-13-5-8(14)11-2-12-9(5)18/h2-4,6-7,10,15-17H,1H2,(H,11,12,18)/t4-,6-,7-,10-/m1/s1" ;
+            schema:inChIKey inchikey:UGQMRVRMYYASKQ-KQYNXXCUSA-N ;
+            schema:molecularFormula "C10H12N4O5" ;
+            schema:name "(?)-Inosine",
+                "9-beta-D-ribofuranosylhypoxanthine",
+                "Hypoxanthine 9-beta-D-ribofuranoside",
+                "Hypoxanthine ribonucleoside",
+                "INO",
+                "Inosine",
+                "Oxiamin",
+                "Ribonosine",
+                "Trophicardyl",
+                "beta-Inosine" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@@H](O)[C@@H]1n(c3)c(N=2)c(n3)C(=O)NC2" ] ;
+    mbo:has_peak [ mbo:intensity 7.009e+01 ;
+            mbo:mz 1.100362e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.271e+03 ;
+            mbo:mz 1.370473e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.690886e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0900000000-a0601a44cbbc12888cc2" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Inosine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

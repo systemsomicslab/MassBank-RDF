@@ -1,0 +1,62 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU135951 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU135951" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.003 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-(5-Fluoro-3-methyl-1H-indol-1-yl)-4-methyl-2-(pyridin-2-yl)pyrimidine-5-carboxamide",
+                "N-(5-fluoro-3-methylindol-1-yl)-4-methyl-2-pyridin-2-ylpyrimidine-5-carboxamide",
+                "SAR102608" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.611339e+02 ;
+            rdfs:seeAlso chemspider:29787006,
+                pubchem:CID25099474 ;
+            schema:inChI "InChI=1S/C20H16FN5O/c1-12-11-26(18-7-6-14(21)9-15(12)18)25-20(27)16-10-23-19(24-13(16)2)17-5-3-4-8-22-17/h3-11H,1-2H3,(H,25,27)" ;
+            schema:inChIKey inchikey:YNVKAENVJKEMOU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H16FN5O" ;
+            schema:name "N-(5-Fluoro-3-methyl-1H-indol-1-yl)-4-methyl-2-(pyridin-2-yl)pyrimidine-5-carboxamide",
+                "N-(5-fluoro-3-methylindol-1-yl)-4-methyl-2-pyridin-2-ylpyrimidine-5-carboxamide",
+                "SAR102608" ;
+            schema:smiles "CC1=CN(NC(=O)C2=C(C)N=C(N=C2)C2=CC=CC=N2)C2=CC=C(F)C=C12" ] ;
+    mbo:has_peak [ mbo:intensity 4.474e+03 ;
+            mbo:mz 1.490601e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.221196e+02 ;
+            mbo:precursor_mz 3.601266e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0002-0900000000-f4f98be4f3f874cb4f8a" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "SAR102608; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

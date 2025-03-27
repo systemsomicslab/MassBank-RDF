@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU014003 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU014003" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "45" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "11.807 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-chloro-2-N-ethyl-1,3,5-triazine-2,4-diamine",
+                "Deisopropylatrazine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.730468e+02 ;
+            rdfs:seeAlso cas:1007-28-9,
+                chemspider:13278,
+                pubchem:CID13878 ;
+            schema:inChI "InChI=1S/C5H8ClN5/c1-2-8-5-10-3(6)9-4(7)11-5/h2H2,1H3,(H3,7,8,9,10,11)" ;
+            schema:inChIKey inchikey:IVENSCMCQBJAKW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H8ClN5" ;
+            schema:name "6-chloro-2-N-ethyl-1,3,5-triazine-2,4-diamine",
+                "Deisopropylatrazine" ;
+            schema:smiles "CCNC1=NC(N)=NC(Cl)=N1" ] ;
+    mbo:has_peak [ mbo:intensity 1.36269e+04 ;
+            mbo:mz 6.1979e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.674078e+05 ;
+            mbo:mz 1.380775e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 3.684032e+05 ;
+            mbo:mz 1.460228e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 2.798528e+06 ;
+            mbo:mz 1.740542e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.267693e+05 ;
+            mbo:mz 6.80243e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 1.70461e+05 ;
+            mbo:mz 7.10603e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 7.523346e+05 ;
+            mbo:mz 7.90057e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 269 ],
+        [ mbo:intensity 3.2154e+04 ;
+            mbo:mz 9.00105e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 8.690954e+05 ;
+            mbo:mz 9.60556e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 310 ],
+        [ mbo:intensity 3.452287e+05 ;
+            mbo:mz 1.04001e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 4.98762e+04 ;
+            mbo:mz 1.100461e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 8.392581e+05 ;
+            mbo:mz 1.320323e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 300 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 1.740541e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00di-4900000000-c434b1400b2c9338b578" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Deisopropylatrazine; LC-ESI-QFT; MS2; CE: 45; R=17500; [M+H]+" .
+

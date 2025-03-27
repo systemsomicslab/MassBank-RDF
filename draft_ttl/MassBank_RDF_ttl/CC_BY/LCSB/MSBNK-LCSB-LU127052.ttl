@@ -1,0 +1,86 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU127052 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU127052" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "18.217 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-tert-butyl-N'-(4-ethylbenzoyl)-3,5-dimethylbenzohydrazide",
+                "Tebufenozide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.522151e+02 ;
+            rdfs:seeAlso cas:112410-23-8,
+                chemspider:82870,
+                pubchem:CID91773 ;
+            schema:inChI "InChI=1S/C22H28N2O2/c1-7-17-8-10-18(11-9-17)20(25)23-24(22(4,5)6)21(26)19-13-15(2)12-16(3)14-19/h8-14H,7H2,1-6H3,(H,23,25)" ;
+            schema:inChIKey inchikey:QYPNKSZPJQQLRK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H28N2O2" ;
+            schema:name "N-tert-butyl-N'-(4-ethylbenzoyl)-3,5-dimethylbenzohydrazide",
+                "Tebufenozide" ;
+            schema:smiles "CCC1=CC=C(C=C1)C(=O)NN(C(=O)C1=CC(C)=CC(C)=C1)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.456084e+05 ;
+            mbo:mz 1.05071e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 2.870521e+07 ;
+            mbo:mz 1.490607e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.80622e+04 ;
+            mbo:mz 1.890672e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.620153e+05 ;
+            mbo:mz 2.041393e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6.472878e+05 ;
+            mbo:mz 2.941376e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 5.595539e+05 ;
+            mbo:mz 2.951452e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 7.566062e+05 ;
+            mbo:mz 3.512078e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 26 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.460326e+02 ;
+            mbo:precursor_mz 3.512078e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0002-0900000000-cc3c07edaccb69ea5c47" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Tebufenozide; LC-ESI-QFT; MS2; CE: 30; R=17500; [M-H]-" .
+

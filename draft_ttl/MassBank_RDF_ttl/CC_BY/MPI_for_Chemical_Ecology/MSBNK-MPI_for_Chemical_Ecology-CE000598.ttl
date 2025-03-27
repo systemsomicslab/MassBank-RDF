@@ -1,0 +1,78 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000598 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Marco Kai, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000598" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, K. Scheubert, F. Hufsky, T. Zichner, M. Kai, A. Svatos and S. Boecker. Identifying the unknowns by aligning fragmentation trees. Anal. Chem., 2012, 84, 3417-3426 doi:10.1021/ac300304u" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "35.0eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "7881.63 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cystine" ;
+            mbo:ch_compound_class "Natural Product; Amino acid" ;
+            mbo:ch_exact_mass 2.400239e+02 ;
+            rdfs:seeAlso pubchem:CID595 ;
+            schema:inChI "InChI=1S/C6H12N2O4S2/c7-3(5(9)10)1-13-14-2-4(8)6(11)12/h3-4H,1-2,7-8H2,(H,9,10)(H,11,12)" ;
+            schema:inChIKey inchikey:LEVWYRKDKASIDU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H12N2O4S2" ;
+            schema:name "Cystine" ;
+            schema:smiles "C(C(C(=O)O)N)SSCC(C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 4.245735e+03 ;
+            mbo:mz 7.4006e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.070143e+04 ;
+            mbo:mz 7.402377e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 138 ],
+        [ mbo:intensity 7.72468e+04 ;
+            mbo:mz 1.200113e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.791043e+04 ;
+            mbo:mz 1.220269e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 361 ],
+        [ mbo:intensity 5.894811e+04 ;
+            mbo:mz 1.519834e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 762 ],
+        [ mbo:intensity 5.498513e+03 ;
+            mbo:mz 1.779994e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 2.771749e+04 ;
+            mbo:mz 2.410314e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 358 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.410311e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0fk9-0910000000-c18c8241cf4f3334c40d" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "Cystine; LC-ESI-ITFT; MS2; CE 35.0 eV; [M+H]+" .
+

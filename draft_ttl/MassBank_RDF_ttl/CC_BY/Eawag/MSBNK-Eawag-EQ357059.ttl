@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ357059 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ357059" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "180 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "10-(4-sulfophenyl)octanoic acid",
+                "10phiC10SPC",
+                "Decacarboxy sulfophenyl carboxylic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.281344e+02 ;
+            schema:inChI "InChI=1S/C16H24O5S/c17-16(18)9-7-5-3-1-2-4-6-8-14-10-12-15(13-11-14)22(19,20)21/h10-13H,1-9H2,(H,17,18)(H,19,20,21)" ;
+            schema:inChIKey inchikey:VCKAUONIDRWIGP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H24O5S" ;
+            schema:name "10-(4-sulfophenyl)octanoic acid",
+                "10phiC10SPC",
+                "Decacarboxy sulfophenyl carboxylic acid" ;
+            schema:smiles "OS(=O)(=O)c1ccc(CCCCCCCCCC(=O)O)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 4.600516e+06 ;
+            mbo:mz 6.39625e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 1.914324e+05 ;
+            mbo:mz 6.50397e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 9.906437e+07 ;
+            mbo:mz 7.99574e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.226932e+06 ;
+            mbo:mz 8.09652e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.300056e+05 ;
+            mbo:mz 9.10553e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.223693e+06 ;
+            mbo:mz 9.30346e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.959533e+05 ;
+            mbo:mz 1.170346e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.441091e+06 ;
+            mbo:mz 1.190502e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.271268e+02 ;
+            mbo:precursor_mz 3.271272e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-9000000000-3b6b6c809d71f80aa4f5" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3570" ;
+    skos:definition "10phiC10SPC; LC-ESI-QFT; MS2; CE: 180; R=35000; [M-H]-" .
+

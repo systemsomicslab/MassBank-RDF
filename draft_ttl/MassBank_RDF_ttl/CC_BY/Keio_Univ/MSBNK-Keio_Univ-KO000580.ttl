@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000580 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000580" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(3,4-Dihydroxyphenyl)ethylamine",
+                "3,4-Dihydroxyphenethylamine",
+                "4-(2-Aminoethyl)-1,2-benzenediol",
+                "4-(2-Aminoethyl)benzene-1,2-diol",
+                "Dopamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.53079e+02 ;
+            rdfs:seeAlso cas:51-61-6,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:6517> ;
+            schema:inChI "InChI=1S/C8H11NO2/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,10-11H,3-4,9H2" ;
+            schema:inChIKey inchikey:VYFYYTLLBUKUHU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H11NO2" ;
+            schema:name "2-(3,4-Dihydroxyphenyl)ethylamine",
+                "3,4-Dihydroxyphenethylamine",
+                "4-(2-Aminoethyl)-1,2-benzenediol",
+                "4-(2-Aminoethyl)benzene-1,2-diol",
+                "Dopamine" ;
+            schema:smiles "NCCc(c1)cc(O)c(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 1.48515e+05 ;
+            mbo:mz 5.88e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.9505e+04 ;
+            mbo:mz 6.02e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.47525e+04 ;
+            mbo:mz 9.67e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 1.076e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.182179e+07 ;
+            mbo:mz 1.222e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 655 ],
+        [ mbo:intensity 8.762385e+05 ;
+            mbo:mz 1.233e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 1.08911e+05 ;
+            mbo:mz 1.369e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.802477e+07 ;
+            mbo:mz 1.521e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.52e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0uk9-0900000000-f1cf97c0d0dd509e229e" ;
+    rdfs:comment "KEIO_ID D046" ;
+    skos:definition "Dopamine; LC-ESI-QQ; MS2; CE:20 V; [M-H]-" .
+

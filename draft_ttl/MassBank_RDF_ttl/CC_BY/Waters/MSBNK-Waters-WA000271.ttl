@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000271 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000271" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QuattroPremier XE, Waters" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "MCPP-P",
+                "Mecoprop" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.140397e+02 ;
+            rdfs:seeAlso cas:7085-19-0 ;
+            schema:inChI "InChI=1S/C10H11ClO3/c1-6-5-8(11)3-4-9(6)14-7(2)10(12)13/h3-5,7H,1-2H3,(H,12,13)" ;
+            schema:inChIKey inchikey:WNTGYJSOUMFZEP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H11ClO3" ;
+            schema:name "MCPP-P",
+                "Mecoprop" ;
+            schema:smiles "OC(=O)C(C)Oc(c1)c(C)cc(Cl)c1" ] ;
+    mbo:has_peak [ mbo:intensity 2e+01 ;
+            mbo:mz 7.1e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.41e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.129e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-0900000000-a2426217f1071c76a732" ;
+    skos:definition "Mecoprop; LC-ESI-QQ; MS2; CE:20 V; [M-H]-" .
+

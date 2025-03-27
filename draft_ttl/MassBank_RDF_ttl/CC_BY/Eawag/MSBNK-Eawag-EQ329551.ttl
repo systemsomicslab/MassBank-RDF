@@ -1,0 +1,64 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ329551 a mbo:MassSpectrum ;
+    dcterms:creator "Otto J, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ329551" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "19.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-[1-(3,5,5,8,8-pentamethyl-6,7-dihydronaphthalen-2-yl)ethenyl]benzoic acid",
+                "Bexarotene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.482089e+02 ;
+            rdfs:seeAlso cas:153559-49-0,
+                chemspider:74139,
+                pubchem:CID82146 ;
+            schema:inChI "InChI=1S/C24H28O2/c1-15-13-20-21(24(5,6)12-11-23(20,3)4)14-19(15)16(2)17-7-9-18(10-8-17)22(25)26/h7-10,13-14H,2,11-12H2,1,3-6H3,(H,25,26)" ;
+            schema:inChIKey inchikey:NAVMQTYZDKMPEU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H28O2" ;
+            schema:name "4-[1-(3,5,5,8,8-pentamethyl-6,7-dihydronaphthalen-2-yl)ethenyl]benzoic acid",
+                "Bexarotene" ;
+            schema:smiles "CC1=CC2=C(C=C1C(=C)C3=CC=C(C=C3)C(=O)O)C(CCC2(C)C)(C)C" ] ;
+    mbo:data_processing_deprofile "vendor picking in Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 4.424723e+06 ;
+            mbo:mz 3.032116e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 9.679726e+07 ;
+            mbo:mz 3.472014e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.472017e+02 ;
+            mbo:precursor_mz 3.472017e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-0009000000-f46ef667393584a6300e" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3295" ;
+    skos:definition "Bexarotene; LC-ESI-QFT; MS2; CE: 15; R=35000; [M-H]-" .
+

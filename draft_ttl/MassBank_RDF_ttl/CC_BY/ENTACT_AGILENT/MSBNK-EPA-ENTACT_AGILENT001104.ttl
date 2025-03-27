@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001104 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001104" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-Diaminoanthraquinone" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.380742e+02 ;
+            rdfs:seeAlso cas:128-95-0,
+                pubchem:CID31420 ;
+            schema:inChI "InChI=1S/C14H10N2O2/c15-9-5-6-10(16)12-11(9)13(17)7-3-1-2-4-8(7)14(12)18/h1-6H,15-16H2" ;
+            schema:inChIKey inchikey:FBMQNRKSAWNXBT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H10N2O2" ;
+            schema:name "1,4-Diaminoanthraquinone" ;
+            schema:smiles "NC1=CC=C(N)C2=C1C(=O)C1=CC=CC=C1C2=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.500014e+00 ;
+            mbo:mz 2.100561e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.37067e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.37067e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0090000000-d98b01aa09ccdfdb56c5" ;
+    skos:definition "1,4-Diaminoanthraquinone; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

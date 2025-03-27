@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR308936 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR308936" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.49" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Soyasapogenol B base + O-HexA-pen-Hex, O-Hex" ;
+            mbo:ch_compound_class "Triterpene saponins" ;
+            mbo:ch_exact_mass 1.091248e+03 ;
+            schema:inChI "InChI=1S/C53H86O23/c1-48(2)16-23-22-8-9-28-50(4)12-11-29(51(5,21-56)27(50)10-13-53(28,7)52(22,6)15-14-49(23,3)17-30(48)73-44-38(65)31(58)24(57)20-69-44)72-47-42(37(64)36(63)40(74-47)43(67)68)76-46-41(35(62)33(60)26(19-55)71-46)75-45-39(66)34(61)32(59)25(18-54)70-45/h8,23-42,44-47,54-66H,9-21H2,1-7H3,(H,67,68)" ;
+            schema:inChIKey inchikey:RCDRIURETSURJH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C53H86O23" ;
+            schema:name "Soyasapogenol B base + O-HexA-pen-Hex, O-Hex" ;
+            schema:smiles "CC1(C)CC2C3=CCC4C5(C)CCC(OC6OC(C(O)C(O)C6OC6OC(CO)C(O)C(O)C6OC6OC(CO)C(O)C(O)C6O)C(O)=O)C(C)(CO)C5CCC4(C)C3(C)CCC2(C)CC1OC1OCC(O)C(O)C1O" ] ;
+    mbo:has_peak [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.390017e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 4.171138e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 2.1e+01 ;
+            mbo:mz 7.294086e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 1.9e+01 ;
+            mbo:mz 1.087511e+03 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 74 ],
+        [ mbo:intensity 3.2e+01 ;
+            mbo:mz 1.089504e+03 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 2.55e+02 ;
+            mbo:mz 1.089546e+03 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.089546e+03 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-9000000000-2faa68a7be0ec080698d" ;
+    rdfs:comment "Annotation level-3" ;
+    skos:definition "Soyasapogenol B base + O-HexA-pen-Hex, O-Hex; LC-ESI-QTOF; MS2" .
+

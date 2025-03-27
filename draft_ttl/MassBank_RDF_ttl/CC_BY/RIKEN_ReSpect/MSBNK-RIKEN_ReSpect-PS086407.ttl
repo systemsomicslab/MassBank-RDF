@@ -1,0 +1,77 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS086407 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS086407" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2'-(beta-D-Glucopyranosyloxy)-4',6'-dihydroxy-3-(4-hydroxyphenyl)propiophenone",
+                "Phlorhizin",
+                "Phloridzin",
+                "Phlorizin",
+                "Phlorizoside",
+                "Phlorrhizen",
+                "Phlorrhizin",
+                "Phlr-2p-Glc",
+                "phloretin-2'-O-glucoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Chalcone CLASS3 Phloretin glycoside" ;
+            mbo:ch_exact_mass 4.36413e+02 ;
+            rdfs:seeAlso cas:60-81-1,
+                pubchem:CID6072 ;
+            schema:inChI "InChI=1S/C21H24O10/c22-9-16-18(27)19(28)20(29)21(31-16)30-15-8-12(24)7-14(26)17(15)13(25)6-3-10-1-4-11(23)5-2-10/h1-2,4-5,7-8,16,18-24,26-29H,3,6,9H2/t16-,18-,19+,20-,21-/m1/s1" ;
+            schema:inChIKey inchikey:IOUVKUPGCMBWBT-QNDFHXLGSA-N ;
+            schema:molecularFormula "C21H24O10" ;
+            schema:name "2'-(beta-D-Glucopyranosyloxy)-4',6'-dihydroxy-3-(4-hydroxyphenyl)propiophenone",
+                "Phlorhizin",
+                "Phloridzin",
+                "Phlorizin",
+                "Phlorizoside",
+                "Phlorrhizen",
+                "Phlorrhizin",
+                "Phlr-2p-Glc",
+                "phloretin-2'-O-glucoside" ;
+            schema:smiles "C1=CC(=CC=C1CCC(=O)C2=C(C=C(C=C2O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.7381e+04 ;
+            mbo:mz 2.73e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 3.2552e+04 ;
+            mbo:mz 4.34e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 3.11482e+05 ;
+            mbo:mz 4.35e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.7541e+04 ;
+            mbo:mz 4.36e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 152 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.3542e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000i-0000900000-7ed835ce88d3401e391f" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Phlorizin; LC-ESI-QQ; MS2" .
+

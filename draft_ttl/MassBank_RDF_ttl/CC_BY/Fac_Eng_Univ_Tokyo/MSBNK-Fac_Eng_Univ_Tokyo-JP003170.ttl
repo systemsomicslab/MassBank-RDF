@@ -1,0 +1,59 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP003170 a mbo:MassSpectrum ;
+    dcterms:creator "YOSHIZUMI H, FAC. OF PHARMACY, MEIJO UNIV." ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP003170" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Unknown" ;
+            mbo:instrument_type "CI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "HEPTABARBITAL" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.501317e+02 ;
+            schema:inChI "InChI=1S/C13H18N2O3/c1-2-13(9-7-5-3-4-6-8-9)10(16)14-12(18)15-11(13)17/h7H,2-6,8H2,1H3,(H2,14,15,16,17,18)" ;
+            schema:inChIKey inchikey:PAZQYDJGLKSCSI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H18N2O3" ;
+            schema:name "HEPTABARBITAL" ;
+            schema:smiles "CCC(C(=O)2)(C(=O)NC(=O)N2)C(C1)=CCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+00 ;
+            mbo:mz 1.35e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 1.57e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 6e+00 ;
+            mbo:mz 2.21e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 2.51e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 2.52e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 2.53e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0udi-0090000000-65df1d705dbf292d1920" ;
+    skos:definition "HEPTABARBITAL; CI-B; MS" .
+

@@ -1,0 +1,86 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000903 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham" ;
+    dcterms:date "2023-05-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000903" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100% (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.010 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-methoxy-2-[(4-methoxy-3,5-dimethyl-1-oxidopyridin-1-ium-2-yl)methylsulfonyl]-1H-benzimidazole",
+                "Omeprazole Sulfone N-Oxide",
+                "omeprazole_BTP_M4" ;
+            mbo:ch_compound_class "N/A; Biotransformation product" ;
+            mbo:ch_exact_mass 3.771045e+02 ;
+            rdfs:seeAlso cas:158812-85-2,
+                chemspider:13633921,
+                pubchem:CID21256701 ;
+            schema:inChI "InChI=1S/C17H19N3O5S/c1-10-8-20(21)15(11(2)16(10)25-4)9-26(22,23)17-18-13-6-5-12(24-3)7-14(13)19-17/h5-8H,9H2,1-4H3,(H,18,19)" ;
+            schema:inChIKey inchikey:ZBGMHRIYIGAEGJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H19N3O5S" ;
+            schema:name "6-methoxy-2-[(4-methoxy-3,5-dimethyl-1-oxidopyridin-1-ium-2-yl)methylsulfonyl]-1H-benzimidazole",
+                "Omeprazole Sulfone N-Oxide",
+                "omeprazole_BTP_M4" ;
+            schema:smiles "CC1=C[N+](=C(C(=C1OC)C)CS(=O)(=O)C2=NC3=C(N2)C=C(C=C3)OC)[O-]" ] ;
+    mbo:has_peak [ mbo:intensity 1.21698e+04 ;
+            mbo:mz 8.90596e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 1.44004e+04 ;
+            mbo:mz 9.4065e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 1.06375e+04 ;
+            mbo:mz 1.060523e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 7.49817e+04 ;
+            mbo:mz 1.490709e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.5873e+04 ;
+            mbo:mz 1.660862e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 611 ],
+        [ mbo:intensity 1.38051e+04 ;
+            mbo:mz 1.951226e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 184 ],
+        [ mbo:intensity 2.19992e+04 ;
+            mbo:mz 2.300481e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 293 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.781118e+02 ;
+            mbo:precursor_mz 3.781118e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00kb-1910000000-25cb1992285af16add4f" ;
+    rdfs:comment "INTERNAL_ID 10248" ;
+    skos:definition "omeprazole_BTP_M4; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

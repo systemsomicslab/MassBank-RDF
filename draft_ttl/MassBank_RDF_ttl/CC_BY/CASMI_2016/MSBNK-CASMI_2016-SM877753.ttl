@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM877753 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM877753" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.126 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(3,4-dichlorophenyl)-1,1-dimethylurea",
+                "Diuron" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.32017e+02 ;
+            rdfs:seeAlso cas:330-54-1,
+                chemspider:3008,
+                pubchem:CID3120 ;
+            schema:inChI "InChI=1S/C9H10Cl2N2O/c1-13(2)9(14)12-6-3-4-7(10)8(11)5-6/h3-5H,1-2H3,(H,12,14)" ;
+            schema:inChIKey inchikey:XMTQQYYKAHVGBJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H10Cl2N2O" ;
+            schema:name "3-(3,4-dichlorophenyl)-1,1-dimethylurea",
+                "Diuron" ;
+            schema:smiles "CN(C)C(=O)NC1=CC=C(Cl)C(Cl)=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.0764e+03 ;
+            mbo:mz 1.119849e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.249382e+05 ;
+            mbo:mz 1.499753e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 1.582095e+05 ;
+            mbo:mz 1.599727e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 5.517889e+05 ;
+            mbo:mz 1.85952e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 375 ],
+        [ mbo:intensity 5.6704e+03 ;
+            mbo:mz 2.179776e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.468783e+06 ;
+            mbo:mz 2.310098e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.129847e+02 ;
+            mbo:precursor_mz 2.310097e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0590000000-1acddae68bb26286cf41" ;
+    rdfs:comment "INTERNAL_ID 8777" ;
+    skos:definition "Diuron; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M-H]-" .
+

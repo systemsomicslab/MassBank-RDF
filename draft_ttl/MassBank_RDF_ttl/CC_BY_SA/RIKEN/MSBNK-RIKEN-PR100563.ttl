@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100563 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100563" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Guanosine-3',5'-cyclic monophosphate",
+                "cGMP",
+                "cyclic GMP" ;
+            mbo:ch_compound_class "Natural Product; Nucleoside; Phosphates" ;
+            mbo:ch_exact_mass 3.450474e+02 ;
+            rdfs:seeAlso cas:7665-99-8,
+                chemspider:22734,
+                knapsack:C00019673,
+                pubchem:CID135398570 ;
+            schema:inChI "InChI=1S/C10H12N5O7P/c11-10-13-7-4(8(17)14-10)12-2-15(7)9-5(16)6-3(21-9)1-20-23(18,19)22-6/h2-3,5-6,9,16H,1H2,(H,18,19)(H3,11,13,14,17)/t3-,5-,6-,9-/m1/s1" ;
+            schema:inChIKey inchikey:ZOOGRGPOEVQQDX-UUOKFMHZSA-N ;
+            schema:molecularFormula "C10H12N5O7P" ;
+            schema:name "Guanosine-3',5'-cyclic monophosphate",
+                "cGMP",
+                "cyclic GMP" ;
+            schema:smiles "NC(N4)=Nc(c3C(=O)4)n(cn3)[C@H](O1)[C@H](O)[C@H](O2)[C@@H](COP(O)(=O)2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.418e+03 ;
+            mbo:mz 7.89604e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 482 ],
+        [ mbo:intensity 1.847e+02 ;
+            mbo:mz 9.69707e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 1.605e+02 ;
+            mbo:mz 1.070371e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 3.7e+02 ;
+            mbo:mz 1.080212e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 1.769e+03 ;
+            mbo:mz 1.330162e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 601 ],
+        [ mbo:intensity 2.939e+03 ;
+            mbo:mz 1.500426e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.768e+03 ;
+            mbo:mz 3.440396e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 941 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.440396e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0uec-2904000000-85af5865e64af24e7691" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Guanosine-3',5'-cyclic monophosphate; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

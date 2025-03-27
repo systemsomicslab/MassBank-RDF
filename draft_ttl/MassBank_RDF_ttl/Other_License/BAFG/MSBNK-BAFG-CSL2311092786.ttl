@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311092786 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311092786" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "13.11 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Triclabendazole" ;
+            mbo:ch_compound_class "Pharmaceutical" ;
+            mbo:ch_exact_mass 3.579501e+02 ;
+            rdfs:seeAlso cas:68786-66-3 ;
+            schema:inChI "InChI=1S/C14H9Cl3N2OS/c1-21-14-18-9-5-8(16)12(6-10(9)19-14)20-11-4-2-3-7(15)13(11)17/h2-6H,1H3,(H,18,19)" ;
+            schema:inChIKey inchikey:NQPDXQQQCQDHHW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H9Cl3N2OS" ;
+            schema:name "Triclabendazole" ;
+            schema:smiles "CSc1[nH]c2cc(Cl)c(Oc3cccc(Cl)c3Cl)cc2n1" ] ;
+    mbo:has_peak [ mbo:intensity 4.66e+01 ;
+            mbo:mz 3.419201e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 8.358e+02 ;
+            mbo:mz 3.569417e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.569428e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-c1c53fa222906febd450" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Triclabendazole; LC-ESI-QTOF; MS2; 20 V" .
+

@@ -1,0 +1,109 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100500 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100500" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cane sugar",
+                "D-(+)-Saccharose",
+                "Fru(beta2-1alpha)Glc",
+                "Microse",
+                "Suc",
+                "Sucrose",
+                "alpha-D-Glucopyranosyl beta-D-fructofuranoside" ;
+            mbo:ch_compound_class "Disaccharide" ;
+            mbo:ch_exact_mass 3.421162e+02 ;
+            rdfs:seeAlso cas:57-50-1,
+                chemspider:5768,
+                knapsack:C00001151,
+                pubchem:CID5988 ;
+            schema:inChI "InChI=1S/C12H22O11/c13-1-4-6(16)8(18)9(19)11(21-4)23-12(3-15)10(20)7(17)5(2-14)22-12/h4-11,13-20H,1-3H2/t4-,5-,6-,7-,8+,9-,10+,11-,12+/m1/s1" ;
+            schema:inChIKey inchikey:CZMRCDWAGMRECN-UGDNZRGBSA-N ;
+            schema:molecularFormula "C12H22O11" ;
+            schema:name "Cane sugar",
+                "D-(+)-Saccharose",
+                "Fru(beta2-1alpha)Glc",
+                "Microse",
+                "Suc",
+                "Sucrose",
+                "alpha-D-Glucopyranosyl beta-D-fructofuranoside" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H](O)[C@H]1O[C@](CO)(O2)[C@@H](O)[C@H](O)[C@@H](CO)2" ] ;
+    mbo:has_peak [ mbo:intensity 5.998e+02 ;
+            mbo:mz 5.90153e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 418 ],
+        [ mbo:intensity 1.94e+02 ;
+            mbo:mz 1.610453e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 7.033e+02 ;
+            mbo:mz 1.790558e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 490 ],
+        [ mbo:intensity 1.434e+03 ;
+            mbo:mz 3.411084e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.149e+03 ;
+            mbo:mz 7.10149e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 800 ],
+        [ mbo:intensity 1.42e+02 ;
+            mbo:mz 8.50298e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 9.863e+02 ;
+            mbo:mz 8.90247e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 687 ],
+        [ mbo:intensity 8.164e+02 ;
+            mbo:mz 1.010245e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 569 ],
+        [ mbo:intensity 4.807e+02 ;
+            mbo:mz 1.130244e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 335 ],
+        [ mbo:intensity 3.322e+02 ;
+            mbo:mz 1.19035e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 231 ],
+        [ mbo:intensity 9.384e+01 ;
+            mbo:mz 1.310348e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.382e+02 ;
+            mbo:mz 1.430344e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 96 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.411084e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0fdx-9804000000-018a029ba3843a8db2bd" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Sucrose; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

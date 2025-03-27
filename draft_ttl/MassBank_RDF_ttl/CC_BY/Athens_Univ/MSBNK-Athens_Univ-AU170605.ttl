@@ -1,0 +1,109 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU170605 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU170605" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "12.739 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Pentyl-3-(1-naphthoyl)indole",
+                "JWH-018",
+                "naphthalen-1-yl-(1-pentylindol-3-yl)methanone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.41178e+02 ;
+            rdfs:seeAlso cas:209414-07-3,
+                chemspider:8558143,
+                pubchem:CID10382701 ;
+            schema:inChI "InChI=1S/C24H23NO/c1-2-3-8-16-25-17-22(20-13-6-7-15-23(20)25)24(26)21-14-9-11-18-10-4-5-12-19(18)21/h4-7,9-15,17H,2-3,8,16H2,1H3" ;
+            schema:inChIKey inchikey:JDNLPKCAXICMBW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H23NO" ;
+            schema:name "1-Pentyl-3-(1-naphthoyl)indole",
+                "JWH-018",
+                "naphthalen-1-yl-(1-pentylindol-3-yl)methanone" ;
+            schema:smiles "CCCCCN1C=C(C2=CC=CC=C21)C(=O)C3=CC=CC4=CC=CC=C43" ] ;
+    mbo:has_peak [ mbo:intensity 1.5656e+04 ;
+            mbo:mz 1.160503e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 4.1688e+04 ;
+            mbo:mz 1.560548e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 4.6e+03 ;
+            mbo:mz 1.580607e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.1616e+04 ;
+            mbo:mz 2.141243e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 5.16e+03 ;
+            mbo:mz 2.151278e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8.54e+03 ;
+            mbo:mz 1.170711e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 4.384e+04 ;
+            mbo:mz 1.260473e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 4.62512e+05 ;
+            mbo:mz 1.270552e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 721 ],
+        [ mbo:intensity 4.1936e+04 ;
+            mbo:mz 1.280584e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 2.15788e+05 ;
+            mbo:mz 1.440455e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 336 ],
+        [ mbo:intensity 6.41196e+05 ;
+            mbo:mz 1.450659e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.986e+04 ;
+            mbo:mz 1.460691e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 3.4282e+05 ;
+            mbo:mz 1.550503e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 534 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.421886e+02 ;
+            mbo:precursor_mz 3.421852e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-054k-0900000000-8941adac562cca795ad6" ;
+    rdfs:comment "INTERNAL_ID 1706" ;
+    skos:definition "JWH-018; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M+H]+" .
+

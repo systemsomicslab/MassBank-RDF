@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002487 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002487" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ascorbyl palmitate",
+                "DTXSID3041611" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.142618e+02 ;
+            rdfs:seeAlso cas:137-66-6,
+                pubchem:CID54680660 ;
+            schema:inChI "InChI=1S/C22H38O7/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-18(24)28-16-17(23)21-19(25)20(26)22(27)29-21/h17,19,21,23,25H,2-16H2,1H3" ;
+            schema:inChIKey inchikey:CYJPUZLKFAUFHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H38O7" ;
+            schema:name "Ascorbyl palmitate",
+                "DTXSID3041611" ;
+            schema:smiles "CCCCCCCCCCCCCCCC(=O)OCC(O)C1OC(=O)C(=O)C1O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 1.190855e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.050263e+00 ;
+            mbo:mz 1.290546e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.511336e+00 ;
+            mbo:mz 1.330648e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 8.746667e+00 ;
+            mbo:mz 1.350804e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 2.142349e+00 ;
+            mbo:mz 2.811384e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.15269e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-014i-0900000000-b0c4ba9d3c7690fc2b87" ;
+    skos:definition "Ascorbyl palmitate; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

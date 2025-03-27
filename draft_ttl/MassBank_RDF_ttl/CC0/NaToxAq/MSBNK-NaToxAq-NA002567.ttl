@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002567 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2020-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002567" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2020 by Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15% (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.269 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cevadine",
+                "Veratrine",
+                "[(1R,2S,6S,9S,10R,11S,12S,14R,15S,18S,19S,22S,23S,25R)-1,10,11,12,14,23-hexahydroxy-6,10,19-trimethyl-24-oxa-4-azaheptacyclo[12.12.0.02,11.04,9.015,25.018,23.019,25]hexacosan-22-yl] (Z)-2-methylbut-2-enoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.913407e+02 ;
+            rdfs:seeAlso cas:62-59-9,
+                chemspider:4528662,
+                pubchem:CID5380394 ;
+            schema:inChI "InChI=1S/C32H49NO9/c1-6-18(3)25(35)41-24-11-12-26(4)19-8-9-20-28(37)13-23(34)31(39)21(29(28,38)16-30(20,26)42-32(19,24)40)15-33-14-17(2)7-10-22(33)27(31,5)36/h6,17,19-24,34,36-40H,7-16H2,1-5H3/b18-6-/t17-,19-,20-,21-,22-,23-,24-,26-,27+,28+,29+,30+,31-,32-/m0/s1" ;
+            schema:inChIKey inchikey:DBUCFOVFALNEOO-HWBIYQLFSA-N ;
+            schema:molecularFormula "C32H49NO9" ;
+            schema:name "Cevadine",
+                "Veratrine",
+                "[(1R,2S,6S,9S,10R,11S,12S,14R,15S,18S,19S,22S,23S,25R)-1,10,11,12,14,23-hexahydroxy-6,10,19-trimethyl-24-oxa-4-azaheptacyclo[12.12.0.02,11.04,9.015,25.018,23.019,25]hexacosan-22-yl] (Z)-2-methylbut-2-enoate" ;
+            schema:smiles "C/C=C(/C)\\C(=O)O[C@H]1CC[C@]2([C@H]3[C@@]1(O[C@@]24C[C@]5([C@@H]6CN7C[C@H](CC[C@H]7[C@@]([C@]6([C@H](C[C@]5([C@@H]4CC3)O)O)O)(C)O)C)O)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.403089e+05 ;
+            mbo:mz 5.923474e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.923476e+02 ;
+            mbo:precursor_mz 5.92348e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0006-0000090000-cb9089c17473da23b5ab" ;
+    rdfs:comment "INTERNAL_ID 2333" ;
+    skos:definition "Cevadine; LC-ESI-ITFT; MS2; CE: 15%; R=15000; [M+H]+" .
+

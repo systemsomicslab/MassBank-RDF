@@ -1,0 +1,78 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA004603 a mbo:MassSpectrum ;
+    dcterms:creator "C. Gallampois (Umea), E. Schymanski (Eawag), W. Brack (UFZ)" ;
+    dcterms:date "2014-06-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA004603" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Multi-criteria approach for tentative identification of polyaromatic river mutagens" ] ;
+    dcterms:rights "Copyright (C) Eawag, 2014 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "Direct infusion experiment" ;
+            mbo:flow_rate "5 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "APCI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "N/A min" ;
+            mbo:solvent "A methanol",
+                "B N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Naphthol",
+                "naphthalen-1-ol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.440575e+02 ;
+            rdfs:seeAlso cas:90-15-3,
+                chemspider:6739,
+                pubchem:CID7005 ;
+            schema:inChI "InChI=1S/C10H8O/c11-10-7-3-5-8-4-1-2-6-9(8)10/h1-7,11H" ;
+            schema:inChIKey inchikey:KJCVRFUGPWSIIH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8O" ;
+            schema:name "1-Naphthol",
+                "naphthalen-1-ol" ;
+            schema:smiles "C1=CC=C2C(=C1)C=CC=C2O" ] ;
+    mbo:has_peak [ mbo:intensity 1.6128e+03 ;
+            mbo:mz 9.60076e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.875856e+05 ;
+            mbo:mz 1.170697e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.09547e+04 ;
+            mbo:mz 1.270541e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 6.0132e+04 ;
+            mbo:mz 1.450647e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 2.323429e+05 ;
+            mbo:mz 1.550604e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 338 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.450648e+02 ;
+            mbo:precursor_mz 1.450648e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-014i-0900000000-c536d76de8d3df4d5774" ;
+    rdfs:comment "INTERNAL_ID 46" ;
+    skos:definition "1-Naphthol; APCI-ITFT; MS2; CE: 35%; R=30000; [M+H]+" .
+

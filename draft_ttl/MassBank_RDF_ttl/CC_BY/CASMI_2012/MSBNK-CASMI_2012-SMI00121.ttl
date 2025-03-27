@@ -1,0 +1,91 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2012-SMI00121 a mbo:MassSpectrum ;
+    dcterms:creator "S. Neumann: IPB-Halle, Germany & E. Schymanski: Eawag, Switzerland" ;
+    dcterms:date "2012-08-31 (Created 2012-08-31)"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2012-SMI00121" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E.; Neumann, S. The Critical Assessment of Small Molecule Identification (CASMI): Challenges and Solutions. Metabolites 2013, 3 (3), 517–38. DOI:10.3390/metabo3030517" ] ;
+    dcterms:rights "CASMI2012 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ-Orbitrap" ;
+            mbo:collision_energy "35" ;
+            mbo:instrument_type "LC-APCI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "46.89 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "alpha-(o-Nitro-p-tolylazo)acetoacetanilide" ;
+            mbo:ch_compound_class "N/A; Unknown for CASMI" ;
+            mbo:ch_exact_mass 3.40117e+02 ;
+            rdfs:seeAlso chemspider:21159660,
+                pubchem:CID221491 ;
+            schema:inChI "InChI=1S/C17H16N4O4/c1-11-8-9-14(15(10-11)21(24)25)19-20-16(12(2)22)17(23)18-13-6-4-3-5-7-13/h3-10,16H,1-2H3,(H,18,23)" ;
+            schema:inChIKey inchikey:MFYSUUPKMDJYPF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H16N4O4" ;
+            schema:name "alpha-(o-Nitro-p-tolylazo)acetoacetanilide" ;
+            schema:smiles "CC1=CC(=C(C=C1)N=NC(C(=O)C)C(=O)NC2=CC=CC=C2)[N+](=O)[O-]" ] ;
+    mbo:has_peak [ mbo:intensity 2.160676e+06 ;
+            mbo:mz 1.50067e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 365 ],
+        [ mbo:intensity 5.04865e+04 ;
+            mbo:mz 2.951211e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 6.282326e+05 ;
+            mbo:mz 3.231161e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 1.746078e+05 ;
+            mbo:mz 1.530666e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 4.29226e+04 ;
+            mbo:mz 1.670699e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.065406e+05 ;
+            mbo:mz 1.760717e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1.847748e+06 ;
+            mbo:mz 1.780621e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 313 ],
+        [ mbo:intensity 4.708163e+05 ;
+            mbo:mz 2.200731e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 5.905884e+06 ;
+            mbo:mz 2.480683e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.23177e+04 ;
+            mbo:mz 2.66079e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.655487e+05 ;
+            mbo:mz 2.800947e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 28 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.41126e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0002-0690000000-ab49bf2e0a424a3e1e0e" ;
+    rdfs:comment "CASMI2012 LC Challenge 12" ;
+    skos:definition "alpha-(o-Nitro-p-tolylazo)acetoacetanilide; LC-APCI-ITFT; MS2; CE:35;" .
+

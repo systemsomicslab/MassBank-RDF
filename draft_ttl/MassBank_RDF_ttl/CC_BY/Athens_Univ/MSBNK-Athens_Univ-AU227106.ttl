@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU227106 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2018-12-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU227106" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "Ramp 23.7-35.6 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "5.998 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[3-[4-(3-chlorophenyl)piperazin-1-yl]propyl]-[1,2,4]triazolo[4,3-a]pyridin-3-one",
+                "Trazodone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.711513e+02 ;
+            rdfs:seeAlso cas:25332-39-2,
+                chemspider:5332,
+                pubchem:CID5533 ;
+            schema:inChI "InChI=1S/C19H22ClN5O/c20-16-5-3-6-17(15-16)23-13-11-22(12-14-23)8-4-10-25-19(26)24-9-2-1-7-18(24)21-25/h1-3,5-7,9,15H,4,8,10-14H2" ;
+            schema:inChIKey inchikey:PHLBKPHSAVXXEF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H22ClN5O" ;
+            schema:name "2-[3-[4-(3-chlorophenyl)piperazin-1-yl]propyl]-[1,2,4]triazolo[4,3-a]pyridin-3-one",
+                "Trazodone" ;
+            schema:smiles "c1ccn2c(c1)nn(c2=O)CCCN3CCN(CC3)c4cccc(c4)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 3.0412e+04 ;
+            mbo:mz 1.330749e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.12644e+05 ;
+            mbo:mz 3.731613e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 1.64824e+05 ;
+            mbo:mz 3.74156e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 9.38128e+05 ;
+            mbo:mz 1.480494e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 379 ],
+        [ mbo:intensity 1.59384e+05 ;
+            mbo:mz 1.48086e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 5.098e+04 ;
+            mbo:mz 1.490523e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 2.473712e+06 ;
+            mbo:mz 1.760813e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.76528e+05 ;
+            mbo:mz 1.770838e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 1.4136e+04 ;
+            mbo:mz 2.09083e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.4512e+04 ;
+            mbo:mz 2.371145e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.35868e+05 ;
+            mbo:mz 3.721588e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 257 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.721584e+02 ;
+            mbo:precursor_mz 3.721586e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-004i-0902000000-1f5819428d39f2fc7938" ;
+    rdfs:comment "INTERNAL_ID 2271" ;
+    skos:definition "Trazodone; LC-ESI-QTOF; MS2; CE: Ramp 23.7-35.6 eV; R=35000; [M+H]+" .
+

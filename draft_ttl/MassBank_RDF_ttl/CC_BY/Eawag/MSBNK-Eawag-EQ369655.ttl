@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ369655 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ369655" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "75 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.3 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-hydroxybenzoic acid",
+                "Salicylic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.380317e+02 ;
+            rdfs:seeAlso cas:8052-31-1,
+                chemspider:331,
+                pubchem:CID338 ;
+            schema:inChI "InChI=1S/C7H6O3/c8-6-4-2-1-3-5(6)7(9)10/h1-4,8H,(H,9,10)" ;
+            schema:inChIKey inchikey:YGSDEFSMJLZEOE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H6O3" ;
+            schema:name "2-hydroxybenzoic acid",
+                "Salicylic acid" ;
+            schema:smiles "C1=CC=C(C(=C1)C(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.421926e+06 ;
+            mbo:mz 6.50397e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 3.951853e+05 ;
+            mbo:mz 7.50241e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.811107e+08 ;
+            mbo:mz 9.30346e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.518862e+06 ;
+            mbo:mz 1.370245e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.370243e+02 ;
+            mbo:precursor_mz 1.370244e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-9000000000-d8fdab29114453b10280" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3696" ;
+    skos:definition "Salicylic acid; LC-ESI-QFT; MS2; CE: 75; R=35000; [M-H]-" .
+

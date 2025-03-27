@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00952 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-10-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00952" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "10 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Genistin" ;
+            mbo:ch_compound_class "7-hydroxyisoflavone" ;
+            mbo:ch_exact_mass 4.321057e+02 ;
+            rdfs:seeAlso cas:529-59-9,
+                chemspider:4444736,
+                pubchem:CID5281377 ;
+            schema:inChI "InChI=1S/C21H20O10/c22-7-15-18(26)19(27)20(28)21(31-15)30-11-5-13(24)16-14(6-11)29-8-12(17(16)25)9-1-3-10(23)4-2-9/h1-6,8,15,18-24,26-28H,7H2/t15-,18-,19+,20-,21-/m1/s1" ;
+            schema:inChIKey inchikey:ZCOLJUOHXJRHDI-CMWLGVBASA-N ;
+            schema:molecularFormula "C21H20O10" ;
+            schema:name "Genistin" ;
+            schema:smiles "C1=CC(=CC=C1C2=COC3=CC(=CC(=C3C2=O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.455e+01 ;
+            mbo:mz 2.710601e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 1.03918e+02 ;
+            mbo:mz 4.331117e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.331129e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0010900000-cc6270df9ecb84475632" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Genistin; ESI-QTOF; MS2; POSITIVE; [M+H]+; CID; 10 V" .
+

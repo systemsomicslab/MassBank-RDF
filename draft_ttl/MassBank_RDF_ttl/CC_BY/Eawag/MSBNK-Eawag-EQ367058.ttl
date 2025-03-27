@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ367058 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ367058" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "150 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "13.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Di-n-butyl phthalate",
+                "Dibutyl phthalate",
+                "dibutyl benzene-1,2-dicarboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.781518e+02 ;
+            rdfs:seeAlso cas:84-74-2,
+                chemspider:13837319,
+                pubchem:CID3026 ;
+            schema:inChI "InChI=1S/C16H22O4/c1-3-5-11-19-15(17)13-9-7-8-10-14(13)16(18)20-12-6-4-2/h7-10H,3-6,11-12H2,1-2H3" ;
+            schema:inChIKey inchikey:DOIRQSBPFJWKBE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H22O4" ;
+            schema:name "Di-n-butyl phthalate",
+                "Dibutyl phthalate",
+                "dibutyl benzene-1,2-dicarboxylate" ;
+            schema:smiles "CCCCOC(=O)C1=CC=CC=C1C(=O)OCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.468583e+05 ;
+            mbo:mz 7.50241e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.771444e+02 ;
+            mbo:precursor_mz 2.771445e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-9000000000-2d5177b1586a4461b278" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3670" ;
+    skos:definition "Di-n-butyl phthalate; LC-ESI-QFT; MS2; CE: 150; R=35000; [M-H]-" .
+

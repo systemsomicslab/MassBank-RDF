@@ -1,0 +1,76 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00040 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-17, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00040" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.800050 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Hydroxy-L-proline",
+                "L-Hydroxyproline" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.310582e+02 ;
+            rdfs:seeAlso cas:51-35-4,
+                knapsack:C00001370,
+                pubchem:CID4260 ;
+            schema:inChI "InChI=1S/C5H9NO3/c7-3-1-4(5(8)9)6-2-3/h3-4,6-7H,1-2H2,(H,8,9)/t3?,4-/m0/s1" ;
+            schema:inChIKey inchikey:PMMYEEVYMWASQN-BKLSDQPFSA-N ;
+            schema:molecularFormula "C5H9NO3" ;
+            schema:name "4-Hydroxy-L-proline",
+                "L-Hydroxyproline" ;
+            schema:smiles "OC(C1)CC(N1)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.014896e+04 ;
+            mbo:mz 6.79052e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 3.606751e+05 ;
+            mbo:mz 8.595046e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.313186e+02 ;
+            mbo:mz 8.672123e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.124528e+03 ;
+            mbo:mz 9.580924e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.355441e+02 ;
+            mbo:mz 1.110731e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.122223e+04 ;
+            mbo:mz 1.139662e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 31 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.595046e+01 ;
+            mbo:precursor_mz 1.3207e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-9000000000-2b450c503f28b7e56789" ;
+    skos:definition "4-Hydroxy-L-proline; LC-ESI-ITFT; MS2; m/z:132.07; POS" .
+

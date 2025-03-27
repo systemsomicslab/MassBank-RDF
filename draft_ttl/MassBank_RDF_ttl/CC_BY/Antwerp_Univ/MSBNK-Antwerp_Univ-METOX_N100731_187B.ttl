@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N100731_187B a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N100731_187B" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.169 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(8R,9S,10R,13S,14S,17R)-17-acetyl-17-hydroxy-6,10,13-trimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one",
+                "17-Hydroxy-6-methylpregn-4-ene-3,20-dione",
+                "Medroxyprogesterone" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.442351e+02 ;
+            rdfs:seeAlso cas:14423-24-6,
+                chemspider:176204,
+                pubchem:CID203441 ;
+            schema:inChI "InChI=1S/C22H32O3/c1-13-11-16-17(20(3)8-5-15(24)12-19(13)20)6-9-21(4)18(16)7-10-22(21,25)14(2)23/h12-13,16-18,25H,5-11H2,1-4H3/t13?,16-,17+,18+,20-,21+,22+/m1/s1" ;
+            schema:inChIKey inchikey:FRQMUZJSZHZSGN-NJMUXRGYSA-N ;
+            schema:molecularFormula "C22H32O3" ;
+            schema:name "(8R,9S,10R,13S,14S,17R)-17-acetyl-17-hydroxy-6,10,13-trimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one",
+                "17-Hydroxy-6-methylpregn-4-ene-3,20-dione",
+                "Medroxyprogesterone" ;
+            schema:smiles "CC1C[C@@H]2[C@H](CC[C@]3([C@H]2CC[C@@]3(C(=O)C)O)C)[C@@]4(C1=CC(=O)CC4)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.2e+01 ;
+            mbo:mz 1.310695e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 475 ],
+        [ mbo:intensity 8.83e+01 ;
+            mbo:mz 2.991976e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.01e+01 ;
+            mbo:mz 3.281651e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 341 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 4.03249e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-0493000000-d08c3c5badc572669da3" ;
+    rdfs:comment "INTERNAL_ID 1007" ;
+    skos:definition "Medroxyprogesterone; LC-ESI-QTOF; MS2; CE: 40eV; R=7000; [M+CH3COO]-" .
+

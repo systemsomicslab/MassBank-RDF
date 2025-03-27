@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000024 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000024" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-(2-Methylphenyl)-3-oxobutanamide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.910946e+02 ;
+            rdfs:seeAlso cas:93-68-5,
+                pubchem:CID7154 ;
+            schema:inChI "InChI=1S/C11H13NO2/c1-8-5-3-4-6-10(8)12-11(14)7-9(2)13/h3-6H,7H2,1-2H3,(H,12,14)" ;
+            schema:inChIKey inchikey:TVZIWRMELPWPPR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H13NO2" ;
+            schema:name "N-(2-Methylphenyl)-3-oxobutanamide" ;
+            schema:smiles "CC(=O)CC(=O)NC1C=CC=CC=1C" ] ;
+    mbo:has_peak [ mbo:intensity 1.185118e+00 ;
+            mbo:mz 3.902402e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.508476e+01 ;
+            mbo:mz 4.100329e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 151 ],
+        [ mbo:intensity 4.791334e+01 ;
+            mbo:mz 5.703459e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 479 ],
+        [ mbo:intensity 1.647375e+00 ;
+            mbo:mz 5.804241e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 8.301385e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.411471e+00 ;
+            mbo:mz 8.305024e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 3.813965e+00 ;
+            mbo:mz 8.402168e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 7.204929e+01 ;
+            mbo:mz 1.060662e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 720 ],
+        [ mbo:intensity 6.284301e+00 ;
+            mbo:mz 1.07074e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 63 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.900874e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0a59-9400000000-544a45df381a690a6e66" ;
+    skos:definition "N-(2-Methylphenyl)-3-oxobutanamide; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

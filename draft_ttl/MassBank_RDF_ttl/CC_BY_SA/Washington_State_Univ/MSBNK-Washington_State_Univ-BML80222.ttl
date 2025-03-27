@@ -1,0 +1,50 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80222 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80222" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "9.083" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2',5-Dimethoxyflavone" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.820892e+02 ;
+            rdfs:seeAlso chemspider:600080,
+                pubchem:CID688667 ;
+            schema:inChI "InChI=1S/C17H14O4/c1-19-13-7-4-3-6-11(13)16-10-12(18)17-14(20-2)8-5-9-15(17)21-16/h3-10H,1-2H3" ;
+            schema:inChIKey inchikey:QNKIRTADURZGPG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H14O4" ;
+            schema:name "2',5-Dimethoxyflavone" ;
+            schema:smiles "COC1=CC=CC=C1C2=CC(=O)C3=C(O2)C=CC=C3OC" ] ;
+    mbo:has_peak [ mbo:intensity 3.2986e+07 ;
+            mbo:mz 2.830965e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-001i-0090000000-8ff6173924423fcef9a4" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.226" ;
+    skos:definition "2',5-Dimethoxyflavone; LC-APCI-QTOF; MS; POSITIVE" .
+

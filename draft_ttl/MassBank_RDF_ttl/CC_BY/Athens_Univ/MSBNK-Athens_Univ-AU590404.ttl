@@ -1,0 +1,68 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU590404 a mbo:MassSpectrum ;
+    dcterms:creator "Dimitrios E. Damalas, Stefanos Kokolakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU590404" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness (Restek)" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "23.813 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Benz[a]anthracene",
+                "benzo[a]anthracene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.280939e+02 ;
+            rdfs:seeAlso cas:56-55-3,
+                chemspider:5739,
+                pubchem:CID5954 ;
+            schema:inChI "InChI=1S/C18H12/c1-2-7-15-12-18-16(11-14(15)6-1)10-9-13-5-3-4-8-17(13)18/h1-12H" ;
+            schema:inChIKey inchikey:DXBHBZVCASKNBY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H12" ;
+            schema:name "Benz[a]anthracene",
+                "benzo[a]anthracene" ;
+            schema:smiles "C1=CC2=C(C=C1)C=C1C(C=CC3=C1C=CC=C3)=C2" ] ;
+    mbo:has_peak [ mbo:intensity 3.14e+03 ;
+            mbo:mz 2.02073e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 157 ],
+        [ mbo:intensity 6.52e+03 ;
+            mbo:mz 2.260752e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 326 ],
+        [ mbo:intensity 7.044e+03 ;
+            mbo:mz 2.270828e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 352 ],
+        [ mbo:intensity 1.9988e+04 ;
+            mbo:mz 2.280906e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.290976e+02 ;
+            mbo:precursor_mz 2.291012e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-0090000000-abc064f0c820ec0cac45" ;
+    rdfs:comment "INTERNAL_ID 5904" ;
+    skos:definition "Benz[a]anthracene; GC-APCI-QTOF; MS2; CE: 40 eV; R=35000; [M+H]+" .
+

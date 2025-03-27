@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100202 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100202" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(4-Thiazolyl)benzimidazole",
+                "Bioguard",
+                "Bovizole",
+                "Cropasal",
+                "Decco",
+                "LSP",
+                "Lombristop",
+                "Merfect",
+                "Omnizole",
+                "Thiabendazol",
+                "Thiabendazole" ;
+            mbo:ch_compound_class "Benzimidazoles" ;
+            mbo:ch_exact_mass 2.010361e+02 ;
+            rdfs:seeAlso cas:148-79-8,
+                chemspider:5237,
+                pubchem:CID5430 ;
+            schema:inChI "InChI=1S/C10H7N3S/c1-2-4-8-7(3-1)12-10(13-8)9-5-14-6-11-9/h1-6H,(H,12,13)" ;
+            schema:inChIKey inchikey:WJCNZQLZVWNLKY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H7N3S" ;
+            schema:name "2-(4-Thiazolyl)benzimidazole",
+                "Bioguard",
+                "Bovizole",
+                "Cropasal",
+                "Decco",
+                "LSP",
+                "Lombristop",
+                "Merfect",
+                "Omnizole",
+                "Thiabendazol",
+                "Thiabendazole" ;
+            schema:smiles "C1=CC=C2C(=C1)NC(=N2)C3=CSC=N3" ] ;
+    mbo:has_peak [ mbo:intensity 2.239e+03 ;
+            mbo:mz 6.50397e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 2.91e+03 ;
+            mbo:mz 9.20501e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 288 ],
+        [ mbo:intensity 1.52e+03 ;
+            mbo:mz 1.040502e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 1.01e+04 ;
+            mbo:mz 1.310603e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.166e+03 ;
+            mbo:mz 1.430612e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 7.645e+03 ;
+            mbo:mz 1.750327e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 756 ],
+        [ mbo:intensity 1.663e+03 ;
+            mbo:mz 2.020439e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 164 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.020439e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-003r-2900000000-74f0c0bb9208bc4125be" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Thiabendazole; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

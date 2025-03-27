@@ -1,0 +1,70 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000306 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Marco Kai, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000306" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, K. Scheubert, F. Hufsky, T. Zichner, M. Kai, A. Svatos and S. Boecker. Identifying the unknowns by aligning fragmentation trees. Anal. Chem., 2012, 84, 3417-3426 doi:10.1021/ac300304u" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "10eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "10.96 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DErySphingosine" ;
+            mbo:ch_compound_class "Natural Product; Lipid" ;
+            mbo:ch_exact_mass 2.992824e+02 ;
+            rdfs:seeAlso pubchem:CID5280335 ;
+            schema:inChI "InChI=1S/C18H37NO2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-18(21)17(19)16-20/h14-15,17-18,20-21H,2-13,16,19H2,1H3/b15-14+/t17-,18+/m0/s1" ;
+            schema:inChIKey inchikey:WWUZIQQURGPMPG-KRWOKUGFSA-N ;
+            schema:molecularFormula "C18H37NO2" ;
+            schema:name "DErySphingosine" ;
+            schema:smiles "CCCCCCCCCCCCC/C=C/[C@H]([C@H](CO)N)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.652495e+04 ;
+            mbo:mz 1.09714e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.375611e+04 ;
+            mbo:mz 2.652506e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 6.919176e+06 ;
+            mbo:mz 2.822773e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.623729e+05 ;
+            mbo:mz 2.993479e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.296197e+06 ;
+            mbo:mz 3.002875e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 187 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.002897e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-001i-0091000000-2b5eca8b8e37ffe56f2c" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "DErySphingosine; LC-ESI-ITFT; MS2; CE 10 eV; [M+H]+" .
+

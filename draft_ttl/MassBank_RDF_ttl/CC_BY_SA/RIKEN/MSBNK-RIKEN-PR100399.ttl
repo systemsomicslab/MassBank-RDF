@@ -1,0 +1,101 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100399 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100399" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-Riboflavin",
+                "6,7-Dimethyl-9-D-ribitylisoalloxazine",
+                "7,8-Dimethyl-10-ribitylisoalloxazine",
+                "Beflavine",
+                "Flavaxin",
+                "Flaxain",
+                "Hyflavin",
+                "Lactobene",
+                "Lactoflavin",
+                "Ovoflavin",
+                "Ribipca",
+                "Riboderm",
+                "Riboflavinequinone",
+                "Ribosyn",
+                "Ribotone",
+                "Ribovel",
+                "Vitaflavine",
+                "Vitamin B2",
+                "Vitamin G" ;
+            mbo:ch_compound_class "Flavin" ;
+            mbo:ch_exact_mass 3.761383e+02 ;
+            rdfs:seeAlso cas:83-88-5,
+                chemspider:431981,
+                knapsack:C00001552,
+                pubchem:CID493570 ;
+            schema:inChI "InChI=1S/C17H20N4O6/c1-7-3-9-10(4-8(7)2)21(5-11(23)14(25)12(24)6-22)15-13(18-9)16(26)20-17(27)19-15/h3-4,11-12,14,22-25H,5-6H2,1-2H3,(H,20,26,27)/t11-,12+,14-/m0/s1" ;
+            schema:inChIKey inchikey:AUNGANRZJHBGPY-SCRDCRAPSA-N ;
+            schema:molecularFormula "C17H20N4O6" ;
+            schema:name "(-)-Riboflavin",
+                "6,7-Dimethyl-9-D-ribitylisoalloxazine",
+                "7,8-Dimethyl-10-ribitylisoalloxazine",
+                "Beflavine",
+                "Flavaxin",
+                "Flaxain",
+                "Hyflavin",
+                "Lactobene",
+                "Lactoflavin",
+                "Ovoflavin",
+                "Ribipca",
+                "Riboderm",
+                "Riboflavinequinone",
+                "Ribosyn",
+                "Ribotone",
+                "Ribovel",
+                "Vitaflavine",
+                "Vitamin B2",
+                "Vitamin G" ;
+            schema:smiles "OCC(O)C(O)C(O)CN(c21)C(=N3)C(C(=O)NC(=O)3)=Nc(cc(C)c(C)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 4.934e+02 ;
+            mbo:mz 1.720888e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 361 ],
+        [ mbo:intensity 3.788e+02 ;
+            mbo:mz 1.980686e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 277 ],
+        [ mbo:intensity 9.784e+02 ;
+            mbo:mz 2.430895e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 717 ],
+        [ mbo:intensity 1.364e+03 ;
+            mbo:mz 3.771461e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.771461e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004l-0569000000-874b71fdc78d04853bf0" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "(-)-Riboflavin; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

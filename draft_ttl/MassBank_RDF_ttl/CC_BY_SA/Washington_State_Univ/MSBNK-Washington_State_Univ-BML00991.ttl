@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00991 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00991" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "20 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.382" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,4,5,6-tetrahydroxy-2H-3,4,5,6-tetrahydropyran-2-carboxylic acid",
+                "3,4,5,6-tetrahydroxyoxane-2-carboxylic acid",
+                "Glucuronic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.940427e+02 ;
+            rdfs:seeAlso cas:528-16-5,
+                chemspider:590,
+                pubchem:CID610 ;
+            schema:inChI "InChI=1S/C6H10O7/c7-1-2(8)4(5(10)11)13-6(12)3(1)9/h1-4,6-9,12H,(H,10,11)" ;
+            schema:inChIKey inchikey:AEMOLEFTQBMNLQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H10O7" ;
+            schema:name "3,4,5,6-tetrahydroxy-2H-3,4,5,6-tetrahydropyran-2-carboxylic acid",
+                "3,4,5,6-tetrahydroxyoxane-2-carboxylic acid",
+                "Glucuronic acid" ;
+            schema:smiles "C1(C(C(OC(C1O)O)C(=O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.91e+02 ;
+            mbo:mz 1.010234e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 330 ],
+        [ mbo:intensity 2.2e+01 ;
+            mbo:mz 1.020184e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 9.9e+01 ;
+            mbo:mz 1.030047e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 8.82e+02 ;
+            mbo:mz 1.130239e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.2e+01 ;
+            mbo:mz 1.130577e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 5.9e+01 ;
+            mbo:mz 1.311796e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 1.57777e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 34 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.13e+02 ;
+            mbo:precursor_mz 1.930354e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-03di-0900000000-c2c594d15b1874131f59" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.052" ;
+    skos:definition "Glucuronic acid; LC-ESI-QTOF; MS2; CE 20 ev; [M-H]-" .
+

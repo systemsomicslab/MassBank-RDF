@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001022 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001022" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID3047429",
+                "Dexamethasone phosphate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.721662e+02 ;
+            rdfs:seeAlso cas:312-93-6 ;
+            schema:inChI "InChI=1S/C22H30FO8P/c1-12-8-16-15-5-4-13-9-14(24)6-7-19(13,2)21(15,23)17(25)10-20(16,3)22(12,27)18(26)11-31-32(28,29)30/h6-7,9,12,15-17,25,27H,4-5,8,10-11H2,1-3H3,(H2,28,29,30)" ;
+            schema:inChIKey inchikey:VQODGRNSFPNSQE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H30FO8P" ;
+            schema:name "DTXSID3047429",
+                "Dexamethasone phosphate" ;
+            schema:smiles "CC1CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)COP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.909694e+01 ;
+            mbo:mz 7.895905e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 391 ],
+        [ mbo:intensity 1.879136e+01 ;
+            mbo:mz 9.696962e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 188 ],
+        [ mbo:intensity 2.970097e+00 ;
+            mbo:mz 1.389802e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 2.665481e+00 ;
+            mbo:mz 4.411484e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.361268e+00 ;
+            mbo:mz 4.531484e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.71159e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.71159e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00di-5000900000-4523d8643b88ad0fe26d" ;
+    skos:definition "Dexamethasone phosphate; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001076 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001076" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chlorendic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.858241e+02 ;
+            rdfs:seeAlso cas:115-28-6,
+                pubchem:CID8266 ;
+            schema:inChI "InChI=1S/C9H4Cl6O4/c10-3-4(11)8(13)2(6(18)19)1(5(16)17)7(3,12)9(8,14)15/h1-2H,(H,16,17)(H,18,19)" ;
+            schema:inChIKey inchikey:DJKGDNKYTKCJKD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H4Cl6O4" ;
+            schema:name "Chlorendic acid" ;
+            schema:smiles "OC(=O)C1C(C(O)=O)C2(Cl)C(Cl)=C(Cl)C1(Cl)C2(Cl)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 9.334374e+01 ;
+            mbo:mz 3.49694e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 933 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.769071e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.751998e+01 ;
+            mbo:mz 2.04902e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 275 ],
+        [ mbo:intensity 2.355702e+00 ;
+            mbo:mz 2.248685e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 4.267603e+00 ;
+            mbo:mz 2.328969e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 7.714946e+00 ;
+            mbo:mz 2.488919e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 77 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.848168e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0059-8930000000-ce245b76f9d34c034144" ;
+    skos:definition "Chlorendic acid; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

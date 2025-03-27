@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000162 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-11)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000162" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, A. Svatos, R.K. Maddula, C. Boettcher and S. Boecker. Computing fragmentation trees from tandem mass spectrometry data. Anal. Chem., 2011, 83, 1243-1251 doi:10.1021/ac101825k" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "818.489 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bergapten" ;
+            mbo:ch_compound_class "Natural Product; Benzopyran" ;
+            mbo:ch_exact_mass 2.160423e+02 ;
+            rdfs:seeAlso pubchem:CID2355 ;
+            schema:inChI "InChI=1S/C12H8O4/c1-14-12-7-2-3-11(13)16-10(7)6-9-8(12)4-5-15-9/h2-6H,1H3" ;
+            schema:inChIKey inchikey:BGEBZHIAGXMEMV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H8O4" ;
+            schema:name "Bergapten" ;
+            schema:smiles "COC1=C2C=CC(=O)OC2=CC3=C1C=CO3" ] ;
+    mbo:has_peak [ mbo:intensity 6.016587e+07 ;
+            mbo:mz 2.170499e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.960866e+06 ;
+            mbo:mz 2.180529e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 8.807479e+05 ;
+            mbo:mz 2.190548e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.903841e+04 ;
+            mbo:mz 2.200571e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0090000000-77ef272f0eb06ad493e4" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "Bergapten; LC-ESI-ITFT; MS; [M+H]+; isotope pattern" .
+

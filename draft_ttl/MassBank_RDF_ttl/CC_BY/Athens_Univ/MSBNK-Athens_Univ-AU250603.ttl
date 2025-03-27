@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU250603 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-04-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU250603" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "13.044 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Dicyclohexyl phthalate",
+                "Dicyclohexylphthalate",
+                "dicyclohexyl benzene-1,2-dicarboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.301831e+02 ;
+            rdfs:seeAlso cas:84-62-8,
+                chemspider:6519,
+                pubchem:CID6777 ;
+            schema:inChI "InChI=1S/C20H26O4/c21-19(23-15-9-3-1-4-10-15)17-13-7-8-14-18(17)20(22)24-16-11-5-2-6-12-16/h7-8,13-16H,1-6,9-12H2" ;
+            schema:inChIKey inchikey:VOWAEIGWURALJQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H26O4" ;
+            schema:name "Dicyclohexyl phthalate",
+                "Dicyclohexylphthalate",
+                "dicyclohexyl benzene-1,2-dicarboxylate" ;
+            schema:smiles "O=C(OC1CCCCC1)C1=CC=CC=C1C(=O)OC1CCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 4.166e+04 ;
+            mbo:mz 1.210278e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.508128e+06 ;
+            mbo:mz 1.490232e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.9792e+05 ;
+            mbo:mz 1.670329e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 1.884e+04 ;
+            mbo:mz 1.680359e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.311907e+02 ;
+            mbo:precursor_mz 3.311904e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0002-0900000000-164881bbe43b1840d207" ;
+    rdfs:comment "INTERNAL_ID 2506" ;
+    skos:definition "Dicyclohexylphthalate; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

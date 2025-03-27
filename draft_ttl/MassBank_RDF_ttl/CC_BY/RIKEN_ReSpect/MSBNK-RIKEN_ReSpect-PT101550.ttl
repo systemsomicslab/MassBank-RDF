@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT101550 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT101550" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-amino-3-(3,4-dihydroxyphenyl)propanoic acid",
+                "3,4-Dihydroxy-L-phenylalanine",
+                "3-(3,4-Dihydroxyphenyl)-L-alanine",
+                "L-3-Hydroxytyrosine",
+                "L-DOPA",
+                "Levodopa" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Phenylalanine" ;
+            mbo:ch_exact_mass 1.9719e+02 ;
+            rdfs:seeAlso cas:59-92-7 ;
+            schema:inChI "InChI=1S/C9H11NO4/c10-6(9(13)14)3-5-1-2-7(11)8(12)4-5/h1-2,4,6,11-12H,3,10H2,(H,13,14)" ;
+            schema:inChIKey inchikey:WTDRDQBEARUVNC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H11NO4" ;
+            schema:name "(2S)-2-amino-3-(3,4-dihydroxyphenyl)propanoic acid",
+                "3,4-Dihydroxy-L-phenylalanine",
+                "3-(3,4-Dihydroxyphenyl)-L-alanine",
+                "L-3-Hydroxytyrosine",
+                "L-DOPA",
+                "Levodopa" ;
+            schema:smiles "C1=CC(=C(C=C1CC(C(=O)O)N)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.411e+01 ;
+            mbo:mz 1.520717e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 8.209e+00 ;
+            mbo:mz 1.810496e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 1.352e+02 ;
+            mbo:mz 1.980766e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.980766e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-0900000000-df116b84981cf4a1371a" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "L-DOPA, 3-(3,4-Dihydroxyphenyl)-L-alanine, L-3-Hydroxytyrosine, Levodopa, 3,4-Dihydroxy-L-phenylalanine, (2S)-2-amino-3-(3,4-dihydroxyphenyl)propanoic acid; LC-ESI-QTOF; MS2" .
+

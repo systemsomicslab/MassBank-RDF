@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001234 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001234" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID9035175",
+                "Kinetin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.150807e+02 ;
+            rdfs:seeAlso cas:525-79-1,
+                pubchem:CID3830 ;
+            schema:inChI "InChI=1S/C10H9N5O/c1-2-7(16-3-1)4-11-9-8-10(13-5-12-8)15-6-14-9/h1-3,5-6H,4H2,(H2,11,12,13,14,15)" ;
+            schema:inChIKey inchikey:QANMHLXAZMSUEX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H9N5O" ;
+            schema:name "DTXSID9035175",
+                "Kinetin" ;
+            schema:smiles "C(NC1NC=NC2=NC=NC2=1)C1=CC=CO1" ] ;
+    mbo:has_peak [ mbo:intensity 4.962622e+00 ;
+            mbo:mz 5.303858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 3.884287e+00 ;
+            mbo:mz 2.16088e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 8.103349e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.381768e+00 ;
+            mbo:mz 8.106988e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 2.295321e+00 ;
+            mbo:mz 8.107709e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 5.182381e+00 ;
+            mbo:mz 8.203997e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 2.508003e+00 ;
+            mbo:mz 1.300849e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.436966e+00 ;
+            mbo:mz 1.360618e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.657461e+00 ;
+            mbo:mz 1.480618e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 2.542879e+00 ;
+            mbo:mz 1.880931e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 25 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.16088e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-9100000000-643c26b0b0228bee68f0" ;
+    skos:definition "Kinetin; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

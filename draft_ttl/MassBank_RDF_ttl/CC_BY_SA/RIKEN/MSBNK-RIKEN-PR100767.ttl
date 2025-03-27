@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100767 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100767" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Coumaric Acid",
+                "3-Hydroxycinnamic acid",
+                "m-Coumaric Acid",
+                "m-Hydroxycinnamic acid" ;
+            mbo:ch_compound_class "Carboxylic acids" ;
+            mbo:ch_exact_mass 1.640473e+02 ;
+            rdfs:seeAlso cas:588-30-7,
+                chemspider:553147,
+                pubchem:CID637541 ;
+            schema:inChI "InChI=1S/C9H8O3/c10-8-3-1-2-7(6-8)4-5-9(11)12/h1-6,10H,(H,11,12)/b5-4+" ;
+            schema:inChIKey inchikey:KKSDGJDHHZEWEP-SNAWJCMRSA-N ;
+            schema:molecularFormula "C9H8O3" ;
+            schema:name "3-Coumaric Acid",
+                "3-Hydroxycinnamic acid",
+                "m-Coumaric Acid",
+                "m-Hydroxycinnamic acid" ;
+            schema:smiles "OC(=O)C=Cc(c1)cc(O)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.289e+02 ;
+            mbo:mz 1.458822e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.055e+01 ;
+            mbo:mz 1.62885e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 82 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.630395e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-0900000000-d256885fb0f35d3d6680" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "m-Hydroxycinnamic acid; LC-ESI-QTOF; MS2; CE:30 V; [M-H]-" .
+

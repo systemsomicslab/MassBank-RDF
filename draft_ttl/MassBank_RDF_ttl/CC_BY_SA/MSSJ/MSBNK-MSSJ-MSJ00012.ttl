@@ -1,0 +1,80 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00012 a mbo:MassSpectrum ;
+    dcterms:creator "CASMI2013 organizers" ;
+    dcterms:date "2016-01-19 (Created 2014-07-22)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00012" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Mass Spectrometry Society of Japan under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "APEX-II FT-ICR (Bruker Daltonics)" ;
+            mbo:collision_energy "SORI CID" ;
+            mbo:instrument_type "ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phosphatidyl-6-acetyl-glucose(18:0/20:0)" ;
+            mbo:ch_compound_class "Natural Product; Phospholipids" ;
+            mbo:ch_exact_mass 9.366303e+02 ;
+            rdfs:seeAlso pubchem:CID145994441 ;
+            schema:inChI "InChI=1S/C49H93O14P/c1-4-6-8-10-12-14-16-18-20-21-23-25-27-29-31-33-35-37-45(52)61-42(38-59-44(51)36-34-32-30-28-26-24-22-19-17-15-13-11-9-7-5-2)39-60-64(56,57)63-49-48(55)47(54)46(53)43(62-49)40-58-41(3)50/h42-43,46-49,53-55H,4-40H2,1-3H3,(H,56,57)/t42-,43+,46+,47-,48+,49-/m1/s1" ;
+            schema:inChIKey inchikey:DSHVCPCRTVONJU-BXYIFZQRSA-N ;
+            schema:molecularFormula "C49H93O14P" ;
+            schema:name "Phosphatidyl-6-acetyl-glucose(18:0/20:0)" ;
+            schema:smiles "CCCCCCCCCCCCCCCCCCCC(=O)O[C@H](COC(CCCCCCCCCCCCCCCCC)=O)CO[P](O)(=O)O[C@@H]1[C@H]([C@@H]([C@H]([C@H](COC(C)=O)O1)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.4067e+06 ;
+            mbo:mz 1.529958e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 451 ],
+        [ mbo:intensity 1.5493e+06 ;
+            mbo:mz 9.366273e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 1.4184e+07 ;
+            mbo:mz 2.832641e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.266e+06 ;
+            mbo:mz 2.842675e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 5.8443e+06 ;
+            mbo:mz 3.112954e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 412 ],
+        [ mbo:intensity 1.0795e+06 ;
+            mbo:mz 3.122985e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 3.8957e+06 ;
+            mbo:mz 4.192563e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 5.5384e+05 ;
+            mbo:mz 4.202601e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 8.5565e+05 ;
+            mbo:mz 4.472876e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 1.6229e+06 ;
+            mbo:mz 9.356222e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 114 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.356219e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-0393200001-9ea014934718b3938cf7" ;
+    rdfs:comment "[MS1] MSJ000011" ;
+    skos:definition "Phosphatidyl-6-acetyl-glucose(18:0/20:0); ESI-ITFT; MS2; [M-H]-" .
+

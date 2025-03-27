@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU581353 a mbo:MassSpectrum ;
+    dcterms:creator "Varvara Nikolopoulou, Anthi Panara, Maria Christina Nika, Nikolaos S. Thomaidis, University of Athens" ;
+    dcterms:date "2019-11-23"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU581353" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "11.350 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-chloro-3-[4-[2-[4-(3-chloro-2-hydroxypropoxy)phenyl]propan-2-yl]phenoxy]propan-2-ol",
+                "Bisphenol A bis(3-chloro-2-hydroxypropyl) ether" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.121208e+02 ;
+            rdfs:seeAlso cas:4809-35-2,
+                chemspider:2720615,
+                pubchem:CID3479589 ;
+            schema:inChI "InChI=1S/C21H26Cl2O4/c1-21(2,15-3-7-19(8-4-15)26-13-17(24)11-22)16-5-9-20(10-6-16)27-14-18(25)12-23/h3-10,17-18,24-25H,11-14H2,1-2H3" ;
+            schema:inChIKey inchikey:PTCFDJRJOGPUFE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H26Cl2O4" ;
+            schema:name "1-chloro-3-[4-[2-[4-(3-chloro-2-hydroxypropoxy)phenyl]propan-2-yl]phenoxy]propan-2-ol",
+                "Bisphenol A bis(3-chloro-2-hydroxypropyl) ether" ;
+            schema:smiles "CC(C)(C1=CC=C(C=C1)OCC(CCl)O)C2=CC=C(C=C2)OCC(CCl)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.0044e+04 ;
+            mbo:mz 1.350795e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.396e+03 ;
+            mbo:mz 1.360829e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 1.628e+03 ;
+            mbo:mz 2.270838e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 162 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.30154e+02 ;
+            mbo:precursor_mz 4.301557e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-0910000000-ec60c6feb1fada339269" ;
+    rdfs:comment "INTERNAL_ID 5813" ;
+    skos:definition "Bisphenol A bis(3-chloro-2-hydroxypropyl) ether; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M+NH4]+" .
+

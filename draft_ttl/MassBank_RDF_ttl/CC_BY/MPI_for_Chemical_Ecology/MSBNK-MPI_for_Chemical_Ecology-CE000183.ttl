@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000183 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-11)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000183" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, A. Svatos, R.K. Maddula, C. Boettcher and S. Boecker. Computing fragmentation trees from tandem mass spectrometry data. Anal. Chem., 2011, 83, 1243-1251 doi:10.1021/ac101825k" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "55eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "909.785 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Rifampicin" ;
+            mbo:ch_compound_class "Natural Product; Antibiotics" ;
+            mbo:ch_exact_mass 8.224051e+02 ;
+            rdfs:seeAlso pubchem:CID135398735 ;
+            schema:inChI "InChI=1S/C43H58N4O12/c1-21-12-11-13-22(2)42(55)45-33-28(20-44-47-17-15-46(9)16-18-47)37(52)30-31(38(33)53)36(51)26(6)40-32(30)41(54)43(8,59-40)57-19-14-29(56-10)23(3)39(58-27(7)48)25(5)35(50)24(4)34(21)49/h11-14,19-21,23-25,29,34-35,39,49-53H,15-18H2,1-10H3,(H,45,55)/b12-11+,19-14+,22-13-,44-20+/t21-,23+,24+,25+,29-,34-,35+,39+,43-/m0/s1" ;
+            schema:inChIKey inchikey:JQXXHWHPUNPDRT-WLSIYKJHSA-N ;
+            schema:molecularFormula "C43H58N4O12" ;
+            schema:name "Rifampicin" ;
+            schema:smiles "C[C@H]1/C=C/C=C(C(=O)NC2=C(C(=C3C(=C2O)C(=C(C4=C3C(=O)[C@](O4)(O/C=C/[C@@H]([C@H]([C@H]([C@@H]([C@@H]([C@@H]([C@H]1O)C)O)C)OC(=O)C)C)OC)C)C)O)O)/C=N/N5CCN(CC5)C)/C" ] ;
+    mbo:has_peak [ mbo:intensity 1.159678e+03 ;
+            mbo:mz 2.327869e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.29916e+03 ;
+            mbo:mz 4.322303e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.082233e+03 ;
+            mbo:mz 4.391151e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.212413e+03 ;
+            mbo:mz 4.982192e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.027919e+05 ;
+            mbo:mz 5.392137e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.108986e+03 ;
+            mbo:mz 5.554685e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.235638e+03 ;
+            mbo:mz 2.379969e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.15944e+03 ;
+            mbo:mz 2.885855e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.295812e+03 ;
+            mbo:mz 3.045599e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.397545e+03 ;
+            mbo:mz 3.250462e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.325527e+03 ;
+            mbo:mz 3.586447e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.470499e+03 ;
+            mbo:mz 3.65341e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.462939e+03 ;
+            mbo:mz 3.734895e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.443482e+03 ;
+            mbo:mz 4.131368e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.234124e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-000i-0000090000-38cb0ab2dca66db599c5" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "Rifampicin; LC-ESI-ITFT; MS2; CE 55 eV; [M+H]+" .
+

@@ -1,0 +1,108 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU018551 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU018551" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "18.108 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Flufenpyr-ethyl" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.0805e+02 ;
+            rdfs:seeAlso cas:188489-07-8,
+                chemspider:2340733,
+                pubchem:CID3083546 ;
+            schema:inChI "InChI=1S/C16H13ClF4N2O4/c1-3-26-14(24)7-27-13-5-12(11(18)4-10(13)17)23-15(25)8(2)9(6-22-23)16(19,20)21/h4-6H,3,7H2,1-2H3" ;
+            schema:inChIKey inchikey:DNUAYCRATWAJQE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H13ClF4N2O4" ;
+            schema:name "Flufenpyr-ethyl" ;
+            schema:smiles "CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 1.28066e+04 ;
+            mbo:mz 2.799857e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 7.0474e+03 ;
+            mbo:mz 3.510597e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.44971e+04 ;
+            mbo:mz 3.610009e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 6.78536e+04 ;
+            mbo:mz 3.870366e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 213 ],
+        [ mbo:intensity 3.17841e+05 ;
+            mbo:mz 4.070428e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.37187e+04 ;
+            mbo:mz 2.85005e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 6.9736e+03 ;
+            mbo:mz 3.00982e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.61981e+04 ;
+            mbo:mz 3.13e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 4.2962e+03 ;
+            mbo:mz 3.189931e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 9.3569e+03 ;
+            mbo:mz 3.20988e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 2.2238e+03 ;
+            mbo:mz 3.300037e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.04992e+04 ;
+            mbo:mz 3.409946e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 1.65639e+04 ;
+            mbo:mz 3.470238e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 52 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.129856e+02 ;
+            mbo:precursor_mz 4.070427e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0a4i-0015900000-1c822b21f4142e8a5de9" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Flufenpyr-ethyl; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

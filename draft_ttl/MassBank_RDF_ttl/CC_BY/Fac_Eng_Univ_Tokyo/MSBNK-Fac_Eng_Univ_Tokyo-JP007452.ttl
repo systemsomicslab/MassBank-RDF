@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP007452 a mbo:MassSpectrum ;
+    dcterms:creator "YAMAMOTO M, DEP. CHEMISTRY, FAC. SCIENCE, NARA WOMEN'S UNIV." ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP007452" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "HITACHI M-80" ;
+            mbo:instrument_type "CI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,1-DIETHOXYETHANE",
+                "ACETAL" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.180994e+02 ;
+            rdfs:seeAlso cas:105-57-7 ;
+            schema:inChI "InChI=1S/C6H14O2/c1-4-7-6(3)8-5-2/h6H,4-5H2,1-3H3" ;
+            schema:inChIKey inchikey:DHKHKXVYLBGOIT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H14O2" ;
+            schema:name "1,1-DIETHOXYETHANE",
+                "ACETAL" ;
+            schema:smiles "CCOC(C)OCC" ] ;
+    mbo:has_peak [ mbo:intensity 6.7e-01 ;
+            mbo:mz 8.3e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.29e+00 ;
+            mbo:mz 9.8e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 9.9e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.81e+00 ;
+            mbo:mz 1e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 5.33e+00 ;
+            mbo:mz 1.01e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 3.375e+01 ;
+            mbo:mz 1.17e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 337 ],
+        [ mbo:intensity 2.14e+00 ;
+            mbo:mz 1.18e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0002-9400000000-516028f89361714358f7" ;
+    skos:definition "ACETAL; CI-B; MS" .
+

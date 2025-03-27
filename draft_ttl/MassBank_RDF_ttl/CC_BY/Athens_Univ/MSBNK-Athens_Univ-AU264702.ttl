@@ -1,0 +1,89 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU264702 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU264702" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.998 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-(2-(2,4,6-Trichlorophenoxy)ethyl)propan-1-amine",
+                "N-[2-(2,4,6-trichlorophenoxy)ethyl]propan-1-amine",
+                "Prochloraz BTS40348" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.810141e+02 ;
+            rdfs:seeAlso cas:67747-01-7,
+                chemspider:3067696,
+                pubchem:CID3842173 ;
+            schema:inChI "InChI=1S/C11H14Cl3NO/c1-2-3-15-4-5-16-11-9(13)6-8(12)7-10(11)14/h6-7,15H,2-5H2,1H3" ;
+            schema:inChIKey inchikey:CLFQSOIBYICELN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H14Cl3NO" ;
+            schema:name "N-(2-(2,4,6-Trichlorophenoxy)ethyl)propan-1-amine",
+                "N-[2-(2,4,6-trichlorophenoxy)ethyl]propan-1-amine",
+                "Prochloraz BTS40348" ;
+            schema:smiles "CCCNCCOC1=C(Cl)C=C(Cl)C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 7.104e+03 ;
+            mbo:mz 2.229466e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 4.88e+03 ;
+            mbo:mz 2.249438e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 8.556e+03 ;
+            mbo:mz 2.399732e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 7.36e+03 ;
+            mbo:mz 2.419706e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 3.3e+03 ;
+            mbo:mz 2.460439e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.586e+05 ;
+            mbo:mz 2.820206e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.7116e+04 ;
+            mbo:mz 2.830236e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 103 ],
+        [ mbo:intensity 2.69036e+05 ;
+            mbo:mz 2.840175e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 749 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.820209e+02 ;
+            mbo:precursor_mz 2.820214e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-001i-0090000000-1b16dacd3c760192bffc" ;
+    rdfs:comment "INTERNAL_ID 2647" ;
+    skos:definition "Prochloraz BTS40348; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

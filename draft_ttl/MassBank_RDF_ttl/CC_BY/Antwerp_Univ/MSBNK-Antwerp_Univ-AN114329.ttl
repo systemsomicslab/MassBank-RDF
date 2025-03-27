@@ -1,0 +1,91 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN114329 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN114329" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "2.845 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(((6-Carboxy-2-propylhexyl)oxy)carbonyl)benzoic acid",
+                "2-(6-carboxy-2-propylhexoxy)carbonylbenzoic acid",
+                "Mono(2-propyl-6-carboxyhexyl) phthalate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.361573e+02 ;
+            rdfs:seeAlso pubchem:CID139036037 ;
+            schema:inChI "InChI=1S/C18H24O6/c1-2-7-13(8-3-6-11-16(19)20)12-24-18(23)15-10-5-4-9-14(15)17(21)22/h4-5,9-10,13H,2-3,6-8,11-12H2,1H3,(H,19,20)(H,21,22)" ;
+            schema:inChIKey inchikey:DPQMLPCFIOCYFY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H24O6" ;
+            schema:name "2-(((6-Carboxy-2-propylhexyl)oxy)carbonyl)benzoic acid",
+                "2-(6-carboxy-2-propylhexoxy)carbonylbenzoic acid",
+                "Mono(2-propyl-6-carboxyhexyl) phthalate" ;
+            schema:smiles "CCCC(CCCCC(=O)O)COC(=O)c1ccccc1C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.13166e+04 ;
+            mbo:mz 7.70401e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 504 ],
+        [ mbo:intensity 2.2409e+04 ;
+            mbo:mz 1.871341e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.12759e+04 ;
+            mbo:mz 1.210294e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 503 ],
+        [ mbo:intensity 5.125e+02 ;
+            mbo:mz 1.391127e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 9.7496e+03 ;
+            mbo:mz 1.41128e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 435 ],
+        [ mbo:intensity 4.559e+02 ;
+            mbo:mz 1.470081e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 6.817e+02 ;
+            mbo:mz 1.511112e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 3.921e+02 ;
+            mbo:mz 1.650211e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 4.494e+02 ;
+            mbo:mz 1.691239e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 8.687e+02 ;
+            mbo:mz 1.851183e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.351505e+02 ;
+            mbo:precursor_mz 3.3515e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-009i-2900000000-27926da0ca1312c9613b" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Mono(2-propyl-6-carboxyhexyl) phthalate; LC-ESI-QTOF; MS2; CE: 25eV; R=7000; [M-H]-" .
+

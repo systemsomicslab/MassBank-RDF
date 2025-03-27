@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR303747 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR303747" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.426533" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[(6-Deoxy-alpha-L-mannopyranosyl)oxy]-7-(beta-D-glucopyranosyloxy)-5-hydroxy-2-(4-methoxyphenyl)-8-(3-methyl-2-buten-1-yl)-4H-1-benzopyran-4-one",
+                "Icariin" ;
+            mbo:ch_compound_class "Flavonoid-7-O-glycosides" ;
+            mbo:ch_exact_mass 6.762367e+02 ;
+            rdfs:seeAlso cas:489-32-7,
+                chemspider:4477421,
+                pubchem:CID5318997 ;
+            schema:inChI "InChI=1S/C33H40O15/c1-13(2)5-10-17-19(45-33-28(42)26(40)23(37)20(12-34)46-33)11-18(35)21-24(38)31(48-32-27(41)25(39)22(36)14(3)44-32)29(47-30(17)21)15-6-8-16(43-4)9-7-15/h5-9,11,14,20,22-23,25-28,32-37,39-42H,10,12H2,1-4H3/t14-,20+,22-,23+,25+,26-,27+,28+,32-,33+/m0/s1" ;
+            schema:inChIKey inchikey:TZJALUIVHRYQQB-XLRXWWTNSA-N ;
+            schema:molecularFormula "C33H40O15" ;
+            schema:name "3-[(6-Deoxy-alpha-L-mannopyranosyl)oxy]-7-(beta-D-glucopyranosyloxy)-5-hydroxy-2-(4-methoxyphenyl)-8-(3-methyl-2-buten-1-yl)-4H-1-benzopyran-4-one",
+                "Icariin" ;
+            schema:smiles "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(OC3=C(C2=O)C(=CC(=C3CC=C(C)C)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)C5=CC=C(C=C5)OC)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.8e+01 ;
+            mbo:mz 3.6913e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 3.3e+02 ;
+            mbo:mz 5.31187e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 330 ],
+        [ mbo:intensity 1.1e+02 ;
+            mbo:mz 5.321883e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 5.33193e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1e+03 ;
+            mbo:mz 6.772438e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.77244e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0000049000-4bb60b5ec33d9dbe7a03" ;
+    rdfs:comment "registered in RIKEN PlaSMA" ;
+    skos:definition "Icariin; LC-ESI-QTOF; MS2" .
+

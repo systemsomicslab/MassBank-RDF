@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000668 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000668" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(2-Aminoethyl)piperazine",
+                "DTXSID2021997" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.291266e+02 ;
+            rdfs:seeAlso cas:140-31-8,
+                pubchem:CID8795 ;
+            schema:inChI "InChI=1S/C6H15N3/c7-1-4-9-5-2-8-3-6-9/h8H,1-7H2" ;
+            schema:inChIKey inchikey:IMUDHTPIFIBORV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H15N3" ;
+            schema:name "1-(2-Aminoethyl)piperazine",
+                "DTXSID2021997" ;
+            schema:smiles "NCCN1CCNCC1" ] ;
+    mbo:has_peak [ mbo:intensity 3.613005e+00 ;
+            mbo:mz 4.404948e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 4.292525e+00 ;
+            mbo:mz 5.604948e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 2.275848e+00 ;
+            mbo:mz 5.806513e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.788401e+00 ;
+            mbo:mz 7.006513e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.323645e+00 ;
+            mbo:mz 8.40682e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 5.09041e+00 ;
+            mbo:mz 8.408078e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 3.372307e+00 ;
+            mbo:mz 8.709167e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.131073e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.098352e+01 ;
+            mbo:mz 1.301339e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 509 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.301339e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-03e9-1900000000-630f6c5a0456b8372235" ;
+    skos:definition "1-(2-Aminoethyl)piperazine; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

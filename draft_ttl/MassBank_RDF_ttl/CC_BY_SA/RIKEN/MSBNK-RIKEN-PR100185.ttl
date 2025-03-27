@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100185 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100185" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-3-(2-Hydroxyphenyl)-2-propenoic acid",
+                "2-Coumarate",
+                "2-Coumaric acid",
+                "2-Hydroxycinnamic acid, predominantly trans",
+                "o-Coumaric acid" ;
+            mbo:ch_compound_class "Carboxylic acids" ;
+            mbo:ch_exact_mass 1.640473e+02 ;
+            rdfs:seeAlso cas:614-60-8,
+                chemspider:553146,
+                knapsack:C00002729,
+                pubchem:CID637540 ;
+            schema:inChI "InChI=1S/C9H8O3/c10-8-4-2-1-3-7(8)5-6-9(11)12/h1-6,10H,(H,11,12)/b6-5+" ;
+            schema:inChIKey inchikey:PMOWTIHVNWZYFI-AATRIKPKSA-N ;
+            schema:molecularFormula "C9H8O3" ;
+            schema:name "(E)-3-(2-Hydroxyphenyl)-2-propenoic acid",
+                "2-Coumarate",
+                "2-Coumaric acid",
+                "2-Hydroxycinnamic acid, predominantly trans",
+                "o-Coumaric acid" ;
+            schema:smiles "OC(=O)C=Cc(c1)c(O)ccc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.963e+01 ;
+            mbo:mz 6.50384e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.739e+01 ;
+            mbo:mz 1.650551e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 1.92e+01 ;
+            mbo:mz 6.90333e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 1.2e+02 ;
+            mbo:mz 7.70382e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 395 ],
+        [ mbo:intensity 2.185e+02 ;
+            mbo:mz 9.1053e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 719 ],
+        [ mbo:intensity 9.039e+01 ;
+            mbo:mz 9.50488e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 298 ],
+        [ mbo:intensity 3.034e+02 ;
+            mbo:mz 1.030533e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.536e+01 ;
+            mbo:mz 1.210633e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 2.761e+02 ;
+            mbo:mz 1.230423e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 909 ],
+        [ mbo:intensity 2.34e+02 ;
+            mbo:mz 1.470425e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 770 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.650551e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0fdn-4900000000-95f5386456c1c353a111" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "2-Coumaric acid; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

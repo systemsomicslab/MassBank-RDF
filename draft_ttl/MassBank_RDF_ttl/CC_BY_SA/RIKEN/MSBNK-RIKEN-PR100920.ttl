@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100920 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100920" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Delphinidin 3-O-rutinoside",
+                "Delphinidin-3-O-(6''-O-alpha-rhamnopyranosyl-beta-glucopyranoside)",
+                "Dp 3-Rut",
+                "delphinidin-3-(6-rhamnosylglucosuide)",
+                "delphinidin-3-rutinoside",
+                "tulipanin" ;
+            mbo:ch_compound_class "Anthocyanidin" ;
+            mbo:ch_exact_mass 6.111612e+02 ;
+            rdfs:seeAlso cas:15674-58-5,
+                chemspider:4590910,
+                knapsack:C00006708,
+                pubchem:CID5492231 ;
+            schema:inChI "InChI=1S/C27H30O16/c1-8-18(32)21(35)23(37)26(40-8)39-7-17-20(34)22(36)24(38)27(43-17)42-16-6-11-12(29)4-10(28)5-15(11)41-25(16)9-2-13(30)19(33)14(31)3-9/h2-6,8,17-18,20-24,26-27,32,34-38H,7H2,1H3,(H4-,28,29,30,31,33)/p+1/t8-,17+,18-,20+,21+,22-,23+,24+,26+,27+/m0/s1" ;
+            schema:inChIKey inchikey:PLKUTZNSKRWCCA-LTSKFBHWSA-O ;
+            schema:molecularFormula "[C27H31O16]+" ;
+            schema:name "Delphinidin 3-O-rutinoside",
+                "Delphinidin-3-O-(6''-O-alpha-rhamnopyranosyl-beta-glucopyranoside)",
+                "Dp 3-Rut",
+                "delphinidin-3-(6-rhamnosylglucosuide)",
+                "delphinidin-3-rutinoside",
+                "tulipanin" ;
+            schema:smiles "C(C5O)(O)C(C)OC(C5O)OCC(O1)C(C(C(C1Oc(c3)c([o+1]c(c4)c(c(O)cc4O)3)c(c2)cc(c(c2O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.197e+02 ;
+            mbo:mz 1.250246e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 4.014e+01 ;
+            mbo:mz 2.990199e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.113e+03 ;
+            mbo:mz 3.000286e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.628e+02 ;
+            mbo:mz 3.010364e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 326 ],
+        [ mbo:intensity 6.373e+01 ;
+            mbo:mz 3.150518e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 4.855e+01 ;
+            mbo:mz 6.091456e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 44 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.091456e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0udi-0009000000-06dd4eb8d0b165f1f55f" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Delphinidin-3-O-(6''-O-alpha-rhamnopyranosyl-beta-glucopyranoside); LC-ESI-QTOF; MS2; CE:30 V; [M-2H]-" .
+

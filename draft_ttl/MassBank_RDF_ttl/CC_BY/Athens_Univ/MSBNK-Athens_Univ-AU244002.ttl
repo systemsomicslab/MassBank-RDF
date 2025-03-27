@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU244002 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-04-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU244002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.516 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Azobenzene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.820844e+02 ;
+            rdfs:seeAlso cas:103-33-3,
+                chemspider:2185 ;
+            schema:inChI "InChI=1S/C12H10N2/c1-3-7-11(8-4-1)13-14-12-9-5-2-6-10-12/h1-10H/b14-13+" ;
+            schema:inChIKey inchikey:DMLAVOWQYNRWNQ-BUHFOSPRSA-N ;
+            schema:molecularFormula "C12H10N2" ;
+            schema:name "Azobenzene" ;
+            schema:smiles "C1=CC=C(C=C1)\\N=N\\C1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 6.96e+02 ;
+            mbo:mz 1.490421e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.68e+02 ;
+            mbo:mz 1.830898e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 528 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.770528e+02 ;
+            mbo:precursor_mz 1.830917e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000t-0900000000-8df34d0716082dd6b761" ;
+    rdfs:comment "INTERNAL_ID 2440" ;
+    skos:definition "Azobenzene; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

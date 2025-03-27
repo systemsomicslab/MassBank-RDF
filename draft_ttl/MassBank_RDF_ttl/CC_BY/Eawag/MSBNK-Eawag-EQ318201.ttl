@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ318201 a mbo:MassSpectrum ;
+    dcterms:creator "Huntscha S, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ318201" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[[4-(dimethylamino)-6-(2,2,2-trifluoroethoxy)-s-triazin-2-yl]carbamoylsulfamoyl]-3-methyl-benzoic acid methyl ester",
+                "Triflusulfuron-methyl" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.921039e+02 ;
+            rdfs:seeAlso cas:126535-15-7,
+                chemspider:83452,
+                pubchem:CID92434 ;
+            schema:inChI "InChI=1S/C17H19F3N6O6S/c1-9-6-5-7-10(12(27)31-4)11(9)33(29,30)25-15(28)22-13-21-14(26(2)3)24-16(23-13)32-8-17(18,19)20/h5-7H,8H2,1-4H3,(H2,21,22,23,24,25,28)" ;
+            schema:inChIKey inchikey:IMEVJVISCHQJRM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H19F3N6O6S" ;
+            schema:name "2-[[4-(dimethylamino)-6-(2,2,2-trifluoroethoxy)-s-triazin-2-yl]carbamoylsulfamoyl]-3-methyl-benzoic acid methyl ester",
+                "Triflusulfuron-methyl" ;
+            schema:smiles "O=C(OC)c1cccc(c1S(=O)(=O)NC(=O)Nc2nc(nc(OCC(F)(F)F)n2)N(C)C)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 9.31164e+05 ;
+            mbo:mz 7.10602e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.267857e+06 ;
+            mbo:mz 9.60554e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.21e+06 ;
+            mbo:mz 2.130213e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.571539e+07 ;
+            mbo:mz 2.380908e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 5.179197e+08 ;
+            mbo:mz 2.6407e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.269021e+07 ;
+            mbo:mz 4.610847e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 82 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.931108e+02 ;
+            mbo:precursor_mz 4.931112e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0090000000-3f599b6f2b0ec10a6fc4" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3182" ;
+    skos:definition "Triflusulfuron-methyl; LC-ESI-QFT; MS2; CE: 15; R=35000; [M+H]+" .
+

@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000313 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000313" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ormetoprim" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.74143e+02 ;
+            rdfs:seeAlso pubchem:CID23418 ;
+            schema:inChI "InChI=1S/C14H18N4O2/c1-8-4-11(19-2)12(20-3)6-9(8)5-10-7-17-14(16)18-13(10)15/h4,6-7H,5H2,1-3H3,(H4,15,16,17,18)" ;
+            schema:inChIKey inchikey:KEEYRKYKLYARHO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H18N4O2" ;
+            schema:name "Ormetoprim" ;
+            schema:smiles "[H]N([H])c(n2)nc(N([H])[H])c(c([H])2)C([H])([H])c(c([H])1)c(C([H])([H])[H])c([H])c(OC([H])([H])[H])c(OC([H])([H])[H])1" ] ;
+    mbo:has_peak [ mbo:intensity 1.174968e+03 ;
+            mbo:mz 8.10444e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 1.477224e+03 ;
+            mbo:mz 2.311224e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 148 ],
+        [ mbo:intensity 1.16433e+02 ;
+            mbo:mz 2.420921e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.33504e+02 ;
+            mbo:mz 2.431182e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.50617e+02 ;
+            mbo:mz 2.451041e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 2.591162e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.00213e+02 ;
+            mbo:mz 2.601259e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 4.5679e+02 ;
+            mbo:mz 2.751472e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 4.733929e+03 ;
+            mbo:mz 1.230662e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 473 ],
+        [ mbo:intensity 2.19583e+02 ;
+            mbo:mz 1.240739e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.01362e+02 ;
+            mbo:mz 1.87096e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.07109e+02 ;
+            mbo:mz 2.141129e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.07663e+02 ;
+            mbo:mz 2.150947e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 2.01916e+02 ;
+            mbo:mz 2.17106e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.98042e+02 ;
+            mbo:mz 2.291066e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 4.98936e+02 ;
+            mbo:mz 2.301131e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 50 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.751509e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 16 ;
+    mbo:pk_splash "splash10-0a4i-0390000000-38d2b7165276e055a153" ;
+    skos:definition "Ormetoprim; LC-ESI-QTOF; MS2; CE:30 eV; [M+H]+" .
+

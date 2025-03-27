@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002340 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002340" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID3044702",
+                "N-Benzyl-N-hydroxy-1-phenylmethanamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.131154e+02 ;
+            rdfs:seeAlso cas:621-07-8,
+                pubchem:CID69297 ;
+            schema:inChI "InChI=1S/C14H15NO/c16-15(11-13-7-3-1-4-8-13)12-14-9-5-2-6-10-14/h1-10,16H,11-12H2" ;
+            schema:inChIKey inchikey:GXELTROTKVKZBQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H15NO" ;
+            schema:name "DTXSID3044702",
+                "N-Benzyl-N-hydroxy-1-phenylmethanamine" ;
+            schema:smiles "ON(CC1C=CC=CC=1)CC1C=CC=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 2.794036e+00 ;
+            mbo:mz 4.602874e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 9.105423e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.961822e+00 ;
+            mbo:mz 9.109916e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.372418e+00 ;
+            mbo:mz 9.111174e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.86553e+01 ;
+            mbo:mz 1.060651e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 186 ],
+        [ mbo:intensity 1.379856e+00 ;
+            mbo:mz 1.2206e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.43564e+00 ;
+            mbo:mz 1.811012e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 1.049639e+00 ;
+            mbo:mz 1.961121e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.5555e+01 ;
+            mbo:mz 2.141226e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 255 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.141226e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0006-9220000000-7302d61a10403f679cd7" ;
+    skos:definition "N-Benzyl-N-hydroxy-1-phenylmethanamine; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

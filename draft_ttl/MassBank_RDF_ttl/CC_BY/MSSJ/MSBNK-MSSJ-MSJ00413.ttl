@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00413 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2020-10-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00413" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "20 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Trametenolic acid" ;
+            mbo:ch_compound_class "Non-natural product; Triterpenoid" ;
+            mbo:ch_exact_mass 4.563603e+02 ;
+            rdfs:seeAlso cas:24160-36-9,
+                chemspider:10193870,
+                pubchem:CID12309443 ;
+            schema:inChI "InChI=1S/C30H48O3/c1-19(2)9-8-10-20(26(32)33)21-13-17-30(7)23-11-12-24-27(3,4)25(31)15-16-28(24,5)22(23)14-18-29(21,30)6/h9,20-21,24-25,31H,8,10-18H2,1-7H3,(H,32,33)/t20-,21-,24+,25+,28-,29-,30+/m1/s1" ;
+            schema:inChIKey inchikey:NBSBUIQBEPROBM-GIICLEHTSA-N ;
+            schema:molecularFormula "C30H48O3" ;
+            schema:name "Trametenolic acid" ;
+            schema:smiles "CC(=CCC[C@H]([C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C)C(=O)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.46757e+02 ;
+            mbo:mz 4.553494e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.553531e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0a4i-0000900000-38ef310378f0b407d7f1" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Trametenolic acid; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 20 V" .
+

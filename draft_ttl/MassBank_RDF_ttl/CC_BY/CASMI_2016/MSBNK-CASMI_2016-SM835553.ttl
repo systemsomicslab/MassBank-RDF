@@ -1,0 +1,96 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM835553 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM835553" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "14.274 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,4,6-trichloro-2-[(2,3,5-trichloro-6-hydroxyphenyl)methyl]phenol",
+                "Hexachlorophen",
+                "Hexachlorophene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.038499e+02 ;
+            rdfs:seeAlso cas:70-30-4,
+                chemspider:3472,
+                pubchem:CID3598 ;
+            schema:inChI "InChI=1S/C13H6Cl6O2/c14-6-2-8(16)12(20)4(10(6)18)1-5-11(19)7(15)3-9(17)13(5)21/h2-3,20-21H,1H2" ;
+            schema:inChIKey inchikey:ACGUYXCXAPNIKK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H6Cl6O2" ;
+            schema:name "3,4,6-trichloro-2-[(2,3,5-trichloro-6-hydroxyphenyl)methyl]phenol",
+                "Hexachlorophen",
+                "Hexachlorophene" ;
+            schema:smiles "OC1=C(CC2=C(Cl)C(Cl)=CC(Cl)=C2O)C(Cl)=C(Cl)C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 7.263e+03 ;
+            mbo:mz 1.329615e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.886895e+05 ;
+            mbo:mz 1.58941e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 3.099587e+06 ;
+            mbo:mz 1.949176e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 995 ],
+        [ mbo:intensity 3.419e+03 ;
+            mbo:mz 2.529344e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.18517e+04 ;
+            mbo:mz 2.669179e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.125103e+05 ;
+            mbo:mz 3.028943e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.13044e+04 ;
+            mbo:mz 3.308891e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 8.580214e+05 ;
+            mbo:mz 3.668657e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 276 ],
+        [ mbo:intensity 3.110767e+06 ;
+            mbo:mz 4.028425e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.10021e+01 ;
+            mbo:precursor_mz 4.028426e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0udl-0902800000-eab954bdd46ef95ea0e6" ;
+    rdfs:comment "INTERNAL_ID 8355" ;
+    skos:definition "Hexachlorophene; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M-H]-" .
+

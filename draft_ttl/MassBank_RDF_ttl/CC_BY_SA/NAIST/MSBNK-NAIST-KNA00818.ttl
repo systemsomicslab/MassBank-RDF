@@ -1,0 +1,96 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00818 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-19, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00818" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "8.869915 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5'-AMP",
+                "5'-Adenosine monophosphate",
+                "5'-Adenylic acid",
+                "AMP",
+                "Adenosine 5'-monophosphate",
+                "Adenosine 5'-phosphate",
+                "Adenylate",
+                "Adenylic acid" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 3.470631e+02 ;
+            rdfs:seeAlso cas:61-19-8,
+                knapsack:C00019347,
+                pubchem:CID3322 ;
+            schema:inChI "InChI=1S/C10H14N5O7P/c11-8-5-9(13-2-12-8)15(3-14-5)10-7(17)6(16)4(22-10)1-21-23(18,19)20/h2-4,6-7,10,16-17H,1H2,(H2,11,12,13)(H2,18,19,20)/t4-,6-,7-,10-/m1/s1" ;
+            schema:inChIKey inchikey:UDMBCSSLTHHNCD-KQYNXXCUSA-N ;
+            schema:molecularFormula "C10H14N5O7P" ;
+            schema:name "5'-AMP",
+                "5'-Adenosine monophosphate",
+                "5'-Adenylic acid",
+                "AMP",
+                "Adenosine 5'-monophosphate",
+                "Adenosine 5'-phosphate",
+                "Adenylate",
+                "Adenylic acid" ;
+            schema:smiles "Nc(n3)c(n2)c(nc3)n(c2)[C@H](O1)[C@H](O)[C@H](O)[C@@H](COP(O)(O)=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.54441e+01 ;
+            mbo:mz 1.229577e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.73489e+02 ;
+            mbo:mz 1.340146e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.973154e+02 ;
+            mbo:mz 1.389515e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.378672e+03 ;
+            mbo:mz 1.509498e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 114 ],
+        [ mbo:intensity 1.33542e+03 ;
+            mbo:mz 1.929332e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 3.905161e+01 ;
+            mbo:mz 1.935348e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.0764e+04 ;
+            mbo:mz 2.110139e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.306222e+02 ;
+            mbo:mz 2.481697e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 6 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.110139e+02 ;
+            mbo:precursor_mz 3.4605e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03di-0190000000-948ec97ae442eda212cb" ;
+    skos:definition "AMP; LC-ESI-ITFT; MS2; m/z:346.05; NEG" .
+

@@ -1,0 +1,57 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000180 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000180" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-Acetyl-alpha-D-glucosamine 1-phosphate",
+                "N-Acetylglucosamine 1-phosphate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.010563e+02 ;
+            rdfs:seeAlso <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:7115> ;
+            schema:inChI "InChI=1S/C8H16NO9P/c1-3(11)9-5-7(13)6(12)4(2-10)17-8(5)18-19(14,15)16/h4-8,10,12-13H,2H2,1H3,(H,9,11)(H2,14,15,16)/t4-,5-,6-,7-,8-/m1/s1" ;
+            schema:inChIKey inchikey:FZLJPEPAYPUMMR-FMDGEEDCSA-N ;
+            schema:molecularFormula "C8H16NO9P" ;
+            schema:name "N-Acetyl-alpha-D-glucosamine 1-phosphate",
+                "N-Acetylglucosamine 1-phosphate" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H](NC(C)=O)[C@H]1OP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.637132e+07 ;
+            mbo:mz 7.89e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.990105e+05 ;
+            mbo:mz 9.7e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 4.9505e+04 ;
+            mbo:mz 1.103e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.9802e+04 ;
+            mbo:mz 1.183e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-9000000000-560f24bd3fb720161889" ;
+    rdfs:comment "KEIO_ID A122" ;
+    skos:definition "N-Acetyl-alpha-D-glucosamine 1-phosphate; LC-ESI-QQ; MS2; CE:50 V; [M-H]-" .
+

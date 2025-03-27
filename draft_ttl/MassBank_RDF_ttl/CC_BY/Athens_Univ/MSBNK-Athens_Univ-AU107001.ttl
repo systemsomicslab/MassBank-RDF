@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU107001 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Anna Bletsou, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-07-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU107001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "Ramp 17.5-26.2 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.4 min" ;
+            mbo:solvent "A water with 0.01% formic acid and 5mM ammonium formate",
+                "B 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(2-methyl-5-nitroimidazol-1-yl)propan-1-ol",
+                "Ternidazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.8508e+02 ;
+            rdfs:seeAlso cas:1077-93-6,
+                chemspider:62169,
+                pubchem:CID68944 ;
+            schema:inChI "InChI=1S/C7H11N3O3/c1-6-8-5-7(10(12)13)9(6)3-2-4-11/h5,11H,2-4H2,1H3" ;
+            schema:inChIKey inchikey:DUOHVNSMLSPTMI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H11N3O3" ;
+            schema:name "3-(2-methyl-5-nitroimidazol-1-yl)propan-1-ol",
+                "Ternidazole" ;
+            schema:smiles "Cc1ncc(n1CCCO)[N+](=O)[O-]" ] ;
+    mbo:has_peak [ mbo:intensity 5.568e+03 ;
+            mbo:mz 5.60363e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 2.7364e+04 ;
+            mbo:mz 1.860877e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 216 ],
+        [ mbo:intensity 9.36e+02 ;
+            mbo:mz 5.70205e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 4.768e+03 ;
+            mbo:mz 5.90489e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 7.84e+02 ;
+            mbo:mz 6.00438e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.504e+03 ;
+            mbo:mz 8.20523e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.54e+03 ;
+            mbo:mz 9.80475e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.876e+03 ;
+            mbo:mz 1.110437e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.26268e+05 ;
+            mbo:mz 1.280454e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.76e+02 ;
+            mbo:mz 1.300498e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 5 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.860878e+02 ;
+            mbo:precursor_mz 1.860873e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-004i-1900000000-9aa13e176c257c2e7ee5" ;
+    rdfs:comment "INTERNAL_ID 1070" ;
+    skos:definition "Ternidazole; LC-ESI-QTOF; MS2; CE: Ramp 17.5-26.2 eV; R=35000; [M+H]+" .
+

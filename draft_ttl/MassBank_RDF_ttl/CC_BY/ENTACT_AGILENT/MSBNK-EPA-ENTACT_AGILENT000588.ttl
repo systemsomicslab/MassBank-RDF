@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000588 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000588" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(tert-Butylamino)ethyl 2-methylprop-2-enoate",
+                "DTXSID6044931" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.851416e+02 ;
+            rdfs:seeAlso cas:3775-90-4,
+                pubchem:CID19601 ;
+            schema:inChI "InChI=1S/C10H19NO2/c1-8(2)9(12)13-7-6-11-10(3,4)5/h11H,1,6-7H2,2-5H3" ;
+            schema:inChIKey inchikey:BEWCNXNIQCLWHP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H19NO2" ;
+            schema:name "2-(tert-Butylamino)ethyl 2-methylprop-2-enoate",
+                "DTXSID6044931" ;
+            schema:smiles "CC(=C)C(=O)OCCNC(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.732664e+00 ;
+            mbo:mz 2.903858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 5.2124e+00 ;
+            mbo:mz 3.902293e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.103858e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.814707e+00 ;
+            mbo:mz 4.105971e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 9.03876e+01 ;
+            mbo:mz 4.404948e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 903 ],
+        [ mbo:intensity 1.712572e+00 ;
+            mbo:mz 4.408318e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 4.110473e+01 ;
+            mbo:mz 5.706988e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 411 ],
+        [ mbo:intensity 1.983618e+01 ;
+            mbo:mz 6.903349e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 198 ],
+        [ mbo:intensity 3.679197e+00 ;
+            mbo:mz 1.130597e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 37 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.861489e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0006-9000000000-fb075dac8b794f64c193" ;
+    skos:definition "2-(tert-Butylamino)ethyl 2-methylprop-2-enoate; ESI-QTOF; MS2; CE: 40; [M+H]+" .
+

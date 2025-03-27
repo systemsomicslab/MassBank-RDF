@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01127101 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01127101" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "11.635 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2,4-dichlorophenyl)-1-(1,2,4-triazol-1-yl)hexan-2-ol",
+                "Hexaconazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.130749e+02 ;
+            rdfs:seeAlso cas:79983-71-4,
+                chemspider:59833,
+                pubchem:CID66461 ;
+            schema:inChI "InChI=1S/C14H17Cl2N3O/c1-2-3-6-14(20,8-19-10-17-9-18-19)12-5-4-11(15)7-13(12)16/h4-5,7,9-10,20H,2-3,6,8H2,1H3" ;
+            schema:inChIKey inchikey:STMIIPIFODONDC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H17Cl2N3O" ;
+            schema:name "2-(2,4-dichlorophenyl)-1-(1,2,4-triazol-1-yl)hexan-2-ol",
+                "Hexaconazole" ;
+            schema:smiles "CCCCC(CN1C=NC=N1)(C2=C(C=C(C=C2)Cl)Cl)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.948977e+07 ;
+            mbo:mz 7.00399e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 3.653595e+08 ;
+            mbo:mz 3.140821e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.201519e+02 ;
+            mbo:precursor_mz 3.140821e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-03di-0009000000-2b43cab1945da0b83add" ;
+    rdfs:comment "UCHEM_ID 11271" ;
+    skos:definition "Hexaconazole; LC-ESI-QFT; MS2; CE: 15%; R=17500; [M+H]+" .
+

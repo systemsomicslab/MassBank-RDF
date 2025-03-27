@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO009275 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO009275" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "0.60/0.40" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS3" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Deoxythymidine",
+                "Thymidine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.420903e+02 ;
+            rdfs:seeAlso cas:50-89-5,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3514> ;
+            schema:inChI "InChI=1S/C10H14N2O5/c1-5-3-12(10(16)11-9(5)15)8-2-6(14)7(4-13)17-8/h3,6-8,13-14H,2,4H2,1H3,(H,11,15,16)/t6-,7+,8+/m0/s1" ;
+            schema:inChIKey inchikey:IQFYYKKMVGJFEH-XLPZGREQSA-N ;
+            schema:molecularFormula "C10H14N2O5" ;
+            schema:name "Deoxythymidine",
+                "Thymidine" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)C[C@@H]1N(C=2)C(=O)NC(=O)C(C)2" ] ;
+    mbo:has_peak [ mbo:intensity 5.91e+00 ;
+            mbo:mz 5.32e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.377e+01 ;
+            mbo:mz 5.72e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 3.5928e+02 ;
+            mbo:mz 6.91e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.631e+01 ;
+            mbo:mz 7.12e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 268 ],
+        [ mbo:intensity 1.15e+00 ;
+            mbo:mz 7.97e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 6.001e+01 ;
+            mbo:mz 8.11e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 5.195e+01 ;
+            mbo:mz 9.91e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 5.45e+00 ;
+            mbo:mz 1.89e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-014i-9000000000-d7e5ed251a93758682ec" ;
+    rdfs:comment "[MS2] KO009272" ;
+    skos:definition "Thymidine; LC-ESI-IT; MS3; m/z: 243/99; [M+H]+" .
+

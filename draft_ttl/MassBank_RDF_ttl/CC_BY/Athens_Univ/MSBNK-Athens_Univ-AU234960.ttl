@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU234960 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU234960" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.595 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bicalutamide",
+                "N-[4-cyano-3-(trifluoromethyl)phenyl]-3-(4-fluorophenyl)sulfonyl-2-hydroxy-2-methylpropanamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.30061e+02 ;
+            rdfs:seeAlso cas:90357-06-5,
+                chemspider:2284,
+                pubchem:CID2375 ;
+            schema:inChI "InChI=1S/C18H14F4N2O4S/c1-17(26,10-29(27,28)14-6-3-12(19)4-7-14)16(25)24-13-5-2-11(9-23)15(8-13)18(20,21)22/h2-8,26H,10H2,1H3,(H,24,25)" ;
+            schema:inChIKey inchikey:LKJPYSCBVHEWIU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H14F4N2O4S" ;
+            schema:name "Bicalutamide",
+                "N-[4-cyano-3-(trifluoromethyl)phenyl]-3-(4-fluorophenyl)sulfonyl-2-hydroxy-2-methylpropanamide" ;
+            schema:smiles "CC(O)(CS(=O)(=O)C1=CC=C(F)C=C1)C(=O)NC1=CC(=C(C=C1)C#N)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 1.2928e+04 ;
+            mbo:mz 1.589921e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 2.33e+04 ;
+            mbo:mz 1.730076e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 8.6692e+04 ;
+            mbo:mz 1.840382e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 7.90344e+05 ;
+            mbo:mz 1.850339e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.674e+04 ;
+            mbo:mz 1.860361e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 6.32e+03 ;
+            mbo:mz 2.270437e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 9.6472e+04 ;
+            mbo:mz 2.550388e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 9.348e+03 ;
+            mbo:mz 2.56041e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.290536e+02 ;
+            mbo:precursor_mz 4.290538e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-000i-0910000000-8b3d0683126fafffe56b" ;
+    rdfs:comment "INTERNAL_ID 2349" ;
+    skos:definition "Bicalutamide; LC-ESI-QTOF; MS2; CE: 40 eV; R=35000; [M-H]-" .
+

@@ -1,0 +1,68 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000800 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham" ;
+    dcterms:date "2023-04-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000800" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100% (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.027 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "bisoprolol" ;
+            mbo:ch_compound_class "N/A; Biotransformation product" ;
+            mbo:ch_exact_mass 3.112097e+02 ;
+            rdfs:seeAlso cas:66722-44-9,
+                pubchem:CID2405 ;
+            schema:inChI "InChI=1S/C17H29NO4/c1-13(2)18-11-15(19)12-22-17-7-5-16(6-8-17)21-10-9-20-14(3)4/h5-8,13-15,18-19H,9-12H2,1-4H3" ;
+            schema:inChIKey inchikey:JEAOXXHSOYFPLR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H29NO4" ;
+            schema:name "bisoprolol" ;
+            schema:smiles "CC(C)NCC(COC1=CC=C(C=C1)OCCOC(C)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.01415e+04 ;
+            mbo:mz 5.60494e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 1.82148e+04 ;
+            mbo:mz 7.406e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 400 ],
+        [ mbo:intensity 4.54798e+04 ;
+            mbo:mz 1.161071e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.1061e+04 ;
+            mbo:mz 1.541226e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 243 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.122168e+02 ;
+            mbo:precursor_mz 3.122169e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-4900000000-fa8d1d39957078642a06" ;
+    rdfs:comment "INTERNAL_ID 8157" ;
+    skos:definition "bisoprolol; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

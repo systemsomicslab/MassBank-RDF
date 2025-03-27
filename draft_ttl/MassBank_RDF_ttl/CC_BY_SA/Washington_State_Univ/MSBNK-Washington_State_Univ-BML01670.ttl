@@ -1,0 +1,61 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML01670 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML01670" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "40 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "9.106" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Haploperoside C Acetate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 7.522164e+02 ;
+            rdfs:seeAlso chemspider:12944921,
+                pubchem:CID20106092 ;
+            schema:inChI "InChI=1S/C34H40O19/c1-14-27(45-15(2)35)29(47-17(4)37)31(49-19(6)39)33(44-14)43-13-25-28(46-16(3)36)30(48-18(5)38)32(50-20(7)40)34(53-25)52-24-12-22-21(11-23(24)42-8)9-10-26(41)51-22/h9-12,14,25,27-34H,13H2,1-8H3" ;
+            schema:inChIKey inchikey:SRRSXTUHQTVABO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C34H40O19" ;
+            schema:name "Haploperoside C Acetate" ;
+            schema:smiles "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(C=C4C=CC(=O)OC4=C3)OC)OC(=O)C)OC(=O)C)OC(=O)C)OC(=O)C)OC(=O)C)OC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.69e+02 ;
+            mbo:mz 1.110431e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 1.110782e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 3.47e+02 ;
+            mbo:mz 1.530531e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 451 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.11e+02 ;
+            mbo:precursor_mz 7.532237e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-03di-0900000000-19b679279c9ff1a65376" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.235" ;
+    skos:definition "Haploperoside C Acetate; LC-ESI-QTOF; MS2; CE 40 ev; [M+H]+" .
+

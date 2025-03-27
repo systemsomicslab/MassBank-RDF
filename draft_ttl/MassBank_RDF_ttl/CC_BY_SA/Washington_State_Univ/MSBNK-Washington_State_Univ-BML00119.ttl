@@ -1,0 +1,81 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00119 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00119" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "20 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "9.810" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(3,4-diacetyloxyphenyl)-4-oxo-7-[3,4,5-triacetyloxy-6-(acetyloxymethyl)(2H-3 ,4,5,6-tetrahydropyran-2-yloxy)]chromen-5-yl acetate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 7.421745e+02 ;
+            rdfs:seeAlso chemspider:2942098,
+                pubchem:CID3710744 ;
+            schema:inChI "InChI=1S/C35H34O18/c1-15(36)44-14-30-32(48-19(5)40)33(49-20(6)41)34(50-21(7)42)35(53-30)51-23-11-28(47-18(4)39)31-24(43)13-26(52-29(31)12-23)22-8-9-25(45-16(2)37)27(10-22)46-17(3)38/h8-13,30,32-35H,14H2,1-7H3" ;
+            schema:inChIKey inchikey:JDAPIOVVXOAJOM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C35H34O18" ;
+            schema:name "2-(3,4-diacetyloxyphenyl)-4-oxo-7-[3,4,5-triacetyloxy-6-(acetyloxymethyl)(2H-3 ,4,5,6-tetrahydropyran-2-yloxy)]chromen-5-yl acetate" ;
+            schema:smiles "CC(=O)OCC1C(C(C(C(O1)OC2=CC(=C3C(=C2)OC(=CC3=O)C4=CC(=C(C=C4)OC(=O)C)OC(=O)C)OC(=O)C)OC(=O)C)OC(=O)C)OC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.24e+02 ;
+            mbo:mz 1.090294e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 6.6e+01 ;
+            mbo:mz 1.690455e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 7.1e+01 ;
+            mbo:mz 3.290639e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 6.55e+02 ;
+            mbo:mz 3.71075e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.1e+01 ;
+            mbo:mz 3.711345e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 7.3e+01 ;
+            mbo:mz 4.130813e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 4.131084e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 7.011615e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 38 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.71e+02 ;
+            mbo:precursor_mz 7.431818e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-0209100000-5b3557b4c50a789bef1b" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.339" ;
+    skos:definition "2-(3,4-diacetyloxyphenyl)-4-oxo-7-[3,4,5-triacetyloxy-6-(acetyloxymethyl)(2H-3 ,4,5,6-tetrahydropyran-2-yloxy)]chromen-5-yl acetate; LC-ESI-QTOF; MS2; CE 20 ev; [M+H]+" .
+

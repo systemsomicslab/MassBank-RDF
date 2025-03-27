@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100273 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100273" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2'-Deoxyguanosine 5'-monophosphate",
+                "5'-Deoxyguanylic acid",
+                "Deoxy-GMP",
+                "dGMP",
+                "vernine" ;
+            mbo:ch_compound_class "Natural Product; Nucleoside; Phosphates" ;
+            mbo:ch_exact_mass 3.470631e+02 ;
+            rdfs:seeAlso cas:902-04-5,
+                chemspider:58570,
+                knapsack:C00019356,
+                pubchem:CID135398597 ;
+            schema:inChI "InChI=1S/C10H14N5O7P/c11-10-13-8-7(9(17)14-10)12-3-15(8)6-1-4(16)5(22-6)2-21-23(18,19)20/h3-6,16H,1-2H2,(H2,18,19,20)(H3,11,13,14,17)/t4-,5+,6+/m0/s1" ;
+            schema:inChIKey inchikey:LTFMZDNNPPEQNG-KVQBGUIXSA-N ;
+            schema:molecularFormula "C10H14N5O7P" ;
+            schema:name "2'-Deoxyguanosine 5'-monophosphate",
+                "5'-Deoxyguanylic acid",
+                "Deoxy-GMP",
+                "dGMP",
+                "vernine" ;
+            schema:smiles "NC(N3)=Nc(c2C(=O)3)n(cn2)[C@@H](C1)O[C@H](COP(O)(O)=O)[C@@H](O)1" ] ;
+    mbo:has_peak [ mbo:intensity 7.108e+02 ;
+            mbo:mz 8.10342e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 118 ],
+        [ mbo:intensity 3.786e+02 ;
+            mbo:mz 1.100361e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 1.26e+03 ;
+            mbo:mz 1.350319e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 210 ],
+        [ mbo:intensity 6.004e+03 ;
+            mbo:mz 1.520584e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.982e+01 ;
+            mbo:mz 3.480727e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.480709e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0900000000-dab30b9a6de3477fa70e" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "2'-Deoxyguanosine 5'-monophosphate; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

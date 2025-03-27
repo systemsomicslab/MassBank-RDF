@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU595253 a mbo:MassSpectrum ;
+    dcterms:creator "Georgios Gkotsis, Maria-Christina Nika, Reza Aalizadeh, Nikolaos Thomaidis" ;
+    dcterms:date "2020-04-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU595253" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2020 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "12.121 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,12-tricosafluorododecanoic acid",
+                "Perfluorododecanoic acid",
+                "Perfluorododecanoic acid (PFDoDA)" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 6.139609e+02 ;
+            rdfs:seeAlso cas:307-55-1,
+                chemspider:60867,
+                pubchem:CID67545 ;
+            schema:inChI "InChI=1S/C12HF23O2/c13-2(14,1(36)37)3(15,16)4(17,18)5(19,20)6(21,22)7(23,24)8(25,26)9(27,28)10(29,30)11(31,32)12(33,34)35/h(H,36,37)" ;
+            schema:inChIKey inchikey:CXGONMQFMIYUJR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12HF23O2" ;
+            schema:name "2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,12-tricosafluorododecanoic acid",
+                "Perfluorododecanoic acid",
+                "Perfluorododecanoic acid (PFDoDA)" ;
+            schema:smiles "C(=O)(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.176e+03 ;
+            mbo:mz 1.68989e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.08e+02 ;
+            mbo:mz 2.189856e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 187 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.129514e+02 ;
+            mbo:precursor_mz 6.129537e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-014i-0910000000-7e8107b88d55da41a879" ;
+    rdfs:comment "INTERNAL_ID 5952" ;
+    skos:definition "Perfluorododecanoic acid (PFDoDA); LC-ESI-QTOF; MS2; CE: 40 eV; R=35000; [M-H]-" .
+

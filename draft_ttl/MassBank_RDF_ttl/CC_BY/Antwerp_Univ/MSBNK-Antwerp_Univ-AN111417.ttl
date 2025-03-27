@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN111417 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-01"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN111417" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.146 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acetyl triethyl citrate",
+                "Acetyltriethyl citrate",
+                "triethyl 2-acetyloxypropane-1,2,3-tricarboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.181315e+02 ;
+            rdfs:seeAlso cas:77-89-4,
+                chemspider:6258,
+                pubchem:CID6504 ;
+            schema:inChI "InChI=1S/C14H22O8/c1-5-19-11(16)8-14(22-10(4)15,13(18)21-7-3)9-12(17)20-6-2/h5-9H2,1-4H3" ;
+            schema:inChIKey inchikey:WEAPVABOECTMGR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H22O8" ;
+            schema:name "Acetyl triethyl citrate",
+                "Acetyltriethyl citrate",
+                "triethyl 2-acetyloxypropane-1,2,3-tricarboxylate" ;
+            schema:smiles "CCOC(=O)CC(CC(=O)OCC)(C(=O)OCC)OC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 5.555e+02 ;
+            mbo:mz 1.390012e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 501 ],
+        [ mbo:intensity 4.609e+02 ;
+            mbo:mz 1.790289e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 416 ],
+        [ mbo:intensity 4.747e+02 ;
+            mbo:mz 2.250732e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 428 ],
+        [ mbo:intensity 1.025e+03 ;
+            mbo:mz 2.810991e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 924 ],
+        [ mbo:intensity 1.1076e+03 ;
+            mbo:mz 3.411201e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.411227e+02 ;
+            mbo:precursor_mz 3.411207e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-003f-0696000000-4baf0b86b08f71fddde7" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Acetyltriethyl citrate; LC-ESI-QTOF; MS2; CE: 25eV; R=7000; [M+Na]+" .
+

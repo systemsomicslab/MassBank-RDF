@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU155508 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU155508" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.281 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8-Hydroxymirtazapine",
+                "8-OH-Mirtazapine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.811528e+02 ;
+            rdfs:seeAlso cas:102335-57-9,
+                chemspider:9674933,
+                pubchem:CID11500131 ;
+            schema:inChI "InChI=1S/C17H19N3O/c1-19-6-7-20-16(11-19)15-5-3-2-4-12(15)8-13-9-14(21)10-18-17(13)20/h2-5,9-10,16,21H,6-8,11H2,1H3" ;
+            schema:inChIKey inchikey:DAWYIZBOUQIVNX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H19N3O" ;
+            schema:name "8-Hydroxymirtazapine",
+                "8-OH-Mirtazapine" ;
+            schema:smiles "CN1CCN2C(C1)C1=CC=CC=C1CC1=CC(O)=CN=C21" ] ;
+    mbo:has_peak [ mbo:intensity 5.57172e+05 ;
+            mbo:mz 2.110862e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 401 ],
+        [ mbo:intensity 2.03928e+05 ;
+            mbo:mz 2.831632e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 1.454e+04 ;
+            mbo:mz 2.841653e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 6.3296e+04 ;
+            mbo:mz 2.120891e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 9.214e+04 ;
+            mbo:mz 2.251018e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 1.3116e+04 ;
+            mbo:mz 2.261049e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.93e+04 ;
+            mbo:mz 2.391172e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 4.2964e+04 ;
+            mbo:mz 2.511174e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 8.024e+03 ;
+            mbo:mz 2.521206e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.3672e+04 ;
+            mbo:mz 2.801439e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.389004e+06 ;
+            mbo:mz 2.821601e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.8216e+02 ;
+            mbo:precursor_mz 2.821601e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-001i-0090000000-a22da48c786336f610d9" ;
+    rdfs:comment "INTERNAL_ID 1555" ;
+    skos:definition "8-OH-Mirtazapine; LC-ESI-QTOF; MS2; HILIC; CE: 20 eV; R=35000; [M+H]+" .
+

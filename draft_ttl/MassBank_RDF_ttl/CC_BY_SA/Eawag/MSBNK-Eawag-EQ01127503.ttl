@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01127503 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01127503" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "9.421 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5-chloro-1-propan-2-yl-1,2,4-triazol-3-yl)oxy-diethoxy-sulfanylidene-lambda5-phosphane",
+                "Isazofos" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.130417e+02 ;
+            rdfs:seeAlso cas:65357-77-9,
+                chemspider:35885,
+                pubchem:CID39223 ;
+            schema:inChI "InChI=1S/C9H17ClN3O3PS/c1-5-14-17(18,15-6-2)16-9-11-8(10)13(12-9)7(3)4/h7H,5-6H2,1-4H3" ;
+            schema:inChIKey inchikey:XRHGWAGWAHHFLF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H17ClN3O3PS" ;
+            schema:name "(5-chloro-1-propan-2-yl-1,2,4-triazol-3-yl)oxy-diethoxy-sulfanylidene-lambda5-phosphane",
+                "Isazofos" ;
+            schema:smiles "CCOP(=S)(OCC)OC1=NN(C(=N1)Cl)C(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.863496e+07 ;
+            mbo:mz 9.69507e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 345 ],
+        [ mbo:intensity 7.14354e+06 ;
+            mbo:mz 2.159393e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.260964e+06 ;
+            mbo:mz 1.109663e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.244773e+07 ;
+            mbo:mz 1.149612e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 1.407488e+08 ;
+            mbo:mz 1.199959e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.419248e+07 ;
+            mbo:mz 1.24982e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 172 ],
+        [ mbo:intensity 2.050611e+06 ;
+            mbo:mz 1.289771e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 8.334212e+06 ;
+            mbo:mz 1.359732e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 7.434298e+06 ;
+            mbo:mz 1.530132e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 5.18695e+07 ;
+            mbo:mz 1.620428e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 368 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.140488e+02 ;
+            mbo:precursor_mz 3.14049e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-02t9-1900000000-3eae8d96077b21174fb6" ;
+    rdfs:comment "UCHEM_ID 11275" ;
+    skos:definition "Isazofos; LC-ESI-QFT; MS2; CE: 45%; R=17500; [M+H]+" .
+

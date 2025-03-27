@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000193 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000193" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "13.289100" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9H-pyrido[3,4-b]indole",
+                "Norharman" ;
+            mbo:ch_compound_class "Indole Alkaloids; Carbolines" ;
+            mbo:ch_exact_mass 1.680687e+02 ;
+            schema:inChI "InChI=1S/C11H8N2/c1-2-4-10-8(3-1)9-5-6-12-7-11(9)13-10/h1-7,13H" ;
+            schema:molecularFormula "C11H8N2" ;
+            schema:name "9H-pyrido[3,4-b]indole",
+                "Norharman" ;
+            schema:smiles "N=1C=CC2=C(C1)NC=3C=CC=CC32" ] ;
+    mbo:has_peak [ mbo:intensity 5.820877e+07 ;
+            mbo:mz 1.150542e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 3.061709e+07 ;
+            mbo:mz 1.420656e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 3.881958e+07 ;
+            mbo:mz 1.680681e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.107172e+09 ;
+            mbo:mz 1.690753e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.100487e+09 ;
+            mbo:mz 1.69077e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 996 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-014i-0900000000-708d77a371c001e9beb6" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Norharman; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M+H]+" .
+

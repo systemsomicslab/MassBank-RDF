@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001762 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001762" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "AVE3295",
+                "DTXSID5047372" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.631366e+02 ;
+            rdfs:seeAlso cas:478263-98-8,
+                pubchem:CID24852044 ;
+            schema:inChI "InChI=1S/C25H22FN3O3S/c1-2-21(17-8-4-3-5-9-17)28-25(30)20-16-19(26)13-14-22(20)29-33(31,32)23-12-6-10-18-11-7-15-27-24(18)23/h3-16,21,29H,2H2,1H3,(H,28,30)" ;
+            schema:inChIKey inchikey:VYUUPUMKBLIKJV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H22FN3O3S" ;
+            schema:name "AVE3295",
+                "DTXSID5047372" ;
+            schema:smiles "CCC(NC(=O)C1C=C(F)C=CC=1NS(=O)(=O)C1=CC=CC2=CC=CN=C21)C1C=CC=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 3.511978e+00 ;
+            mbo:mz 9.105403e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 4.024369e+00 ;
+            mbo:mz 1.190853e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 3.948382e+00 ;
+            mbo:mz 2.650767e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.259658e+01 ;
+            mbo:mz 3.290391e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 4.866312e+01 ;
+            mbo:mz 3.460656e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 486 ],
+        [ mbo:intensity 2.291572e+00 ;
+            mbo:mz 3.46135e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.053792e+00 ;
+            mbo:mz 3.461602e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.641439e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.641439e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03di-0005900000-bff3c0e1c55451604b74" ;
+    skos:definition "AVE3295; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

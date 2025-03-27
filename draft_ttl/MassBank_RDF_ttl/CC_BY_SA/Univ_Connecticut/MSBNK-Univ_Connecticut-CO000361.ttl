@@ -1,0 +1,78 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000361 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000361" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Prednisolone_Tebutate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.582668e+02 ;
+            rdfs:seeAlso pubchem:CID4898 ;
+            schema:inChI "InChI=1S/C27H38O6/c1-24(2,3)14-22(31)33-15-21(30)27(32)11-9-19-18-7-6-16-12-17(28)8-10-25(16,4)23(18)20(29)13-26(19,27)5/h8,10,12,18-20,23,29,32H,6-7,9,11,13-15H2,1-5H3" ;
+            schema:inChIKey inchikey:HUMXXHTVHHLNRO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C27H38O6" ;
+            schema:name "Prednisolone_Tebutate" ;
+            schema:smiles "[H]C([H])(C(C([H])([H])[H])(C([H])([H])[H])C([H])([H])[H])C(OC([H])([H])C(=O)C(O[H])(C4([H])[H])C(C([H])([H])[H])(C3([H])[H])C(C([H])([H])4)([H])C([H])(C([H])(C3([H])O[H])1)C(C(C(=C([H])2)C1(C([H])=C(C2=O)[H])C([H])([H])[H])([H])[H])([H])[H])=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.01217e+02 ;
+            mbo:mz 9.90801e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.28949e+02 ;
+            mbo:mz 2.791704e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.37055e+02 ;
+            mbo:mz 2.891608e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 9.89608e+02 ;
+            mbo:mz 3.071671e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 1.965855e+03 ;
+            mbo:mz 3.251786e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 196 ],
+        [ mbo:intensity 1.01722e+02 ;
+            mbo:mz 4.052417e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 9.16568e+02 ;
+            mbo:mz 4.232524e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 7.348575e+03 ;
+            mbo:mz 4.412622e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 734 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 4.592719e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.592748e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0a4l-0001900000-24cefbe21fe0c32484ef" ;
+    skos:definition "Prednisolone_Tebutate; LC-ESI-QTOF; MS2; CE:10 eV; [M+H]+" .
+

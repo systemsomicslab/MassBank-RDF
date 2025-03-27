@@ -1,0 +1,66 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU592418 a mbo:MassSpectrum ;
+    dcterms:creator "Dimitrios E. Damalas, Stefanos Kokolakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU592418" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness (Restek)" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "24.101 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,2,3,4-tetrachloro-5-(2,4,5-trichlorophenyl)benzene",
+                "2,2`,3,4,4`,5,5`-Heptachlorobiphenyl",
+                "PCB 180" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.918054e+02 ;
+            rdfs:seeAlso cas:35065-29-3,
+                chemspider:33985,
+                pubchem:CID37036 ;
+            schema:inChI "InChI=1S/C12H3Cl7/c13-6-3-8(15)7(14)1-4(6)5-2-9(16)11(18)12(19)10(5)17/h1-3H" ;
+            schema:inChIKey inchikey:WBHQEUPUMONIKF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H3Cl7" ;
+            schema:name "1,2,3,4-tetrachloro-5-(2,4,5-trichlorophenyl)benzene",
+                "2,2`,3,4,4`,5,5`-Heptachlorobiphenyl",
+                "PCB 180" ;
+            schema:smiles "ClC1=CC(Cl)=C(C=C1Cl)C1=C(Cl)C(Cl)=C(Cl)C(Cl)=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.32e+02 ;
+            mbo:mz 3.218671e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 1.116e+03 ;
+            mbo:mz 3.568352e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 204 ],
+        [ mbo:intensity 5.46e+03 ;
+            mbo:mz 3.918028e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.918036e+02 ;
+            mbo:precursor_mz 3.918049e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-0009000000-71538f77338de136ff02" ;
+    rdfs:comment "INTERNAL_ID 5924" ;
+    skos:definition "PCB 180; GC-APCI-QTOF; MS2; CE: 20 eV; R=35000; [M]+" .
+

@@ -1,0 +1,84 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML001251 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML001251" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "9.5 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(3-hydroxyphenyl)prop-2-enoic acid",
+                "3-coumaric acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.640473e+02 ;
+            rdfs:seeAlso chemspider:553147,
+                pubchem:CID11496 ;
+            schema:inChI "InChI=1S/C9H8O3/c10-8-3-1-2-7(6-8)4-5-9(11)12/h1-6,10H,(H,11,12)" ;
+            schema:inChIKey inchikey:KKSDGJDHHZEWEP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H8O3" ;
+            schema:name "3-(3-hydroxyphenyl)prop-2-enoic acid",
+                "3-coumaric acid" ;
+            schema:smiles "O=C(O)C=Cc1cccc(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 8.178e+02 ;
+            mbo:mz 9.10555e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.2518e+03 ;
+            mbo:mz 9.30347e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.004709e+05 ;
+            mbo:mz 1.190503e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 661 ],
+        [ mbo:intensity 3.9591e+03 ;
+            mbo:mz 1.210294e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 6.449e+02 ;
+            mbo:mz 1.340371e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 8.5953e+03 ;
+            mbo:mz 1.350452e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 4.543193e+05 ;
+            mbo:mz 1.630401e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.74956e+02 ;
+            mbo:precursor_mz 1.630401e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-03xr-0900000000-c8ea61cfb3e956420385" ;
+    rdfs:comment "ML_ID 12" ;
+    skos:definition "3-coumaric acid; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M-H]-" .
+

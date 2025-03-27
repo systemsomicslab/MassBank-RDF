@@ -1,0 +1,68 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO009220 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO009220" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "0.60/0.60" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS3" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Creatine phosphate",
+                "N-Phosphocreatine",
+                "Phosphocreatine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.110358e+02 ;
+            rdfs:seeAlso cas:67-07-2,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5359> ;
+            schema:inChI "InChI=1S/C4H10N3O5P/c1-7(2-3(8)9)4(5)6-13(10,11)12/h2H2,1H3,(H,8,9)(H4,5,6,10,11,12)" ;
+            schema:inChIKey inchikey:DRBBFCLWYRJSJZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H10N3O5P" ;
+            schema:name "Creatine phosphate",
+                "N-Phosphocreatine",
+                "Phosphocreatine" ;
+            schema:smiles "OC(=O)CN(C)C(=N)NP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.53e+00 ;
+            mbo:mz 7.22e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.6349e+02 ;
+            mbo:mz 8.61e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.53e+00 ;
+            mbo:mz 8.71e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 4.369e+01 ;
+            mbo:mz 1.04e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 267 ],
+        [ mbo:intensity 5.38e+00 ;
+            mbo:mz 1.139e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.99e+00 ;
+            mbo:mz 1.872e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-9200000000-1372c766f644a9c6d8fd" ;
+    rdfs:comment "[MS2] KO009218" ;
+    skos:definition "Phosphocreatine; LC-ESI-IT; MS3; m/z: 212/114; [M+H]+" .
+

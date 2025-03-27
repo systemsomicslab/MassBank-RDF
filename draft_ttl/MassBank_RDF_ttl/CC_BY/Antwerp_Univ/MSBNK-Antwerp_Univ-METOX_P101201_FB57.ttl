@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_P101201_FB57 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2021-12-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_P101201_FB57" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6530 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "5000" ;
+            mbo:retention_time "0.354 min" ;
+            mbo:solvent "A 90/10 water with 10mM ammonium formate + 0.1% formic acid/methanol",
+                "B acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-amino-3-phosphonooxypropanoic acid",
+                "PHOSPHOSERINE" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.850089e+02 ;
+            rdfs:seeAlso cas:407-41-0,
+                chemspider:62074,
+                pubchem:CID68841 ;
+            schema:inChI "InChI=1S/C3H8NO6P/c4-2(3(5)6)1-10-11(7,8)9/h2H,1,4H2,(H,5,6)(H2,7,8,9)/t2-/m0/s1" ;
+            schema:inChIKey inchikey:BZQFBWGGLXLEPQ-REOHCLBHSA-N ;
+            schema:molecularFormula "C3H8NO6P" ;
+            schema:name "(2S)-2-amino-3-phosphonooxypropanoic acid",
+                "PHOSPHOSERINE" ;
+            schema:smiles "N[C@@H](COP(O)(O)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.0621e+03 ;
+            mbo:mz 4.20334e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.5e+02 ;
+            mbo:mz 7.00295e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 235 ],
+        [ mbo:intensity 8.31e+01 ;
+            mbo:mz 8.80353e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 9.50218e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.210508e+02 ;
+            mbo:precursor_mz 1.860162e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-9000000000-eddd3914d2c9dd0c8030" ;
+    rdfs:comment "INTERNAL_ID 1012" ;
+    skos:definition "PHOSPHOSERINE; LC-ESI-QTOF; MS2; CE: 40eV; R=5000; [M+H]+" .
+

@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311107740 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311107740" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "130" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.565 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Dimethylaminoguanosine" ;
+            mbo:ch_compound_class "Pharmaceutical" ;
+            mbo:ch_exact_mass 3.11123e+02 ;
+            rdfs:seeAlso cas:2140-67-2 ;
+            schema:inChI "InChI=1S/C12H17N5O5/c1-16(2)12-14-9-6(10(21)15-12)13-4-17(9)11-8(20)7(19)5(3-18)22-11/h4-5,7-8,11,18-20H,3H2,1-2H3,(H,14,15,21)/t5-,7-,8-,11-/m1/s1" ;
+            schema:inChIKey inchikey:RSPURTUNRHNVGF-IOSLPCCCSA-N ;
+            schema:molecularFormula "C12H17N5O5" ;
+            schema:name "2-Dimethylaminoguanosine" ;
+            schema:smiles "CN(C)C1=NC(=O)c2ncn([C@@H]3O[C@H](CO)[C@@H](O)[C@H]3O)c2N1" ] ;
+    mbo:has_peak [ mbo:intensity 5e-01 ;
+            mbo:mz 5.30192e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 2e+00 ;
+            mbo:mz 5.50332e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6e-01 ;
+            mbo:mz 5.50582e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 300 ],
+        [ mbo:intensity 6e-01 ;
+            mbo:mz 7.10631e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 300 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.121302e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-10433f7c813dc5970b33" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "2-Dimethylaminoguanosine; LC-ESI-QTOF; MS2; 130 V" .
+

@@ -1,0 +1,87 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00752 a mbo:MassSpectrum ;
+    dcterms:creator "Nobuyuki Okahashi and Fumio Matsuda, Osaka University" ;
+    dcterms:date "2021-09-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00752" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Nobuyuki Okahashi et al. Mass Spectrometry 2019 vol. 8, A0073." ] ;
+    dcterms:rights "Nobuyuki Okahashi and Fumio Matsuda, Osaka University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "GCMS-TQ8040 (Shimadzu, Kyoto, Japan)" ;
+            mbo:collision_energy "10 V" ;
+            mbo:column_name "DB-5MS+DG (Agilent Technologies, Santa Clara, CA, USA)" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-EI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Citric acid-[6-13C]" ;
+            mbo:ch_compound_class "In vitro synthetic compound" ;
+            mbo:ch_exact_mass 1.92027e+02 ;
+            schema:inChI "InChI=1S/C6H8O7/c7-3(8)1-6(13,5(11)12)2-4(9)10/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12)/i5+1" ;
+            schema:inChIKey inchikey:KRKNYBCHXYNGOX-HOSYLAQJSA-N ;
+            schema:molecularFormula "C6H8O7" ;
+            schema:name "Citric acid-[6-13C]" ;
+            schema:smiles "OC(=O)CC(O)(CC(O)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 8.9747e+04 ;
+            mbo:mz 7.315e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.597e+03 ;
+            mbo:mz 3.5625e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 7.891e+04 ;
+            mbo:mz 3.572e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 878 ],
+        [ mbo:intensity 2.6246e+04 ;
+            mbo:mz 1.151e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 292 ],
+        [ mbo:intensity 1.758e+03 ;
+            mbo:mz 1.4705e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.418e+03 ;
+            mbo:mz 1.833e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.8585e+04 ;
+            mbo:mz 2.251e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 430 ],
+        [ mbo:intensity 1.918e+03 ;
+            mbo:mz 2.43e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 9.765e+03 ;
+            mbo:mz 3.1325e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 2.215e+03 ;
+            mbo:mz 3.153e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.76e+03 ;
+            mbo:mz 3.4115e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.571912e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-05fr-8239000000-50b58e13c11b2f91cd02" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Citric acid-[6-13C]; GC-EI-QQ; MS2; POSITIVE; CID 10 V; 4 TBDMS-derivative; [M-292]+" .
+

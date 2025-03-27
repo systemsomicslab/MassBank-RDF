@@ -1,0 +1,88 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ314601 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ314601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "2.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-1-[2-[(3-hydroxy-1-adamantyl)amino]-1-oxoethyl]-2-pyrrolidinecarbonitrile",
+                "Equa",
+                "Vildagliptin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.031947e+02 ;
+            rdfs:seeAlso chemspider:5293734,
+                pubchem:CID6918537 ;
+            schema:inChI "InChI=1S/C17H25N3O2/c18-9-14-2-1-3-20(14)15(21)10-19-16-5-12-4-13(6-16)8-17(22,7-12)11-16/h12-14,19,22H,1-8,10-11H2/t12?,13?,14-,16?,17?/m0/s1" ;
+            schema:inChIKey inchikey:SYOKIDBDQMKNDQ-XWTIBIIYSA-N ;
+            schema:molecularFormula "C17H25N3O2" ;
+            schema:name "(2S)-1-[2-[(3-hydroxy-1-adamantyl)amino]-1-oxoethyl]-2-pyrrolidinecarbonitrile",
+                "Equa",
+                "Vildagliptin" ;
+            schema:smiles "N#C[C@H]4N(C(=O)CNC13CC2CC(C1)CC(O)(C2)C3)CCC4" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 5.739899e+05 ;
+            mbo:mz 7.0065e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 5.480926e+05 ;
+            mbo:mz 9.30699e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.86711e+05 ;
+            mbo:mz 9.50493e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.439677e+06 ;
+            mbo:mz 9.70759e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 9.042756e+05 ;
+            mbo:mz 1.270865e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.973191e+06 ;
+            mbo:mz 1.511116e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 7.341041e+07 ;
+            mbo:mz 1.540975e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 414 ],
+        [ mbo:intensity 1.772375e+08 ;
+            mbo:mz 3.042021e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.04202e+02 ;
+            mbo:precursor_mz 3.04202e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0udi-0309000000-4cc7261ec4a8a5eb3c50" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3146" ;
+    skos:definition "Vildagliptin; LC-ESI-QFT; MS2; CE: 15; R=35000; [M+H]+" .
+

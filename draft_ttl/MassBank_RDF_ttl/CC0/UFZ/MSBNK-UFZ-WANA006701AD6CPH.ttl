@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA006701AD6CPH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA006701AD6CPH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "10 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.385 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Propoxycarbazone",
+                "methyl 2-[(4-methyl-5-oxo-3-propoxy-1,2,4-triazole-1-carbonyl)sulfamoyl]benzoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.980896e+02 ;
+            rdfs:seeAlso cas:145026-81-9,
+                chemspider:154427,
+                pubchem:CID177355 ;
+            schema:inChI "InChI=1S/C15H18N4O7S/c1-4-9-26-14-16-19(15(22)18(14)2)13(21)17-27(23,24)11-8-6-5-7-10(11)12(20)25-3/h5-8H,4,9H2,1-3H3,(H,17,21)" ;
+            schema:inChIKey inchikey:JTHMVYBOQLDDIY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H18N4O7S" ;
+            schema:name "Propoxycarbazone",
+                "methyl 2-[(4-methyl-5-oxo-3-propoxy-1,2,4-triazole-1-carbonyl)sulfamoyl]benzoate" ;
+            schema:smiles "CCCOC1=NN(C(=O)NS(=O)(=O)C2=CC=CC=C2C(=O)OC)C(=O)N1C" ] ;
+    mbo:has_peak [ mbo:intensity 1.91418e+04 ;
+            mbo:mz 1.160456e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 394 ],
+        [ mbo:intensity 3.77436e+04 ;
+            mbo:mz 1.580926e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 776 ],
+        [ mbo:intensity 1.1253e+03 ;
+            mbo:mz 1.690092e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 4.85703e+04 ;
+            mbo:mz 1.990061e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.8448e+03 ;
+            mbo:mz 2.151145e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1.3996e+03 ;
+            mbo:mz 3.250238e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.90684e+04 ;
+            mbo:mz 3.670706e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 392 ],
+        [ mbo:intensity 4.4053e+03 ;
+            mbo:mz 3.990969e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 91 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.561101e+02 ;
+            mbo:precursor_mz 3.990969e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-05mk-0902000000-1702f60a6ff4a9140a51" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Propoxycarbazone; LC-ESI-ITFT; MS2; CE: 10%; R=15000; [M+H]+" .
+

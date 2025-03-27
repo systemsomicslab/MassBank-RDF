@@ -1,0 +1,51 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001341 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001341" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "40 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Methylmalonate",
+                "Methylmalonic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.180266e+02 ;
+            rdfs:seeAlso cas:516-05-2,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5245> ;
+            schema:inChI "InChI=1S/C4H6O4/c1-2(3(5)6)4(7)8/h2H,1H3,(H,5,6)(H,7,8)" ;
+            schema:inChIKey inchikey:ZIYVHBGGAOATLY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H6O4" ;
+            schema:name "Methylmalonate",
+                "Methylmalonic acid" ;
+            schema:smiles "OC(=O)C(C)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.316833e+06 ;
+            mbo:mz 5.53e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.42575e+04 ;
+            mbo:mz 7.31e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 56 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.17e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-7afd566e443d5fa38887" ;
+    rdfs:comment "KEIO_ID M014" ;
+    skos:definition "Methylmalonic acid; LC-ESI-QQ; MS2; CE:40 V; [M-H]-" .
+

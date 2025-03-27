@@ -1,0 +1,60 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA290202 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA290202" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "10.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "S-[(7R,8R,9S,10R,13S,14S,17R)-10,13-dimethyl-3,5'-bis(oxidanylidene)spiro[2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthrene-17,2'-oxolane]-7-yl] ethanethioate",
+                "Spironolactone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.162021e+02 ;
+            rdfs:seeAlso cas:52-01-7,
+                chemspider:5628,
+                pubchem:CID5833 ;
+            schema:inChI "InChI=1S/C24H32O4S/c1-14(25)29-19-13-15-12-16(26)4-8-22(15,2)17-5-9-23(3)18(21(17)19)6-10-24(23)11-7-20(27)28-24/h12,17-19,21H,4-11,13H2,1-3H3/t17-,18-,19+,21+,22-,23-,24+/m0/s1" ;
+            schema:inChIKey inchikey:LXMSZDCAJNLERA-ZHYRCANASA-N ;
+            schema:molecularFormula "C24H32O4S" ;
+            schema:name "S-[(7R,8R,9S,10R,13S,14S,17R)-10,13-dimethyl-3,5'-bis(oxidanylidene)spiro[2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthrene-17,2'-oxolane]-7-yl] ethanethioate",
+                "Spironolactone" ;
+            schema:smiles "O=C5O[C@@]4([C@@]3([C@H]([C@@H]2[C@H](SC(=O)C)C/C1=C/C(=O)CC[C@]1(C)[C@H]2CC3)CC4)C)CC5" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.90929e+04 ;
+            mbo:mz 4.172098e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.412102e+02 ;
+            mbo:precursor_mz 4.172094e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-014i-0000900000-5e2e1944e45fcef225d1" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2902" ;
+    skos:definition "Spironolactone; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

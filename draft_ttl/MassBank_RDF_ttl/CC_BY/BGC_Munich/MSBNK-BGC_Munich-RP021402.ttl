@@ -1,0 +1,108 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP021402 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP021402" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.644 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-hydroxy-C6-homoserine lactone",
+                "3-hydroxy-N-(2-oxooxolan-3-yl)hexanamide",
+                "3OH-C6-HSL RS/RS" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.151158e+02 ;
+            rdfs:seeAlso cas:192883-16-2,
+                chemspider:9754171,
+                pubchem:CID11579405 ;
+            schema:inChI "InChI=1S/C10H17NO4/c1-2-3-7(12)6-9(13)11-8-4-5-15-10(8)14/h7-8,12H,2-6H2,1H3,(H,11,13)" ;
+            schema:inChIKey inchikey:CRCIHGGZGGATGM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H17NO4" ;
+            schema:name "3-hydroxy-C6-homoserine lactone",
+                "3-hydroxy-N-(2-oxooxolan-3-yl)hexanamide",
+                "3OH-C6-HSL RS/RS" ;
+            schema:smiles "CCCC(O)CC(=O)NC1CCOC1=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.28e+02 ;
+            mbo:mz 5.50168e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.62e+02 ;
+            mbo:mz 1.70117e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 7.06e+02 ;
+            mbo:mz 1.801004e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 6.54e+02 ;
+            mbo:mz 1.981125e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 9e+01 ;
+            mbo:mz 2.161216e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 8.384e+03 ;
+            mbo:mz 7.30639e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 7.768e+03 ;
+            mbo:mz 8.40441e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 1.028e+03 ;
+            mbo:mz 8.50278e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.468e+03 ;
+            mbo:mz 9.70644e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 7.188e+04 ;
+            mbo:mz 1.020547e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.4e+01 ;
+            mbo:mz 1.140909e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.16e+02 ;
+            mbo:mz 1.150757e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.72e+02 ;
+            mbo:mz 1.521054e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.020545e+02 ;
+            mbo:precursor_mz 2.16123e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0udi-2900000000-07d460551b9388341db9" ;
+    rdfs:comment "INTERNAL_ID 214" ;
+    skos:definition "3-hydroxy-C6-homoserine lactone; LC-ESI-QTOF; MS2; CE: 20; R=; [M+H]+" .
+

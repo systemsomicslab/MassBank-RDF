@@ -1,0 +1,103 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB002869 a mbo:MassSpectrum ;
+    dcterms:creator "Carolin Huber, Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2021-02-23"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB002869" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Huber C, Mueller E, Schulze T, Brack W, Krauss M, Improving the Screening Analysis of Pesticide Metabolites in Human Biomonitoring by Combining High-Throughput In Vitro Incubation and Automated LC–HRMS Data Processing, Analytical Chemistry, https://doi.org/10.1021/acs.analchem.1c00972" ] ;
+    dcterms:rights "Copyright (C) 2021 Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30% (nominal)" ;
+            mbo:column_name "Waters UPLC BEH C18 1.7 um 2.1 mm x 100 mm with pre-column" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 15 min, 0/100 at 21 min, 100/0 at 22 min, 100/0 at 30 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "70000" ;
+            mbo:retention_time "12.57 min" ;
+            mbo:solvent "A water with 1% ammonium carbonate 1M",
+                "B methanol with 1% ammonium carbonate 1M and 5% water" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isoproturon-desaturation" ;
+            mbo:ch_compound_class "N/A; Biotransformation Product" ;
+            mbo:ch_exact_mass 2.041254e+02 ;
+            rdfs:seeAlso pubchem:CID102023379 ;
+            schema:inChI "InChI=1S/C12H16N2O/c1-9(2)10-5-7-11(8-6-10)13-12(15)14(3)4/h5-8H,1H2,2-4H3,(H,13,15)" ;
+            schema:inChIKey inchikey:LCZPPCKAMWQGTF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H16N2O" ;
+            schema:name "Isoproturon-desaturation" ;
+            schema:smiles "C=C(C)C1=CC=C(C=C1)NC(=O)N(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.4368e+03 ;
+            mbo:mz 5.10234e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 8.7759e+03 ;
+            mbo:mz 1.300652e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.05532e+04 ;
+            mbo:mz 1.320446e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.631406e+05 ;
+            mbo:mz 1.320808e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 3.8785e+03 ;
+            mbo:mz 1.600759e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.0213e+04 ;
+            mbo:mz 5.60134e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.745702e+06 ;
+            mbo:mz 7.20444e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.2388e+03 ;
+            mbo:mz 7.90543e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.02398e+04 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.4772e+03 ;
+            mbo:mz 9.20495e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.82646e+04 ;
+            mbo:mz 1.050699e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 2.26234e+04 ;
+            mbo:mz 1.150542e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.39643e+04 ;
+            mbo:mz 1.170574e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.051332e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-00di-9100000000-b8b267446c66a743950d" ;
+    rdfs:comment "Isoproturon_desaturation_30eV.txt" ;
+    skos:definition "Isoproturon-desaturation (TENTATIVE); LC-ESI-QFT; MS2; CE: 30%; R=70000; [M+H]+" .
+

@@ -1,0 +1,61 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN115732 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN115732" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "2.799 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(9-carboxynonan-2-yloxycarbonyl)benzoic acid",
+                "Mono-carboxy isononyl phthalate",
+                "Mono-carboxy-isononyl phthalate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.361573e+02 ;
+            rdfs:seeAlso chemspider:58785100,
+                pubchem:CID145459124 ;
+            schema:inChI "InChI=1S/C18H24O6/c1-13(9-5-3-2-4-6-12-16(19)20)24-18(23)15-11-8-7-10-14(15)17(21)22/h7-8,10-11,13H,2-6,9,12H2,1H3,(H,19,20)(H,21,22)" ;
+            schema:inChIKey inchikey:IOWADRRGIUUGJH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H24O6" ;
+            schema:name "2-(9-carboxynonan-2-yloxycarbonyl)benzoic acid",
+                "Mono-carboxy isononyl phthalate",
+                "Mono-carboxy-isononyl phthalate" ;
+            schema:smiles "CC(CCCCCCCC(=O)O)OC(=O)C1=CC=CC=C1C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.5381e+03 ;
+            mbo:mz 7.70405e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.138e+02 ;
+            mbo:mz 1.871329e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 124 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 3.3515e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004i-9100000000-1a6029b26942115ce82a" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Mono-carboxy-isononyl phthalate; LC-ESI-QTOF; MS2; CE: 40eV; R=7000; [M-H]-" .
+

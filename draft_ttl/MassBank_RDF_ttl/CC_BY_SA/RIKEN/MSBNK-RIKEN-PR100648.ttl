@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100648 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100648" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3R,4S,5R,6S)-3,4,5-trihydroxy-2-(hydroxymethyl)-6-(C-prop-2-enyl-N-sulfooxy-carbonimidoyl)sulfanyl-oxane",
+                "1-(beta-D-glucopyranosylthio)but-3-enylideneaminooxysulphonate",
+                "2-propenyl glucosinolate",
+                "Allyl glucosinolate",
+                "Myronate",
+                "SIG",
+                "Sinigrin",
+                "Sinigroside" ;
+            mbo:ch_compound_class "Alkenylglucosinolate" ;
+            mbo:ch_exact_mass 3.590345e+02 ;
+            rdfs:seeAlso cas:534-69-0,
+                chemspider:5288338,
+                knapsack:C00001488,
+                pubchem:CID6911854 ;
+            schema:inChI "InChI=1S/C10H17NO9S2/c1-2-3-6(11-20-22(16,17)18)21-10-9(15)8(14)7(13)5(4-12)19-10/h2,5,7-10,12-15H,1,3-4H2,(H,16,17,18)/t5-,7-,8+,9-,10+/m1/s1" ;
+            schema:inChIKey inchikey:PHZOWSSBXJXFOR-HOQQJHGQSA-N ;
+            schema:molecularFormula "C10H17NO9S2" ;
+            schema:name "(2R,3R,4S,5R,6S)-3,4,5-trihydroxy-2-(hydroxymethyl)-6-(C-prop-2-enyl-N-sulfooxy-carbonimidoyl)sulfanyl-oxane",
+                "1-(beta-D-glucopyranosylthio)but-3-enylideneaminooxysulphonate",
+                "2-propenyl glucosinolate",
+                "Allyl glucosinolate",
+                "Myronate",
+                "SIG",
+                "Sinigrin",
+                "Sinigroside" ;
+            schema:smiles "C=CCC(=NOS(O)(=O)=O)SC(O1)C(O)C(O)C(O)C(CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 2.425e+03 ;
+            mbo:mz 7.49927e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 746 ],
+        [ mbo:intensity 4.061e+02 ;
+            mbo:mz 7.99592e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 2.243e+03 ;
+            mbo:mz 9.59534e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 690 ],
+        [ mbo:intensity 3.246e+03 ;
+            mbo:mz 9.69612e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.682e+03 ;
+            mbo:mz 3.580267e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 825 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.580267e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-9002000000-17bb3b073ffd1337ad4f" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Sinigrin; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000257 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000257" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "7.033300" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,4-dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide",
+                "Panthenol" ;
+            mbo:ch_compound_class "Personnal Care Products; Hair and Skin conditioning; Imides" ;
+            mbo:ch_exact_mass 2.051314e+02 ;
+            schema:inChI "InChI=1S/C9H19NO4/c1-9(2,6-12)7(13)8(14)10-4-3-5-11/h7,11-13H,3-6H2,1-2H3,(H,10,14)" ;
+            schema:molecularFormula "C9H19NO4" ;
+            schema:name "2,4-dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide",
+                "Panthenol" ;
+            schema:smiles "O=C(NCCCO)C(O)C(C)(C)CO" ] ;
+    mbo:has_peak [ mbo:intensity 3.9297e+05 ;
+            mbo:mz 5.501878e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.262272e+06 ;
+            mbo:mz 7.105031e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 1.583361e+06 ;
+            mbo:mz 7.204555e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 9.5551e+05 ;
+            mbo:mz 7.406146e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 4.26039e+05 ;
+            mbo:mz 9.904506e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.854405e+06 ;
+            mbo:mz 1.020562e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 118 ],
+        [ mbo:intensity 2.77171e+05 ;
+            mbo:mz 1.260925e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.73626e+05 ;
+            mbo:mz 1.290568e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.570842e+07 ;
+            mbo:mz 2.041243e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.041243e+02 ;
+            mbo:precursor_mz 2.041243e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0udi-3190000000-c0ead4333a86c46222eb" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Panthenol; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M-H]-" .
+

@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU045906 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU045906" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "90" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "16.941 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Icaridin",
+                "butan-2-yl 2-(2-hydroxyethyl)piperidine-1-carboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.291678e+02 ;
+            rdfs:seeAlso cas:119515-38-7,
+                chemspider:111359,
+                pubchem:CID125098 ;
+            schema:inChI "InChI=1S/C12H23NO3/c1-3-10(2)16-12(15)13-8-5-4-6-11(13)7-9-14/h10-11,14H,3-9H2,1-2H3" ;
+            schema:inChIKey inchikey:QLHULAHOXSSASE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H23NO3" ;
+            schema:name "Icaridin",
+                "butan-2-yl 2-(2-hydroxyethyl)piperidine-1-carboxylate" ;
+            schema:smiles "CCC(C)OC(=O)N1CCCCC1CCO" ] ;
+    mbo:has_peak [ mbo:intensity 1.29716e+04 ;
+            mbo:mz 5.50543e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 373 ],
+        [ mbo:intensity 5.6247e+03 ;
+            mbo:mz 1.121123e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 3.3937e+03 ;
+            mbo:mz 1.280707e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 98 ],
+        [ mbo:intensity 3.6113e+03 ;
+            mbo:mz 1.301229e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 7.3244e+03 ;
+            mbo:mz 5.60495e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 211 ],
+        [ mbo:intensity 3.47232e+04 ;
+            mbo:mz 6.70542e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.8881e+03 ;
+            mbo:mz 6.90698e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 6.7383e+03 ;
+            mbo:mz 7.00652e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 194 ],
+        [ mbo:intensity 1.1423e+04 ;
+            mbo:mz 7.10492e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 329 ],
+        [ mbo:intensity 1.99299e+04 ;
+            mbo:mz 8.40809e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 573 ],
+        [ mbo:intensity 2.7278e+03 ;
+            mbo:mz 9.307e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.23332e+04 ;
+            mbo:mz 9.50856e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 355 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 2.301751e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-06e9-9100000000-d5e323bf9496a7bab621" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Icaridin; LC-ESI-QFT; MS2; CE: 90; R=17500; [M+H]+" .
+

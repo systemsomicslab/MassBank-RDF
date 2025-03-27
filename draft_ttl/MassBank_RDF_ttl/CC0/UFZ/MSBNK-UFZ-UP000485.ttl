@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UP000485 a mbo:MassSpectrum ;
+    dcterms:creator "Liza-Marie Beckers, Werner Brack, Janek-Paul Dann, Martin Krauss, Erik Mueller, Tobias Schulze, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UP000485" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beckers L-M, Brack W, Dann JP, Krauss M, Mueller E, Schulze T, 2020. Unraveling longitudinal pollution patterns of organic micropollutants in a river by non-target screening and cluster analysis. Science of The Total Environment, https://doi.org/10.1016/j.scitotenv.2020.138388" ] ;
+    dcterms:rights "Copyright (C) 2019 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "7.287 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[2-[2-[2-[2-[2-[2-[2-(2-hydroxyethoxy)ethoxy]ethoxy]ethoxy]ethoxy]ethoxy]ethoxy]ethoxy]ethanol",
+                "Nonaethylene glycol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.142465e+02 ;
+            rdfs:seeAlso cas:6155-96-0,
+                chemspider:4701,
+                pubchem:CID4867 ;
+            schema:inChI "InChI=1S/C18H38O10/c19-1-3-21-5-7-23-9-11-25-13-15-27-17-18-28-16-14-26-12-10-24-8-6-22-4-2-20/h19-20H,1-18H2" ;
+            schema:inChIKey inchikey:YZUUTMGDONTGTN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H38O10" ;
+            schema:name "2-[2-[2-[2-[2-[2-[2-[2-(2-hydroxyethoxy)ethoxy]ethoxy]ethoxy]ethoxy]ethoxy]ethoxy]ethoxy]ethanol",
+                "Nonaethylene glycol" ;
+            schema:smiles "OCCOCCOCCOCCOCCOCCOCCOCCOCCO" ] ;
+    mbo:has_peak [ mbo:intensity 1.1536e+03 ;
+            mbo:mz 1.582299e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1.5015e+03 ;
+            mbo:mz 1.582458e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 1.5585e+03 ;
+            mbo:mz 2.431199e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.5378e+03 ;
+            mbo:mz 3.051578e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 3.202e+03 ;
+            mbo:mz 3.751987e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 2.28983e+04 ;
+            mbo:mz 3.932103e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.322806e+02 ;
+            mbo:precursor_mz 4.372357e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-0009000000-5315ded06f23ea171560" ;
+    rdfs:comment "INTERNAL_ID 10" ;
+    skos:definition "Nonaethylene glycol; LC-ESI-ITFT; MS2; CE: 50%; R=15000; [M+Na]+" .
+

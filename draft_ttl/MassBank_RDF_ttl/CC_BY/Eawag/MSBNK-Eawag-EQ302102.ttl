@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ302102 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ302102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "14.6 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[3-(trifluoromethyl)anilino]benzoic acid",
+                "Arlef",
+                "Flufenamic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.810664e+02 ;
+            rdfs:seeAlso cas:530-78-9,
+                chemspider:3254,
+                pubchem:CID3371 ;
+            schema:inChI "InChI=1S/C14H10F3NO2/c15-14(16,17)9-4-3-5-10(8-9)18-12-7-2-1-6-11(12)13(19)20/h1-8,18H,(H,19,20)" ;
+            schema:inChIKey inchikey:LPEPZBJOKDYZAD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H10F3NO2" ;
+            schema:name "2-[3-(trifluoromethyl)anilino]benzoic acid",
+                "Arlef",
+                "Flufenamic acid" ;
+            schema:smiles "C1=CC=C(C(=C1)C(=O)O)NC2=CC=CC(=C2)C(F)(F)F" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 8.3778e+05 ;
+            mbo:mz 1.670726e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.925545e+05 ;
+            mbo:mz 1.950674e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.456775e+05 ;
+            mbo:mz 2.160618e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.686233e+06 ;
+            mbo:mz 2.44057e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.323568e+05 ;
+            mbo:mz 2.630544e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 4.845869e+08 ;
+            mbo:mz 2.640629e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.393404e+06 ;
+            mbo:mz 2.820736e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 5 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.820736e+02 ;
+            mbo:precursor_mz 2.820736e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-03di-0090000000-6e6b5ff30b2979343619" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3021" ;
+    skos:definition "Flufenamic acid; LC-ESI-QFT; MS2; CE: 30; R=35000; [M+H]+" .
+

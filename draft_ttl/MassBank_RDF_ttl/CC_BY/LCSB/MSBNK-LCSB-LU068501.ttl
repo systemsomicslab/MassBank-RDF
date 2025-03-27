@@ -1,0 +1,94 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU068501 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU068501" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "18.878 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Pyrazophos",
+                "ethyl 2-diethoxyphosphinothioyloxy-5-methylpyrazolo[1,5-a]pyrimidine-6-carboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.730861e+02 ;
+            rdfs:seeAlso cas:13457-18-6,
+                chemspider:24247,
+                pubchem:CID26033 ;
+            schema:inChI "InChI=1S/C14H20N3O5PS/c1-5-19-14(18)11-9-17-12(15-10(11)4)8-13(16-17)22-23(24,20-6-2)21-7-3/h8-9H,5-7H2,1-4H3" ;
+            schema:inChIKey inchikey:JOOMJVFZQRQWKR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H20N3O5PS" ;
+            schema:name "Pyrazophos",
+                "ethyl 2-diethoxyphosphinothioyloxy-5-methylpyrazolo[1,5-a]pyrimidine-6-carboxylate" ;
+            schema:smiles "CCOC(=O)C1=CN2N=C(OP(=S)(OCC)OCC)C=C2N=C1C" ] ;
+    mbo:has_peak [ mbo:intensity 1.3076e+04 ;
+            mbo:mz 1.700159e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.62574e+04 ;
+            mbo:mz 2.110533e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.533742e+05 ;
+            mbo:mz 2.220872e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 1.58905e+04 ;
+            mbo:mz 2.360491e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.590561e+05 ;
+            mbo:mz 2.380644e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 7.50935e+04 ;
+            mbo:mz 3.180307e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.02445e+04 ;
+            mbo:mz 3.280514e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.645618e+05 ;
+            mbo:mz 3.46062e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 1.060072e+07 ;
+            mbo:mz 3.740933e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 3.740934e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-00di-0009000000-5b240be7d97acceb8237" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Pyrazophos; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

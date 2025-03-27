@@ -1,0 +1,73 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000191 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000191" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "6.922900" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2-methyl-5-nitroimidazol-1-yl)ethanol",
+                "Metronidazole" ;
+            mbo:ch_compound_class "Drugs; Antiinfective Agents; Nitroimidazoles" ;
+            mbo:ch_exact_mass 1.710644e+02 ;
+            schema:inChI "InChI=1S/C6H9N3O3/c1-5-7-4-6(9(11)12)8(5)2-3-10/h4,10H,2-3H2,1H3" ;
+            schema:molecularFormula "C6H9N3O3" ;
+            schema:name "2-(2-methyl-5-nitroimidazol-1-yl)ethanol",
+                "Metronidazole" ;
+            schema:smiles "O=[N+]([O-])C1=CN=C(N1CCO)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.202778e+07 ;
+            mbo:mz 5.603719e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 5.375496e+06 ;
+            mbo:mz 6.904489e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.712691e+07 ;
+            mbo:mz 8.205217e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 2.446106e+07 ;
+            mbo:mz 9.804742e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 2.22889e+07 ;
+            mbo:mz 1.110429e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 4.577452e+08 ;
+            mbo:mz 1.280455e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.997614e+08 ;
+            mbo:mz 1.720719e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 654 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00b9-0900000000-dc35e5bc7e247722a532" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Metronidazole; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M+H]+" .
+

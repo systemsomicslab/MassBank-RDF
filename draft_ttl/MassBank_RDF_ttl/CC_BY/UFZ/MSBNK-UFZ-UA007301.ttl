@@ -1,0 +1,98 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA007301 a mbo:MassSpectrum ;
+    dcterms:creator "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-08-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA007301" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W (2017) Environ. Sci. Technol. 51:1830-1839, DOI:10.1021/acs.est.6b05468. Mutagenicity in surface waters - synergistic effects of carboline alkaloids and aromatic amines" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "61.67 % (nominal)" ;
+            mbo:column_name "Accucore PhenylHexyl 2.6um, 3x150mm, Thermo" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 3.2 min, 5/95 at 21 min, 5/95 at 41 min, 90/10 at 50 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "16.177 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,6-Dimethylaniline",
+                "2,6-Xylidine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.210891e+02 ;
+            rdfs:seeAlso cas:87-62-7,
+                chemspider:6630,
+                pubchem:CID6896 ;
+            schema:inChI "InChI=1S/C8H11N/c1-6-4-3-5-7(2)8(6)9/h3-5H,9H2,1-2H3" ;
+            schema:inChIKey inchikey:UFFBMTHBGFGIHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H11N" ;
+            schema:name "2,6-Dimethylaniline",
+                "2,6-Xylidine" ;
+            schema:smiles "Cc1cccc(c1N)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.336984e+06 ;
+            mbo:mz 5.30388e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.334656e+06 ;
+            mbo:mz 1.33076e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 7.297371e+06 ;
+            mbo:mz 7.70386e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 2.627272e+07 ;
+            mbo:mz 7.90542e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 6.73581e+06 ;
+            mbo:mz 9.50491e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.554435e+07 ;
+            mbo:mz 1.030542e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 8.053334e+07 ;
+            mbo:mz 1.050699e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 579 ],
+        [ mbo:intensity 4.613459e+06 ;
+            mbo:mz 1.060651e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 4.351783e+07 ;
+            mbo:mz 1.07073e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 313 ],
+        [ mbo:intensity 1.390119e+08 ;
+            mbo:mz 1.220964e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.220962e+02 ;
+            mbo:precursor_mz 1.220964e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-05fr-1900000000-909d1c88363b98e54b2d" ;
+    rdfs:comment "INTERNAL_ID 73" ;
+    skos:definition "2,6-Xylidine; LC-ESI-QFT; MS2; CE: 61.67%; R=35000; [M+H]+" .
+

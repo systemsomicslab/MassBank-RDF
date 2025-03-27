@@ -1,0 +1,90 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000340 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000340" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Perindopril" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.682311e+02 ;
+            rdfs:seeAlso pubchem:CID107807 ;
+            schema:inChI "InChI=1S/C19H32N2O5/c1-4-8-14(19(25)26-5-2)20-12(3)17(22)21-15-10-7-6-9-13(15)11-16(21)18(23)24/h12-16,20H,4-11H2,1-3H3,(H,23,24)/t12-,13-,14-,15-,16-/m0/s1" ;
+            schema:inChIKey inchikey:IPVQLZZIHOAWMC-QXKUPLGCSA-N ;
+            schema:molecularFormula "C19H32N2O5" ;
+            schema:name "Perindopril" ;
+            schema:smiles "[H]OC(=O)C([H])(C([H])([H])1)N(C(=O)C([H])(C([H])([H])[H])N([H])C([H])(C(=O)OC([H])([H])C([H])([H])[H])C([H])([H])C([H])([H])C([H])([H])[H])C([H])(C([H])([H])2)C([H])(C([H])([H])C([H])([H])C([H])([H])2)1" ] ;
+    mbo:has_peak [ mbo:intensity 7.72442e+02 ;
+            mbo:mz 5.50544e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 9.80968e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.71549e+02 ;
+            mbo:mz 1.241127e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 1.32813e+02 ;
+            mbo:mz 1.721339e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.593037e+03 ;
+            mbo:mz 5.60497e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 259 ],
+        [ mbo:intensity 7.59771e+02 ;
+            mbo:mz 6.90693e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 2.52368e+02 ;
+            mbo:mz 7.00652e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.128051e+03 ;
+            mbo:mz 7.2081e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 3.85888e+02 ;
+            mbo:mz 7.30647e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 4.83794e+02 ;
+            mbo:mz 7.40237e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.3236e+02 ;
+            mbo:mz 7.90556e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 5.50754e+02 ;
+            mbo:mz 8.10704e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 55 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.692391e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0002-9000000000-4d9452d99f1522107772" ;
+    skos:definition "Perindopril; LC-ESI-QTOF; MS2; CE:50 eV; [M+H]+" .
+

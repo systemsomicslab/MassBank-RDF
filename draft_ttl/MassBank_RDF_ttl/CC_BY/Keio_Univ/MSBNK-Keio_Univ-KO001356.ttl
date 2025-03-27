@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001356 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001356" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Methanesulfonate",
+                "Methanesulfonic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 9.598811e+01 ;
+            rdfs:seeAlso cas:75-75-2,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:13327> ;
+            schema:inChI "InChI=1S/CH4O3S/c1-5(2,3)4/h1H3,(H,2,3,4)" ;
+            schema:inChIKey inchikey:AFVFQIVMOAPDHO-UHFFFAOYSA-N ;
+            schema:molecularFormula "CH4O3S" ;
+            schema:name "Methanesulfonate",
+                "Methanesulfonic acid" ;
+            schema:smiles "CS(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 6.48e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 8.267335e+05 ;
+            mbo:mz 8.01e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.442477e+08 ;
+            mbo:mz 9.51e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.5e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-9000000000-0eaee70a17475336e434" ;
+    rdfs:comment "KEIO_ID M021" ;
+    skos:definition "Methanesulfonic acid; LC-ESI-QQ; MS2; CE:10 V; [M-H]-" .
+

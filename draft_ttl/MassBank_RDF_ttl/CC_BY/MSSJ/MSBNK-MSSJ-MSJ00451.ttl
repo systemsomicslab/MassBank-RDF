@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00451 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-03-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00451" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "40 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Symmetric dimethylarginine" ;
+            mbo:ch_compound_class "Non-natural product; L-Arginine derivative" ;
+            mbo:ch_exact_mass 2.02143e+02 ;
+            rdfs:seeAlso cas:30344-00-4,
+                chemspider:147942,
+                pubchem:CID169148 ;
+            schema:inChI "InChI=1S/C8H18N4O2/c1-10-8(11-2)12-5-3-4-6(9)7(13)14/h6H,3-5,9H2,1-2H3,(H,13,14)(H2,10,11,12)/t6-/m0/s1" ;
+            schema:inChIKey inchikey:HVPFXCBJHIIJGS-LURJTMIESA-N ;
+            schema:molecularFormula "C8H18N4O2" ;
+            schema:name "Symmetric dimethylarginine" ;
+            schema:smiles "CNC(=NC)NCCC[C@@H](C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.7e+01 ;
+            mbo:mz 4.405e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 1.49e+01 ;
+            mbo:mz 5.70454e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 2.8e+02 ;
+            mbo:mz 7.00648e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.338e+02 ;
+            mbo:mz 7.106e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 477 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.031502e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00di-9000000000-ce232e819b896ab69e0d" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Symmetric dimethylarginine; ESI-QTOF; MS2; POSITIVE; [M+H]+; CID; 40 V" .
+

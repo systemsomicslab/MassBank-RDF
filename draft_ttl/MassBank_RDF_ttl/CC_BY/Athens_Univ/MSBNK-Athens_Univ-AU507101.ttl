@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU507101 a mbo:MassSpectrum ;
+    dcterms:creator "Chrysoula Kanakaki, Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2021-04-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU507101" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2021 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness, Restek" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "12.017 min" ;
+            mbo:solvent " ",
+                "A",
+                "H",
+                "e",
+                "i",
+                "l",
+                "m",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Divinylbenzene (m- and p- mixture)" ;
+            mbo:ch_compound_class "N/A; Food Contact Material" ;
+            mbo:ch_exact_mass 1.300783e+02 ;
+            rdfs:seeAlso cas:1321-74-0,
+                chemspider:60033,
+                pubchem:CID66666 ;
+            schema:inChI "InChI=1S/C10H10/c1-3-9-7-5-6-8-10(9)4-2/h3-8H,1-2H2" ;
+            schema:inChIKey inchikey:MYRTYDVEIRVNKP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H10" ;
+            schema:name "Divinylbenzene (m- and p- mixture)" ;
+            schema:smiles "C=CC1=CC=CC=C1C=C" ] ;
+    mbo:has_peak [ mbo:intensity 1.52e+02 ;
+            mbo:mz 1.160631e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.64e+02 ;
+            mbo:mz 1.170712e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.6e+02 ;
+            mbo:mz 1.180758e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.96e+02 ;
+            mbo:mz 1.290713e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.64e+02 ;
+            mbo:mz 1.300756e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.3948e+04 ;
+            mbo:mz 1.310856e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.901358e+02 ;
+            mbo:precursor_mz 1.310855e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0900000000-68903e11057a31ad3a74" ;
+    rdfs:comment "INTERNAL_ID 5071" ;
+    skos:definition "Divinylbenzene (m- and p- mixture); GC-APCI-QTOF; MS2; CE: 10 eV; R=35000; [M+H]+" .
+

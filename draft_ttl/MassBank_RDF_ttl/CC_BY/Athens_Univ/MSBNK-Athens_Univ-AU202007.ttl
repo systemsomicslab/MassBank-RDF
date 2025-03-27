@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU202007 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU202007" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.143 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "14-ethyl-12,13-dihydroxy-4-(5-hydroxy-4-methoxy-4,6-dimethyloxan-2-yl)oxy-6-[3-hydroxy-6-methyl-4-(methylamino)oxan-2-yl]oxy-7-methoxy-3,5,7,9,11,13-hexamethyl-oxacyclotetradecane-2,10-dione",
+                "N-Desmethyl Clarithromycin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 7.334612e+02 ;
+            rdfs:seeAlso cas:101666-68-6,
+                chemspider:19564792,
+                pubchem:CID13923912 ;
+            schema:inChI "InChI=1S/C37H67NO13/c1-14-25-37(10,44)30(41)20(4)27(39)18(2)16-36(9,46-13)32(51-34-28(40)24(38-11)15-19(3)47-34)21(5)29(22(6)33(43)49-25)50-26-17-35(8,45-12)31(42)23(7)48-26/h18-26,28-32,34,38,40-42,44H,14-17H2,1-13H3" ;
+            schema:inChIKey inchikey:CIJTVUQEURKBDL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C37H67NO13" ;
+            schema:name "14-ethyl-12,13-dihydroxy-4-(5-hydroxy-4-methoxy-4,6-dimethyloxan-2-yl)oxy-6-[3-hydroxy-6-methyl-4-(methylamino)oxan-2-yl]oxy-7-methoxy-3,5,7,9,11,13-hexamethyl-oxacyclotetradecane-2,10-dione",
+                "N-Desmethyl Clarithromycin" ;
+            schema:smiles "CCC1OC(=O)C(C)C(OC2CC(C)(OC)C(O)C(C)O2)C(C)C(OC2OC(C)CC(NC)C2O)C(C)(CC(C)C(=O)C(C)C(O)C1(C)O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 3.6912e+04 ;
+            mbo:mz 1.441023e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.0508e+04 ;
+            mbo:mz 3.021976e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 4.7092e+04 ;
+            mbo:mz 5.76379e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.3336e+04 ;
+            mbo:mz 5.773814e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.090788e+06 ;
+            mbo:mz 7.344758e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.87968e+05 ;
+            mbo:mz 7.354787e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 329 ],
+        [ mbo:intensity 1.40416e+05 ;
+            mbo:mz 7.364813e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 67 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.344739e+02 ;
+            mbo:precursor_mz 7.344685e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-001i-0000000900-4b6f71b7554414497bc2" ;
+    rdfs:comment "INTERNAL_ID 2020" ;
+    skos:definition "N-Desmethyl Clarithromycin; LC-ESI-QTOF; MS2; HILIC; CE: 10 eV; R=35000; [M+H]+" .
+

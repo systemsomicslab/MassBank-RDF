@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU150806 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU150806" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "RAMP 20.9-31.3 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.180 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(5,6-dihydrobenzo[b][1]benzazepin-11-yl)-N,N-dimethylpropan-1-amine",
+                "Imipramine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.801939e+02 ;
+            rdfs:seeAlso cas:50-49-7,
+                chemspider:3568,
+                pubchem:CID3696 ;
+            schema:inChI "InChI=1S/C19H24N2/c1-20(2)14-7-15-21-18-10-5-3-8-16(18)12-13-17-9-4-6-11-19(17)21/h3-6,8-11H,7,12-15H2,1-2H3" ;
+            schema:inChIKey inchikey:BCGWQEUPMDMJNV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H24N2" ;
+            schema:name "3-(5,6-dihydrobenzo[b][1]benzazepin-11-yl)-N,N-dimethylpropan-1-amine",
+                "Imipramine" ;
+            schema:smiles "CN(C)CCCN1c2ccccc2CCc3c1cccc3" ] ;
+    mbo:has_peak [ mbo:intensity 8.76256e+05 ;
+            mbo:mz 5.80645e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 763 ],
+        [ mbo:intensity 8.9984e+04 ;
+            mbo:mz 2.812012e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.7836e+04 ;
+            mbo:mz 2.822051e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 2.544e+04 ;
+            mbo:mz 5.90677e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.146996e+06 ;
+            mbo:mz 8.60966e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.1272e+04 ;
+            mbo:mz 8.70993e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 3.7096e+04 ;
+            mbo:mz 1.930882e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.59776e+05 ;
+            mbo:mz 2.081122e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 2.8412e+04 ;
+            mbo:mz 2.091151e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 5.9184e+04 ;
+            mbo:mz 2.36143e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 7.48e+03 ;
+            mbo:mz 2.371466e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.812021e+02 ;
+            mbo:precursor_mz 2.812012e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-052r-9010000000-961429188e57c1480db8" ;
+    rdfs:comment "INTERNAL_ID 1508" ;
+    skos:definition "Imipramine; LC-ESI-QTOF; MS2; CE: RAMP 20.9-31.3 eV; R=35000; [M+H]+" .
+

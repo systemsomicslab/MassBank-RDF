@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003261 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003261" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "20.080 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "10-hydroxy-8-(10-hydroxy-7-methoxy-3-methyl-1,6,9-trioxo-3,4-dihydrobenzo[g]isochromen-8-yl)-7-methoxy-3-methyl-3,4-dihydrobenzo[g]isochromene-1,6,9-trione",
+                "Xanthomegnin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.741111e+02 ;
+            rdfs:seeAlso cas:1685-91-2,
+                chemspider:14766,
+                pubchem:CID15519 ;
+            schema:inChI "InChI=1S/C30H22O12/c1-9-5-11-7-13-17(23(33)15(11)29(37)41-9)25(35)19(27(39-3)21(13)31)20-26(36)18-14(22(32)28(20)40-4)8-12-6-10(2)42-30(38)16(12)24(18)34/h7-10,33-34H,5-6H2,1-4H3" ;
+            schema:inChIKey inchikey:WICHONPZVIYWIJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C30H22O12" ;
+            schema:name "10-hydroxy-8-(10-hydroxy-7-methoxy-3-methyl-1,6,9-trioxo-3,4-dihydrobenzo[g]isochromen-8-yl)-7-methoxy-3-methyl-3,4-dihydrobenzo[g]isochromene-1,6,9-trione",
+                "Xanthomegnin" ;
+            schema:smiles "CC1CC2=CC3=C(C(=C2C(=O)O1)O)C(=O)C(=C(C3=O)OC)C4=C(C(=O)C5=C(C4=O)C(=C6C(=C5)CC(OC6=O)C)O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 8.8998e+03 ;
+            mbo:mz 5.731066e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.731042e+02 ;
+            mbo:precursor_mz 5.731038e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-00di-0000090000-3ae43db414c3462a579c" ;
+    rdfs:comment "INTERNAL_ID 85" ;
+    skos:definition "Xanthomegnin; LC-ESI-ITFT; MS2; CE: 40%; R=7500; [M-H]-" .
+

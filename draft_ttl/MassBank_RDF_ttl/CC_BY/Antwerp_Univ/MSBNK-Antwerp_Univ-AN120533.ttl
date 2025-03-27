@@ -1,0 +1,66 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN120533 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN120533" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "45 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.189 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-[2-[4-[2-(4-hydroxyphenyl)propan-2-yl]phenyl]propan-2-yl]phenol",
+                "Bisphenol P",
+                "alpha,alpha`-Bis(4-hydroxyphenyl)-1,4-diisopropylbenzene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.461933e+02 ;
+            rdfs:seeAlso cas:2167-51-3,
+                chemspider:547401,
+                pubchem:CID630355 ;
+            schema:inChI "InChI=1S/C24H26O2/c1-23(2,19-9-13-21(25)14-10-19)17-5-7-18(8-6-17)24(3,4)20-11-15-22(26)16-12-20/h5-16,25-26H,1-4H3" ;
+            schema:inChIKey inchikey:GIXXQTYGFOHYPT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H26O2" ;
+            schema:name "4-[2-[4-[2-(4-hydroxyphenyl)propan-2-yl]phenyl]propan-2-yl]phenol",
+                "Bisphenol P",
+                "alpha,alpha`-Bis(4-hydroxyphenyl)-1,4-diisopropylbenzene" ;
+            schema:smiles "CC(C)(C1=CC=C(C=C1)C(C)(C)C2=CC=C(C=C2)O)C3=CC=C(C=C3)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.0429e+03 ;
+            mbo:mz 1.330661e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.529e+02 ;
+            mbo:mz 3.15138e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 625 ],
+        [ mbo:intensity 2.542e+02 ;
+            mbo:mz 3.291579e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 243 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.451865e+02 ;
+            mbo:precursor_mz 3.45186e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00lr-0907000000-cd5746c876782efaa4a5" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Bisphenol P; LC-ESI-QTOF; MS2; CE: 45eV; R=7000; [M-H]-" .
+

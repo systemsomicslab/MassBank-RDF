@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ETS00127 a mbo:MassSpectrum ;
+    dcterms:creator "AC Chiaia-Hernandez, EL Schymanski, P Kumar, J Hollender, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-02-03 (Created 2014-06-25)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ETS00127" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Chiaia-Hernandez, A. C.; Schymanski, E. L.; Kumar, P.; Singer, H. P.; Hollender, J. Suspect and Nontarget Screening Approaches to Identify Organic Contaminant Records in Lake Sediments. Analytical and Bioanalytical Chemistry 2014, 406 (28), 7323–35. DOI:10.1007/s00216-014-8166-0" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "95/5/0 at 0-1 min, 90/10/0 at 1 min, 50/50/0 at 4 min, 0/100/0 at 18-22 min, 0/0/100 at 22.1-30 min, 95/5/0 at 30-38 min" ;
+            mbo:flow_rate "200-320 (0-1 min); 200 (1-38 min) ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "16.83 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid",
+                "C isopropanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-[2-(4-tert-Butylphenyl)ethoxy]quinazoline",
+                "4-{2-[4-(2-Methyl-2-propanyl)phenyl]ethoxy}quinazoline",
+                "Fenazaquin" ;
+            mbo:ch_compound_class "N/A; Environmental Compound" ;
+            mbo:ch_exact_mass 3.061732e+02 ;
+            rdfs:seeAlso chemspider:77874,
+                pubchem:CID86356 ;
+            schema:inChI "InChI=1S/C20H22N2O/c1-20(2,3)16-10-8-15(9-11-16)12-13-23-19-17-6-4-5-7-18(17)21-14-22-19/h4-11,14H,12-13H2,1-3H3" ;
+            schema:inChIKey inchikey:DMYHGDXADUDKCQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H22N2O" ;
+            schema:name "4-[2-(4-tert-Butylphenyl)ethoxy]quinazoline",
+                "4-{2-[4-(2-Methyl-2-propanyl)phenyl]ethoxy}quinazoline",
+                "Fenazaquin" ;
+            schema:smiles "CC(C)(C)C1=CC=C(C=C1)CCOC2=NC=NC3=CC=CC=C32" ] ;
+    mbo:has_peak [ mbo:intensity 8.677643e+05 ;
+            mbo:mz 5.70691e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 8.560954e+05 ;
+            mbo:mz 1.470549e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 4.487822e+06 ;
+            mbo:mz 1.611322e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 838 ],
+        [ mbo:intensity 5.352926e+06 ;
+            mbo:mz 3.071804e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.071804e+02 ;
+            mbo:precursor_mz 3.071804e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0bt9-1809000000-f171011a8c3bdeec7263" ;
+    rdfs:comment "Source fenazaquin_30102013_12_HCD30_pos.txt" ;
+    skos:definition "Fenazaquin; LC-ESI-ITFT; MS2; HCD30; R=7500; [M+H]+" .
+

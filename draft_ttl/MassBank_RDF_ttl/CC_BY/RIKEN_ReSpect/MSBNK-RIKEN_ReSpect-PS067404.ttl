@@ -1,0 +1,61 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS067404 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS067404" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2'-Deoxyguanosine-5'-diphosphate sodium salt",
+                "DGI",
+                "dGDP",
+                "deoxy-GDP" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Guanosine phosphate" ;
+            mbo:ch_exact_mass 4.27207e+02 ;
+            rdfs:seeAlso pubchem:CID439220 ;
+            schema:inChI "InChI=1S/C10H15N5O10P2/c11-10-13-8-7(9(17)14-10)12-3-15(8)6-1-4(16)5(24-6)2-23-27(21,22)25-26(18,19)20/h3-6,16H,1-2H2,(H,21,22)(H2,18,19,20)(H3,11,13,14,17)" ;
+            schema:inChIKey inchikey:CIKGWCTVFSRMJU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H15N5O10P2" ;
+            schema:name "2'-Deoxyguanosine-5'-diphosphate sodium salt",
+                "DGI",
+                "dGDP",
+                "deoxy-GDP" ;
+            schema:smiles "C1C(C(OC1N2C=NC3=C2NC(=NC3=O)N)COP(=O)(O)OP(=O)(O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.1517e+04 ;
+            mbo:mz 8.1e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 3.7502e+04 ;
+            mbo:mz 1.51e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 267 ],
+        [ mbo:intensity 1.40208e+05 ;
+            mbo:mz 1.52e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.2831e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-1900000000-99834d7df807b183d3ee" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "2'-Deoxyguanosine-5'-diphosphate sodium salt, dGDP, DGI, deoxy-GDP; LC-ESI-QQ; MS2" .
+

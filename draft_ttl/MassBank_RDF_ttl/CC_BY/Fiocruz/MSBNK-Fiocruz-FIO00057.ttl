@@ -1,0 +1,62 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00057 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00057" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Emodin" ;
+            mbo:ch_compound_class "Natural Product; Polyketide" ;
+            mbo:ch_exact_mass 2.700528e+02 ;
+            rdfs:seeAlso cas:518-82-1,
+                knapsack:C00000555,
+                pubchem:CID12529 ;
+            schema:inChI "InChI=1S/C15H10O5/c1-6-2-8-12(10(17)3-6)15(20)13-9(14(8)19)4-7(16)5-11(13)18/h2-5,16-18H,1H3" ;
+            schema:inChIKey inchikey:RHMXXJGYXNZAPX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O5" ;
+            schema:name "Emodin" ;
+            schema:smiles "Cc(c3)cc(c(=O)1)c(c(O)3)c(=O)c(c(O)2)c(cc(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 3.8136e+04 ;
+            mbo:mz 2.710595e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.783e+03 ;
+            mbo:mz 2.720627e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 151 ],
+        [ mbo:intensity 7.74e+02 ;
+            mbo:mz 2.730653e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.710595e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0090000000-8c9267f9d7e631944de2" ;
+    rdfs:comment "[Raw Data] CB029_Emodin_pos_10eV_CB000015.txt" ;
+    skos:definition "Emodin; LC-ESI-QTOF; MS2; [M+H]+; CE: 10eV" .
+

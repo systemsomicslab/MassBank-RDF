@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU275002 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU275002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.924 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[3-(2-cyanopropan-2-yl)-5-(1,2,4-triazol-1-ylmethyl)phenyl]-2-methylpropanenitrile",
+                "Anastrozole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.93164e+02 ;
+            rdfs:seeAlso cas:120511-73-1,
+                chemspider:2102,
+                pubchem:CID2187 ;
+            schema:inChI "InChI=1S/C17H19N5/c1-16(2,9-18)14-5-13(8-22-12-20-11-21-22)6-15(7-14)17(3,4)10-19/h5-7,11-12H,8H2,1-4H3" ;
+            schema:inChIKey inchikey:YBBLVLTVTVSKRW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H19N5" ;
+            schema:name "2-[3-(2-cyanopropan-2-yl)-5-(1,2,4-triazol-1-ylmethyl)phenyl]-2-methylpropanenitrile",
+                "Anastrozole" ;
+            schema:smiles "CC(C)(C#N)C1=CC(=CC(CN2C=NC=N2)=C1)C(C)(C)C#N" ] ;
+    mbo:has_peak [ mbo:intensity 6.81976e+05 ;
+            mbo:mz 1.700955e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 803 ],
+        [ mbo:intensity 7.332e+04 ;
+            mbo:mz 1.710986e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 4.20036e+05 ;
+            mbo:mz 1.841113e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 495 ],
+        [ mbo:intensity 5.0592e+04 ;
+            mbo:mz 1.851144e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 8.48484e+05 ;
+            mbo:mz 2.121063e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.06392e+05 ;
+            mbo:mz 2.131096e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 125 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.941604e+02 ;
+            mbo:precursor_mz 2.941713e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03k9-0970000000-631de023e85e74dc9b97" ;
+    rdfs:comment "INTERNAL_ID 2750" ;
+    skos:definition "Anastrozole; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,74 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00580 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00580" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Quercitrin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 4.481006e+02 ;
+            rdfs:seeAlso cas:522-12-3,
+                knapsack:C00005374,
+                pubchem:CID4883 ;
+            schema:inChI "InChI=1S/C21H20O11/c1-7-15(26)17(28)18(29)21(30-7)32-20-16(27)14-12(25)5-9(22)6-13(14)31-19(20)8-2-3-10(23)11(24)4-8/h2-7,15,17-18,21-26,28-29H,1H3/t7-,15-,17+,18+,21-/m0/s1" ;
+            schema:inChIKey inchikey:OXGUCUVFOIWWQJ-HQBVPOQASA-N ;
+            schema:molecularFormula "C21H20O11" ;
+            schema:name "Quercitrin" ;
+            schema:smiles "Oc(c4)c(O)cc(c4)C(O1)=C(O[C@H](O3)[C@H](O)[C@H](O)[C@@H](O)[C@H](C)3)C(=O)c(c(O)2)c(cc(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.1228e+03 ;
+            mbo:mz 8.50272e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.0864e+03 ;
+            mbo:mz 1.290552e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 6.744e+02 ;
+            mbo:mz 1.470656e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 4.79e+04 ;
+            mbo:mz 3.030495e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.3288e+03 ;
+            mbo:mz 3.040528e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 1.3152e+03 ;
+            mbo:mz 3.050553e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 27 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.030495e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0udi-0009000000-9f81c5d16f2bc1395b5a" ;
+    rdfs:comment "[Raw Data] CBA03_Quercitrin_pos_30eV.txt" ;
+    skos:definition "Quercitrin; LC-ESI-QTOF; MS2; [M+H]+; CE: 30eV" .
+

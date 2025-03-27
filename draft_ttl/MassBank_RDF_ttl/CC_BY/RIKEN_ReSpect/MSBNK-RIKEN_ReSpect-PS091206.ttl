@@ -1,0 +1,95 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS091206 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS091206" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "60" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isor-3-Glc-6''-Rha",
+                "Isorhamnetin-3-Glucoside-6''-Rhamnoside",
+                "Isorhamnetin-3-rhamnoglucoside",
+                "Narcissin",
+                "Narcissoside",
+                "isorhamnetin-3-rutinoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavonol CLASS3 Isorhamnetin glycoside" ;
+            mbo:ch_exact_mass 6.24548e+02 ;
+            rdfs:seeAlso cas:604-80-8,
+                pubchem:CID5481663 ;
+            schema:inChI "InChI=1S/C28H32O16/c1-9-18(32)21(35)23(37)27(41-9)40-8-16-19(33)22(36)24(38)28(43-16)44-26-20(34)17-13(31)6-11(29)7-15(17)42-25(26)10-3-4-12(30)14(5-10)39-2/h3-7,9,16,18-19,21-24,27-33,35-38H,8H2,1-2H3" ;
+            schema:inChIKey inchikey:UIDGLYUNOUKLBM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C28H32O16" ;
+            schema:name "Isor-3-Glc-6''-Rha",
+                "Isorhamnetin-3-Glucoside-6''-Rhamnoside",
+                "Isorhamnetin-3-rhamnoglucoside",
+                "Narcissin",
+                "Narcissoside",
+                "isorhamnetin-3-rutinoside" ;
+            schema:smiles "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)OC)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.286e+03 ;
+            mbo:mz 5.7e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 2.4929e+04 ;
+            mbo:mz 3.18e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 336 ],
+        [ mbo:intensity 1.9181e+04 ;
+            mbo:mz 7.1e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 259 ],
+        [ mbo:intensity 4.826e+03 ;
+            mbo:mz 8.4e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 3.9205e+04 ;
+            mbo:mz 8.5e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 529 ],
+        [ mbo:intensity 2.607e+03 ;
+            mbo:mz 9.9e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 3.652e+03 ;
+            mbo:mz 1.29e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 3.835e+03 ;
+            mbo:mz 3.15e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 4.7062e+04 ;
+            mbo:mz 3.16e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 635 ],
+        [ mbo:intensity 7.402e+04 ;
+            mbo:mz 3.17e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.2558e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-014i-4009000000-1a64a725a3532ba883fe" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Narcissoside, Isor-3-Glc-6''-Rha, Isorhamnetin-3-Glucoside-6''-Rhamnoside, Narcissin, Isorhamnetin-3-rhamnoglucoside , isorhamnetin-3-rutinoside; LC-ESI-QQ; MS2" .
+

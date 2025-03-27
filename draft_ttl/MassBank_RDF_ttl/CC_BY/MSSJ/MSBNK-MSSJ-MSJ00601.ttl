@@ -1,0 +1,85 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00601 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2021-03-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kenji Mori, Tetrahedron 75 (2019) 3387-3398, DOI:10.1016/j.tet.2019.04.055." ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Agilent, Wilmington, USA) gas chromatograph." ;
+            mbo:column_name "HP-5 19091 J-413 USD364547H (Agilent, Wilmington, USA), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "10.28 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-((4-Methoxybenzyl)oxy)-2,2-dimethylhex-5-enol" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 2.641726e+02 ;
+            schema:inChI "InChI=1S/C16H24O3/c1-5-6-15(16(2,3)12-17)19-11-13-7-9-14(18-4)10-8-13/h5,7-10,15,17H,1,6,11-12H2,2-4H3" ;
+            schema:inChIKey inchikey:UOKMKXICNTYTEN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H24O3" ;
+            schema:name "3-((4-Methoxybenzyl)oxy)-2,2-dimethylhex-5-enol" ;
+            schema:smiles "COC1=CC=C(COC(CC=C)C(C)(C)CO)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 9.1e-01 ;
+            mbo:mz 1.5005e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.9e-01 ;
+            mbo:mz 2.65312e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.92e+00 ;
+            mbo:mz 2.66178e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 9.3e-01 ;
+            mbo:mz 1.64067e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 2.82e+00 ;
+            mbo:mz 1.91091e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 6.2e-01 ;
+            mbo:mz 1.92097e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.6e-01 ;
+            mbo:mz 2.22124e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6.5e-01 ;
+            mbo:mz 2.23134e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.64173e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.9e-01 ;
+            mbo:mz 2.64885e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.706e+01 ;
+            mbo:mz 2.65176e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 170 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-03di-0090000000-e8222192d966ace17a05" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 20HP8016 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "3-((4-Methoxybenzyl)oxy)-2,2-dimethylhex-5-enol; GC-FI-TOF; MS; positive; FI; 10 kV" .
+

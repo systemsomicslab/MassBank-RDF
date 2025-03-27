@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT109750 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT109750" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3S)-2-Amino-3-methylpentanoic acid",
+                "(2R,3S)-2-Amino-3-methylvaleric acid",
+                "(2R,3S)-2-amino-3-methylpentanoic acid",
+                "D-Alloisoleucine",
+                "allo-Ile" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Isoleucine" ;
+            mbo:ch_exact_mass 1.31175e+02 ;
+            rdfs:seeAlso cas:1509-35-9 ;
+            schema:inChI "InChI=1S/C6H13NO2/c1-3-4(2)5(7)6(8)9/h4-5H,3,7H2,1-2H3,(H,8,9)" ;
+            schema:inChIKey inchikey:AGPKZVBTJJNPAG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H13NO2" ;
+            schema:name "(2R,3S)-2-Amino-3-methylpentanoic acid",
+                "(2R,3S)-2-Amino-3-methylvaleric acid",
+                "(2R,3S)-2-amino-3-methylpentanoic acid",
+                "D-Alloisoleucine",
+                "allo-Ile" ;
+            schema:smiles "CCC(C)C(C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 4.809e+02 ;
+            mbo:mz 6.90709e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 176 ],
+        [ mbo:intensity 2.728e+03 ;
+            mbo:mz 8.60954e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.584e+02 ;
+            mbo:mz 1.321024e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 95 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.321024e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-9000000000-36fa597d890019f9b71a" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "allo-Ile, (2R,3S)-2-Amino-3-methylvaleric acid, (2R,3S)-2-amino-3-methylpentanoic acid, (2R,3S)-2-Amino-3-methylpentanoic acid, D-Alloisoleucine; LC-ESI-QTOF; MS2" .
+

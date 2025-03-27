@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML004351 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML004351" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "3.0 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-amino-3,7-dihydropurin-6-one",
+                "guanine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.510494e+02 ;
+            rdfs:seeAlso cas:73-40-5,
+                chemspider:744,
+                pubchem:CID135398634 ;
+            schema:inChI "InChI=1S/C5H5N5O/c6-5-9-3-2(4(11)10-5)7-1-8-3/h1H,(H4,6,7,8,9,10,11)" ;
+            schema:inChIKey inchikey:UYTPUPDQBNUYGX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H5N5O" ;
+            schema:name "2-amino-3,7-dihydropurin-6-one",
+                "guanine" ;
+            schema:smiles "c1[nH]c2c(n1)nc(nc2O)N" ] ;
+    mbo:has_peak [ mbo:intensity 8.6e+01 ;
+            mbo:mz 8.2041e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 8.539e+02 ;
+            mbo:mz 1.070364e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.4582e+03 ;
+            mbo:mz 1.080204e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 1.486e+02 ;
+            mbo:mz 1.260308e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.02029e+04 ;
+            mbo:mz 1.330156e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 345 ],
+        [ mbo:intensity 2.95491e+04 ;
+            mbo:mz 1.50042e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.74956e+02 ;
+            mbo:precursor_mz 1.500421e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0udi-0900000000-f0a95c55947ca990359c" ;
+    rdfs:comment "ML_ID 43" ;
+    skos:definition "guanine; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M-H]-" .
+

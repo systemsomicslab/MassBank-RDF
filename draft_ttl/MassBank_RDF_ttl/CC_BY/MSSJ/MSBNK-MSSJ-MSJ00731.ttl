@@ -1,0 +1,79 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00731 a mbo:MassSpectrum ;
+    dcterms:creator "Nobuyuki Okahashi and Fumio Matsuda, Osaka University" ;
+    dcterms:date "2021-10-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00731" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Nobuyuki Okahashi et al. Mass Spectrometry 2019 vol. 8, A0073." ] ;
+    dcterms:rights "Nobuyuki Okahashi and Fumio Matsuda, Osaka University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "GCMS-TQ8040 (Shimadzu, Kyoto, Japan)" ;
+            mbo:collision_energy "10 V" ;
+            mbo:column_name "DB-5MS+DG (Agilent Technologies, Santa Clara, CA, USA)" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-EI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Fumaric acid-[1,2,3,4-13C4]" ;
+            mbo:ch_compound_class "In vitro synthetic compound" ;
+            mbo:ch_exact_mass 1.16011e+02 ;
+            rdfs:seeAlso chemspider:48063181,
+                pubchem:CID71309144 ;
+            schema:inChI "InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/b2-1+/i1+1,2+1,3+1,4+1" ;
+            schema:inChIKey inchikey:VZCYOOQTPOCHFL-BHBLSLFXSA-N ;
+            schema:molecularFormula "C4H4O4" ;
+            schema:name "Fumaric acid-[1,2,3,4-13C4]" ;
+            schema:smiles "C(=C/C(=O)O)\\C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.25086e+05 ;
+            mbo:mz 7.305e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 2.0249e+04 ;
+            mbo:mz 1.3305e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.75263e+05 ;
+            mbo:mz 1.4705e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 158 ],
+        [ mbo:intensity 8.9462e+04 ;
+            mbo:mz 1.491e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 3.0489e+04 ;
+            mbo:mz 1.59e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.1257e+04 ;
+            mbo:mz 1.7515e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 9.6975e+04 ;
+            mbo:mz 2.201e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 1.741009e+06 ;
+            mbo:mz 2.491e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.490794e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0002-0290000000-7123212226c0eeaa0849" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Fumaric acid-[1,2,3,4-13C4]; GC-EI-QQ; MS2; POSITIVE; CID 10 V; 2 TMS-derivative; [M-15]+" .
+

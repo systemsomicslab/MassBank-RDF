@@ -1,0 +1,108 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML001101 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML001101" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "5.6 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3'-AMP",
+                "[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-4-hydroxy-2-(hydroxymethyl)oxolan-3-yl] dihydrogen phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.470631e+02 ;
+            rdfs:seeAlso chemspider:37610,
+                pubchem:CID41211 ;
+            schema:inChI "InChI=1S/C10H14N5O7P/c11-8-5-9(13-2-12-8)15(3-14-5)10-6(17)7(4(1-16)21-10)22-23(18,19)20/h2-4,6-7,10,16-17H,1H2,(H2,11,12,13)(H2,18,19,20)/t4-,6-,7-,10-/m1/s1" ;
+            schema:inChIKey inchikey:LNQVTSROQXJCDD-KQYNXXCUSA-N ;
+            schema:molecularFormula "C10H14N5O7P" ;
+            schema:name "3'-AMP",
+                "[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-4-hydroxy-2-(hydroxymethyl)oxolan-3-yl] dihydrogen phosphate" ;
+            schema:smiles "Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OP(=O)(O)O)[C@H]1O" ] ;
+    mbo:has_peak [ mbo:intensity 1.516686e+05 ;
+            mbo:mz 8.50284e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.639593e+05 ;
+            mbo:mz 1.649948e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 4.9884e+03 ;
+            mbo:mz 1.769949e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.5127e+03 ;
+            mbo:mz 1.950057e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 5.4593e+03 ;
+            mbo:mz 2.130158e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.1458e+03 ;
+            mbo:mz 9.40403e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.096767e+05 ;
+            mbo:mz 9.70284e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 1.586962e+05 ;
+            mbo:mz 9.89841e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1.2606e+04 ;
+            mbo:mz 1.15039e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.30049e+04 ;
+            mbo:mz 1.190353e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.176856e+06 ;
+            mbo:mz 1.360618e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.65324e+04 ;
+            mbo:mz 1.369996e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.6875e+03 ;
+            mbo:mz 1.370447e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.48071e+02 ;
+            mbo:precursor_mz 3.480704e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-000i-1900000000-3070b457af9f8caf95ae" ;
+    rdfs:comment "ML_ID 11" ;
+    skos:definition "3'-AMP; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M+H]+" .
+

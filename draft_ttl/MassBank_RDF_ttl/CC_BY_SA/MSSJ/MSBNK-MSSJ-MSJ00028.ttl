@@ -1,0 +1,75 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00028 a mbo:MassSpectrum ;
+    dcterms:creator "CASMI2013 organizers" ;
+    dcterms:date "2016-01-19 (Created 2014-07-23)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00028" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Mass Spectrometry Society of Japan under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Acquity UPLC and a Xevo TQ (Waters)" ;
+            mbo:collision_energy "10 V" ;
+            mbo:column_name "L-column 2 ODS" ;
+            mbo:flow_gradient "0 to 5 min, a linear increase from 10% to 100% B 5 to 10 min, hold at 100% B and 10 to 15 min, equilibration at 10% B" ;
+            mbo:flow_rate "0.2 mL/min" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A methanol containing 2 mM formate",
+                "B water containing 2 mM formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(Perfluorooctyl)ethanol" ;
+            mbo:ch_compound_class "Non-Natural Product" ;
+            mbo:ch_exact_mass 4.640069e+02 ;
+            rdfs:seeAlso chemspider:62822,
+                pubchem:CID69619 ;
+            schema:inChI "InChI=1S/C10H5F17O/c11-3(12,1-2-28)4(13,14)5(15,16)6(17,18)7(19,20)8(21,22)9(23,24)10(25,26)27/h28H,1-2H2" ;
+            schema:inChIKey inchikey:JJUBFBTUBACDHW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H5F17O" ;
+            schema:name "2-(Perfluorooctyl)ethanol" ;
+            schema:smiles "C(CO)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 2.53284e+05 ;
+            mbo:mz 3.17e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.369937e+06 ;
+            mbo:mz 3.55e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 2.29207e+05 ;
+            mbo:mz 3.75e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 7.61542e+05 ;
+            mbo:mz 3.83e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 7.086004e+06 ;
+            mbo:mz 4.03e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.603329e+06 ;
+            mbo:mz 4.23e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 226 ],
+        [ mbo:intensity 2.3541e+05 ;
+            mbo:mz 4.63e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 33 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.629985e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0udi-0002900000-440e9992cf63dd8ea4c0" ;
+    rdfs:comment "CASMI2013 Challenge_15 MS2 data, retention time = 7.3 min" ;
+    skos:definition "2-(Perfluorooctyl)ethanol; LC-ESI-QQ; MS2; [M-H]-; CE 10 V" .
+

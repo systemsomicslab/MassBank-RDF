@@ -1,0 +1,69 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Literature_Specs-LIT00006 a mbo:MassSpectrum ;
+    dcterms:creator "E. Schymanski; retrieved from M. Castillo et al. 2000" ;
+    dcterms:date "2016-02-03 (Created 2013-01-31)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Literature_Specs-LIT00006" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Castillo, M.; Riu, J.; Ventura, F.; Boleda, R.; Scheding, R.; Schröder, H. F.; Nistor, C.; Émneus, J.; Eichhorn, P.; Knepper, T. .; et al. Inter-Laboratory Comparison of Liquid Chromatographic Techniques and Enzyme-Linked Immunosorbent Assay for the Determination of Surfactants in Wastewaters. Journal of Chromatography A 2000, 889 (1–2), 195–209. DOI:10.1016/s0021-9673(00)00398-8" ] ;
+    dcterms:rights "Copyright (C) Elsevier Ltd. 2000 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "VG Platform" ;
+            mbo:instrument_type "LC-APCI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "C15-coconut fatty acid diethanolamide",
+                "C15DEA",
+                "N,N-Bis(2-hydroxyethyl)palmitamide" ;
+            mbo:ch_compound_class "N/A; Surfactant" ;
+            mbo:ch_exact_mass 3.433087e+02 ;
+            rdfs:seeAlso cas:68155-06-6,
+                chemspider:74046,
+                pubchem:CID82046 ;
+            schema:inChI "InChI=1S/C20H41NO3/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-20(24)21(16-18-22)17-19-23/h22-23H,2-19H2,1H3" ;
+            schema:inChIKey inchikey:VJESJEJNMGVQLZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H41NO3" ;
+            schema:name "C15-coconut fatty acid diethanolamide",
+                "C15DEA",
+                "N,N-Bis(2-hydroxyethyl)palmitamide" ;
+            schema:smiles "O=C(CCCCCCCCCCCCCCC)N(CCO)CCO" ] ;
+    mbo:has_peak [ mbo:intensity 2.5e+01 ;
+            mbo:mz 8.8e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 8e+01 ;
+            mbo:mz 1.06e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 799 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 2.82e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.26e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.5e+01 ;
+            mbo:mz 3.44e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 749 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-056u-1419000000-90981a58f0e4cae529b3" ;
+    rdfs:comment "Digitised from figure: approximate intensities" ;
+    skos:definition "C15DEA; LC-APCI-Q; MS; [M+H]+" .
+

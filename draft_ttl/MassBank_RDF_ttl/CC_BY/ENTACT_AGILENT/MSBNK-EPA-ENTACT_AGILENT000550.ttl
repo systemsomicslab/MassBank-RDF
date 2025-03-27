@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000550 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000550" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tributyl citrate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.602148e+02 ;
+            rdfs:seeAlso cas:77-94-1,
+                pubchem:CID6507 ;
+            schema:inChI "InChI=1S/C18H32O7/c1-4-7-10-23-15(19)13-18(22,17(21)25-12-9-6-3)14-16(20)24-11-8-5-2/h22H,4-14H2,1-3H3" ;
+            schema:inChIKey inchikey:ZFOZVQLOBQUTQQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H32O7" ;
+            schema:name "Tributyl citrate" ;
+            schema:smiles "CCCCOC(=O)C(O)(CC(=O)OCCCC)CC(=O)OCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 7.101274e+00 ;
+            mbo:mz 4.103858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 1.622316e+01 ;
+            mbo:mz 1.390026e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.301784e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.43421e+00 ;
+            mbo:mz 4.305423e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.598121e+01 ;
+            mbo:mz 5.706988e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 260 ],
+        [ mbo:intensity 1.139703e+00 ;
+            mbo:mz 6.102841e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.872458e+01 ;
+            mbo:mz 6.899711e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 487 ],
+        [ mbo:intensity 1.091602e+01 ;
+            mbo:mz 8.700767e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 4.029199e+01 ;
+            mbo:mz 1.110077e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 403 ],
+        [ mbo:intensity 2.865542e+01 ;
+            mbo:mz 1.290182e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 286 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.612221e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0006-9300000000-09e2607f3e65c2661506" ;
+    skos:definition "Tributyl citrate; ESI-QTOF; MS2; CE: 40; [M+H]+" .
+

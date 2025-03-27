@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA001862 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA001862" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "2.550 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Adrenalone" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.810739e+02 ;
+            rdfs:seeAlso cas:99-45-6 ;
+            schema:inChI "InChI=1S/C9H11NO3/c1-10-5-9(13)6-2-3-7(11)8(12)4-6/h2-4,10-12H,5H2,1H3" ;
+            schema:inChIKey inchikey:PZMVOUYYNKPMSI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H11NO3" ;
+            schema:name "Adrenalone" ;
+            schema:smiles "CNCC(=O)c(c1)cc(O)c(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 3.9e+01 ;
+            mbo:mz 1.64e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.82e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.9e+01 ;
+            mbo:mz 1.83e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 1.95e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001i-0900000000-6df3f13c168d24a09a5c" ;
+    skos:definition "Adrenalone; LC-ESI-Q; MS; POS; 15 V" .
+

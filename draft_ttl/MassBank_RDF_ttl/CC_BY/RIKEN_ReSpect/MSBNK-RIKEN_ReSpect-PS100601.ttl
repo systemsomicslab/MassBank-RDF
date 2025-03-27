@@ -1,0 +1,65 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS100601 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS100601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(R)-(+)-N-(2,4-Dihydroxy-3,3-dimethyl-1-oxobutyl)-beta-alanine",
+                "(R)-Pantothenate",
+                "D-Pantothenic Acid",
+                "D-Pantothenic acid hemicalcium salt",
+                "Vitamin B5" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Vitamin" ;
+            mbo:ch_exact_mass 2.19237e+02 ;
+            rdfs:seeAlso cas:79-83-4,
+                pubchem:CID6613 ;
+            schema:inChI "InChI=1S/C9H17NO5/c1-9(2,5-11)7(14)8(15)10-4-3-6(12)13/h7,11,14H,3-5H2,1-2H3,(H,10,15)(H,12,13)" ;
+            schema:inChIKey inchikey:GHOKWGTUZJEAQD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H17NO5" ;
+            schema:name "(R)-(+)-N-(2,4-Dihydroxy-3,3-dimethyl-1-oxobutyl)-beta-alanine",
+                "(R)-Pantothenate",
+                "D-Pantothenic Acid",
+                "D-Pantothenic acid hemicalcium salt",
+                "Vitamin B5" ;
+            schema:smiles "CC(C)(CO)C(C(=O)NCCC(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.418e+04 ;
+            mbo:mz 9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 8.9568e+04 ;
+            mbo:mz 2.19e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 8.33604e+05 ;
+            mbo:mz 2.2e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.2029e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0090000000-bd423dfd9d34423f7991" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "D-Pantothenic acid hemicalcium salt, D-Pantothenic Acid, (R)-Pantothenate, (R)-(+)-N-(2,4-Dihydroxy-3,3-dimethyl-1-oxobutyl)-beta-alanine, Vitamin B5; LC-ESI-QQ; MS2" .
+

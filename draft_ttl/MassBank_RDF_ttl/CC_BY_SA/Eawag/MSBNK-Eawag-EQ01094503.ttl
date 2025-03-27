@@ -1,0 +1,105 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01094503 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-06-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01094503" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.203 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-hydroxy-3-(1,2,3,4-tetrahydronaphthalen-1-yl)chromen-2-one",
+                "Coumatetralyl" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.921099e+02 ;
+            rdfs:seeAlso cas:5836-29-3,
+                chemspider:10468736,
+                pubchem:CID54678504 ;
+            schema:inChI "InChI=1S/C19H16O3/c20-18-15-9-3-4-11-16(15)22-19(21)17(18)14-10-5-7-12-6-1-2-8-13(12)14/h1-4,6,8-9,11,14,20H,5,7,10H2" ;
+            schema:inChIKey inchikey:ULSLJYXHZDTLQK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H16O3" ;
+            schema:name "4-hydroxy-3-(1,2,3,4-tetrahydronaphthalen-1-yl)chromen-2-one",
+                "Coumatetralyl" ;
+            schema:smiles "C1CC(C2=CC=CC=C2C1)C3=C(C4=CC=CC=C4OC3=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.977602e+07 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 330 ],
+        [ mbo:intensity 1.806965e+08 ;
+            mbo:mz 1.75039e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.474256e+06 ;
+            mbo:mz 1.890548e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 5.976649e+06 ;
+            mbo:mz 2.150704e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.965825e+07 ;
+            mbo:mz 2.931173e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 1.088496e+06 ;
+            mbo:mz 9.50494e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.259849e+06 ;
+            mbo:mz 1.050699e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 4.340114e+06 ;
+            mbo:mz 1.070492e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.507142e+06 ;
+            mbo:mz 1.190858e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.75796e+06 ;
+            mbo:mz 1.210282e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.096532e+06 ;
+            mbo:mz 1.290701e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.879256e+07 ;
+            mbo:mz 1.310856e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 1.295585e+07 ;
+            mbo:mz 1.630389e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 72 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.931169e+02 ;
+            mbo:precursor_mz 2.931172e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-004i-2910000000-53c8e3cf8087ca737a4e" ;
+    rdfs:comment "UCHEM_ID 10945" ;
+    skos:definition "Coumatetralyl; LC-ESI-QFT; MS2; CE: 45%; R=17500; [M+H]+" .
+

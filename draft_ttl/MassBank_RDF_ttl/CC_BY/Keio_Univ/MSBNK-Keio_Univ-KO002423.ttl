@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO002423 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO002423" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-Butanediamine",
+                "1,4-Diaminobutane",
+                "Putrescine",
+                "Tetramethylenediamine" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 8.810005e+01 ;
+            rdfs:seeAlso cas:110-60-1,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3434> ;
+            schema:inChI "InChI=1S/C4H12N2/c5-3-1-2-4-6/h1-6H2" ;
+            schema:inChIKey inchikey:KIDHWZJUCRJVML-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H12N2" ;
+            schema:name "1,4-Butanediamine",
+                "1,4-Diaminobutane",
+                "Putrescine",
+                "Tetramethylenediamine" ;
+            schema:smiles "NCCCCN" ] ;
+    mbo:has_peak [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 3.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 9.901e+03 ;
+            mbo:mz 5.49e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.09208e+08 ;
+            mbo:mz 7.21e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.421789e+07 ;
+            mbo:mz 8.91e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 587 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.9e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00dr-9000000000-0b342438cba3ac71bccb" ;
+    rdfs:comment "KEIO_ID B001" ;
+    skos:definition "Putrescine; LC-ESI-QQ; MS2; CE:10 V; [M+H]+" .
+

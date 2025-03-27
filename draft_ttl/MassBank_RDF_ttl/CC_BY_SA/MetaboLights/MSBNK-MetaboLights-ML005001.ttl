@@ -1,0 +1,128 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML005001 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML005001" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "10.0 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+                "naringenin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.720685e+02 ;
+            rdfs:seeAlso chemspider:907,
+                pubchem:CID932 ;
+            schema:inChI "InChI=1S/C15H12O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-6,13,16-18H,7H2" ;
+            schema:inChIKey inchikey:FTVWIRXFELQLPI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H12O5" ;
+            schema:name "5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+                "naringenin" ;
+            schema:smiles "O=C1CC(c2ccc(O)cc2)Oc2cc(O)cc(O)c21" ] ;
+    mbo:has_peak [ mbo:intensity 3.05564e+06 ;
+            mbo:mz 8.80056e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.576689e+08 ;
+            mbo:mz 1.470443e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 491 ],
+        [ mbo:intensity 2.884156e+06 ;
+            mbo:mz 1.480472e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.245097e+06 ;
+            mbo:mz 1.51039e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 5.239588e+08 ;
+            mbo:mz 1.530185e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.082166e+06 ;
+            mbo:mz 1.540221e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.777163e+06 ;
+            mbo:mz 1.630756e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.763682e+06 ;
+            mbo:mz 1.710293e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.90947e+06 ;
+            mbo:mz 1.890544e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.945377e+07 ;
+            mbo:mz 2.730764e+02 ;
+            mbo:peak_sequential_number 18 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 5.032856e+06 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 4.77927e+06 ;
+            mbo:mz 9.50494e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.042565e+07 ;
+            mbo:mz 1.070495e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 4.565716e+07 ;
+            mbo:mz 1.190494e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 1.938794e+06 ;
+            mbo:mz 1.210286e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.856552e+06 ;
+            mbo:mz 1.229804e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.234501e+07 ;
+            mbo:mz 1.230443e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.268412e+06 ;
+            mbo:mz 1.240481e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.730763e+02 ;
+            mbo:precursor_mz 2.730757e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 18 ;
+    mbo:pk_splash "splash10-0udi-0900000000-1b9302a4c0918c8f10b4" ;
+    rdfs:comment "ML_ID 50" ;
+    skos:definition "naringenin; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M+H]+" .
+

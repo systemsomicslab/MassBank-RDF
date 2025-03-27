@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100440 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100440" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3S,E,E)-2,3-Epoxy-4-oxo-7,10-dodecadienamide",
+                "Cerulenin",
+                "Helicocerin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.231208e+02 ;
+            rdfs:seeAlso cas:17397-89-6,
+                chemspider:4445281,
+                knapsack:C00018711,
+                pubchem:CID5282054 ;
+            schema:inChI "InChI=1S/C12H17NO3/c1-2-3-4-5-6-7-8-9(14)10-11(16-10)12(13)15/h2-3,5-6,10-11H,4,7-8H2,1H3,(H2,13,15)/b3-2+,6-5+/t10-,11-/m1/s1" ;
+            schema:inChIKey inchikey:GVEZIHKRYBHEFX-NQQPLRFYSA-N ;
+            schema:molecularFormula "C12H17NO3" ;
+            schema:name "(2R,3S,E,E)-2,3-Epoxy-4-oxo-7,10-dodecadienamide",
+                "Cerulenin",
+                "Helicocerin" ;
+            schema:smiles "CC=CCC=CCCC(=O)[C@@H](O1)[C@H](C(N)=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.538e+02 ;
+            mbo:mz 1.920581e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 445 ],
+        [ mbo:intensity 5.397e+01 ;
+            mbo:mz 2.070937e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 156 ],
+        [ mbo:intensity 3.455e+02 ;
+            mbo:mz 2.080936e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.789e+01 ;
+            mbo:mz 2.241286e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 196 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.241286e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0a4i-0290000000-9f54d6e582394f7d7109" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Cerulenin; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

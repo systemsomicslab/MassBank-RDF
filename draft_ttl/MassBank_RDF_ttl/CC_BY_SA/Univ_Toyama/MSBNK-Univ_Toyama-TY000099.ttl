@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000099 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2009-05-19, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000099" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1303.300 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8beta-Hydroxyasterolide",
+                "Atractylenolide III",
+                "Atractylenolide beta",
+                "Codonolactone",
+                "Naphtho[2,3-b]furan-2(4H)-one, 4a,5,6,7,8,8a,9,9a-octahydro-9a-hydroxy-3,8a-dimethyl-5-methylene-, (4aS,8aR,9aS)-",
+                "Naphtho[2,3-b]furan-2(4H)-one, 4a,5,6,7,8,8a,9,9a-octahydro-9a-hydroxy-3,8a-dimethyl-5-methylene-, [4aS-(4aalpha,8abeta,9abeta)]-" ;
+            mbo:ch_compound_class "Natural Product; Sesquiterpene" ;
+            mbo:ch_exact_mass 2.481412e+02 ;
+            rdfs:seeAlso cas:73030-71-4,
+                pubchem:CID155948 ;
+            schema:inChI "InChI=1S/C15H20O3/c1-9-5-4-6-14(3)8-15(17)12(7-11(9)14)10(2)13(16)18-15/h11,17H,1,4-8H2,2-3H3/t11-,14+,15-/m0/s1" ;
+            schema:inChIKey inchikey:FBMORZZOJSDNRQ-GLQYFDAESA-N ;
+            schema:molecularFormula "C15H20O3" ;
+            schema:name "8beta-Hydroxyasterolide",
+                "Atractylenolide III",
+                "Atractylenolide beta",
+                "Codonolactone",
+                "Naphtho[2,3-b]furan-2(4H)-one, 4a,5,6,7,8,8a,9,9a-octahydro-9a-hydroxy-3,8a-dimethyl-5-methylene-, (4aS,8aR,9aS)-",
+                "Naphtho[2,3-b]furan-2(4H)-one, 4a,5,6,7,8,8a,9,9a-octahydro-9a-hydroxy-3,8a-dimethyl-5-methylene-, [4aS-(4aalpha,8abeta,9abeta)]-" ;
+            schema:smiles "O=C(O1)C(C)=C(C2)C(O)1CC(C)(C3)C([H])(C(=C)CC3)2" ] ;
+    mbo:has_peak [ mbo:intensity 2.136851e+07 ;
+            mbo:mz 2.03145e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 229 ],
+        [ mbo:intensity 9.330639e+07 ;
+            mbo:mz 2.471342e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.79532e+07 ;
+            mbo:mz 2.481358e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 192 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-0090000000-c2595ba0868271e59524" ;
+    skos:definition "Atractylenolide III; LC-ESI-ITTOF; MS; [M-H]-" .
+

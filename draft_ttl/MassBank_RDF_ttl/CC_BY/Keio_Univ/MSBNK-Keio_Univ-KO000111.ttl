@@ -1,0 +1,75 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000111 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000111" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "40 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2-Aminoethyl)phosphonate",
+                "2-Aminoethylphosphonate",
+                "Ciliatine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.250242e+02 ;
+            rdfs:seeAlso <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:6353> ;
+            schema:inChI "InChI=1S/C2H8NO3P/c3-1-2-7(4,5)6/h1-3H2,(H2,4,5,6)" ;
+            schema:inChIKey inchikey:QQVDJLLNRSOCEL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C2H8NO3P" ;
+            schema:name "(2-Aminoethyl)phosphonate",
+                "2-Aminoethylphosphonate",
+                "Ciliatine" ;
+            schema:smiles "NCCP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 6.43565e+04 ;
+            mbo:mz 5.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 5.04951e+05 ;
+            mbo:mz 6.29e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.47525e+04 ;
+            mbo:mz 7.53e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.732675e+05 ;
+            mbo:mz 7.71e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.316835e+05 ;
+            mbo:mz 7.83e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.546041e+07 ;
+            mbo:mz 7.91e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.15842e+05 ;
+            mbo:mz 8.02e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 2.47525e+04 ;
+            mbo:mz 9.36e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.24e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-9000000000-3aeb1ed81c1ead34c5c0" ;
+    rdfs:comment "KEIO_ID A056" ;
+    skos:definition "Ciliatine; LC-ESI-QQ; MS2; CE:40 V; [M-H]-" .
+

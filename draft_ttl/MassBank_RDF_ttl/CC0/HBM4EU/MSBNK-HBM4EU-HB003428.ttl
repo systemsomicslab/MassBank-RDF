@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003428 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003428" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "2.427 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-(2-hydroxyethylidene)-4-(hydroxymethyl)furan-2-one",
+                "Ascladiol Z" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.560423e+02 ;
+            rdfs:seeAlso cas:32013-85-7,
+                chemspider:62895912,
+                pubchem:CID160214 ;
+            schema:inChI "InChI=1S/C7H8O4/c8-2-1-6-5(4-9)3-7(10)11-6/h1,3,8-9H,2,4H2" ;
+            schema:inChIKey inchikey:HLJKDERCZVTVSN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H8O4" ;
+            schema:name "5-(2-hydroxyethylidene)-4-(hydroxymethyl)furan-2-one",
+                "Ascladiol Z" ;
+            schema:smiles "C1=C(C(=CCO)OC1=O)CO" ] ;
+    mbo:has_peak [ mbo:intensity 2.1581e+03 ;
+            mbo:mz 6.50395e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 1.85338e+04 ;
+            mbo:mz 1.55035e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 774 ],
+        [ mbo:intensity 1.18554e+04 ;
+            mbo:mz 8.10346e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 495 ],
+        [ mbo:intensity 1.84024e+04 ;
+            mbo:mz 8.30503e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 769 ],
+        [ mbo:intensity 5.1923e+03 ;
+            mbo:mz 9.30347e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 217 ],
+        [ mbo:intensity 5.706e+03 ;
+            mbo:mz 1.090295e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 238 ],
+        [ mbo:intensity 2.004e+04 ;
+            mbo:mz 1.110452e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 837 ],
+        [ mbo:intensity 2.00785e+04 ;
+            mbo:mz 1.250245e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 839 ],
+        [ mbo:intensity 2.7557e+03 ;
+            mbo:mz 1.270401e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 2.39062e+04 ;
+            mbo:mz 1.370244e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.55035e+02 ;
+            mbo:precursor_mz 1.55035e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-06v0-3900000000-2bd1852bd9828dc55612" ;
+    rdfs:comment "INTERNAL_ID 123" ;
+    skos:definition "Ascladiol Z; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M-H]-" .
+

@@ -1,0 +1,92 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU031155 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU031155" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "75" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "18.559 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5S,6R,7R)-5-(1,3-benzodioxol-5-yl)-2-butyl-7-[2-[(2S)-2-carboxypropyl]-4-methoxyphenyl]-6,7-dihydro-5H-cyclopenta[b]pyridine-6-carboxylic acid",
+                "J-104132",
+                "MK-547" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.312257e+02 ;
+            rdfs:seeAlso cas:2549-50-0,
+                chemspider:161679,
+                pubchem:CID186002 ;
+            schema:inChI "InChI=1S/C31H33NO7/c1-4-5-6-20-8-10-23-26(18-7-12-24-25(15-18)39-16-38-24)28(31(35)36)27(29(23)32-20)22-11-9-21(37-3)14-19(22)13-17(2)30(33)34/h7-12,14-15,17,26-28H,4-6,13,16H2,1-3H3,(H,33,34)(H,35,36)/t17-,26-,27-,28+/m0/s1" ;
+            schema:inChIKey inchikey:IUHMIOAKWHUFKU-YINIXLNUSA-N ;
+            schema:molecularFormula "C31H33NO7" ;
+            schema:name "(5S,6R,7R)-5-(1,3-benzodioxol-5-yl)-2-butyl-7-[2-[(2S)-2-carboxypropyl]-4-methoxyphenyl]-6,7-dihydro-5H-cyclopenta[b]pyridine-6-carboxylic acid",
+                "J-104132",
+                "MK-547" ;
+            schema:smiles "CCCCc1ccc2c(n1)[C@@H](c1ccc(OC)cc1C[C@H](C)C(O)=O)[C@H](C(O)=O)[C@H]2c1ccc2c(c1)OCO2" ] ;
+    mbo:has_peak [ mbo:intensity 3.3029e+03 ;
+            mbo:mz 6.50033e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 458 ],
+        [ mbo:intensity 7.2039e+03 ;
+            mbo:mz 9.10189e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.4893e+03 ;
+            mbo:mz 9.30346e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 900 ],
+        [ mbo:intensity 2.555e+03 ;
+            mbo:mz 1.190503e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 354 ],
+        [ mbo:intensity 2.0182e+03 ;
+            mbo:mz 1.350816e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 280 ],
+        [ mbo:intensity 5.223e+03 ;
+            mbo:mz 2.20077e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 724 ],
+        [ mbo:intensity 2.2455e+03 ;
+            mbo:mz 2.210837e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 311 ],
+        [ mbo:intensity 2.1241e+03 ;
+            mbo:mz 3.541496e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 295 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.129856e+02 ;
+            mbo:precursor_mz 5.302184e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-006x-9231000000-542a83d0040aa3ab0c69" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "MK-547; LC-ESI-QFT; MS2; CE: 75; R=17500; [M-H]-" .
+

@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100805 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100805" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3',4',5,7-Tetrahydroxyflavone-4'-glucoside",
+                "Luteolin-4'-O-glucoside",
+                "Lutl-4p-Glc" ;
+            mbo:ch_compound_class "Flavonoid" ;
+            mbo:ch_exact_mass 4.481006e+02 ;
+            rdfs:seeAlso cas:6920-38-3,
+                chemspider:4477503,
+                knapsack:C00004276,
+                pubchem:CID5319116 ;
+            schema:inChI "InChI=1S/C21H20O11/c22-7-16-18(27)19(28)20(29)21(32-16)31-13-2-1-8(3-10(13)24)14-6-12(26)17-11(25)4-9(23)5-15(17)30-14/h1-6,16,18-25,27-29H,7H2/t16-,18-,19+,20-,21-/m1/s1" ;
+            schema:inChIKey inchikey:UHNXUSWGOJMEFO-QNDFHXLGSA-N ;
+            schema:molecularFormula "C21H20O11" ;
+            schema:name "3',4',5,7-Tetrahydroxyflavone-4'-glucoside",
+                "Luteolin-4'-O-glucoside",
+                "Lutl-4p-Glc" ;
+            schema:smiles "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.188e+02 ;
+            mbo:mz 1.070146e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.118e+03 ;
+            mbo:mz 1.330301e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 158 ],
+        [ mbo:intensity 5.041e+02 ;
+            mbo:mz 1.510045e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 3.059e+02 ;
+            mbo:mz 1.750406e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 2.491e+02 ;
+            mbo:mz 1.99041e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 7.054e+03 ;
+            mbo:mz 2.850405e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.509e+02 ;
+            mbo:mz 2.854636e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.027e+03 ;
+            mbo:mz 4.470928e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 145 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.470928e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-000i-0290100000-6628d3a1525d9c38ef8f" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Luteolin-4'-O-glucoside; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

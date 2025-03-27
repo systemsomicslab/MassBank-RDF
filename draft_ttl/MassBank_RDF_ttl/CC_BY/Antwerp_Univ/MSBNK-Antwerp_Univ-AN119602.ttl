@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN119602 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN119602" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.145 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bis(2-butoxyethyl) hydrogen phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.981545e+02 ;
+            rdfs:seeAlso cas:14260-97-0,
+                chemspider:76047,
+                pubchem:CID84299 ;
+            schema:inChI "InChI=1S/C12H27O6P/c1-3-5-7-15-9-11-17-19(13,14)18-12-10-16-8-6-4-2/h3-12H2,1-2H3,(H,13,14)" ;
+            schema:inChIKey inchikey:NNXWIPHZHATIFE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H27O6P" ;
+            schema:name "Bis(2-butoxyethyl) hydrogen phosphate" ;
+            schema:smiles "CCCCOCCOP(=O)(O)OCCOCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.206e+03 ;
+            mbo:mz 5.50547e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 495 ],
+        [ mbo:intensity 4.4555e+03 ;
+            mbo:mz 5.70706e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.088e+02 ;
+            mbo:mz 5.90496e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 9.527e+02 ;
+            mbo:mz 8.30851e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 214 ],
+        [ mbo:intensity 5.618e+02 ;
+            mbo:mz 9.89837e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 1.4106e+03 ;
+            mbo:mz 1.010959e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 316 ],
+        [ mbo:intensity 9.919e+02 ;
+            mbo:mz 1.430097e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 222 ],
+        [ mbo:intensity 2.294e+03 ;
+            mbo:mz 1.990735e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 514 ],
+        [ mbo:intensity 4.943e+02 ;
+            mbo:mz 2.99161e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 111 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.211445e+02 ;
+            mbo:precursor_mz 2.991618e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0a4j-9400000000-b9f708cbb8be8170c6dd" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Bis(2-butoxyethyl) hydrogen phosphate; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M+H]+" .
+

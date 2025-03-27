@@ -1,0 +1,106 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ313104 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ313104" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "60 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "15.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carbamothioic acid, methyl(3-methylphenyl)-, O-2-naphthalenyl ester",
+                "N-methyl-N-(3-methylphenyl)carbamothioic acid O-(2-naphthalenyl) ester",
+                "Tolnaftate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.071031e+02 ;
+            rdfs:seeAlso cas:2398-96-1,
+                chemspider:5309,
+                pubchem:CID5510 ;
+            schema:inChI "InChI=1S/C19H17NOS/c1-14-6-5-9-17(12-14)20(2)19(22)21-18-11-10-15-7-3-4-8-16(15)13-18/h3-13H,1-2H3" ;
+            schema:inChIKey inchikey:FUSNMLFNXJSCDI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H17NOS" ;
+            schema:name "Carbamothioic acid, methyl(3-methylphenyl)-, O-2-naphthalenyl ester",
+                "N-methyl-N-(3-methylphenyl)carbamothioic acid O-(2-naphthalenyl) ester",
+                "Tolnaftate" ;
+            schema:smiles "S=C(Oc2ccc1c(cccc1)c2)N(c3cc(ccc3)C)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.105138e+06 ;
+            mbo:mz 6.50387e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 171 ],
+        [ mbo:intensity 1.521317e+06 ;
+            mbo:mz 1.480756e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 235 ],
+        [ mbo:intensity 2.967366e+05 ;
+            mbo:mz 1.490295e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 1.887458e+06 ;
+            mbo:mz 1.640531e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 292 ],
+        [ mbo:intensity 2.551559e+05 ;
+            mbo:mz 7.90543e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.224145e+06 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 498 ],
+        [ mbo:intensity 2.491623e+05 ;
+            mbo:mz 9.307e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.978474e+05 ;
+            mbo:mz 1.070491e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.231773e+06 ;
+            mbo:mz 1.090649e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 2.993339e+05 ;
+            mbo:mz 1.190603e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 6.468081e+06 ;
+            mbo:mz 1.200808e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.831106e+06 ;
+            mbo:mz 1.230262e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 283 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.081106e+02 ;
+            mbo:precursor_mz 3.081104e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00di-3900000000-d0563822804c2844660b" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3131" ;
+    skos:definition "Tolnaftate; LC-ESI-QFT; MS2; CE: 60; R=35000; [M+H]+" .
+

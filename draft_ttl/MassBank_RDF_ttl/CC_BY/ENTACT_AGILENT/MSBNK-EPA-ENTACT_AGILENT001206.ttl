@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001206 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001206" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Besonprodil",
+                "DTXSID2047270" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.021413e+02 ;
+            rdfs:seeAlso cas:253450-09-8,
+                pubchem:CID156328 ;
+            schema:inChI "InChI=1S/C21H23FN2O3S/c22-17-3-1-15(2-4-17)13-16-7-9-24(10-8-16)11-12-28(26)18-5-6-19-20(14-18)27-21(25)23-19/h1-6,14,16H,7-13H2,(H,23,25)" ;
+            schema:inChIKey inchikey:FCBQJNCAKZSIAH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H23FN2O3S" ;
+            schema:name "Besonprodil",
+                "DTXSID2047270" ;
+            schema:smiles "O=C1NC2=CC=C(C=C2O1)S(=O)CCN1CCC(CC2C=CC(F)=CC=2)CC1" ] ;
+    mbo:has_peak [ mbo:intensity 4.897587e+01 ;
+            mbo:mz 1.809839e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 489 ],
+        [ mbo:intensity 1.927603e+01 ;
+            mbo:mz 1.819917e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.011341e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.011341e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0ue9-0600900000-cca1b4af7c5e5687c1e3" ;
+    skos:definition "Besonprodil; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

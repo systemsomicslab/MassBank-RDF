@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ371202 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ371202" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Methyl-1,2,3,4,10,14b-hexahydropyrazino[2,1-a]pyrido[2,3-c][2]benzazepin-8-ol",
+                "8-Hydroxy Mirtazapine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.811528e+02 ;
+            rdfs:seeAlso cas:102335-57-9,
+                chemspider:9674933,
+                pubchem:CID11500131 ;
+            schema:inChI "InChI=1S/C17H19N3O/c1-19-6-7-20-16(11-19)15-5-3-2-4-12(15)8-13-9-14(21)10-18-17(13)20/h2-5,9-10,16,21H,6-8,11H2,1H3" ;
+            schema:inChIKey inchikey:DAWYIZBOUQIVNX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H19N3O" ;
+            schema:name "2-Methyl-1,2,3,4,10,14b-hexahydropyrazino[2,1-a]pyrido[2,3-c][2]benzazepin-8-ol",
+                "8-Hydroxy Mirtazapine" ;
+            schema:smiles "CN1CCN2C(C1)C3=CC=CC=C3CC4=CC(=CN=C42)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.195944e+05 ;
+            mbo:mz 5.8065e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.005267e+06 ;
+            mbo:mz 2.801443e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 3.893761e+08 ;
+            mbo:mz 2.821597e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.647052e+06 ;
+            mbo:mz 7.0065e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.177085e+08 ;
+            mbo:mz 7.20807e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 302 ],
+        [ mbo:intensity 4.100777e+05 ;
+            mbo:mz 2.100786e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 9.811042e+07 ;
+            mbo:mz 2.110864e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 252 ],
+        [ mbo:intensity 1.850548e+07 ;
+            mbo:mz 2.25102e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 8.07608e+06 ;
+            mbo:mz 2.391177e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 7.499408e+06 ;
+            mbo:mz 2.511177e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 4.588643e+05 ;
+            mbo:mz 2.531333e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.821591e+02 ;
+            mbo:precursor_mz 2.821601e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-001i-2090000000-f64f112ce2d891096552" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3712" ;
+    skos:definition "8-Hydroxy Mirtazapine; LC-ESI-QFT; MS2; CE: 30; R=35000; [M+H]+" .
+

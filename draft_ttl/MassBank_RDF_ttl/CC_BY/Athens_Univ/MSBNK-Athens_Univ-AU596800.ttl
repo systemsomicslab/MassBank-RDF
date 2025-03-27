@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU596800 a mbo:MassSpectrum ;
+    dcterms:creator "Varvara Nikolopoulou, Anthi Panara, Reza Aalizadeh, Nikolaos Thomaidis" ;
+    dcterms:date "2020-04-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU596800" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2020 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.641 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[2-[19-amino-6-(3,4-dicarboxybutanoyloxy)-11,16,18-trihydroxy-5,9-dimethylicosan-7-yl]oxy-2-oxoethyl]butanedioic acid",
+                "Fumonisin B1" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 7.213885e+02 ;
+            rdfs:seeAlso cas:116355-83-0,
+                chemspider:3313,
+                pubchem:CID3431 ;
+            schema:inChI "InChI=1S/C34H59NO15/c1-5-6-9-20(3)32(50-31(44)17-23(34(47)48)15-29(41)42)27(49-30(43)16-22(33(45)46)14-28(39)40)13-19(2)12-24(36)10-7-8-11-25(37)18-26(38)21(4)35/h19-27,32,36-38H,5-18,35H2,1-4H3,(H,39,40)(H,41,42)(H,45,46)(H,47,48)" ;
+            schema:inChIKey inchikey:UVBUBMSSQKOIBE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C34H59NO15" ;
+            schema:name "2-[2-[19-amino-6-(3,4-dicarboxybutanoyloxy)-11,16,18-trihydroxy-5,9-dimethylicosan-7-yl]oxy-2-oxoethyl]butanedioic acid",
+                "Fumonisin B1" ;
+            schema:smiles "CCCCC(C)C(C(CC(C)CC(CCCCC(CC(C(C)N)O)O)O)OC(=O)CC(CC(=O)O)C(=O)O)OC(=O)CC(CC(=O)O)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.6384e+04 ;
+            mbo:mz 7.223947e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.223962e+02 ;
+            mbo:precursor_mz 7.223957e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-00di-0000000900-d3ac116c49813f029f07" ;
+    rdfs:comment "INTERNAL_ID 5968" ;
+    skos:definition "Fumonisin B1; LC-ESI-QTOF; MS2; CE: 10 eV; R=35000; [M+H]+" .
+

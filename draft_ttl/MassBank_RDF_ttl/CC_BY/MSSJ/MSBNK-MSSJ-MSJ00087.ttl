@@ -1,0 +1,47 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00087 a mbo:MassSpectrum ;
+    dcterms:creator "Satoshi Inomata, Hiroyuki Yamada, Hiroshi Tanimoto, Center for Environmental Measurement and Analysis and Center for Global Environmental Research, National Institute for Environmental Studies, and Department of Mechanical Engineering, Tokyo Denki University" ;
+    dcterms:date "2018-12-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00087" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Satoshi Inomata, Hiroyuki Yamada, Hiroshi Tanimoto, J. Mass Spectrom. Soc. Jpn., 66(3), 123-128 (2018)." ] ;
+    dcterms:rights "Satoshi Inomata, Hiroyuki Yamada, Hiroshi Tanimoto, Center for Environmental Measurement and Analysis and Center for Global Environmental Research, National Institute for Environmental Studies, and Department of Mechanical Engineering, Tokyo Denki University. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "PTR-QMS 500 (IONICON Analytik GmbH, Innsbruck, Austria)" ;
+            mbo:instrument_type "CI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Methyl-cyclohexane" ;
+            mbo:ch_compound_class "Synthetic compound; alkanes" ;
+            mbo:ch_exact_mass 9.81096e+01 ;
+            rdfs:seeAlso chemspider:7674,
+                pubchem:CID7962 ;
+            schema:inChI "InChI=1S/C7H14/c1-7-5-3-2-4-6-7/h7H,2-6H2,1H3" ;
+            schema:inChIKey inchikey:UAEPNZWRGJTJPN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H14" ;
+            schema:name "Methyl-cyclohexane" ;
+            schema:smiles "CC1CCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 2.2111e+00 ;
+            mbo:mz 9.7e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0002-9000000000-fc9ad20b026dc4f896b7" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 16HP2005 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Methyl-cyclohexane; CI-Q; MS; POSITIVE; Reactant ion NO+" .
+

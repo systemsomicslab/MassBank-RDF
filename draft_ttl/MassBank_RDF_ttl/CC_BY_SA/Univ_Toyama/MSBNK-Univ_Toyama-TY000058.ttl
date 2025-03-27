@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000058 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-10-27, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000058" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1432.700 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-Alkannin",
+                "1,4-Naphthalenedione, 5,8-dihydroxy-2-(1-hydroxy-4-methyl-3-pentenyl)-, (S)-",
+                "1,4-Naphthalenedione, 5,8-dihydroxy-2-[(1S)-1-hydroxy-4-methyl-3-penten-1-yl]-",
+                "1,4-Naphthalenedione, 5,8-dihydroxy-2-[(1S)-1-hydroxy-4-methyl-3-pentenyl]-",
+                "1,4-Naphthoquinone, 5,8-dihydroxy-2-(1-hydroxy-4-methyl-3-pentenyl)-, (-)-",
+                "Alkanna red",
+                "Alkannin",
+                "Anchusa acid",
+                "Anchusin",
+                "C.I. 75530",
+                "C.I. Natural red 20",
+                "NSC 94524" ;
+            mbo:ch_compound_class "Natural Product; Naphthoquinone" ;
+            mbo:ch_exact_mass 2.880998e+02 ;
+            rdfs:seeAlso cas:517-88-4,
+                pubchem:CID72521 ;
+            schema:inChI "InChI=1S/C16H16O5/c1-8(2)3-4-10(17)9-7-13(20)14-11(18)5-6-12(19)15(14)16(9)21/h3,5-7,10,17-19H,4H2,1-2H3/t10-/m0/s1" ;
+            schema:inChIKey inchikey:NEZONWMXZKDMKF-JTQLQIEISA-N ;
+            schema:molecularFormula "C16H16O5" ;
+            schema:name "(-)-Alkannin",
+                "1,4-Naphthalenedione, 5,8-dihydroxy-2-(1-hydroxy-4-methyl-3-pentenyl)-, (S)-",
+                "1,4-Naphthalenedione, 5,8-dihydroxy-2-[(1S)-1-hydroxy-4-methyl-3-penten-1-yl]-",
+                "1,4-Naphthalenedione, 5,8-dihydroxy-2-[(1S)-1-hydroxy-4-methyl-3-pentenyl]-",
+                "1,4-Naphthoquinone, 5,8-dihydroxy-2-(1-hydroxy-4-methyl-3-pentenyl)-, (-)-",
+                "Alkanna red",
+                "Alkannin",
+                "Anchusa acid",
+                "Anchusin",
+                "C.I. 75530",
+                "C.I. Natural red 20",
+                "NSC 94524" ;
+            schema:smiles "CC(C)=CCC(O)c(c1)c(=O)c(c(O)2)c(c(O)cc2)c(=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 3.004722e+07 ;
+            mbo:mz 2.180212e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 313 ],
+        [ mbo:intensity 5.447926e+06 ;
+            mbo:mz 2.190258e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 9.603154e+07 ;
+            mbo:mz 2.870915e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.819202e+07 ;
+            mbo:mz 2.880943e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 189 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000i-0090000000-cfa1da28e0428731fd8b" ;
+    skos:definition "Alkannin; LC-ESI-ITTOF; MS; [M-H]-" .
+

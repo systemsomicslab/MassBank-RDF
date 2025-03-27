@@ -1,0 +1,98 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT002825 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT002825" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "28.70 min (in paper: 28.4 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phosphatidylethanolamine 16:0-16:0" ;
+            mbo:ch_compound_class "Natural Product; Glycerophospholipids; Glycerophosphoethanolamines; Diacylglycerophosphoethanolamines" ;
+            mbo:ch_exact_mass 6.915152e+02 ;
+            rdfs:seeAlso cas:5681-36-7,
+                pubchem:CID65109 ;
+            schema:inChI "InChI=1S/C37H74NO8P/c1-3-5-7-9-11-13-15-17-19-21-23-25-27-29-36(39)43-33-35(34-45-47(41,42)44-32-31-38)46-37(40)30-28-26-24-22-20-18-16-14-12-10-8-6-4-2/h35H,3-34,38H2,1-2H3,(H,41,42)" ;
+            schema:inChIKey inchikey:SLKDGVPOSSLUAI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C37H74NO8P" ;
+            schema:name "Phosphatidylethanolamine 16:0-16:0" ;
+            schema:smiles "C(CCCC(=O)OCC(COP(OCCN)(O)=O)OC(CCCCCCCCCCCCCCC)=O)CCCCCCCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 1.1492e+03 ;
+            mbo:mz 2.5508e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.16e+01 ;
+            mbo:mz 6.2564e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.28e+01 ;
+            mbo:mz 6.47e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 3.6e+00 ;
+            mbo:mz 6.6212e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.03e+01 ;
+            mbo:mz 2.563e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 6.4e+00 ;
+            mbo:mz 2.8296e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.04e+01 ;
+            mbo:mz 4.3391e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 9.91e+01 ;
+            mbo:mz 4.52e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 2.56e+01 ;
+            mbo:mz 4.5302e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.55e+01 ;
+            mbo:mz 5.604e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.01e+01 ;
+            mbo:mz 5.8215e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 4.2e+00 ;
+            mbo:mz 6.0629e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 4 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.9051e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0a4i-0090100000-94ac31de5aa84447ff29" ;
+    skos:definition "Phosphatidylethanolamine 16:0-16:0; LC-ESI-ITFT; MS2; [M-H]-; RT: 28.43; Exp: 3" .
+

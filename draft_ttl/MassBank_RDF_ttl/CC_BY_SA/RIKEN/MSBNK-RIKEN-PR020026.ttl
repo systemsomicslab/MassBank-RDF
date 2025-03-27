@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR020026 a mbo:MassSpectrum ;
+    dcterms:creator "Tohge T, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2007-08-31, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR020026" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "5.0 V" ;
+            mbo:column_name "ACQUITY UPLC BEH C18 2.1 by 100 mm (Waters, Milford, MA,USA)" ;
+            mbo:flow_gradient "0/100 at 0 min, 15/85 at 5 min, 21/79 at 20 min, 90/10 at 24 min, 95/5 at 26 min, 0/100, 30 min." ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "21.49 min" ;
+            mbo:solvent "A CH3CN(0.1%TFA)",
+                "B H2O(0.1%TFA)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-hydroxy-2-(4-methoxyphenyl)-7-[3,4,5-trihydroxy-6-[(3,4,5-trihydroxy-6-methyl-oxan-2-yl)oxymethyl]oxan-2-yl]oxy-chromen-4-one",
+                "7-[[2-O-(6-Deoxy-alpha-L-mannopyranosyl)-beta-D-glucopyranosyl]oxy]-5-hydroxy-2-(4-methoxyphenyl)-4H-1-benzopyran-4-one",
+                "Acac-7-Glc-2pp-Man",
+                "Acacetin-7-O-neohesperidoside",
+                "Fortunellin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 5.921792e+02 ;
+            rdfs:seeAlso cas:20633-93-6,
+                chemspider:16498777,
+                knapsack:C00004206,
+                pubchem:CID5317385 ;
+            schema:inChI "InChI=1S/C28H32O14/c1-11-21(32)23(34)25(36)27(38-11)42-26-24(35)22(33)19(10-29)41-28(26)39-14-7-15(30)20-16(31)9-17(40-18(20)8-14)12-3-5-13(37-2)6-4-12/h3-9,11,19,21-30,32-36H,10H2,1-2H3/t11-,19+,21-,22+,23+,24-,25+,26+,27-,28+/m0/s1" ;
+            schema:inChIKey inchikey:MLWDGPFGTFOLRJ-CUVHLRMHSA-N ;
+            schema:molecularFormula "C28H32O14" ;
+            schema:name "5-hydroxy-2-(4-methoxyphenyl)-7-[3,4,5-trihydroxy-6-[(3,4,5-trihydroxy-6-methyl-oxan-2-yl)oxymethyl]oxan-2-yl]oxy-chromen-4-one",
+                "7-[[2-O-(6-Deoxy-alpha-L-mannopyranosyl)-beta-D-glucopyranosyl]oxy]-5-hydroxy-2-(4-methoxyphenyl)-4H-1-benzopyran-4-one",
+                "Acac-7-Glc-2pp-Man",
+                "Acacetin-7-O-neohesperidoside",
+                "Fortunellin" ;
+            schema:smiles "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=CC(=C4C(=C3)OC(=CC4=O)C5=CC=C(C=C5)OC)O)CO)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.082e+04 ;
+            mbo:mz 5.932006e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.117e+03 ;
+            mbo:mz 5.942199e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 198 ],
+        [ mbo:intensity 9.843e+02 ;
+            mbo:mz 5.952148e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 2.92e+02 ;
+            mbo:mz 5.961479e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.151e+03 ;
+            mbo:mz 1.1854e+03 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 5.44e+02 ;
+            mbo:mz 1.186411e+03 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 26 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-0000090000-b4eecaa8abe17232b96c" ;
+    skos:definition "Fortunellin; LC-ESI-QTOF; MS" .
+

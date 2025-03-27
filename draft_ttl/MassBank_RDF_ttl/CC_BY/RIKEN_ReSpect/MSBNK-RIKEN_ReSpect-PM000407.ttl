@@ -1,0 +1,72 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000407 a mbo:MassSpectrum ;
+    dcterms:creator "Sanchez-Rabaneda F, et al." ;
+    dcterms:date "2006-04-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000407" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sánchez-Rabaneda, F.; Jáuregui, O.; Casals, I.; Andrés-Lacueva, C.; Izquierdo-Pulido, M.; Lamuela-Raventós, R. M. Liquid Chromatographic/Electrospray Ionization Tandem Mass Spectrometric Study of the Phenolic Composition of Cocoa (Theobroma Cacao). Journal of Mass Spectrometry 2003, 38 (1), 35–42. DOI:10.1002/jms.395" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent (Waldbronn, Germany) Model 1100; API 3000 triple-quadrupole mass spectrometer (Perkin-Elmer Sciex, Concord, ON, Canada)" ;
+            mbo:collision_energy "-30" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isoorientin" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavone CLASS3 Luteolin glycoside" ;
+            mbo:ch_exact_mass 4.4838e+02 ;
+            rdfs:seeAlso cas:4261-42-1,
+                pubchem:CID114776 ;
+            schema:inChI "InChI=1S/C21H20O11/c22-6-14-17(27)19(29)20(30)21(32-14)16-11(26)5-13-15(18(16)28)10(25)4-12(31-13)7-1-2-8(23)9(24)3-7/h1-5,14,17,19-24,26-30H,6H2/t14-,17-,19+,20-,21+/m1/s1" ;
+            schema:inChIKey inchikey:ODBRNZZJSYPIDI-VJXVFPJBSA-N ;
+            schema:molecularFormula "C21H20O11" ;
+            schema:name "Isoorientin" ;
+            schema:smiles "O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)c([C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)c(O)c12" ] ;
+    mbo:has_peak [ mbo:intensity 5e+01 ;
+            mbo:mz 2.85e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.27e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.57e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.5e+01 ;
+            mbo:mz 4.29e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 649 ],
+        [ mbo:intensity 6.5e+01 ;
+            mbo:mz 4.47e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 649 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.47e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-056r-0029500000-37eadecb0026736c5891" ;
+    rdfs:comment "726" ;
+    skos:definition "Isoorientin; LC-ESI-QQ; MS2" .
+

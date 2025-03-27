@@ -1,0 +1,109 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01142509 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-08-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01142509" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "180 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.993 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-hydroxypyridine-2-thione",
+                "Pyrithione" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.270092e+02 ;
+            rdfs:seeAlso cas:1121-30-8,
+                chemspider:1514,
+                pubchem:CID1570 ;
+            schema:inChI "InChI=1S/C5H5NOS/c7-6-4-2-1-3-5(6)8/h1-4,7H" ;
+            schema:inChIKey inchikey:YBBJKCMMCRQZMA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H5NOS" ;
+            schema:name "1-hydroxypyridine-2-thione",
+                "Pyrithione" ;
+            schema:smiles "C1=CC(=S)N(C=C1)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.941594e+06 ;
+            mbo:mz 4.1026e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 4.84265e+06 ;
+            mbo:mz 7.80339e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 2.056581e+06 ;
+            mbo:mz 8.2995e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 7.869648e+05 ;
+            mbo:mz 8.39903e+01 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.269327e+06 ;
+            mbo:mz 9.60444e+01 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 9.917343e+05 ;
+            mbo:mz 1.100059e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 4.89481e+05 ;
+            mbo:mz 4.49793e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 6.05013e+06 ;
+            mbo:mz 5.10229e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 6.734803e+05 ;
+            mbo:mz 5.20182e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.273317e+05 ;
+            mbo:mz 5.20307e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 6.772236e+05 ;
+            mbo:mz 5.79871e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 5.819107e+05 ;
+            mbo:mz 6.60339e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 4.567878e+07 ;
+            mbo:mz 6.70417e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.836842e+06 ;
+            mbo:mz 6.89794e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 40 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.280164e+02 ;
+            mbo:precursor_mz 1.280165e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-014i-9000000000-a6c2459455bf20bff307" ;
+    rdfs:comment "UCHEM_ID 11425" ;
+    skos:definition "Pyrithione; LC-ESI-QFT; MS2; CE: 180%; R=17500; [M+H]+" .
+

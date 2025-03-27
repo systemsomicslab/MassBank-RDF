@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO002765 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO002765" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Daunomycin",
+                "Daunorubicin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 5.271792e+02 ;
+            rdfs:seeAlso cas:20830-81-3,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5016> ;
+            schema:inChI "InChI=1S/C27H29NO10/c1-10-22(30)14(28)7-17(37-10)38-16-9-27(35,11(2)29)8-13-19(16)26(34)21-20(24(13)32)23(31)12-5-4-6-15(36-3)18(12)25(21)33/h4-6,10,14,16-17,22,30,32,34-35H,7-9,28H2,1-3H3" ;
+            schema:inChIKey inchikey:STQGQHZAVUOBTE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C27H29NO10" ;
+            schema:name "Daunomycin",
+                "Daunorubicin" ;
+            schema:smiles "Oc(c34)c(c1c(O)c3c(c(c(OC)5)c(ccc5)c4=O)=O)C[C@](C(C)=O)(C[C@@H]1OC(C2)O[C@@H](C)[C@@H](O)[C@@H](N)2)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.42575e+04 ;
+            mbo:mz 6.88e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 217 ],
+        [ mbo:intensity 3.46535e+04 ;
+            mbo:mz 7.19e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 1.336635e+05 ;
+            mbo:mz 8.61e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 391 ],
+        [ mbo:intensity 3.46535e+04 ;
+            mbo:mz 1.301e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 2.632e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 8.41585e+04 ;
+            mbo:mz 3.064e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 246 ],
+        [ mbo:intensity 3.415845e+05 ;
+            mbo:mz 3.213e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.28e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-5009000000-62ac78e22f93a7270809" ;
+    rdfs:comment "KEIO_ID D106" ;
+    skos:definition "Daunorubicin; LC-ESI-QQ; MS2; CE:50 V; [M+H]+" .
+

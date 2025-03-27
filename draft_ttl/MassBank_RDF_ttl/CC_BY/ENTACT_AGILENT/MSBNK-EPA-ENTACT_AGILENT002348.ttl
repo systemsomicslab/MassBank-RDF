@@ -1,0 +1,51 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002348 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002348" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Arotinoid acid",
+                "DTXSID6040743" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.482089e+02 ;
+            rdfs:seeAlso cas:71441-28-6,
+                pubchem:CID5289501 ;
+            schema:inChI "InChI=1S/C24H28O2/c1-16(14-17-6-8-18(9-7-17)22(25)26)19-10-11-20-21(15-19)24(4,5)13-12-23(20,2)3/h6-11,14-15H,12-13H2,1-5H3,(H,25,26)/b16-14-" ;
+            schema:inChIKey inchikey:FOIVPCKZDPCJJY-PEZBUJJGSA-N ;
+            schema:molecularFormula "C24H28O2" ;
+            schema:name "Arotinoid acid",
+                "DTXSID6040743" ;
+            schema:smiles "C/C(=C/C1C=CC(=CC=1)C(O)=O)/C1=CC2=C(C=C1)C(C)(C)CCC2(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 5.488939e+00 ;
+            mbo:mz 3.032118e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.472017e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.472017e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-0009000000-bf458a68a1214d2ac3c1" ;
+    skos:definition "Arotinoid acid; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

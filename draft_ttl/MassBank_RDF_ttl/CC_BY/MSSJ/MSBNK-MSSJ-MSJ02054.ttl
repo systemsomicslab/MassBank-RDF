@@ -1,0 +1,97 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02054 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2023-03-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02054" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mori K, Osada K, Amaike M. Mammalian blood odorant and chirality: synthesis and sensory evaluation by humans and mice of the racemate and enantiomers of trans-4,5-epoxy-(E)-2-decenal. Tetrahedron: Asymmetry. 2015 August 31;26(15-16):861-67. doi: 10.1016/j.tetasy.2015.06.011" ] ;
+    dcterms:rights "Eiyu Imai, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A gas chromatograph." ;
+            mbo:column_name "HP-5 19091J-413 USD364547H (Agilent), length 30.0 m, I.D. 0.32 mm, thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "5.6 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3S)-(+)-2,3-epoxyoctanal" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.420994e+02 ;
+            rdfs:seeAlso chemspider:9979529,
+                pubchem:CID11804864 ;
+            schema:inChI "InChI=1S/C8H14O2/c1-2-3-4-5-7-8(6-9)10-7/h6-8H,2-5H2,1H3/t7-,8-/m0/s1" ;
+            schema:inChIKey inchikey:YWFUECKBUFORTA-YUMQZZPRSA-N ;
+            schema:molecularFormula "C8H14O2" ;
+            schema:name "(2R,3S)-(+)-2,3-epoxyoctanal" ;
+            schema:smiles "CCCCC[C@@H]1O[C@H]1C=O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 2.9039e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.12667e+01 ;
+            mbo:mz 1.2509e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 212 ],
+        [ mbo:intensity 1.9418e+01 ;
+            mbo:mz 1.41087e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 194 ],
+        [ mbo:intensity 8.77097e+01 ;
+            mbo:mz 1.42099e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 876 ],
+        [ mbo:intensity 8.36631e+01 ;
+            mbo:mz 1.43104e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 836 ],
+        [ mbo:intensity 1.9151e+01 ;
+            mbo:mz 5.6062e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 191 ],
+        [ mbo:intensity 1.36597e+01 ;
+            mbo:mz 5.7032e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 136 ],
+        [ mbo:intensity 1.71448e+01 ;
+            mbo:mz 5.7071e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 171 ],
+        [ mbo:intensity 3.64875e+01 ;
+            mbo:mz 7.1012e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 365 ],
+        [ mbo:intensity 1.67545e+01 ;
+            mbo:mz 8.3086e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 3.88566e+01 ;
+            mbo:mz 9.5082e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 388 ],
+        [ mbo:intensity 1.01951e+01 ;
+            mbo:mz 1.13056e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 4.11434e+01 ;
+            mbo:mz 1.13093e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 411 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-002f-8900000000-e19d7c9c16c1eb5b2d6d" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. Postrun m/z adjustment with known mass was 142.09938." ;
+    skos:definition "(2R,3S)-(+)-2,3-epoxyoctanal; GC-FI-TOF; MS; POSITIVE; FI; 10 kV" .
+

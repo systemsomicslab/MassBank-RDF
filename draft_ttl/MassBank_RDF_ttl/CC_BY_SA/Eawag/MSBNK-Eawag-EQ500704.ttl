@@ -1,0 +1,142 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ500704 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], B. Lauper [com]" ;
+    dcterms:date "2021-03-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ500704" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K., Du, L., Singer, H., Hollender, J.. Identification of LC-HRMS Nontarget Signals in Groundwater After Source Related Prioritization. Water Research 2021, 196. DOI: https://doi.org/10.1016/j.watres.2021.116994" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Exploris 240 Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "Atlantis C18 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 100/0 at 1.5 min, 5/95 at 18.5 min, 5/95 at 28.5 min, 100/0 at 29 min, 100/0 at 33 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "18.434 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-((4-(2-Chlorophenyl)-3-ethoxycarbonyl-5-methoxycarbonyl-6-methyl-2-pyridyl)methoxy)acetic acid",
+                "2-[[4-(2-chlorophenyl)-3-ethoxycarbonyl-5-methoxycarbonyl-6-methylpyridin-2-yl]methoxy]acetic acid",
+                "O-Des[2-aminoethyl]-O-carboxymethyl dehydroamlodipine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.210928e+02 ;
+            rdfs:seeAlso cas:113994-45-9,
+                chemspider:32698294,
+                pubchem:CID14271878 ;
+            schema:inChI "InChI=1S/C20H20ClNO7/c1-4-29-20(26)18-14(9-28-10-15(23)24)22-11(2)16(19(25)27-3)17(18)12-7-5-6-8-13(12)21/h5-8H,4,9-10H2,1-3H3,(H,23,24)" ;
+            schema:inChIKey inchikey:WYLSEDHKQJBUIA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H20ClNO7" ;
+            schema:name "2-((4-(2-Chlorophenyl)-3-ethoxycarbonyl-5-methoxycarbonyl-6-methyl-2-pyridyl)methoxy)acetic acid",
+                "2-[[4-(2-chlorophenyl)-3-ethoxycarbonyl-5-methoxycarbonyl-6-methylpyridin-2-yl]methoxy]acetic acid",
+                "O-Des[2-aminoethyl]-O-carboxymethyl dehydroamlodipine" ;
+            schema:smiles "CCOC(=O)C1=C(C(=C(N=C1COCC(=O)O)C)C(=O)OC)C2=CC=CC=C2Cl" ] ;
+    mbo:has_peak [ mbo:intensity 1.096231e+06 ;
+            mbo:mz 1.52062e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.99116e+06 ;
+            mbo:mz 2.230383e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.470711e+06 ;
+            mbo:mz 2.230633e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 5.101688e+06 ;
+            mbo:mz 2.280214e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 2.169436e+06 ;
+            mbo:mz 2.290041e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.652939e+06 ;
+            mbo:mz 2.290294e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.360508e+07 ;
+            mbo:mz 2.300366e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 186 ],
+        [ mbo:intensity 3.830406e+06 ;
+            mbo:mz 2.420373e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 7.972842e+05 ;
+            mbo:mz 2.54081e+02 ;
+            mbo:peak_sequential_number 17 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.803611e+08 ;
+            mbo:mz 2.580316e+02 ;
+            mbo:peak_sequential_number 18 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.133732e+05 ;
+            mbo:mz 2.710386e+02 ;
+            mbo:peak_sequential_number 19 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.390369e+06 ;
+            mbo:mz 1.670727e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8.637322e+07 ;
+            mbo:mz 2.860266e+02 ;
+            mbo:peak_sequential_number 20 ;
+            mbo:relative_intensity 478 ],
+        [ mbo:intensity 1.379818e+06 ;
+            mbo:mz 2.900587e+02 ;
+            mbo:peak_sequential_number 21 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8.666749e+05 ;
+            mbo:mz 1.870301e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.10542e+06 ;
+            mbo:mz 1.940596e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.230346e+06 ;
+            mbo:mz 2.010091e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.234803e+06 ;
+            mbo:mz 2.070668e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.810836e+05 ;
+            mbo:mz 2.140419e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.86992e+06 ;
+            mbo:mz 2.150248e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.337902e+06 ;
+            mbo:mz 2.22055e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 18 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.220997e+02 ;
+            mbo:precursor_mz 4.221001e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 21 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-15645b2c7ca86f40ed40" ;
+    rdfs:comment "UCHEM_ID 5007" ;
+    skos:definition "O-Des[2-aminoethyl]-O-carboxymethyl dehydroamlodipine; LC-ESI-QFT; MS2; CE: 60%; R=15000; [M+H]+" .
+

@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU020556 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU020556" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "90" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "15.869 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[1-[4,4-bis(4-fluorophenyl)butyl]piperidin-4-yl]-1H-benzimidazol-2-one",
+                "Pimozide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.612279e+02 ;
+            rdfs:seeAlso cas:2062-78-4,
+                chemspider:15520,
+                pubchem:CID16362 ;
+            schema:inChI "InChI=1S/C28H29F2N3O/c29-22-11-7-20(8-12-22)25(21-9-13-23(30)14-10-21)4-3-17-32-18-15-24(16-19-32)33-27-6-2-1-5-26(27)31-28(33)34/h1-2,5-14,24-25H,3-4,15-19H2,(H,31,34)" ;
+            schema:inChIKey inchikey:YVUQSNJEYSNKRX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C28H29F2N3O" ;
+            schema:name "3-[1-[4,4-bis(4-fluorophenyl)butyl]piperidin-4-yl]-1H-benzimidazol-2-one",
+                "Pimozide" ;
+            schema:smiles "FC1=CC=C(C=C1)C(CCCN1CCC(CC1)N1C(=O)NC2=C1C=CC=C2)C1=CC=C(F)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.75984e+04 ;
+            mbo:mz 1.320328e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 332 ],
+        [ mbo:intensity 5.29205e+04 ;
+            mbo:mz 1.330408e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.1635e+03 ;
+            mbo:mz 1.430613e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 4.4545e+03 ;
+            mbo:mz 1.590563e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 84 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.310612e+02 ;
+            mbo:precursor_mz 4.602206e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001i-0900000000-a10c36c7b309fd6a144a" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Pimozide; LC-ESI-QFT; MS2; CE: 90; R=17500; [M-H]-" .
+

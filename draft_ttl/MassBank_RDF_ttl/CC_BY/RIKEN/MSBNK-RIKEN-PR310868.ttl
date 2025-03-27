@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR310868 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR310868" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.57" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isoflavone base + 2O, O-AcetylHex" ;
+            mbo:ch_compound_class "Isoflavone O-glycosides" ;
+            mbo:ch_exact_mass 4.58419e+02 ;
+            schema:inChI "InChI=1S/C23H22O10/c1-11(24)30-10-18-20(27)21(28)22(29)23(33-18)32-14-6-7-15-17(8-14)31-9-16(19(15)26)12-2-4-13(25)5-3-12/h2-9,18,20-23,25,27-29H,10H2,1H3" ;
+            schema:inChIKey inchikey:ZMOZJTDOTOZVRT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C23H22O10" ;
+            schema:name "Isoflavone base + 2O, O-AcetylHex" ;
+            schema:smiles "O=C(OCC4OC(OC=1C=CC=2C(=O)C(=COC=2(C=1))C3=CC=C(O)C=C3)C(O)C(O)C4(O))C" ] ;
+    mbo:has_peak [ mbo:intensity 4e+01 ;
+            mbo:mz 1.280468e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 134 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 2.091526e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 3.3e+01 ;
+            mbo:mz 2.550491e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 2.98e+02 ;
+            mbo:mz 2.550682e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.8e+01 ;
+            mbo:mz 4.464268e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 4.9e+01 ;
+            mbo:mz 4.59126e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 164 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.591303e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-0190100000-1d7a286eb2a64cec2c9d" ;
+    rdfs:comment "Annotation level-3" ;
+    skos:definition "Isoflavone base + 2O, O-AcetylHex; LC-ESI-QTOF; MS2" .
+

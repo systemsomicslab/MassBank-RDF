@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU137905 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU137905" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "75" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "18.236 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bensulide",
+                "N-[2-di(propan-2-yloxy)phosphinothioylsulfanylethyl]benzenesulfonamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.970605e+02 ;
+            rdfs:seeAlso cas:741-58-2,
+                chemspider:12397,
+                pubchem:CID12932 ;
+            schema:inChI "InChI=1S/C14H24NO4PS3/c1-12(2)18-20(21,19-13(3)4)22-11-10-15-23(16,17)14-8-6-5-7-9-14/h5-9,12-13,15H,10-11H2,1-4H3" ;
+            schema:inChIKey inchikey:RRNIZKPFKNDSRS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H24NO4PS3" ;
+            schema:name "Bensulide",
+                "N-[2-di(propan-2-yloxy)phosphinothioylsulfanylethyl]benzenesulfonamide" ;
+            schema:smiles "CC(C)OP(=S)(OC(C)C)SCCNS(=O)(=O)C1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 5.0229e+03 ;
+            mbo:mz 5.30386e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 306 ],
+        [ mbo:intensity 1.33137e+04 ;
+            mbo:mz 6.10107e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 810 ],
+        [ mbo:intensity 1.64161e+04 ;
+            mbo:mz 9.50492e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.7536e+03 ;
+            mbo:mz 1.050449e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 350 ],
+        [ mbo:intensity 4.0527e+03 ;
+            mbo:mz 1.250058e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 247 ],
+        [ mbo:intensity 5.1952e+03 ;
+            mbo:mz 1.410005e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 316 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90212e+01 ;
+            mbo:precursor_mz 3.980678e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-01ot-9300000000-96c6b7a0d6a3698f6de9" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Bensulide; LC-ESI-QFT; MS2; CE: 75; R=17500; [M+H]+" .
+

@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PN000037 a mbo:MassSpectrum ;
+    dcterms:creator "Institute of Bioorganic Chemistry, Polish Academy of Sciences,Poland/Anna Staszków" ;
+    dcterms:date "2011-03-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PN000037" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright(C) 2011 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "micrOTOF-Q" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:column_name "Poroshell 120,EC-C18 2.1x100mm,2.7um" ;
+            mbo:instrument_type "ESI-TOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "372.155 sec" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chrysoeriol O-glucoside malonylated" ;
+            mbo:ch_compound_class "Natural Product; flavone" ;
+            mbo:ch_exact_mass 5.481166e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C25H24O14" ;
+            schema:name "Chrysoeriol O-glucoside malonylated" ;
+            schema:smiles "N/A" ] ;
+    mbo:has_peak [ mbo:intensity 1.69e+02 ;
+            mbo:mz 2.84025e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 169 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.99046e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.3e+02 ;
+            mbo:mz 3.0005e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 130 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.99046e+02 ;
+            mbo:precursor_mz 5.47098e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-0091000000-0a40aed010cdaeaa8c55" ;
+    rdfs:comment "lupinus_mexico" ;
+    skos:definition "Chrysoeriol O-glucoside malonylated; ESI-TOF; MS2; CE:25 eV; [M-H]-" .
+

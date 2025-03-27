@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PN000112 a mbo:MassSpectrum ;
+    dcterms:creator "Institute of Bioorganic Chemistry, Polish Academy of Sciences,Poland/Anna Staszków" ;
+    dcterms:date "2011-03-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PN000112" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright(C) 2011 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "micrOTOF-Q" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:column_name "Poroshell 120,EC-C18 2.1x100mm,2.7um" ;
+            mbo:instrument_type "ESI-TOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "382.394 sec" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Flacitran",
+                "Luteolin",
+                "Luteolol" ;
+            mbo:ch_compound_class "Natural Product; flavone" ;
+            mbo:ch_exact_mass 2.860477e+02 ;
+            rdfs:seeAlso cas:491-70-3,
+                pubchem:CID5280445 ;
+            schema:inChI "InChI=1S/C15H10O6/c16-8-4-11(19)15-12(20)6-13(21-14(15)5-8)7-1-2-9(17)10(18)3-7/h1-6,16-19H" ;
+            schema:inChIKey inchikey:IQPNAANSBPBGFQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O6" ;
+            schema:name "Flacitran",
+                "Luteolin",
+                "Luteolol" ;
+            schema:smiles "OC1=CC(O)=C2C(=O)C=C(OC2(=C1))C3=CC=C(O)C(O)=C3" ] ;
+    mbo:has_peak [ mbo:intensity 2.3e+01 ;
+            mbo:mz 1.05034e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 4.2e+01 ;
+            mbo:mz 1.75038e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.7e+01 ;
+            mbo:mz 1.99039e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 2.01017e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 1.07012e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.8e+01 ;
+            mbo:mz 1.15017e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 1.21028e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.13e+02 ;
+            mbo:mz 1.32019e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.33027e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.9e+01 ;
+            mbo:mz 1.3403e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 1.49026e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 4.7e+01 ;
+            mbo:mz 1.51001e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 47 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.33027e+02 ;
+            mbo:precursor_mz 2.85036e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-001i-0900000000-11d998527dd221ea8be3" ;
+    rdfs:comment "standard" ;
+    skos:definition "Luteolin; ESI-TOF; MS2; CE:25 eV; [M-H]-" .
+

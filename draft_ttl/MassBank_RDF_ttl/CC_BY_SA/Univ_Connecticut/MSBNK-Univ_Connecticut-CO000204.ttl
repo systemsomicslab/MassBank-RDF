@@ -1,0 +1,96 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000204 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000204" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-[[4-[(2-amino-4-oxo-1H-pteridin-6-yl)methylamino]benzoyl]amino]pentanedioic acid",
+                "Folic acid",
+                "Vitamin B11",
+                "Vitamin B9",
+                "Vitamin M" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.411397e+02 ;
+            rdfs:seeAlso cas:59-30-3,
+                chemspider:5815,
+                knapsack:C00001539,
+                pubchem:CID135398658 ;
+            schema:inChI "InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/t12-/m0/s1" ;
+            schema:inChIKey inchikey:OVBPIULPVIDEAO-LBPRGKRZSA-N ;
+            schema:molecularFormula "C19H19N7O6" ;
+            schema:name "(2S)-2-[[4-[(2-amino-4-oxo-1H-pteridin-6-yl)methylamino]benzoyl]amino]pentanedioic acid",
+                "Folic acid",
+                "Vitamin B11",
+                "Vitamin B9",
+                "Vitamin M" ;
+            schema:smiles "C1=CC(=CC=C1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.5693e+02 ;
+            mbo:mz 9.20506e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 2.232245e+03 ;
+            mbo:mz 2.950945e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 2.70905e+02 ;
+            mbo:mz 1.060405e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.143184e+03 ;
+            mbo:mz 1.080564e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 114 ],
+        [ mbo:intensity 5.893471e+03 ;
+            mbo:mz 1.200454e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 589 ],
+        [ mbo:intensity 3.16008e+02 ;
+            mbo:mz 1.340374e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 2.04897e+02 ;
+            mbo:mz 1.480628e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.760578e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.53064e+02 ;
+            mbo:mz 2.500728e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.72824e+02 ;
+            mbo:mz 2.670974e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 17 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.421476e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00b9-0910000000-27ce329d1e1f289aaa49" ;
+    skos:definition "Folic_Acid; LC-ESI-QTOF; MS2; CE:40 eV; [M+H]+" .
+

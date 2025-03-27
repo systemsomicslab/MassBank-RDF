@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00191 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-04-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00191" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Myricetin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 3.180376e+02 ;
+            rdfs:seeAlso cas:529-44-2,
+                knapsack:C00001071,
+                pubchem:CID12293 ;
+            schema:inChI "InChI=1S/C15H10O8/c16-6-3-7(17)11-10(4-6)23-15(14(22)13(11)21)5-1-8(18)12(20)9(19)2-5/h1-4,16-20,22H" ;
+            schema:inChIKey inchikey:IKMDFBPHZNJCSN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O8" ;
+            schema:name "Myricetin" ;
+            schema:smiles "Oc(c3)cc(O1)c(c(O)3)C(=O)C(O)=C1c(c2)cc(O)c(O)c(O)2" ] ;
+    mbo:has_peak [ mbo:intensity 5.34e+02 ;
+            mbo:mz 1.370241e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 8.07e+02 ;
+            mbo:mz 1.510034e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 91 ],
+        [ mbo:intensity 1.681e+03 ;
+            mbo:mz 1.789984e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 1.69e+02 ;
+            mbo:mz 1.800014e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.52e+02 ;
+            mbo:mz 1.920062e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.53e+02 ;
+            mbo:mz 2.890357e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 8.83e+03 ;
+            mbo:mz 3.1703e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.524e+03 ;
+            mbo:mz 3.180335e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 172 ],
+        [ mbo:intensity 3.25e+02 ;
+            mbo:mz 3.190347e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 37 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.1703e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-014i-0209000000-2b4763ddb9eb888c9bfd" ;
+    rdfs:comment "[Raw Data] CB066_Myricetin_neg_20eV_000019.txt" ;
+    skos:definition "Myricetin; LC-ESI-QTOF; MS2; [M-H]-; CE: 20eV" .
+

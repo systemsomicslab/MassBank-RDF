@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT203900 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT203900" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(6Z,9Z,12Z)-octadeca-6,9,12-trienoic acid",
+                "6Z,9Z,12Z-Octadecatrienoic Acid",
+                "cis,cis,cis-6,9,12-Octadecatrienoic acid",
+                "gamma-Linolenic acid",
+                "gamolenic acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Linolenic acid" ;
+            mbo:ch_exact_mass 2.78436e+02 ;
+            rdfs:seeAlso cas:506-26-3 ;
+            schema:inChI "InChI=1S/C18H30O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20/h6-7,9-10,12-13H,2-5,8,11,14-17H2,1H3,(H,19,20)" ;
+            schema:inChIKey inchikey:VZCCETWTMQHEPK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H30O2" ;
+            schema:name "(6Z,9Z,12Z)-octadeca-6,9,12-trienoic acid",
+                "6Z,9Z,12Z-Octadecatrienoic Acid",
+                "cis,cis,cis-6,9,12-Octadecatrienoic acid",
+                "gamma-Linolenic acid",
+                "gamolenic acid" ;
+            schema:smiles "CCCCCC=CCC=CCC=CCCCCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.692e+00 ;
+            mbo:mz 1.649045e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 2.396e+00 ;
+            mbo:mz 2.332223e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 5.02e+01 ;
+            mbo:mz 2.772168e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.772168e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-0090000000-dcae4273443fd52bbb03" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "gamma-Linolenic acid, 6Z,9Z,12Z-Octadecatrienoic Acid, (6Z,9Z,12Z)-octadeca-6,9,12-trienoic acid, cis,cis,cis-6,9,12-Octadecatrienoic acid, gamolenic acid; LC-ESI-QTOF; MS2" .
+

@@ -1,0 +1,109 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO01046 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO01046" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hexahydrocurcumin" ;
+            mbo:ch_compound_class "Natural Product; Phenols" ;
+            mbo:ch_exact_mass 3.741729e+02 ;
+            rdfs:seeAlso pubchem:CID96024124 ;
+            schema:inChI "InChI=1S/C21H26O6/c1-26-20-11-14(5-9-18(20)24)3-7-16(22)13-17(23)8-4-15-6-10-19(25)21(12-15)27-2/h5-6,9-12,16,22,24-25H,3-4,7-8,13H2,1-2H3" ;
+            schema:inChIKey inchikey:RSAHICAPUYTWHW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H26O6" ;
+            schema:name "Hexahydrocurcumin" ;
+            schema:smiles "COc(c1)c(O)ccc(CCC(O)CC(=O)CCc(c2)cc(OC)c(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 3.1314e+04 ;
+            mbo:mz 1.210289e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 2.1712e+04 ;
+            mbo:mz 1.790982e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.6969e+04 ;
+            mbo:mz 1.79118e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 9.1551e+04 ;
+            mbo:mz 1.800756e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 157 ],
+        [ mbo:intensity 7.083e+03 ;
+            mbo:mz 1.810775e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.749e+04 ;
+            mbo:mz 1.930878e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 7.799e+03 ;
+            mbo:mz 2.071034e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 9.264e+03 ;
+            mbo:mz 2.191033e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 9.499e+03 ;
+            mbo:mz 1.350452e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 5.873e+03 ;
+            mbo:mz 1.630406e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 6.7176e+04 ;
+            mbo:mz 1.640485e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 4.5826e+04 ;
+            mbo:mz 1.65056e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 1.1913e+04 ;
+            mbo:mz 1.770564e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 2.9997e+04 ;
+            mbo:mz 1.780642e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 5.8153e+05 ;
+            mbo:mz 1.790724e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.9685e+04 ;
+            mbo:mz 1.790875e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 51 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 16 ;
+    mbo:pk_splash "splash10-004i-0900000000-26226539fcdb806bbeca" ;
+    rdfs:comment "[Raw Data] CBA88_Hexahydrocurcum_neg_30eV.txt" ;
+    skos:definition "Hexahydrocurcumin; LC-ESI-QTOF; MS2; [M-H]-; CE: 30eV" .
+

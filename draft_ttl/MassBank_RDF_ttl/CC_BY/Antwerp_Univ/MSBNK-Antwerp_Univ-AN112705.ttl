@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN112705 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN112705" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.151 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diisononyl hexahydrophthalate",
+                "bis(7-methyloctyl) cyclohexane-1,2-dicarboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.243553e+02 ;
+            rdfs:seeAlso cas:166412-78-8,
+                chemspider:9699466,
+                pubchem:CID11524680 ;
+            schema:inChI "InChI=1S/C26H48O4/c1-21(2)15-9-5-7-13-19-29-25(27)23-17-11-12-18-24(23)26(28)30-20-14-8-6-10-16-22(3)4/h21-24H,5-20H2,1-4H3" ;
+            schema:inChIKey inchikey:HORIEOQXBKUKGQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C26H48O4" ;
+            schema:name "Diisononyl hexahydrophthalate",
+                "bis(7-methyloctyl) cyclohexane-1,2-dicarboxylate" ;
+            schema:smiles "CC(C)CCCCCCOC(=O)C1CCCCC1C(=O)OCCCCCCC(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.3669e+03 ;
+            mbo:mz 5.70702e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 928 ],
+        [ mbo:intensity 6.4601e+03 ;
+            mbo:mz 7.10859e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 814 ],
+        [ mbo:intensity 7.9321e+03 ;
+            mbo:mz 8.10699e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.8095e+03 ;
+            mbo:mz 8.51015e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 228 ],
+        [ mbo:intensity 9.16e+02 ;
+            mbo:mz 1.090638e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 1.6511e+03 ;
+            mbo:mz 1.270751e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 208 ],
+        [ mbo:intensity 1.8845e+03 ;
+            mbo:mz 1.550698e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 237 ],
+        [ mbo:intensity 4.377e+02 ;
+            mbo:mz 2.150901e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 55 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.473458e+02 ;
+            mbo:precursor_mz 4.253625e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0ac0-9100000000-14291b1fc476a91b5ff2" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Diisononyl hexahydrophthalate; LC-ESI-QTOF; MS2; CE: 25eV; R=7000; [M+H]+" .
+

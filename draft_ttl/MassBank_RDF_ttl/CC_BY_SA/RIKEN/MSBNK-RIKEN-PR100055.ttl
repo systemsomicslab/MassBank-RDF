@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100055 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100055" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,7,11,15-Tetramethyl-2-hexadecen-1-ol",
+                "Phytol,mixture of isomers" ;
+            mbo:ch_compound_class "Alcohol" ;
+            mbo:ch_exact_mass 2.963079e+02 ;
+            rdfs:seeAlso cas:150-86-7,
+                chemspider:4444094,
+                knapsack:C00003467,
+                pubchem:CID5280435 ;
+            schema:inChI "InChI=1S/C20H40O/c1-17(2)9-6-10-18(3)11-7-12-19(4)13-8-14-20(5)15-16-21/h15,17-19,21H,6-14,16H2,1-5H3/b20-15+/t18-,19-/m1/s1" ;
+            schema:inChIKey inchikey:BOTWFXYSPFMFNR-PYDDKJGSSA-N ;
+            schema:molecularFormula "C20H40O" ;
+            schema:name "3,7,11,15-Tetramethyl-2-hexadecen-1-ol",
+                "Phytol,mixture of isomers" ;
+            schema:smiles "OCC=C(C)CCC[C@H](C)CCC[C@H](C)CCCC(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.961e+02 ;
+            mbo:mz 7.30474e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 249 ],
+        [ mbo:intensity 3.919e+01 ;
+            mbo:mz 2.769309e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 7.866e+02 ;
+            mbo:mz 2.810495e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.098e+01 ;
+            mbo:mz 2.970785e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 2.458e+01 ;
+            mbo:mz 2.990614e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 2.78e+01 ;
+            mbo:mz 1.789634e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 3.267e+01 ;
+            mbo:mz 1.790002e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.154e+02 ;
+            mbo:mz 1.910007e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 8.387e+01 ;
+            mbo:mz 1.929803e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 6.603e+01 ;
+            mbo:mz 2.050171e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 84 ],
+        [ mbo:intensity 9.104e+01 ;
+            mbo:mz 2.070312e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 2.759e+02 ;
+            mbo:mz 2.48988e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 350 ],
+        [ mbo:intensity 2.401e+02 ;
+            mbo:mz 2.650194e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 305 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.973157e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-001i-1190000000-012d6cbb70838da78175" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Phytol,mixture of isomers; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

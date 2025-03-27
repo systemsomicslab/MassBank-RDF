@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP005963 a mbo:MassSpectrum ;
+    dcterms:creator "YAMAMOTO M, DEP. CHEMISTRY, FAC. SCIENCE, NARA WOMEN'S UNIV." ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP005963" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "HITACHI M-80" ;
+            mbo:instrument_type "CI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "METHYL PROPIONATE" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 8.805243e+01 ;
+            schema:inChI "InChI=1S/C4H8O2/c1-3-4(5)6-2/h3H2,1-2H3" ;
+            schema:inChIKey inchikey:RJUFJBKOKNCXHH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H8O2" ;
+            schema:name "METHYL PROPIONATE" ;
+            schema:smiles "CCC(=O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 1.685e+01 ;
+            mbo:mz 8.7e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 168 ],
+        [ mbo:intensity 8.191e+01 ;
+            mbo:mz 8.8e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 818 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 8.9e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.38e+00 ;
+            mbo:mz 9e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 54 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000i-9000000000-a03067fbd0651bec342e" ;
+    skos:definition "METHYL PROPIONATE; CI-B; MS" .
+

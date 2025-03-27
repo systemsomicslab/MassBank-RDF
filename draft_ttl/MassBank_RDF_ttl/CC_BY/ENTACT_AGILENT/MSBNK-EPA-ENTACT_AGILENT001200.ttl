@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001200 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001200" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Hydroxy-N-(3-nitrophenyl)naphthalene-2-carboxamide",
+                "DTXSID3044544" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.080797e+02 ;
+            rdfs:seeAlso cas:135-65-9,
+                pubchem:CID67277 ;
+            schema:inChI "InChI=1S/C17H12N2O4/c20-16-9-12-5-2-1-4-11(12)8-15(16)17(21)18-13-6-3-7-14(10-13)19(22)23/h1-10,20H,(H,18,21)" ;
+            schema:inChIKey inchikey:YZJSKRBKHCLMQC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H12N2O4" ;
+            schema:name "3-Hydroxy-N-(3-nitrophenyl)naphthalene-2-carboxamide",
+                "DTXSID3044544" ;
+            schema:smiles "[O-][N+](=O)C1=CC(=CC=C1)NC(=O)C1=CC2C=CC=CC=2C=C1O" ] ;
+    mbo:has_peak [ mbo:intensity 1.484525e+00 ;
+            mbo:mz 4.199854e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.068174e+00 ;
+            mbo:mz 4.599345e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 5.497706e+00 ;
+            mbo:mz 1.370357e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.486161e+01 ;
+            mbo:mz 1.430502e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 148 ],
+        [ mbo:intensity 2.567541e+00 ;
+            mbo:mz 2.610795e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.070724e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.070724e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-0109000000-04cc3adbed61468f4650" ;
+    skos:definition "3-Hydroxy-N-(3-nitrophenyl)naphthalene-2-carboxamide; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

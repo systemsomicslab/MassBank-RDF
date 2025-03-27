@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML82476 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML82476" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "5.493" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Strictosidine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 5.302264e+02 ;
+            rdfs:seeAlso cas:20824-29-7,
+                chemspider:141721,
+                pubchem:CID161336 ;
+            schema:inChI "InChI=1S/C27H34N2O9/c1-3-13-16(10-19-21-15(8-9-28-19)14-6-4-5-7-18(14)29-21)17(25(34)35-2)12-36-26(13)38-27-24(33)23(32)22(31)20(11-30)37-27/h3-7,12-13,16,19-20,22-24,26-33H,1,8-11H2,2H3/t13-,16+,19+,20-,22-,23+,24-,26+,27+/m1/s1" ;
+            schema:inChIKey inchikey:XBAMJZTXGWPTRM-NTXHKPOFSA-N ;
+            schema:molecularFormula "C27H34N2O9" ;
+            schema:name "Strictosidine" ;
+            schema:smiles "COC(=O)C1=CO[C@H]([C@@H]([C@@H]1C[C@H]2C3=C(CCN2)C4=CC=CC=C4N3)C=C)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.1238e+04 ;
+            mbo:mz 5.892403e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-000i-0000090000-b7710add1a7298f4451e" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.675" ;
+    skos:definition "Strictosidine; LC-ESI-QTOF; MS; NEGATIVE" .
+

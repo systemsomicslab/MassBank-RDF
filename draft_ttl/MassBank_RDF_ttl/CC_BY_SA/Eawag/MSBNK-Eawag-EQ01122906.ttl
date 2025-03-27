@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01122906 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01122906" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "90 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.847 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(2,4-dichlorophenyl)-4,4-dimethyl-2-(1,2,4-triazol-1-yl)pentan-3-ol",
+                "Diclobutrazol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.270905e+02 ;
+            rdfs:seeAlso cas:84709-81-9,
+                chemspider:48148,
+                pubchem:CID53309 ;
+            schema:inChI "InChI=1S/C15H19Cl2N3O/c1-15(2,3)14(21)13(20-9-18-8-19-20)6-10-4-5-11(16)7-12(10)17/h4-5,7-9,13-14,21H,6H2,1-3H3" ;
+            schema:inChIKey inchikey:URDNHJIVMYZFRT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H19Cl2N3O" ;
+            schema:name "1-(2,4-dichlorophenyl)-4,4-dimethyl-2-(1,2,4-triazol-1-yl)pentan-3-ol",
+                "Diclobutrazol" ;
+            schema:smiles "CC(C)(C)C(C(CC1=C(C=C(C=C1)Cl)Cl)N2C=NC=N2)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.718498e+06 ;
+            mbo:mz 5.70699e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.052601e+07 ;
+            mbo:mz 1.589764e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 1.051606e+06 ;
+            mbo:mz 1.640388e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.533378e+06 ;
+            mbo:mz 5.90492e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 3.831658e+06 ;
+            mbo:mz 6.90699e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.253369e+08 ;
+            mbo:mz 7.004e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.382157e+06 ;
+            mbo:mz 1.020466e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.479448e+06 ;
+            mbo:mz 1.229997e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.537354e+06 ;
+            mbo:mz 1.250153e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.342075e+06 ;
+            mbo:mz 1.370153e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.504758e+06 ;
+            mbo:mz 1.390059e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 5 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.280979e+02 ;
+            mbo:precursor_mz 3.280978e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00di-9100000000-f94dff93f0d11c962e22" ;
+    rdfs:comment "UCHEM_ID 11229" ;
+    skos:definition "Diclobutrazol; LC-ESI-QFT; MS2; CE: 90%; R=17500; [M+H]+" .
+

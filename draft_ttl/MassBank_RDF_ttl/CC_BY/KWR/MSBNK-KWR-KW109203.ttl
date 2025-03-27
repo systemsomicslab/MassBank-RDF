@@ -1,0 +1,105 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-KWR-KW109203 a mbo:MassSpectrum ;
+    dcterms:creator "Erik Emke, Andrea Brunner, KWR" ;
+    dcterms:date "2017-03-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-KWR-KW109203" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 KWR watercycle research institute under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Classic, Thermo Scientific" ;
+            mbo:collision_energy "35 eV FT-MS II" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x150mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 0/100 at 40 min, 0/100 at 45 min, 95/5 at 47 min, 95/5 at 52 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "11.894 min" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-(Difluoromethoxy)-2-mercapto-1H-benzimidazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.160169e+02 ;
+            rdfs:seeAlso cas:97963-62-7,
+                chemspider:4241732,
+                pubchem:CID5064774 ;
+            schema:inChI "InChI=1S/C8H6F2N2OS/c9-7(10)13-4-1-2-5-6(3-4)12-8(14)11-5/h1-3,7H,(H2,11,12,14)" ;
+            schema:inChIKey inchikey:HJMVPNAZPFZXCP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H6F2N2OS" ;
+            schema:name "5-(Difluoromethoxy)-2-mercapto-1H-benzimidazole" ;
+            schema:smiles "C1(N2)=C(N=C2S)C=C(C=C1)OC(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 2.06156e+04 ;
+            mbo:mz 8.29762e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2.320044e+05 ;
+            mbo:mz 1.840438e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 470 ],
+        [ mbo:intensity 7.41711e+04 ;
+            mbo:mz 1.850516e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 4.929201e+05 ;
+            mbo:mz 1.970174e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.136091e+05 ;
+            mbo:mz 2.170233e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 230 ],
+        [ mbo:intensity 1.75086e+04 ;
+            mbo:mz 1.409929e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 4.102198e+05 ;
+            mbo:mz 1.490164e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 831 ],
+        [ mbo:intensity 1.640532e+05 ;
+            mbo:mz 1.500244e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 332 ],
+        [ mbo:intensity 1.85252e+04 ;
+            mbo:mz 1.569941e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 2.135987e+05 ;
+            mbo:mz 1.590488e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 433 ],
+        [ mbo:intensity 2.18153e+04 ;
+            mbo:mz 1.639604e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 4.275954e+05 ;
+            mbo:mz 1.67027e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 867 ],
+        [ mbo:intensity 2.61061e+04 ;
+            mbo:mz 1.770116e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 53 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.170235e+02 ;
+            mbo:precursor_mz 2.170242e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-00kb-0900000000-f44733e08ca6641d1930" ;
+    rdfs:comment "INTERNAL_ID 1092" ;
+    skos:definition "5-(Difluoromethoxy)-2-mercapto-1H-benzimidazole; LC-ESI-ITFT; MS2; CE: 35 eV; R=30000; [M+H]+" .
+

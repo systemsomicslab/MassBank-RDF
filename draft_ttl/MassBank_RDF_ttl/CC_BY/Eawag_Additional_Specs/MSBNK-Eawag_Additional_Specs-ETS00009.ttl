@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ETS00009 a mbo:MassSpectrum ;
+    dcterms:creator "E. Schymanski, Dept. of Environmental Chemistry, Eawag, Switzerland" ;
+    dcterms:date "2016-02-03 (Created 2014-06-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ETS00009" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Singer, H. P.; Longrée, P.; Loos, M.; Ruff, M.; Stravs, M. A.; Vidal, C. R.; Hollender, J. Strategies to Characterize Polar Organic Contamination in Wastewater: Exploring the Capability of High Resolution Mass Spectrometry. Environmental Science & Technology 2014, 48 (3), 1811–8. DOI:10.1021/es4044374" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 NCE" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "C14-SAS (TENTATIVE)",
+                "tetradecane-7-sulfonic acid" ;
+            mbo:ch_compound_class "N/A; Surfactant" ;
+            mbo:ch_exact_mass 2.781916e+02 ;
+            rdfs:seeAlso pubchem:CID14227602 ;
+            schema:inChI "InChI=1S/C14H30O3S/c1-3-5-7-9-11-13-14(18(15,16)17)12-10-8-6-4-2/h14H,3-13H2,1-2H3,(H,15,16,17)" ;
+            schema:inChIKey inchikey:MZBFYGYTZIZFQC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H30O3S" ;
+            schema:name "C14-SAS (TENTATIVE)",
+                "tetradecane-7-sulfonic acid" ;
+            schema:smiles "O=S(=O)(O)C(CCCCCCC)CCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.94534e+05 ;
+            mbo:mz 7.99576e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 239 ],
+        [ mbo:intensity 2.5215e+04 ;
+            mbo:mz 8.09655e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.232146e+06 ;
+            mbo:mz 2.771836e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 7.99576e+01 ;
+            mbo:tentative_formula "294534" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 8.09655e+01 ;
+            mbo:tentative_formula "25215" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 2.771836e+02 ;
+            mbo:tentative_formula "1232146" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.771836e+02 ;
+            mbo:precursor_mz 2.771836e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-2090000000-2d03de34c9a7f0cf4e6f" ;
+    rdfs:comment "CONFIDENCE Tentative identification: best match only (Level 3)" ;
+    skos:definition "C14-SAS (TENTATIVE); LC-ESI-ITFT; MS2; HCD60; [M-H]-" .
+

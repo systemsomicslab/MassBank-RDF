@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO01057 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO01057" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diosmin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoids" ;
+            mbo:ch_exact_mass 6.081741e+02 ;
+            schema:inChI "InChI=1S/C28H32O15/c1-10-21(32)23(34)25(36)27(40-10)39-9-19-22(33)24(35)26(37)28(43-19)41-12-6-14(30)20-15(31)8-17(42-18(20)7-12)11-3-4-16(38-2)13(29)5-11/h3-8,10,19,21-30,32-37H,9H2,1-2H3/t10-,19+,21-,22+,23+,24-,25+,26+,27+,28+/m0/s1" ;
+            schema:inChIKey inchikey:GZSOSUNBTXMUFQ-YFAPSIMESA-N ;
+            schema:molecularFormula "C28H32O15" ;
+            schema:name "Diosmin" ;
+            schema:smiles "c(O)(c3)c(C(=O)2)c(cc3O[C@H](O4)[C@H](O)[C@@H](O)[C@H](O)[C@@H](CO[C@H](O5)[C@H](O)[C@@H]([C@H]([C@@H]5C)O)O)4)OC(=C2)c(c1)ccc(c1O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 5.572e+04 ;
+            mbo:mz 2.840323e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 7.76e+03 ;
+            mbo:mz 2.850359e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 3.47892e+05 ;
+            mbo:mz 2.990557e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.4312e+04 ;
+            mbo:mz 3.000589e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 156 ],
+        [ mbo:intensity 4.5136e+04 ;
+            mbo:mz 3.010704e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 4.052e+03 ;
+            mbo:mz 3.020736e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0002-0092000000-48904a09dc7582b74e1b" ;
+    rdfs:comment "[Raw Data] CBA89_Diosmin_neg_40eV.txt" ;
+    skos:definition "Diosmin; LC-ESI-QTOF; MS2; [M-H]-; CE: 40eV" .
+

@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO002591 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO002591" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Cyanopyridine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.040375e+02 ;
+            rdfs:seeAlso cas:100-70-9,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5286> ;
+            schema:inChI "InChI=1S/C6H4N2/c7-5-6-3-1-2-4-8-6/h1-4H" ;
+            schema:inChIKey inchikey:FFNVQNRYTPFDDP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H4N2" ;
+            schema:name "2-Cyanopyridine" ;
+            schema:smiles "N#Cc(c1)nccc1" ] ;
+    mbo:has_peak [ mbo:intensity 5.9406e+04 ;
+            mbo:mz 5.01e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 3.118815e+05 ;
+            mbo:mz 5.09e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 954 ],
+        [ mbo:intensity 3.26733e+05 ;
+            mbo:mz 7.82e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.46535e+04 ;
+            mbo:mz 7.91e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 106 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.05e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0ufr-9000000000-2250b57a07d49c303d44" ;
+    rdfs:comment "KEIO_ID C089" ;
+    skos:definition "2-Cyanopyridine; LC-ESI-QQ; MS2; CE:50 V; [M+H]+" .
+

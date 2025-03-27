@@ -1,0 +1,89 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000199 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000199" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "17.810400" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-[[2-(2,4-dichlorophenyl)-4-propyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole",
+                "Propiconazole" ;
+            mbo:ch_compound_class "Pesticides; Fungicides; Triazoles" ;
+            mbo:ch_exact_mass 3.410698e+02 ;
+            schema:inChI "InChI=1S/C15H17Cl2N3O2/c1-2-3-12-7-21-15(22-12,8-20-10-18-9-19-20)13-5-4-11(16)6-14(13)17/h4-6,9-10,12H,2-3,7-8H2,1H3" ;
+            schema:molecularFormula "C15H17Cl2N3O2" ;
+            schema:name "1-[[2-(2,4-dichlorophenyl)-4-propyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole",
+                "Propiconazole" ;
+            schema:smiles "ClC1=CC=C(C(Cl)=C1)C2(OCC(O2)CCC)CN3N=CN=C3" ] ;
+    mbo:has_peak [ mbo:intensity 6.219559e+06 ;
+            mbo:mz 5.300253e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 9.778688e+06 ;
+            mbo:mz 2.730443e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 6.124163e+08 ;
+            mbo:mz 3.420765e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.091699e+08 ;
+            mbo:mz 6.906996e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 178 ],
+        [ mbo:intensity 1.789466e+07 ;
+            mbo:mz 7.004002e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.38071e+07 ;
+            mbo:mz 1.229995e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 4.595999e+08 ;
+            mbo:mz 1.589762e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 750 ],
+        [ mbo:intensity 3.607782e+07 ;
+            mbo:mz 1.729563e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 6.902321e+06 ;
+            mbo:mz 1.869707e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.511846e+07 ;
+            mbo:mz 2.049818e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.445786e+07 ;
+            mbo:mz 2.111244e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 24 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-052f-1709000000-4a68515d8381758e150f" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Propiconazole; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M+H]+" .
+

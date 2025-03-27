@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000154 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000154" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Quinalizarin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.720321e+02 ;
+            rdfs:seeAlso cas:81-61-8,
+                pubchem:CID5004 ;
+            schema:inChI "InChI=1S/C14H8O6/c15-6-3-4-7(16)11-10(6)12(18)5-1-2-8(17)13(19)9(5)14(11)20/h1-4,15-17,19H" ;
+            schema:inChIKey inchikey:VBHKTXLEJZIDJF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H8O6" ;
+            schema:name "Quinalizarin" ;
+            schema:smiles "OC1C2=C(C=CC=1O)C(=O)C1C(C2=O)=C(O)C=CC=1O" ] ;
+    mbo:has_peak [ mbo:intensity 2.048826e+00 ;
+            mbo:mz 1.990401e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.066331e+00 ;
+            mbo:mz 2.27035e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 5.240823e+00 ;
+            mbo:mz 2.430299e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.710248e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.710248e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00di-0090000000-709583ca6346b4bd0815" ;
+    skos:definition "Quinalizarin; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ01507 a mbo:MassSpectrum ;
+    dcterms:creator "Kaori Shintani, Department of Forensic Medicine, Graduate School of Medical Science, Kyoto Prefectural University of Medicine, 465 Kajii-cho, Kamigyo-ku, Kyoto 602-8566, Japan." ;
+    dcterms:date "2022-07-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ01507" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Kaori Shintani, Department of Forensic Medicine, Graduate School of Medical Science, Kyoto Prefectural University of Medicine, 465 Kajii-cho, Kamigyo-ku, Kyoto 602-8566, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LCMS-8045 (Shimadzu, Kyoto, Japan)" ;
+            mbo:collision_energy "40 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ethidium" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 3.141652e+02 ;
+            rdfs:seeAlso cas:3546-21-2,
+                chemspider:3498,
+                pubchem:CID3624 ;
+            schema:inChI "InChI=1S/C21H19N3/c1-2-24-20-13-16(23)9-11-18(20)17-10-8-15(22)12-19(17)21(24)14-6-4-3-5-7-14/h3-13,23H,2,22H2,1H3/p+1" ;
+            schema:inChIKey inchikey:QTANTQQOYSUMLC-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C21H20N3]+" ;
+            schema:name "Ethidium" ;
+            schema:smiles "CC[n+]1c2cc(ccc2c3ccc(cc3c1c4ccccc4)N)N" ] ;
+    mbo:has_peak [ mbo:intensity 2.6112e+04 ;
+            mbo:mz 1.8105e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 163 ],
+        [ mbo:intensity 8.589e+03 ;
+            mbo:mz 1.9105e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 3.9117e+04 ;
+            mbo:mz 2.0805e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 245 ],
+        [ mbo:intensity 5.7394e+04 ;
+            mbo:mz 2.6905e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 359 ],
+        [ mbo:intensity 1.5957e+05 ;
+            mbo:mz 2.8405e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.8992e+04 ;
+            mbo:mz 2.8605e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 182 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.141652e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0190000000-a2fde807844a7a1f2724" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 22HP8019 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Ethidium; ESI-QQ; MS2; [M]+, CID, CE 40 V" .
+

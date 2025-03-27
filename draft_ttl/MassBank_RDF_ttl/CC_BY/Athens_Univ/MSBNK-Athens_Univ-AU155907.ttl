@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU155907 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU155907" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "1.980 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8-chloro-6-(2-fluorophenyl)-1-methyl-4H-imidazo[1,5-a][1,4]benzodiazepine",
+                "Midazolam" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.250782e+02 ;
+            rdfs:seeAlso cas:59467-70-8,
+                chemspider:4047,
+                pubchem:CID4192 ;
+            schema:inChI "InChI=1S/C18H13ClFN3/c1-11-21-9-13-10-22-18(14-4-2-3-5-16(14)20)15-8-12(19)6-7-17(15)23(11)13/h2-9H,10H2,1H3" ;
+            schema:inChIKey inchikey:DDLIGBOFAVUZHB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H13ClFN3" ;
+            schema:name "8-chloro-6-(2-fluorophenyl)-1-methyl-4H-imidazo[1,5-a][1,4]benzodiazepine",
+                "Midazolam" ;
+            schema:smiles "CC1=NC=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4F" ] ;
+    mbo:has_peak [ mbo:intensity 2.51336e+06 ;
+            mbo:mz 3.260884e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.260864e+02 ;
+            mbo:precursor_mz 3.260855e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-0009000000-2a4b3dafb9da1faa7f1a" ;
+    rdfs:comment "INTERNAL_ID 1559" ;
+    skos:definition "Midazolam; LC-ESI-QTOF; MS2; HILIC; CE: 10 eV; R=35000; [M+H]+" .
+

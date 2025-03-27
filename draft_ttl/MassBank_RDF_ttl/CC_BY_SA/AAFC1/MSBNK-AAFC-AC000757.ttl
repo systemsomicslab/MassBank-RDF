@@ -1,0 +1,70 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000757 a mbo:MassSpectrum ;
+    dcterms:creator "Megan J. Kelman, Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000757" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "10(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.82" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3S,6S)-3-[(4-hydroxyphenyl)methyl]-3,6-bis(methylsulfanyl)piperazine-2,5-dione",
+                "Fusaperazine A" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 3.120602e+02 ;
+            rdfs:seeAlso chemspider:8443013,
+                knapsack:C00015076,
+                pubchem:CID10267534 ;
+            schema:inChI "InChI=1S/C13H16N2O3S2/c1-19-11-10(17)15-13(20-2,12(18)14-11)7-8-3-5-9(16)6-4-8/h3-6,11,16H,7H2,1-2H3,(H,14,18)(H,15,17)/t11-,13-/m0/s1" ;
+            schema:inChIKey inchikey:ALVTZOKFXMRGEB-AAEUAGOBSA-N ;
+            schema:molecularFormula "C13H16N2O3S2" ;
+            schema:name "(3S,6S)-3-[(4-hydroxyphenyl)methyl]-3,6-bis(methylsulfanyl)piperazine-2,5-dione",
+                "Fusaperazine A" ;
+            schema:smiles "CS[C@H]1C(=O)N[C@@](C(=O)N1)(CC2=CC=C(C=C2)O)SC" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 3.08853e+04 ;
+            mbo:mz 2.851234e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 258 ],
+        [ mbo:intensity 1.012986e+05 ;
+            mbo:mz 2.951073e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 846 ],
+        [ mbo:intensity 1.19605e+05 ;
+            mbo:mz 3.031336e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.031336e+02 ;
+            mbo:precursor_mz 3.13067e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udj-0098000000-17d646b70b4ee8172f13" ;
+    rdfs:comment "CONFIDENCE Penicillium amphipolaria" ;
+    skos:definition "Fusaperazine A; LC-ESI-ITFT; MS2; CE: 10; R=17500; [M+H]+" .
+

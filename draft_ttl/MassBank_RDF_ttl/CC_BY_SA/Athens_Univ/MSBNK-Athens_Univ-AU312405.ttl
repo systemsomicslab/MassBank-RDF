@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU312405 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU312405" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.9 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diazinon",
+                "diethoxy-(6-methyl-2-propan-2-ylpyrimidin-4-yl)oxy-sulfanylidene-$l^{5}-phosphane" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.041011e+02 ;
+            rdfs:seeAlso cas:333-41-5,
+                chemspider:2909,
+                pubchem:CID3017 ;
+            schema:inChI "InChI=1S/C12H21N2O3PS/c1-6-15-18(19,16-7-2)17-11-8-10(5)13-12(14-11)9(3)4/h8-9H,6-7H2,1-5H3" ;
+            schema:inChIKey inchikey:FHIVAFMUCKRCQO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H21N2O3PS" ;
+            schema:name "Diazinon",
+                "diethoxy-(6-methyl-2-propan-2-ylpyrimidin-4-yl)oxy-sulfanylidene-$l^{5}-phosphane" ;
+            schema:smiles "CCOP(=S)(OCC)OC1=NC(=NC(C)=C1)C(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.324e+03 ;
+            mbo:mz 1.28052e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.22e+03 ;
+            mbo:mz 1.680705e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 4.3368e+05 ;
+            mbo:mz 1.690787e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.9968e+04 ;
+            mbo:mz 1.350908e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 2.248e+03 ;
+            mbo:mz 1.360748e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.268e+03 ;
+            mbo:mz 1.360947e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.39648e+05 ;
+            mbo:mz 1.531014e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 552 ],
+        [ mbo:intensity 2.8252e+04 ;
+            mbo:mz 1.540545e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.8076e+04 ;
+            mbo:mz 1.541046e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2.664e+03 ;
+            mbo:mz 1.550576e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.02e+03 ;
+            mbo:mz 1.670626e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 9 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.051096e+02 ;
+            mbo:precursor_mz 3.051083e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0gb9-0900000000-49a403503b8e1237dddc" ;
+    rdfs:comment "INTERNAL_ID 3124" ;
+    skos:definition "Diazinon; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M+H]+" .
+

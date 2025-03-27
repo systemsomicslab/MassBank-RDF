@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002143 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002143" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carminic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.920904e+02 ;
+            rdfs:seeAlso cas:1260-17-9,
+                pubchem:CID10255083 ;
+            schema:inChI "InChI=1S/C22H20O13/c1-4-8-5(2-6(24)9(4)22(33)34)13(25)10-11(15(8)27)16(28)12(18(30)17(10)29)21-20(32)19(31)14(26)7(3-23)35-21/h2,7,14,19-21,23-24,26,28-32H,3H2,1H3,(H,33,34)" ;
+            schema:inChIKey inchikey:DGQLVPJVXFOQEV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H20O13" ;
+            schema:name "Carminic acid" ;
+            schema:smiles "CC1C(=C(O)C=C2C=1C(=O)C1=C(C2=O)C(O)=C(O)C(C2OC(CO)C(O)C(O)C2O)=C1O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.373154e+00 ;
+            mbo:mz 2.980483e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 7.033937e+01 ;
+            mbo:mz 4.910831e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 703 ],
+        [ mbo:intensity 4.067308e+00 ;
+            mbo:mz 2.990561e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 2.554845e+01 ;
+            mbo:mz 3.27051e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 255 ],
+        [ mbo:intensity 1.140905e+00 ;
+            mbo:mz 3.39051e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.90664e+01 ;
+            mbo:mz 3.570616e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 290 ],
+        [ mbo:intensity 1.653163e+00 ;
+            mbo:mz 3.690616e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.066058e+00 ;
+            mbo:mz 3.870722e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 7.24517e+00 ;
+            mbo:mz 4.290827e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.470933e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.910831e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0005-0002900000-82b64496bd6f6be5587d" ;
+    skos:definition "Carminic acid; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

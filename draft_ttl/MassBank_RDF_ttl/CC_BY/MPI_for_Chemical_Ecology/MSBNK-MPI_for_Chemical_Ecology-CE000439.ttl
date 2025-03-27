@@ -1,0 +1,72 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000439 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Marco Kai, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000439" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, K. Scheubert, F. Hufsky, T. Zichner, M. Kai, A. Svatos and S. Boecker. Identifying the unknowns by aligning fragmentation trees. Anal. Chem., 2012, 84, 3417-3426 doi:10.1021/ac300304u" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "27.0eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.3716 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "isopentenyl-Adenine-[d6]" ;
+            mbo:ch_compound_class "Natural Product; Purine" ;
+            mbo:ch_exact_mass 2.031171e+02 ;
+            schema:inChI "InChI=1S/C10H13N5/c1-7(2)3-4-11-9-8-10(13-5-12-8)15-6-14-9/h3,5-6H,4H2,1-2H3,(H2,11,12,13,14,15)" ;
+            schema:inChIKey inchikey:HYVABZIGRDEKCD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H13N5" ;
+            schema:name "isopentenyl-Adenine-[d6]" ;
+            schema:smiles "CC(=CCNc1c2c([nH]cn2)ncn1)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.450895e+06 ;
+            mbo:mz 1.370676e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.255639e+04 ;
+            mbo:mz 1.370711e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 7.408765e+03 ;
+            mbo:mz 1.380737e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 7.047606e+05 ;
+            mbo:mz 1.480611e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 287 ],
+        [ mbo:intensity 3.359089e+05 ;
+            mbo:mz 1.490674e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 1.377193e+06 ;
+            mbo:mz 2.101612e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 561 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.1e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-01p9-0930000000-c150db9f90f6fb228a14" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "isopentenyl-Adenine-[d6]; LC-ESI-ITFT; MS2; CE 27.0 eV; [M+H]+" .
+

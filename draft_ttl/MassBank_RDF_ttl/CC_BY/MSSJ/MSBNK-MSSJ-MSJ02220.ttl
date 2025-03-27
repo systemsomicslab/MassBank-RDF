@@ -1,0 +1,70 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02220 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2022-03-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02220" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ExionLC AD, AB Sciex LLC, USA; X500R QTOF, AB Sciex LLC, USA." ;
+            mbo:collision_energy "30 V" ;
+            mbo:column_name "AQ-C18HP 3 microm, 2.1 mm × 150 mm, GL Science (Tokyo Japan)" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 3 min, 0/100 at 13 min, 0/100 at 23 min, 95/5 at 23.1 min, 95/5 at 28 min" ;
+            mbo:flow_rate "200 microl/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "11.25, 11.54 min" ;
+            mbo:solvent "A water with 2 mM Ammonium bicarbonate",
+                "B methanol with 2 mM Ammmonium bicarbonate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tralkoxydim" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 3.291991e+02 ;
+            rdfs:seeAlso cas:87820-88-0,
+                chemspider:17215911,
+                pubchem:CID135474890 ;
+            schema:inChI "InChI=1S/C20H27NO3/c1-6-16(21-24-7-2)20-17(22)10-15(11-18(20)23)19-13(4)8-12(3)9-14(19)5/h8-9,15,22H,6-7,10-11H2,1-5H3" ;
+            schema:inChIKey inchikey:DQFPEYARZIQXRM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H27NO3" ;
+            schema:name "Tralkoxydim" ;
+            schema:smiles "CCON=C(CC)C1=C(O)CC(c2c(C)cc(C)cc2C)CC1=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.2212e+00 ;
+            mbo:mz 1.710813e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.541171e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.4711e+00 ;
+            mbo:mz 2.551217e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 1.89822e+01 ;
+            mbo:mz 2.821494e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 8.4034e+00 ;
+            mbo:mz 2.841657e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 84 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.281918e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0090000000-84b8065918b07058e17e" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 22HP8019 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Tralkoxydim; LC-ESI-QTOF; MS2; ESI; NEGATIVE; [M-H]-; CE 30 V" .
+

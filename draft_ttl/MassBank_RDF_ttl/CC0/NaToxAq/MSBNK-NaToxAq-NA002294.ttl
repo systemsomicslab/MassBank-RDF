@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002294 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2020-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002294" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2020 by Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30% (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.254 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Colchicine",
+                "N-[(7S)-1,2,3,10-tetramethoxy-9-oxo-6,7-dihydro-5H-benzo[a]heptalen-7-yl]acetamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.991682e+02 ;
+            rdfs:seeAlso cas:64-86-8,
+                chemspider:5933,
+                pubchem:CID6167 ;
+            schema:inChI "InChI=1S/C22H25NO6/c1-12(24)23-16-8-6-13-10-19(27-3)21(28-4)22(29-5)20(13)14-7-9-18(26-2)17(25)11-15(14)16/h7,9-11,16H,6,8H2,1-5H3,(H,23,24)/t16-/m0/s1" ;
+            schema:inChIKey inchikey:IAKHMKGGTNLKSZ-INIZCTEOSA-N ;
+            schema:molecularFormula "C22H25NO6" ;
+            schema:name "Colchicine",
+                "N-[(7S)-1,2,3,10-tetramethoxy-9-oxo-6,7-dihydro-5H-benzo[a]heptalen-7-yl]acetamide" ;
+            schema:smiles "CC(=O)N[C@H]1CCC2=CC(=C(C(=C2C3=CC=C(C(=O)C=C13)OC)OC)OC)OC" ] ;
+    mbo:has_peak [ mbo:intensity 7.6654e+03 ;
+            mbo:mz 2.821253e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.3954e+04 ;
+            mbo:mz 3.82165e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 1.982535e+05 ;
+            mbo:mz 4.001758e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.31369e+04 ;
+            mbo:mz 3.101199e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 8.5078e+03 ;
+            mbo:mz 3.131435e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 4.9334e+03 ;
+            mbo:mz 3.261155e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.31179e+04 ;
+            mbo:mz 3.261389e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 5.5642e+03 ;
+            mbo:mz 3.401538e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 2.41842e+04 ;
+            mbo:mz 3.411385e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 4.03225e+04 ;
+            mbo:mz 3.58165e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 203 ],
+        [ mbo:intensity 3.4386e+03 ;
+            mbo:mz 3.68149e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 17 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.001756e+02 ;
+            mbo:precursor_mz 4.001755e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0udi-0005900000-68f0f0030e0ec20f933a" ;
+    rdfs:comment "INTERNAL_ID 2258" ;
+    skos:definition "Colchicine; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

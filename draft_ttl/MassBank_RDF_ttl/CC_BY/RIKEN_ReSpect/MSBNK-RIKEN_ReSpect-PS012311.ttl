@@ -1,0 +1,57 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS012311 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS012311" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "GGPP",
+                "Geranylgeranyl pyrophosphate ammonium salt",
+                "all trans-3,7,11,15-Tetramethyl-2,6,10,14-hexadecatetraenyl pyrophosphate ammonium salt" ;
+            mbo:ch_compound_class "CLASS1 Terpenoid CLASS2 Other CLASS3 Geranylgeranyl diphosphate" ;
+            mbo:ch_exact_mass 4.50453e+02 ;
+            rdfs:seeAlso cas:6699-20-3,
+                pubchem:CID447277 ;
+            schema:inChI "InChI=1S/C20H36O7P2/c1-17(2)9-6-10-18(3)11-7-12-19(4)13-8-14-20(5)15-16-26-29(24,25)27-28(21,22)23/h9,11,13,15H,6-8,10,12,14,16H2,1-5H3,(H,24,25)(H2,21,22,23)" ;
+            schema:inChIKey inchikey:OINNEUNVOZHBOX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H36O7P2" ;
+            schema:name "GGPP",
+                "Geranylgeranyl pyrophosphate ammonium salt",
+                "all trans-3,7,11,15-Tetramethyl-2,6,10,14-hexadecatetraenyl pyrophosphate ammonium salt" ;
+            schema:smiles "CC(=CCCC(=CCCC(=CCCC(=CCOP(=O)(O)OP(=O)(O)O)C)C)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.9375e+04 ;
+            mbo:mz 7.8e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 8.7752e+04 ;
+            mbo:mz 7.9e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.4948e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004i-9000000000-c159250d54b0b15d9b53" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "all trans-3,7,11,15-Tetramethyl-2,6,10,14-hexadecatetraenyl pyrophosphate ammonium salt, Geranylgeranyl pyrophosphate ammonium salt, GGPP; LC-ESI-QQ; MS2" .
+

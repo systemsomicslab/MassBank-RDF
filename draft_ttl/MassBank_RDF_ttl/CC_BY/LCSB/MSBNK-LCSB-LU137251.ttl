@@ -1,0 +1,92 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU137251 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU137251" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "20.116 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[4-[[2-[3-fluoro-4-(trifluoromethyl)phenyl]-4-methyl-1,3-thiazol-5-yl]methylsulfanyl]-2-methylphenoxy]acetic acid",
+                "GW0742",
+                "{4-[({2-[3-Fluoro-4-(trifluoromethyl)phenyl]-4-methyl-1,3-thiazol-5-yl}methyl)sulfanyl]-2-methylphenoxy}acetic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.710586e+02 ;
+            rdfs:seeAlso cas:317318-84-6,
+                chemspider:8110086,
+                pubchem:CID9934458 ;
+            schema:inChI "InChI=1S/C21H17F4NO3S2/c1-11-7-14(4-6-17(11)29-9-19(27)28)30-10-18-12(2)26-20(31-18)13-3-5-15(16(22)8-13)21(23,24)25/h3-8H,9-10H2,1-2H3,(H,27,28)" ;
+            schema:inChIKey inchikey:HWVNEWGKWRGSRK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H17F4NO3S2" ;
+            schema:name "2-[4-[[2-[3-fluoro-4-(trifluoromethyl)phenyl]-4-methyl-1,3-thiazol-5-yl]methylsulfanyl]-2-methylphenoxy]acetic acid",
+                "GW0742",
+                "{4-[({2-[3-Fluoro-4-(trifluoromethyl)phenyl]-4-methyl-1,3-thiazol-5-yl}methyl)sulfanyl]-2-methylphenoxy}acetic acid" ;
+            schema:smiles "CC1=C(CSC2=CC(C)=C(OCC(O)=O)C=C2)SC(=N1)C1=CC=C(C(F)=C1)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 3.35663e+04 ;
+            mbo:mz 1.230273e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.6667e+03 ;
+            mbo:mz 1.299755e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.059237e+06 ;
+            mbo:mz 1.380144e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.39281e+04 ;
+            mbo:mz 1.390224e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.68861e+04 ;
+            mbo:mz 1.510224e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.08604e+04 ;
+            mbo:mz 1.520301e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.00871e+04 ;
+            mbo:mz 1.960198e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.972368e+06 ;
+            mbo:mz 4.120459e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 957 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.129856e+02 ;
+            mbo:precursor_mz 4.700513e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-01p9-0900800000-98f970c0a7927122d4f7" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "{4-[({2-[3-Fluoro-4-(trifluoromethyl)phenyl]-4-methyl-1,3-thiazol-5-yl}methyl)sulfanyl]-2-methylphenoxy}acetic acid; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

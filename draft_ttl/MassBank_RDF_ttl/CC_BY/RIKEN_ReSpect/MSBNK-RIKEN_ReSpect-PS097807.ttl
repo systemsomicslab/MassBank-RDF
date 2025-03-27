@@ -1,0 +1,55 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS097807 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS097807" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "L-Carnosine",
+                "L-Ignotine",
+                "beta-Ala-His",
+                "beta-Alanyl-L-histidine" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Peptide CLASS3 Carnosine" ;
+            mbo:ch_exact_mass 2.26236e+02 ;
+            rdfs:seeAlso cas:305-84-0,
+                pubchem:CID439224 ;
+            schema:inChI "InChI=1S/C9H14N4O3/c10-2-1-8(14)13-7(9(15)16)3-6-4-11-5-12-6/h4-5,7H,1-3,10H2,(H,11,12)(H,13,14)(H,15,16)" ;
+            schema:inChIKey inchikey:CQOVPNPJLQNMDC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H14N4O3" ;
+            schema:name "L-Carnosine",
+                "L-Ignotine",
+                "beta-Ala-His",
+                "beta-Alanyl-L-histidine" ;
+            schema:smiles "C1=C(NC=N1)CC(C(=O)O)NC(=O)CCN" ] ;
+    mbo:has_peak [ mbo:intensity 2.687e+05 ;
+            mbo:mz 2.25e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.2526e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-0090000000-9655115283b7eaeb5d86" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "L-Carnosine, beta-Ala-His, L-Ignotine, beta-Alanyl-L-histidine; LC-ESI-QQ; MS2" .
+

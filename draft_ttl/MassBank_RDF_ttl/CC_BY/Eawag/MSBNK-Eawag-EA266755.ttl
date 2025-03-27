@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA266755 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA266755" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "13.5 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-amino-1-[2,6-dichloro-4-(trifluoromethyl)phenyl]-4-(trifluoromethylsulfonyl)-3-pyrazolecarbonitrile",
+                "Fipronil-sulfone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.519336e+02 ;
+            rdfs:seeAlso cas:120068-36-2,
+                chemspider:2336427,
+                pubchem:CID3078139 ;
+            schema:inChI "InChI=1S/C12H4Cl2F6N4O2S/c13-5-1-4(11(15,16)17)2-6(14)8(5)24-10(22)9(7(3-21)23-24)27(25,26)12(18,19)20/h1-2H,22H2" ;
+            schema:inChIKey inchikey:LGHZJDKSVUTELU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H4Cl2F6N4O2S" ;
+            schema:name "5-amino-1-[2,6-dichloro-4-(trifluoromethyl)phenyl]-4-(trifluoromethylsulfonyl)-3-pyrazolecarbonitrile",
+                "Fipronil-sulfone" ;
+            schema:smiles "NC1=C(C(=NN1c1c(Cl)cc(cc1Cl)C(F)(F)F)C#N)S(=O)(=O)C(F)(F)F" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.37881e+04 ;
+            mbo:mz 8.2961e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 1.634828e+05 ;
+            mbo:mz 2.180102e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 470 ],
+        [ mbo:intensity 3.475766e+05 ;
+            mbo:mz 2.439898e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.25709e+04 ;
+            mbo:mz 2.460164e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 209 ],
+        [ mbo:intensity 2.5343e+04 ;
+            mbo:mz 2.619876e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 73 ],
+        [ mbo:intensity 5.31036e+04 ;
+            mbo:mz 2.819927e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 153 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.509265e+02 ;
+            mbo:precursor_mz 4.509263e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-0090000000-aa0e370f76e149a41b51" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2667" ;
+    skos:definition "Fipronil-sulfone; LC-ESI-ITFT; MS2; CE: 60%; R=7500; [M-H]-" .
+

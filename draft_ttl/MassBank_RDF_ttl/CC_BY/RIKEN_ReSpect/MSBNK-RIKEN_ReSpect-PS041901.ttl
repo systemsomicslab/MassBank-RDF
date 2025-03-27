@@ -1,0 +1,77 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS041901 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS041901" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isor-3-Glc",
+                "Isorhamnetin-3-beta-D-galactopyranoside",
+                "isorhamnetin-3-O-glucoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavonol CLASS3 Isorhamnetin glycoside" ;
+            mbo:ch_exact_mass 4.78406e+02 ;
+            rdfs:seeAlso cas:5041-82-7,
+                pubchem:CID5318645 ;
+            schema:inChI "InChI=1S/C22H22O12/c1-31-12-4-8(2-3-10(12)25)20-21(17(28)15-11(26)5-9(24)6-13(15)32-20)34-22-19(30)18(29)16(27)14(7-23)33-22/h2-6,14,16,18-19,22-27,29-30H,7H2,1H3" ;
+            schema:inChIKey inchikey:CQLRUIIRRZYHHS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H22O12" ;
+            schema:name "Isor-3-Glc",
+                "Isorhamnetin-3-beta-D-galactopyranoside",
+                "isorhamnetin-3-O-glucoside" ;
+            schema:smiles "COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)OC4C(C(C(C(O4)CO)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.0969e+04 ;
+            mbo:mz 3.16e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 1.77803e+05 ;
+            mbo:mz 3.17e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 499 ],
+        [ mbo:intensity 1.2508e+04 ;
+            mbo:mz 3.18e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 8.2383e+04 ;
+            mbo:mz 4.78e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 231 ],
+        [ mbo:intensity 3.5571e+05 ;
+            mbo:mz 4.79e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.5818e+04 ;
+            mbo:mz 4.8e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 241 ],
+        [ mbo:intensity 2.0001e+04 ;
+            mbo:mz 4.81e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 56 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.7943e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-004i-0003900000-a35713e9f36032ad183d" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Isor-3-Glc, isorhamnetin-3-O-glucoside, Isorhamnetin-3-beta-D-galactopyranoside; LC-ESI-QQ; MS2" .
+

@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP030701 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP030701" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "1.023 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3S,4R,5R)-2-(hydroxymethyl)-5-[6-(methylamino)purin-9-yl]oxolane-3,4-diol",
+                "N6-Methyladenosine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.811124e+02 ;
+            rdfs:seeAlso cas:1867-73-8,
+                chemspider:92307,
+                pubchem:CID102175 ;
+            schema:inChI "InChI=1S/C11H15N5O4/c1-12-9-6-10(14-3-13-9)16(4-15-6)11-8(19)7(18)5(2-17)20-11/h3-5,7-8,11,17-19H,2H2,1H3,(H,12,13,14)/t5-,7-,8-,11-/m1/s1" ;
+            schema:inChIKey inchikey:VQAYFKKCNSOZKM-IOSLPCCCSA-N ;
+            schema:molecularFormula "C11H15N5O4" ;
+            schema:name "(2R,3S,4R,5R)-2-(hydroxymethyl)-5-[6-(methylamino)purin-9-yl]oxolane-3,4-diol",
+                "N6-Methyladenosine" ;
+            schema:smiles "CNc1c2c(ncn1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.94e+02 ;
+            mbo:mz 9.60786e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.7e+02 ;
+            mbo:mz 1.490213e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.8978e+04 ;
+            mbo:mz 1.50077e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 175 ],
+        [ mbo:intensity 1.214e+03 ;
+            mbo:mz 1.510811e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.9e+02 ;
+            mbo:mz 2.23009e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.65202e+05 ;
+            mbo:mz 2.821196e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.821198e+02 ;
+            mbo:precursor_mz 2.821197e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001i-0190000000-da92b12dc08922748729" ;
+    rdfs:comment "INTERNAL_ID 307" ;
+    skos:definition "N6-Methyladenosine; LC-ESI-QTOF; MS2; CE: 10; R=; [M+H]+" .
+

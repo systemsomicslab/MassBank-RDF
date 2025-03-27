@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT206750 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT206750" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3R,4S,5S)-2-(6-aminopurin-9-yl)-5-(methylsulfanylmethyl)oxolane-3,4-diol",
+                "5'-Deoxy-5'-Methylthioadenosine",
+                "5-Methylthioadenosine",
+                "MTA",
+                "Thiomethyladenosine",
+                "Vitamin L2" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleoside CLASS3 Adenosine" ;
+            mbo:ch_exact_mass 2.97338e+02 ;
+            rdfs:seeAlso cas:2457-80-9 ;
+            schema:inChI "InChI=1S/C11H15N5O3S/c1-20-2-5-7(17)8(18)11(19-5)16-4-15-6-9(12)13-3-14-10(6)16/h3-5,7-8,11,17-18H,2H2,1H3,(H2,12,13,14)" ;
+            schema:inChIKey inchikey:WUUGFSXJNOTRMR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H15N5O3S" ;
+            schema:name "(2R,3R,4S,5S)-2-(6-aminopurin-9-yl)-5-(methylsulfanylmethyl)oxolane-3,4-diol",
+                "5'-Deoxy-5'-Methylthioadenosine",
+                "5-Methylthioadenosine",
+                "MTA",
+                "Thiomethyladenosine",
+                "Vitamin L2" ;
+            schema:smiles "CSCC1C(C(C(O1)N2C=NC3=C2N=CN=C3N)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.874e+01 ;
+            mbo:mz 1.07036e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 2.64e+02 ;
+            mbo:mz 1.340463e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.531e+01 ;
+            mbo:mz 2.960818e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 134 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.960818e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-001i-0910000000-56784be58ef9065f21f6" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Vitamin L2, MTA, 5'-Deoxy-5'-Methylthioadenosine, Thiomethyladenosine, 5-Methylthioadenosine, (2R,3R,4S,5S)-2-(6-aminopurin-9-yl)-5-(methylsulfanylmethyl)oxolane-3,4-diol; LC-ESI-QTOF; MS2" .
+

@@ -1,0 +1,57 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP005187 a mbo:MassSpectrum ;
+    dcterms:creator "YAMAMOTO M, DEP. CHEMISTRY, FAC. SCIENCE, NARA WOMEN'S UNIV." ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP005187" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "HITACHI M-80" ;
+            mbo:instrument_type "CI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "BUTYL ACRYLATE" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.280837e+02 ;
+            rdfs:seeAlso pubchem:CID8846 ;
+            schema:inChI "InChI=1S/C7H12O2/c1-3-5-6-9-7(8)4-2/h4H,2-3,5-6H2,1H3" ;
+            schema:inChIKey inchikey:CQEYYJKEWSMYFG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H12O2" ;
+            schema:name "BUTYL ACRYLATE" ;
+            schema:smiles "CCCCOC(=O)C=C" ] ;
+    mbo:has_peak [ mbo:intensity 2.82e+00 ;
+            mbo:mz 7.3e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 1.49e+00 ;
+            mbo:mz 7.5e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 3.34e+00 ;
+            mbo:mz 1.13e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 1.29e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.82e+00 ;
+            mbo:mz 1.3e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 78 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0900000000-39834ba9d4eec38794e6" ;
+    skos:definition "BUTYL ACRYLATE; CI-B; MS" .
+

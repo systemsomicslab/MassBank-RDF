@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00988 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-10-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00988" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "20 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Malonylglycitin" ;
+            mbo:ch_compound_class "7-hydroxyisoflavone" ;
+            mbo:ch_exact_mass 5.321217e+02 ;
+            rdfs:seeAlso cas:137705-39-6,
+                chemspider:30777345,
+                pubchem:CID23724657 ;
+            schema:inChI "InChI=1S/C25H24O13/c1-34-16-6-13-15(35-9-14(21(13)30)11-2-4-12(26)5-3-11)7-17(16)37-25-24(33)23(32)22(31)18(38-25)10-36-20(29)8-19(27)28/h2-7,9,18,22-26,31-33H,8,10H2,1H3,(H,27,28)/t18-,22-,23+,24-,25-/m1/s1" ;
+            schema:inChIKey inchikey:OWMHCYFEIJPHFB-GOZZSVHWSA-N ;
+            schema:molecularFormula "C25H24O13" ;
+            schema:name "Malonylglycitin" ;
+            schema:smiles "COC1=C(C=C2C(=C1)C(=O)C(=CO2)C3=CC=C(C=C3)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)COC(=O)CC(=O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.68187e+02 ;
+            mbo:mz 2.830597e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.9411e+01 ;
+            mbo:mz 3.25071e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 107 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.311144e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0090000000-f4b95648cee005ded2d9" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Malonylglycitin; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 20 V" .
+

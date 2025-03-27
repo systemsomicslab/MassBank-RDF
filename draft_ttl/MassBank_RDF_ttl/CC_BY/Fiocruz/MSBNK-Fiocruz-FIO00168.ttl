@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00168 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-04-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00168" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Isoquercitrin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 4.640955e+02 ;
+            rdfs:seeAlso cas:21637-25-2,
+                knapsack:C00005373,
+                pubchem:CID7940 ;
+            schema:inChI "InChI=1S/C21H20O12/c22-6-13-15(27)17(29)18(30)21(32-13)33-20-16(28)14-11(26)4-8(23)5-12(14)31-19(20)7-1-2-9(24)10(25)3-7/h1-5,13,15,17-18,21-27,29-30H,6H2/t13-,15-,17+,18-,21+/m1/s1" ;
+            schema:inChIKey inchikey:OVSQVDMCBVZWGM-QSOFNFLRSA-N ;
+            schema:molecularFormula "C21H20O12" ;
+            schema:name "Isoquercitrin" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H](O)[C@@H]1OC(C(=O)3)=C(Oc(c4)c(c(O)cc(O)4)3)c(c2)cc(O)c(O)c2" ] ;
+    mbo:has_peak [ mbo:intensity 4.41e+02 ;
+            mbo:mz 1.510035e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 6.778e+03 ;
+            mbo:mz 3.010337e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 347 ],
+        [ mbo:intensity 1.004e+03 ;
+            mbo:mz 3.020365e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 3.64e+02 ;
+            mbo:mz 1.789982e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.81e+02 ;
+            mbo:mz 2.430301e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.046e+03 ;
+            mbo:mz 2.550299e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 2.275e+03 ;
+            mbo:mz 2.710249e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 4.97e+02 ;
+            mbo:mz 2.720309e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.91e+02 ;
+            mbo:mz 2.730399e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.18e+02 ;
+            mbo:mz 2.83025e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.9509e+04 ;
+            mbo:mz 3.000276e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.000276e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0udi-0019000000-6c4a0f0151f89b993af7" ;
+    rdfs:comment "[Raw Data] CB053_Isoquercitrin_neg_40eV_000017.txt" ;
+    skos:definition "Isoquercitrin; LC-ESI-QTOF; MS2; [M-H]-; CE: 40eV" .
+

@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N103609_EF88 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N103609_EF88" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.326 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4R)-4-[(3R,5R,8R,9S,10S,12S,13R,14S,17R)-3,12-dihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoic acid",
+                "Deoxycholic acid" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.922927e+02 ;
+            rdfs:seeAlso cas:83-44-3,
+                chemspider:193196,
+                pubchem:CID222528 ;
+            schema:inChI "InChI=1S/C24H40O4/c1-14(4-9-22(27)28)18-7-8-19-17-6-5-15-12-16(25)10-11-23(15,2)20(17)13-21(26)24(18,19)3/h14-21,25-26H,4-13H2,1-3H3,(H,27,28)/t14-,15-,16-,17+,18-,19+,20+,21+,23+,24-/m1/s1" ;
+            schema:inChIKey inchikey:KXGVEGMKQFWNSR-LLQZFEROSA-N ;
+            schema:molecularFormula "C24H40O4" ;
+            schema:name "(4R)-4-[(3R,5R,8R,9S,10S,12S,13R,14S,17R)-3,12-dihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoic acid",
+                "Deoxycholic acid" ;
+            schema:smiles "C[C@H](CCC(=O)O)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)O)C)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.285e+02 ;
+            mbo:mz 1.131306e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.474612e+02 ;
+            mbo:precursor_mz 3.932999e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-03di-0900000000-31b93b14be0e19afedc2" ;
+    rdfs:comment "INTERNAL_ID 1036" ;
+    skos:definition "Deoxycholic acid; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M+H]+" .
+

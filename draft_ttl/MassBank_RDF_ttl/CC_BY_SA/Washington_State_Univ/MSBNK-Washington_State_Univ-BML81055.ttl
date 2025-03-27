@@ -1,0 +1,56 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML81055 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML81055" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "8.170" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Dehydrocholic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.022406e+02 ;
+            rdfs:seeAlso cas:81-23-2,
+                chemspider:2869,
+                pubchem:CID2975 ;
+            schema:inChI "InChI=1S/C24H34O5/c1-13(4-7-21(28)29)16-5-6-17-22-18(12-20(27)24(16,17)3)23(2)9-8-15(25)10-14(23)11-19(22)26/h13-14,16-18,22H,4-12H2,1-3H3,(H,28,29)" ;
+            schema:inChIKey inchikey:OHXPGWPVLFPUSM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H34O5" ;
+            schema:name "Dehydrocholic acid" ;
+            schema:smiles "CC(CCC(=O)O)C1CCC2C1(C(=O)CC3C2C(=O)CC4C3(CCC(=O)C4)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.63647e+05 ;
+            mbo:mz 4.032479e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 726 ],
+        [ mbo:intensity 2.25117e+05 ;
+            mbo:mz 4.252298e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0fb9-0000900000-cb5843bf78678032fca1" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.112" ;
+    skos:definition "Dehydrocholic acid; LC-ESI-QTOF; MS; POSITIVE" .
+

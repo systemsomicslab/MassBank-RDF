@@ -1,0 +1,88 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Literature_Specs-LIT00038 a mbo:MassSpectrum ;
+    dcterms:creator "E. Schymanski; retrieved from P.A. Lara-Martin et al. 2011" ;
+    dcterms:date "2016-02-03 (Created 2013-04-16)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Literature_Specs-LIT00038" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Lara-Martn, P. A.; González-Mazo, E.; Brownawell, B. J. Multi-Residue Method for the Analysis of Synthetic Surfactants and Their Degradation Metabolites in Aquatic Systems by Liquid Chromatography–time-of-Flight-Mass Spectrometry. Journal of Chromatography A 2011, 1218 (30), 4799–807. DOI:10.1016/j.chroma.2011.02.031" ] ;
+    dcterms:rights "Copyright (C) Elsevier 2011 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LCT Micromass" ;
+            mbo:collision_energy "45 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-TOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(decan-4-yl)benzenesulfonic acid",
+                "C7-sulfophenyl carboxylates",
+                "C7SPC" ;
+            mbo:ch_compound_class "N/A; Surfactant" ;
+            mbo:ch_exact_mass 2.860875e+02 ;
+            rdfs:seeAlso pubchem:CID100942735 ;
+            schema:inChI "InChI=1S/C13H18O5S/c1-2-3-10(6-9-13(14)15)11-4-7-12(8-5-11)19(16,17)18/h4-5,7-8,10H,2-3,6,9H2,1H3,(H,14,15)(H,16,17,18)" ;
+            schema:inChIKey inchikey:DBANCWXFGWHFPK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H18O5S" ;
+            schema:name "4-(decan-4-yl)benzenesulfonic acid",
+                "C7-sulfophenyl carboxylates",
+                "C7SPC" ;
+            schema:smiles "OS(=O)(=O)c1ccc(cc1)C(CCC)CCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+01 ;
+            mbo:mz 1.830116e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 2.250578e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 2.361037e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.85079e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 2.860839e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 1e+01 ;
+            mbo:mz 3.070618e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 1e+00 ;
+            mbo:mz 3.080616e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.830111e+02 ;
+            mbo:tentative_formula "C8H7O3S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 2.971525e+02 ;
+            mbo:tentative_formula "C13H17O5S-" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.850802e+02 ;
+            mbo:precursor_mz 2.850802e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-000i-0090000000-b656f33d72e7109260aa" ;
+    rdfs:comment "Digitised from figure: approximate intensities" ;
+    skos:definition "C7SPC; LC-ESI-TOF; MS2; 45 V; [M-H]-" .
+

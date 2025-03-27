@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT200520 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT200520" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-amino-4-methylpentanoic acid",
+                "(S)-2-Amino-4-methylpentanoic acid",
+                "L-2-Amino-4-methylvaleric Acid",
+                "L-Leu",
+                "L-Leucine, (Cell Culture Reagent, Crystalline)",
+                "L-alpha-Aminoisocaproic acid" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Leucine" ;
+            mbo:ch_exact_mass 1.31175e+02 ;
+            rdfs:seeAlso cas:61-90-5 ;
+            schema:inChI "InChI=1S/C6H13NO2/c1-4(2)3-5(7)6(8)9/h4-5H,3,7H2,1-2H3,(H,8,9)" ;
+            schema:inChIKey inchikey:ROHFNLRQFUQHCH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H13NO2" ;
+            schema:name "(2S)-2-amino-4-methylpentanoic acid",
+                "(S)-2-Amino-4-methylpentanoic acid",
+                "L-2-Amino-4-methylvaleric Acid",
+                "L-Leu",
+                "L-Leucine, (Cell Culture Reagent, Crystalline)",
+                "L-alpha-Aminoisocaproic acid" ;
+            schema:smiles "CC(C)CC(C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 3.648e+00 ;
+            mbo:mz 8.4083e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.229e+02 ;
+            mbo:mz 1.300868e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.300868e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0900000000-ed843252a559d532dc5e" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "(2S)-2-amino-4-methylpentanoic acid, (S)-2-Amino-4-methylpentanoic acid, L-alpha-Aminoisocaproic acid, L-Leu, L-Leucine, (Cell Culture Reagent, Crystalline), L-2-Amino-4-methylvaleric Acid; LC-ESI-QTOF; MS2" .
+

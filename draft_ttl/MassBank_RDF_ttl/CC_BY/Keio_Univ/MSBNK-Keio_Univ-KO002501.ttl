@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO002501 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO002501" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "40 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Betaine aldehyde" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.020919e+02 ;
+            rdfs:seeAlso cas:7418-61-3,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3855> ;
+            schema:inChI "InChI=1S/C5H12NO/c1-6(2,3)4-5-7/h5H,4H2,1-3H3/q+1" ;
+            schema:inChIKey inchikey:SXKNCCSPZDCRFD-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C5H12NO]+" ;
+            schema:name "Betaine aldehyde" ;
+            schema:smiles "O=CC[N+1](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.46535e+04 ;
+            mbo:mz 3.59e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 1.38614e+05 ;
+            mbo:mz 5.79e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.9406e+04 ;
+            mbo:mz 5.84e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 428 ],
+        [ mbo:intensity 9.901e+03 ;
+            mbo:mz 6.69e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 7.36e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 392 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.03e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-692d4006b060a156af58" ;
+    rdfs:comment "KEIO_ID B044" ;
+    skos:definition "Betaine aldehyde; LC-ESI-QQ; MS2; CE:40 V; [M+H]+" .
+

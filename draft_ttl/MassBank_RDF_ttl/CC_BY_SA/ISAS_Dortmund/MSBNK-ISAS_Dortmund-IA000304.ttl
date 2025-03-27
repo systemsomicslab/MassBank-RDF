@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000304 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000304" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive HF, Thermo Scientific [MS:1002523]" ;
+            mbo:collision_energy "10.0 eV" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "15-HEPE" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 3.182195e+02 ;
+            rdfs:seeAlso pubchem:CID16061131 ;
+            schema:inChI "InChI=1S/C20H30O3/c1-2-3-13-16-19(21)17-14-11-9-7-5-4-6-8-10-12-15-18-20(22)23/h3-5,8-11,13-14,17,19,21H,2,6-7,12,15-16,18H2,1H3,(H,22,23)/b5-4-,10-8-,11-9-,13-3-,17-14+" ;
+            schema:inChIKey inchikey:WLKCSMCLEKGITB-XWJJKCKWSA-N ;
+            schema:molecularFormula "C20H30O3" ;
+            schema:name "15-HEPE" ;
+            schema:smiles "C(\\CC)=C\\CC(/C=C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.837833e+05 ;
+            mbo:mz 5.901353e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 6.017396e+07 ;
+            mbo:mz 3.172121e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.006191e+05 ;
+            mbo:mz 1.110817e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.943892e+06 ;
+            mbo:mz 1.211024e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.571699e+06 ;
+            mbo:mz 1.471181e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 7.110197e+06 ;
+            mbo:mz 1.751493e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 118 ],
+        [ mbo:intensity 2.908269e+07 ;
+            mbo:mz 2.191391e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 483 ],
+        [ mbo:intensity 6.267784e+06 ;
+            mbo:mz 2.481419e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 1.730897e+07 ;
+            mbo:mz 2.55212e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 287 ],
+        [ mbo:intensity 1.724722e+07 ;
+            mbo:mz 2.992017e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 286 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.172122e+02 ;
+            mbo:precursor_mz 3.172122e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-014i-0197000000-fa988dae8504927be972" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 10.0 eV within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "15-HEPE; LC-ESI-QTOF; MS2; CE: 10.0; R=N/A; [M-H]-" .
+

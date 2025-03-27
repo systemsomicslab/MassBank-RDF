@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Metabolon-MT000050 a mbo:MassSpectrum ;
+    dcterms:creator "Evans A M, Mitchell M, DeHaven C D, Barrett T, Milgram E, Metabolon Inc." ;
+    dcterms:date "2016-01-19 (Created 2009-08-07, modified 2012-10-30)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Metabolon-MT000050" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2003-2009 Metabolon, Inc. under CC BY-NC-ND" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ XL, Thermo Finnigan" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "10-Nonadecenoic acid (19:1(n-9))",
+                "10-nonadecenoate (19:1(n-9))" ;
+            mbo:ch_compound_class "Natural Product; Fatty Acyls; Fatty Acids and Conjugates; Unsaturated fatty acids" ;
+            mbo:ch_exact_mass 2.962715e+02 ;
+            rdfs:seeAlso cas:73033-09-7 ;
+            schema:inChI "InChI=1S/C19H36O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19(20)21/h9-10H,2-8,11-18H2,1H3,(H,20,21)/b10-9-" ;
+            schema:inChIKey inchikey:BBOWBNGUEWHNQZ-KTKRTIGZSA-N ;
+            schema:molecularFormula "C19H36O2" ;
+            schema:name "10-Nonadecenoic acid (19:1(n-9))",
+                "10-nonadecenoate (19:1(n-9))" ;
+            schema:smiles "CCCCCCCCC=CCCCCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.3e+01 ;
+            mbo:mz 2.773e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 2.782e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 2.792e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.954e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 2.965e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 310 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.954e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-0090000000-2967752d5d1d14615cc1" ;
+    skos:definition "10-Nonadecenoic acid (19:1(n-9)); LC-ESI-IT; MS2; m/z: 295.4; [M-H]-" .
+

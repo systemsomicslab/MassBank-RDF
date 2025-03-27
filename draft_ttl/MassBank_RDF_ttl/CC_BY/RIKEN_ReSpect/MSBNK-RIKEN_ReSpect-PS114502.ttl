@@ -1,0 +1,85 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS114502 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS114502" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,6,8-Trihydroxypurine",
+                "7,9-Dihydro-1H-purine-2,6,8(3H)-trione",
+                "8-Hydroxyxanthine",
+                "Lithic acid",
+                "Triketopurine",
+                "Urate",
+                "Uric acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Uric acid" ;
+            mbo:ch_exact_mass 1.68112e+02 ;
+            rdfs:seeAlso cas:69-93-2,
+                pubchem:CID1175 ;
+            schema:inChI "InChI=1S/C5H4N4O3/c10-3-1-2(7-4(11)6-1)8-5(12)9-3/h(H4,6,7,8,9,10,11,12)" ;
+            schema:inChIKey inchikey:LEHOTFFKMJEONL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H4N4O3" ;
+            schema:name "2,6,8-Trihydroxypurine",
+                "7,9-Dihydro-1H-purine-2,6,8(3H)-trione",
+                "8-Hydroxyxanthine",
+                "Lithic acid",
+                "Triketopurine",
+                "Urate",
+                "Uric acid" ;
+            schema:smiles "C12=C(NC(=O)N1)NC(=O)NC2=O" ] ;
+    mbo:has_peak [ mbo:intensity 9.633e+03 ;
+            mbo:mz 1.26e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 3.263e+03 ;
+            mbo:mz 1.4e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.5886e+04 ;
+            mbo:mz 1.41e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 175 ],
+        [ mbo:intensity 6.134e+03 ;
+            mbo:mz 1.52e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 2.751e+03 ;
+            mbo:mz 1.67e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 2.6943e+04 ;
+            mbo:mz 1.68e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 296 ],
+        [ mbo:intensity 9.0823e+04 ;
+            mbo:mz 1.69e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.6915e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-014i-0900000000-29e67ecd86b26fca250c" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Urate, 8-Hydroxyxanthine, 7,9-Dihydro-1H-purine-2,6,8(3H)-trione, Triketopurine, Lithic acid, Uric acid, 2,6,8-Trihydroxypurine; LC-ESI-QQ; MS2" .
+

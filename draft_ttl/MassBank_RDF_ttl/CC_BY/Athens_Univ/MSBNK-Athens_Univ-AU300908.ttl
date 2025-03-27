@@ -1,0 +1,107 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU300908 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU300908" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "1.479 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-dimethoxyphosphinothioylsulfanyl-N-methylacetamide",
+                "Dimethoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.289996e+02 ;
+            rdfs:seeAlso cas:60-51-5,
+                chemspider:2973,
+                pubchem:CID3082 ;
+            schema:inChI "InChI=1S/C5H12NO3PS2/c1-6-5(7)4-12-10(11,8-2)9-3/h4H2,1-3H3,(H,6,7)" ;
+            schema:inChIKey inchikey:MCWXGJITAZMZEV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H12NO3PS2" ;
+            schema:name "2-dimethoxyphosphinothioylsulfanyl-N-methylacetamide",
+                "Dimethoate" ;
+            schema:smiles "P(SCC(NC)=O)(OC)(OC)=S" ] ;
+    mbo:has_peak [ mbo:intensity 3.2852e+04 ;
+            mbo:mz 1.249824e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 3.2252e+04 ;
+            mbo:mz 2.009616e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 8.114e+04 ;
+            mbo:mz 2.300083e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 155 ],
+        [ mbo:intensity 4.816e+03 ;
+            mbo:mz 2.310105e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 5.964e+03 ;
+            mbo:mz 2.320044e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.0432e+04 ;
+            mbo:mz 1.429929e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 5.508e+03 ;
+            mbo:mz 1.569542e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 7.4428e+04 ;
+            mbo:mz 1.709703e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 3.348e+03 ;
+            mbo:mz 1.719727e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.892e+03 ;
+            mbo:mz 1.729665e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.8216e+04 ;
+            mbo:mz 1.979814e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 5.22164e+05 ;
+            mbo:mz 1.989658e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.3064e+04 ;
+            mbo:mz 1.999681e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 44 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.300084e+02 ;
+            mbo:precursor_mz 2.300069e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0002-0910000000-d94739155fb715e3543b" ;
+    rdfs:comment "INTERNAL_ID 3009" ;
+    skos:definition "Dimethoate; LC-ESI-QTOF; MS2; HILIC; CE: 10 eV; R=35000; [M+H]+" .
+

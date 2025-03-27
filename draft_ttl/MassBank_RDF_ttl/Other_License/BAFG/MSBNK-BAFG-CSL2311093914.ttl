@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311093914 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311093914" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "11.594 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Emamectin" ;
+            mbo:ch_compound_class "Pharmaceutical; Insecticide" ;
+            mbo:ch_exact_mass 8.855238e+02 ;
+            rdfs:seeAlso cas:119791-41-2 ;
+            schema:inChI "InChI=1S/C49H75NO13/c1-12-26(2)44-29(5)18-19-48(63-44)24-35-21-34(62-48)17-16-28(4)43(27(3)14-13-15-33-25-56-46-42(51)30(6)20-36(47(52)59-35)49(33,46)53)60-40-23-38(55-11)45(32(8)58-40)61-39-22-37(54-10)41(50-9)31(7)57-39/h13-16,18-20,26-27,29,31-32,34-46,50-51,53H,12,17,21-25H2,1-11H3/b14-13+,28-16+,33-15+/t26-,27-,29-,31+,32-,34+,35-,36-,37+,38-,39-,40-,41+,42+,43-,44+,45-,46+,48+,49+/m0/s1" ;
+            schema:inChIKey inchikey:CXEGAUYXQAKHKJ-FYOMLGFFSA-N ;
+            schema:molecularFormula "C49H75NO13" ;
+            schema:name "Emamectin" ;
+            schema:smiles "C/C([C@](O[C@H]1C[C@H](OC)[C@](O[C@@H]2O[C@H](C)[C@@H](NC)[C@H](OC)C2)([H])[C@H](C)O1)([H])[C@@H](C)/C=C/C=C(CO3)/[C@@]([C@@]3([H])[C@H](O)C(C)=C4)(O)[C@@H]4C(O5)=O)=C\\C[C@@H]6C[C@H]5C[C@]7(C=C[C@H](C)[C@]([C@@H](C)CC)([H])O7)O6" ] ;
+    mbo:has_peak [ mbo:intensity 3.052e+02 ;
+            mbo:mz 1.581183e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 220 ],
+        [ mbo:intensity 3.98e+01 ;
+            mbo:mz 3.02197e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 9.97e+01 ;
+            mbo:mz 8.685222e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 1.3888e+03 ;
+            mbo:mz 8.865319e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.865311e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000i-0100000090-8c534444ed2606e0fc17" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Emamectin; LC-ESI-QTOF; MS2; 30 V" .
+

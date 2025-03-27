@@ -1,0 +1,86 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00078 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00078" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Aesculetin" ;
+            mbo:ch_compound_class "Natural Product; Phenylpropanoid" ;
+            mbo:ch_exact_mass 1.780266e+02 ;
+            rdfs:seeAlso cas:305-01-1,
+                knapsack:C00002471,
+                pubchem:CID11454 ;
+            schema:inChI "InChI=1S/C9H6O4/c10-6-3-5-1-2-9(12)13-8(5)4-7(6)11/h1-4,10-11H" ;
+            schema:inChIKey inchikey:ILEDWLMCKZNDJK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H6O4" ;
+            schema:name "Aesculetin" ;
+            schema:smiles "O=C(C=2)Oc(c1)c(C2)cc(O)c(O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.5984e+04 ;
+            mbo:mz 1.230441e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 289 ],
+        [ mbo:intensity 1.093e+03 ;
+            mbo:mz 1.240473e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.2306e+04 ;
+            mbo:mz 1.330285e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 9.98e+02 ;
+            mbo:mz 1.340317e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.394e+03 ;
+            mbo:mz 1.350441e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 7.171e+03 ;
+            mbo:mz 1.51039e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 5.95e+02 ;
+            mbo:mz 1.520424e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 5.5168e+04 ;
+            mbo:mz 1.790338e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.253e+03 ;
+            mbo:mz 1.800371e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 95 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.790338e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-004i-0900000000-6fd1fa0c328428391896" ;
+    rdfs:comment "[Raw Data] CB031_Aesculetin_pos_20eV_CB000017.txt" ;
+    skos:definition "Aesculetin; LC-ESI-QTOF; MS2; [M+H]+; CE: 20eV" .
+

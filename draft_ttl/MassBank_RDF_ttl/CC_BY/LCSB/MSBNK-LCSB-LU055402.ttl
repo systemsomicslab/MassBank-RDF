@@ -1,0 +1,84 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU055402 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU055402" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "16.478 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-O-(2-ethoxy-2-oxoethyl) 1-O-ethyl benzene-1,2-dicarboxylate",
+                "Ethoxycarbonylmethyl ethyl phthalate",
+                "Ethyl phthalyl ethyl glycolate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.800947e+02 ;
+            rdfs:seeAlso cas:84-72-0,
+                chemspider:6527,
+                pubchem:CID6785 ;
+            schema:inChI "InChI=1S/C14H16O6/c1-3-18-12(15)9-20-14(17)11-8-6-5-7-10(11)13(16)19-4-2/h5-8H,3-4,9H2,1-2H3" ;
+            schema:inChIKey inchikey:PZBLUWVMZMXIKZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H16O6" ;
+            schema:name "2-O-(2-ethoxy-2-oxoethyl) 1-O-ethyl benzene-1,2-dicarboxylate",
+                "Ethoxycarbonylmethyl ethyl phthalate",
+                "Ethyl phthalyl ethyl glycolate" ;
+            schema:smiles "CCOC(=O)COC(=O)C1=CC=CC=C1C(=O)OCC" ] ;
+    mbo:has_peak [ mbo:intensity 4.1901e+03 ;
+            mbo:mz 1.340919e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 5.2621e+03 ;
+            mbo:mz 1.350997e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 6.7407e+03 ;
+            mbo:mz 1.471e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 4.9049e+03 ;
+            mbo:mz 1.490236e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 5.95428e+04 ;
+            mbo:mz 1.491154e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 321 ],
+        [ mbo:intensity 1.851037e+05 ;
+            mbo:mz 1.611154e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 2.81102e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0900000000-2cb9c0b38a7321c18242" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Ethyl phthalyl ethyl glycolate; LC-ESI-QFT; MS2; CE: 30; R=17500; [M+H]+" .
+

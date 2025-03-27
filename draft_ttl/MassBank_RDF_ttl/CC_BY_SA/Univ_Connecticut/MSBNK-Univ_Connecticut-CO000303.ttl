@@ -1,0 +1,58 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000303 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000303" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Norpropoxyphene" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.252042e+02 ;
+            rdfs:seeAlso pubchem:CID18804 ;
+            schema:inChI "InChI=1S/C21H27NO2/c1-4-20(23)24-21(17(2)16-22-3,19-13-9-6-10-14-19)15-18-11-7-5-8-12-18/h5-14,17,22H,4,15-16H2,1-3H3" ;
+            schema:inChIKey inchikey:IKACRWYHQXOSGM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H27NO2" ;
+            schema:name "Norpropoxyphene" ;
+            schema:smiles "[H]C([H])([H])N([H])C([H])([H])C([H])(C([H])([H])[H])C(OC(=O)C([H])([H])C([H])([H])[H])(c(c([H])2)c([H])c([H])c([H])c([H])2)C([H])([H])c(c([H])1)c([H])c([H])c([H])c([H])1" ] ;
+    mbo:has_peak [ mbo:intensity 4.341463e+03 ;
+            mbo:mz 9.10533e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 434 ],
+        [ mbo:intensity 1.888575e+03 ;
+            mbo:mz 1.050698e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 4.759949e+03 ;
+            mbo:mz 1.280607e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 476 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.430852e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.262121e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-2900000000-d250737e34671858b8c6" ;
+    skos:definition "Norpropoxyphene; LC-ESI-QTOF; MS2; CE:30 eV; [M+H]+" .
+

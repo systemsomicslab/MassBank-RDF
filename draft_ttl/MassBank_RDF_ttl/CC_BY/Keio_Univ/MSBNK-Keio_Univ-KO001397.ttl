@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001397 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001397" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "40 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-Methylguanine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.650651e+02 ;
+            rdfs:seeAlso cas:578-76-7,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5305> ;
+            schema:inChI "InChI=1S/C6H7N5O/c1-11-2-8-4-3(11)5(12)10-6(7)9-4/h2H,1H3,(H3,7,9,10,12)" ;
+            schema:inChIKey inchikey:FZWGECJQACGGTI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H7N5O" ;
+            schema:name "7-Methylguanine" ;
+            schema:smiles "NC(N1)=Nc(n2)c(n(C)c2)C(=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.831685e+05 ;
+            mbo:mz 4.22e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 164 ],
+        [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 6.63e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 2.9703e+04 ;
+            mbo:mz 6.74e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 3.9604e+04 ;
+            mbo:mz 7.92e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.113862e+06 ;
+            mbo:mz 1.06e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 1.21e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.64e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-2900000000-8bc29ce14fc996e59b37" ;
+    rdfs:comment "KEIO_ID M043" ;
+    skos:definition "7-Methylguanine; LC-ESI-QQ; MS2; CE:40 V; [M-H]-" .
+

@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100572 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100572" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5'-IDP",
+                "IDP",
+                "Inosine-5'-diphosphate" ;
+            mbo:ch_compound_class "Natural Product; Nucleoside; Phosphates" ;
+            mbo:ch_exact_mass 4.280134e+02 ;
+            rdfs:seeAlso cas:86-04-4,
+                chemspider:6570,
+                pubchem:CID135398651 ;
+            schema:inChI "InChI=1S/C10H14N4O11P2/c15-6-4(1-23-27(21,22)25-26(18,19)20)24-10(7(6)16)14-3-13-5-8(14)11-2-12-9(5)17/h2-4,6-7,10,15-16H,1H2,(H,21,22)(H,11,12,17)(H2,18,19,20)/t4-,6-,7-,10-/m1/s1" ;
+            schema:inChIKey inchikey:JPXZQMKKFWMMGK-KQYNXXCUSA-N ;
+            schema:molecularFormula "C10H14N4O11P2" ;
+            schema:name "5'-IDP",
+                "IDP",
+                "Inosine-5'-diphosphate" ;
+            schema:smiles "O=C(N3)c(n2)c(N=C3)n(c2)[C@H](O1)[C@H](O)[C@H](O)[C@@H](COP(O)(=O)OP(O)(O)=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 7.603e+01 ;
+            mbo:mz 7.89602e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 988 ],
+        [ mbo:intensity 7.686e+01 ;
+            mbo:mz 4.270056e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.061e+00 ;
+            mbo:mz 9.20267e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 5.173e+00 ;
+            mbo:mz 9.69711e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 6.979e+01 ;
+            mbo:mz 1.35032e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 907 ],
+        [ mbo:intensity 6.759e+01 ;
+            mbo:mz 1.589256e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 879 ],
+        [ mbo:intensity 7.739e+00 ;
+            mbo:mz 2.729583e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 2.388e+01 ;
+            mbo:mz 3.29029e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 310 ],
+        [ mbo:intensity 5.741e+00 ;
+            mbo:mz 3.690252e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 9.839e+00 ;
+            mbo:mz 4.089914e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 128 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.270056e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-004i-5901500000-94dcb5867e9c2cd7e41b" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Inosine-5'-diphosphate; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

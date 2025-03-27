@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR020119 a mbo:MassSpectrum ;
+    dcterms:creator "Kojima M, Sakakibara H, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2007-12-03, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR020119" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Waters, Quattro Ultima Pt Micromass" ;
+            mbo:collision_energy "30.0 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH C18 2.1 by 50 mm (Waters, Milford, MA, USA)" ;
+            mbo:flow_gradient "0.1/99.9 at 0 min, 9.0/91.0 at 2 min, 12.5/87.5 at 7 min, 30/70 at 10 min, 50/50 at 12 min, 50/50 at 13 min, 99.9/0.1 at 15 min" ;
+            mbo:flow_rate "0.25 ml/min" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.98 min" ;
+            mbo:solvent "A CH3CN(0.05% HCOOH)",
+                "B HCOOH(0.05% CH3CN)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Dihydrozeatin-9-beta-D-glucoside",
+                "dihydrozeatin-9-b-D-glucoside" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.831805e+02 ;
+            rdfs:seeAlso cas:73263-99-7\(Putative\) ;
+            schema:inChI "InChI=1S/C16H25N5O6/c1-8(4-22)2-3-17-14-10-15(19-6-18-14)21(7-20-10)16-13(26)12(25)11(24)9(5-23)27-16/h6-9,11-13,16,22-26H,2-5H2,1H3,(H,17,18,19)/t8?,9-,11-,12+,13-,16-/m1/s1" ;
+            schema:inChIKey inchikey:DRPMMLWYLAPTPK-UFZVAZPKSA-N ;
+            schema:molecularFormula "C16H25N5O6" ;
+            schema:name "Dihydrozeatin-9-beta-D-glucoside",
+                "dihydrozeatin-9-b-D-glucoside" ;
+            schema:smiles "OCC(C)CCNc(n3)c(n2)c(nc3)n(c2)C(O1)C(O)C(O)C(O)C(CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 5.198e+05 ;
+            mbo:mz 6.8781e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 3.077e+05 ;
+            mbo:mz 8.4785e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.839e+05 ;
+            mbo:mz 8.6729e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 7.687e+06 ;
+            mbo:mz 1.35887e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 480 ],
+        [ mbo:intensity 5.267e+05 ;
+            mbo:mz 1.37132e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.684e+06 ;
+            mbo:mz 1.47821e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 4.729e+05 ;
+            mbo:mz 1.65935e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 5.77e+05 ;
+            mbo:mz 2.03857e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 1.6e+07 ;
+            mbo:mz 2.22013e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.84e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-00di-0590000000-b9f030a021f1c52eb582" ;
+    skos:definition "Dihydrozeatin-9-beta-D-glucoside; LC-ESI-QQ; MS2; CE:30.0 eV; [M+H]+" .
+

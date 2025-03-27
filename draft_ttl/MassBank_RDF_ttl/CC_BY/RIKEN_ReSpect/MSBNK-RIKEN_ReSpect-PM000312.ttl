@@ -1,0 +1,56 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000312 a mbo:MassSpectrum ;
+    dcterms:creator "Parejo I, et al." ;
+    dcterms:date "2006-04-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000312" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Parejo, I.; Jauregui, O.; Sánchez-Rabaneda, F.; Viladomat, F.; Bastida, J.; Codina, C. Separation and Characterization of Phenolic Compounds in Fennel (Foeniculum Vulgare) Using Liquid Chromatography-Negative Electrospray Ionization Tandem Mass Spectrometry. Journal of Agricultural and Food Chemistry 2004, 52 (12), 3679–87. DOI:10.1021/jf030813h" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API 3000 triple-quadrupole mass spectrometer (PerkinElmer Sciex, Concord, ON, Canada)" ;
+            mbo:collision_energy "35" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "p-Hydroxybenzoic acid-O-glucoside" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Benzoic acid CLASS3 Benzoyl glycoside" ;
+            mbo:ch_exact_mass 3.00263e+02 ;
+            rdfs:seeAlso cas:15397-25-8,
+                pubchem:CID440186 ;
+            schema:inChI "InChI=1S/C13H16O8/c14-5-8-9(15)10(16)11(17)13(21-8)20-7-3-1-6(2-4-7)12(18)19/h1-4,8-11,13-17H,5H2,(H,18,19)/t8-,9-,10+,11-,13-/m1/s1" ;
+            schema:inChIKey inchikey:XSSDYIMYZONMBL-BZNQNGANSA-N ;
+            schema:molecularFormula "C13H16O8" ;
+            schema:name "p-Hydroxybenzoic acid-O-glucoside" ;
+            schema:smiles "O=C(O)c1ccc(O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 1.37e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.99e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-000i-0900000000-18f751f19f76390bda5f" ;
+    rdfs:comment "725" ;
+    skos:definition "p-Hydroxybenzoic acid-O-glucoside; LC-ESI-QQ; MS2" .
+

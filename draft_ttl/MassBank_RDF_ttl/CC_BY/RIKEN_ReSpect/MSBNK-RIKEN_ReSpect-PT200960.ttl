@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT200960 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT200960" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,3,4,5,6-pentachlorophenol",
+                "Chlorophen",
+                "Fungifen",
+                "PCP",
+                "Pentachlorophenol",
+                "Permacide" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Other CLASS3 Other" ;
+            mbo:ch_exact_mass 2.66338e+02 ;
+            rdfs:seeAlso cas:87-86-5 ;
+            schema:inChI "InChI=1S/C6HCl5O/c7-1-2(8)4(10)6(12)5(11)3(1)9/h12H" ;
+            schema:inChIKey inchikey:IZUPBVBPLAPZRR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6HCl5O" ;
+            schema:name "2,3,4,5,6-pentachlorophenol",
+                "Chlorophen",
+                "Fungifen",
+                "PCP",
+                "Pentachlorophenol",
+                "Permacide" ;
+            schema:smiles "C1(=C(C(=C(C(=C1Cl)Cl)Cl)Cl)Cl)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.595e+02 ;
+            mbo:mz 2.628392e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.628392e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-03di-0090000000-60df94932344c9ac45ca" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Pentachlorophenol, Permacide, Fungifen, PCP, Chlorophen, 2,3,4,5,6-pentachlorophenol; LC-ESI-QTOF; MS2" .
+

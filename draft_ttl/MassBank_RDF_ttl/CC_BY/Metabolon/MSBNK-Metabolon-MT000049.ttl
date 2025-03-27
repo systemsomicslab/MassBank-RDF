@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Metabolon-MT000049 a mbo:MassSpectrum ;
+    dcterms:creator "Evans A M, Mitchell M, DeHaven C D, Barrett T, Milgram E, Metabolon Inc." ;
+    dcterms:date "2016-01-19 (Created 2009-08-07, modified 2012-10-30)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Metabolon-MT000049" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2003-2009 Metabolon, Inc. under CC BY-NC-ND" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ XL, Thermo Finnigan" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Undecanoic acid",
+                "undecanoate (11:0)" ;
+            mbo:ch_compound_class "Natural Product; Fatty Acyls; Fatty Acids and Conjugates; Straight chain fatty acids" ;
+            mbo:ch_exact_mass 1.86162e+02 ;
+            rdfs:seeAlso cas:112-37-8 ;
+            schema:inChI "InChI=1S/C11H22O2/c1-2-3-4-5-6-7-8-9-10-11(12)13/h2-10H2,1H3,(H,12,13)" ;
+            schema:inChIKey inchikey:ZDPHROOEEOARMN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H22O2" ;
+            schema:name "Undecanoic acid",
+                "undecanoate (11:0)" ;
+            schema:smiles "CCCCCCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 7e-01 ;
+            mbo:mz 1.672e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.852e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.36e+01 ;
+            mbo:mz 1.862e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 336 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.852e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-0900000000-26f27c3846a00308245b" ;
+    skos:definition "Undecanoic acid; LC-ESI-IT; MS2; m/z: 185.2; [M-H]-" .
+

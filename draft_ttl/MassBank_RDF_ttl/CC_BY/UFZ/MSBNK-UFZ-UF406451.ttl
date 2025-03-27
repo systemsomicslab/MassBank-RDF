@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UF406451 a mbo:MassSpectrum ;
+    dcterms:creator "Schulze T, Krauss M, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-01-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UF406451" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "55 (nominal)" ;
+            mbo:column_name "Kinetex Core-Shell C18 2.6 um, 3.0 x 100 mm, Phenomenex" ;
+            mbo:flow_gradient "90/10 at 0 min, 80/20 at 3.2 min, 5/95 at 17.8 min, 5/95 at 37.8 min, 90/10 at 37.9 min, 90/10 at 47 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "24.285 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-(Methylamino)-2-phenyl-4-[3-(trifluoromethyl)phenyl]furan-3-one",
+                "Flurtamone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.330977e+02 ;
+            rdfs:seeAlso cas:96525-23-4,
+                chemspider:82853,
+                pubchem:CID91755 ;
+            schema:inChI "InChI=1S/C18H14F3NO2/c1-22-17-14(12-8-5-9-13(10-12)18(19,20)21)15(23)16(24-17)11-6-3-2-4-7-11/h2-10,16,22H,1H3" ;
+            schema:inChIKey inchikey:NYRMIJKDBAQCHC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H14F3NO2" ;
+            schema:name "5-(Methylamino)-2-phenyl-4-[3-(trifluoromethyl)phenyl]furan-3-one",
+                "Flurtamone" ;
+            schema:smiles "CNC1=C(C(=O)C(O1)C1=CC=CC=C1)C1=CC=CC(=C1)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 1.804207e+05 ;
+            mbo:mz 3.320903e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.129994e+02 ;
+            mbo:precursor_mz 3.320904e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-001i-0009000000-57d4293ac23cf66ea001" ;
+    rdfs:comment "INTERNAL_ID 4064" ;
+    skos:definition "Flurtamone; LC-ESI-ITFT; MS2; CE: 55; R=15000; [M-H]-" .
+

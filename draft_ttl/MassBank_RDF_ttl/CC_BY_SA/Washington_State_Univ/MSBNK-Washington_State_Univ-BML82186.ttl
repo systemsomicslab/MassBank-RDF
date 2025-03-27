@@ -1,0 +1,56 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML82186 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML82186" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "6.693" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sissotrine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.461213e+02 ;
+            rdfs:seeAlso cas:5928-26-7,
+                chemspider:4513980,
+                pubchem:CID5358913 ;
+            schema:inChI "InChI=1S/C22H22O10/c1-29-11-4-2-10(3-5-11)13-9-30-15-7-12(6-14(24)17(15)18(13)25)31-22-21(28)20(27)19(26)16(8-23)32-22/h2-7,9,16,19-24,26-28H,8H2,1H3" ;
+            schema:inChIKey inchikey:LFEUICHQZGNOHD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H22O10" ;
+            schema:name "Sissotrine" ;
+            schema:smiles "COC1=CC=C(C=C1)C2=COC3=CC(=CC(=C3C2=O)O)OC4C(C(C(C(O4)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.226e+04 ;
+            mbo:mz 4.45114e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 1.100545e+06 ;
+            mbo:mz 5.051346e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0000090000-316634e01d70845f967f" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.907" ;
+    skos:definition "Sissotrine; LC-ESI-QTOF; MS; NEGATIVE" .
+

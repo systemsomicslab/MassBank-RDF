@@ -1,0 +1,67 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS076601 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS076601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(4-Methoxyphenyl)acrylic Acid",
+                "4-Methoxycinnamic acid",
+                "o-Methyl-p-coumaric Acid",
+                "p-Methoxycinnamic Acid" ;
+            mbo:ch_compound_class "CLASS1 Phenylpropanoid CLASS2 Phenylpropanoid monomer CLASS3 Cinnamic acid" ;
+            mbo:ch_exact_mass 1.78187e+02 ;
+            rdfs:seeAlso cas:943-89-5,
+                pubchem:CID699414 ;
+            schema:inChI "InChI=1S/C10H10O3/c1-13-9-5-2-8(3-6-9)4-7-10(11)12/h2-7H,1H3,(H,11,12)/b7-4+" ;
+            schema:inChIKey inchikey:AFDXODALSZRGIH-QPJJXVBHSA-N ;
+            schema:molecularFormula "C10H10O3" ;
+            schema:name "3-(4-Methoxyphenyl)acrylic Acid",
+                "4-Methoxycinnamic acid",
+                "o-Methyl-p-coumaric Acid",
+                "p-Methoxycinnamic Acid" ;
+            schema:smiles "COC1=CC=C(C=C1)/C=C/C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.7806e+04 ;
+            mbo:mz 1.6e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.59019e+05 ;
+            mbo:mz 1.61e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 636 ],
+        [ mbo:intensity 6.3764e+04 ;
+            mbo:mz 1.78e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 157 ],
+        [ mbo:intensity 4.06998e+05 ;
+            mbo:mz 1.79e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.7917e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-01t9-0900000000-7c3813633b158dbf9d1f" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "4-Methoxycinnamic acid, o-Methyl-p-coumaric Acid, 3-(4-Methoxyphenyl)acrylic Acid, p-Methoxycinnamic Acid; LC-ESI-QQ; MS2" .
+

@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA000032 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Hubert Schupke, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2018-08-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA000032" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "115 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.260 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-hydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+                "Daidzein" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.540579e+02 ;
+            rdfs:seeAlso cas:486-66-8,
+                chemspider:4445025,
+                pubchem:CID5281708 ;
+            schema:inChI "InChI=1S/C15H10O4/c16-10-3-1-9(2-4-10)13-8-19-14-7-11(17)5-6-12(14)15(13)18/h1-8,16-17H" ;
+            schema:inChIKey inchikey:ZQSIJRDFPHDXIC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O4" ;
+            schema:name "7-hydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+                "Daidzein" ;
+            schema:smiles "OC1=CC=C(C=C1)C1=COC2=C(C=CC(O)=C2)C1=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.140365e+05 ;
+            mbo:mz 1.370236e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 690 ],
+        [ mbo:intensity 8.14494e+04 ;
+            mbo:mz 2.270707e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 493 ],
+        [ mbo:intensity 3.56683e+04 ;
+            mbo:mz 2.37055e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 216 ],
+        [ mbo:intensity 1.2568e+03 ;
+            mbo:mz 1.410705e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.09351e+04 ;
+            mbo:mz 1.450287e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 127 ],
+        [ mbo:intensity 3.8097e+03 ;
+            mbo:mz 1.5307e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.853e+03 ;
+            mbo:mz 1.710803e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.03536e+04 ;
+            mbo:mz 1.810651e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 7.4691e+03 ;
+            mbo:mz 1.8506e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 1.650978e+05 ;
+            mbo:mz 1.990757e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.7716e+03 ;
+            mbo:mz 2.110758e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 47 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.210748e+02 ;
+            mbo:precursor_mz 2.550652e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-000b-0930000000-307fd374ef10cd2dafcf" ;
+    rdfs:comment "NaToxAq - Natural Toxins and Drinking Water Quality - From Source to Tap (https://natoxaq.ku.dk)" ;
+    skos:definition "Daidzein; LC-ESI-ITFT; MS2; CE: 115%; R=15000; [M+H]+" .
+

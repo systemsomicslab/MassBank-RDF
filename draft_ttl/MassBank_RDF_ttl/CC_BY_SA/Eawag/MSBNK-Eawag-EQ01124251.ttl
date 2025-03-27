@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01124251 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01124251" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "6.045 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ethaboxam",
+                "N-[cyano(thiophen-2-yl)methyl]-4-ethyl-2-(ethylamino)-1,3-thiazole-5-carboxamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.200766e+02 ;
+            rdfs:seeAlso cas:162650-77-3,
+                chemspider:9349732,
+                pubchem:CID11174640 ;
+            schema:inChI "InChI=1S/C14H16N4OS2/c1-3-9-12(21-14(18-9)16-4-2)13(19)17-10(8-15)11-6-5-7-20-11/h5-7,10H,3-4H2,1-2H3,(H,16,18)(H,17,19)" ;
+            schema:inChIKey inchikey:NQRFDNJEBWAUBL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H16N4OS2" ;
+            schema:name "Ethaboxam",
+                "N-[cyano(thiophen-2-yl)methyl]-4-ethyl-2-(ethylamino)-1,3-thiazole-5-carboxamide" ;
+            schema:smiles "CCC1=C(SC(=N1)NCC)C(=O)NC(C#N)C2=CC=CS2" ] ;
+    mbo:has_peak [ mbo:intensity 8.19372e+04 ;
+            mbo:mz 1.550649e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.564783e+05 ;
+            mbo:mz 1.629972e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.416865e+07 ;
+            mbo:mz 2.920584e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.863206e+06 ;
+            mbo:mz 3.190692e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 201 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.190691e+02 ;
+            mbo:precursor_mz 3.190693e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-0091000000-8eb70f3c81426bac3cdb" ;
+    rdfs:comment "UCHEM_ID 11242" ;
+    skos:definition "Ethaboxam; LC-ESI-QFT; MS2; CE: 15%; R=17500; [M-H]-" .
+

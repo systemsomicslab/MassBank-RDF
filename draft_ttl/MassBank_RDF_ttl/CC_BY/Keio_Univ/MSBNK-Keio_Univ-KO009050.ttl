@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO009050 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO009050" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "0.80/0.60" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS3" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Methysergide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.532103e+02 ;
+            rdfs:seeAlso cas:361-37-5,
+                pubchem:CID9408 ;
+            schema:inChI "InChI=1S/C21H27N3O2/c1-4-15(12-25)22-21(26)14-8-17-16-6-5-7-18-20(16)13(10-23(18)2)9-19(17)24(3)11-14/h5-8,10,14-15,19,25H,4,9,11-12H2,1-3H3,(H,22,26)/t14-,15+,19-/m1/s1" ;
+            schema:inChIKey inchikey:KPJZHOPZRAFDTN-ZRGWGRIASA-N ;
+            schema:molecularFormula "C21H27N3O2" ;
+            schema:name "Methysergide" ;
+            schema:smiles "CCC(CO)NC(=O)C(C4)C=C(C(N(C)4)1)c(c3)c(c(cc3)2)c(cn(C)2)C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.17e+01 ;
+            mbo:mz 1.961e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 756 ],
+        [ mbo:intensity 1.546e+01 ;
+            mbo:mz 2.111e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.76e+00 ;
+            mbo:mz 2.12e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 114 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-03dj-0690000000-902a94c1d2429f205994" ;
+    rdfs:comment "[MS2] KO009047" ;
+    skos:definition "Methysergide; LC-ESI-IT; MS3; m/z: 354/211; [M+H]+" .
+

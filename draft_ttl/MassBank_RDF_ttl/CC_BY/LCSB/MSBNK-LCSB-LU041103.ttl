@@ -1,0 +1,114 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU041103 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU041103" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "45" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "18.602 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-[2-(2,4-dichlorophenyl)pentyl]-1,2,4-triazole",
+                "Penconazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.830643e+02 ;
+            rdfs:seeAlso cas:6806-56-0,
+                chemspider:82796,
+                pubchem:CID91693 ;
+            schema:inChI "InChI=1S/C13H15Cl2N3/c1-2-3-10(7-18-9-16-8-17-18)12-5-4-11(14)6-13(12)15/h4-6,8-10H,2-3,7H2,1H3" ;
+            schema:inChIKey inchikey:WKBPZYKAUNRMKP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H15Cl2N3" ;
+            schema:name "1-[2-(2,4-dichlorophenyl)pentyl]-1,2,4-triazole",
+                "Penconazole" ;
+            schema:smiles "CCCC(CN1C=NC=N1)C1=C(Cl)C=C(Cl)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 9.79621e+04 ;
+            mbo:mz 5.30022e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.238688e+06 ;
+            mbo:mz 8.51011e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 2.15609e+04 ;
+            mbo:mz 1.340966e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.41779e+04 ;
+            mbo:mz 1.370154e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 4.703072e+06 ;
+            mbo:mz 1.589763e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 7.300136e+05 ;
+            mbo:mz 1.72992e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 6.78286e+04 ;
+            mbo:mz 5.50542e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 4.00441e+06 ;
+            mbo:mz 5.70699e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 233 ],
+        [ mbo:intensity 1.013138e+06 ;
+            mbo:mz 5.80651e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1.716563e+07 ;
+            mbo:mz 6.00808e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.75926e+04 ;
+            mbo:mz 6.90698e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 8.668116e+06 ;
+            mbo:mz 7.00399e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 504 ],
+        [ mbo:intensity 2.521637e+06 ;
+            mbo:mz 7.10855e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 2.11576e+04 ;
+            mbo:mz 8.30856e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90212e+01 ;
+            mbo:precursor_mz 2.840716e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-08mi-9100000000-8d4663e412431d82b750" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Penconazole; LC-ESI-QFT; MS2; CE: 45; R=17500; [M+H]+" .
+

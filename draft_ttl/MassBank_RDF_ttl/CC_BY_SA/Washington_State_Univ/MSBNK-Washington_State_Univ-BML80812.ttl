@@ -1,0 +1,52 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80812 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80812" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "11.364" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-((2Z)-3,7-dimethylocta-2,6-dienyloxy)furano[3,2-g]chromen-2-one",
+                "Bergamottin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.381518e+02 ;
+            rdfs:seeAlso chemspider:106383,
+                pubchem:CID119057 ;
+            schema:inChI "InChI=1S/C21H22O4/c1-14(2)5-4-6-15(3)9-11-24-21-16-7-8-20(22)25-19(16)13-18-17(21)10-12-23-18/h5,7-10,12-13H,4,6,11H2,1-3H3" ;
+            schema:inChIKey inchikey:DBMJZOMNXBSRED-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H22O4" ;
+            schema:name "5-((2Z)-3,7-dimethylocta-2,6-dienyloxy)furano[3,2-g]chromen-2-one",
+                "Bergamottin" ;
+            schema:smiles "CC(=CCCC(=CCOC1=C2C=CC(=O)OC2=CC3=C1C=CO3)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 5.514878e+06 ;
+            mbo:mz 3.391591e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-000i-0009000000-d07d779185a7dbc25a61" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.539" ;
+    skos:definition "Bergamottin; LC-APCI-QTOF; MS; POSITIVE" .
+

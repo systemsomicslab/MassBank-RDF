@@ -1,0 +1,114 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00087 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00087" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Fisetin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 2.860477e+02 ;
+            rdfs:seeAlso cas:528-48-3,
+                knapsack:C00004579,
+                pubchem:CID12227 ;
+            schema:inChI "InChI=1S/C15H10O6/c16-8-2-3-9-12(6-8)21-15(14(20)13(9)19)7-1-4-10(17)11(18)5-7/h1-6,16-18,20H" ;
+            schema:inChIKey inchikey:XHEFDIBZLJXQHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O6" ;
+            schema:name "Fisetin" ;
+            schema:smiles "Oc(c3)cc(O1)c(c3)C(=O)C(O)=C1c(c2)cc(O)c(O)c2" ] ;
+    mbo:has_peak [ mbo:intensity 1.718e+03 ;
+            mbo:mz 1.210286e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 5.24e+02 ;
+            mbo:mz 2.420525e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 9.57e+02 ;
+            mbo:mz 2.580519e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 8.51e+02 ;
+            mbo:mz 2.590594e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.023e+03 ;
+            mbo:mz 2.690441e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 4.8799e+04 ;
+            mbo:mz 2.870547e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.914e+03 ;
+            mbo:mz 2.880582e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 9.59e+02 ;
+            mbo:mz 2.890601e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 6.908e+03 ;
+            mbo:mz 1.370235e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 141 ],
+        [ mbo:intensity 2.792e+03 ;
+            mbo:mz 1.490233e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 2.192e+03 ;
+            mbo:mz 1.850594e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 6.29e+02 ;
+            mbo:mz 2.030701e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 5.258e+03 ;
+            mbo:mz 2.130542e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 6.72e+02 ;
+            mbo:mz 2.140575e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.448e+03 ;
+            mbo:mz 2.310647e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 3.75e+03 ;
+            mbo:mz 2.41049e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 77 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.870547e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 16 ;
+    mbo:pk_splash "splash10-000i-0190000000-9735c20afc466c288b66" ;
+    rdfs:comment "[Raw Data] CB035_Fisetin_pos_30eV_CB000018.txt" ;
+    skos:definition "Fisetin; LC-ESI-QTOF; MS2; [M+H]+; CE: 30eV" .
+

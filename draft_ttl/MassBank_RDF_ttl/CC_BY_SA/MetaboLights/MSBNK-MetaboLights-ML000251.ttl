@@ -1,0 +1,76 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML000251 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML000251" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "10.3 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4-chloro-2-methylphenoxy)acetic acid",
+                "2-(4-chloro-2-methylphenoxy)acetic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.00024e+02 ;
+            rdfs:seeAlso chemspider:6935,
+                pubchem:CID7204 ;
+            schema:inChI "InChI=1S/C9H9ClO3/c1-6-4-7(10)2-3-8(6)13-5-9(11)12/h2-4H,5H2,1H3,(H,11,12)" ;
+            schema:inChIKey inchikey:WHKUVVPPKQRRBV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H9ClO3" ;
+            schema:name "(4-chloro-2-methylphenoxy)acetic acid",
+                "2-(4-chloro-2-methylphenoxy)acetic acid" ;
+            schema:smiles "Cc1cc(Cl)ccc1OCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.3797e+04 ;
+            mbo:mz 1.269955e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.221e+03 ;
+            mbo:mz 1.419825e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.5659e+04 ;
+            mbo:mz 1.699777e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 2.187094e+05 ;
+            mbo:mz 1.709853e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 1.694689e+06 ;
+            mbo:mz 1.990165e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.990169e+02 ;
+            mbo:precursor_mz 1.990167e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-0900000000-6d9ed60e92ce60bf72b7" ;
+    rdfs:comment "ML_ID 2" ;
+    skos:definition "(4-chloro-2-methylphenoxy)acetic acid; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M-H]-" .
+

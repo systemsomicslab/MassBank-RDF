@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000862 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000862" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bromcresol green",
+                "DTXSID9044459" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.937295e+02 ;
+            rdfs:seeAlso cas:76-60-8,
+                pubchem:CID6451 ;
+            schema:inChI "InChI=1S/C21H14Br4O5S/c1-9-12(7-14(22)19(26)17(9)24)21(13-8-15(23)20(27)18(25)10(13)2)11-5-3-4-6-16(11)31(28,29)30-21/h3-8,26-27H,1-2H3" ;
+            schema:inChIKey inchikey:FRPHFZCDPYBUAU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H14Br4O5S" ;
+            schema:name "Bromcresol green",
+                "DTXSID9044459" ;
+            schema:smiles "CC1=C(C=C(Br)C(O)=C1Br)C1(OS(=O)(=O)C2C=CC=CC1=2)C1C=C(Br)C(O)=C(Br)C=1C" ] ;
+    mbo:has_peak [ mbo:intensity 1.44889e+01 ;
+            mbo:mz 7.891889e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 2.089934e+00 ;
+            mbo:mz 2.628713e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.250489e+00 ;
+            mbo:mz 5.328699e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.174112e+00 ;
+            mbo:mz 5.348856e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.30016e+01 ;
+            mbo:mz 6.127961e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 8.554286e+00 ;
+            mbo:mz 6.138039e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 6.927223e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.927223e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0006-1000009000-7088c58c54ab03cf2054" ;
+    skos:definition "Bromcresol green; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

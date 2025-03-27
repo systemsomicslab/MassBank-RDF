@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU227411 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2018-12-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU227411" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.359 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-(difluoromethoxy)-2-[(3,4-dimethoxypyridin-2-yl)methylsulfinyl]-1H-benzimidazole",
+                "Pantoprazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.830751e+02 ;
+            rdfs:seeAlso cas:102625-70-7,
+                chemspider:4517,
+                pubchem:CID4679 ;
+            schema:inChI "InChI=1S/C16H15F2N3O4S/c1-23-13-5-6-19-12(14(13)24-2)8-26(22)16-20-10-4-3-9(25-15(17)18)7-11(10)21-16/h3-7,15H,8H2,1-2H3,(H,20,21)" ;
+            schema:inChIKey inchikey:IQPSEEYGBUAQFF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H15F2N3O4S" ;
+            schema:name "6-(difluoromethoxy)-2-[(3,4-dimethoxypyridin-2-yl)methylsulfinyl]-1H-benzimidazole",
+                "Pantoprazole" ;
+            schema:smiles "COc1ccnc(c1OC)CS(=O)c2[nH]c3ccc(cc3n2)OC(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 6.44e+02 ;
+            mbo:mz 1.150291e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.796e+03 ;
+            mbo:mz 2.099913e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 4.684e+03 ;
+            mbo:mz 2.299963e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 289 ],
+        [ mbo:intensity 5.28e+02 ;
+            mbo:mz 2.310012e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.508e+03 ;
+            mbo:mz 1.410098e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 1.136e+03 ;
+            mbo:mz 1.470207e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 1.6176e+04 ;
+            mbo:mz 1.610159e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.356e+03 ;
+            mbo:mz 1.61989e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 146 ],
+        [ mbo:intensity 2.352e+03 ;
+            mbo:mz 1.620224e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 4.04e+02 ;
+            mbo:mz 1.629925e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.108e+03 ;
+            mbo:mz 1.780185e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 1.188e+03 ;
+            mbo:mz 1.789918e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 73 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.299968e+02 ;
+            mbo:precursor_mz 3.820679e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-03di-0920000000-03ff5e924e234e7c8b6e" ;
+    rdfs:comment "INTERNAL_ID 2274" ;
+    skos:definition "Pantoprazole; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M-H]-" .
+

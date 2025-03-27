@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000221 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000221" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QuattroPremier XE, Waters" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Thifensulfuron-methyl" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.870307e+02 ;
+            rdfs:seeAlso cas:79277-27-3 ;
+            schema:inChI "InChI=1S/C12H13N5O6S2/c1-6-13-10(16-12(14-6)23-3)15-11(19)17-25(20,21)7-4-5-24-8(7)9(18)22-2/h4-5H,1-3H3,(H2,13,14,15,16,17,19)" ;
+            schema:inChIKey inchikey:AHTPATJNIAFOLR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H13N5O6S2" ;
+            schema:name "Thifensulfuron-methyl" ;
+            schema:smiles "COc(n2)nc(nc(C)2)NC(=O)NS(=O)(=O)c(c1)c(sc1)C(=O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 8e+00 ;
+            mbo:mz 5.6e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.29e+02 ;
+            mbo:mz 1.41e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.67e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.68e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.02e+02 ;
+            mbo:mz 2.05e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 102 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.88e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-014i-0900000000-ba13b5a17308c0cec68f" ;
+    skos:definition "Thifensulfuron-methyl; LC-ESI-QQ; MS2; CE:20 V; [M+H]+" .
+

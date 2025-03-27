@@ -1,0 +1,83 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000947 a mbo:MassSpectrum ;
+    dcterms:creator "Piraud M, et al." ;
+    dcterms:date "2006-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000947" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Piraud, M.; Vianey-Saban, C.; Petritis, K.; Elfakir, C.; Steghens, J.-P.; Morla, A.; Bouchu, D. ESI-MS/MS Analysis of Underivatised Amino Acids: A New Tool for the Diagnosis of Inherited Disorders of Amino Acid Metabolism. Fragmentation Study of 79 Molecules of Biological Interest in Positive and Negative Ionisation Mode. Rapid Communications in Mass Spectrometry 2003, 17 (12), 1297–311. DOI:10.1002/rcm.1054" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API 2000 ESI-MS/MS system triple quadrupole mass spectrometer (Sciex Applied Biosystems, Toronto, Canada)" ;
+            mbo:collision_energy "32" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "H",
+                "M",
+                "O",
+                "e" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Formimino-L-glutamic acid" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Glutamic acid" ;
+            mbo:ch_exact_mass 1.74156e+02 ;
+            rdfs:seeAlso cas:816-90-0,
+                pubchem:CID439233 ;
+            schema:inChI "InChI=1S/C6H10N2O4/c7-3-8-4(6(11)12)1-2-5(9)10/h3-4H,1-2H2,(H2,7,8)(H,9,10)(H,11,12)/t4-/m0/s1" ;
+            schema:inChIKey inchikey:NRXIKWMTVXPVEF-BYPYZUCNSA-N ;
+            schema:molecularFormula "C6H10N2O4" ;
+            schema:name "Formimino-L-glutamic acid" ;
+            schema:smiles "N=CN[C@@H](CCC(=O)O)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5e+01 ;
+            mbo:mz 5.6e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 1.7e+01 ;
+            mbo:mz 6.8e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 170 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 8.3e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 260 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 8.4e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.4e+01 ;
+            mbo:mz 1.11e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 440 ],
+        [ mbo:intensity 3.9e+01 ;
+            mbo:mz 1.29e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 390 ],
+        [ mbo:intensity 4e+01 ;
+            mbo:mz 1.3e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 400 ],
+        [ mbo:intensity 6.4e+01 ;
+            mbo:mz 1.57e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 639 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.75e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-053r-9800000000-d17e3b318619e98b15f5" ;
+    rdfs:comment "732" ;
+    skos:definition "Formimino-L-glutamic acid; LC-ESI-QQ; MS2" .
+

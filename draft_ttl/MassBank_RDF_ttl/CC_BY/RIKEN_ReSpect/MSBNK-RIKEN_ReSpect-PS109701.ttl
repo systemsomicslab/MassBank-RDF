@@ -1,0 +1,83 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS109701 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS109701" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-piperidinecarboxylic acid",
+                "6-carboxypiperidine",
+                "DL-Pipecolinic acid",
+                "Hexahydropicolinic acid",
+                "HomoPro",
+                "Homoproline",
+                "dihydrobaikiane",
+                "hexahydropicolinic acid",
+                "pipecolate",
+                "pipecolic acid",
+                "pipecolinic acid",
+                "piperidine-2-carboxylic acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Pipecolic acid" ;
+            mbo:ch_exact_mass 1.29159e+02 ;
+            rdfs:seeAlso cas:535-75-1,
+                pubchem:CID439227 ;
+            schema:inChI "InChI=1S/C6H11NO2/c8-6(9)5-3-1-2-4-7-5/h5,7H,1-4H2,(H,8,9)" ;
+            schema:inChIKey inchikey:HXEACLLIILLPRG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H11NO2" ;
+            schema:name "2-piperidinecarboxylic acid",
+                "6-carboxypiperidine",
+                "DL-Pipecolinic acid",
+                "Hexahydropicolinic acid",
+                "HomoPro",
+                "Homoproline",
+                "dihydrobaikiane",
+                "hexahydropicolinic acid",
+                "pipecolate",
+                "pipecolic acid",
+                "pipecolinic acid",
+                "piperidine-2-carboxylic acid" ;
+            schema:smiles "C1CCNC(C1)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.76651e+05 ;
+            mbo:mz 8.4e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 8.6739e+04 ;
+            mbo:mz 8.9e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 2.17013e+05 ;
+            mbo:mz 1.29e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 2.35727e+06 ;
+            mbo:mz 1.3e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.3014e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001i-0900000000-0f02cd27d0a810c9b9fe" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "DL-Pipecolinic acid, Homoproline, 6-carboxypiperidine, 2-piperidinecarboxylic acid, hexahydropicolinic acid, dihydrobaikiane, pipecolinic acid, pipecolate, pipecolic acid, piperidine-2-carboxylic acid, HomoPro, Hexahydropicolinic acid; LC-ESI-QQ; MS2" .
+

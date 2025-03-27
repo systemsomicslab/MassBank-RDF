@@ -1,0 +1,96 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00267 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-17, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00267" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "5.751772 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(S)-2-Amino-3-(p-hydroxyphenyl)propionic acid",
+                "(S)-3-(p-Hydroxyphenyl)alanine",
+                "L-Tyrosine",
+                "Tyrosine" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.810739e+02 ;
+            rdfs:seeAlso cas:60-18-4,
+                knapsack:C00001397,
+                pubchem:CID3382 ;
+            schema:inChI "InChI=1S/C9H11NO3/c10-8(9(12)13)5-6-1-3-7(11)4-2-6/h1-4,8,11H,5,10H2,(H,12,13)/t8-/m0/s1" ;
+            schema:inChIKey inchikey:OUYCCCASQSFEME-QMMMGPOBSA-N ;
+            schema:molecularFormula "C9H11NO3" ;
+            schema:name "(S)-2-Amino-3-(p-hydroxyphenyl)propionic acid",
+                "(S)-3-(p-Hydroxyphenyl)alanine",
+                "L-Tyrosine",
+                "Tyrosine" ;
+            schema:smiles "OC(=O)C(N)Cc(c1)ccc(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 2.049388e+01 ;
+            mbo:mz 1.239809e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.705921e+01 ;
+            mbo:mz 1.665885e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.996972e+02 ;
+            mbo:mz 1.361002e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 2.267719e+03 ;
+            mbo:mz 1.370562e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 255 ],
+        [ mbo:intensity 1.064154e+01 ;
+            mbo:mz 1.387688e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.300395e+01 ;
+            mbo:mz 1.40801e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.161522e+02 ;
+            mbo:mz 1.418745e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 5.233092e+01 ;
+            mbo:mz 1.478763e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.369776e+00 ;
+            mbo:mz 1.599541e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 8.894021e+03 ;
+            mbo:mz 1.659819e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.659819e+02 ;
+            mbo:precursor_mz 1.8308e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-014i-0900000000-fb85798746829bac3f3d" ;
+    skos:definition "L-Tyrosine; LC-ESI-ITFT; MS2; m/z:183.08; POS" .
+

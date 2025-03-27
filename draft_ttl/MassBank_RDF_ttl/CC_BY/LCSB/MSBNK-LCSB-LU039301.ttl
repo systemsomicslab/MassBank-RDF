@@ -1,0 +1,70 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU039301 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU039301" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "15.393 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(7R)-10-methyl-7-[(5-methyl-1H-imidazol-4-yl)methyl]-8,9-dihydro-7H-pyrido[1,2-a]indol-6-one",
+                "Fabesetron" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.931528e+02 ;
+            rdfs:seeAlso cas:15091-34-6,
+                chemspider:181040,
+                pubchem:CID208947 ;
+            schema:inChI "InChI=1S/C18H19N3O/c1-11-14-5-3-4-6-17(14)21-16(11)8-7-13(18(21)22)9-15-12(2)19-10-20-15/h3-6,10,13H,7-9H2,1-2H3,(H,19,20)/t13-/m1/s1" ;
+            schema:inChIKey inchikey:AEKQMJRJRAHOAP-CYBMUJFWSA-N ;
+            schema:molecularFormula "C18H19N3O" ;
+            schema:name "(7R)-10-methyl-7-[(5-methyl-1H-imidazol-4-yl)methyl]-8,9-dihydro-7H-pyrido[1,2-a]indol-6-one",
+                "Fabesetron" ;
+            schema:smiles "Cc1[nH]cnc1C[C@H]1CCc2c(C)c3ccccc3n2C1=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.64587e+04 ;
+            mbo:mz 9.5061e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.92349e+04 ;
+            mbo:mz 1.490705e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.598349e+07 ;
+            mbo:mz 2.941599e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90212e+01 ;
+            mbo:precursor_mz 2.941601e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-0090000000-1d2cab704dffda6527a0" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Fabesetron; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

@@ -1,0 +1,54 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80115 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80115" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "10.717" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,2,6,6,10,17,20-heptamethyl-12-oxo-17-[(2-piperidylethyl)oxycarbonyl]pentacyclo[12.8.0.0<2,11>.0<5,10>.0<15,20>]docos-13-en-7-yl acetate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 6.23455e+02 ;
+            rdfs:seeAlso chemspider:2596884,
+                pubchem:CID3350516 ;
+            schema:inChI "InChI=1S/C39H61NO5/c1-26(41)45-31-13-14-37(6)30(34(31,2)3)12-15-39(8)32(37)29(42)24-27-28-25-36(5,17-16-35(28,4)18-19-38(27,39)7)33(43)44-23-22-40-20-10-9-11-21-40/h24,28,30-32H,9-23,25H2,1-8H3" ;
+            schema:inChIKey inchikey:VDHYPSXGMGKEHS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C39H61NO5" ;
+            schema:name "1,2,6,6,10,17,20-heptamethyl-12-oxo-17-[(2-piperidylethyl)oxycarbonyl]pentacyclo[12.8.0.0<2,11>.0<5,10>.0<15,20>]docos-13-en-7-yl acetate" ;
+            schema:smiles "CC(=O)OC1CCC2(C(C1(C)C)CCC3(C2C(=O)C=C4C3(CCC5(C4CC(CC5)(C)C(=O)OCCN6CCCCC6)C)C)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.325486e+06 ;
+            mbo:mz 6.244623e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.712e+04 ;
+            mbo:mz 6.464442e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-00di-0000009000-5a82459a43bf230e2ae7" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.459" ;
+    skos:definition "1,2,6,6,10,17,20-heptamethyl-12-oxo-17-[(2-piperidylethyl)oxycarbonyl]pentacyclo[12.8.0.0<2,11>.0<5,10>.0<15,20>]docos-13-en-7-yl acetate; LC-ESI-QTOF; MS; POSITIVE" .
+

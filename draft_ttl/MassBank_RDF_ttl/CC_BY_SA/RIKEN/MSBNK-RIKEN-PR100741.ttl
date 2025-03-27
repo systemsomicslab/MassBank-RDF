@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100741 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100741" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "NADH" ;
+            mbo:ch_compound_class "Natural Product; Nicotinamide; Dinucleotides" ;
+            mbo:ch_exact_mass 6.651248e+02 ;
+            rdfs:seeAlso cas:58-68-4,
+                chemspider:388299,
+                pubchem:CID439153 ;
+            schema:inChI "InChI=1S/C21H29N7O14P2/c22-17-12-19(25-7-24-17)28(8-26-12)21-16(32)14(30)11(41-21)6-39-44(36,37)42-43(34,35)38-5-10-13(29)15(31)20(40-10)27-3-1-2-9(4-27)18(23)33/h1,3-4,7-8,10-11,13-16,20-21,29-32H,2,5-6H2,(H2,23,33)(H,34,35)(H,36,37)(H2,22,24,25)/t10-,11-,13-,14-,15-,16-,20-,21-/m1/s1" ;
+            schema:inChIKey inchikey:BOPGDPNILDQYTO-NNYOXOHSSA-N ;
+            schema:molecularFormula "C21H29N7O14P2" ;
+            schema:name "NADH" ;
+            schema:smiles "NC(=O)C(C5)=CN(C=C5)[C@H](O1)[C@H](O)[C@H](O)[C@@H](COP(O)(=O)OP(O)(=O)OC[C@@H](O2)[C@@H](O)[C@@H](O)[C@@H]2n(c4)c(n3)c(n4)c(N)nc3)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.646e+01 ;
+            mbo:mz 7.89607e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 897 ],
+        [ mbo:intensity 9.459e+00 ;
+            mbo:mz 4.080141e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 516 ],
+        [ mbo:intensity 2.83e+00 ;
+            mbo:mz 4.090188e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 154 ],
+        [ mbo:intensity 2.973e+00 ;
+            mbo:mz 4.260258e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 3.053e+00 ;
+            mbo:mz 4.27023e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 166 ],
+        [ mbo:intensity 6.975e+00 ;
+            mbo:mz 6.641169e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 380 ],
+        [ mbo:intensity 5.894e+00 ;
+            mbo:mz 9.69711e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 321 ],
+        [ mbo:intensity 6.287e+00 ;
+            mbo:mz 1.340475e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 343 ],
+        [ mbo:intensity 1.016e+01 ;
+            mbo:mz 1.589255e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 554 ],
+        [ mbo:intensity 1.833e+01 ;
+            mbo:mz 2.729584e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.051e+01 ;
+            mbo:mz 3.280496e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 573 ],
+        [ mbo:intensity 5.132e+00 ;
+            mbo:mz 3.29048e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 280 ],
+        [ mbo:intensity 8.703e+00 ;
+            mbo:mz 3.46058e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 474 ],
+        [ mbo:intensity 1.109e+01 ;
+            mbo:mz 3.970284e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 604 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.64117e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-05dj-5449401000-1c9466169a2e22067bd9" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "NADH; LC-ESI-QTOF; MS2; CE:30 V; [M-H]-" .
+

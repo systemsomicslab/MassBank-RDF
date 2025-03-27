@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP004743 a mbo:MassSpectrum ;
+    dcterms:creator "MASS SPECTROSCOPY SOC. OF JAPAN (MSSJ)" ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP004743" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JEOL JMS-D-3000" ;
+            mbo:instrument_type "EI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2,6,6-TETRAMETHYL-2,6-DISILAPIPERIDINE" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.731056e+02 ;
+            rdfs:seeAlso pubchem:CID14144998 ;
+            schema:inChI "InChI=1S/C7H19NSi2/c1-9(2)6-5-7-10(3,4)8-9/h8H,5-7H2,1-4H3" ;
+            schema:inChIKey inchikey:VVNWHIYYCOBFMW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H19NSi2" ;
+            schema:name "2,2,6,6-TETRAMETHYL-2,6-DISILAPIPERIDINE" ;
+            schema:smiles "C[Si](C)(C1)N[Si](C)(C)CC1" ] ;
+    mbo:has_peak [ mbo:intensity 8.62e+00 ;
+            mbo:mz 5.7e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 8.06e+00 ;
+            mbo:mz 1.16e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 2.71e+01 ;
+            mbo:mz 1.3e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 271 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 1.58e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.829e+01 ;
+            mbo:mz 1.59e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 183 ],
+        [ mbo:intensity 7.98e+00 ;
+            mbo:mz 1.6e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 9.78e+00 ;
+            mbo:mz 1.73e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 98 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-d48db79dd18dacdf6079" ;
+    skos:definition "2,2,6,6-TETRAMETHYL-2,6-DISILAPIPERIDINE; EI-B; MS" .
+

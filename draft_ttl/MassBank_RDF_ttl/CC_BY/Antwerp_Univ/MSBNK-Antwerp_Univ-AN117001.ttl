@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN117001 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN117001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "5 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "1.774 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tris(2-chloroethyl) phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.839539e+02 ;
+            rdfs:seeAlso cas:68411-66-5,
+                chemspider:7994,
+                pubchem:CID8295 ;
+            schema:inChI "InChI=1S/C6H12Cl3O4P/c7-1-4-11-14(10,12-5-2-8)13-6-3-9/h1-6H2" ;
+            schema:inChIKey inchikey:HQUQLFOMPYWACS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H12Cl3O4P" ;
+            schema:name "Tris(2-chloroethyl) phosphate" ;
+            schema:smiles "C(CCl)OP(=O)(OCCCl)OCCCl" ] ;
+    mbo:has_peak [ mbo:intensity 6.944e+02 ;
+            mbo:mz 6.29999e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 201 ],
+        [ mbo:intensity 9.456e+02 ;
+            mbo:mz 9.89832e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 273 ],
+        [ mbo:intensity 1.1473e+03 ;
+            mbo:mz 1.249999e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 332 ],
+        [ mbo:intensity 1.3697e+03 ;
+            mbo:mz 1.60976e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 396 ],
+        [ mbo:intensity 3.002e+02 ;
+            mbo:mz 1.869922e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 87 ],
+        [ mbo:intensity 3.0006e+03 ;
+            mbo:mz 2.229687e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 867 ],
+        [ mbo:intensity 3.4566e+03 ;
+            mbo:mz 2.849615e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.849613e+02 ;
+            mbo:precursor_mz 2.849612e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00e9-2390000000-5822f6cef03597c368f4" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Tris(2-chloroethyl) phosphate; LC-ESI-QTOF; MS2; CE: 5eV; R=7000; [M+H]+" .
+

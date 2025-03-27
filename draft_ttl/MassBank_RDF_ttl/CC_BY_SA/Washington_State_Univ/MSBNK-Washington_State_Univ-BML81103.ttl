@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML81103 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML81103" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-APCI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "9.443" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Digoxin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 7.804296e+02 ;
+            rdfs:seeAlso cas:20830-75-5,
+                chemspider:2954,
+                pubchem:CID3062 ;
+            schema:inChI "InChI=1S/C41H64O14/c1-19-36(47)28(42)15-34(50-19)54-38-21(3)52-35(17-30(38)44)55-37-20(2)51-33(16-29(37)43)53-24-8-10-39(4)23(13-24)6-7-26-27(39)14-31(45)40(5)25(9-11-41(26,40)48)22-12-32(46)49-18-22/h12,19-21,23-31,33-38,42-45,47-48H,6-11,13-18H2,1-5H3" ;
+            schema:inChIKey inchikey:LTMHDMANZUZIPE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C41H64O14" ;
+            schema:name "Digoxin" ;
+            schema:smiles "CC1C(C(CC(O1)OC2C(OC(CC2O)OC3C(OC(CC3O)OC4CCC5(C(C4)CCC6C5CC(C7(C6(CCC7C8=CC(=O)OC8)O)C)O)C)C)C)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.24671e+05 ;
+            mbo:mz 8.15399e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-014i-0000000090-4ee4c8a1109d8fc16a02" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.276" ;
+    skos:definition "Digoxin; LC-APCI-QTOF; MS; NEGATIVE" .
+

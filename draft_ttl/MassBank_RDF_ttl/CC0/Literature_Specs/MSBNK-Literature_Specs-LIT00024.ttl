@@ -1,0 +1,100 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Literature_Specs-LIT00024 a mbo:MassSpectrum ;
+    dcterms:creator "E. Schymanski; retrieved from A. Di Corcia et al. 1998" ;
+    dcterms:date "2016-02-03 (Created 2013-04-15)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Literature_Specs-LIT00024" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Corcia, A. D.; Crescenzi, C.; Marcomini, A.; Samperi, R. Liquid Chromatography- Electrospray-Mass Spectrometry as a Valuable Tool for Characterizing Biodegradation Intermediates of Branched Alcohol Ethoxylate Surfactants. Environmental Science & Technology 1998, 32 (5), 711–8. DOI:10.1021/es970616x" ] ;
+    dcterms:rights "Copyright (C) American Chemical Society 1998 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Fisons VG Platform" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Carboxyl-2-butyl-A7EO1-OCH2COOH",
+                "1COOH-2But-A7EO1-OCH2COOH",
+                "3-{[2-(carboxymethoxy)ethoxy]methyl}heptanoic acid" ;
+            mbo:ch_compound_class "N/A; Surfactant" ;
+            mbo:ch_exact_mass 2.621416e+02 ;
+            rdfs:seeAlso pubchem:CID137628411 ;
+            schema:inChI "InChI=1S/C12H22O6/c1-2-3-4-10(7-11(13)14)8-17-5-6-18-9-12(15)16/h10H,2-9H2,1H3,(H,13,14)(H,15,16)" ;
+            schema:inChIKey inchikey:IOBWQNCIKXKHIW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H22O6" ;
+            schema:name "1-Carboxyl-2-butyl-A7EO1-OCH2COOH",
+                "1COOH-2But-A7EO1-OCH2COOH",
+                "3-{[2-(carboxymethoxy)ethoxy]methyl}heptanoic acid" ;
+            schema:smiles "OC(=O)COCCOCC(CC(=O)O)CCCC" ] ;
+    mbo:has_peak [ mbo:intensity 1e+01 ;
+            mbo:mz 5.5e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 5e+00 ;
+            mbo:mz 2.85e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1e+01 ;
+            mbo:mz 6.9e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 8.3e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 9.7e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 1.03e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 300 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 1.25e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 300 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.43e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 2.45e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 5e+00 ;
+            mbo:mz 2.63e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 50 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 2.63e+02 ;
+            mbo:tentative_formula "C12H23O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 2.85e+02 ;
+            mbo:tentative_formula "C12H22O6Na+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.631489e+02 ;
+            mbo:precursor_mz 2.631489e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0006-3910000000-eac5befb5f76cefb0ea9" ;
+    rdfs:comment "Digitised from figure: approximate intensities" ;
+    skos:definition "1COOH-2But-A7EO1-OCH2COOH; LC-ESI-Q; MS2; 30 V; [M+H]+" .
+

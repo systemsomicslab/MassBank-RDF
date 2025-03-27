@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS003132 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2014-01-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS003132" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "1870.2 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Lupulone" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 4.14277e+02 ;
+            rdfs:seeAlso cas:468-28-0,
+                chemspider:13433819 ;
+            schema:inChI "InChI=1S/C26H38O4/c1-16(2)9-10-20-23(28)22(21(27)15-19(7)8)25(30)26(24(20)29,13-11-17(3)4)14-12-18(5)6/h9,11-12,19,28,30H,10,13-15H2,1-8H3" ;
+            schema:inChIKey inchikey:WPVSVIXDXMNGGN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C26H38O4" ;
+            schema:name "Lupulone" ;
+            schema:smiles "CC(C)CC(=O)C1=C(C(C(=O)C(=C1O)CC=C(C)C)(CC=C(C)C)CC=C(C)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.48e+02 ;
+            mbo:mz 2.330818e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 148 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 3.452027e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 3.692793e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 2.15e+02 ;
+            mbo:mz 4.132693e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 215 ],
+        [ mbo:intensity 5.3e+01 ;
+            mbo:mz 4.142721e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 2.751286e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 4.9e+01 ;
+            mbo:mz 2.761359e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 2.871278e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 8e+01 ;
+            mbo:mz 2.891441e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.011444e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.41e+02 ;
+            mbo:mz 3.021477e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 141 ],
+        [ mbo:intensity 2.7e+01 ;
+            mbo:mz 3.291787e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 8.9e+01 ;
+            mbo:mz 3.441981e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 89 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.132693e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0udi-0029100000-985b76a8e876628ab986" ;
+    skos:definition "Lupulone; LC-ESI-QTOF; MS2; CE:30 eV; [M-H]-" .
+

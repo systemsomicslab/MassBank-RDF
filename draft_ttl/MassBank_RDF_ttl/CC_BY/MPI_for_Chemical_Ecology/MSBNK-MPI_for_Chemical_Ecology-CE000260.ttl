@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000260 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Marco Kai, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000260" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, K. Scheubert, F. Hufsky, T. Zichner, M. Kai, A. Svatos and S. Boecker. Identifying the unknowns by aligning fragmentation trees. Anal. Chem., 2012, 84, 3417-3426 doi:10.1021/ac300304u" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:collision_energy "22.0eV" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "1.4368 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "isopentenyl-Adenosine-[d6]" ;
+            mbo:ch_compound_class "Natural Product; Purine" ;
+            mbo:ch_exact_mass 3.351594e+02 ;
+            rdfs:seeAlso pubchem:CID24405 ;
+            schema:inChI "InChI=1S/C15H21N5O4/c1-8(2)3-4-16-13-10-14(18-6-17-13)20(7-19-10)15-12(23)11(22)9(5-21)24-15/h3,6-7,9,11-12,15,21-23H,4-5H2,1-2H3,(H,16,17,18)/t9-,11-,12-,15-/m1/s1" ;
+            schema:inChIKey inchikey:USVMJSALORZVDV-SDBHATRESA-N ;
+            schema:molecularFormula "C15H21N5O4" ;
+            schema:name "isopentenyl-Adenosine-[d6]" ;
+            schema:smiles "CC(=CCNC1=NC=NC2=C1N=CN2[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.717422e+05 ;
+            mbo:mz 1.370677e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 3.159874e+04 ;
+            mbo:mz 1.480614e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 6.980264e+03 ;
+            mbo:mz 2.101548e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.583376e+06 ;
+            mbo:mz 2.101613e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.033664e+03 ;
+            mbo:mz 2.10206e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 5.276555e+03 ;
+            mbo:mz 3.241933e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 8.574878e+05 ;
+            mbo:mz 3.42203e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 541 ],
+        [ mbo:intensity 4.722504e+04 ;
+            mbo:mz 3.422682e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 30 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.42e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03dl-0195000000-bb1c98cdfb4dd8bcbcf6" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "isopentenyl-Adenosine-[d6]; LC-ESI-ITFT; MS2; CE 22.0 eV; [M+H]+" .
+

@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002355 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002355" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2',4',5'-Trihydroxybutyrophenone",
+                "DTXSID2026232" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.960736e+02 ;
+            rdfs:seeAlso cas:1421-63-2,
+                pubchem:CID15008 ;
+            schema:inChI "InChI=1S/C10H12O4/c1-2-3-7(11)6-4-9(13)10(14)5-8(6)12/h4-5,12-14H,2-3H2,1H3" ;
+            schema:inChIKey inchikey:SRUQARLMFOLRDN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H12O4" ;
+            schema:name "2',4',5'-Trihydroxybutyrophenone",
+                "DTXSID2026232" ;
+            schema:smiles "CCCC(=O)C1=CC(O)=C(O)C=C1O" ] ;
+    mbo:has_peak [ mbo:intensity 1.549859e+00 ;
+            mbo:mz 9.501385e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.641784e+00 ;
+            mbo:mz 1.070139e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.455281e+00 ;
+            mbo:mz 1.230088e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 3.174927e+00 ;
+            mbo:mz 1.240166e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.073084e+01 ;
+            mbo:mz 1.250244e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 4.737815e+00 ;
+            mbo:mz 1.510037e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 1.369902e+00 ;
+            mbo:mz 1.520115e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.590294e+00 ;
+            mbo:mz 1.660272e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.950663e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.950663e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0900000000-c9dca7f604f296e5dc1b" ;
+    skos:definition "2',4',5'-Trihydroxybutyrophenone; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

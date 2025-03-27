@@ -1,0 +1,93 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002061 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002061" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "90 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "11.432 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Artemisinin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.821467e+02 ;
+            rdfs:seeAlso pubchem:CID68827 ;
+            schema:inChI "InChI=1S/C15H22O5/c1-8-4-5-11-9(2)12(16)17-13-15(11)10(8)6-7-14(3,18-13)19-20-15/h8-11,13H,4-7H2,1-3H3/t8-,9-,10+,11+,13-,14-,15-/m1/s1" ;
+            schema:inChIKey inchikey:BLUAFEHZUWYNDE-NNWCWBAJSA-N ;
+            schema:molecularFormula "C15H22O5" ;
+            schema:name "Artemisinin" ;
+            schema:smiles "C[C@@H]1CC[C@H]2[C@@H](C)C(=O)O[C@@H]3O[C@@]4(C)CC[C@@H]1[C@@]23OO4" ] ;
+    mbo:has_peak [ mbo:intensity 2.1304e+03 ;
+            mbo:mz 1.570859e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 5.68668e+04 ;
+            mbo:mz 2.471329e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.93604e+04 ;
+            mbo:mz 2.651436e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 516 ],
+        [ mbo:intensity 2.4685e+03 ;
+            mbo:mz 1.730963e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 2.489e+03 ;
+            mbo:mz 1.911066e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 5.0415e+03 ;
+            mbo:mz 2.011275e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 5.7069e+03 ;
+            mbo:mz 2.051223e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 8.6171e+03 ;
+            mbo:mz 2.191378e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 151 ],
+        [ mbo:intensity 5.4194e+03 ;
+            mbo:mz 2.231332e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 4.4428e+03 ;
+            mbo:mz 2.291224e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 2.4738e+03 ;
+            mbo:mz 2.371486e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 43 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.051357e+02 ;
+            mbo:precursor_mz 2.83154e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00kb-0090000000-531a77a31291aa099e3b" ;
+    rdfs:comment "INTERNAL_ID 9" ;
+    skos:definition "Artemisinin; LC-ESI-ITFT; MS2; CE: 90%; R=15000; [M+H]+" .
+

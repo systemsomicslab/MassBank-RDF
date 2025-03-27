@@ -1,0 +1,47 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000625 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000625" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,3-Dichloro-6,7,8,9,10,12-hexahydroazepino[2,1-b]quinazoline",
+                "DTXSID9047259" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.680534e+02 ;
+            rdfs:seeAlso cas:149028-28-4,
+                pubchem:CID18992283 ;
+            schema:inChI "InChI=1S/C13H14Cl2N2/c14-9-6-11(15)10-8-17-5-3-1-2-4-13(17)16-12(10)7-9/h6-7H,1-5,8H2" ;
+            schema:inChIKey inchikey:WTPSHLVHJOJDIF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H14Cl2N2" ;
+            schema:name "1,3-Dichloro-6,7,8,9,10,12-hexahydroazepino[2,1-b]quinazoline",
+                "DTXSID9047259" ;
+            schema:smiles "ClC1C=C(Cl)C2CN3CCCCCC3=NC=2C=1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 2.690607e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.690607e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-014i-0090000000-38d58cf6194557e6f672" ;
+    skos:definition "1,3-Dichloro-6,7,8,9,10,12-hexahydroazepino[2,1-b]quinazoline; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

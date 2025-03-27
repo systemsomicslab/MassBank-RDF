@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS078202 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS078202" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Hydroxyethanecarboxylic acid",
+                "2-Hydroxy-2-methylacetic acid",
+                "2-Hydroxypropionic acid",
+                "DL-Lactic acid",
+                "Ethylidenelactic acid",
+                "Lactate",
+                "Milchsaeure",
+                "Milk acid",
+                "Propel",
+                "alpha-Hydroxypropanoic acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Lactic acid" ;
+            mbo:ch_exact_mass 9.0078e+01 ;
+            rdfs:seeAlso cas:50-21-5,
+                pubchem:CID107689 ;
+            schema:inChI "InChI=1S/C3H6O3/c1-2(4)3(5)6/h2,4H,1H3,(H,5,6)" ;
+            schema:inChIKey inchikey:JVTAAEKCZFNVCJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C3H6O3" ;
+            schema:name "1-Hydroxyethanecarboxylic acid",
+                "2-Hydroxy-2-methylacetic acid",
+                "2-Hydroxypropionic acid",
+                "DL-Lactic acid",
+                "Ethylidenelactic acid",
+                "Lactate",
+                "Milchsaeure",
+                "Milk acid",
+                "Propel",
+                "alpha-Hydroxypropanoic acid" ;
+            schema:smiles "CC(C(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.8636e+04 ;
+            mbo:mz 4e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 625 ],
+        [ mbo:intensity 6.1719e+04 ;
+            mbo:mz 4.1e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.099e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-9000000000-5c62265266bfd6afaba9" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "1-Hydroxyethanecarboxylic acid, alpha-Hydroxypropanoic acid, 2-Hydroxypropionic acid, Lactate, 2-Hydroxy-2-methylacetic acid, Ethylidenelactic acid, Propel, Milk acid, DL-Lactic acid, Milchsaeure; LC-ESI-QQ; MS2" .
+

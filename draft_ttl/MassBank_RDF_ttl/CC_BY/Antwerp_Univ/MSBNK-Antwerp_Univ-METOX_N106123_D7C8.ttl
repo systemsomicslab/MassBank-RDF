@@ -1,0 +1,73 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N106123_D7C8 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N106123_D7C8" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.294 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(9Z-octadecenoyl)-sn-glycero-3-phosphoethanolamine",
+                "[(2R)-3-[2-aminoethoxy(hydroxy)phosphoryl]oxy-2-hydroxypropyl] (Z)-octadec-9-enoate" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 4.793012e+02 ;
+            rdfs:seeAlso chemspider:7826021,
+                pubchem:CID9547071 ;
+            schema:inChI "InChI=1S/C23H46NO7P/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-23(26)29-20-22(25)21-31-32(27,28)30-19-18-24/h9-10,22,25H,2-8,11-21,24H2,1H3,(H,27,28)/b10-9-/t22-/m1/s1" ;
+            schema:inChIKey inchikey:PYVRVRFVLRNJLY-MZMPXXGTSA-N ;
+            schema:molecularFormula "C23H46NO7P" ;
+            schema:name "1-(9Z-octadecenoyl)-sn-glycero-3-phosphoethanolamine",
+                "[(2R)-3-[2-aminoethoxy(hydroxy)phosphoryl]oxy-2-hydroxypropyl] (Z)-octadec-9-enoate" ;
+            schema:smiles "CCCCCCCC/C=C\\CCCCCCCC(=O)OC[C@H](COP(=O)([O-])OCC[NH3+])O" ] ;
+    mbo:has_peak [ mbo:intensity 1.356e+02 ;
+            mbo:mz 8.90611e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 205 ],
+        [ mbo:intensity 2.341e+02 ;
+            mbo:mz 9.8975e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 353 ],
+        [ mbo:intensity 5.64e+01 ;
+            mbo:mz 2.149488e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 6.616e+02 ;
+            mbo:mz 2.569629e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.42e+01 ;
+            mbo:mz 3.149994e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 127 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.569651e+02 ;
+            mbo:precursor_mz 4.97335e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4i-4091000000-07b238c4568f913e8911" ;
+    rdfs:comment "INTERNAL_ID 1061" ;
+    skos:definition "1-(9Z-octadecenoyl)-sn-glycero-3-phosphoethanolamine; LC-ESI-QTOF; MS2; CE: 40eV; R=7000; [M+NH4]+" .
+

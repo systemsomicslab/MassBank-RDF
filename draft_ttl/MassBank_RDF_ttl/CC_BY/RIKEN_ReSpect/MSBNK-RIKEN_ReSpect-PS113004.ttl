@@ -1,0 +1,85 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS113004 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS113004" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R,3S,E,E)-2,3-Epoxy-4-oxo-7,10-dodecadienamide",
+                "Helicocerin",
+                "cerulenin" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Other CLASS3 Cerulenin" ;
+            mbo:ch_exact_mass 2.23272e+02 ;
+            rdfs:seeAlso cas:17397-89-6,
+                pubchem:CID5282054 ;
+            schema:inChI "InChI=1S/C12H17NO3/c1-2-3-4-5-6-7-8-9(14)10-11(16-10)12(13)15/h2-3,5-6,10-11H,4,7-8H2,1H3,(H2,13,15)" ;
+            schema:inChIKey inchikey:GVEZIHKRYBHEFX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H17NO3" ;
+            schema:name "(2R,3S,E,E)-2,3-Epoxy-4-oxo-7,10-dodecadienamide",
+                "Helicocerin",
+                "cerulenin" ;
+            schema:smiles "CC=CCC=CCCC(=O)C1C(O1)C(=O)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.573e+03 ;
+            mbo:mz 7.2e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.9445e+04 ;
+            mbo:mz 7.3e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 470 ],
+        [ mbo:intensity 5.699e+03 ;
+            mbo:mz 1.33e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 138 ],
+        [ mbo:intensity 1.58e+04 ;
+            mbo:mz 1.9e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 382 ],
+        [ mbo:intensity 3.0482e+04 ;
+            mbo:mz 1.91e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 737 ],
+        [ mbo:intensity 2.107e+03 ;
+            mbo:mz 1.92e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.348e+03 ;
+            mbo:mz 2.04e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.4801e+04 ;
+            mbo:mz 2.06e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 358 ],
+        [ mbo:intensity 4.1324e+04 ;
+            mbo:mz 2.07e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.2429e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0a4l-3890000000-16c493aa199672203223" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Helicocerin, cerulenin, (2R,3S,E,E)-2,3-Epoxy-4-oxo-7,10-dodecadienamide; LC-ESI-QQ; MS2" .
+

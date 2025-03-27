@@ -1,0 +1,98 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU118001 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU118001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "19.911 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(4-tert-butyl-2-ethoxyphenyl)-2-(2,6-difluorophenyl)-4,5-dihydro-1,3-oxazole",
+                "Etoxazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.591697e+02 ;
+            rdfs:seeAlso cas:153233-91-1,
+                chemspider:135707,
+                pubchem:CID153974 ;
+            schema:inChI "InChI=1S/C21H23F2NO2/c1-5-25-18-11-13(21(2,3)4)9-10-14(18)17-12-26-20(24-17)19-15(22)7-6-8-16(19)23/h6-11,17H,5,12H2,1-4H3" ;
+            schema:inChIKey inchikey:IXSZQYVWNJNRAL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H23F2NO2" ;
+            schema:name "4-(4-tert-butyl-2-ethoxyphenyl)-2-(2,6-difluorophenyl)-4,5-dihydro-1,3-oxazole",
+                "Etoxazole" ;
+            schema:smiles "CCOC1=C(C=CC(=C1)C(C)(C)C)C1COC(=N1)C1=C(F)C=CC=C1F" ] ;
+    mbo:has_peak [ mbo:intensity 2.794925e+05 ;
+            mbo:mz 5.707e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 8.252862e+07 ;
+            mbo:mz 3.601769e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.042747e+06 ;
+            mbo:mz 1.410154e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 4.639584e+05 ;
+            mbo:mz 1.580413e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.646866e+05 ;
+            mbo:mz 1.65091e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.891186e+06 ;
+            mbo:mz 1.771274e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.351327e+05 ;
+            mbo:mz 2.03143e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.875112e+05 ;
+            mbo:mz 2.611093e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.229444e+06 ;
+            mbo:mz 3.041144e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.712691e+06 ;
+            mbo:mz 3.171712e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90212e+01 ;
+            mbo:precursor_mz 3.60177e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-03di-0009000000-b2cfc895385b2777e61a" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Etoxazole; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

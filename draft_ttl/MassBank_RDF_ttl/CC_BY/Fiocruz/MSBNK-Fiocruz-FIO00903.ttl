@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00903 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00903" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Keracyanine" ;
+            mbo:ch_compound_class "Natural Product; Flavonoids" ;
+            mbo:ch_exact_mass 5.951663e+02 ;
+            schema:inChI "InChI=1S/C27H30O15/c1-9-19(32)21(34)23(36)26(39-9)38-8-18-20(33)22(35)24(37)27(42-18)41-17-7-12-14(30)5-11(28)6-16(12)40-25(17)10-2-3-13(29)15(31)4-10/h2-7,9,18-24,26-27,32-37H,8H2,1H3,(H3-,28,29,30,31)/p+1/t9-,18+,19-,20+,21+,22-,23+,24+,26+,27+/m0/s1" ;
+            schema:inChIKey inchikey:USNPULRDBDVJAO-FXCAAIILSA-O ;
+            schema:molecularFormula "[C27H31O15]+" ;
+            schema:name "Keracyanine" ;
+            schema:smiles "c(c(c([o+1]2)c(O[C@H](O4)[C@@H]([C@H]([C@@H]([C@H]4CO[C@@H]([C@@H]5O)O[C@H]([C@@H]([C@H]5O)O)C)O)O)O)cc(c(O)3)c(cc(O)c3)2)1)c(O)c(O)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 5.83524e+05 ;
+            mbo:mz 2.870571e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.2498e+04 ;
+            mbo:mz 2.870957e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 2.0727e+04 ;
+            mbo:mz 2.871218e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 8.764e+03 ;
+            mbo:mz 2.874825e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.18616e+05 ;
+            mbo:mz 2.880603e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 203 ],
+        [ mbo:intensity 1.6317e+04 ;
+            mbo:mz 2.890622e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 28 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-0090000000-981adee2ea08b1a36935" ;
+    rdfs:comment "[Raw Data] CBA67_Keracyanine_pos_50eV.txt" ;
+    skos:definition "Keracyanine; LC-ESI-QTOF; MS2; [M+H]+; CE: 50eV" .
+

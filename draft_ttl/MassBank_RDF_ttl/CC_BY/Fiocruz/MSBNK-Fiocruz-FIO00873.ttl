@@ -1,0 +1,75 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00873 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2019-01-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00873" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Lycorine-monoacetate" ;
+            mbo:ch_compound_class "Non Natural Product; Isoquinoline alkaloids" ;
+            mbo:ch_exact_mass 3.291263e+02 ;
+            schema:inChI "InChI=1S/C18H19NO5/c1-9(20)24-18-13(21)4-10-2-3-19-7-11-5-14-15(23-8-22-14)6-12(11)16(18)17(10)19/h4-6,13,16-18,21H,2-3,7-8H2,1H3/t13-,16-,17+,18+/m0/s1" ;
+            schema:inChIKey inchikey:BIGUPJIJZYZJMV-VIBAHUMZSA-N ;
+            schema:molecularFormula "C18H19NO5" ;
+            schema:name "Lycorine-monoacetate" ;
+            schema:smiles "CC(=O)OC(C(O)5)C([H])(c21)C([H])(C4=C5)N(CC4)Cc(cc(O3)c(OC3)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 5.159e+03 ;
+            mbo:mz 1.340597e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 3.167e+03 ;
+            mbo:mz 1.770548e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 6.578e+03 ;
+            mbo:mz 2.521018e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.4345e+04 ;
+            mbo:mz 2.701126e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 2.319e+03 ;
+            mbo:mz 2.711157e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.86678e+05 ;
+            mbo:mz 3.301339e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.4558e+04 ;
+            mbo:mz 3.311371e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 185 ],
+        [ mbo:intensity 5.62e+03 ;
+            mbo:mz 3.321394e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 30 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-001i-0009000000-957e3538cae68e27718e" ;
+    rdfs:comment "[Raw Data] CBA61_Lycorine-1Ac_pos_20eV.txt" ;
+    skos:definition "Lycorine-monoacetate; LC-ESI-QTOF; MS2; [M+H]+; CE: 20eV" .
+

@@ -1,0 +1,90 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU049251 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU049251" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "18.369 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diflubenzuron",
+                "N-[(4-chlorophenyl)carbamoyl]-2,6-difluorobenzamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.100321e+02 ;
+            rdfs:seeAlso cas:35367-38-5,
+                chemspider:34065,
+                pubchem:CID37123 ;
+            schema:inChI "InChI=1S/C14H9ClF2N2O2/c15-8-4-6-9(7-5-8)18-14(21)19-13(20)12-10(16)2-1-3-11(12)17/h1-7H,(H2,18,19,20,21)" ;
+            schema:inChIKey inchikey:QQQYTWIFVNKMRW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H9ClF2N2O2" ;
+            schema:name "Diflubenzuron",
+                "N-[(4-chlorophenyl)carbamoyl]-2,6-difluorobenzamide" ;
+            schema:smiles "FC1=CC=CC(F)=C1C(=O)NC(=O)NC1=CC=C(Cl)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.13228e+04 ;
+            mbo:mz 1.130208e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.38938e+04 ;
+            mbo:mz 1.260116e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.084193e+05 ;
+            mbo:mz 1.510069e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 195 ],
+        [ mbo:intensity 1.065735e+06 ;
+            mbo:mz 1.560267e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.45647e+04 ;
+            mbo:mz 1.690094e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 1.7244e+04 ;
+            mbo:mz 1.849868e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 6.1359e+03 ;
+            mbo:mz 2.460131e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.492005e+05 ;
+            mbo:mz 2.890187e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 702 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.92098e+02 ;
+            mbo:precursor_mz 3.090248e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0a4r-0940000000-7799b5b9720c1e592331" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Diflubenzuron; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

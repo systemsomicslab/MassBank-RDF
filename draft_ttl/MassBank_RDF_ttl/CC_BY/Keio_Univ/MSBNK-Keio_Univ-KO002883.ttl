@@ -1,0 +1,47 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO002883 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO002883" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "D-Fructose 1,6-bisphosphate",
+                "Fructose 1,6-diphosphate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.399961e+02 ;
+            rdfs:seeAlso cas:488-69-7,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3647> ;
+            schema:inChI "InChI=1S/C6H14O12P2/c7-3(1-17-19(11,12)13)5(9)6(10)4(8)2-18-20(14,15)16/h3,5-7,9-10H,1-2H2,(H2,11,12,13)(H2,14,15,16)/t3-,5-,6-/m1/s1" ;
+            schema:inChIKey inchikey:XPYBSIWDXQFNMH-UYFOZJQFSA-N ;
+            schema:molecularFormula "C6H14O12P2" ;
+            schema:name "D-Fructose 1,6-bisphosphate",
+                "Fructose 1,6-diphosphate" ;
+            schema:smiles "OC(COP(O)(O)=O)C(O)C(O)C(=O)COP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.9604e+04 ;
+            mbo:mz 9.91e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.41e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0002-9000000000-3b992f02b655d8e877c3" ;
+    rdfs:comment "KEIO_ID F008" ;
+    skos:definition "Fructose 1,6-diphosphate; LC-ESI-QQ; MS2; CE:50 V; [M+H]+" .
+

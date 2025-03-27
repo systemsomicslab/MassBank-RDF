@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM848903 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM848903" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.808 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-[4-(4-chlorophenyl)-4-hydroxypiperidin-1-yl]-N,N-dimethyl-2,2-diphenylbutanamide",
+                "Ioperamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.762231e+02 ;
+            rdfs:seeAlso cas:53179-11-6,
+                chemspider:3818,
+                pubchem:CID3955 ;
+            schema:inChI "InChI=1S/C29H33ClN2O2/c1-31(2)27(33)29(24-9-5-3-6-10-24,25-11-7-4-8-12-25)19-22-32-20-17-28(34,18-21-32)23-13-15-26(30)16-14-23/h3-16,34H,17-22H2,1-2H3" ;
+            schema:inChIKey inchikey:RDOIQAHITMMDAJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C29H33ClN2O2" ;
+            schema:name "4-[4-(4-chlorophenyl)-4-hydroxypiperidin-1-yl]-N,N-dimethyl-2,2-diphenylbutanamide",
+                "Ioperamide" ;
+            schema:smiles "CN(C)C(=O)C(CCN1CCC(O)(CC1)c1ccc(Cl)cc1)(c1ccccc1)c1ccccc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.441293e+07 ;
+            mbo:mz 7.20444e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 8.37189e+06 ;
+            mbo:mz 2.381226e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.560983e+08 ;
+            mbo:mz 2.661539e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.426868e+08 ;
+            mbo:mz 4.772306e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 557 ],
+        [ mbo:intensity 4.194712e+05 ;
+            mbo:mz 9.10544e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.240069e+06 ;
+            mbo:mz 1.150542e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.223754e+06 ;
+            mbo:mz 1.670856e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 9.67691e+05 ;
+            mbo:mz 1.780775e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.602135e+06 ;
+            mbo:mz 1.931012e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.036895e+07 ;
+            mbo:mz 2.101277e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 7.883856e+05 ;
+            mbo:mz 2.23099e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 5.568389e+05 ;
+            mbo:mz 2.240837e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.7723e+02 ;
+            mbo:precursor_mz 4.772303e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-016r-0090300000-e11942e343a28799a5ab" ;
+    rdfs:comment "INTERNAL_ID 8489" ;
+    skos:definition "Ioperamide; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M+H]+" .
+

@@ -1,0 +1,73 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00100 a mbo:MassSpectrum ;
+    dcterms:creator "Masayo Sekimoto, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2018-12-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00100" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mori K, Akasaka K. Pheromone synthesis. Part 256: Synthesis of the four stereoisomers of 5,11-dimethylpentacosane, a new sex pheromone component of the male Galleria mellonella (L.), with high stereochemical purities as determined by the derivatization-HPLC analysis of the eight stereoisomers of 5,11-dimethyl-8-pentacosanol. Tetrahedron. 2015 Jun 17;71(24):4102-15. doi: 10.10.1016/j.tet2015.04.107." ] ;
+    dcterms:rights "Masayo Sekimoto, Takemichi Nakamura, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A gas chromatography." ;
+            mbo:column_name "HP-5 19091J-413 USD364547H (Agilent), length 30 m, I.D. 0.32 mm, thickness 0.25 micrometer" ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "6.94 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(S)-3-Methylheptyl bromide" ;
+            mbo:ch_compound_class "Synthetic compounds" ;
+            mbo:ch_exact_mass 1.300514e+02 ;
+            rdfs:seeAlso chemspider:61686166,
+                pubchem:CID71584495 ;
+            schema:inChI "InChI=1S/C8H17Br/c1-3-4-5-8(2)6-7-9/h8H,3-7H2,1-2H3/t8-/m0/s1" ;
+            schema:inChIKey inchikey:PYETWEQSEZLJIH-QMMMGPOBSA-N ;
+            schema:molecularFormula "C8H17Br" ;
+            schema:name "(S)-3-Methylheptyl bromide" ;
+            schema:smiles "C[C@@H](CCCC)CCBr" ] ;
+    mbo:has_peak [ mbo:intensity 9e+00 ;
+            mbo:mz 8.5103e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 4.8e+01 ;
+            mbo:mz 1.48997e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 480 ],
+        [ mbo:intensity 4.5e+01 ;
+            mbo:mz 1.50995e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 450 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.92051e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9e+00 ;
+            mbo:mz 1.93055e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 9.7e+01 ;
+            mbo:mz 1.94049e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 969 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.95053e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 80 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0006-0900000000-d972a5cdaf6e6057b5c8" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 16HP2005 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "(S)-3-Methylheptyl bromide; GC-FI-TOF; MS; M*+; FI voltage 10 kV" .
+

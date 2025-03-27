@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR040096 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2008-01-09, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR040096" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5,7-dihydroxy-2-(4-hydroxy-3-methoxyphenyl)-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxychromen-4-one",
+                "Isor_3_Glc",
+                "Isorhamnetin-3-O-glucoside" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 4.781111e+02 ;
+            rdfs:seeAlso cas:5041-82-7,
+                pubchem:CID5318645 ;
+            schema:inChI "InChI=1S/C22H22O12/c1-31-12-4-8(2-3-10(12)25)20-21(17(28)15-11(26)5-9(24)6-13(15)32-20)34-22-19(30)18(29)16(27)14(7-23)33-22/h2-6,14,16,18-19,22-27,29-30H,7H2,1H3/t14-,16-,18+,19-,22+/m1/s1" ;
+            schema:inChIKey inchikey:CQLRUIIRRZYHHS-LFXZADKFSA-N ;
+            schema:molecularFormula "C22H22O12" ;
+            schema:name "5,7-dihydroxy-2-(4-hydroxy-3-methoxyphenyl)-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxychromen-4-one",
+                "Isor_3_Glc",
+                "Isorhamnetin-3-O-glucoside" ;
+            schema:smiles "COc(c(O)4)cc(cc4)C(O1)=C(OC(O3)C(O)C(O)C(O)C(CO)3)C(=O)c(c(O)2)c(cc(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 8.991e+03 ;
+            mbo:mz 4.77112e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.183e+03 ;
+            mbo:mz 4.78058e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 4.019e+02 ;
+            mbo:mz 4.789478e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 2.453e+02 ;
+            mbo:mz 4.79831e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 27 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-0000900000-74580ccc6bf769d2c860" ;
+    skos:definition "Isorhamnetin-3-O-glucoside; LC-ESI-QTOF; MS2; CE:30 V; [2M-H]-" .
+

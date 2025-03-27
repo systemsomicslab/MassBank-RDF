@@ -1,0 +1,59 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS081511 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS081511" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Myristoyl-2-Hydroxy-sn-Glycero-3-Phosphoethanolamine",
+                "1-tetradecanoyl-sn-glycero-3-phosphoethanolamine",
+                "14:0 LysoPE",
+                "Phosphoethanolamine,1-Myristoyl-2-Hydroxy-sn-Glycero-3-" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Phospholipid CLASS3 Phosphoethanolamine" ;
+            mbo:ch_exact_mass 4.25505e+02 ;
+            rdfs:seeAlso cas:123060-40-2,
+                pubchem:CID9547070 ;
+            schema:inChI "InChI=1S/C19H40NO7P/c1-2-3-4-5-6-7-8-9-10-11-12-13-19(22)25-16-18(21)17-27-28(23,24)26-15-14-20/h18,21H,2-17,20H2,1H3,(H,23,24)" ;
+            schema:inChIKey inchikey:RPXHXZNGZBHSMJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H40NO7P" ;
+            schema:name "1-Myristoyl-2-Hydroxy-sn-Glycero-3-Phosphoethanolamine",
+                "1-tetradecanoyl-sn-glycero-3-phosphoethanolamine",
+                "14:0 LysoPE",
+                "Phosphoethanolamine,1-Myristoyl-2-Hydroxy-sn-Glycero-3-" ;
+            schema:smiles "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(O)OCCN)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.6271e+04 ;
+            mbo:mz 2.26e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 179 ],
+        [ mbo:intensity 1.46866e+05 ;
+            mbo:mz 2.27e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.2452e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004i-0090000000-d2c7b766d11f9a898374" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "1-Myristoyl-2-Hydroxy-sn-Glycero-3-Phosphoethanolamine, Phosphoethanolamine,1-Myristoyl-2-Hydroxy-sn-Glycero-3-, 1-tetradecanoyl-sn-glycero-3-phosphoethanolamine, 14:0 LysoPE; LC-ESI-QQ; MS2" .
+

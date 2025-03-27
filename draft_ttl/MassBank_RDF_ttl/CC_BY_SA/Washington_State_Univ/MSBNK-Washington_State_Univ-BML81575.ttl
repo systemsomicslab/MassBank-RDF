@@ -1,0 +1,56 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML81575 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML81575" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "4.567" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Laudanosine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.57194e+02 ;
+            rdfs:seeAlso cas:20412-65-1,
+                chemspider:14792,
+                pubchem:CID15548 ;
+            schema:inChI "InChI=1S/C21H27NO4/c1-22-9-8-15-12-20(25-4)21(26-5)13-16(15)17(22)10-14-6-7-18(23-2)19(11-14)24-3/h6-7,11-13,17H,8-10H2,1-5H3" ;
+            schema:inChIKey inchikey:KGPAYJZAMGEDIQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H27NO4" ;
+            schema:name "Laudanosine" ;
+            schema:smiles "CN1CCC2=CC(=C(C=C2C1CC3=CC(=C(C=C3)OC)OC)OC)OC" ] ;
+    mbo:has_peak [ mbo:intensity 2.439425e+06 ;
+            mbo:mz 3.582013e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.0671e+04 ;
+            mbo:mz 3.801832e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 37 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-8ac2ac78ff880cf219ed" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.624" ;
+    skos:definition "Laudanosine; LC-ESI-QTOF; MS; POSITIVE" .
+

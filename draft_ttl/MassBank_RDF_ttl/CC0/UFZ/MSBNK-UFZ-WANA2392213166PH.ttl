@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA2392213166PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA2392213166PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "70 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "5.811 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-chloro-3-methylquinoline-8-carboxylic acid",
+                "Quinmerac" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.210244e+02 ;
+            rdfs:seeAlso cas:90717-03-6,
+                chemspider:82847,
+                pubchem:CID91749 ;
+            schema:inChI "InChI=1S/C11H8ClNO2/c1-6-4-7-2-3-8(12)9(11(14)15)10(7)13-5-6/h2-5H,1H3,(H,14,15)" ;
+            schema:inChIKey inchikey:ALZOLUNSQWINIR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H8ClNO2" ;
+            schema:name "7-chloro-3-methylquinoline-8-carboxylic acid",
+                "Quinmerac" ;
+            schema:smiles "CC1=CC2=C(N=C1)C(C(O)=O)=C(Cl)C=C2" ] ;
+    mbo:has_peak [ mbo:intensity 1.264146e+05 ;
+            mbo:mz 1.400494e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 2.492768e+05 ;
+            mbo:mz 1.410572e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 1.655236e+05 ;
+            mbo:mz 1.490152e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 1.9873e+03 ;
+            mbo:mz 1.580602e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 4.568713e+05 ;
+            mbo:mz 1.760261e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 292 ],
+        [ mbo:intensity 1.004262e+05 ;
+            mbo:mz 1.940367e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 1.563121e+06 ;
+            mbo:mz 2.040209e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.57405e+04 ;
+            mbo:mz 2.220315e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 42 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.220321e+02 ;
+            mbo:precursor_mz 2.220316e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0udi-0690000000-4ff038c34580a791bd26" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Quinmerac; LC-ESI-ITFT; MS2; CE: 70%; R=15000; [M+H]+" .
+

@@ -1,0 +1,70 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00421 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00421" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Casticin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 3.741002e+02 ;
+            rdfs:seeAlso cas:479-91-4,
+                chemspider:4474632,
+                pubchem:CID5315263 ;
+            schema:inChI "InChI=1S/C19H18O8/c1-23-11-6-5-9(7-10(11)20)17-19(26-4)16(22)14-12(27-17)8-13(24-2)18(25-3)15(14)21/h5-8,20-21H,1-4H3" ;
+            schema:inChIKey inchikey:PJQLSMYMOKWUJG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H18O8" ;
+            schema:name "Casticin" ;
+            schema:smiles "COc(c3)c(O)cc(c3)C(O1)=C(OC)C(=O)c(c(O)2)c(cc(OC)c(OC)2)1" ] ;
+    mbo:has_peak [ mbo:intensity 4.345e+03 ;
+            mbo:mz 3.420736e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.0047e+04 ;
+            mbo:mz 3.60084e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 3.40125e+05 ;
+            mbo:mz 3.75108e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.9314e+04 ;
+            mbo:mz 3.761112e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 174 ],
+        [ mbo:intensity 9.696e+03 ;
+            mbo:mz 3.771133e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 28 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.75108e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-0009000000-4d2c493586b5fcd4d1df" ;
+    rdfs:comment "[Raw Data] CB178_Casticin_pos_20eV_CB000067.txt" ;
+    skos:definition "Casticin; LC-ESI-QTOF; MS2; [M+H]+; CE: 20eV" .
+

@@ -1,0 +1,98 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ312252 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ312252" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "12.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[2-[1-(4-chlorobenzoyl)-5-methoxy-2-methyl-indol-3-yl]acetyl]oxyacetic acid",
+                "Acemetacin",
+                "Rantudil" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.150823e+02 ;
+            rdfs:seeAlso cas:53164-05-9,
+                chemspider:1904,
+                pubchem:CID1981 ;
+            schema:inChI "InChI=1S/C21H18ClNO6/c1-12-16(10-20(26)29-11-19(24)25)17-9-15(28-2)7-8-18(17)23(12)21(27)13-3-5-14(22)6-4-13/h3-9H,10-11H2,1-2H3,(H,24,25)" ;
+            schema:inChIKey inchikey:FSQKKOOTNAMONP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H18ClNO6" ;
+            schema:name "2-[2-[1-(4-chlorobenzoyl)-5-methoxy-2-methyl-indol-3-yl]acetyl]oxyacetic acid",
+                "Acemetacin",
+                "Rantudil" ;
+            schema:smiles "Clc1ccc(cc1)C(=O)n3c2ccc(OC)cc2c(c3C)CC(=O)OCC(=O)O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 5.128871e+05 ;
+            mbo:mz 7.29932e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.636569e+06 ;
+            mbo:mz 3.120798e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 8.194329e+07 ;
+            mbo:mz 7.50088e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.383516e+05 ;
+            mbo:mz 1.110007e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.189735e+05 ;
+            mbo:mz 1.58061e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.331181e+05 ;
+            mbo:mz 2.550458e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 6.775319e+05 ;
+            mbo:mz 2.690614e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.072184e+06 ;
+            mbo:mz 2.700692e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.868634e+06 ;
+            mbo:mz 2.970562e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.260393e+05 ;
+            mbo:mz 3.010503e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.140755e+02 ;
+            mbo:precursor_mz 4.14075e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-004i-9000000000-5022ac71b0218e05c255" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3122" ;
+    skos:definition "Acemetacin; LC-ESI-QFT; MS2; CE: 30; R=35000; [M-H]-" .
+

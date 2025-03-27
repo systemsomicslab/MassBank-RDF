@@ -1,0 +1,47 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000249 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000249" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QuattroPremier XE, Waters" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bromoxynil" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.748581e+02 ;
+            rdfs:seeAlso cas:1689-84-5 ;
+            schema:inChI "InChI=1S/C7H3Br2NO/c8-5-1-4(3-10)2-6(9)7(5)11/h1-2,11H" ;
+            schema:inChIKey inchikey:UPMXNNIRAGDFEH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H3Br2NO" ;
+            schema:name "Bromoxynil" ;
+            schema:smiles "N#Cc(c1)cc(Br)c(O)c(Br)1" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.76e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 2.77e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.757e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004i-0090000000-ea42d282876c4e2f6dc4" ;
+    skos:definition "Bromoxynil; LC-ESI-QQ; MS2; CE:10 V; [M-H]-" .
+

@@ -1,0 +1,63 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO003356 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO003356" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Methylserine",
+                "a-Methylserine",
+                "alpha-Methylserine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.190582e+02 ;
+            rdfs:seeAlso <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5195> ;
+            schema:inChI "InChI=1S/C4H9NO3/c1-4(5,2-6)3(7)8/h6H,2,5H2,1H3,(H,7,8)" ;
+            schema:inChIKey inchikey:CDUUKBXTEOFITR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H9NO3" ;
+            schema:name "2-Methylserine",
+                "a-Methylserine",
+                "alpha-Methylserine" ;
+            schema:smiles "OCC(C)(N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 4.21e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 549 ],
+        [ mbo:intensity 9.901e+04 ;
+            mbo:mz 5.61e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.9406e+04 ;
+            mbo:mz 5.71e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 599 ],
+        [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 5.88e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 3.46535e+04 ;
+            mbo:mz 7.4e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 350 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.2e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-fe0c317b13d725fec063" ;
+    rdfs:comment "KEIO_ID M025" ;
+    skos:definition "alpha-Methylserine; LC-ESI-QQ; MS2; CE:50 V; [M+H]+" .
+

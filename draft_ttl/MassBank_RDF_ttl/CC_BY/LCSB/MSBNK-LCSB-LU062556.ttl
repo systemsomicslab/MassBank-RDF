@@ -1,0 +1,88 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU062556 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU062556" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "90" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "15.322 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,3-bis(4-hydroxyphenyl)-1H-indol-2-one",
+                "Oxyphenisatin",
+                "Oxyphenisatine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.171052e+02 ;
+            rdfs:seeAlso cas:125-13-3,
+                chemspider:29053,
+                pubchem:CID31315 ;
+            schema:inChI "InChI=1S/C20H15NO3/c22-15-9-5-13(6-10-15)20(14-7-11-16(23)12-8-14)17-3-1-2-4-18(17)21-19(20)24/h1-12,22-23H,(H,21,24)" ;
+            schema:inChIKey inchikey:SJDACOMXKWHBOW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H15NO3" ;
+            schema:name "3,3-bis(4-hydroxyphenyl)-1H-indol-2-one",
+                "Oxyphenisatin",
+                "Oxyphenisatine" ;
+            schema:smiles "OC1=CC=C(C=C1)C1(C(=O)NC2=CC=CC=C12)C1=CC=C(O)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 2.07986e+04 ;
+            mbo:mz 9.30346e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 716 ],
+        [ mbo:intensity 4.7341e+03 ;
+            mbo:mz 1.1803e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 163 ],
+        [ mbo:intensity 4.1861e+03 ;
+            mbo:mz 1.660662e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 1.715e+04 ;
+            mbo:mz 1.940612e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 590 ],
+        [ mbo:intensity 3.1815e+03 ;
+            mbo:mz 2.210483e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 2.90345e+04 ;
+            mbo:mz 2.220561e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.727e+03 ;
+            mbo:mz 2.230637e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 163 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.129857e+02 ;
+            mbo:precursor_mz 3.160979e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-006x-5690000000-818f67e84912bbe27566" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Oxyphenisatin; LC-ESI-QFT; MS2; CE: 90; R=17500; [M-H]-" .
+

@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Metabolon-MT000123 a mbo:MassSpectrum ;
+    dcterms:creator "Evans A M, Mitchell M, DeHaven C D, Barrett T, Milgram E, Metabolon Inc." ;
+    dcterms:date "2016-01-19 (Created 2009-08-07, modified 2012-10-30)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Metabolon-MT000123" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2003-2009 Metabolon, Inc. under CC BY-NC-ND" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ XL, Thermo Finnigan" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Pyridoxic acid",
+                "pyridoxate" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.830532e+02 ;
+            rdfs:seeAlso cas:82-82-6 ;
+            schema:inChI "InChI=1S/C8H9NO4/c1-4-7(11)6(8(12)13)5(3-10)2-9-4/h2,10-11H,3H2,1H3,(H,12,13)" ;
+            schema:inChIKey inchikey:HXACOUQIXZGNBF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H9NO4" ;
+            schema:name "4-Pyridoxic acid",
+                "pyridoxate" ;
+            schema:smiles "OCc(c1)c(C(O)=O)c(O)c(C)n1" ] ;
+    mbo:has_peak [ mbo:intensity 6e-01 ;
+            mbo:mz 1.082e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 1.372e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.381e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.9e+00 ;
+            mbo:mz 1.391e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 2e-01 ;
+            mbo:mz 1.641e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7e-01 ;
+            mbo:mz 1.822e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.821e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-0900000000-79e29b063e250dd7037b" ;
+    skos:definition "4-Pyridoxic acid; LC-ESI-IT; MS2; m/z: 182.1; [M-H]-" .
+

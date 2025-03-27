@@ -1,0 +1,64 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN119013 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN119013" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "5 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.150 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2-ethyl-5-hydroxyhexyl) diphenyl phosphate",
+                "2-Ethyl-5-hydroxyhexyl diphenyl phosphate",
+                "5-Hydroxy-2-ethylhexyl diphenyl phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.781596e+02 ;
+            rdfs:seeAlso chemspider:107438697,
+                pubchem:CID134818005 ;
+            schema:inChI "InChI=1S/C20H27O5P/c1-3-18(15-14-17(2)21)16-23-26(22,24-19-10-6-4-7-11-19)25-20-12-8-5-9-13-20/h4-13,17-18,21H,3,14-16H2,1-2H3" ;
+            schema:inChIKey inchikey:PZMFWNXABLTZRN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H27O5P" ;
+            schema:name "(2-ethyl-5-hydroxyhexyl) diphenyl phosphate",
+                "2-Ethyl-5-hydroxyhexyl diphenyl phosphate",
+                "5-Hydroxy-2-ethylhexyl diphenyl phosphate" ;
+            schema:smiles "CCC(CCC(C)O)COP(=O)(Oc1ccccc1)Oc2ccccc2" ] ;
+    mbo:has_peak [ mbo:intensity 5.6804e+04 ;
+            mbo:mz 2.730292e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 205 ],
+        [ mbo:intensity 2.9862e+03 ;
+            mbo:mz 2.740325e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.766783e+05 ;
+            mbo:mz 4.011494e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.011515e+02 ;
+            mbo:precursor_mz 4.011488e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-0010900000-fac6bb662d77d74eeb04" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "5-Hydroxy-2-ethylhexyl diphenyl phosphate; LC-ESI-QTOF; MS2; CE: 5eV; R=7000; [M+Na]+" .
+

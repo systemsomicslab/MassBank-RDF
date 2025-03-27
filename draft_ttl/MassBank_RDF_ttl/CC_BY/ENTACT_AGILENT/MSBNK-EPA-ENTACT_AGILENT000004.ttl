@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000004 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000004" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-Bis(butylamino)anthracene-9,10-dione",
+                "DTXSID5044605" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.501994e+02 ;
+            rdfs:seeAlso cas:17354-14-2,
+                pubchem:CID3766139 ;
+            schema:inChI "InChI=1S/C22H26N2O2/c1-3-5-13-23-17-11-12-18(24-14-6-4-2)20-19(17)21(25)15-9-7-8-10-16(15)22(20)26/h7-12,23-24H,3-6,13-14H2,1-2H3" ;
+            schema:inChIKey inchikey:OCQDPIXQTSYZJL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H26N2O2" ;
+            schema:name "1,4-Bis(butylamino)anthracene-9,10-dione",
+                "DTXSID5044605" ;
+            schema:smiles "CCCCNC1=CC=C(NCCCC)C2=C1C(=O)C1C=CC=CC=1C2=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.397506e+00 ;
+            mbo:mz 1.960757e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 3.373885e+00 ;
+            mbo:mz 2.230628e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 1.869386e+01 ;
+            mbo:mz 2.230866e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 187 ],
+        [ mbo:intensity 1.61562e+00 ;
+            mbo:mz 2.240706e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.257928e+00 ;
+            mbo:mz 2.250784e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.510815e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.671863e+00 ;
+            mbo:mz 2.51143e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.185169e+00 ;
+            mbo:mz 2.511669e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.231495e+00 ;
+            mbo:mz 2.520893e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.512067e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0udi-0090000000-37af9fef625ae974c8fa" ;
+    skos:definition "1,4-Bis(butylamino)anthracene-9,10-dione; ESI-QTOF; MS2; CE: 40; [M+H]+" .
+

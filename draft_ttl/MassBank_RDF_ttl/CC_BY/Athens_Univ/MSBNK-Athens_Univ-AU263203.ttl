@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU263203 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU263203" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "13.426 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-tert-butyl-5-[(4-tert-butylphenyl)methylsulfanyl]-4-chloropyridazin-3-one",
+                "Pyridaben" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.641376e+02 ;
+            rdfs:seeAlso cas:2793-06-8,
+                chemspider:82852,
+                pubchem:CID91754 ;
+            schema:inChI "InChI=1S/C19H25ClN2OS/c1-18(2,3)14-9-7-13(8-10-14)12-24-15-11-21-22(19(4,5)6)17(23)16(15)20/h7-11H,12H2,1-6H3" ;
+            schema:inChIKey inchikey:DWFZBUWUXWZWKD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H25ClN2OS" ;
+            schema:name "2-tert-butyl-5-[(4-tert-butylphenyl)methylsulfanyl]-4-chloropyridazin-3-one",
+                "Pyridaben" ;
+            schema:smiles "CC(C)(C)N1N=CC(SCC2=CC=C(C=C2)C(C)(C)C)=C(Cl)C1=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.3816e+04 ;
+            mbo:mz 1.170692e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.6572e+04 ;
+            mbo:mz 1.190848e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 1.10732e+05 ;
+            mbo:mz 1.320926e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 2.363888e+06 ;
+            mbo:mz 1.471164e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.29856e+05 ;
+            mbo:mz 1.481194e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 1.50356e+05 ;
+            mbo:mz 3.090824e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 2.7452e+04 ;
+            mbo:mz 3.100852e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 4.9224e+04 ;
+            mbo:mz 3.11079e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.651452e+02 ;
+            mbo:precursor_mz 3.651449e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0002-0900000000-07cc27e240b9f7970542" ;
+    rdfs:comment "INTERNAL_ID 2632" ;
+    skos:definition "Pyridaben; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

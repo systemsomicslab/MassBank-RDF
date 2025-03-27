@@ -1,0 +1,96 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00125 a mbo:MassSpectrum ;
+    dcterms:creator "Lege S, Zwiener C, Environmental Analytical Chemistry (EAC), University of Tuebingen" ;
+    dcterms:date "2015-11-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00125" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015, Environmental Analytical Chemistry (EAC), University of Tuebingen, Germany under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "6550 Q-TOF (Agilent Technologies)" ;
+            mbo:collision_energy "10.0V" ;
+            mbo:column_name "Flow injection" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "12000 (m/z 120) - 26000 (m/z 1000)" ;
+            mbo:solvent " ",
+                "%",
+                "(",
+                ")",
+                "+",
+                ".",
+                "0",
+                "1",
+                "2",
+                "5",
+                ":",
+                "A",
+                "H",
+                "M",
+                "N",
+                "O",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "m",
+                "n",
+                "o",
+                "t",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2',4,4'-tetrahydroxybenzophenone",
+                "Benzophenone-2" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.460528e+02 ;
+            rdfs:seeAlso chemspider:8253,
+                pubchem:CID8571 ;
+            schema:inChI "InChI=1S/C13H10O5/c14-7-1-3-9(11(16)5-7)13(18)10-4-2-8(15)6-12(10)17/h1-6,14-17H" ;
+            schema:inChIKey inchikey:WXNRYSGJLQFHBR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H10O5" ;
+            schema:name "2,2',4,4'-tetrahydroxybenzophenone",
+                "Benzophenone-2" ;
+            schema:smiles "c1cc(c(cc1O)O)C(=O)c2ccc(cc2O)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.021e+03 ;
+            mbo:mz 9.10188e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 5.3932e+04 ;
+            mbo:mz 1.090295e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 383 ],
+        [ mbo:intensity 1.40815e+05 ;
+            mbo:mz 1.350088e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.12e+02 ;
+            mbo:mz 1.809892e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.475e+03 ;
+            mbo:mz 2.010553e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.05891e+05 ;
+            mbo:mz 2.450456e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 751 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.450455e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000j-0940000000-51704d0fe1631fd3e4d2" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Benzophenone-2; LC-ESI-QTOF; MS2; CE: 10.0V; [M-H]-" .
+

@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU251901 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-04-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU251901" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.645 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[(4R,5S,6S,7R,9R,11E,13E,15R,16R)-6-[(2R,3R,4R,5S,6R)-5-[(2S,4R,5S,6S)-4,5-dihydroxy-4,6-dimethyloxan-2-yl]oxy-4-(dimethylamino)-3-hydroxy-6-methyloxan-2-yl]oxy-16-ethyl-4-hydroxy-15-[[(2R,3R,4R,5R,6R)-5-hydroxy-3,4-dimethoxy-6-methyloxan-2-yl]oxymethyl]-5,9,13-trimethyl-2,10-dioxo-1-oxacyclohexadeca-11,13-dien-7-yl]acetaldehyde",
+                "Tylosin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 9.155191e+02 ;
+            rdfs:seeAlso cas:1401-69-0,
+                chemspider:4444097,
+                pubchem:CID5280440 ;
+            schema:inChI "InChI=1S/C46H77NO17/c1-13-33-30(22-58-45-42(57-12)41(56-11)37(52)26(5)60-45)18-23(2)14-15-31(49)24(3)19-29(16-17-48)39(25(4)32(50)20-34(51)62-33)64-44-38(53)36(47(9)10)40(27(6)61-44)63-35-21-46(8,55)43(54)28(7)59-35/h14-15,17-18,24-30,32-33,35-45,50,52-55H,13,16,19-22H2,1-12H3/b15-14+,23-18+/t24-,25+,26-,27-,28+,29+,30-,32-,33-,35+,36-,37-,38-,39-,40-,41-,42-,43+,44+,45-,46-/m1/s1" ;
+            schema:inChIKey inchikey:WBPYTXDJUQJLPQ-VMXQISHHSA-N ;
+            schema:molecularFormula "C46H77NO17" ;
+            schema:name "2-[(4R,5S,6S,7R,9R,11E,13E,15R,16R)-6-[(2R,3R,4R,5S,6R)-5-[(2S,4R,5S,6S)-4,5-dihydroxy-4,6-dimethyloxan-2-yl]oxy-4-(dimethylamino)-3-hydroxy-6-methyloxan-2-yl]oxy-16-ethyl-4-hydroxy-15-[[(2R,3R,4R,5R,6R)-5-hydroxy-3,4-dimethoxy-6-methyloxan-2-yl]oxymethyl]-5,9,13-trimethyl-2,10-dioxo-1-oxacyclohexadeca-11,13-dien-7-yl]acetaldehyde",
+                "Tylosin" ;
+            schema:smiles "CC[C@H]1OC(=O)C[C@@H](O)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)[C@@H](O[C@H]3C[C@@](C)(O)[C@@H](O)[C@H](C)O3)[C@@H]([C@H]2O)N(C)C)[C@@H](CC=O)C[C@@H](C)C(=O)\\C=C\\C(\\C)=C\\[C@@H]1CO[C@@H]1O[C@H](C)[C@@H](O)[C@@H](OC)[C@H]1OC" ] ;
+    mbo:has_peak [ mbo:intensity 3.12e+02 ;
+            mbo:mz 1.7411e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.6604e+04 ;
+            mbo:mz 9.165292e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.452e+03 ;
+            mbo:mz 9.17533e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 509 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.637237e+02 ;
+            mbo:precursor_mz 9.165264e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-0000000009-69b5afc6b7842bc05e46" ;
+    rdfs:comment "INTERNAL_ID 2519" ;
+    skos:definition "Tylosin; LC-ESI-QTOF; MS2; CE: 10 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01130502 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01130502" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "9.373 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-diethoxyphosphinothioyloxy-2-phenylpyridazin-3-one",
+                "Pyridaphenthion" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.400647e+02 ;
+            rdfs:seeAlso cas:119-12-0,
+                chemspider:8078,
+                pubchem:CID8381 ;
+            schema:inChI "InChI=1S/C14H17N2O4PS/c1-3-18-21(22,19-4-2)20-13-10-11-14(17)16(15-13)12-8-6-5-7-9-12/h5-11H,3-4H2,1-2H3" ;
+            schema:inChIKey inchikey:CXJSOEPQXUCJSA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H17N2O4PS" ;
+            schema:name "6-diethoxyphosphinothioyloxy-2-phenylpyridazin-3-one",
+                "Pyridaphenthion" ;
+            schema:smiles "CCOP(=S)(OCC)OC1=NN(C(=O)C=C1)C2=CC=CC=C2" ] ;
+    mbo:has_peak [ mbo:intensity 1.26004e+06 ;
+            mbo:mz 1.149616e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8.549287e+07 ;
+            mbo:mz 3.410722e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 535 ],
+        [ mbo:intensity 2.27578e+06 ;
+            mbo:mz 1.249823e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.293732e+06 ;
+            mbo:mz 1.870321e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.597265e+08 ;
+            mbo:mz 1.89066e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.994539e+07 ;
+            mbo:mz 2.050432e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 437 ],
+        [ mbo:intensity 3.148919e+06 ;
+            mbo:mz 2.170976e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 4.844809e+06 ;
+            mbo:mz 2.330743e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.704343e+07 ;
+            mbo:mz 2.850096e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 2.825338e+07 ;
+            mbo:mz 3.130409e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 177 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.410719e+02 ;
+            mbo:precursor_mz 3.410719e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-000i-0956000000-903bfc9b911222d34033" ;
+    rdfs:comment "UCHEM_ID 11305" ;
+    skos:definition "Pyridaphenthion; LC-ESI-QFT; MS2; CE: 30%; R=17500; [M+H]+" .
+

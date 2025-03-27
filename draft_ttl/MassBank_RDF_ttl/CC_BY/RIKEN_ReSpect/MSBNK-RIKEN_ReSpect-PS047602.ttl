@@ -1,0 +1,95 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS047602 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS047602" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Acetamido-2-deoxy-D-mannopyranose",
+                "ManNAc",
+                "N-Acetyl-D-mannosaminide",
+                "N-acetyl-D-mannosamine" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Sugar CLASS3 Monosaccharide" ;
+            mbo:ch_exact_mass 2.21209e+02 ;
+            rdfs:seeAlso cas:3615-17-6,
+                pubchem:CID439281 ;
+            schema:inChI "InChI=1S/C8H15NO6/c1-3(11)9-5-7(13)6(12)4(2-10)15-8(5)14/h4-8,10,12-14H,2H2,1H3,(H,9,11)" ;
+            schema:inChIKey inchikey:OVRNDRQMDRJTHS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H15NO6" ;
+            schema:name "2-Acetamido-2-deoxy-D-mannopyranose",
+                "ManNAc",
+                "N-Acetyl-D-mannosaminide",
+                "N-acetyl-D-mannosamine" ;
+            schema:smiles "CC(=O)NC1C(C(C(OC1O)CO)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.959e+03 ;
+            mbo:mz 8.4e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.1748e+04 ;
+            mbo:mz 1.86e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 225 ],
+        [ mbo:intensity 6.255e+03 ;
+            mbo:mz 2.04e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 2.227e+03 ;
+            mbo:mz 9.8e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 5.799e+03 ;
+            mbo:mz 1.25e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 5.2095e+04 ;
+            mbo:mz 1.26e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.068e+03 ;
+            mbo:mz 1.37e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 2.8356e+04 ;
+            mbo:mz 1.38e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 544 ],
+        [ mbo:intensity 9.96e+03 ;
+            mbo:mz 1.44e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 191 ],
+        [ mbo:intensity 5.514e+03 ;
+            mbo:mz 1.68e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 2.123e+03 ;
+            mbo:mz 1.85e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 41 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.2227e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-004r-0900000000-537a6a67bb374e47de41" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "2-Acetamido-2-deoxy-D-mannopyranose, ManNAc, N-Acetyl-D-mannosaminide, N-acetyl-D-mannosamine; LC-ESI-QQ; MS2" .
+

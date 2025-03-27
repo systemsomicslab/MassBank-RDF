@@ -1,0 +1,59 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS043602 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS043602" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1R,2S,5R)-2-Isopropyl-5-methylcyclohexanol",
+                "5-Methyl-2-(1-methylethyl)cyclohexanol",
+                "L-Hexahydrothymol",
+                "L-menthol",
+                "L-p-Menthan-3-ol",
+                "Menthyl alcohol" ;
+            mbo:ch_compound_class "CLASS1 Terpenoid CLASS2 Monoterpenoid CLASS3 Menthol" ;
+            mbo:ch_exact_mass 1.56269e+02 ;
+            rdfs:seeAlso cas:2216-51-5,
+                pubchem:CID16666 ;
+            schema:inChI "InChI=1S/C10H20O/c1-7(2)9-5-4-8(3)6-10(9)11/h7-11H,4-6H2,1-3H3" ;
+            schema:inChIKey inchikey:NOOLISFMXDJSKH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H20O" ;
+            schema:name "(1R,2S,5R)-2-Isopropyl-5-methylcyclohexanol",
+                "5-Methyl-2-(1-methylethyl)cyclohexanol",
+                "L-Hexahydrothymol",
+                "L-menthol",
+                "L-p-Menthan-3-ol",
+                "Menthyl alcohol" ;
+            schema:smiles "CC1CCC(C(C1)O)C(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.37154e+05 ;
+            mbo:mz 6.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.5625e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-014i-9000000000-f647da344adbdf7bfb1b" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "L-Hexahydrothymol, Menthyl alcohol, L-menthol, (1R,2S,5R)-2-Isopropyl-5-methylcyclohexanol, 5-Methyl-2-(1-methylethyl)cyclohexanol, L-p-Menthan-3-ol; LC-ESI-QQ; MS2" .
+

@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA025503 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA025503" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "11.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2-dimethyl-N-(phenylmethyl)-N-propan-2-yl-propanamide",
+                "N-Benzyl-N-isopropylpivalamide",
+                "Tebutam" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.331774e+02 ;
+            rdfs:seeAlso cas:35256-85-0,
+                chemspider:83330,
+                pubchem:CID92299 ;
+            schema:inChI "InChI=1S/C15H23NO/c1-12(2)16(14(17)15(3,4)5)11-13-9-7-6-8-10-13/h6-10,12H,11H2,1-5H3" ;
+            schema:inChIKey inchikey:RJKCKKDSSSRYCB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H23NO" ;
+            schema:name "2,2-dimethyl-N-(phenylmethyl)-N-propan-2-yl-propanamide",
+                "N-Benzyl-N-isopropylpivalamide",
+                "Tebutam" ;
+            schema:smiles "c1ccccc1CN(C(=O)C(C)(C)C)C(C)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.094527e+05 ;
+            mbo:mz 5.70699e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.064051e+05 ;
+            mbo:mz 8.40808e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.905909e+06 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 283 ],
+        [ mbo:intensity 2.989e+04 ;
+            mbo:mz 1.140914e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.1853e+04 ;
+            mbo:mz 1.261282e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.61801e+04 ;
+            mbo:mz 1.331012e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.151543e+05 ;
+            mbo:mz 1.421227e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 6.799891e+05 ;
+            mbo:mz 1.921385e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 1.025063e+07 ;
+            mbo:mz 2.341854e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.341857e+02 ;
+            mbo:precursor_mz 2.341852e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-001i-2090000000-b3b41fa81a13df8a041a" ;
+    rdfs:comment "EAWAG_UCHEM_ID 255" ;
+    skos:definition "Tebutam; LC-ESI-ITFT; MS2; CE: 30%; R=7500; [M+H]+" .
+

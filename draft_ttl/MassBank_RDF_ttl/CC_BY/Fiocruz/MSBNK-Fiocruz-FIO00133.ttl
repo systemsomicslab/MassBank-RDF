@@ -1,0 +1,106 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00133 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00133" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hesperetin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 3.02079e+02 ;
+            rdfs:seeAlso cas:520-33-2,
+                knapsack:C00000968,
+                pubchem:CID4847 ;
+            schema:inChI "InChI=1S/C16H14O6/c1-21-13-3-2-8(4-10(13)18)14-7-12(20)16-11(19)5-9(17)6-15(16)22-14/h2-6,14,17-19H,7H2,1H3/t14-/m0/s1" ;
+            schema:inChIKey inchikey:AIONOLUJZLIMTK-AWEZNQCLSA-N ;
+            schema:molecularFormula "C16H14O6" ;
+            schema:name "Hesperetin" ;
+            schema:smiles "COc(c3)c(O)cc(c3)[C@H](C1)Oc(c2)c(c(O)cc(O)2)C(=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.1384e+04 ;
+            mbo:mz 1.170336e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 8.179e+03 ;
+            mbo:mz 1.540216e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 5.96e+03 ;
+            mbo:mz 1.63039e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.9496e+04 ;
+            mbo:mz 1.770545e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 1.829e+03 ;
+            mbo:mz 1.780579e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.642e+03 ;
+            mbo:mz 1.790338e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.938e+03 ;
+            mbo:mz 1.230441e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.776e+03 ;
+            mbo:mz 1.340363e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.308e+03 ;
+            mbo:mz 1.350438e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.659e+03 ;
+            mbo:mz 1.370597e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 9.886e+03 ;
+            mbo:mz 1.450284e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 1.8256e+04 ;
+            mbo:mz 1.490598e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 1.563e+03 ;
+            mbo:mz 1.50063e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.48251e+05 ;
+            mbo:mz 1.530184e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.530184e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0udi-0900000000-8857224e3cadbbf71a7d" ;
+    rdfs:comment "[Raw Data] CB046_Hesperetin_pos_40eV_CB000021.txt" ;
+    skos:definition "Hesperetin; LC-ESI-QTOF; MS2; [M+H]+; CE: 40eV" .
+

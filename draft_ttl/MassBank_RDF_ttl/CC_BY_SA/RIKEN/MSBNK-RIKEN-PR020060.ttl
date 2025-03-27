@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR020060 a mbo:MassSpectrum ;
+    dcterms:creator "Tohge T, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2007-08-31, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR020060" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "5.0 V" ;
+            mbo:column_name "ACQUITY UPLC BEH C18 2.1 by 100 mm (Waters, Milford, MA,USA)" ;
+            mbo:flow_gradient "0/100 at 0 min, 15/85 at 5 min, 21/79 at 20 min, 90/10 at 24 min, 95/5 at 26 min, 0/100, 30 min." ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "12.37 min" ;
+            mbo:solvent "A CH3CN(0.1%TFA)",
+                "B H2O(0.1%TFA)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Luteolin-4'-O-glucoside" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.481006e+02 ;
+            rdfs:seeAlso cas:6920-38-3 ;
+            schema:inChI "InChI=1S/C21H20O11/c22-7-16-18(27)19(28)20(29)21(32-16)31-13-2-1-8(3-10(13)24)14-6-12(26)17-11(25)4-9(23)5-15(17)30-14/h1-6,16,18-25,27-29H,7H2/t16-,18-,19+,20-,21-/m1/s1" ;
+            schema:inChIKey inchikey:UHNXUSWGOJMEFO-QNDFHXLGSA-N ;
+            schema:molecularFormula "C21H20O11" ;
+            schema:name "Luteolin-4'-O-glucoside" ;
+            schema:smiles "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.807e+03 ;
+            mbo:mz 4.491161e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.521e+03 ;
+            mbo:mz 4.501407e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 155 ],
+        [ mbo:intensity 3.932e+02 ;
+            mbo:mz 4.511138e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.64e+02 ;
+            mbo:mz 4.520768e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 17 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0002-0000900000-3921c443e2d4f6da586e" ;
+    skos:definition "Luteolin-4'-O-glucoside; LC-ESI-QTOF; MS" .
+

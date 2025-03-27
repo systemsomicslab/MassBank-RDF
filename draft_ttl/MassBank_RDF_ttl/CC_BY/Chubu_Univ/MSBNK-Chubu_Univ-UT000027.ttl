@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT000027 a mbo:MassSpectrum ;
+    dcterms:creator "Nakanishi H, Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2007-10-19, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT000027" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "4000Q TRAP, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(+-)12-HEPE",
+                "(5Z,8Z,10E,12S,14Z,17Z)-12-Hydroxy-5,8,10,14,17-icosapentaenoic acid",
+                "12-HEPE",
+                "12-hydroxy-5Z,8Z,10E,14Z,17Z-eicosapentaenoic acid" ;
+            mbo:ch_compound_class "Natural Product; Lipid; Fatty acid" ;
+            mbo:ch_exact_mass 3.182195e+02 ;
+            rdfs:seeAlso cas:81187-21-5 ;
+            schema:inChI "InChI=1S/C20H30O3/c1-2-3-4-5-10-13-16-19(21)17-14-11-8-6-7-9-12-15-18-20(22)23/h3-4,7-11,13-14,17,19,21H,2,5-6,12,15-16,18H2,1H3,(H,22,23)/b4-3-,9-7-,11-8-,13-10-,17-14+/t19-/m0/s1" ;
+            schema:inChIKey inchikey:MCRJLMXYVFDXLS-UOLHMMFFSA-N ;
+            schema:molecularFormula "C20H30O3" ;
+            schema:name "(+-)12-HEPE",
+                "(5Z,8Z,10E,12S,14Z,17Z)-12-Hydroxy-5,8,10,14,17-icosapentaenoic acid",
+                "12-HEPE",
+                "12-hydroxy-5Z,8Z,10E,14Z,17Z-eicosapentaenoic acid" ;
+            schema:smiles "CCC=CCC=CCC(O)C=CC=CCC=CCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.5e+04 ;
+            mbo:mz 2.4512e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.875e+04 ;
+            mbo:mz 3.172e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 749 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-00kb-0096000000-338d4a0e8471233f50ac" ;
+    skos:definition "12-HEPE; LC-ESI-QIT; MS2; CE:50 V; [M-H]-" .
+

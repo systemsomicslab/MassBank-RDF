@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100700 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100700" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "L-Saccharopine",
+                "N6-(L-1,3-dicarboxylpropyl)-L-lysine",
+                "epsilon-N-(L-glutar-2-yl)-L-lysine" ;
+            mbo:ch_compound_class "Amino acids" ;
+            mbo:ch_exact_mass 2.761321e+02 ;
+            rdfs:seeAlso cas:997-68-2,
+                chemspider:141086,
+                knapsack:C00007227,
+                pubchem:CID160556 ;
+            schema:inChI "InChI=1S/C11H20N2O6/c12-7(10(16)17)3-1-2-6-13-8(11(18)19)4-5-9(14)15/h7-8,13H,1-6,12H2,(H,14,15)(H,16,17)(H,18,19)/t7-,8-/m0/s1" ;
+            schema:inChIKey inchikey:ZDGJAHTZVHVLOT-YUMQZZPRSA-N ;
+            schema:molecularFormula "C11H20N2O6" ;
+            schema:name "L-Saccharopine",
+                "N6-(L-1,3-dicarboxylpropyl)-L-lysine",
+                "epsilon-N-(L-glutar-2-yl)-L-lysine" ;
+            schema:smiles "OC(=O)CCC(NCCCCC(N)C(O)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.321e+02 ;
+            mbo:mz 1.450972e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 1.639e+02 ;
+            mbo:mz 1.960976e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 238 ],
+        [ mbo:intensity 8.437e+01 ;
+            mbo:mz 2.131231e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 6.878e+02 ;
+            mbo:mz 2.57113e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.689e+02 ;
+            mbo:mz 2.751243e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 245 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.751243e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4i-0290000000-c0b375ed0505ad2eab6c" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "L-Saccharopine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

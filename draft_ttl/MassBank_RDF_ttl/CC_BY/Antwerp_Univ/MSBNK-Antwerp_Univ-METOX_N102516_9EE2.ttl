@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N102516_9EE2 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N102516_9EE2" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.748 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cholesteryl linoleate",
+                "[(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl] (9Z,12Z)-octadeca-9,12-dienoate" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 6.485845e+02 ;
+            rdfs:seeAlso cas:604-33-1,
+                chemspider:4450205,
+                pubchem:CID5287939 ;
+            schema:inChI "InChI=1S/C45H76O2/c1-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-25-43(46)47-38-30-32-44(5)37(34-38)26-27-39-41-29-28-40(36(4)24-22-23-35(2)3)45(41,6)33-31-42(39)44/h11-12,14-15,26,35-36,38-42H,7-10,13,16-25,27-34H2,1-6H3/b12-11-,15-14-/t36-,38+,39+,40-,41+,42+,44+,45-/m1/s1" ;
+            schema:inChIKey inchikey:NAACPBBQTFFYQB-LJAITQKLSA-N ;
+            schema:molecularFormula "C45H76O2" ;
+            schema:name "Cholesteryl linoleate",
+                "[(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl] (9Z,12Z)-octadeca-9,12-dienoate" ;
+            schema:smiles "CCCCC/C=C\\C/C=C\\CCCCCCCC(=O)O[C@H]1CC[C@@]2([C@H]3CC[C@]4([C@H]([C@@H]3CC=C2C1)CC[C@@H]4[C@H](C)CCCC(C)C)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.348e+02 ;
+            mbo:mz 7.10839e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 7.92e+01 ;
+            mbo:mz 1.170667e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 4.85e+01 ;
+            mbo:mz 1.35115e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4e+01 ;
+            mbo:mz 2.732525e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 9.244e+02 ;
+            mbo:mz 3.032304e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 2.106e+02 ;
+            mbo:mz 3.042324e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 5.85e+01 ;
+            mbo:mz 4.592763e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 8.435e+03 ;
+            mbo:mz 6.715735e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.569654e+02 ;
+            mbo:precursor_mz 6.715738e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-0001009000-ea10a805f649eab444e9" ;
+    rdfs:comment "INTERNAL_ID 1025" ;
+    skos:definition "Cholesteryl linoleate; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M+Na]+" .
+

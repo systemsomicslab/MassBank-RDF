@@ -1,0 +1,99 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR020002 a mbo:MassSpectrum ;
+    dcterms:creator "Tohge T, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2006-12-27, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR020002" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "5.0 V" ;
+            mbo:column_name "ACQUITY UPLC BEH C18 2.1 by 100 mm (Waters, Milford, MA,USA)" ;
+            mbo:flow_gradient "0/100 at 0 min, 15/85 at 5 min, 21/79 at 20 min, 90/10 at 24 min, 95/5 at 26 min, 0/100, 30 min." ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "6.13 min" ;
+            mbo:solvent "A CH3CN(0.1%TFA)",
+                "B H2O(0.1%TFA)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-3 3' 4' 5 7-Pentahydroxyflavan",
+                "(-)-Epicatechin",
+                "(2R,3R)-2-(3,4-dihydroxyphenyl)chroman-3,5,7-triol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.90079e+02 ;
+            rdfs:seeAlso cas:17334-50-8,
+                pubchem:CID72276 ;
+            schema:inChI "InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15-/m1/s1" ;
+            schema:inChIKey inchikey:PFTAWBLQPZVEMU-UKRRQHHQSA-N ;
+            schema:molecularFormula "C15H14O6" ;
+            schema:name "(-)-3 3' 4' 5 7-Pentahydroxyflavan",
+                "(-)-Epicatechin",
+                "(2R,3R)-2-(3,4-dihydroxyphenyl)chroman-3,5,7-triol" ;
+            schema:smiles "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.074e+01 ;
+            mbo:mz 2.730919e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.442e+01 ;
+            mbo:mz 5.8119e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 2.237e+01 ;
+            mbo:mz 9.222189e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.003e+01 ;
+            mbo:mz 9.232074e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.432e+02 ;
+            mbo:mz 2.890909e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 148 ],
+        [ mbo:intensity 4.229e+01 ;
+            mbo:mz 2.901104e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.64e+03 ;
+            mbo:mz 2.910992e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.605e+02 ;
+            mbo:mz 2.921084e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 6.443e+01 ;
+            mbo:mz 2.930871e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 2.332e+01 ;
+            mbo:mz 4.271178e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.91e+01 ;
+            mbo:mz 5.791809e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2.839e+01 ;
+            mbo:mz 5.801897e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 17 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0006-0090000000-53e575c7acf970449e84" ;
+    skos:definition "(-)-Epicatechin; LC-ESI-QTOF; MS" .
+

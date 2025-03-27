@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL23111013226 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111013226" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "130" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.062 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Inosine 5`-monophosphate" ;
+            mbo:ch_compound_class "Metabolite" ;
+            mbo:ch_exact_mass 3.480471e+02 ;
+            rdfs:seeAlso cas:131-99-7 ;
+            schema:inChI "InChI=1S/C10H13N4O8P/c15-6-4(1-21-23(18,19)20)22-10(7(6)16)14-3-13-5-8(14)11-2-12-9(5)17/h2-4,6-7,10,15-16H,1H2,(H,11,12,17)(H2,18,19,20)" ;
+            schema:inChIKey inchikey:GRSZFWQUAKGDAV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H13N4O8P" ;
+            schema:name "Inosine 5`-monophosphate" ;
+            schema:smiles "O=P(O)(O)OCC(O1)C(C(O)C1N(C=N2)C3=C2C(NC=N3)=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.3e+00 ;
+            mbo:mz 6.29634e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 6.7e+00 ;
+            mbo:mz 6.5014e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 8.88e+01 ;
+            mbo:mz 7.89586e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.470398e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-9000000000-abdbfe5a583adbb15ea5" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Inosine 5`-monophosphate; LC-ESI-QTOF; MS2; 130 V" .
+

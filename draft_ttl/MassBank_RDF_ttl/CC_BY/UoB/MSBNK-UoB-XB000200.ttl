@@ -1,0 +1,108 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000200 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham, UK" ;
+    dcterms:date "2022-11-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000200" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100 (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.078 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(4-ethylpiperazin-1-yl)-N-[4-(2-morpholin-4-yl-4-oxochromen-8-yl)dibenzothiophen-1-yl]acetamide",
+                "KU60648" ;
+            mbo:ch_compound_class "Non-Natural Product; Pharmaceutical drug" ;
+            mbo:ch_exact_mass 5.822301e+02 ;
+            rdfs:seeAlso cas:881375-00-4,
+                chemspider:10138130,
+                pubchem:CID11964036 ;
+            schema:inChI "InChI=1S/C33H34N4O4S/c1-2-35-12-14-36(15-13-35)21-29(39)34-26-11-10-23(33-31(26)25-6-3-4-9-28(25)42-33)22-7-5-8-24-27(38)20-30(41-32(22)24)37-16-18-40-19-17-37/h3-11,20H,2,12-19,21H2,1H3,(H,34,39)" ;
+            schema:inChIKey inchikey:AATCBLYHOUOCTO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C33H34N4O4S" ;
+            schema:name "2-(4-ethylpiperazin-1-yl)-N-[4-(2-morpholin-4-yl-4-oxochromen-8-yl)dibenzothiophen-1-yl]acetamide",
+                "KU60648" ;
+            schema:smiles "CCN1CCN(CC1)CC(Nc(ccc2c(ccc3)c4c3c(=O)cc(N5CCOCC5)o4)c6c2sc7c6cccc7)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.560845e+06 ;
+            mbo:mz 5.60496e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 8.610262e+06 ;
+            mbo:mz 4.291254e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 173 ],
+        [ mbo:intensity 5.175174e+06 ;
+            mbo:mz 4.41125e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 2.711648e+06 ;
+            mbo:mz 4.421297e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 4.972884e+07 ;
+            mbo:mz 5.83237e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.483251e+07 ;
+            mbo:mz 7.0065e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 700 ],
+        [ mbo:intensity 3.471623e+07 ;
+            mbo:mz 8.40807e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 697 ],
+        [ mbo:intensity 2.663777e+06 ;
+            mbo:mz 9.7076e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 7.93922e+06 ;
+            mbo:mz 9.80839e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 3.40146e+06 ;
+            mbo:mz 1.120997e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.014366e+07 ;
+            mbo:mz 1.27123e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 405 ],
+        [ mbo:intensity 2.488166e+06 ;
+            mbo:mz 2.62069e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 2.896784e+06 ;
+            mbo:mz 2.730617e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 58 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.832377e+02 ;
+            mbo:precursor_mz 5.832374e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-001i-9200150000-01399753a3c99365503b" ;
+    rdfs:comment "INTERNAL_ID 1298" ;
+    skos:definition "KU60648; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

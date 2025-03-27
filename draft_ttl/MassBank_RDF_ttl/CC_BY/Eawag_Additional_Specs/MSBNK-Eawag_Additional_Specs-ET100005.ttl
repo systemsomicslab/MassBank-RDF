@@ -1,0 +1,76 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET100005 a mbo:MassSpectrum ;
+    dcterms:creator "R. Gulde, E. Schymanski, K. Fenner, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-17 (Created 2015-09-25, modified 2016-02-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET100005" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde, R.; Meier, U.; Schymanski, E. L.; Kohler, H.-P. E.; Helbling, D. E.; Derrer, S.; Rentsch, D.; Fenner, K. Systematic Exploration of Biotransformation Reactions of Amine-Containing Micropollutants in Activated Sludge. Environmental Science & Technology 2016, 50 (6), 2908–20. DOI:10.1021/acs.est.5b05186" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15, 30, 45, 60, 70 or 90 (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters with guard column" ;
+            mbo:flow_gradient "95/5 at 0 min, 5/95 at 15 min, 5/95 at 20 min, 95/5 at 20.1 min, 95/5 at 25 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "14.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3S)-3-phenyl-3-[4-(trifluoromethyl)phenoxy]propan-1-amine",
+                "N-demethylfluoxetine (Norfluoxetine)",
+                "NFL_296.1257_14.5" ;
+            mbo:ch_compound_class "N/A; Environmental Reference Standard" ;
+            mbo:ch_exact_mass 2.951184e+02 ;
+            rdfs:seeAlso cas:126924-38-7,
+                chemspider:2319851,
+                pubchem:CID3058751 ;
+            schema:inChI "InChI=1S/C16H16F3NO/c17-16(18,19)13-6-8-14(9-7-13)21-15(10-11-20)12-4-2-1-3-5-12/h1-9,15H,10-11,20H2/t15-/m0/s1" ;
+            schema:inChIKey inchikey:WIQRCHMSJFFONW-HNNXBMFYSA-N ;
+            schema:molecularFormula "C16H16F3NO" ;
+            schema:name "(3S)-3-phenyl-3-[4-(trifluoromethyl)phenoxy]propan-1-amine",
+                "N-demethylfluoxetine (Norfluoxetine)",
+                "NFL_296.1257_14.5" ;
+            schema:smiles "NCC[C@H](Oc1ccc(cc1)C(F)(F)F)c1ccccc1" ] ;
+    mbo:has_peak [ mbo:intensity 2.3208e+03 ;
+            mbo:mz 7.90542e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 271 ],
+        [ mbo:intensity 7.7621e+03 ;
+            mbo:mz 8.70441e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 907 ],
+        [ mbo:intensity 2.5877e+03 ;
+            mbo:mz 9.10541e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 302 ],
+        [ mbo:intensity 8.5539e+03 ;
+            mbo:mz 1.050697e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.101409e+02 ;
+            mbo:precursor_mz 2.961257e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0a4r-9600000000-1c81d9b3f0df4c3c5cd1" ;
+    rdfs:comment "INTERNAL_ID 1000" ;
+    skos:definition "NFL_296.1257_14.5; LC-ESI-QFT; MS2; CE: 15-90; R=17500; [M+H]+" .
+

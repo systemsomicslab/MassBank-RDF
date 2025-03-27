@@ -1,0 +1,57 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB006085 a mbo:MassSpectrum ;
+    dcterms:creator "Heinz T, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2009-03-27, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB006085" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "micrOTOF-Q" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(2-aminoethyl)phenol",
+                "Tyramine" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.370841e+02 ;
+            rdfs:seeAlso pubchem:CID5610 ;
+            schema:inChI "InChI=1S/C8H11NO/c9-6-5-7-1-3-8(10)4-2-7/h1-4,10H,5-6,9H2" ;
+            schema:inChIKey inchikey:DZGWFCGJZKJUFP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H11NO" ;
+            schema:name "4-(2-aminoethyl)phenol",
+                "Tyramine" ;
+            schema:smiles "C1=CC(=CC=C1CCN)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.002e+01 ;
+            mbo:mz 1.03054e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.21063e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.20821e+02 ;
+            mbo:mz 1.22067e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 2.002e+01 ;
+            mbo:mz 1.38089e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00di-0900000000-65d023da9eb1b11298f7" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Tyramine; LC-ESI-QTOF; MS2; CE:10 eV; [M+H]+" .
+

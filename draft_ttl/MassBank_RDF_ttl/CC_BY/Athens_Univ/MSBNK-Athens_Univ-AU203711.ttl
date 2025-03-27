@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU203711 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU203711" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "1.767 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-Amino-4-chloro-2-methyl-3(2H)-pyridazinone",
+                "5-amino-4-chloro-2-methylpyridazin-3-one",
+                "Chloridazone-methyl-desphenyl" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.590199e+02 ;
+            rdfs:seeAlso cas:17254-80-7,
+                chemspider:516658,
+                pubchem:CID594330 ;
+            schema:inChI "InChI=1S/C5H6ClN3O/c1-9-5(10)4(6)3(7)2-8-9/h2H,7H2,1H3" ;
+            schema:inChIKey inchikey:XNSGCNYTNLWRKM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H6ClN3O" ;
+            schema:name "5-Amino-4-chloro-2-methyl-3(2H)-pyridazinone",
+                "5-amino-4-chloro-2-methylpyridazin-3-one",
+                "Chloridazone-methyl-desphenyl" ;
+            schema:smiles "ClC(=C(C=N1)N)C(=O)N1C" ] ;
+    mbo:has_peak [ mbo:intensity 3.96e+02 ;
+            mbo:mz 1.169968e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 532 ],
+        [ mbo:intensity 7.44e+02 ;
+            mbo:mz 1.300049e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.429929e+02 ;
+            mbo:precursor_mz 1.600272e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-00lr-0900000000-c70becc9884cf85f2899" ;
+    rdfs:comment "INTERNAL_ID 2037" ;
+    skos:definition "Chloridazone-methyl-desphenyl; LC-ESI-QTOF; MS2; HILIC; CE: 50 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,108 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ310502 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ310502" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "1.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tenofovir",
+                "[(1R)-2-adenin-9-yl-1-methyl-ethoxy]methylphosphonic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.870783e+02 ;
+            rdfs:seeAlso cas:147127-20-6,
+                chemspider:408154,
+                pubchem:CID464205 ;
+            schema:inChI "InChI=1S/C9H14N5O4P/c1-6(18-5-19(15,16)17)2-14-4-13-7-8(10)11-3-12-9(7)14/h3-4,6H,2,5H2,1H3,(H2,10,11,12)(H2,15,16,17)/t6-/m1/s1" ;
+            schema:inChIKey inchikey:SGOIRFVFHAKUTI-ZCFIWIBFSA-N ;
+            schema:molecularFormula "C9H14N5O4P" ;
+            schema:name "Tenofovir",
+                "[(1R)-2-adenin-9-yl-1-methyl-ethoxy]methylphosphonic acid" ;
+            schema:smiles "O=P(O)(O)CO[C@H](C)Cn1c2ncnc(c2nc1)N" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.274611e+05 ;
+            mbo:mz 5.90491e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.043155e+06 ;
+            mbo:mz 2.400644e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.118164e+05 ;
+            mbo:mz 2.520648e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.064512e+07 ;
+            mbo:mz 2.700751e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 9.078841e+07 ;
+            mbo:mz 2.880855e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.143546e+05 ;
+            mbo:mz 1.129998e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.410151e+05 ;
+            mbo:mz 1.350536e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.465719e+06 ;
+            mbo:mz 1.360618e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 4.249243e+05 ;
+            mbo:mz 1.530311e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.560927e+05 ;
+            mbo:mz 1.590663e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.232331e+07 ;
+            mbo:mz 1.760931e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 136 ],
+        [ mbo:intensity 2.581225e+05 ;
+            mbo:mz 1.941035e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.182266e+06 ;
+            mbo:mz 2.061037e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 46 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.570352e+02 ;
+            mbo:precursor_mz 2.880856e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-000i-0190000000-405fbe60309faffed10c" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3105" ;
+    skos:definition "Tenofovir; LC-ESI-QFT; MS2; CE: 30; R=35000; [M+H]+" .
+

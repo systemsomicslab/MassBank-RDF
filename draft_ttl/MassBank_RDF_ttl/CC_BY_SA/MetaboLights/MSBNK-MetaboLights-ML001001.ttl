@@ -1,0 +1,96 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML001001 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML001001" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "5.5 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-aminobenzoic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.370477e+02 ;
+            rdfs:seeAlso cas:99-05-8,
+                chemspider:7141,
+                pubchem:CID7419 ;
+            schema:inChI "InChI=1S/C7H7NO2/c8-6-3-1-2-5(4-6)7(9)10/h1-4H,8H2,(H,9,10)" ;
+            schema:inChIKey inchikey:XFDUHJPVQKIXHO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H7NO2" ;
+            schema:name "3-aminobenzoic acid" ;
+            schema:smiles "Nc1cccc(C(=O)O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 3.81572e+05 ;
+            mbo:mz 7.70387e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.690238e+07 ;
+            mbo:mz 1.38055e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.355727e+05 ;
+            mbo:mz 9.20495e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 5.055934e+05 ;
+            mbo:mz 9.30573e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 3.74813e+06 ;
+            mbo:mz 9.40651e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 3.059909e+05 ;
+            mbo:mz 9.50491e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.610485e+05 ;
+            mbo:mz 1.050447e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.133995e+05 ;
+            mbo:mz 1.100603e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.121258e+06 ;
+            mbo:mz 1.200444e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 8.087233e+05 ;
+            mbo:mz 1.210284e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 30 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.380549e+02 ;
+            mbo:precursor_mz 1.38055e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-000i-1900000000-b99ac73c3ae9561d99c9" ;
+    rdfs:comment "ML_ID 10" ;
+    skos:definition "3-aminobenzoic acid; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M+H]+" .
+

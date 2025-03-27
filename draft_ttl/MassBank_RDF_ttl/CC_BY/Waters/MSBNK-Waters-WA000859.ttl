@@ -1,0 +1,51 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000859 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000859" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "9.600 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Methamphetamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.491205e+02 ;
+            rdfs:seeAlso cas:537-46-2 ;
+            schema:inChI "InChI=1S/C10H15N/c1-9(11-2)8-10-6-4-3-5-7-10/h3-7,9,11H,8H2,1-2H3" ;
+            schema:inChIKey inchikey:MYWUZJCMWCOHBA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H15N" ;
+            schema:name "Methamphetamine" ;
+            schema:smiles "CNC(C)Cc(c1)cccc1" ] ;
+    mbo:has_peak [ mbo:intensity 9.4e+01 ;
+            mbo:mz 6.5e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 9.1e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 9.2e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 55 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-9000000000-6ac34b19c5653bd25060" ;
+    skos:definition "Methamphetamine; LC-ESI-Q; MS; POS; 60 V" .
+

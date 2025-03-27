@@ -1,0 +1,62 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02250 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2022-03-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02250" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ExionLC AD, AB Sciex LLC, USA; X500R QTOF, AB Sciex LLC, USA." ;
+            mbo:collision_energy "50 V" ;
+            mbo:column_name "AQ-C18HP 3 microm, 2.1 mm × 150 mm, GL Science (Tokyo Japan)" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 3 min, 0/100 at 13 min, 0/100 at 23 min, 95/5 at 23.1 min, 95/5 at 28 min" ;
+            mbo:flow_rate "200 microl/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "15.0 min" ;
+            mbo:solvent "A water with 2 mM Ammonium bicarbonate",
+                "B methanol with 2 mM Ammmonium bicarbonate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hexaflumuron" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 4.599816e+02 ;
+            rdfs:seeAlso cas:86479-06-3,
+                chemspider:82839,
+                pubchem:CID91741 ;
+            schema:inChI "InChI=1S/C16H8Cl2F6N2O3/c17-7-4-6(5-8(18)12(7)29-16(23,24)14(21)22)25-15(28)26-13(27)11-9(19)2-1-3-10(11)20/h1-5,14H,(H2,25,26,27,28)" ;
+            schema:inChIKey inchikey:RGNPBRKPHBKNKX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H8Cl2F6N2O3" ;
+            schema:name "Hexaflumuron" ;
+            schema:smiles "O=C(NC(=O)c1c(F)cccc1F)Nc1cc(Cl)c(OC(F)(F)C(F)F)c(Cl)c1" ] ;
+    mbo:has_peak [ mbo:intensity 4.9847e+00 ;
+            mbo:mz 1.130204e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.410149e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.88178e+01 ;
+            mbo:mz 1.580416e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 288 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.609889e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-0900000000-b3e845b2275cfe0b4166" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 22HP8019 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Hexaflumuron; LC-ESI-QTOF; MS2; ESI; POSITIVE; [M+H]+; CE 50 V" .
+

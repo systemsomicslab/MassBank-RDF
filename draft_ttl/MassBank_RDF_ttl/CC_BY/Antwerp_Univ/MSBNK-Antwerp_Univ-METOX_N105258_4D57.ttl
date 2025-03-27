@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N105258_4D57 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N105258_4D57" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.359 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Margaric acid",
+                "heptadecanoic acid" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.702559e+02 ;
+            rdfs:seeAlso cas:506-12-7,
+                chemspider:10033,
+                pubchem:CID10465 ;
+            schema:inChI "InChI=1S/C17H34O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17(18)19/h2-16H2,1H3,(H,18,19)" ;
+            schema:inChIKey inchikey:KEMQGTRYUADPNZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H34O2" ;
+            schema:name "Margaric acid",
+                "heptadecanoic acid" ;
+            schema:smiles "CCCCCCCCCCCCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.5016e+03 ;
+            mbo:mz 2.552332e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 2.55233e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-5a5a22ed93c7634f7f03" ;
+    rdfs:comment "INTERNAL_ID 1052" ;
+    skos:definition "Margaric acid; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M-CH3]-" .
+

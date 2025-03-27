@@ -1,0 +1,66 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ501156 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], B. Lauper [com]" ;
+    dcterms:date "2021-03-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ501156" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K., Du, L., Singer, H., Hollender, J.. Identification of LC-HRMS Nontarget Signals in Groundwater After Source Related Prioritization. Water Research 2021, 196. DOI: https://doi.org/10.1016/j.watres.2021.116994" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Exploris 240 Thermo Scientific" ;
+            mbo:collision_energy "90 % (nominal)" ;
+            mbo:column_name "Atlantis C18 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 100/0 at 1.5 min, 5/95 at 18.5 min, 5/95 at 28.5 min, 100/0 at 29 min, 100/0 at 33 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "18.295 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,1,2,2,3,3,4,4,4-nonafluorobutane-1-sulfonamide",
+                "Perfluorobutylsulphonamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.989663e+02 ;
+            rdfs:seeAlso chemspider:9133422,
+                pubchem:CID10958205 ;
+            schema:inChI "InChI=1S/C4H2F9NO2S/c5-1(6,3(9,10)11)2(7,8)4(12,13)17(14,15)16/h(H2,14,15,16)" ;
+            schema:inChIKey inchikey:FUVKFLJWBHVMHX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H2F9NO2S" ;
+            schema:name "1,1,2,2,3,3,4,4,4-nonafluorobutane-1-sulfonamide",
+                "Perfluorobutylsulphonamide" ;
+            schema:smiles "C(C(C(F)(F)S(=O)(=O)N)(F)F)(C(F)(F)F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 7.093118e+06 ;
+            mbo:mz 6.39623e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 4.001232e+08 ;
+            mbo:mz 7.79655e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.300657e+06 ;
+            mbo:mz 7.89735e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.979589e+02 ;
+            mbo:precursor_mz 2.97959e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-9000000000-0a0482653f6f7fffc329" ;
+    rdfs:comment "UCHEM_ID 5011" ;
+    skos:definition "Perfluorobutylsulphonamide; LC-ESI-QFT; MS2; CE: 90%; R=15000; [M-H]-" .
+

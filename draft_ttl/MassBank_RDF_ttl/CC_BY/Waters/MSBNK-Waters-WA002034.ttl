@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002034 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002034" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "14.510 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Quinupramine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.041939e+02 ;
+            rdfs:seeAlso cas:31721-17-2 ;
+            schema:inChI "InChI=1S/C21H24N2/c1-3-7-19-16(5-1)9-10-17-6-2-4-8-20(17)23(19)21-15-22-13-11-18(21)12-14-22/h1-8,18,21H,9-15H2" ;
+            schema:inChIKey inchikey:JCBQCKFFSPGEDY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H24N2" ;
+            schema:name "Quinupramine" ;
+            schema:smiles "c(c5)cc(C3)c(c5)N(c(c4)c(ccc4)C3)C(C1)C(C2)CCN(C2)1" ] ;
+    mbo:has_peak [ mbo:intensity 3.09e+02 ;
+            mbo:mz 1.1e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 309 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 3.07e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 1.11e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.25e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 6.3e+01 ;
+            mbo:mz 2.08e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 2.2e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 2.88e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 3.03e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.05e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.43e+02 ;
+            mbo:mz 3.06e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 243 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0a4i-0209000000-de1aac9a9a0ce0a79eef" ;
+    skos:definition "Quinupramine; LC-ESI-Q; MS; POS; 45 V" .
+

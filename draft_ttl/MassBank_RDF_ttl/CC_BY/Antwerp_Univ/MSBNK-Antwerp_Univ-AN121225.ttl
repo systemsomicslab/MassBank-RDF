@@ -1,0 +1,108 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN121225 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN121225" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "5 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.132 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-((4-(Allyloxy)phenyl)sulfonyl)phenol",
+                "4-(4-prop-2-enoxyphenyl)sulfonylphenol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.900613e+02 ;
+            rdfs:seeAlso cas:97042-18-7,
+                chemspider:1548693,
+                pubchem:CID2054598 ;
+            schema:inChI "InChI=1S/C15H14O4S/c1-2-11-19-13-5-9-15(10-6-13)20(17,18)14-7-3-12(16)4-8-14/h2-10,16H,1,11H2" ;
+            schema:inChIKey inchikey:FKZIDBGIZLBDDF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H14O4S" ;
+            schema:name "4-((4-(Allyloxy)phenyl)sulfonyl)phenol",
+                "4-(4-prop-2-enoxyphenyl)sulfonylphenol" ;
+            schema:smiles "C=CCOC1=CC=C(C=C1)S(=O)(=O)C2=CC=C(C=C2)O" ] ;
+    mbo:has_peak [ mbo:intensity 8.095e+02 ;
+            mbo:mz 9.1019e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.24336e+04 ;
+            mbo:mz 1.840531e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 4.545e+02 ;
+            mbo:mz 2.470081e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.739131e+05 ;
+            mbo:mz 2.480151e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.4177e+03 ;
+            mbo:mz 2.490185e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.13277e+04 ;
+            mbo:mz 2.890534e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.65e+03 ;
+            mbo:mz 9.20275e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.4601e+03 ;
+            mbo:mz 1.080221e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.934e+02 ;
+            mbo:mz 1.280617e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.173e+03 ;
+            mbo:mz 1.399925e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 4.531e+02 ;
+            mbo:mz 1.430516e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.1949e+03 ;
+            mbo:mz 1.559891e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.3736e+03 ;
+            mbo:mz 1.56058e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 9.029e+02 ;
+            mbo:mz 1.830456e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.890549e+02 ;
+            mbo:precursor_mz 2.89054e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0002-0090000000-a7221e6955d96722759e" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "4-((4-(Allyloxy)phenyl)sulfonyl)phenol; LC-ESI-QTOF; MS2; CE: 5eV; R=7000; [M-H]-" .
+

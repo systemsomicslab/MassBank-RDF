@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00815 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-11-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00815" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "20 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "L-Carnitine" ;
+            mbo:ch_compound_class "Carnitine" ;
+            mbo:ch_exact_mass 1.611052e+02 ;
+            rdfs:seeAlso cas:541-15-1,
+                chemspider:10455,
+                pubchem:CID10917 ;
+            schema:inChI "InChI=1S/C7H15NO3/c1-8(2,3)5-6(9)4-7(10)11/h6,9H,4-5H2,1-3H3/t6-/m1/s1" ;
+            schema:inChIKey inchikey:PHIQHXFUZVPYII-ZCFIWIBFSA-N ;
+            schema:molecularFormula "C7H15NO3" ;
+            schema:name "L-Carnitine" ;
+            schema:smiles "C[N+](C)(C)C[C@@H](CC(=O)[O-])O" ] ;
+    mbo:has_peak [ mbo:intensity 1.06381e+00 ;
+            mbo:mz 4.30178e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 1.6239e-01 ;
+            mbo:mz 5.70336e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 3.87862e+00 ;
+            mbo:mz 6.00808e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.74717e+00 ;
+            mbo:mz 8.50284e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 450 ],
+        [ mbo:intensity 9.5289e-01 ;
+            mbo:mz 1.020913e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 245 ],
+        [ mbo:intensity 3.73721e+00 ;
+            mbo:mz 1.030388e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 963 ],
+        [ mbo:intensity 2.85545e+00 ;
+            mbo:mz 1.621122e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 735 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.621125e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0ik9-8900000000-25b19f352c9d1f880275" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "L-Carnitine; ESI-QTOF; MS2; POSITIVE; [M+H]+; CID; 20 V" .
+

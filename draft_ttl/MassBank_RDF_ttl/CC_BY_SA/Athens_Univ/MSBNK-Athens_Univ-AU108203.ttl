@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU108203 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Anna Bletsou, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-09-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU108203" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.6 min" ;
+            mbo:solvent "A water with 0.01% formic acid and 5mM ammonium formate",
+                "B 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9-[(2-chloro-6-fluorophenyl)methyl]purin-6-amine",
+                "Arprinocid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.770531e+02 ;
+            rdfs:seeAlso cas:55779-18-5,
+                chemspider:37936,
+                pubchem:CID41574 ;
+            schema:inChI "InChI=1S/C12H9ClFN5/c13-8-2-1-3-9(14)7(8)4-19-6-18-10-11(15)16-5-17-12(10)19/h1-3,5-6H,4H2,(H2,15,16,17)" ;
+            schema:inChIKey inchikey:NAPNOSFRRMHNBJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H9ClFN5" ;
+            schema:name "9-[(2-chloro-6-fluorophenyl)methyl]purin-6-amine",
+                "Arprinocid" ;
+            schema:smiles "c1cc(c(c(c1)Cl)Cn2cnc3c2ncnc3N)F" ] ;
+    mbo:has_peak [ mbo:intensity 1.29904e+05 ;
+            mbo:mz 1.430052e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.812e+03 ;
+            mbo:mz 1.440086e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 2.6084e+04 ;
+            mbo:mz 1.450024e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 201 ],
+        [ mbo:intensity 9.272e+03 ;
+            mbo:mz 2.78061e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 1.26e+03 ;
+            mbo:mz 2.790631e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.396e+03 ;
+            mbo:mz 2.800579e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 18 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.780603e+02 ;
+            mbo:precursor_mz 2.780603e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-0900000000-ba9a1f18ee53561a9857" ;
+    rdfs:comment "INTERNAL_ID 1082" ;
+    skos:definition "Arprinocid; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

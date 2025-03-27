@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00830 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-11-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00830" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acetyl-L-carnitine" ;
+            mbo:ch_compound_class "Saturated fatty acyl-L-carnitine" ;
+            mbo:ch_exact_mass 2.031158e+02 ;
+            rdfs:seeAlso cas:3040-38-8,
+                chemspider:5406074,
+                pubchem:CID7045767 ;
+            schema:inChI "InChI=1S/C9H17NO4/c1-7(11)14-8(5-9(12)13)6-10(2,3)4/h8H,5-6H2,1-4H3/t8-/m1/s1" ;
+            schema:inChIKey inchikey:RDHQFKQIGNGIED-MRVPVSSYSA-N ;
+            schema:molecularFormula "C9H17NO4" ;
+            schema:name "Acetyl-L-carnitine" ;
+            schema:smiles "CC(=O)O[C@H](CC(=O)[O-])C[N+](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.4132e+01 ;
+            mbo:mz 6.00806e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 2.60455e+02 ;
+            mbo:mz 8.50265e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.04123e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-9000000000-63a734e0aafa11112fd3" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Acetyl-L-carnitine; ESI-QTOF; MS2; POSITIVE; [M+H]+; CID; 30 V" .
+

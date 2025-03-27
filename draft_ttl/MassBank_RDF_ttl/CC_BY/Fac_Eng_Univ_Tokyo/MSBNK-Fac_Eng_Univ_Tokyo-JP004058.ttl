@@ -1,0 +1,69 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP004058 a mbo:MassSpectrum ;
+    dcterms:creator "MASS SPECTROSCOPY SOC. OF JAPAN (MSSJ)" ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP004058" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "HITACHI RMU-6L" ;
+            mbo:instrument_type "EI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-METHYLHYDROQUINONE" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.240524e+02 ;
+            rdfs:seeAlso pubchem:CID7253 ;
+            schema:inChI "InChI=1S/C7H8O2/c1-5-4-6(8)2-3-7(5)9/h2-4,8-9H,1H3" ;
+            schema:inChIKey inchikey:CNHDIAIOKMXOLK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H8O2" ;
+            schema:name "2-METHYLHYDROQUINONE" ;
+            schema:smiles "Oc(c1)cc(C)c(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 2.18e+01 ;
+            mbo:mz 3.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 218 ],
+        [ mbo:intensity 2.21e+01 ;
+            mbo:mz 5.4e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 1.79e+01 ;
+            mbo:mz 8.2e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 179 ],
+        [ mbo:intensity 1.82e+00 ;
+            mbo:mz 9.4e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.81e+01 ;
+            mbo:mz 9.5e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 181 ],
+        [ mbo:intensity 2.61e+01 ;
+            mbo:mz 1.22e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 261 ],
+        [ mbo:intensity 2.35e+01 ;
+            mbo:mz 1.23e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 235 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 1.24e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-4900000000-1294c0e2f9e3a2140785" ;
+    skos:definition "2-METHYLHYDROQUINONE; EI-B; MS" .
+

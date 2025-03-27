@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA001633 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA001633" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "3.900 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Etilefrin" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.811103e+02 ;
+            rdfs:seeAlso cas:709-55-7 ;
+            schema:inChI "InChI=1S/C10H15NO2/c1-2-11-7-10(13)8-4-3-5-9(12)6-8/h3-6,10-13H,2,7H2,1H3" ;
+            schema:inChIKey inchikey:SQVIAVUSQAWMKL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H15NO2" ;
+            schema:name "Etilefrin" ;
+            schema:smiles "CCNCC(O)c(c1)cc(O)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.09e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 1.19e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 1.21e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 1.35e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.36e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.64e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.7e+01 ;
+            mbo:mz 1.65e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 8.6e+01 ;
+            mbo:mz 1.82e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.83e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-03di-0900000000-d3ece6a6fd99469bbeeb" ;
+    skos:definition "Etilefrin; LC-ESI-Q; MS; POS; 30 V" .
+

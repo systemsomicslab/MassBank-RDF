@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100849 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100849" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9-beta-D-Ribofuranosylxanthine",
+                "Xanthine Riboside",
+                "Xanthosine" ;
+            mbo:ch_compound_class "Nucleoside" ;
+            mbo:ch_exact_mass 2.840757e+02 ;
+            rdfs:seeAlso cas:146-80-5,
+                chemspider:58484,
+                knapsack:C00007221,
+                pubchem:CID64959 ;
+            schema:inChI "InChI=1S/C10H12N4O6/c15-1-3-5(16)6(17)9(20-3)14-2-11-4-7(14)12-10(19)13-8(4)18/h2-3,5-6,9,15-17H,1H2,(H2,12,13,18,19)/t3-,5-,6-,9-/m1/s1" ;
+            schema:inChIKey inchikey:UBORTCNDUKBEOP-UUOKFMHZSA-N ;
+            schema:molecularFormula "C10H12N4O6" ;
+            schema:name "9-beta-D-Ribofuranosylxanthine",
+                "Xanthine Riboside",
+                "Xanthosine" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@@H](O)[C@@H]1n(c3)c(N2)c(n3)C(=O)NC(=O)2" ] ;
+    mbo:has_peak [ mbo:intensity 1.117e+02 ;
+            mbo:mz 1.080205e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 194 ],
+        [ mbo:intensity 5.738e+02 ;
+            mbo:mz 1.510259e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.21e+02 ;
+            mbo:mz 2.830679e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 211 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.830679e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-0910000000-e6e1d21c0d22b3ad2821" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Xanthosine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

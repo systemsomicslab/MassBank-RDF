@@ -1,0 +1,66 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000101 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham" ;
+    dcterms:date "2023-04-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000101" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100% (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.068 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-[2-(ethylamino)-1-hydroxyethyl]-5-[(Z)-(5-fluoro-2-oxo-1H-indol-3-ylidene)methyl]-2,4-dimethyl-1H-pyrrole-3-carboxamide",
+                "sunitinib_BTP_M4" ;
+            mbo:ch_compound_class "N/A; Biotransformation product" ;
+            mbo:ch_exact_mass 3.861754e+02 ;
+            rdfs:seeAlso chemspider:58994278,
+                pubchem:CID118753424 ;
+            schema:inChI "InChI=1S/C20H23FN4O3/c1-4-22-9-17(26)25-20(28)18-10(2)16(23-11(18)3)8-14-13-7-12(21)5-6-15(13)24-19(14)27/h5-8,17,22-23,26H,4,9H2,1-3H3,(H,24,27)(H,25,28)/b14-8-" ;
+            schema:inChIKey inchikey:QUJFMDVNASGNAN-ZSOIEALJSA-N ;
+            schema:molecularFormula "C20H23FN4O3" ;
+            schema:name "N-[2-(ethylamino)-1-hydroxyethyl]-5-[(Z)-(5-fluoro-2-oxo-1H-indol-3-ylidene)methyl]-2,4-dimethyl-1H-pyrrole-3-carboxamide",
+                "sunitinib_BTP_M4" ;
+            schema:smiles "CCNCC(O)NC(C1=C(NC(/C=C2C3=C(C=CC(F)=C3)NC/2=O)=C1C)C)=O" ] ;
+    mbo:has_peak [ mbo:intensity 9.5985e+03 ;
+            mbo:mz 5.90604e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 498 ],
+        [ mbo:intensity 5.6967e+03 ;
+            mbo:mz 2.830888e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 295 ],
+        [ mbo:intensity 1.92717e+04 ;
+            mbo:mz 2.990822e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.871826e+02 ;
+            mbo:precursor_mz 3.871827e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-3090000000-ece1922b4c32a1da8521" ;
+    rdfs:comment "INTERNAL_ID 12760" ;
+    skos:definition "sunitinib_BTP_M4; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

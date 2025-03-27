@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100269 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100269" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Azabenzonitrile",
+                "3-Cyanopyridine",
+                "3-Pyridinecarbonitrile",
+                "Nicotinic acid nitrile",
+                "Nicotinonitrile",
+                "Pyridine-3-carbonitrile",
+                "beta-Pyridyl Cyanide" ;
+            mbo:ch_compound_class "Pyridines" ;
+            mbo:ch_exact_mass 1.040375e+02 ;
+            rdfs:seeAlso cas:100-54-9,
+                chemspider:78,
+                pubchem:CID79 ;
+            schema:inChI "InChI=1S/C6H4N2/c7-4-6-2-1-3-8-5-6/h1-3,5H" ;
+            schema:inChIKey inchikey:GZPHSAQLYPIAIN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H4N2" ;
+            schema:name "3-Azabenzonitrile",
+                "3-Cyanopyridine",
+                "3-Pyridinecarbonitrile",
+                "Nicotinic acid nitrile",
+                "Nicotinonitrile",
+                "Pyridine-3-carbonitrile",
+                "beta-Pyridyl Cyanide" ;
+            schema:smiles "N#Cc(c1)cncc1" ] ;
+    mbo:has_peak [ mbo:intensity 7.353e+01 ;
+            mbo:mz 7.80339e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 6.608e+02 ;
+            mbo:mz 1.050452e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.050452e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-1900000000-8a098bb4e49ddec78cc4" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "3-Cyanopyridine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

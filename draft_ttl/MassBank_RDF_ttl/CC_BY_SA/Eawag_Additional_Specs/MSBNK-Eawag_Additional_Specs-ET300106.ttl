@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET300106 a mbo:MassSpectrum ;
+    dcterms:creator "Michael Stravs, Francesco Pomati, Juliane Hollender" ;
+    dcterms:date "2016-12-08"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET300106" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Michael Stravs @ Eawag under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive + Thermo Scientific" ;
+            mbo:collision_energy "90 % (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "87/13 at 0 min, 87/13 at 5 min, 5/95 at 20 min, 5/95 at 29 min, 87/13 at 29.5 min, 87/13 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.238 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-1-N-methyl-1-N`-[2-[[5-(methylaminomethyl)furan-2-yl]methylsulfanyl]ethyl]-2-nitroethene-1,1-diamine",
+                "Desmethyl Ranitidine",
+                "RAN-dm" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.001256e+02 ;
+            rdfs:seeAlso cas:66357-25-3,
+                chemspider:8555507,
+                pubchem:CID10380064 ;
+            schema:inChI "InChI=1S/C12H20N4O3S/c1-13-7-10-3-4-11(19-10)9-20-6-5-15-12(14-2)8-16(17)18/h3-4,8,13-15H,5-7,9H2,1-2H3/b12-8+" ;
+            schema:inChIKey inchikey:WZLBVRXZNDXPPW-XYOKQWHBSA-N ;
+            schema:molecularFormula "C12H20N4O3S" ;
+            schema:name "(E)-1-N-methyl-1-N`-[2-[[5-(methylaminomethyl)furan-2-yl]methylsulfanyl]ethyl]-2-nitroethene-1,1-diamine",
+                "Desmethyl Ranitidine",
+                "RAN-dm" ;
+            schema:smiles "CN/C(NCCSCC1=CC=C(CNC)O1)=C\\[N+]([O-])=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.6841e+03 ;
+            mbo:mz 5.30388e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 8.4045e+03 ;
+            mbo:mz 1.309818e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 214 ],
+        [ mbo:intensity 3.8766e+03 ;
+            mbo:mz 5.60496e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 7.1242e+03 ;
+            mbo:mz 6.10105e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 1.8008e+03 ;
+            mbo:mz 6.70542e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 1.9125e+03 ;
+            mbo:mz 7.90544e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 3.9185e+04 ;
+            mbo:mz 8.10335e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.31313e+04 ;
+            mbo:mz 9.70759e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 335 ],
+        [ mbo:intensity 3.06404e+04 ;
+            mbo:mz 1.020371e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 781 ],
+        [ mbo:intensity 6.5848e+03 ;
+            mbo:mz 1.250059e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 168 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.671704e+02 ;
+            mbo:precursor_mz 3.011329e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0f89-9500000000-25fb4c9d934aca373d8b" ;
+    rdfs:comment "ALGAE_TP_ID 3001" ;
+    skos:definition "RAN-dm; LC-ESI-QFT; MS2; CE: 90%; R=17500; [M+H]+" .
+

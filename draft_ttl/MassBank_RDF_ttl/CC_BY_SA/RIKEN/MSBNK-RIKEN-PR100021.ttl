@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100021 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100021" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9-beta-D-Ribofuranosyladenine",
+                "Adenine riboside",
+                "Adenocard",
+                "Adenosine",
+                "Boniton",
+                "Myocol",
+                "Nucleocardyl",
+                "Sandesin" ;
+            mbo:ch_compound_class "Nucleoside" ;
+            mbo:ch_exact_mass 2.670967e+02 ;
+            rdfs:seeAlso cas:58-61-7,
+                chemspider:54923,
+                knapsack:C00007444,
+                pubchem:CID60961 ;
+            schema:inChI "InChI=1S/C10H13N5O4/c11-8-5-9(13-2-12-8)15(3-14-5)10-7(18)6(17)4(1-16)19-10/h2-4,6-7,10,16-18H,1H2,(H2,11,12,13)/t4-,6-,7-,10-/m1/s1" ;
+            schema:inChIKey inchikey:OIRDTQYFTABQOQ-KQYNXXCUSA-N ;
+            schema:molecularFormula "C10H13N5O4" ;
+            schema:name "9-beta-D-Ribofuranosyladenine",
+                "Adenine riboside",
+                "Adenocard",
+                "Adenosine",
+                "Boniton",
+                "Myocol",
+                "Nucleocardyl",
+                "Sandesin" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@@H](O)[C@@H]1n(c3)c(n2)c(n3)c(N)nc2" ] ;
+    mbo:has_peak [ mbo:intensity 5.987e+02 ;
+            mbo:mz 1.360638e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 312 ],
+        [ mbo:intensity 1.92e+03 ;
+            mbo:mz 2.681046e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.681046e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-014i-0290000000-f1d71a97ce39145c8e31" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Adenosine; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

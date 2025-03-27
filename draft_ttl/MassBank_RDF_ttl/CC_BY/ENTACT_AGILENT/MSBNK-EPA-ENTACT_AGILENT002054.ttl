@@ -1,0 +1,81 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002054 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002054" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(N-Ethyl-m-toluidino)ethanol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.79131e+02 ;
+            rdfs:seeAlso cas:91-88-3,
+                pubchem:CID7067 ;
+            schema:inChI "InChI=1S/C11H17NO/c1-3-12(7-8-13)11-6-4-5-10(2)9-11/h4-6,9,13H,3,7-8H2,1-2H3" ;
+            schema:inChIKey inchikey:KRNUKKZDGDAWBF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H17NO" ;
+            schema:name "2-(N-Ethyl-m-toluidino)ethanol" ;
+            schema:smiles "CC1C=C(C=CC=1)N(CCO)CC" ] ;
+    mbo:has_peak [ mbo:intensity 1.02273e+00 ;
+            mbo:mz 1.010022e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.801383e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.596299e+00 ;
+            mbo:mz 1.200808e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 4.778952e+00 ;
+            mbo:mz 1.340964e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 7.484651e+00 ;
+            mbo:mz 1.351043e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 5.163017e+00 ;
+            mbo:mz 1.361121e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1.854588e+00 ;
+            mbo:mz 1.471043e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 4.824966e+00 ;
+            mbo:mz 1.510992e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 5.220508e+00 ;
+            mbo:mz 1.52107e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 1.136435e+01 ;
+            mbo:mz 1.621277e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 114 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.801383e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-0900000000-c109942bad0c16362e01" ;
+    skos:definition "2-(N-Ethyl-m-toluidino)ethanol; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

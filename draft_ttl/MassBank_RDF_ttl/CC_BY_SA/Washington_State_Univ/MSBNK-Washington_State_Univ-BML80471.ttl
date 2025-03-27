@@ -1,0 +1,56 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80471 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80471" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "2.447" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-Ethyl-2'-deoxyuridine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.561059e+02 ;
+            rdfs:seeAlso cas:15176-29-1,
+                chemspider:1748,
+                pubchem:CID1814 ;
+            schema:inChI "InChI=1S/C11H16N2O5/c1-2-6-4-13(11(17)12-10(6)16)9-3-7(15)8(5-14)18-9/h4,7-9,14-15H,2-3,5H2,1H3,(H,12,16,17)" ;
+            schema:inChIKey inchikey:XACKNLSZYYIACO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H16N2O5" ;
+            schema:name "5-Ethyl-2'-deoxyuridine" ;
+            schema:smiles "CCC1=CN(C(=O)NC1=O)C2CC(C(O2)CO)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.33445e+05 ;
+            mbo:mz 2.550986e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.11843e+05 ;
+            mbo:mz 3.151192e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 227 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0092000000-93d9de10ec6bb58944ad" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.333" ;
+    skos:definition "5-Ethyl-2'-deoxyuridine; LC-ESI-QTOF; MS; NEGATIVE" .
+

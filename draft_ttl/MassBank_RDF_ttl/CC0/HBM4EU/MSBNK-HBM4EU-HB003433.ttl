@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003433 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003433" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "15.172 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3`-formyl-3,3`,3a-trimethyl-6-oxospiro[2,3,4,7b-tetrahydro-1aH-naphtho[1,2-b]oxirene-5,2`-oxirane]-2-yl) acetate",
+                "PR toxin",
+                "Spiro(naphthalene-2(1H),2`-oxirane)-3`-carboxaldehyde, 3,5,6,7,8,8a-hexahydro-7-acetoxy-5,6-epoxy-3`,8,8a-trimethyl-3-oxo-" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.20126e+02 ;
+            rdfs:seeAlso cas:56299-00-4,
+                chemspider:542137,
+                pubchem:CID624035 ;
+            schema:inChI "InChI=1S/C17H20O6/c1-8-12(21-9(2)19)14-13(22-14)10-5-11(20)17(6-15(8,10)3)16(4,7-18)23-17/h5,7-8,12-14H,6H2,1-4H3" ;
+            schema:inChIKey inchikey:GSPFUBNBRPVALJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H20O6" ;
+            schema:name "(3`-formyl-3,3`,3a-trimethyl-6-oxospiro[2,3,4,7b-tetrahydro-1aH-naphtho[1,2-b]oxirene-5,2`-oxirane]-2-yl) acetate",
+                "PR toxin",
+                "Spiro(naphthalene-2(1H),2`-oxirane)-3`-carboxaldehyde, 3,5,6,7,8,8a-hexahydro-7-acetoxy-5,6-epoxy-3`,8,8a-trimethyl-3-oxo-" ;
+            schema:smiles "CC1C(C2C(O2)C3=CC(=O)C4(CC13C)C(O4)(C)C=O)OC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.17601e+04 ;
+            mbo:mz 2.771092e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 1.337099e+05 ;
+            mbo:mz 3.191193e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.410174e+02 ;
+            mbo:precursor_mz 3.191187e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-014i-0009000000-ca96f1492012d1c3b253" ;
+    rdfs:comment "INTERNAL_ID 125" ;
+    skos:definition "PR toxin; LC-ESI-ITFT; MS2; CE: 30%; R=7500; [M-H]-" .
+

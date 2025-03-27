@@ -1,0 +1,79 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ETS00128 a mbo:MassSpectrum ;
+    dcterms:creator "AC Chiaia-Hernandez, EL Schymanski, P Kumar, J Hollender, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-02-03 (Created 2014-06-25)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ETS00128" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Chiaia-Hernandez, A. C.; Schymanski, E. L.; Kumar, P.; Singer, H. P.; Hollender, J. Suspect and Nontarget Screening Approaches to Identify Organic Contaminant Records in Lake Sediments. Analytical and Bioanalytical Chemistry 2014, 406 (28), 7323–35. DOI:10.1007/s00216-014-8166-0" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "95/5/0 at 0-1 min, 90/10/0 at 1 min, 50/50/0 at 4 min, 0/100/0 at 18-22 min, 0/0/100 at 22.1-30 min, 95/5/0 at 30-38 min" ;
+            mbo:flow_rate "200-320 (0-1 min); 200 (1-38 min) ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "10.19 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid",
+                "C isopropanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-1-[Bis(p-fluorophenyl)-methyl]-4-cinnamylpiperazine",
+                "1-[Bis(4-fluorophenyl)methyl]-4-[(2E)-3-phenyl-2-propen-1-yl]piperazine",
+                "Flunarizine" ;
+            mbo:ch_compound_class "N/A; Environmental Compound" ;
+            mbo:ch_exact_mass 4.042064e+02 ;
+            rdfs:seeAlso chemspider:819216,
+                pubchem:CID941361 ;
+            schema:inChI "InChI=1S/C26H26F2N2/c27-24-12-8-22(9-13-24)26(23-10-14-25(28)15-11-23)30-19-17-29(18-20-30)16-4-7-21-5-2-1-3-6-21/h1-15,26H,16-20H2/b7-4+" ;
+            schema:inChIKey inchikey:SMANXXCATUTDDT-QPJJXVBHSA-N ;
+            schema:molecularFormula "C26H26F2N2" ;
+            schema:name "(E)-1-[Bis(p-fluorophenyl)-methyl]-4-cinnamylpiperazine",
+                "1-[Bis(4-fluorophenyl)methyl]-4-[(2E)-3-phenyl-2-propen-1-yl]piperazine",
+                "Flunarizine" ;
+            schema:smiles "C1CN(CCN1C/C=C/C2=CC=CC=C2)C(C3=CC=C(C=C3)F)C4=CC=C(C=C4)F" ] ;
+    mbo:has_peak [ mbo:intensity 5.10603e+04 ;
+            mbo:mz 1.170694e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.225904e+05 ;
+            mbo:mz 2.011386e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 6.824634e+06 ;
+            mbo:mz 2.030666e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.20593e+04 ;
+            mbo:mz 3.852078e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.400405e+06 ;
+            mbo:mz 4.052135e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 205 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.052135e+02 ;
+            mbo:precursor_mz 4.052135e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0090100000-cef5de63fdba54327f14" ;
+    rdfs:comment "Source flunarizine_30102013_HCD15_pos.txt" ;
+    skos:definition "Flunarizine; LC-ESI-ITFT; MS2; HCD15; R=7500; [M+H]+" .
+

@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA278525AF82PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA278525AF82PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "90 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "0.469 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Methylmorpholine N-oxide",
+                "4-Methylmorpholine-N-oxide",
+                "4-methyl-4-oxidomorpholin-4-ium" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.17079e+02 ;
+            rdfs:seeAlso cas:7529-22-8,
+                chemspider:74032,
+                pubchem:CID82029 ;
+            schema:inChI "InChI=1S/C5H11NO2/c1-6(7)2-4-8-5-3-6/h2-5H2,1H3" ;
+            schema:inChIKey inchikey:LFTLOKWAGJYHHR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H11NO2" ;
+            schema:name "4-Methylmorpholine N-oxide",
+                "4-Methylmorpholine-N-oxide",
+                "4-methyl-4-oxidomorpholin-4-ium" ;
+            schema:smiles "C[N+]1([O-])CCOCC1" ] ;
+    mbo:has_peak [ mbo:intensity 3.2041e+03 ;
+            mbo:mz 5.60494e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.7727e+03 ;
+            mbo:mz 5.80412e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.8453e+03 ;
+            mbo:mz 5.80651e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.8173e+03 ;
+            mbo:mz 7.00653e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.132985e+05 ;
+            mbo:mz 7.10731e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 347 ],
+        [ mbo:intensity 3.5635e+03 ;
+            mbo:mz 8.60603e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.218595e+05 ;
+            mbo:mz 1.000761e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 373 ],
+        [ mbo:intensity 3.264203e+05 ;
+            mbo:mz 1.010839e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.92874e+04 ;
+            mbo:mz 1.180867e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 304 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.391234e+02 ;
+            mbo:precursor_mz 1.180863e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0udi-2900000000-5ab24f52c0b66df2fd48" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "4-Methylmorpholine-N-oxide; LC-ESI-ITFT; MS2; CE: 90%; R=15000; [M+H]+" .
+

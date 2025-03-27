@@ -1,0 +1,85 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000490 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-01-02, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000490" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "45 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N,N'-bis(3-aminopropyl)butane-1,4-diamine",
+                "Spermine" ;
+            mbo:ch_compound_class "Natural Product; biogenic amine" ;
+            mbo:ch_exact_mass 2.022158e+02 ;
+            rdfs:seeAlso pubchem:CID1103 ;
+            schema:inChI "InChI=1S/C10H26N4/c11-5-3-9-13-7-1-2-8-14-10-4-6-12/h13-14H,1-12H2" ;
+            schema:inChIKey inchikey:PFNFFQXMRSDOHW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H26N4" ;
+            schema:name "N,N'-bis(3-aminopropyl)butane-1,4-diamine",
+                "Spermine" ;
+            schema:smiles "C(CCNCCCN)CNCCCN" ] ;
+    mbo:has_peak [ mbo:intensity 4.5561e+01 ;
+            mbo:mz 4.104e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.3582e+01 ;
+            mbo:mz 9.8097e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.0634e+03 ;
+            mbo:mz 1.12114e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 206 ],
+        [ mbo:intensity 1.34437e+02 ;
+            mbo:mz 4.2035e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.97324e+02 ;
+            mbo:mz 5.5055e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.03234e+02 ;
+            mbo:mz 5.605e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.126993e+03 ;
+            mbo:mz 5.8066e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 2.5668e+01 ;
+            mbo:mz 6.7056e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.63606e+02 ;
+            mbo:mz 7.0066e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 5.62775e+02 ;
+            mbo:mz 7.2081e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 8.4081e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-001i-9100000000-94edccd3f0c29b1d1550" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Spermine; LC-ESI-QTOF; MS2; CE:45 eV; [M+H]+" .
+

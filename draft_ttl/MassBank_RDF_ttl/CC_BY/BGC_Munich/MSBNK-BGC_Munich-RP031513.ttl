@@ -1,0 +1,90 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP031513 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP031513" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.643 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-[(2S,3R,4S,5R)-3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]-1H-pyrimidine-2,4-dione",
+                "Pseudouridine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.440695e+02 ;
+            rdfs:seeAlso cas:1445-07-4,
+                chemspider:14319,
+                pubchem:CID15047 ;
+            schema:inChI "InChI=1S/C9H12N2O6/c12-2-4-5(13)6(14)7(17-4)3-1-10-9(16)11-8(3)15/h1,4-7,12-14H,2H2,(H2,10,11,15,16)/t4-,5-,6-,7+/m1/s1" ;
+            schema:inChIKey inchikey:PTJWIQPHWPFNBW-GBNDHIKLSA-N ;
+            schema:molecularFormula "C9H12N2O6" ;
+            schema:name "5-[(2S,3R,4S,5R)-3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]-1H-pyrimidine-2,4-dione",
+                "Pseudouridine" ;
+            schema:smiles "c1c(c(nc(n1)O)O)[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5e+01 ;
+            mbo:mz 6.70195e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 158 ],
+        [ mbo:intensity 3.8e+01 ;
+            mbo:mz 6.80139e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 6.4e+01 ;
+            mbo:mz 7.80346e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 202 ],
+        [ mbo:intensity 7.4e+01 ;
+            mbo:mz 7.90195e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 234 ],
+        [ mbo:intensity 3.16e+02 ;
+            mbo:mz 8.20307e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.12e+02 ;
+            mbo:mz 8.30139e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 354 ],
+        [ mbo:intensity 5e+01 ;
+            mbo:mz 9.60454e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 158 ],
+        [ mbo:intensity 6.4e+01 ;
+            mbo:mz 1.100239e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 202 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 1.530303e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 228 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.430623e+02 ;
+            mbo:precursor_mz 2.430623e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-001i-9100000000-4a1c7ff36b6f0663e827" ;
+    rdfs:comment "INTERNAL_ID 315" ;
+    skos:definition "Pseudouridine; LC-ESI-QTOF; MS2; CE: 40; R=; [M-H]-" .
+

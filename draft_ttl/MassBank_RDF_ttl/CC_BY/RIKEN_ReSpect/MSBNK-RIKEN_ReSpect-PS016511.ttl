@@ -1,0 +1,65 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS016511 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS016511" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Adenosine 3',5'-cyclophosphate",
+                "Adenosine-3',5'-cyclicmonophosphate",
+                "Cyclic AMP",
+                "Cyclic-3',5'-adenylic acid",
+                "cAMP" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Adenosine phosphate" ;
+            mbo:ch_exact_mass 3.29211e+02 ;
+            rdfs:seeAlso cas:60-92-4,
+                pubchem:CID6076 ;
+            schema:inChI "InChI=1S/C10H12N5O6P/c11-8-5-9(13-2-12-8)15(3-14-5)10-6(16)7-4(20-10)1-19-22(17,18)21-7/h2-4,6-7,10,16H,1H2,(H,17,18)(H2,11,12,13)" ;
+            schema:inChIKey inchikey:IVOMOUWHDPKRLL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H12N5O6P" ;
+            schema:name "Adenosine 3',5'-cyclophosphate",
+                "Adenosine-3',5'-cyclicmonophosphate",
+                "Cyclic AMP",
+                "Cyclic-3',5'-adenylic acid",
+                "cAMP" ;
+            schema:smiles "C1C2C(C(C(O2)N3C=NC4=C3N=CN=C4N)O)OP(=O)(O1)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.5638e+04 ;
+            mbo:mz 7.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 2.1338e+04 ;
+            mbo:mz 1.33e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 172 ],
+        [ mbo:intensity 1.23769e+05 ;
+            mbo:mz 1.34e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.2825e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-001i-0900000000-9dce3bf6a94b61ab1b18" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Cyclic AMP, Cyclic-3',5'-adenylic acid, Adenosine 3',5'-cyclophosphate, cAMP, Adenosine-3',5'-cyclicmonophosphate; LC-ESI-QQ; MS2" .
+

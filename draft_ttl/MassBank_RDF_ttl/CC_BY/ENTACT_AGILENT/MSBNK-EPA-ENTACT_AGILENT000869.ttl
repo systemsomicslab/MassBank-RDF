@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000869 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000869" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,4-Diaminobenzenesulfonic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.880256e+02 ;
+            rdfs:seeAlso cas:88-63-1,
+                pubchem:CID66623 ;
+            schema:inChI "InChI=1S/C6H8N2O3S/c7-4-1-2-6(5(8)3-4)12(9,10)11/h1-3H,7-8H2,(H,9,10,11)" ;
+            schema:inChIKey inchikey:JVMSQRAXNZPDHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H8N2O3S" ;
+            schema:name "2,4-Diaminobenzenesulfonic acid" ;
+            schema:smiles "NC1C=C(N)C(=CC=1)S(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 7.995736e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.774448e+00 ;
+            mbo:mz 7.999038e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 2.431458e+00 ;
+            mbo:mz 8.000498e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.17606e+00 ;
+            mbo:mz 8.001419e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.312248e+00 ;
+            mbo:mz 1.230564e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 5.882156e+01 ;
+            mbo:mz 1.870183e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 588 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.870183e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-004r-9500000000-98ab6b6321569024a103" ;
+    skos:definition "2,4-Diaminobenzenesulfonic acid; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

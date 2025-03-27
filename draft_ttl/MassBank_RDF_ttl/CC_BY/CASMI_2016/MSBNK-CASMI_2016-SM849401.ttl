@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM849401 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM849401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.331 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(4-fluorophenyl)-4-(4-methylpiperidin-1-yl)butan-1-one",
+                "Melperon" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.631685e+02 ;
+            rdfs:seeAlso cas:3575-80-2,
+                chemspider:14646,
+                pubchem:CID15387 ;
+            schema:inChI "InChI=1S/C16H22FNO/c1-13-8-11-18(12-9-13)10-2-3-16(19)14-4-6-15(17)7-5-14/h4-7,13H,2-3,8-12H2,1H3" ;
+            schema:inChIKey inchikey:DKMFBWQBDIGMHM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H22FNO" ;
+            schema:name "1-(4-fluorophenyl)-4-(4-methylpiperidin-1-yl)butan-1-one",
+                "Melperon" ;
+            schema:smiles "CC1CCN(CCCC(=O)C2=CC=C(F)C=C2)CC1" ] ;
+    mbo:has_peak [ mbo:intensity 6.323714e+05 ;
+            mbo:mz 9.50289e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.936264e+06 ;
+            mbo:mz 1.001121e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.009865e+08 ;
+            mbo:mz 1.230241e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 539 ],
+        [ mbo:intensity 1.871322e+08 ;
+            mbo:mz 1.650711e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.316592e+05 ;
+            mbo:mz 2.461658e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.350885e+08 ;
+            mbo:mz 2.641759e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 721 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.641755e+02 ;
+            mbo:precursor_mz 2.641758e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0300-0940000000-5f2b3e89368f333f4076" ;
+    rdfs:comment "INTERNAL_ID 8494" ;
+    skos:definition "Melperon; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M+H]+" .
+

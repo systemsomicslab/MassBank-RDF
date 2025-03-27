@@ -1,0 +1,69 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU234059 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU234059" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.877 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2-ethyl-6-methylanilino)-2-oxoethanesulfonic acid",
+                "Metolachlor CGA 368208" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.570722e+02 ;
+            rdfs:seeAlso chemspider:28274751,
+                pubchem:CID71312480 ;
+            schema:inChI "InChI=1S/C11H15NO4S/c1-3-9-6-4-5-8(2)11(9)12-10(13)7-17(14,15)16/h4-6H,3,7H2,1-2H3,(H,12,13)(H,14,15,16)" ;
+            schema:inChIKey inchikey:QPVPJECIHVSBLZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H15NO4S" ;
+            schema:name "2-(2-ethyl-6-methylanilino)-2-oxoethanesulfonic acid",
+                "Metolachlor CGA 368208" ;
+            schema:smiles "CCC1=CC=CC(C)=C1NC(=O)CS(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.48e+02 ;
+            mbo:mz 1.209579e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 805 ],
+        [ mbo:intensity 3.72e+02 ;
+            mbo:mz 1.20963e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 668 ],
+        [ mbo:intensity 3.24e+02 ;
+            mbo:mz 1.340999e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 582 ],
+        [ mbo:intensity 5.56e+02 ;
+            mbo:mz 2.560648e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.560642e+02 ;
+            mbo:precursor_mz 2.560649e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-05fr-0940000000-a10fd38a624f4a1a732f" ;
+    rdfs:comment "INTERNAL_ID 2340" ;
+    skos:definition "Metolachlor CGA 368208; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M-H]-" .
+

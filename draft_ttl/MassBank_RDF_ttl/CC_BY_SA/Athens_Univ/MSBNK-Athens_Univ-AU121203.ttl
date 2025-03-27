@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU121203 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU121203" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.6 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(diethylamino)-N-(2,6-dimethylphenyl)acetamide",
+                "Lidocaine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.341732e+02 ;
+            rdfs:seeAlso cas:137-58-6,
+                chemspider:3548,
+                pubchem:CID3676 ;
+            schema:inChI "InChI=1S/C14H22N2O/c1-5-16(6-2)10-13(17)15-14-11(3)8-7-9-12(14)4/h7-9H,5-6,10H2,1-4H3,(H,15,17)" ;
+            schema:inChIKey inchikey:NNJVILVZKWQKPM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H22N2O" ;
+            schema:name "2-(diethylamino)-N-(2,6-dimethylphenyl)acetamide",
+                "Lidocaine" ;
+            schema:smiles "CCN(CC)CC(=O)NC1=C(C)C=CC=C1C" ] ;
+    mbo:has_peak [ mbo:intensity 6e+02 ;
+            mbo:mz 1.320802e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 2.184e+03 ;
+            mbo:mz 1.340957e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.48e+02 ;
+            mbo:mz 1.440786e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 205 ],
+        [ mbo:intensity 5.96e+02 ;
+            mbo:mz 1.500913e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 273 ],
+        [ mbo:intensity 6.24e+02 ;
+            mbo:mz 1.550676e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 285 ],
+        [ mbo:intensity 4.24e+02 ;
+            mbo:mz 1.730795e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 194 ],
+        [ mbo:intensity 3.16e+02 ;
+            mbo:mz 1.73105e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 1.232e+03 ;
+            mbo:mz 2.351804e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 564 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.351805e+02 ;
+            mbo:precursor_mz 2.351805e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-001i-0920000000-f9f648594c0f1642cc4c" ;
+    rdfs:comment "INTERNAL_ID 1212" ;
+    skos:definition "Lidocaine; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,72 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU014301 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU014301" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "15.241 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-3-(4-fluorophenyl)-N-[4-[2-[7-(5-methyl-1,2,4-oxadiazol-3-yl)-1,2,4,5-tetrahydro-3-benzazepin-3-yl]ethyl]cyclohexyl]prop-2-enamide",
+                "SB413217A" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.022744e+02 ;
+            rdfs:seeAlso chemspider:13227332,
+                pubchem:CID18173272 ;
+            schema:inChI "InChI=1S/C30H35FN4O2/c1-21-32-30(34-37-21)26-8-7-24-15-18-35(19-16-25(24)20-26)17-14-23-4-11-28(12-5-23)33-29(36)13-6-22-2-9-27(31)10-3-22/h2-3,6-10,13,20,23,28H,4-5,11-12,14-19H2,1H3,(H,33,36)/b13-6+" ;
+            schema:inChIKey inchikey:IRGFNBRYIWLUOO-AWNIVKPZSA-N ;
+            schema:molecularFormula "C30H35FN4O2" ;
+            schema:name "(E)-3-(4-fluorophenyl)-N-[4-[2-[7-(5-methyl-1,2,4-oxadiazol-3-yl)-1,2,4,5-tetrahydro-3-benzazepin-3-yl]ethyl]cyclohexyl]prop-2-enamide",
+                "SB413217A" ;
+            schema:smiles "Cc1nc(-c2ccc3c(c2)CCN(CCC2CCC(NC(=O)/C=C/c4ccc(F)cc4)CC2)CC3)no1" ] ;
+    mbo:has_peak [ mbo:intensity 1.94042e+04 ;
+            mbo:mz 1.490398e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.35541e+04 ;
+            mbo:mz 3.382221e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.63521e+04 ;
+            mbo:mz 3.552495e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 9.674615e+06 ;
+            mbo:mz 5.03282e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 5.032817e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0udi-0000090000-4084bda3899bb7cdfe61" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "SB413217A; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

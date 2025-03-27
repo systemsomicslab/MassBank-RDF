@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA032105070APH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA032105070APH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "13.378 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tri(butoxyethyl)phosphate",
+                "tris(2-butoxyethyl) phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.982433e+02 ;
+            rdfs:seeAlso cas:78-51-3,
+                chemspider:6292,
+                pubchem:CID6540 ;
+            schema:inChI "InChI=1S/C18H39O7P/c1-4-7-10-20-13-16-23-26(19,24-17-14-21-11-8-5-2)25-18-15-22-12-9-6-3/h4-18H2,1-3H3" ;
+            schema:inChIKey inchikey:WTLBZVNBAKMVDP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H39O7P" ;
+            schema:name "Tri(butoxyethyl)phosphate",
+                "tris(2-butoxyethyl) phosphate" ;
+            schema:smiles "CCCCOCCOP(=O)(OCCOCCCC)OCCOCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 9.28791e+04 ;
+            mbo:mz 5.70697e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 532 ],
+        [ mbo:intensity 6.7497e+03 ;
+            mbo:mz 2.431e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.85407e+04 ;
+            mbo:mz 2.991622e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 7.3394e+03 ;
+            mbo:mz 5.9049e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 3.55668e+04 ;
+            mbo:mz 8.30856e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 204 ],
+        [ mbo:intensity 1.73248e+04 ;
+            mbo:mz 9.89844e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 3.97453e+04 ;
+            mbo:mz 1.010963e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 228 ],
+        [ mbo:intensity 8.2944e+03 ;
+            mbo:mz 1.25e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 3.04281e+04 ;
+            mbo:mz 1.430107e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 174 ],
+        [ mbo:intensity 1.742679e+05 ;
+            mbo:mz 1.990734e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.7354e+03 ;
+            mbo:mz 2.250896e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.992521e+02 ;
+            mbo:precursor_mz 3.992506e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0002-5910000000-30a606f91a7cf3bec159" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Tri(butoxyethyl)phosphate; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

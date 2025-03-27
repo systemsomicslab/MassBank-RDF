@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR303951 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR303951" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "8.822333" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Jusmicranthin ethyl ether" ;
+            mbo:ch_compound_class "Arylnaphthalene lignans" ;
+            mbo:ch_exact_mass 3.92363e+02 ;
+            schema:inChI "InChI=1S/C22H16O7/c1-2-24-22-19-13(21(23)29-22)7-11-4-6-15-20(28-10-26-15)18(11)17(19)12-3-5-14-16(8-12)27-9-25-14/h3-8,22H,2,9-10H2,1H3" ;
+            schema:inChIKey inchikey:JJXCEOLNFSCNNE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H16O7" ;
+            schema:name "Jusmicranthin ethyl ether" ;
+            schema:smiles "CCOC1OC(=O)C2=C1C(C1=CC3=C(OCO3)C=C1)=C1C3=C(OCO3)C=CC1=C2" ] ;
+    mbo:has_peak [ mbo:intensity 1e+03 ;
+            mbo:mz 3.47056e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7e+00 ;
+            mbo:mz 3.471063e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.26e+02 ;
+            mbo:mz 3.480597e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 226 ],
+        [ mbo:intensity 2.7e+01 ;
+            mbo:mz 3.490627e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 7e+00 ;
+            mbo:mz 3.750807e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.25e+02 ;
+            mbo:mz 3.920904e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 3.83e+02 ;
+            mbo:mz 3.930981e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 383 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.930969e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0002-0009000000-9dc6c8c1159fa8a5f6e1" ;
+    rdfs:comment "registered in RIKEN PlaSMA" ;
+    skos:definition "Jusmicranthin ethyl ether; LC-ESI-QTOF; MS2" .
+

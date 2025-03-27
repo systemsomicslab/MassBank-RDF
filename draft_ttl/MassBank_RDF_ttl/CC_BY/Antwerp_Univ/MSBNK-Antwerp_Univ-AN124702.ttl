@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN124702 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN124702" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.147 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Methyl-1H-benzotriazole",
+                "4-Methylbenzotriazole",
+                "4-methyl-2H-benzotriazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.33064e+02 ;
+            rdfs:seeAlso cas:29878-31-7,
+                chemspider:109219,
+                pubchem:CID122499 ;
+            schema:inChI "InChI=1S/C7H7N3/c1-5-3-2-4-6-7(5)9-10-8-6/h2-4H,1H3,(H,8,9,10)" ;
+            schema:inChIKey inchikey:CMGDVUCDZOBDNL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H7N3" ;
+            schema:name "4-Methyl-1H-benzotriazole",
+                "4-Methylbenzotriazole",
+                "4-methyl-2H-benzotriazole" ;
+            schema:smiles "CC1=CC=CC2=NNN=C12" ] ;
+    mbo:has_peak [ mbo:intensity 2.063e+02 ;
+            mbo:mz 6.60323e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.645e+03 ;
+            mbo:mz 7.70389e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 103 ],
+        [ mbo:intensity 5.263e+02 ;
+            mbo:mz 7.80339e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.9297e+03 ;
+            mbo:mz 7.90542e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 196 ],
+        [ mbo:intensity 2.128e+02 ;
+            mbo:mz 1.040491e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.1704e+03 ;
+            mbo:mz 1.06065e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 3.53029e+04 ;
+            mbo:mz 1.340711e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.340713e+02 ;
+            mbo:precursor_mz 1.340713e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-001i-2900000000-dd38702400855ac49dcb" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "4-Methylbenzotriazole; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M+H]+" .
+

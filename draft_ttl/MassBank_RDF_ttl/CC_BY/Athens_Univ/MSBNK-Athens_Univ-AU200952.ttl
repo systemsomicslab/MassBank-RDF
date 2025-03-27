@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU200952 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU200952" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "8.187 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(trifluoromethyl)phenol",
+                "4-Trifluoromethylphenol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.620292e+02 ;
+            rdfs:seeAlso cas:402-45-9,
+                chemspider:61191,
+                pubchem:CID67874 ;
+            schema:inChI "InChI=1S/C7H5F3O/c8-7(9,10)5-1-3-6(11)4-2-5/h1-4,11H" ;
+            schema:inChIKey inchikey:BAYGVMXZJBFEMB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H5F3O" ;
+            schema:name "4-(trifluoromethyl)phenol",
+                "4-Trifluoromethylphenol" ;
+            schema:smiles "Oc1ccc(C(F)(F)F)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.18e+03 ;
+            mbo:mz 1.210113e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 191 ],
+        [ mbo:intensity 1.384e+03 ;
+            mbo:mz 1.410184e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 224 ],
+        [ mbo:intensity 6.18e+03 ;
+            mbo:mz 1.610246e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.88e+02 ;
+            mbo:mz 1.620282e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 63 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.610246e+02 ;
+            mbo:precursor_mz 1.61022e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-03di-0900000000-d3e7706036b9963ac162" ;
+    rdfs:comment "INTERNAL_ID 2009" ;
+    skos:definition "4-Trifluoromethylphenol; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M-H]-" .
+

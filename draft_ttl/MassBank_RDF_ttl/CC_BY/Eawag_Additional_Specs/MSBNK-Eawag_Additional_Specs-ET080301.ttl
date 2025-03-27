@@ -1,0 +1,100 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET080301 a mbo:MassSpectrum ;
+    dcterms:creator "R. Gulde, E. Schymanski, K. Fenner, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-03-17 (Created 2015-09-25, modified 2016-02-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET080301" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde, R.; Meier, U.; Schymanski, E. L.; Kohler, H.-P. E.; Helbling, D. E.; Derrer, S.; Rentsch, D.; Fenner, K. Systematic Exploration of Biotransformation Reactions of Amine-Containing Micropollutants in Activated Sludge. Environmental Science & Technology 2016, 50 (6), 2908–20. DOI:10.1021/acs.est.5b05186" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters with guard column" ;
+            mbo:flow_gradient "95/5 at 0 min, 5/95 at 15 min, 5/95 at 20 min, 95/5 at 20.1 min, 95/5 at 25 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "9.1 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[[2-(diethylamino)acetyl]amino]-3-methylbenzoic acid",
+                "LID_265.1546_9.2" ;
+            mbo:ch_compound_class "N/A; Environmental Transformation Products" ;
+            mbo:ch_exact_mass 2.641474e+02 ;
+            rdfs:seeAlso chemspider:14247648,
+                pubchem:CID19938477 ;
+            schema:inChI "InChI=1S/C14H20N2O3/c1-4-16(5-2)9-12(17)15-13-10(3)7-6-8-11(13)14(18)19/h6-8H,4-5,9H2,1-3H3,(H,15,17)(H,18,19)" ;
+            schema:inChIKey inchikey:ADEUTXKFSFCDGG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H20N2O3" ;
+            schema:name "2-[[2-(diethylamino)acetyl]amino]-3-methylbenzoic acid",
+                "LID_265.1546_9.2" ;
+            schema:smiles "O=C(Nc1c(C)cccc1C(=O)O)CN(CC)CC" ] ;
+    mbo:has_peak [ mbo:intensity 3.6845e+03 ;
+            mbo:mz 5.90492e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.7304e+03 ;
+            mbo:mz 1.650912e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.187292e+05 ;
+            mbo:mz 2.651552e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.0693e+03 ;
+            mbo:mz 7.20446e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.0624e+03 ;
+            mbo:mz 7.30287e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.017384e+05 ;
+            mbo:mz 8.60965e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 946 ],
+        [ mbo:intensity 1.888e+03 ;
+            mbo:mz 8.70441e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.61056e+04 ;
+            mbo:mz 1.000758e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 113 ],
+        [ mbo:intensity 1.1584e+03 ;
+            mbo:mz 1.010599e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.6182e+03 ;
+            mbo:mz 1.15039e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.7832e+03 ;
+            mbo:mz 1.53041e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 6 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.50598e+01 ;
+            mbo:precursor_mz 2.651547e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014r-8190000000-d157f499bf1737adbfda" ;
+    rdfs:comment "INTERNAL_ID 803" ;
+    skos:definition "LID_265.1546_9.2; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

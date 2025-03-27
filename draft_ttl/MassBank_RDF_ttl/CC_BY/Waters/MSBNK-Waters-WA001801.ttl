@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA001801 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2012-05-21)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA001801" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "15.610 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Benorylate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.13095e+02 ;
+            rdfs:seeAlso cas:5003-48-5 ;
+            schema:inChI "InChI=1S/C17H15NO5/c1-11(19)18-13-7-9-14(10-8-13)23-17(21)15-5-3-4-6-16(15)22-12(2)20/h3-10H,1-2H3,(H,18,19)" ;
+            schema:inChIKey inchikey:FEJKLNWAOXSSNR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H15NO5" ;
+            schema:name "Benorylate" ;
+            schema:smiles "CC(=O)Nc(c2)ccc(c2)OC(=O)c(c1)c(ccc1)OC(C)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.41e+02 ;
+            mbo:mz 1.1e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 141 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 3.52e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.11e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.21e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.1e+01 ;
+            mbo:mz 1.22e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.34e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.25e+02 ;
+            mbo:mz 1.52e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 325 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 1.53e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.78e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 2.72e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 8 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00di-0900000000-fa90536af350daf43967" ;
+    skos:definition "Benorylate; LC-ESI-Q; MS; POS; 60 V" .
+

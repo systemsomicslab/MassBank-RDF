@@ -1,0 +1,92 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA013052 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA013052" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "7.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(4,6-dimethoxy-2-pyrimidinyl)-3-[(3-ethylsulfonyl-2-pyridinyl)sulfonyl]urea",
+                "Rimsulfuron" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.310569e+02 ;
+            rdfs:seeAlso cas:122931-48-0,
+                chemspider:82876,
+                pubchem:CID91779 ;
+            schema:inChI "InChI=1S/C14H17N5O7S2/c1-4-27(21,22)9-6-5-7-15-12(9)28(23,24)19-14(20)18-13-16-10(25-2)8-11(17-13)26-3/h5-8H,4H2,1-3H3,(H2,16,17,18,19,20)" ;
+            schema:inChIKey inchikey:MEFOUWRMVYJCQC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H17N5O7S2" ;
+            schema:name "1-(4,6-dimethoxy-2-pyrimidinyl)-3-[(3-ethylsulfonyl-2-pyridinyl)sulfonyl]urea",
+                "Rimsulfuron" ;
+            schema:smiles "CCS(=O)(=O)c1cccnc1S(=O)(=O)NC(=O)Nc1nc(OC)cc(OC)n1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 6.4657e+03 ;
+            mbo:mz 1.540628e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 4.9581e+03 ;
+            mbo:mz 1.570075e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.47997e+05 ;
+            mbo:mz 1.790578e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.3497e+03 ;
+            mbo:mz 1.850392e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.120632e+05 ;
+            mbo:mz 1.860235e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 756 ],
+        [ mbo:intensity 1.88904e+04 ;
+            mbo:mz 2.49001e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 4.44067e+04 ;
+            mbo:mz 2.74981e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 300 ],
+        [ mbo:intensity 8.4411e+03 ;
+            mbo:mz 3.230816e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 6.68267e+04 ;
+            mbo:mz 4.300511e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 451 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.300488e+02 ;
+            mbo:precursor_mz 4.300497e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-004r-0920200000-9b2bfaa8cf73b7b83ef4" ;
+    rdfs:comment "EAWAG_UCHEM_ID 130" ;
+    skos:definition "Rimsulfuron; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M-H]-" .
+

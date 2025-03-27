@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO008929 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO008929" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "1.00/0.70" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS3" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diclofenac" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.950167e+02 ;
+            rdfs:seeAlso cas:15307-86-5,
+                pubchem:CID4831 ;
+            schema:inChI "InChI=1S/C14H11Cl2NO2/c15-10-5-3-6-11(16)14(10)17-12-7-2-1-4-9(12)8-13(18)19/h1-7,17H,8H2,(H,18,19)" ;
+            schema:inChIKey inchikey:DCOPUUMXTXDBNB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H11Cl2NO2" ;
+            schema:name "Diclofenac" ;
+            schema:smiles "OC(=O)Cc(c2)c(ccc2)Nc(c(Cl)1)c(Cl)ccc1" ] ;
+    mbo:has_peak [ mbo:intensity 2.3e+01 ;
+            mbo:mz 1.131e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.592e+01 ;
+            mbo:mz 2.475e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 7.2899e+02 ;
+            mbo:mz 2.5e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.8607e+02 ;
+            mbo:mz 1.781e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.341e+01 ;
+            mbo:mz 1.88e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 2.194024e+04 ;
+            mbo:mz 2.14e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 2.851942e+05 ;
+            mbo:mz 2.15e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.3206e+02 ;
+            mbo:mz 2.158e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.348e+01 ;
+            mbo:mz 2.164e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 1.616e+01 ;
+            mbo:mz 2.238e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 4.169e+01 ;
+            mbo:mz 2.292e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 0 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014i-0090000000-b6639a784a71394f7d48" ;
+    rdfs:comment "[MS2] KO008928" ;
+    skos:definition "Diclofenac; LC-ESI-IT; MS3; m/z: 296/250; [M+H]+" .
+

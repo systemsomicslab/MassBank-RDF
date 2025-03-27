@@ -1,0 +1,102 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00214 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-04-08)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00214" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Naringenin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 2.720685e+02 ;
+            rdfs:seeAlso cas:480-41-1,
+                knapsack:C00000982,
+                pubchem:CID439246 ;
+            schema:inChI "InChI=1S/C15H12O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-6,13,16-18H,7H2/t13-/m0/s1" ;
+            schema:inChIKey inchikey:FTVWIRXFELQLPI-ZDUSSCGKSA-N ;
+            schema:molecularFormula "C15H12O5" ;
+            schema:name "Naringenin" ;
+            schema:smiles "Oc(c3)ccc(c3)[C@H](C1)Oc(c2)c(c(O)cc(O)2)C(=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 2.46e+02 ;
+            mbo:mz 8.30149e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 3.8e+02 ;
+            mbo:mz 1.510034e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.7e+02 ;
+            mbo:mz 1.610604e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.32e+02 ;
+            mbo:mz 1.770183e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.66e+02 ;
+            mbo:mz 1.870401e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 3.58e+02 ;
+            mbo:mz 9.30345e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 6.53e+02 ;
+            mbo:mz 1.070138e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 1.24e+02 ;
+            mbo:mz 1.080214e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 5.72e+02 ;
+            mbo:mz 1.170347e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 1.2101e+04 ;
+            mbo:mz 1.190501e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.314e+03 ;
+            mbo:mz 1.200536e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 4.85e+02 ;
+            mbo:mz 1.430502e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 4.89e+02 ;
+            mbo:mz 1.450296e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 40 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.190501e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-014i-0900000000-d8ee697bae1e5b5e71a8" ;
+    rdfs:comment "[Raw Data] CB070_Naringenin_neg_50eV_000021.txt" ;
+    skos:definition "Naringenin; LC-ESI-QTOF; MS2; [M-H]-; CE: 50eV" .
+

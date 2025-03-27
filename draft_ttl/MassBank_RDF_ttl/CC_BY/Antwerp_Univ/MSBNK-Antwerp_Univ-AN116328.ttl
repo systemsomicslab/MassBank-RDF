@@ -1,0 +1,61 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN116328 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN116328" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "7.448 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Ethyl-4-hydroxyhexylsalicylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.661518e+02 ;
+            schema:inChI "InChI=1S/C15H22O4/c1-3-11(9-12(16)4-2)10-19-15(18)13-7-5-6-8-14(13)17/h5-8,11-12,16-17H,3-4,9-10H2,1-2H3" ;
+            schema:inChIKey inchikey:RRYJOTVSZOKNQZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H22O4" ;
+            schema:name "2-Ethyl-4-hydroxyhexylsalicylate" ;
+            schema:smiles "CCC(O)CC(CC)COC(=O)c1ccccc1O" ] ;
+    mbo:has_peak [ mbo:intensity 7.806e+02 ;
+            mbo:mz 5.70357e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.66734e+04 ;
+            mbo:mz 9.30355e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 937 ],
+        [ mbo:intensity 2.832e+02 ;
+            mbo:mz 1.130954e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.77833e+04 ;
+            mbo:mz 1.370246e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.8299e+02 ;
+            mbo:precursor_mz 2.651445e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000l-8900000000-822070f19467b4e281cb" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "2-Ethyl-4-hydroxyhexylsalicylate; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M-H]-" .
+

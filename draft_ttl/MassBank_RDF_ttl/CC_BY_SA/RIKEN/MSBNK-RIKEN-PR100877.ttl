@@ -1,0 +1,89 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100877 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100877" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,3,4,5-Tetrahydroxyadipic Acid",
+                "D-Galactaric acid",
+                "Galactarate",
+                "MTPA",
+                "Mucic acid",
+                "Saccharolactic acid",
+                "Tetrahydroxyadipic acid",
+                "Tetrahydroxyhexanedioic acid" ;
+            mbo:ch_compound_class "Carboxylic acids" ;
+            mbo:ch_exact_mass 2.100376e+02 ;
+            rdfs:seeAlso cas:526-99-8,
+                chemspider:2301286,
+                pubchem:CID3037582 ;
+            schema:inChI "InChI=1S/C6H10O8/c7-1(3(9)5(11)12)2(8)4(10)6(13)14/h1-4,7-10H,(H,11,12)(H,13,14)/t1-,2+,3+,4-" ;
+            schema:inChIKey inchikey:DSLZVSRJTYRBFB-DUHBMQHGSA-N ;
+            schema:molecularFormula "C6H10O8" ;
+            schema:name "2,3,4,5-Tetrahydroxyadipic Acid",
+                "D-Galactaric acid",
+                "Galactarate",
+                "MTPA",
+                "Mucic acid",
+                "Saccharolactic acid",
+                "Tetrahydroxyadipic acid",
+                "Tetrahydroxyhexanedioic acid" ;
+            schema:smiles "OC(=O)C(O)C(O)C(O)C(O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.726e+01 ;
+            mbo:mz 7.10149e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 267 ],
+        [ mbo:intensity 6.658e+00 ;
+            mbo:mz 7.29944e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 103 ],
+        [ mbo:intensity 6.463e+01 ;
+            mbo:mz 8.50297e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.968e+00 ;
+            mbo:mz 1.330113e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 1.193e+01 ;
+            mbo:mz 1.910189e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 184 ],
+        [ mbo:intensity 5.929e+00 ;
+            mbo:mz 1.97805e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 3.97e+01 ;
+            mbo:mz 2.090298e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 614 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.090298e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-052r-9240000000-c24ca4338feeca20c7f5" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Mucic acid; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

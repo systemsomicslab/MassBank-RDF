@@ -1,0 +1,73 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000480 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-01-02, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000480" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(2-aminoethyl)benzene-1,2-diol",
+                "Dopamine" ;
+            mbo:ch_compound_class "Natural Product; biogenic amine" ;
+            mbo:ch_exact_mass 1.53079e+02 ;
+            rdfs:seeAlso pubchem:CID681 ;
+            schema:inChI "InChI=1S/C8H11NO2/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,10-11H,3-4,9H2" ;
+            schema:inChIKey inchikey:VYFYYTLLBUKUHU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H11NO2" ;
+            schema:name "4-(2-aminoethyl)benzene-1,2-diol",
+                "Dopamine" ;
+            schema:smiles "C1=CC(=C(C=C1CCN)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.07065e+02 ;
+            mbo:mz 6.5039e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 1.27733e+02 ;
+            mbo:mz 7.9055e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.06632e+02 ;
+            mbo:mz 8.107e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 9.1054e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.0078e+01 ;
+            mbo:mz 9.4041e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.02897e+02 ;
+            mbo:mz 1.09065e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 2.740791e+03 ;
+            mbo:mz 1.19048e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 1.376428e+03 ;
+            mbo:mz 1.37059e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 138 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0006-9300000000-3a862057cf8a009ef9bd" ;
+    rdfs:comment "IPB_RECORD: 268" ;
+    skos:definition "Dopamine; LC-ESI-QTOF; MS2; CE:30 eV; [M+H]+" .
+

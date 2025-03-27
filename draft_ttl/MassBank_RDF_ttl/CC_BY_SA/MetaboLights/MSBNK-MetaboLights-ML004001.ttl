@@ -1,0 +1,112 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML004001 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML004001" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "8.9 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-hydroxy-6-[3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxychromen-2-one",
+                "esculin hydrate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.400794e+02 ;
+            rdfs:seeAlso chemspider:4508522,
+                pubchem:CID5351506 ;
+            schema:inChI "InChI=1S/C15H16O9/c16-5-10-12(19)13(20)14(21)15(24-10)23-9-3-6-1-2-11(18)22-8(6)4-7(9)17/h1-4,10,12-17,19-21H,5H2" ;
+            schema:inChIKey inchikey:XHCADAYNFIFUHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H16O9" ;
+            schema:name "7-hydroxy-6-[3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxychromen-2-one",
+                "esculin hydrate" ;
+            schema:smiles "O=c1ccc2cc(OC3OC(CO)C(O)C(O)C3O)c(O)cc2o1" ] ;
+    mbo:has_peak [ mbo:intensity 3.88279e+04 ;
+            mbo:mz 8.10336e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.08366e+04 ;
+            mbo:mz 1.270392e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.829725e+05 ;
+            mbo:mz 1.330286e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.098827e+05 ;
+            mbo:mz 1.350444e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.024533e+05 ;
+            mbo:mz 1.510392e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 9.951594e+06 ;
+            mbo:mz 1.790341e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.42236e+04 ;
+            mbo:mz 8.30131e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.743348e+05 ;
+            mbo:mz 8.50285e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.37169e+04 ;
+            mbo:mz 8.70441e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 9.2352e+04 ;
+            mbo:mz 9.70285e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.49519e+04 ;
+            mbo:mz 9.90442e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.01823e+04 ;
+            mbo:mz 1.090286e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.20414e+04 ;
+            mbo:mz 1.170337e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.36913e+05 ;
+            mbo:mz 1.230442e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 34 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.410854e+02 ;
+            mbo:precursor_mz 3.410867e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-004i-0900000000-d1089ced80e3aad1409b" ;
+    rdfs:comment "ML_ID 40" ;
+    skos:definition "esculin hydrate; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M+H]+" .
+

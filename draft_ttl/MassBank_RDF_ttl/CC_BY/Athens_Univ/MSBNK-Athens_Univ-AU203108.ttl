@@ -1,0 +1,105 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU203108 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU203108" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "1.566 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-2-[2-[6-(2-cyanophenoxy)pyrimidin-4-yl]oxyphenyl]-3-methoxyprop-2-enoic acid",
+                "Azoxystrobin acid",
+                "SCHEMBL435486" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.891012e+02 ;
+            rdfs:seeAlso cas:1185255-09-7,
+                chemspider:28184900,
+                pubchem:CID66685656 ;
+            schema:inChI "InChI=1S/C21H15N3O5/c1-27-12-16(21(25)26)15-7-3-5-9-18(15)29-20-10-19(23-13-24-20)28-17-8-4-2-6-14(17)11-22/h2-10,12-13H,1H3,(H,25,26)/b16-12+" ;
+            schema:inChIKey inchikey:IKCXDZCEWZARFL-FOWTUZBSSA-N ;
+            schema:molecularFormula "C21H15N3O5" ;
+            schema:name "(E)-2-[2-[6-(2-cyanophenoxy)pyrimidin-4-yl]oxyphenyl]-3-methoxyprop-2-enoic acid",
+                "Azoxystrobin acid",
+                "SCHEMBL435486" ;
+            schema:smiles "CO\\C=C(\\C(O)=O)c1ccccc1Oc1cc(Oc2ccccc2C#N)ncn1" ] ;
+    mbo:has_peak [ mbo:intensity 7.912e+03 ;
+            mbo:mz 1.330868e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.88208e+05 ;
+            mbo:mz 3.721015e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.342e+04 ;
+            mbo:mz 3.731045e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 230 ],
+        [ mbo:intensity 5.924e+03 ;
+            mbo:mz 3.741064e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 2.404e+03 ;
+            mbo:mz 1.490238e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 5.036e+03 ;
+            mbo:mz 1.771131e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 2.188e+03 ;
+            mbo:mz 3.16111e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.256e+03 ;
+            mbo:mz 3.290822e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.1036e+04 ;
+            mbo:mz 3.441055e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 3.616e+03 ;
+            mbo:mz 3.45109e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 4.276e+03 ;
+            mbo:mz 3.461211e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.396e+03 ;
+            mbo:mz 3.471253e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.532806e+02 ;
+            mbo:precursor_mz 3.901084e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00di-0009000000-a269fb17bed99c3eda61" ;
+    rdfs:comment "INTERNAL_ID 2031" ;
+    skos:definition "Azoxystrobin acid; LC-ESI-QTOF; MS2; HILIC; CE: 20 eV; R=35000; [M+H]+" .
+

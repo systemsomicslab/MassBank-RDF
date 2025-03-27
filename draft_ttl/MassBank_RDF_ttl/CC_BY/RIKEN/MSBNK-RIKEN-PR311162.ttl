@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR311162 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR311162" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.17" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Allicin + 2H (not validated, isomer of 327)" ;
+            mbo:ch_compound_class "Allicin derivatives" ;
+            mbo:ch_exact_mass 1.64291e+02 ;
+            schema:inChI "InChI=1S/C6H12OS2/c1-3-5-8-9(7)6-4-2/h3,5H,4,6H2,1-2H3" ;
+            schema:inChIKey inchikey:XLVMWOFYTFNDKM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H12OS2" ;
+            schema:name "Allicin + 2H (not validated, isomer of 327)" ;
+            schema:smiles "O=S(CCC)SC=CC" ] ;
+    mbo:has_peak [ mbo:intensity 3.7e+01 ;
+            mbo:mz 7.30132e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 7.40172e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 432 ],
+        [ mbo:intensity 2.3e+01 ;
+            mbo:mz 9.30357e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 621 ],
+        [ mbo:intensity 1.7e+01 ;
+            mbo:mz 1.049814e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 459 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.250106e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 648 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 1.269754e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 675 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.650409e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00fr-9700000000-89481855a44219648c55" ;
+    rdfs:comment "Annotation level-3" ;
+    skos:definition "Allicin + 2H (not validated, isomer of 327); LC-ESI-QTOF; MS2" .
+

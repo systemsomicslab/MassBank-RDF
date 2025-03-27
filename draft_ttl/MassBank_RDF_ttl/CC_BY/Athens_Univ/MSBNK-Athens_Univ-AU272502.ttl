@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU272502 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU272502" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "3.410 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-acetamido-2-hydroxybenzoic acid",
+                "N-Acetyl mesalazine",
+                "N-Acetyl-5-aminosalicylic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.950532e+02 ;
+            rdfs:seeAlso cas:51-59-2,
+                chemspider:58958,
+                pubchem:CID65512 ;
+            schema:inChI "InChI=1S/C9H9NO4/c1-5(11)10-6-2-3-8(12)7(4-6)9(13)14/h2-4,12H,1H3,(H,10,11)(H,13,14)" ;
+            schema:inChIKey inchikey:GEFDRROBUCULOD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H9NO4" ;
+            schema:name "5-acetamido-2-hydroxybenzoic acid",
+                "N-Acetyl mesalazine",
+                "N-Acetyl-5-aminosalicylic acid" ;
+            schema:smiles "CC(=O)NC1=CC=C(O)C(=C1)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.716e+04 ;
+            mbo:mz 1.360381e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.852e+03 ;
+            mbo:mz 1.370417e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 4e+02 ;
+            mbo:mz 1.490579e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 4.84e+02 ;
+            mbo:mz 1.500539e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 8.76e+02 ;
+            mbo:mz 1.520688e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 4.48e+02 ;
+            mbo:mz 1.540482e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1.132e+04 ;
+            mbo:mz 1.780485e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 659 ],
+        [ mbo:intensity 1.408e+03 ;
+            mbo:mz 1.790514e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 82 ],
+        [ mbo:intensity 2.528e+03 ;
+            mbo:mz 1.960591e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 147 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.960592e+02 ;
+            mbo:precursor_mz 1.960604e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-002r-0900000000-efb5e2918aaffb85b7c0" ;
+    rdfs:comment "INTERNAL_ID 2725" ;
+    skos:definition "N-Acetyl mesalazine; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,102 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00265 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00265" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Velutin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 3.14079e+02 ;
+            rdfs:seeAlso cas:25739-41-7,
+                chemspider:4576639,
+                pubchem:CID5464381 ;
+            schema:inChI "InChI=1S/C17H14O6/c1-21-10-6-12(19)17-13(20)8-14(23-16(17)7-10)9-3-4-11(18)15(5-9)22-2/h3-8,18-19H,1-2H3" ;
+            schema:inChIKey inchikey:ROCUOVBWAWAQFD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H14O6" ;
+            schema:name "Velutin" ;
+            schema:smiles "COc(c3)cc(O1)c(c(O)3)C(=O)C=C1c(c2)cc(OC)c(O)c2" ] ;
+    mbo:has_peak [ mbo:intensity 1.518e+03 ;
+            mbo:mz 1.670337e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 9.034e+03 ;
+            mbo:mz 3.010658e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 144 ],
+        [ mbo:intensity 1.365e+03 ;
+            mbo:mz 3.02068e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 5.616e+03 ;
+            mbo:mz 3.150859e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 9.01e+02 ;
+            mbo:mz 3.160892e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.442e+03 ;
+            mbo:mz 2.430646e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.973e+03 ;
+            mbo:mz 2.57044e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 8.63e+02 ;
+            mbo:mz 2.710596e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.2604e+04 ;
+            mbo:mz 2.720674e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.136e+03 ;
+            mbo:mz 2.730707e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 9.87e+02 ;
+            mbo:mz 2.740727e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 8.01e+02 ;
+            mbo:mz 2.850388e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 6.1013e+04 ;
+            mbo:mz 3.000624e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 974 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.720674e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0fk9-0089000000-e01adc7a00201a0a8164" ;
+    rdfs:comment "[Raw Data] CB095_Velutin_pos_40eV_CB000040.txt" ;
+    skos:definition "Velutin; LC-ESI-QTOF; MS2; [M+H]+; CE: 40eV" .
+

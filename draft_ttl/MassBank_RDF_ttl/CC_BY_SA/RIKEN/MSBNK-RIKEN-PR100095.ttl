@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100095 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100095" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3'-Dephosphocoenzyme A",
+                "dephospho CoA" ;
+            mbo:ch_compound_class "Coenzyme A" ;
+            mbo:ch_exact_mass 6.871489e+02 ;
+            rdfs:seeAlso cas:3633-59-8,
+                chemspider:388463,
+                knapsack:C00007257,
+                pubchem:CID439335 ;
+            schema:inChI "InChI=1S/C21H35N7O13P2S/c1-21(2,16(32)19(33)24-4-3-12(29)23-5-6-44)8-39-43(36,37)41-42(34,35)38-7-11-14(30)15(31)20(40-11)28-10-27-13-17(22)25-9-26-18(13)28/h9-11,14-16,20,30-32,44H,3-8H2,1-2H3,(H,23,29)(H,24,33)(H,34,35)(H,36,37)(H2,22,25,26)/t11-,14-,15-,16+,20-/m1/s1" ;
+            schema:inChIKey inchikey:KDTSHFARGAKYJN-IBOSZNHHSA-N ;
+            schema:molecularFormula "C21H35N7O13P2S" ;
+            schema:name "3'-Dephosphocoenzyme A",
+                "dephospho CoA" ;
+            schema:smiles "SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@@H](O1)[C@@H](O)[C@@H](O)[C@@H]1n(c3)c(n2)c(n3)c(N)nc2" ] ;
+    mbo:has_peak [ mbo:intensity 4.604e+00 ;
+            mbo:mz 2.611269e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 201 ],
+        [ mbo:intensity 2.073e+00 ;
+            mbo:mz 6.878365e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 2.958e+00 ;
+            mbo:mz 6.879192e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 3.485e+00 ;
+            mbo:mz 6.879815e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 152 ],
+        [ mbo:intensity 2.291e+01 ;
+            mbo:mz 6.881567e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.881567e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000i-0010009000-cd6eeab6ecb8cdc82e6c" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "3'-Dephosphocoenzyme A; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

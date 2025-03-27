@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80637 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80637" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.137" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8-Chlro-1-tetrahydronorharmanone" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.200403e+02 ;
+            rdfs:seeAlso cas:5565-76-4,
+                chemspider:3386133,
+                pubchem:CID4174840 ;
+            schema:inChI "InChI=1S/C11H9ClN2O/c12-8-3-1-2-6-7-4-5-13-11(15)10(7)14-9(6)8/h1-3,14H,4-5H2,(H,13,15)" ;
+            schema:inChIKey inchikey:ILCLBYYAGZLAGC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H9ClN2O" ;
+            schema:name "8-Chlro-1-tetrahydronorharmanone" ;
+            schema:smiles "C1CNC(=O)C2=C1C3=C(N2)C(=CC=C3)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 3.985983e+07 ;
+            mbo:mz 2.210476e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-00di-0090000000-2ae7f2419eaaeece8a6a" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.962" ;
+    skos:definition "8-Chlro-1-tetrahydronorharmanone; LC-APCI-QTOF; MS; POSITIVE" .
+

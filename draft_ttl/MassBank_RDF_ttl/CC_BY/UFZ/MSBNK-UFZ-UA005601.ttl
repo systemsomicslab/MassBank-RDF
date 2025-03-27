@@ -1,0 +1,106 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA005601 a mbo:MassSpectrum ;
+    dcterms:creator "Muz M (1), Dann J (1), Jaeger F (2), Brack W (1), Krauss M (1), (1) Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany, (2) Synchem UG & Co. KG, Felsberg-Altenburg, Germany" ;
+    dcterms:date "2017-08-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA005601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Muz M, Dann J, Jaeger F, Brack W, Krauss M (2017) Environ. Sci. Technol. 51:4681-4688, DOI:10.1021/acs.est.7b00426. Identification of Mutagenic Aromatic Amines in River Samples with Industrial Wastewater Impact" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Accucore PhenylHexyl 2.6um, 3x150mm, Thermo" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 3.2 min, 5/95 at 21 min, 5/95 at 41 min, 90/10 at 50 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.483 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-Azaniumyl-3-(4-hydroxyphenyl)propanoate",
+                "L-Tyrosine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.810739e+02 ;
+            rdfs:seeAlso cas:60-18-4,
+                chemspider:5833,
+                pubchem:CID6057 ;
+            schema:inChI "InChI=1S/C9H11NO3/c10-8(9(12)13)5-6-1-3-7(11)4-2-6/h1-4,8,11H,5,10H2,(H,12,13)/t8-/m0/s1" ;
+            schema:inChIKey inchikey:OUYCCCASQSFEME-QMMMGPOBSA-N ;
+            schema:molecularFormula "C9H11NO3" ;
+            schema:name "(2S)-2-Azaniumyl-3-(4-hydroxyphenyl)propanoate",
+                "L-Tyrosine" ;
+            schema:smiles "c1cc(ccc1C[C@@H](C(=O)O)N)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.144258e+06 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 495 ],
+        [ mbo:intensity 7.190918e+05 ;
+            mbo:mz 1.470441e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 166 ],
+        [ mbo:intensity 1.650409e+06 ;
+            mbo:mz 1.650546e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 381 ],
+        [ mbo:intensity 2.1589e+05 ;
+            mbo:mz 1.820812e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 8.532261e+05 ;
+            mbo:mz 9.50491e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 197 ],
+        [ mbo:intensity 6.56887e+04 ;
+            mbo:mz 1.030542e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 8.77445e+04 ;
+            mbo:mz 1.070491e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 7.37647e+04 ;
+            mbo:mz 1.090648e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 8.31179e+04 ;
+            mbo:mz 1.180651e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.870978e+06 ;
+            mbo:mz 1.190492e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 432 ],
+        [ mbo:intensity 2.132444e+06 ;
+            mbo:mz 1.230441e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 493 ],
+        [ mbo:intensity 4.324439e+06 ;
+            mbo:mz 1.360757e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.820813e+02 ;
+            mbo:precursor_mz 1.820812e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00kr-2900000000-e7ea6e1b478adba5204f" ;
+    rdfs:comment "INTERNAL_ID 56" ;
+    skos:definition "L-Tyrosine; LC-ESI-QFT; MS2; CE: 50%; R=35000; [M+H]+" .
+

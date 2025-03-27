@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100126 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100126" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Amino-2-deoxy-D-glucose",
+                "Chitosamine",
+                "Cosamin",
+                "D-(+)-Glucosamine",
+                "GlcN" ;
+            mbo:ch_compound_class "Monosaccharide" ;
+            mbo:ch_exact_mass 1.790794e+02 ;
+            rdfs:seeAlso cas:3416-24-8,
+                chemspider:388352,
+                knapsack:C00001121,
+                pubchem:CID439213 ;
+            schema:inChI "InChI=1S/C6H13NO5/c7-3-5(10)4(9)2(1-8)12-6(3)11/h2-6,8-11H,1,7H2/t2-,3-,4-,5-,6-/m1/s1" ;
+            schema:inChIKey inchikey:MSWZFWKMSRAUBD-QZABAPFNSA-N ;
+            schema:molecularFormula "C6H13NO5" ;
+            schema:name "2-Amino-2-deoxy-D-glucose",
+                "Chitosamine",
+                "Cosamin",
+                "D-(+)-Glucosamine",
+                "GlcN" ;
+            schema:smiles "OCC(O1)C(O)C(O)C(N)C(O)1" ] ;
+    mbo:has_peak [ mbo:intensity 5.321e+00 ;
+            mbo:mz 7.20467e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 163 ],
+        [ mbo:intensity 5.198e+00 ;
+            mbo:mz 1.6208e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 2.999e+00 ;
+            mbo:mz 1.799997e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 3.252e+00 ;
+            mbo:mz 1.800333e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 3.253e+01 ;
+            mbo:mz 1.800872e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.800872e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-001i-1900000000-72244a903a1a0f35ac2a" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "D-(+)-Glucosamine; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

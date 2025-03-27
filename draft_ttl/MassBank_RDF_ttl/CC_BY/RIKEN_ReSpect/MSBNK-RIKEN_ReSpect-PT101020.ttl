@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT101020 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT101020" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-hex-2-enal",
+                "trans-2-Hexen-1-al",
+                "trans-2-Hexenal",
+                "trans-2-Hexenyl aldehyde",
+                "trans-2-Propylacrolein" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Alkane" ;
+            mbo:ch_exact_mass 9.8145e+01 ;
+            rdfs:seeAlso cas:6728-26-3 ;
+            schema:inChI "InChI=1S/C6H10O/c1-2-3-4-5-6-7/h4-6H,2-3H2,1H3" ;
+            schema:inChIKey inchikey:MBDOYVRWFFCFHM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H10O" ;
+            schema:name "(E)-hex-2-enal",
+                "trans-2-Hexen-1-al",
+                "trans-2-Hexenal",
+                "trans-2-Hexenyl aldehyde",
+                "trans-2-Propylacrolein" ;
+            schema:smiles "CCCC=CC=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.556e+01 ;
+            mbo:mz 8.10533e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 412 ],
+        [ mbo:intensity 6.201e+01 ;
+            mbo:mz 9.9081e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.908096e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-9000000000-ea4667e9ee10cccddb24" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "trans-2-Hexen-1-al, trans-2-Hexenyl aldehyde, trans-2-Propylacrolein, trans-2-Hexenal, (E)-hex-2-enal; LC-ESI-QTOF; MS2" .
+

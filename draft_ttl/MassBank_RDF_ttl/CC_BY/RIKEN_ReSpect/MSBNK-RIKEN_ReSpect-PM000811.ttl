@@ -1,0 +1,104 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000811 a mbo:MassSpectrum ;
+    dcterms:creator "Madhusudanan KP, Chattopadhyay SK, Tripathi V, Sashidhara KV, & Kumar S" ;
+    dcterms:date "2006-04-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000811" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Madhusudanan, K. P.; Chattopadhyay, S. K.; Tripathi, V.; Sashidhara, K. V.; Kumar, S. MS/MS Profiling of Taxoids from the Needles of Taxus Wallichiana. Phytochemical Analysis 2002, 13 (1), 18–30. DOI:10.1002/pca.610" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass (Altrincham, UK) QuattroII triple-quadrupole mass spectrometer, JASCO(Tokyo, Japan) model 980 LC" ;
+            mbo:collision_energy "25V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent " ",
+                "2",
+                "3",
+                "4",
+                "C",
+                "H",
+                "M",
+                "N",
+                "O",
+                "e",
+                "m" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Taxchinin G" ;
+            mbo:ch_compound_class "CLASS1 Terpenoid CLASS2 Diterpenoid CLASS3 Taxchinin" ;
+            mbo:ch_exact_mass 5.52617e+02 ;
+            rdfs:seeAlso cas:153415-42-0,
+                pubchem:CID5321680 ;
+            schema:inChI "InChI=1S/C28H40O11/c1-12-18(33)10-20(37-15(4)30)27(9)22(12)24(38-16(5)31)28(26(7,8)35)11-19(36-14(3)29)13(2)21(28)23(34)25(27)39-17(6)32/h18-20,22-25,33-35H,1,10-11H2,2-9H3/t18-,19-,20-,22-,23+,24-,25-,27+,28-/m0/s1" ;
+            schema:inChIKey inchikey:KKYDBSIOPKKLQL-VZVRQYNNSA-N ;
+            schema:molecularFormula "C28H40O11" ;
+            schema:name "Taxchinin G" ;
+            schema:smiles "C=C1[C@@H](O)C[C@H](OC(C)=O)[C@]2(C)[C@@H]1[C@H](OC(C)=O)[C@]1(C(C)(C)O)C[C@H](OC(C)=O)C(C)=C1[C@@H](O)[C@@H]2OC(C)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.5e+01 ;
+            mbo:mz 2.37e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 450 ],
+        [ mbo:intensity 3.4e+01 ;
+            mbo:mz 4.75e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 340 ],
+        [ mbo:intensity 1.7e+01 ;
+            mbo:mz 5.35e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 170 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 5.53e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 2.55e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 6e+01 ;
+            mbo:mz 2.97e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 599 ],
+        [ mbo:intensity 5.3e+01 ;
+            mbo:mz 3.15e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 529 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.57e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.2e+01 ;
+            mbo:mz 3.73e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 220 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 3.75e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 1.8e+01 ;
+            mbo:mz 4.33e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 180 ],
+        [ mbo:intensity 2.8e+01 ;
+            mbo:mz 4.57e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 280 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.53e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-0a4i-0059300000-a7cf662cc008eecfc46a" ;
+    rdfs:comment "731" ;
+    skos:definition "Taxchinin G; LC-ESI-QQ; MS2" .
+

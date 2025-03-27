@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ371156 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ371156" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "90 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(4-methyl-5-oxo-4-propan-2-yl-1H-imidazol-2-yl)quinoline-3-carboxylic acid",
+                "Imazaquin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.11127e+02 ;
+            rdfs:seeAlso cas:81335-37-7,
+                chemspider:49446,
+                pubchem:CID54739 ;
+            schema:inChI "InChI=1S/C17H17N3O3/c1-9(2)17(3)16(23)19-14(20-17)13-11(15(21)22)8-10-6-4-5-7-12(10)18-13/h4-9H,1-3H3,(H,21,22)(H,19,20,23)" ;
+            schema:inChIKey inchikey:CABMTIJINOIHOD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H17N3O3" ;
+            schema:name "2-(4-methyl-5-oxo-4-propan-2-yl-1H-imidazol-2-yl)quinoline-3-carboxylic acid",
+                "Imazaquin" ;
+            schema:smiles "CC(C)C1(C(=O)NC(=N1)C2=NC3=CC=CC=C3C=C2C(=O)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.5127e+03 ;
+            mbo:mz 6.59985e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.4669e+04 ;
+            mbo:mz 2.360829e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 134 ],
+        [ mbo:intensity 6.9529e+03 ;
+            mbo:mz 1.530459e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.5417e+03 ;
+            mbo:mz 1.55062e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.1439e+03 ;
+            mbo:mz 1.680565e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.41414e+04 ;
+            mbo:mz 1.830563e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 8.5418e+03 ;
+            mbo:mz 1.950565e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.19987e+05 ;
+            mbo:mz 2.080517e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 215 ],
+        [ mbo:intensity 5.571262e+05 ;
+            mbo:mz 2.220674e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.082435e+05 ;
+            mbo:mz 2.230753e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 194 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.101195e+02 ;
+            mbo:precursor_mz 3.101197e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00di-0090000000-74e7d9c856d0f41331e9" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3711" ;
+    skos:definition "Imazaquin; LC-ESI-QFT; MS2; CE: 90; R=35000; [M-H]-" .
+

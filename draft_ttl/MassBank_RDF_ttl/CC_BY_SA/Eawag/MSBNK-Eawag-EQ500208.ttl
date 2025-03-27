@@ -1,0 +1,112 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ500208 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], B. Lauper [com]" ;
+    dcterms:date "2021-03-16"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ500208" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K., Du, L., Singer, H., Hollender, J.. Identification of LC-HRMS Nontarget Signals in Groundwater After Source Related Prioritization. Water Research 2021, 196. DOI: https://doi.org/10.1016/j.watres.2021.116994" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Exploris 240 Thermo Scientific" ;
+            mbo:collision_energy "150 % (nominal)" ;
+            mbo:column_name "Atlantis C18 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 100/0 at 1.5 min, 5/95 at 18.5 min, 5/95 at 28.5 min, 100/0 at 29 min, 100/0 at 33 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "21.459 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-benzoyl-4-hydroxy-2-methoxybenzenesulfonic acid",
+                "Sulisobenzone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.080355e+02 ;
+            rdfs:seeAlso cas:6628-37-1,
+                chemspider:18829,
+                pubchem:CID19988 ;
+            schema:inChI "InChI=1S/C14H12O6S/c1-20-12-8-11(15)10(7-13(12)21(17,18)19)14(16)9-5-3-2-4-6-9/h2-8,15H,1H3,(H,17,18,19)" ;
+            schema:inChIKey inchikey:CXVGEDCSTKKODG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H12O6S" ;
+            schema:name "5-benzoyl-4-hydroxy-2-methoxybenzenesulfonic acid",
+                "Sulisobenzone" ;
+            schema:smiles "COC1=C(C=C(C(=C1)O)C(=O)C2=CC=CC=C2)S(=O)(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.69584e+04 ;
+            mbo:mz 5.00151e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 171 ],
+        [ mbo:intensity 6.22362e+04 ;
+            mbo:mz 7.90178e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 394 ],
+        [ mbo:intensity 8.6775e+03 ;
+            mbo:mz 9.10179e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.20937e+04 ;
+            mbo:mz 9.20257e+01 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 3.29659e+04 ;
+            mbo:mz 9.50492e+01 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 209 ],
+        [ mbo:intensity 3.88019e+04 ;
+            mbo:mz 1.050446e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 246 ],
+        [ mbo:intensity 1.294917e+05 ;
+            mbo:mz 5.10229e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 819 ],
+        [ mbo:intensity 1.578814e+05 ;
+            mbo:mz 5.30022e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.22445e+04 ;
+            mbo:mz 5.30387e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 5.89356e+04 ;
+            mbo:mz 6.30229e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 373 ],
+        [ mbo:intensity 2.52435e+04 ;
+            mbo:mz 6.40307e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 8.82165e+04 ;
+            mbo:mz 6.50386e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 558 ],
+        [ mbo:intensity 2.31277e+04 ;
+            mbo:mz 6.89972e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 146 ],
+        [ mbo:intensity 4.68112e+04 ;
+            mbo:mz 7.70385e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 296 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.01141e+02 ;
+            mbo:precursor_mz 3.090427e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0udi-9000000000-e80433320f5d4b561317" ;
+    rdfs:comment "UCHEM_ID 5002" ;
+    skos:definition "Sulisobenzone; LC-ESI-QFT; MS2; CE: 150%; R=15000; [M+H]+" .
+

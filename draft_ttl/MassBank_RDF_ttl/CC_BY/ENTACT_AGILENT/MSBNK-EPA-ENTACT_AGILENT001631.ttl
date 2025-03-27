@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001631 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001631" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N,N'-Dicyclohexylthiourea" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.40166e+02 ;
+            rdfs:seeAlso cas:1212-29-9,
+                pubchem:CID727200 ;
+            schema:inChI "InChI=1S/C13H24N2S/c16-13(14-11-7-3-1-4-8-11)15-12-9-5-2-6-10-12/h11-12H,1-10H2,(H2,14,15,16)" ;
+            schema:inChIKey inchikey:KAJICSGLHKRDLN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H24N2S" ;
+            schema:name "N,N'-Dicyclohexylthiourea" ;
+            schema:smiles "S=C(NC1CCCCC1)NC1CCCCC1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 3.298044e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.786029e+00 ;
+            mbo:mz 5.797569e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 2.372537e+00 ;
+            mbo:mz 1.230928e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 24 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.391587e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-001i-9000000000-cb2a3bc497235da9ab14" ;
+    skos:definition "N,N'-Dicyclohexylthiourea; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

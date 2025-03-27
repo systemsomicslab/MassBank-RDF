@@ -1,0 +1,51 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00090 a mbo:MassSpectrum ;
+    dcterms:creator "Satoshi Inomata, Hiroyuki Yamada, Hiroshi Tanimoto, Center for Environmental Measurement and Analysis and Center for Global Environmental Research, National Institute for Environmental Studies, and Department of Mechanical Engineering, Tokyo Denki University" ;
+    dcterms:date "2018-12-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00090" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Hiroyuki Yamada, Satoshi Inomata, Hiroshi Tanimoto, Atmos. Environ., 107, 166-173 (2015)." ] ;
+    dcterms:rights "Satoshi Inomata, Hiroyuki Yamada, Hiroshi Tanimoto, Center for Environmental Measurement and Analysis and Center for Global Environmental Research, National Institute for Environmental Studies, and Department of Mechanical Engineering, Tokyo Denki University. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "PTR-QMS 500 (IONICON Analytik GmbH, Innsbruck, Austria)" ;
+            mbo:instrument_type "CI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Benzene" ;
+            mbo:ch_compound_class "Synthetic compound; aromatic compound" ;
+            mbo:ch_exact_mass 7.8047e+01 ;
+            rdfs:seeAlso chemspider:236,
+                pubchem:CID241 ;
+            schema:inChI "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H" ;
+            schema:inChIKey inchikey:UHOVQNZJYSORNB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H6" ;
+            schema:name "Benzene" ;
+            schema:smiles "c1ccccc1" ] ;
+    mbo:has_peak [ mbo:intensity 5.2e+00 ;
+            mbo:mz 7.8e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.7e+00 ;
+            mbo:mz 1.08e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 327 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004i-9200000000-d4888ed94a6a4e783628" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 16HP2005 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Benzene; CI-Q; MS; Positive; Reactant ion NO+" .
+

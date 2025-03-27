@@ -1,0 +1,100 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA285412 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA285412" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "5.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2-chlorophenyl)-2-(6,7-dihydro-4H-thieno[3,2-c]pyridin-5-yl)acetic acid",
+                "Clopidogrel carboxylic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.070434e+02 ;
+            rdfs:seeAlso cas:144457-28-3,
+                chemspider:3342490,
+                pubchem:CID4129546 ;
+            schema:inChI "InChI=1S/C15H14ClNO2S/c16-12-4-2-1-3-11(12)14(15(18)19)17-7-5-13-10(9-17)6-8-20-13/h1-4,6,8,14H,5,7,9H2,(H,18,19)" ;
+            schema:inChIKey inchikey:DCASRSISIKYPDD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H14ClNO2S" ;
+            schema:name "2-(2-chlorophenyl)-2-(6,7-dihydro-4H-thieno[3,2-c]pyridin-5-yl)acetic acid",
+                "Clopidogrel carboxylic acid" ;
+            schema:smiles "C1CN(CC2=C1SC=C2)C(C3=CC=CC=C3Cl)C(=O)O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.6839e+04 ;
+            mbo:mz 7.70387e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 155 ],
+        [ mbo:intensity 1.363345e+05 ;
+            mbo:mz 1.690051e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 574 ],
+        [ mbo:intensity 9.8573e+03 ;
+            mbo:mz 1.700369e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.24566e+04 ;
+            mbo:mz 1.050448e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 3.9544e+03 ;
+            mbo:mz 1.110266e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.254821e+05 ;
+            mbo:mz 1.130153e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 529 ],
+        [ mbo:intensity 1.670731e+05 ;
+            mbo:mz 1.250153e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 704 ],
+        [ mbo:intensity 7.3892e+03 ;
+            mbo:mz 1.340363e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 3.94347e+04 ;
+            mbo:mz 1.400263e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 166 ],
+        [ mbo:intensity 2.371508e+05 ;
+            mbo:mz 1.410103e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.76086e+04 ;
+            mbo:mz 1.520262e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 201 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.080518e+02 ;
+            mbo:precursor_mz 3.080507e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-002f-0900000000-ebb51c0120d3ace3e497" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2854" ;
+    skos:definition "Clopidogrel carboxylic acid; LC-ESI-ITFT; MS2; CE: 75%; R=15000; [M+H]+" .
+

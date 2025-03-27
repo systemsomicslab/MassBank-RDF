@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT109980 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT109980" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(R)-3-Acetoxy-4-(trimethylammonio)butyrate",
+                "ALC",
+                "ALCAR",
+                "L-Carnitine acetyl ester",
+                "Levacecarnine",
+                "O-Acety-L-carnitine hydrochloride",
+                "[(2R)-2-acetyloxy-4-hydroxy-4-oxobutyl]-trimethylazanium" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Carnitine" ;
+            mbo:ch_exact_mass 2.04246e+02 ;
+            rdfs:seeAlso cas:14992-62-2 ;
+            schema:inChI "InChI=1S/C9H17NO4/c1-7(11)14-8(5-9(12)13)6-10(2,3)4/h8H,5-6H2,1-4H3/p+1" ;
+            schema:inChIKey inchikey:RDHQFKQIGNGIED-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C9H18NO4]+" ;
+            schema:name "(R)-3-Acetoxy-4-(trimethylammonio)butyrate",
+                "ALC",
+                "ALCAR",
+                "L-Carnitine acetyl ester",
+                "Levacecarnine",
+                "O-Acety-L-carnitine hydrochloride",
+                "[(2R)-2-acetyloxy-4-hydroxy-4-oxobutyl]-trimethylazanium" ;
+            schema:smiles "CC(=O)OC(CC(=O)O)C[N+](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.488e+03 ;
+            mbo:mz 8.50299e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.061e+03 ;
+            mbo:mz 1.450539e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 2.527e+03 ;
+            mbo:mz 2.041236e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 337 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.041235e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-9130000000-e1b9918cf899fd3baa37" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "O-Acety-L-carnitine hydrochloride, ALCAR, Levacecarnine , [(2R)-2-acetyloxy-4-hydroxy-4-oxobutyl]-trimethylazanium, (R)-3-Acetoxy-4-(trimethylammonio)butyrate, ALC, L-Carnitine acetyl ester; LC-ESI-QTOF; MS2" .
+

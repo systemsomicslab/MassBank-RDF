@@ -1,0 +1,70 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA001101 a mbo:MassSpectrum ;
+    dcterms:creator "C. Gallampois (Umea), E. Schymanski (Eawag), W. Brack (UFZ)" ;
+    dcterms:date "2014-06-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA001101" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Multi-criteria approach for tentative identification of polyaromatic river mutagens" ] ;
+    dcterms:rights "Copyright (C) Eawag, 2014 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "Direct infusion experiment" ;
+            mbo:flow_rate "5 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "N/A min" ;
+            mbo:solvent "A methanol",
+                "B N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9-Fluorenone",
+                "fluoren-9-one" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.800575e+02 ;
+            rdfs:seeAlso cas:486-25-9,
+                chemspider:9824,
+                pubchem:CID10241 ;
+            schema:inChI "InChI=1S/C13H8O/c14-13-11-7-3-1-5-9(11)10-6-2-4-8-12(10)13/h1-8H" ;
+            schema:inChIKey inchikey:YLQWCDOCJODRMT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H8O" ;
+            schema:name "9-Fluorenone",
+                "fluoren-9-one" ;
+            schema:smiles "c1ccc2c(c1)c1ccccc1C2=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.609228e+05 ;
+            mbo:mz 1.520621e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 8.243762e+06 ;
+            mbo:mz 1.530699e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 749 ],
+        [ mbo:intensity 1.09892e+07 ;
+            mbo:mz 1.810648e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.810648e+02 ;
+            mbo:precursor_mz 1.810648e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0f89-0900000000-21059c2d09f5ba688291" ;
+    rdfs:comment "INTERNAL_ID 11" ;
+    skos:definition "9-Fluorenone; ESI-ITFT; MS2; CE: 35%; R=30000; [M+H]+" .
+

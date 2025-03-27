@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000982 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000982" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,3'-Iminobispropanenitrile" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.230796e+02 ;
+            rdfs:seeAlso cas:111-94-4,
+                pubchem:CID8149 ;
+            schema:inChI "InChI=1S/C6H9N3/c7-3-1-5-9-6-2-4-8/h9H,1-2,5-6H2" ;
+            schema:inChIKey inchikey:SBAJRGRUGUQKAF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H9N3" ;
+            schema:name "3,3'-Iminobispropanenitrile" ;
+            schema:smiles "N#CCCNCCC#N" ] ;
+    mbo:has_peak [ mbo:intensity 9.999999e+01 ;
+            mbo:mz 4.203383e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.278015e+01 ;
+            mbo:mz 4.20464e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 7.21658e+01 ;
+            mbo:mz 5.403383e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 721 ],
+        [ mbo:intensity 7.477237e+00 ;
+            mbo:mz 5.40464e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 3.867052e+00 ;
+            mbo:mz 5.604948e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 8.362402e+01 ;
+            mbo:mz 8.306037e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 835 ],
+        [ mbo:intensity 7.994231e+00 ;
+            mbo:mz 8.307295e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 4.500875e+00 ;
+            mbo:mz 1.070478e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 45 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.240869e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0f7o-9000000000-f9bd7a65bfc93d58b26b" ;
+    skos:definition "3,3'-Iminobispropanenitrile; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

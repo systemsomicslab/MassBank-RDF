@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT210350 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT210350" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-hydroxy-2-(3-hydroxyphenyl)acetic acid",
+                "3-Hydroxymandelate",
+                "3-Hydroxymandelic acid",
+                "3-Hydroxyphenylglycolic acid",
+                "m-Hydroxymandelic Acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Mandelic acid" ;
+            mbo:ch_exact_mass 1.68148e+02 ;
+            rdfs:seeAlso cas:17119-15-2 ;
+            schema:inChI "InChI=1S/C8H8O4/c9-6-3-1-2-5(4-6)7(10)8(11)12/h1-4,7,9-10H,(H,11,12)" ;
+            schema:inChIKey inchikey:OLSDAJRAVOVKLG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8O4" ;
+            schema:name "2-hydroxy-2-(3-hydroxyphenyl)acetic acid",
+                "3-Hydroxymandelate",
+                "3-Hydroxymandelic acid",
+                "3-Hydroxyphenylglycolic acid",
+                "m-Hydroxymandelic Acid" ;
+            schema:smiles "C1=CC(=CC(=C1)O)C(C(=O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.614e+02 ;
+            mbo:mz 1.210287e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.32e+02 ;
+            mbo:mz 1.230441e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 235 ],
+        [ mbo:intensity 6.849e+01 ;
+            mbo:mz 1.670345e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 122 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.670345e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0900000000-72199f89fe731fcb25d0" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "2-hydroxy-2-(3-hydroxyphenyl)acetic acid, 3-Hydroxymandelic acid , 3-Hydroxymandelate, m-Hydroxymandelic Acid, 3-Hydroxyphenylglycolic acid; LC-ESI-QTOF; MS2" .
+

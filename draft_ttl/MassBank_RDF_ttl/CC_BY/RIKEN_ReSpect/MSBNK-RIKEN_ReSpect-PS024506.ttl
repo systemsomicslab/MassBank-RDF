@@ -1,0 +1,67 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS024506 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS024506" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "60" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-Deoxy-beta-L-galactopyranosylguanosine 5'-diphosphate",
+                "GDP-Fuc",
+                "GDP-fucose",
+                "Guanosine-5'-diphospho-beta-L-fucose" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Guanosine phosphate" ;
+            mbo:ch_exact_mass 5.89348e+02 ;
+            rdfs:seeAlso cas:15839-70-0,
+                pubchem:CID10918995 ;
+            schema:inChI "InChI=1S/C16H25N5O15P2/c1-4-7(22)9(24)11(26)15(33-4)35-38(30,31)36-37(28,29)32-2-5-8(23)10(25)14(34-5)21-3-18-6-12(21)19-16(17)20-13(6)27/h3-5,7-11,14-15,22-26H,2H2,1H3,(H,28,29)(H,30,31)(H3,17,19,20,27)" ;
+            schema:inChIKey inchikey:LQEBEXMHBLQMDB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H25N5O15P2" ;
+            schema:name "6-Deoxy-beta-L-galactopyranosylguanosine 5'-diphosphate",
+                "GDP-Fuc",
+                "GDP-fucose",
+                "Guanosine-5'-diphospho-beta-L-fucose" ;
+            schema:smiles "CC1C(C(C(C(O1)OP(=O)(O)OP(=O)(O)OCC2C(C(C(O2)N3C=NC4=C3NC(=NC4=O)N)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.2061e+04 ;
+            mbo:mz 9.7e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 1.5789e+04 ;
+            mbo:mz 1.51e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 1.67428e+05 ;
+            mbo:mz 1.52e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.6538e+04 ;
+            mbo:mz 1.53e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 99 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.9045e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0udi-0900000000-b6fe950da08aa1c8fdf9" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "GDP-fucose, GDP-Fuc, Guanosine-5'-diphospho-beta-L-fucose, 6-Deoxy-beta-L-galactopyranosylguanosine 5'-diphosphate; LC-ESI-QQ; MS2" .
+

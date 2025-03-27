@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-KWR-KW105104 a mbo:MassSpectrum ;
+    dcterms:creator "Erik Emke, Andrea Brunner, KWR" ;
+    dcterms:date "2017-03-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-KWR-KW105104" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 KWR watercycle research institute under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Classic, Thermo Scientific" ;
+            mbo:collision_energy "65 eV FT-MS" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x150mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 0/100 at 40 min, 0/100 at 45 min, 95/5 at 47 min, 95/5 at 52 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "19.416 min" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "diisopropylsuccinate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.021205e+02 ;
+            rdfs:seeAlso cas:924-88-9,
+                chemspider:63399,
+                pubchem:CID70213 ;
+            schema:inChI "InChI=1S/C10H18O4/c1-7(2)13-9(11)5-6-10(12)14-8(3)4/h7-8H,5-6H2,1-4H3" ;
+            schema:inChIKey inchikey:YPLYFEUBZLLLIY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H18O4" ;
+            schema:name "diisopropylsuccinate" ;
+            schema:smiles "CC(C)OC(=O)CCC(=O)OC(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.282e+02 ;
+            mbo:mz 5.50178e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.1935e+03 ;
+            mbo:mz 7.30283e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 9.45802e+04 ;
+            mbo:mz 1.010232e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.88171e+04 ;
+            mbo:mz 1.190337e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 621 ],
+        [ mbo:intensity 8.621e+03 ;
+            mbo:mz 1.430702e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 91 ],
+        [ mbo:intensity 2.99401e+04 ;
+            mbo:mz 1.610807e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 316 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.251093e+02 ;
+            mbo:precursor_mz 2.031278e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0uxr-0900000000-2094bb58aec1c7e9e046" ;
+    rdfs:comment "INTERNAL_ID 1051" ;
+    skos:definition "diisopropylsuccinate; LC-ESI-ITFT; MS2; CE: 65 eV; R=30000; [M+H]+" .
+

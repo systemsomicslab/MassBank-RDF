@@ -1,0 +1,60 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000423 a mbo:MassSpectrum ;
+    dcterms:creator "Sanchez-Rabaneda F, et al." ;
+    dcterms:date "2006-04-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000423" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sánchez-Rabaneda, F.; Jáuregui, O.; Casals, I.; Andrés-Lacueva, C.; Izquierdo-Pulido, M.; Lamuela-Raventós, R. M. Liquid Chromatographic/Electrospray Ionization Tandem Mass Spectrometric Study of the Phenolic Composition of Cocoa (Theobroma Cacao). Journal of Mass Spectrometry 2003, 38 (1), 35–42. DOI:10.1002/jms.395" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent (Waldbronn, Germany) Model 1100; API 3000 triple-quadrupole mass spectrometer (Perkin-Elmer Sciex, Concord, ON, Canada)" ;
+            mbo:collision_energy "-40" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Amentoflavone" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavone CLASS3 Apigenin glycoside" ;
+            mbo:ch_exact_mass 5.38464e+02 ;
+            rdfs:seeAlso cas:1617-53-4,
+                pubchem:CID5281600 ;
+            schema:inChI "InChI=1S/C30H18O10/c31-15-4-1-13(2-5-15)24-12-23(38)29-21(36)10-20(35)27(30(29)40-24)17-7-14(3-6-18(17)33)25-11-22(37)28-19(34)8-16(32)9-26(28)39-25/h1-12,31-36H" ;
+            schema:inChIKey inchikey:YUSWMAULDXZHPY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C30H18O10" ;
+            schema:name "Amentoflavone" ;
+            schema:smiles "O=c1cc(-c2ccc(O)c(-c3c(O)cc(O)c4c(=O)cc(-c5ccc(O)cc5)oc34)c2)oc2cc(O)cc(O)c12" ] ;
+    mbo:has_peak [ mbo:intensity 6.5e+01 ;
+            mbo:mz 3.75e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 649 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 5.37e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.37e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-002r-0005090000-a8c6b642b46f3721c01d" ;
+    rdfs:comment "726" ;
+    skos:definition "Amentoflavone; LC-ESI-QQ; MS2" .
+

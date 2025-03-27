@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000500 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000500" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(Trifluoromethyl)benzoic acid",
+                "DTXSID2041460" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.900242e+02 ;
+            rdfs:seeAlso cas:454-92-2,
+                pubchem:CID9963 ;
+            schema:inChI "InChI=1S/C8H5F3O2/c9-8(10,11)6-3-1-2-5(4-6)7(12)13/h1-4H,(H,12,13)" ;
+            schema:inChIKey inchikey:FQXQBFUUVCDIRK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H5F3O2" ;
+            schema:name "3-(Trifluoromethyl)benzoic acid",
+                "DTXSID2041460" ;
+            schema:smiles "OC(=O)C1=CC(=CC=C1)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 1.148373e+01 ;
+            mbo:mz 4.900837e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 1.989068e+01 ;
+            mbo:mz 1.250208e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 199 ],
+        [ mbo:intensity 4.439476e+01 ;
+            mbo:mz 1.450271e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 444 ],
+        [ mbo:intensity 1.249571e+00 ;
+            mbo:mz 5.499895e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 4.924374e+01 ;
+            mbo:mz 6.899576e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 492 ],
+        [ mbo:intensity 3.439858e+00 ;
+            mbo:mz 7.500518e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 2.613183e+00 ;
+            mbo:mz 7.500632e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 5.573004e+01 ;
+            mbo:mz 7.502402e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 557 ],
+        [ mbo:intensity 2.113989e+00 ;
+            mbo:mz 8.400055e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 8.500837e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.894046e+01 ;
+            mbo:mz 1.050146e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 889 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.890169e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0551-9600000000-fd6130a0d10e90360dcb" ;
+    skos:definition "3-(Trifluoromethyl)benzoic acid; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

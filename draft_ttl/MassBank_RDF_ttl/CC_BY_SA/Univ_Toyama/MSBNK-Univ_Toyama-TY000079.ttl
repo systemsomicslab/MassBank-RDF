@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000079 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000079" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1278.200 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1E,6E)-1,7-Bis(4-hydroxyphenyl)-1,6-heptadiene-3,5-dione",
+                "Bisdemethoxycurcumin",
+                "Didemethoxycurcumin" ;
+            mbo:ch_compound_class "Natural Product; Diarylheptanoid" ;
+            mbo:ch_exact_mass 3.081049e+02 ;
+            rdfs:seeAlso cas:33171-05-0,
+                pubchem:CID5315472 ;
+            schema:inChI "InChI=1S/C19H16O4/c20-16-7-1-14(2-8-16)5-11-18(22)13-19(23)12-6-15-3-9-17(21)10-4-15/h1-12,20-21H,13H2/b11-5+,12-6+" ;
+            schema:inChIKey inchikey:PREBVFJICNPEKM-YDWXAUTNSA-N ;
+            schema:molecularFormula "C19H16O4" ;
+            schema:name "(1E,6E)-1,7-Bis(4-hydroxyphenyl)-1,6-heptadiene-3,5-dione",
+                "Bisdemethoxycurcumin",
+                "Didemethoxycurcumin" ;
+            schema:smiles "C1=CC(=CC=C1/C=C/C(=O)CC(=O)/C=C/C2=CC=C(C=C2)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.430889e+07 ;
+            mbo:mz 3.091127e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.260598e+07 ;
+            mbo:mz 3.101166e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 232 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-2a74550383ed3cec9bc9" ;
+    skos:definition "Bisdemethoxycurcumin; LC-ESI-ITTOF; MS; [M+H]+" .
+

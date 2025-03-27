@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000677 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000677" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2H-3,1-Benzoxazine-2,4(1H)-dione" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.630269e+02 ;
+            rdfs:seeAlso cas:118-48-9,
+                pubchem:CID8359 ;
+            schema:inChI "InChI=1S/C8H5NO3/c10-7-5-3-1-2-4-6(5)9-8(11)12-7/h1-4H,(H,9,11)" ;
+            schema:inChIKey inchikey:TXJUTRJFNRYTHH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H5NO3" ;
+            schema:name "2H-3,1-Benzoxazine-2,4(1H)-dione" ;
+            schema:smiles "O=C1OC(=O)NC2C=CC=CC1=2" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 4.199854e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.274441e+00 ;
+            mbo:mz 4.203492e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 1.034416e+01 ;
+            mbo:mz 1.180298e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 103 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.620197e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-9000000000-09937c89ac40cea822cb" ;
+    skos:definition "2H-3,1-Benzoxazine-2,4(1H)-dione; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

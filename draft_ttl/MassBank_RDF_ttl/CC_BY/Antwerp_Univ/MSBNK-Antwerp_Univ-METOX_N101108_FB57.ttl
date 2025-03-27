@@ -1,0 +1,89 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N101108_FB57 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N101108_FB57" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.211 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bis(2-ethylhexyl) phthalate",
+                "Bis(2-ethylhexyl)phthalate",
+                "bis(2-ethylhexyl) benzene-1,2-dicarboxylate" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.90277e+02 ;
+            rdfs:seeAlso cas:117-81-7,
+                chemspider:21106505,
+                pubchem:CID8343 ;
+            schema:inChI "InChI=1S/C24H38O4/c1-5-9-13-19(7-3)17-27-23(25)21-15-11-12-16-22(21)24(26)28-18-20(8-4)14-10-6-2/h11-12,15-16,19-20H,5-10,13-14,17-18H2,1-4H3" ;
+            schema:inChIKey inchikey:BJQHLKABXJIVAM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C24H38O4" ;
+            schema:name "Bis(2-ethylhexyl) phthalate",
+                "Bis(2-ethylhexyl)phthalate",
+                "bis(2-ethylhexyl) benzene-1,2-dicarboxylate" ;
+            schema:smiles "CCCCC(CC)COC(=O)C1=CC=CC=C1C(=O)OCC(CC)CCCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.3716e+03 ;
+            mbo:mz 7.10867e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 6.07e+01 ;
+            mbo:mz 8.10697e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.8027e+03 ;
+            mbo:mz 9.30347e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 4.8e+01 ;
+            mbo:mz 1.050358e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.6755e+03 ;
+            mbo:mz 1.210294e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 5.95e+01 ;
+            mbo:mz 1.232513e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 4.69577e+04 ;
+            mbo:mz 1.490239e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.1717e+03 ;
+            mbo:mz 1.500274e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 46 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.490242e+02 ;
+            mbo:precursor_mz 3.912843e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0002-0900000000-9c75fe19de0d4c340c22" ;
+    rdfs:comment "INTERNAL_ID 1011" ;
+    skos:definition "Bis(2-ethylhexyl)phthalate; LC-ESI-QTOF; MS2; CE: 40eV; R=7000; [M+H]+" .
+

@@ -1,0 +1,60 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB002939 a mbo:MassSpectrum ;
+    dcterms:creator "Carolin Huber, Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2020-02-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB002939" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Huber C, Mueller E, Schulze T, Brack W, Krauss M, Improving the Screening Analysis of Pesticide Metabolites in Human Biomonitoring by Combining High-Throughput In Vitro Incubation and Automated LC–HRMS Data Processing, Analytical Chemistry, https://doi.org/10.1021/acs.analchem.1c00972" ] ;
+    dcterms:rights "Copyright (C) 2021 Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "42% (nominal) with stepped collision energies 30% and 55%" ;
+            mbo:column_name "Phenomenex Synergi Polar-RP 2.5 um 100 mm x 3 mm with pre-column" ;
+            mbo:flow_gradient "5/0/0 at 0 min, 5/0/0 at 2 min, 5/95/0at 8 min, 5/80/15 at 12 min, 5/25/70 at 19 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "70000" ;
+            mbo:retention_time "9.82" ;
+            mbo:solvent "A water with 1mM ammoniumfloride",
+                "B methanol",
+                "C acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(2,2-dichloroethenyl)-2,2-dimethylcyclopropane-1-carboxylic acid",
+                "Cypermethrin-3-phenoxybenzoic-acid" ;
+            mbo:ch_compound_class "N/A; Biotransformation Product" ;
+            mbo:ch_exact_mass 2.080058e+02 ;
+            rdfs:seeAlso cas:55701-05-8,
+                pubchem:CID91658 ;
+            schema:inChI "InChI=1S/C8H10Cl2O2/c1-8(2)4(3-5(9)10)6(8)7(11)12/h3-4,6H,1-2H3,(H,11,12)" ;
+            schema:inChIKey inchikey:LLMLSUSAKZVFOA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H10Cl2O2" ;
+            schema:name "3-(2,2-dichloroethenyl)-2,2-dimethylcyclopropane-1-carboxylic acid",
+                "Cypermethrin-3-phenoxybenzoic-acid" ;
+            schema:smiles "CC1(C(C1C(=O)O)C=C(Cl)Cl)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.64446e+05 ;
+            mbo:mz 2.069983e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.069989e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-0effeefe77b71851030e" ;
+    rdfs:comment "Cypermethrin_3-phenoxybenzoic_acid_CE42eV.txt" ;
+    skos:definition "Cypermethrin-3-phenoxybenzoic-acid (TENTATIVE); LC-ESI-QFT; MS2; CE: 42%; R=70000; [M-H]-" .
+

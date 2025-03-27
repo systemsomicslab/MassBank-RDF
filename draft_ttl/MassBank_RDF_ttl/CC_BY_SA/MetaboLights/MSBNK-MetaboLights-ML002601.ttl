@@ -1,0 +1,114 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MetaboLights-ML002601 a mbo:MassSpectrum ;
+    dcterms:creator "Mark Earll, Stephan Beisken, EMBL-EBI" ;
+    dcterms:date "2014-11-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-MetaboLights-ML002601" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beisken S et al (2014) Scientific Data, 1:140029, DOI:10.1038/sdata.2014.29. http://www.ebi.ac.uk/metabolights/MTBLS38" ] ;
+    dcterms:rights "Copyright (C) 2014, European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), Hinxton, UK. under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap Velos Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "HSS T3 1.7 um, 2x150 mm, Waters" ;
+            mbo:flow_gradient "100/0 at 0 min, 90/10 at 7.5 min, 0/100 at 10 min, 0/100 at 12 min, 100/0 at 18 min, 100/0 at 25 min" ;
+            mbo:flow_rate "250 uL/min at 0 min, 400 uL/min at 7.5 min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "9.9 min" ;
+            mbo:solvent "A 0.2% Formic Acid",
+                "B 98/2/0.2 Acetonitrile/Water/Formic Acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5,7-dihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+                "apigenin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.700528e+02 ;
+            rdfs:seeAlso cas:520-36-5,
+                chemspider:4444100,
+                pubchem:CID5280443 ;
+            schema:inChI "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-7,16-18H" ;
+            schema:inChIKey inchikey:KZNIFHPLKGYRTM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O5" ;
+            schema:name "5,7-dihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+                "apigenin" ;
+            schema:smiles "O=c1cc(-c2ccc(O)cc2)oc2cc(O)cc(O)c12" ] ;
+    mbo:has_peak [ mbo:intensity 3.332718e+05 ;
+            mbo:mz 1.190491e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 5.34646e+04 ;
+            mbo:mz 2.250547e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.86842e+04 ;
+            mbo:mz 2.290489e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 5.79559e+04 ;
+            mbo:mz 2.430644e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.07209e+04 ;
+            mbo:mz 2.470612e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.0023e+07 ;
+            mbo:mz 2.710601e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.4937e+04 ;
+            mbo:mz 1.210282e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.12501e+04 ;
+            mbo:mz 1.450283e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.024908e+06 ;
+            mbo:mz 1.530182e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 7.16908e+04 ;
+            mbo:mz 1.540216e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.56391e+04 ;
+            mbo:mz 1.630388e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.53719e+04 ;
+            mbo:mz 1.710286e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.96249e+04 ;
+            mbo:mz 1.870392e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.33593e+04 ;
+            mbo:mz 2.030703e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.710593e+02 ;
+            mbo:precursor_mz 2.710601e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-00di-0090000000-a85299a573dffafef065" ;
+    rdfs:comment "ML_ID 26" ;
+    skos:definition "apigenin; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M+H]+" .
+

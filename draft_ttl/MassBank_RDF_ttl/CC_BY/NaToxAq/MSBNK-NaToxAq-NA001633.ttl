@@ -1,0 +1,73 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA001633 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA001633" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "95 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "11.040 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Digitoxigenin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.742457e+02 ;
+            rdfs:seeAlso pubchem:CID4369270 ;
+            schema:inChI "InChI=1S/C23H34O4/c1-21-8-5-16(24)12-15(21)3-4-19-18(21)6-9-22(2)17(7-10-23(19,22)26)14-11-20(25)27-13-14/h11,15-19,24,26H,3-10,12-13H2,1-2H3/t15-,16+,17-,18+,19-,21+,22-,23+/m1/s1" ;
+            schema:inChIKey inchikey:XZTUSOXSLKTKJQ-CESUGQOBSA-N ;
+            schema:molecularFormula "C23H34O4" ;
+            schema:name "Digitoxigenin" ;
+            schema:smiles "C[C@]12CC[C@H]3[C@@H](CC[C@@H]4C[C@@H](O)CC[C@]34C)[C@@]1(O)CC[C@@H]2C1=CC(=O)OC1" ] ;
+    mbo:has_peak [ mbo:intensity 1.3532e+03 ;
+            mbo:mz 7.90543e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 428 ],
+        [ mbo:intensity 1.2602e+03 ;
+            mbo:mz 8.10699e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 399 ],
+        [ mbo:intensity 3.1558e+03 ;
+            mbo:mz 9.10545e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.029e+03 ;
+            mbo:mz 1.050701e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 642 ],
+        [ mbo:intensity 1.0689e+03 ;
+            mbo:mz 1.070854e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 338 ],
+        [ mbo:intensity 1.5669e+03 ;
+            mbo:mz 1.310854e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 496 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.163515e+02 ;
+            mbo:precursor_mz 3.75253e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0536-9700000000-a7389160d9fc0fa5941c" ;
+    rdfs:comment "INTERNAL_ID 23" ;
+    skos:definition "Digitoxigenin; LC-ESI-ITFT; MS2; CE: 95%; R=15000; [M+H]+" .
+

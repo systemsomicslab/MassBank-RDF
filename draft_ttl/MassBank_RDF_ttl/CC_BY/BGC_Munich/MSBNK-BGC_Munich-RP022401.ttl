@@ -1,0 +1,60 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP022401 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP022401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.658 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ortophosphate",
+                "phosphoric acid" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 9.79769e+01 ;
+            rdfs:seeAlso chemspider:979,
+                pubchem:CID1004 ;
+            schema:inChI "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)" ;
+            schema:inChIKey inchikey:NBIIXXVUZAFLBC-UHFFFAOYSA-N ;
+            schema:molecularFormula "H3O4P" ;
+            schema:name "Ortophosphate",
+                "phosphoric acid" ;
+            schema:smiles "OP(=O)(O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.3e+02 ;
+            mbo:mz 8.09736e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 7.048e+03 ;
+            mbo:mz 9.89838e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.89841e+01 ;
+            mbo:precursor_mz 9.89842e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-9000000000-6f386712e664a4b37a0f" ;
+    rdfs:comment "INTERNAL_ID 224" ;
+    skos:definition "Ortophosphate; LC-ESI-QTOF; MS2; CE: 10; R=; [M+H]+" .
+

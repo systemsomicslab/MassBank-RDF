@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100645 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100645" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,5-Bis(glucosyloxy)-4',7-dihydroxyflavylium",
+                "Monardin",
+                "Pelargonidin 3,5-di-beta-D-glucoside",
+                "Pelargonin" ;
+            mbo:ch_compound_class "Anthocyanidin" ;
+            mbo:ch_exact_mass 5.951663e+02 ;
+            rdfs:seeAlso cas:58751-31-8,
+                chemspider:390369,
+                knapsack:C00002387,
+                pubchem:CID441772 ;
+            schema:inChI "InChI=1S/C27H30O15/c28-8-17-19(32)21(34)23(36)26(41-17)39-15-6-12(31)5-14-13(15)7-16(25(38-14)10-1-3-11(30)4-2-10)40-27-24(37)22(35)20(33)18(9-29)42-27/h1-7,17-24,26-29,32-37H,8-9H2,(H-,30,31)/p+1/t17-,18-,19-,20-,21+,22+,23-,24-,26-,27-/m1/s1" ;
+            schema:inChIKey inchikey:SLCKJKWFULXZBD-ZOTFFYTFSA-O ;
+            schema:molecularFormula "[C27H31O15]+" ;
+            schema:name "3,5-Bis(glucosyloxy)-4',7-dihydroxyflavylium",
+                "Monardin",
+                "Pelargonidin 3,5-di-beta-D-glucoside",
+                "Pelargonin" ;
+            schema:smiles "O(C5CO)C(C(C(C5O)O)O)Oc(c4)c(c1)c(cc4O)[o+1]c(c(c3)ccc(O)c3)c(OC(O2)C(C(C(C2CO)O)O)O)1" ] ;
+    mbo:has_peak [ mbo:intensity 6.236e+01 ;
+            mbo:mz 1.470095e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 174 ],
+        [ mbo:intensity 3.34e+01 ;
+            mbo:mz 2.390372e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 1.244e+02 ;
+            mbo:mz 2.670312e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 347 ],
+        [ mbo:intensity 5.795e+01 ;
+            mbo:mz 2.680381e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 161 ],
+        [ mbo:intensity 3.586e+02 ;
+            mbo:mz 2.69047e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.155e+01 ;
+            mbo:mz 4.300922e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 2.334e+02 ;
+            mbo:mz 4.311004e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 650 ],
+        [ mbo:intensity 9.293e+01 ;
+            mbo:mz 5.931506e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 259 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.931507e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0159-0090410000-fcd51f7a3badce528641" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Pelargonin; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-2H]-" .
+

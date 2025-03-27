@@ -1,0 +1,93 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2012-SMI00032 a mbo:MassSpectrum ;
+    dcterms:creator "S. Neumann: IPB-Halle, Germany & E. Schymanski: Eawag, Switzerland" ;
+    dcterms:date "2012-08-31 (Created 2012-08-31)"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2012-SMI00032" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E.; Neumann, S. The Critical Assessment of Small Molecule Identification (CASMI): Challenges and Solutions. Metabolites 2013, 3 (3), 517–38. DOI:10.3390/metabo3030517" ] ;
+    dcterms:rights "CASMI2012 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker micrOTOF-Q" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Waters Acquity" ;
+            mbo:flow_gradient "water/acetonitrile" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "12000" ;
+            mbo:retention_time "244 sec (MSMS)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Glucolesquerellin" ;
+            mbo:ch_compound_class "N/A; Unknown for CASMI" ;
+            mbo:ch_exact_mass 4.49085e+02 ;
+            rdfs:seeAlso chemspider:30791700,
+                pubchem:CID46173875 ;
+            schema:inChI "InChI=1S/C14H27NO9S3/c1-25-7-5-3-2-4-6-10(15-24-27(20,21)22)26-14-13(19)12(18)11(17)9(8-16)23-14/h9,11-14,16-19H,2-8H2,1H3,(H,20,21,22)/t9-,11-,12+,13-,14+/m1/s1" ;
+            schema:inChIKey inchikey:ZAKICGFSIJSCSF-LPUQOGTASA-N ;
+            schema:molecularFormula "C14H27NO9S3" ;
+            schema:name "Glucolesquerellin" ;
+            schema:smiles "CSCCCCCCC(=NOS(=O)(=O)O)S[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.129e+03 ;
+            mbo:mz 9.594938e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 252 ],
+        [ mbo:intensity 1.863e+03 ;
+            mbo:mz 4.490783e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 220 ],
+        [ mbo:intensity 1.547e+03 ;
+            mbo:mz 4.500739e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 183 ],
+        [ mbo:intensity 5.927e+03 ;
+            mbo:mz 9.695728e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 700 ],
+        [ mbo:intensity 6.17e+02 ;
+            mbo:mz 9.895342e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 73 ],
+        [ mbo:intensity 4.56e+02 ;
+            mbo:mz 1.95032e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 5.26e+02 ;
+            mbo:mz 2.060664e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 8.66e+02 ;
+            mbo:mz 2.550184e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 1.976e+03 ;
+            mbo:mz 2.59011e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 233 ],
+        [ mbo:intensity 1.709e+03 ;
+            mbo:mz 2.749888e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 202 ],
+        [ mbo:intensity 8.455e+03 ;
+            mbo:mz 4.480755e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.480764e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0002-6030900000-5a11833c61b3043f21a6" ;
+    rdfs:comment "CASMI2012 LC Challenge 3" ;
+    skos:definition "Glucolesquerellin; LC-ESI-QTOF; MS2; CE:20 eV;" .
+

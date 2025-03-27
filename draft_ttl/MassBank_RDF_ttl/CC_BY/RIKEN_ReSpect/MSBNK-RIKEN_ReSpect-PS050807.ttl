@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS050807 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS050807" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(Methylthio)butylglucosinolate",
+                "4-methylthiobutyl glucosinolate",
+                "4MTB",
+                "Glucoerucin" ;
+            mbo:ch_compound_class "CLASS1 Glucosinolate CLASS2 Aliphatic glucosinolate" ;
+            mbo:ch_exact_mass 4.21509e+02 ;
+            rdfs:seeAlso cas:21973-56-8,
+                pubchem:CID9548895 ;
+            schema:inChI "InChI=1S/C12H23NO9S3/c1-23-5-3-2-4-8(13-22-25(18,19)20)24-12-11(17)10(16)9(15)7(6-14)21-12/h7,9-12,14-17H,2-6H2,1H3,(H,18,19,20)" ;
+            schema:inChIKey inchikey:GKUMMDFLKGFCKH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H23NO9S3" ;
+            schema:name "4-(Methylthio)butylglucosinolate",
+                "4-methylthiobutyl glucosinolate",
+                "4MTB",
+                "Glucoerucin" ;
+            schema:smiles "CSCCCCC(=NOS(=O)(=O)O)SC1C(C(C(C(O1)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.56045e+05 ;
+            mbo:mz 4.19e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 143 ],
+        [ mbo:intensity 1.089861e+06 ;
+            mbo:mz 4.2e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.2721e+04 ;
+            mbo:mz 4.21e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 57 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.2032e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0000900000-b6ae000747e28c7378d1" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "4-(Methylthio)butylglucosinolate, Glucoerucin, 4MTB, 4-methylthiobutyl glucosinolate; LC-ESI-QQ; MS2" .
+

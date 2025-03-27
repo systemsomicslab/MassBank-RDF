@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00517 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00517" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Niacin" ;
+            mbo:ch_compound_class "Natural Product; Alkaloid" ;
+            mbo:ch_exact_mass 1.23032e+02 ;
+            rdfs:seeAlso cas:59-67-6,
+                knapsack:C00000208,
+                pubchem:CID3552 ;
+            schema:inChI "InChI=1S/C6H5NO2/c8-6(9)5-2-1-3-7-4-5/h1-4H,(H,8,9)" ;
+            schema:inChIKey inchikey:PVNIIMVLHYAWGP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H5NO2" ;
+            schema:name "Niacin" ;
+            schema:smiles "OC(=O)c(c1)cncc1" ] ;
+    mbo:has_peak [ mbo:intensity 6.797e+03 ;
+            mbo:mz 7.80343e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 401 ],
+        [ mbo:intensity 1.14e+03 ;
+            mbo:mz 1.250428e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 3.67e+02 ;
+            mbo:mz 1.400346e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.328e+03 ;
+            mbo:mz 7.90414e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.6474e+04 ;
+            mbo:mz 8.00499e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 971 ],
+        [ mbo:intensity 1.093e+03 ;
+            mbo:mz 8.10532e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 1.076e+04 ;
+            mbo:mz 9.60447e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 634 ],
+        [ mbo:intensity 7.38e+02 ;
+            mbo:mz 9.70479e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 4.49e+02 ;
+            mbo:mz 1.060289e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 3.24e+02 ;
+            mbo:mz 1.22024e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.6945e+04 ;
+            mbo:mz 1.240396e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.240396e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00ea-9400000000-4539592b8e6a4564120c" ;
+    rdfs:comment "[Raw Data] CB238_Niacin_pos_30eV_rep000006.txt" ;
+    skos:definition "Niacin; LC-ESI-QTOF; MS2; [M+H]+; CE: 30eV" .
+

@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00739 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2014-10-02)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00739" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Supelco Titan C18 1.9um" ;
+            mbo:flow_gradient "5-100%B in 12min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tricin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoids" ;
+            mbo:ch_exact_mass 3.30074e+02 ;
+            rdfs:seeAlso cas:520-32-1,
+                chemspider:4445019,
+                knapsack:C00013329,
+                pubchem:CID12379 ;
+            schema:inChI "InChI=1S/C17H14O7/c1-22-14-3-8(4-15(23-2)17(14)21)12-7-11(20)16-10(19)5-9(18)6-13(16)24-12/h3-7,18-19,21H,1-2H3" ;
+            schema:inChIKey inchikey:HRGUSFBJBOKSML-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H14O7" ;
+            schema:name "Tricin" ;
+            schema:smiles "COc(c1)c(O)c(OC)cc1C(=C2)Oc(c3)c(c(O)cc(O)3)C(=O)2" ] ;
+    mbo:has_peak [ mbo:intensity 1.383e+03 ;
+            mbo:mz 3.150495e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.575e+03 ;
+            mbo:mz 3.160572e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.34754e+05 ;
+            mbo:mz 3.310814e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.2823e+04 ;
+            mbo:mz 3.320848e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 169 ],
+        [ mbo:intensity 3.558e+03 ;
+            mbo:mz 3.330868e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 26 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-001i-0009000000-f236817bf9e88db50305" ;
+    rdfs:comment "[Raw Data] CBA24_Tricin_pos_20eV_1-6_01_1394.txt" ;
+    skos:definition "Tricin; LC-ESI-QTOF; MS2; [M+H]+; CE: 20eV" .
+

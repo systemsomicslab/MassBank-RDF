@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ332301 a mbo:MassSpectrum ;
+    dcterms:creator "Otto J, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ332301" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.1 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[(11Z)-11-[3-(dimethylazaniumyl)propylidene]-6H-benzo[c][1]benzoxepin-2-yl]acetate",
+                "Olopatadine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.371678e+02 ;
+            rdfs:seeAlso cas:140462-76-6,
+                chemspider:4444528,
+                pubchem:CID25271818 ;
+            schema:inChI "InChI=1S/C21H23NO3/c1-22(2)11-5-8-18-17-7-4-3-6-16(17)14-25-20-10-9-15(12-19(18)20)13-21(23)24/h3-4,6-10,12H,5,11,13-14H2,1-2H3,(H,23,24)/b18-8-" ;
+            schema:inChIKey inchikey:JBIMVDZLSHOPLA-LSCVHKIXSA-N ;
+            schema:molecularFormula "C21H23NO3" ;
+            schema:name "2-[(11Z)-11-[3-(dimethylazaniumyl)propylidene]-6H-benzo[c][1]benzoxepin-2-yl]acetate",
+                "Olopatadine" ;
+            schema:smiles "CN(C)CC/C=C\\1/C2=CC=CC=C2COC3=C1C=C(C=C3)CC(=O)O" ] ;
+    mbo:data_processing_deprofile "vendor picking in Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 3.407325e+06 ;
+            mbo:mz 5.80652e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.942834e+06 ;
+            mbo:mz 8.40807e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.622042e+06 ;
+            mbo:mz 1.650544e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.041578e+07 ;
+            mbo:mz 2.471118e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.411282e+07 ;
+            mbo:mz 2.931173e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.995762e+09 ;
+            mbo:mz 3.38175e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.381752e+02 ;
+            mbo:precursor_mz 3.381751e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-0009000000-e2c029010aa3133274f8" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3323" ;
+    skos:definition "Olopatadine; LC-ESI-QFT; MS2; CE: 15; R=35000; [M+H]+" .
+

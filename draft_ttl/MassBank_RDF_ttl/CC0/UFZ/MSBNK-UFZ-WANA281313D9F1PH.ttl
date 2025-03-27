@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA281313D9F1PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA281313D9F1PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.844 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,2S,4R,8S,9S,11S,12S,13R)-11-hydroxy-8-(2-hydroxyacetyl)-6,6,9,13-tetramethyl-5,7-dioxapentacyclo[10.8.0.02,9.04,8.013,18]icosa-14,17-dien-16-one",
+                "Desonide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.162199e+02 ;
+            rdfs:seeAlso cas:638-94-8,
+                chemspider:4470603,
+                pubchem:CID5311066 ;
+            schema:inChI "InChI=1S/C24H32O6/c1-21(2)29-19-10-16-15-6-5-13-9-14(26)7-8-22(13,3)20(15)17(27)11-23(16,4)24(19,30-21)18(28)12-25/h7-9,15-17,19-20,25,27H,5-6,10-12H2,1-4H3/t15-,16-,17-,19+,20+,22-,23-,24+/m0/s1" ;
+            schema:inChIKey inchikey:WBGKWQHBNHJJPZ-LECWWXJVSA-N ;
+            schema:molecularFormula "C24H32O6" ;
+            schema:name "(1S,2S,4R,8S,9S,11S,12S,13R)-11-hydroxy-8-(2-hydroxyacetyl)-6,6,9,13-tetramethyl-5,7-dioxapentacyclo[10.8.0.02,9.04,8.013,18]icosa-14,17-dien-16-one",
+                "Desonide" ;
+            schema:smiles "CC1(C)O[C@@H]2C[C@H]3[C@@H]4CCC5=CC(=O)C=C[C@]5(C)[C@H]4[C@@H](O)C[C@]3(C)[C@@]2(O1)C(=O)CO" ] ;
+    mbo:has_peak [ mbo:intensity 1.4985e+03 ;
+            mbo:mz 1.210651e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 189 ],
+        [ mbo:intensity 7.92e+03 ;
+            mbo:mz 1.470806e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.5943e+03 ;
+            mbo:mz 1.730962e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 580 ],
+        [ mbo:intensity 1.414e+03 ;
+            mbo:mz 2.111122e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 178 ],
+        [ mbo:intensity 3.6195e+03 ;
+            mbo:mz 2.251276e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 457 ],
+        [ mbo:intensity 2.3552e+03 ;
+            mbo:mz 2.261351e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 297 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.172271e+02 ;
+            mbo:precursor_mz 4.172272e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0092-0940000000-a464955fb04541fd5bad" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Desonide; LC-ESI-ITFT; MS2; CE: 50%; R=15000; [M+H]+" .
+

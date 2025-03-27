@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000945 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000945" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID7040154",
+                "N-(3-Dimethylaminopropyl)methacrylamide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.701419e+02 ;
+            rdfs:seeAlso cas:5205-93-6,
+                pubchem:CID78882 ;
+            schema:inChI "InChI=1S/C9H18N2O/c1-8(2)9(12)10-6-5-7-11(3)4/h1,5-7H2,2-4H3,(H,10,12)" ;
+            schema:inChIKey inchikey:GDFCSMCGLZFNFY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H18N2O" ;
+            schema:name "DTXSID7040154",
+                "N-(3-Dimethylaminopropyl)methacrylamide" ;
+            schema:smiles "CC(=C)C(=O)NCCCN(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 9.431191e+00 ;
+            mbo:mz 4.103858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 1.629555e+00 ;
+            mbo:mz 5.505423e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.132523e+00 ;
+            mbo:mz 5.806513e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 8.1983e+01 ;
+            mbo:mz 6.903349e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 819 ],
+        [ mbo:intensity 3.011854e+00 ;
+            mbo:mz 6.906988e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.795728e+00 ;
+            mbo:mz 8.609643e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.524355e+01 ;
+            mbo:mz 9.806004e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 252 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.260913e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.013186e+00 ;
+            mbo:mz 1.711492e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.711492e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-00or-9700000000-b4b6501d498096ad62b0" ;
+    skos:definition "N-(3-Dimethylaminopropyl)methacrylamide; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

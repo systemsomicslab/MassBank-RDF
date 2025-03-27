@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N105016_9EE2 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N105016_9EE2" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.325 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,3-di(tetradecanoyloxy)propyl tetradecanoate",
+                "Trimyristin" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 7.226424e+02 ;
+            rdfs:seeAlso cas:555-45-3,
+                chemspider:10675,
+                pubchem:CID11148 ;
+            schema:inChI "InChI=1S/C45H86O6/c1-4-7-10-13-16-19-22-25-28-31-34-37-43(46)49-40-42(51-45(48)39-36-33-30-27-24-21-18-15-12-9-6-3)41-50-44(47)38-35-32-29-26-23-20-17-14-11-8-5-2/h42H,4-41H2,1-3H3" ;
+            schema:inChIKey inchikey:DUXYWXYOBMKGIN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C45H86O6" ;
+            schema:name "2,3-di(tetradecanoyloxy)propyl tetradecanoate",
+                "Trimyristin" ;
+            schema:smiles "CCCCCCCCCCCCCC(=O)OCC(COC(=O)CCCCCCCCCCCCC)OC(=O)CCCCCCCCCCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 2.659e+02 ;
+            mbo:mz 7.10838e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.847e+02 ;
+            mbo:mz 4.954379e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.994e+02 ;
+            mbo:mz 5.174179e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.66e+01 ;
+            mbo:mz 5.184182e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4e+01 ;
+            mbo:mz 7.075747e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.37457e+04 ;
+            mbo:mz 7.456318e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.474608e+02 ;
+            mbo:precursor_mz 7.456317e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0002-0000000900-379354b55c3de414e0a7" ;
+    rdfs:comment "INTERNAL_ID 1050" ;
+    skos:definition "Trimyristin; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M+Na]+" .
+

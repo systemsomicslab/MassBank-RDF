@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000093 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000093" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "50 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Amino-1,3,4-triazole",
+                "3-Amino-1,2,4-triazole",
+                "Aminotriazole",
+                "Amitrole" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 8.40436e+01 ;
+            rdfs:seeAlso cas:61-82-5,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:13438> ;
+            schema:inChI "InChI=1S/C2H4N4/c3-2-4-1-5-6-2/h1H,(H3,3,4,5,6)" ;
+            schema:inChIKey inchikey:KLSJWNVTNUYHDU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C2H4N4" ;
+            schema:name "2-Amino-1,3,4-triazole",
+                "3-Amino-1,2,4-triazole",
+                "Aminotriazole",
+                "Amitrole" ;
+            schema:smiles "C1=NNC(=N1)N" ] ;
+    mbo:has_peak [ mbo:intensity 2.128715e+05 ;
+            mbo:mz 4.04e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 401 ],
+        [ mbo:intensity 5.297035e+05 ;
+            mbo:mz 4.1e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.36634e+05 ;
+            mbo:mz 6.59e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 635 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.3e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-9000000000-e2581c4d164d1977de4f" ;
+    rdfs:comment "KEIO_ID A045" ;
+    skos:definition "3-Amino-1,2,4-triazole; LC-ESI-QQ; MS2; CE:50 V; [M-H]-" .
+

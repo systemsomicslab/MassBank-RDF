@@ -1,0 +1,56 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML80580 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML80580" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "8.738" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-acetyloxy-2-(3,4-diacetyloxyphenyl)-4-oxochromen-5-yl acetate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.5409e+02 ;
+            rdfs:seeAlso cas:1061-93-4,
+                chemspider:119732,
+                pubchem:CID135952 ;
+            schema:inChI "InChI=1S/C23H18O10/c1-11(24)29-16-8-21(32-14(4)27)23-17(28)10-19(33-22(23)9-16)15-5-6-18(30-12(2)25)20(7-15)31-13(3)26/h5-10H,1-4H3" ;
+            schema:inChIKey inchikey:MABQMQKDSPCURQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C23H18O10" ;
+            schema:name "7-acetyloxy-2-(3,4-diacetyloxyphenyl)-4-oxochromen-5-yl acetate" ;
+            schema:smiles "CC(=O)OC1=C(C=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)OC(=O)C)OC(=O)C)OC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.36558e+05 ;
+            mbo:mz 4.550973e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.45493e+05 ;
+            mbo:mz 4.770792e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 729 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a6r-0000900000-2b1407a3ff9a9b970467" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.193" ;
+    skos:definition "7-acetyloxy-2-(3,4-diacetyloxyphenyl)-4-oxochromen-5-yl acetate; LC-ESI-QTOF; MS; POSITIVE" .
+

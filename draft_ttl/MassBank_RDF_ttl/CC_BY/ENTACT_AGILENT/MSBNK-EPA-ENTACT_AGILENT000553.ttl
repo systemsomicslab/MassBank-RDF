@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000553 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000553" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID3020629",
+                "N-(2-Fluorenyl)-2,2,2-trifluoroacetamide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.770714e+02 ;
+            rdfs:seeAlso cas:363-17-7,
+                pubchem:CID9690 ;
+            schema:inChI "InChI=1S/C15H10F3NO/c16-15(17,18)14(20)19-11-5-6-13-10(8-11)7-9-3-1-2-4-12(9)13/h1-6,8H,7H2,(H,19,20)" ;
+            schema:inChIKey inchikey:XPHPBNGAXWJHHP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10F3NO" ;
+            schema:name "DTXSID3020629",
+                "N-(2-Fluorenyl)-2,2,2-trifluoroacetamide" ;
+            schema:smiles "O=C(NC1=CC2CC3=CC=CC=C3C=2C=C1)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 6.573535e+01 ;
+            mbo:mz 6.899576e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 657 ],
+        [ mbo:intensity 1.185218e+00 ;
+            mbo:mz 6.903955e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 8.504865e+01 ;
+            mbo:mz 2.060611e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 850 ],
+        [ mbo:intensity 1.088671e+00 ;
+            mbo:mz 2.070627e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.760642e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.760642e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-05r0-3090000000-e63506224b162e00cf1a" ;
+    skos:definition "N-(2-Fluorenyl)-2,2,2-trifluoroacetamide; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

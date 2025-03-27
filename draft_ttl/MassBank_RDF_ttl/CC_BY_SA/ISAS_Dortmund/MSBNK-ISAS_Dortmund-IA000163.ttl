@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000163 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000163" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive HF, Thermo Scientific [MS:1002523]" ;
+            mbo:collision_energy "20.0 NCE" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30.000" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "12-OxoETE" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 3.182195e+02 ;
+            rdfs:seeAlso pubchem:CID5283162 ;
+            schema:inChI "InChI=1S/C20H30O3/c1-2-3-4-5-10-13-16-19(21)17-14-11-8-6-7-9-12-15-18-20(22)23/h7-11,13-14,17H,2-6,12,15-16,18H2,1H3,(H,22,23)/b9-7-,11-8-,13-10-,17-14+" ;
+            schema:inChIKey inchikey:GURBRQGDZZKITB-VXBMJZGYSA-N ;
+            schema:molecularFormula "C20H30O3" ;
+            schema:name "12-OxoETE" ;
+            schema:smiles "CCCCC\\C=C/CC(=O)\\C=C\\C=C/C\\C=C/CCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.950396e+04 ;
+            mbo:mz 5.901349e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.436185e+06 ;
+            mbo:mz 3.17212e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.107396e+05 ;
+            mbo:mz 1.070867e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 3.509404e+04 ;
+            mbo:mz 1.370972e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.688393e+06 ;
+            mbo:mz 1.531285e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 491 ],
+        [ mbo:intensity 3.234728e+05 ;
+            mbo:mz 1.630765e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 3.34312e+05 ;
+            mbo:mz 1.791441e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 1.436734e+05 ;
+            mbo:mz 2.191754e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 3.113751e+06 ;
+            mbo:mz 2.732223e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 905 ],
+        [ mbo:intensity 7.527124e+04 ;
+            mbo:mz 2.992015e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 22 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.172122e+02 ;
+            mbo:precursor_mz 3.172122e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-01b9-0689000000-e9ececeaed3c36f41d9e" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 20.0 NCE within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "12-OxoETE; LC-ESI-QFT; MS2; CE: 20.0; R=30.000; [M-H]-" .
+

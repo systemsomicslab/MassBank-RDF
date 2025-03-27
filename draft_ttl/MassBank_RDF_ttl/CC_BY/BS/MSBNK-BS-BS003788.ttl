@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS003788 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2014-01-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS003788" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "596.4 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Homoeriodictyol" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 3.02079e+02 ;
+            rdfs:seeAlso cas:446-71-9,
+                pubchem:CID73635 ;
+            schema:inChI "InChI=1S/C16H14O6/c1-21-14-4-8(2-3-10(14)18)13-7-12(20)16-11(19)5-9(17)6-15(16)22-13/h2-6,13,17-19H,7H2,1H3/t13-/m0/s1" ;
+            schema:inChIKey inchikey:FTODBIPDTXRIGS-ZDUSSCGKSA-N ;
+            schema:molecularFormula "C16H14O6" ;
+            schema:name "Homoeriodictyol" ;
+            schema:smiles "C(OC1=C(C(=C(C(=C1[H])[C@]2([H])C(C(=O)C3=C(C(=C(C(=C3O2)[H])O[H])[H])O[H])([H])[H])[H])[H])O[H])([H])([H])[H]" ] ;
+    mbo:has_peak [ mbo:intensity 3e+00 ;
+            mbo:mz 1.510028e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 2.860469e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 3.01072e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9e+01 ;
+            mbo:mz 3.020755e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 1.3e+01 ;
+            mbo:mz 3.030772e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.01072e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0009000000-b0dd3c7a023ec99212fd" ;
+    skos:definition "Homoeriodictyol; LC-ESI-QTOF; MS2; CE:10 eV; [M-H]-" .
+

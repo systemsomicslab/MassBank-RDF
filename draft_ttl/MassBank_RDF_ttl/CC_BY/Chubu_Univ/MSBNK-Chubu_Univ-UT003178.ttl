@@ -1,0 +1,70 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT003178 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT003178" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS3" ;
+            mbo:retention_time "8.79 min (in paper: 9.4 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phosphatidylserine 22:6-22:6" ;
+            mbo:ch_compound_class "Natural Product; Glycerophospholipids; Glycerophosphoserines; Diacylglycerophosphoserines" ;
+            mbo:ch_exact_mass 8.775258e+02 ;
+            schema:inChI "InChI=1S/C51H76NO9P/c1-4-6-8-10-12-14-16-18-20-22-24-26-28-30-32-34-36-38-40-42-50(54)58-44-48(45-59-62(56,57)60-46-49(52)47(3)53)61-51(55)43-41-39-37-35-33-31-29-27-25-23-21-19-17-15-13-11-9-7-5-2/h6-9,12-15,18-21,24-27,30-33,36-39,48-49H,4-5,10-11,16-17,22-23,28-29,34-35,40-46,52H2,1-3H3,(H,56,57)/b8-6-,9-7-,14-12-,15-13-,20-18-,21-19-,26-24-,27-25-,32-30-,33-31-,38-36-,39-37-" ;
+            schema:inChIKey inchikey:ARONXAQUMBWVBY-YVRWGPLWSA-N ;
+            schema:molecularFormula "C51H76NO9P" ;
+            schema:name "Phosphatidylserine 22:6-22:6" ;
+            schema:smiles "C(C=CCC=CCCC(OC(COC(=O)CCC=CCC=CCC=CCC=CCC=CCC=CCC)COP(OCC(N)C(C)=O)(O)=O)=O)C=CCC=CCC=CCC=CCC" ] ;
+    mbo:has_peak [ mbo:intensity 4.3e+00 ;
+            mbo:mz 2.2935e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.22e+01 ;
+            mbo:mz 2.8301e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 1.649e+02 ;
+            mbo:mz 3.2711e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 188 ],
+        [ mbo:intensity 8.772e+02 ;
+            mbo:mz 4.6286e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.6e+00 ;
+            mbo:mz 4.635e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.326e+02 ;
+            mbo:mz 4.8114e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 265 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0001900000-d8ec45a0e46f383d90b3" ;
+    rdfs:comment "PRECURSOR_TYPE [M-H]-/[M-Ser]-" ;
+    skos:definition "Phosphatidylserine 22:6-22:6; LC-ESI-ITFT; MS3; [M-H]-/[M-C3H6NO2]-; RT: 8.76; Exp: 3" .
+

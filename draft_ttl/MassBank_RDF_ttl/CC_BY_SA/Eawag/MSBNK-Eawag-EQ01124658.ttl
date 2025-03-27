@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01124658 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01124658" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "150 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "8.805 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-amino-1-[2,6-dichloro-4-(trifluoromethyl)phenyl]-4-ethylsulfinylpyrazole-3-carbonitrile",
+                "Ethiprole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.959826e+02 ;
+            rdfs:seeAlso cas:181587-01-9,
+                chemspider:8106298,
+                pubchem:CID9930667 ;
+            schema:inChI "InChI=1S/C13H9Cl2F3N4OS/c1-2-24(23)11-9(5-19)21-22(12(11)20)10-7(14)3-6(4-8(10)15)13(16,17)18/h3-4H,2,20H2,1H3" ;
+            schema:inChIKey inchikey:FNELVJVBIYMIMC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H9Cl2F3N4OS" ;
+            schema:name "5-amino-1-[2,6-dichloro-4-(trifluoromethyl)phenyl]-4-ethylsulfinylpyrazole-3-carbonitrile",
+                "Ethiprole" ;
+            schema:smiles "CCS(=O)C1=C(N(N=C1C#N)C2=C(C=C(C=C2Cl)C(F)(F)F)Cl)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.302697e+06 ;
+            mbo:mz 5.00036e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 415 ],
+        [ mbo:intensity 9.360527e+05 ;
+            mbo:mz 1.130144e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 298 ],
+        [ mbo:intensity 4.47767e+05 ;
+            mbo:mz 1.360009e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 143 ],
+        [ mbo:intensity 3.134652e+06 ;
+            mbo:mz 5.79757e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.865311e+05 ;
+            mbo:mz 7.40037e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 219 ],
+        [ mbo:intensity 4.93711e+05 ;
+            mbo:mz 8.19758e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 157 ],
+        [ mbo:intensity 1.345412e+06 ;
+            mbo:mz 8.60035e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 429 ],
+        [ mbo:intensity 4.151273e+05 ;
+            mbo:mz 8.80005e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 1.622178e+05 ;
+            mbo:mz 9.001e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 9.428537e+05 ;
+            mbo:mz 9.80037e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 300 ],
+        [ mbo:intensity 1.369587e+06 ;
+            mbo:mz 1.119997e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 436 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.949752e+02 ;
+            mbo:precursor_mz 3.949753e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0bti-9200000000-817552ea138d39136b1b" ;
+    rdfs:comment "UCHEM_ID 11246" ;
+    skos:definition "Ethiprole; LC-ESI-QFT; MS2; CE: 150%; R=17500; [M-H]-" .
+

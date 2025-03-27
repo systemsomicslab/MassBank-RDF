@@ -1,0 +1,62 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP021313 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP021313" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.903 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-hydroxy-C4-homoserine lactone",
+                "3-hydroxy-N-(2-oxooxolan-3-yl)butanamide" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.870845e+02 ;
+            rdfs:seeAlso cas:126049-72-7,
+                chemspider:115719,
+                pubchem:CID130846 ;
+            schema:inChI "InChI=1S/C8H13NO4/c1-5(10)4-7(11)9-6-2-3-13-8(6)12/h5-6,10H,2-4H2,1H3,(H,9,11)" ;
+            schema:inChIKey inchikey:FIXDIFPJOFIIEC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H13NO4" ;
+            schema:name "3-hydroxy-C4-homoserine lactone",
+                "3-hydroxy-N-(2-oxooxolan-3-yl)butanamide" ;
+            schema:smiles "CC(O)CC(=O)NC1CCOC1=O" ] ;
+    mbo:has_peak [ mbo:intensity 8e+01 ;
+            mbo:mz 5.70344e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 310 ],
+        [ mbo:intensity 2.58e+02 ;
+            mbo:mz 8.40457e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.860781e+02 ;
+            mbo:precursor_mz 1.860772e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-9000000000-5daf59d568f153e444ca" ;
+    rdfs:comment "INTERNAL_ID 213" ;
+    skos:definition "3-hydroxy-C4-homoserine lactone; LC-ESI-QTOF; MS2; CE: 40; R=; [M-H]-" .
+

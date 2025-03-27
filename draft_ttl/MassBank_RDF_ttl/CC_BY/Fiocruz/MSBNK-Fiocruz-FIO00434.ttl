@@ -1,0 +1,92 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00434 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-03-13)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00434" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Etoposide" ;
+            mbo:ch_compound_class "Natural Product; Phenylpropanoids" ;
+            mbo:ch_exact_mass 5.881843e+02 ;
+            rdfs:seeAlso cas:33419-42-0,
+                pubchem:CID4733 ;
+            schema:inChI "InChI=1S/C29H32O13/c1-11-36-9-20-27(40-11)24(31)25(32)29(41-20)42-26-14-7-17-16(38-10-39-17)6-13(14)21(22-15(26)8-37-28(22)33)12-4-18(34-2)23(30)19(5-12)35-3/h4-7,11,15,20-22,24-27,29-32H,8-10H2,1-3H3/t11-,15+,20-,21-,22+,24-,25-,26-,27-,29+/m1/s1" ;
+            schema:inChIKey inchikey:VJJPUSNTGOMMGY-MRVIYFEKSA-N ;
+            schema:molecularFormula "C29H32O13" ;
+            schema:name "Etoposide" ;
+            schema:smiles "c(C(c(c7)cc(OC)c(O)c7OC)4)(c5)c(cc(O6)c5OC6)C(C(C43[H])([H])COC(=O)3)OC(O1)C(C(O)C(O2)([H])C1(COC(C)2)[H])O" ] ;
+    mbo:has_peak [ mbo:intensity 2.125e+03 ;
+            mbo:mz 1.270395e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.78e+03 ;
+            mbo:mz 2.470603e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.161e+03 ;
+            mbo:mz 2.670654e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.1524e+04 ;
+            mbo:mz 1.7306e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 2.07307e+05 ;
+            mbo:mz 1.8506e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.1486e+04 ;
+            mbo:mz 1.860633e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 104 ],
+        [ mbo:intensity 1.0823e+04 ;
+            mbo:mz 1.990392e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 4.174e+03 ;
+            mbo:mz 2.170497e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.32439e+05 ;
+            mbo:mz 2.290498e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 638 ],
+        [ mbo:intensity 1.6834e+04 ;
+            mbo:mz 2.300531e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 2.109e+03 ;
+            mbo:mz 2.390704e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.8506e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-002r-0950000000-4d3313053107615d463a" ;
+    rdfs:comment "[Raw Data] CB195_Etoposide_pos_50eV_CB000069.txt" ;
+    skos:definition "Etoposide; LC-ESI-QTOF; MS2; [M+H]+; CE: 50eV" .
+

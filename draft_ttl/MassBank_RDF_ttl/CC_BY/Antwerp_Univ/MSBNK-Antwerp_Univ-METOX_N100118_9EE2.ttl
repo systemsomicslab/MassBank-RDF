@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N100118_9EE2 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N100118_9EE2" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Direct injection" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.180 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate + 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(8R,9S,10R,13S,14S,17S)-17-hydroxy-10,13,17-trimethyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
+                "Methandrostenolone" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.002089e+02 ;
+            rdfs:seeAlso cas:72-63-9,
+                chemspider:6061,
+                pubchem:CID6300 ;
+            schema:inChI "InChI=1S/C20H28O2/c1-18-9-6-14(21)12-13(18)4-5-15-16(18)7-10-19(2)17(15)8-11-20(19,3)22/h6,9,12,15-17,22H,4-5,7-8,10-11H2,1-3H3/t15-,16+,17+,18+,19+,20+/m1/s1" ;
+            schema:inChIKey inchikey:XWALNWXLMVGSFR-HLXURNFRSA-N ;
+            schema:molecularFormula "C20H28O2" ;
+            schema:name "(8R,9S,10R,13S,14S,17S)-17-hydroxy-10,13,17-trimethyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
+                "Methandrostenolone" ;
+            schema:smiles "C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C)O)CCC4=CC(=O)C=C[C@]34C" ] ;
+    mbo:has_peak [ mbo:intensity 2.67e+01 ;
+            mbo:mz 2.190744e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.97486e+04 ;
+            mbo:mz 3.23199e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.012172e+02 ;
+            mbo:precursor_mz 3.231982e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-00di-0009000000-8472d7e2337c2659f70f" ;
+    rdfs:comment "INTERNAL_ID 1001" ;
+    skos:definition "Methandrostenolone; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M+Na]+" .
+

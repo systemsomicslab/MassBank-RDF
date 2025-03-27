@@ -1,0 +1,64 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO009256 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO009256" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "1.00/0.55" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS3" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Propiconazole",
+                "Tilt (TM)",
+                "Tilt(TM)" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.410698e+02 ;
+            rdfs:seeAlso cas:60207-90-1,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:13303> ;
+            schema:inChI "InChI=1S/C15H17Cl2N3O2/c1-2-3-12-7-21-15(22-12,8-20-10-18-9-19-20)13-5-4-11(16)6-14(13)17/h4-6,9-10,12H,2-3,7-8H2,1H3" ;
+            schema:inChIKey inchikey:STJLVHWMYQXCPB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H17Cl2N3O2" ;
+            schema:name "Propiconazole",
+                "Tilt (TM)",
+                "Tilt(TM)" ;
+            schema:smiles "CCCC(C3)OC(O3)(Cn(c2)ncn2)c(c1)c(Cl)cc(Cl)c1" ] ;
+    mbo:has_peak [ mbo:intensity 3.31e+00 ;
+            mbo:mz 8.72e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 105 ],
+        [ mbo:intensity 1.466e+01 ;
+            mbo:mz 1.59e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 464 ],
+        [ mbo:intensity 1.325e+01 ;
+            mbo:mz 2.042e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 419 ],
+        [ mbo:intensity 6.83e+00 ;
+            mbo:mz 2.05e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 216 ],
+        [ mbo:intensity 3.156e+01 ;
+            mbo:mz 2.731e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-05fr-0290000000-ad1ce7133bc3c8b338e0" ;
+    rdfs:comment "[MS2] KO009255" ;
+    skos:definition "Propiconazole; LC-ESI-IT; MS3; m/z: 342/273; [M+H]+" .
+

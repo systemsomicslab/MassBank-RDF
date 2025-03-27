@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM019134 a mbo:MassSpectrum ;
+    dcterms:creator "F. Matsuda and M. Suzuki." ;
+    dcterms:date "2009-11-18"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM019134" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Simons, R.; Vincken, J.-P.; Bakx, E. J.; Verbruggen, M. A.; Gruppen, H. A Rapid Screening Method for Prenylated Flavonoids with Ultra-High-Performance Liquid Chromatography/Electrospray Ionisation Mass Spectrometry in Licorice Root Extracts. Rapid Communications in Mass Spectrometry 2009, 23 (19), 3083–93. DOI:10.1002/rcm.4215" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Thermo Scientific LTQ-XL (San Jose, CA, USA)" ;
+            mbo:collision_energy "35%" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-hydroxy-glabrol",
+                "4H-1-Benzopyran-4-one, 2,3-dihydro-3,7-dihydroxy-2-[4-hydroxy-3-(3-methyl-2-buten-1-yl)phenyl]-8-(3-methyl-2-buten-1-yl)-, (2R,3R)-" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Isoflavane" ;
+            mbo:ch_exact_mass 4.08494e+02 ;
+            rdfs:seeAlso cas:74148-41-7,
+                pubchem:CID480854 ;
+            schema:inChI "InChI=1S/C25H28O5/c1-14(2)5-7-16-13-17(8-11-20(16)26)24-23(29)22(28)19-10-12-21(27)18(25(19)30-24)9-6-15(3)4/h5-6,8,10-13,23-24,26-27,29H,7,9H2,1-4H3/t23-,24+/m0/s1" ;
+            schema:inChIKey inchikey:LAQLCZKPJGMFRM-BJKOFHAPSA-N ;
+            schema:molecularFormula "C25H28O5" ;
+            schema:name "3-hydroxy-glabrol",
+                "4H-1-Benzopyran-4-one, 2,3-dihydro-3,7-dihydroxy-2-[4-hydroxy-3-(3-methyl-2-buten-1-yl)phenyl]-8-(3-methyl-2-buten-1-yl)-, (2R,3R)-" ;
+            schema:smiles "CC(C)=CCc1cc([C@H]2Oc3c(ccc(O)c3CC=C(C)C)C(=O)[C@@H]2O)ccc1O" ] ;
+    mbo:has_peak [ mbo:intensity 6e+00 ;
+            mbo:mz 1.77e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.1e+01 ;
+            mbo:mz 2.05e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 210 ],
+        [ mbo:intensity 6e+00 ;
+            mbo:mz 2.29e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.9e+01 ;
+            mbo:mz 3.35e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 290 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.53e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.09e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0019000000-dc8da97d7c7916862ce5" ;
+    rdfs:comment "N/D" ;
+    skos:definition "3-hydroxy-glabrol, 4H-1-Benzopyran-4-one, 2,3-dihydro-3,7-dihydroxy-2-[4-hydroxy-3-(3-methyl-2-buten-1-yl)phenyl]-8-(3-methyl-2-buten-1-yl)-, (2R,3R)-; LC-ESI-QIT; MS2" .
+

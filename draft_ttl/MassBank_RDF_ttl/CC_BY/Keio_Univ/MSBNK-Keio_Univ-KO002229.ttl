@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO002229 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO002229" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(R)-2-Aminobutanoic acid",
+                "D-2-Aminobutanoic acid",
+                "D-2-Aminobutyrate",
+                "D-2-Aminobutyric acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso cas:2623-91-8,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5323> ;
+            schema:inChI "InChI=1S/C4H9NO2/c1-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)/t3-/m1/s1" ;
+            schema:inChIKey inchikey:QWCKQJZIFLGMSD-GSVOUGTGSA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "(R)-2-Aminobutanoic acid",
+                "D-2-Aminobutanoic acid",
+                "D-2-Aminobutyrate",
+                "D-2-Aminobutyric acid" ;
+            schema:smiles "CCC(N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.28713e+05 ;
+            mbo:mz 4.09e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 4.9505e+04 ;
+            mbo:mz 4.51e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.9802e+04 ;
+            mbo:mz 4.58e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.472774e+07 ;
+            mbo:mz 5.81e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.415845e+05 ;
+            mbo:mz 6.02e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 4.9505e+04 ;
+            mbo:mz 8.61e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.722775e+05 ;
+            mbo:mz 8.71e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 2.158418e+06 ;
+            mbo:mz 1.042e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 146 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.04e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0a4i-9100000000-ba75c4a0743928ae4796" ;
+    skos:definition "D-2-Aminobutyric acid; LC-ESI-QQ; MS2; CE:20 V; [M+H]+" .
+

@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002484 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002484" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "15.150 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Salmeterol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.152723e+02 ;
+            rdfs:seeAlso cas:89365-50-4 ;
+            schema:inChI "InChI=1S/C25H37NO4/c27-20-23-18-22(13-14-24(23)28)25(29)19-26-15-7-1-2-8-16-30-17-9-6-12-21-10-4-3-5-11-21/h3-5,10-11,13-14,18,25-29H,1-2,6-9,12,15-17,19-20H2" ;
+            schema:inChIKey inchikey:GIIZNNXWQWCKIB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H37NO4" ;
+            schema:name "Salmeterol" ;
+            schema:smiles "C(CCCCNCC(O)c(c2)cc(CO)c(O)c2)COCCCCc(c1)cccc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.6e+01 ;
+            mbo:mz 3.98e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 4.16e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.27e+02 ;
+            mbo:mz 4.17e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 227 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 4.18e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 4.38e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 4.44e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-014i-0000900000-c3f2a612261e404ee523" ;
+    skos:definition "Salmeterol; LC-ESI-Q; MS; POS; 15 V" .
+

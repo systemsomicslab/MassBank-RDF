@@ -1,0 +1,95 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01123805 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01123805" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "75 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "6.653 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Disulfoton-sulfoxide",
+                "Oxydisulfoton",
+                "diethoxy-(2-ethylsulfinylethylsulfanyl)-sulfanylidene-lambda5-phosphane" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.900234e+02 ;
+            rdfs:seeAlso cas:2497-07-6,
+                chemspider:16321,
+                pubchem:CID17242 ;
+            schema:inChI "InChI=1S/C8H19O3PS3/c1-4-10-12(13,11-5-2)14-7-8-15(9)6-3/h4-8H2,1-3H3" ;
+            schema:inChIKey inchikey:UPUGLJYNCXXUQV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H19O3PS3" ;
+            schema:name "Disulfoton-sulfoxide",
+                "Oxydisulfoton",
+                "diethoxy-(2-ethylsulfinylethylsulfanyl)-sulfanylidene-lambda5-phosphane" ;
+            schema:smiles "CCOP(=S)(OCC)SCCS(=O)CC" ] ;
+    mbo:has_peak [ mbo:intensity 1.357184e+07 ;
+            mbo:mz 6.10106e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 198 ],
+        [ mbo:intensity 1.601448e+07 ;
+            mbo:mz 1.569541e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 234 ],
+        [ mbo:intensity 5.569738e+06 ;
+            mbo:mz 6.49787e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 7.852256e+05 ;
+            mbo:mz 9.29829e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 6.841901e+07 ;
+            mbo:mz 9.69507e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.736581e+06 ;
+            mbo:mz 1.109665e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.250525e+07 ;
+            mbo:mz 1.149613e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 329 ],
+        [ mbo:intensity 2.119788e+06 ;
+            mbo:mz 1.249818e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 4.182551e+07 ;
+            mbo:mz 1.289228e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 611 ],
+        [ mbo:intensity 5.558143e+06 ;
+            mbo:mz 1.389437e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 81 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.82279e+02 ;
+            mbo:precursor_mz 2.910307e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-01r2-8900000000-c4cbda08aa81ea6bf50a" ;
+    rdfs:comment "UCHEM_ID 11238" ;
+    skos:definition "Disulfoton-sulfoxide; LC-ESI-QFT; MS2; CE: 75%; R=17500; [M+H]+" .
+

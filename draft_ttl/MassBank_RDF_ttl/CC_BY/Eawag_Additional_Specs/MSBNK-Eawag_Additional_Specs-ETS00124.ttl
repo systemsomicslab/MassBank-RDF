@@ -1,0 +1,73 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ETS00124 a mbo:MassSpectrum ;
+    dcterms:creator "AC Chiaia-Hernandez, EL Schymanski, P Kumar, J Hollender, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-02-03 (Created 2014-06-25)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ETS00124" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Chiaia-Hernandez, A. C.; Schymanski, E. L.; Kumar, P.; Singer, H. P.; Hollender, J. Suspect and Nontarget Screening Approaches to Identify Organic Contaminant Records in Lake Sediments. Analytical and Bioanalytical Chemistry 2014, 406 (28), 7323–35. DOI:10.1007/s00216-014-8166-0" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "scaled by m/z" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "95/5/0 at 0-1 min, 90/10/0 at 1 min, 50/50/0 at 4 min, 0/100/0 at 18-22 min, 0/0/100 at 22.1-30 min, 95/5/0 at 30-38 min" ;
+            mbo:flow_rate "200-320 (0-1 min); 200 (1-38 min) ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "17.02 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid",
+                "C isopropanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2'-methylenebis(3,4,6-trichlorophenol)",
+                "Hexachlorophene" ;
+            mbo:ch_compound_class "N/A; Environmental Compound" ;
+            mbo:ch_exact_mass 4.038499e+02 ;
+            rdfs:seeAlso chemspider:3472,
+                pubchem:CID3598 ;
+            schema:inChI "InChI=1S/C13H6Cl6O2/c14-6-2-8(16)12(20)4(10(6)18)1-5-11(19)7(15)3-9(17)13(5)21/h2-3,20-21H,1H2" ;
+            schema:inChIKey inchikey:ACGUYXCXAPNIKK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H6Cl6O2" ;
+            schema:name "2,2'-methylenebis(3,4,6-trichlorophenol)",
+                "Hexachlorophene" ;
+            schema:smiles "C1=C(C(=C(C(=C1Cl)Cl)CC2=C(C(=CC(=C2Cl)Cl)Cl)O)O)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 7.5696e+03 ;
+            mbo:mz 1.58941e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.490429e+05 ;
+            mbo:mz 1.949175e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.05336e+04 ;
+            mbo:mz 3.02894e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 5.85024e+04 ;
+            mbo:mz 3.668653e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 392 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.028427e+02 ;
+            mbo:precursor_mz 4.028427e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-0903000000-af7e51011b8ac55a0b9c" ;
+    rdfs:comment "Source 402_8423_MSMS.txt" ;
+    skos:definition "Hexachlorophene; LC-ESI-ITFT; MS2; R=7500; [M-H]-" .
+

@@ -1,0 +1,78 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02339 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2022-09-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02339" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Santa Clara, CA, USA) gas chromatograph." ;
+            mbo:column_name "DB-5MS UI 122-5532UI US0462866H (Agilent, Wilmington, USA) with the length 30 m, I.D. 0.25 mm, and thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "9.47 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-Aminobutanoic acid" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso chemspider:72524,
+                pubchem:CID80283 ;
+            schema:inChI "InChI=1S/C4H9NO2/c1-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)/t3-/m0/s1" ;
+            schema:inChIKey inchikey:QWCKQJZIFLGMSD-VKHMYHEASA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "(2S)-2-Aminobutanoic acid" ;
+            schema:smiles "CC[C@@H](C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 9.067e-01 ;
+            mbo:mz 5.7072e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 7.781e-01 ;
+            mbo:mz 1.72151e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.74166e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.479e-01 ;
+            mbo:mz 2.74931e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.30615e+01 ;
+            mbo:mz 2.75168e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 230 ],
+        [ mbo:intensity 3.114e-01 ;
+            mbo:mz 2.75497e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.2585e+00 ;
+            mbo:mz 2.76165e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 1.4088e+00 ;
+            mbo:mz 2.77166e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 4.9e-01 ;
+            mbo:mz 3.32245e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 5 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-00di-0090000000-dc516661fa84312dacd5" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. The m/z value was adjusted with 274.16586." ;
+    skos:definition "(2S)-2-Aminobutanoic acid; GC-FI-TOF; MS; POSITIVE; FI; 10 kV; 2TBDMS" .
+

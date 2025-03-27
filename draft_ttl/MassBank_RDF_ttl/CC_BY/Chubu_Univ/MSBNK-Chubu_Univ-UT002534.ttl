@@ -1,0 +1,58 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT002534 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT002534" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "16.55 min (in paper: 16.6 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phosphatidylcholine 20:2-22:6" ;
+            mbo:ch_compound_class "Natural Product; Glycerophospholipids; Glycerophosphocholines; Diacylglycerophosphocholines" ;
+            mbo:ch_exact_mass 8.575935e+02 ;
+            schema:inChI "InChI=1S/C50H84NO8P/c1-6-8-10-12-14-16-18-20-22-24-25-27-29-31-33-35-37-39-41-43-50(53)59-48(47-58-60(54,55)57-45-44-51(3,4)5)46-56-49(52)42-40-38-36-34-32-30-28-26-23-21-19-17-15-13-11-9-7-2/h8,10,14,16,20,22,25,27,30-33,36-39,48H,6-7,9,11-13,15,17-19,21,23-24,26,28-29,34-35,40-47H2,1-5H3/b10-8-,16-14-,22-20-,27-25-,32-30-,33-31-,38-36-,39-37-" ;
+            schema:inChIKey inchikey:IFGVQRXZWAJKEC-BXNVUMEESA-N ;
+            schema:molecularFormula "C50H84NO8P" ;
+            schema:name "Phosphatidylcholine 20:2-22:6" ;
+            schema:smiles "P(OCC(OC(=O)CCC=CCC=CCC=CCC=CCC=CCC=CCC)COC(=O)CCC=CCC=CCCCCCCCCCCCC)(OCC[N+1](C)(C)C)([O-1])=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.55e+01 ;
+            mbo:mz 8.182e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 2.072e+02 ;
+            mbo:mz 8.4216e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.8e+00 ;
+            mbo:mz 8.8621e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 47 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.166e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-0000000090-818d7a8f94c436be2b0a" ;
+    skos:definition "Phosphatidylcholine 20:2-22:6; LC-ESI-ITFT; MS2; [M+CH3COO]-; RT: 16.59; Exp: 3" .
+

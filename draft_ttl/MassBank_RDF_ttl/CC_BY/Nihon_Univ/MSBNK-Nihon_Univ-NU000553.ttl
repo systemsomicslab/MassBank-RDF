@@ -1,0 +1,82 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Nihon_Univ-NU000553 a mbo:MassSpectrum ;
+    dcterms:creator "Takashi Iida, Department of Chemistry, College of Humanities and Sciences, Nihon University" ;
+    dcterms:date "2018-02-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-Nihon_Univ-NU000553" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Takashi Iida, Department of Chemistry, College of Humanities and Sciences, Nihon University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100LP, JEOL" ;
+            mbo:instrument_type "LC-ESI-TOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3a,6,7a,12a-Tetrahydroxy-5b-cholan-24-oic acid",
+                "3a,6b,7b,12a-(OH)4-5b-cholanic acid" ;
+            mbo:ch_compound_class "Natural Product; Bile acids" ;
+            mbo:ch_exact_mass 4.242825e+02 ;
+            rdfs:seeAlso chemspider:4446988,
+                pubchem:CID5283900 ;
+            schema:inChI "InChI=1S/C24H40O6/c1-12(4-7-19(27)28)14-5-6-15-20-16(11-18(26)24(14,15)3)23(2)9-8-13(25)10-17(23)21(29)22(20)30/h12-18,20-22,25-26,29-30H,4-11H2,1-3H3,(H,27,28)/t12-,13-,14-,15+,16+,17+,18+,20+,21+,22-,23-,24-/m1/s1" ;
+            schema:inChIKey inchikey:COCMFMBNEAMQMA-KREOYVNCSA-N ;
+            schema:molecularFormula "C24H40O6" ;
+            schema:name "3a,6,7a,12a-Tetrahydroxy-5b-cholan-24-oic acid",
+                "3a,6b,7b,12a-(OH)4-5b-cholanic acid" ;
+            schema:smiles "CC(CCC(=O)O)C1CCC2C1(C(CC3C2C(C(C4C3(CCC(C4)O)C)O)O)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 7e+00 ;
+            mbo:mz 6.197e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 4e+00 ;
+            mbo:mz 8.7054e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.2325e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.8e+01 ;
+            mbo:mz 4.2426e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 280 ],
+        [ mbo:intensity 5e+00 ;
+            mbo:mz 4.2527e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 6e+00 ;
+            mbo:mz 4.5924e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.3e+01 ;
+            mbo:mz 8.4753e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 230 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 8.4853e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 4e+00 ;
+            mbo:mz 8.4955e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 4e+00 ;
+            mbo:mz 8.6952e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 40 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00di-0000900030-78b932d9f0c13705da50" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 17HP8021 (2017) to the MassBank database committee of the Mass Spectrometry Society of Japan." ;
+    skos:definition "3a,6b,7b,12a-(OH)4-5b-cholanic acid; LC-ESI-TOF; MS; NEGATIVE; in source decay -90 V" .
+

@@ -1,0 +1,60 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02300 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2022-03-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02300" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ExionLC AD, AB Sciex LLC, USA; X500R QTOF, AB Sciex LLC, USA." ;
+            mbo:column_name "AQ-C18HP 3 microm, 2.1 mm × 150 mm, GL Science (Tokyo Japan)" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 3 min, 0/100 at 13 min, 0/100 at 23 min, 95/5 at 23.1 min, 95/5 at 28 min" ;
+            mbo:flow_rate "200 microl/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "16.2 min" ;
+            mbo:solvent "A water with 2 mM Ammonium bicarbonate",
+                "B methanol with 2 mM Ammmonium bicarbonate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Avermectin B1a" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 8.724922e+02 ;
+            rdfs:seeAlso cas:65195-55-3,
+                chemspider:10286553,
+                pubchem:CID6434889 ;
+            schema:inChI "InChI=1S/C48H72O14/c1-11-25(2)43-28(5)17-18-47(62-43)23-34-20-33(61-47)16-15-27(4)42(26(3)13-12-14-32-24-55-45-40(49)29(6)19-35(46(51)58-34)48(32,45)52)59-39-22-37(54-10)44(31(8)57-39)60-38-21-36(53-9)41(50)30(7)56-38/h12-15,17-19,25-26,28,30-31,33-45,49-50,52H,11,16,20-24H2,1-10H3/b13-12+,27-15+,32-14+/t25-,26-,28-,30-,31-,33+,34-,35-,36-,37-,38-,39-,40+,41-,42-,43+,44-,45+,47+,48+/m0/s1" ;
+            schema:inChIKey inchikey:RRZXIRBKKLTSOM-XPNPUAGNSA-N ;
+            schema:molecularFormula "C48H72O14" ;
+            schema:name "Avermectin B1a" ;
+            schema:smiles "CC[C@H](C)[C@H]1O[C@]2(C=C[C@@H]1C)C[C@@H]1C[C@@H](C/C=C(\\C)[C@@H](O[C@H]3C[C@H](OC)[C@@H](O[C@H]4C[C@H](OC)[C@@H](O)[C@H](C)O4)[C@H](C)O3)[C@@H](C)/C=C/C=C3\\CO[C@@H]4[C@H](O)C(C)=C[C@@H](C(=O)O1)[C@]34O)O2" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 8.714854e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.25739e+01 ;
+            mbo:mz 8.724881e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 525 ],
+        [ mbo:intensity 1.37049e+01 ;
+            mbo:mz 8.734923e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 137 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-0000000090-7841851c85c38c344591" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 22HP8019 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Avermectin B1a; LC-ESI-QTOF; MS; ESI; NEGATIVE" .
+

@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP008825 a mbo:MassSpectrum ;
+    dcterms:creator "HISAHIRO HAGIWARA, CHEMICAL RESEARCH INSTITUTE OF NON-AQUEOUSSOLUTIONS TOHOKU UNIV." ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP008825" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JEOL JMS-DX-300" ;
+            mbo:instrument_type "EI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "PERYLENE" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.520939e+02 ;
+            rdfs:seeAlso cas:198-55-0 ;
+            schema:inChI "InChI=1S/C20H12/c1-5-13-6-2-11-17-18-12-4-8-14-7-3-10-16(20(14)18)15(9-1)19(13)17/h1-12H" ;
+            schema:inChIKey inchikey:CSHWQDPOILHKBI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H12" ;
+            schema:name "PERYLENE" ;
+            schema:smiles "c(c5)cc(c21)c(c54)c(ccc4)c(c3)c(c(cc3)ccc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.26e+00 ;
+            mbo:mz 3.4e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.52e+00 ;
+            mbo:mz 4e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 8.53e+00 ;
+            mbo:mz 4.4e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 1.61e+00 ;
+            mbo:mz 2.5e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 2.52e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.252e+01 ;
+            mbo:mz 2.53e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 225 ],
+        [ mbo:intensity 2.71e+00 ;
+            mbo:mz 2.54e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 27 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0udi-0090000000-4e8dd93281398fcb4c89" ;
+    skos:definition "PERYLENE; EI-B; MS" .
+

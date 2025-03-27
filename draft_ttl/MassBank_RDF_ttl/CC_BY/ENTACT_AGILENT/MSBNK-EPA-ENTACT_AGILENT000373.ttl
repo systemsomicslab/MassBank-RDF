@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000373 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000373" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,1,2-Trimethyl-1H-benzo[e]indole",
+                "DTXSID4044668" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.091204e+02 ;
+            rdfs:seeAlso cas:41532-84-7,
+                pubchem:CID170530 ;
+            schema:inChI "InChI=1S/C15H15N/c1-10-15(2,3)14-12-7-5-4-6-11(12)8-9-13(14)16-10/h4-9H,1-3H3" ;
+            schema:inChIKey inchikey:WJZSZXCWMATYFX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H15N" ;
+            schema:name "1,1,2-Trimethyl-1H-benzo[e]indole",
+                "DTXSID4044668" ;
+            schema:smiles "CC1=NC2C=CC3C=CC=CC=3C=2C1(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.988839e+00 ;
+            mbo:mz 8.609643e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.372951e+01 ;
+            mbo:mz 1.951043e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.101277e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.101277e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-03di-0190000000-aa59d6815afd7b339c98" ;
+    skos:definition "1,1,2-Trimethyl-1H-benzo[e]indole; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

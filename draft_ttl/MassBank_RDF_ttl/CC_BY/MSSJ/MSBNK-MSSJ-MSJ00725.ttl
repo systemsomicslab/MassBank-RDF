@@ -1,0 +1,113 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00725 a mbo:MassSpectrum ;
+    dcterms:creator "Nobuyuki Okahashi and Fumio Matsuda, Osaka University" ;
+    dcterms:date "2021-09-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00725" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Nobuyuki Okahashi et al. Mass Spectrometry 2019 vol. 8, A0073." ] ;
+    dcterms:rights "Nobuyuki Okahashi and Fumio Matsuda, Osaka University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "GCMS-TQ8040 (Shimadzu, Kyoto, Japan)" ;
+            mbo:collision_energy "5V" ;
+            mbo:column_name "DB-5MS+DG (Agilent Technologies, Santa Clara, CA, USA)" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-EI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "alpha-Ketoglutaric acid" ;
+            mbo:ch_compound_class "Natural Product; glutaric acid" ;
+            mbo:ch_exact_mass 1.460215e+02 ;
+            rdfs:seeAlso cas:328-50-7,
+                chemspider:50,
+                pubchem:CID51 ;
+            schema:inChI "InChI=1S/C5H6O5/c6-3(5(9)10)1-2-4(7)8/h1-2H2,(H,7,8)(H,9,10)" ;
+            schema:inChIKey inchikey:KPGXRSRHYNQIFN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H6O5" ;
+            schema:name "alpha-Ketoglutaric acid" ;
+            schema:smiles "OC(=O)C(=O)CCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.062e+03 ;
+            mbo:mz 7.3e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 214 ],
+        [ mbo:intensity 1.8957e+04 ;
+            mbo:mz 1.9815e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.46e+02 ;
+            mbo:mz 2.161e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.46e+02 ;
+            mbo:mz 2.281e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 9.053e+03 ;
+            mbo:mz 2.4415e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 477 ],
+        [ mbo:intensity 7.5e+02 ;
+            mbo:mz 2.602e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.921e+03 ;
+            mbo:mz 2.721e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 1.3045e+04 ;
+            mbo:mz 2.8815e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 687 ],
+        [ mbo:intensity 2.1e+02 ;
+            mbo:mz 9.1e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.93e+02 ;
+            mbo:mz 9.8e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 8.28e+02 ;
+            mbo:mz 1.262e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 5.85e+02 ;
+            mbo:mz 1.468e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 2.04e+02 ;
+            mbo:mz 1.488e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.6e+02 ;
+            mbo:mz 1.538e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 4.047e+03 ;
+            mbo:mz 1.701e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 213 ],
+        [ mbo:intensity 4.44e+02 ;
+            mbo:mz 1.821e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 23 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.881082e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 16 ;
+    mbo:pk_splash "splash10-0072-1980000000-7032ff27f5172b57a05e" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "alpha-Ketoglutaric acid; GC-EI-QQ; MS2; positive; CID 5 V; MEOX,2TMS-derivative; [M-31]+" .
+

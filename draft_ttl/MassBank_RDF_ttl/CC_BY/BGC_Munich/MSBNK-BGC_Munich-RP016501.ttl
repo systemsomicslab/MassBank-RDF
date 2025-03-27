@@ -1,0 +1,98 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP016501 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP016501" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.425 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-[[(2S)-2-azaniumylpropanoyl]amino]-3-phenylpropanoate",
+                "Ala-Phe" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.361161e+02 ;
+            rdfs:seeAlso cas:3061-90-3,
+                chemspider:87414,
+                pubchem:CID96814 ;
+            schema:inChI "InChI=1S/C12H16N2O3/c1-8(13)11(15)14-10(12(16)17)7-9-5-3-2-4-6-9/h2-6,8,10H,7,13H2,1H3,(H,14,15)(H,16,17)/t8-,10-/m0/s1" ;
+            schema:inChIKey inchikey:OMNVYXHOSHNURL-WPRPVWTQSA-N ;
+            schema:molecularFormula "C12H16N2O3" ;
+            schema:name "(2S)-2-[[(2S)-2-azaniumylpropanoyl]amino]-3-phenylpropanoate",
+                "Ala-Phe" ;
+            schema:smiles "C[C@H](N)C(=O)N[C@@H](Cc1ccccc1)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.1466e+04 ;
+            mbo:mz 1.200804e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 2.62822e+05 ;
+            mbo:mz 2.371227e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 916 ],
+        [ mbo:intensity 2.39e+03 ;
+            mbo:mz 2.391281e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 6.88e+02 ;
+            mbo:mz 1.210839e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.58e+02 ;
+            mbo:mz 1.490596e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.86694e+05 ;
+            mbo:mz 1.660854e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.5186e+04 ;
+            mbo:mz 1.670889e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 88 ],
+        [ mbo:intensity 1.076e+03 ;
+            mbo:mz 1.680905e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.3058e+04 ;
+            mbo:mz 1.911173e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 3.128e+03 ;
+            mbo:mz 1.921205e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 4.72e+03 ;
+            mbo:mz 2.191122e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 16 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.371227e+02 ;
+            mbo:precursor_mz 2.371234e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014r-0960000000-58b6db78ed6167a56015" ;
+    rdfs:comment "INTERNAL_ID 165" ;
+    skos:definition "Ala-Phe; LC-ESI-QTOF; MS2; CE: 10; R=; [M+H]+" .
+

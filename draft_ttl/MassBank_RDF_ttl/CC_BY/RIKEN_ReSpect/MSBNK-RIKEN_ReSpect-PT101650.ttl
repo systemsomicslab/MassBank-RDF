@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT101650 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT101650" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,6R,8R,9R)-8-(6-aminopurin-9-yl)-3-hydroxy-3-oxo-2,4,7-trioxa-3$l^{5}-phosphabicyclo[4.3.0]nonan-9-ol",
+                "Adenosine 3',5'-cyclophosphate",
+                "Adenosine-3',5'-cyclicmonophosphate",
+                "Cyclic AMP",
+                "Cyclic-3',5'-adenylic acid",
+                "cAMP" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Adenosine phosphate" ;
+            mbo:ch_exact_mass 3.29211e+02 ;
+            rdfs:seeAlso cas:60-92-4 ;
+            schema:inChI "InChI=1S/C10H12N5O6P/c11-8-5-9(13-2-12-8)15(3-14-5)10-6(16)7-4(20-10)1-19-22(17,18)21-7/h2-4,6-7,10,16H,1H2,(H,17,18)(H2,11,12,13)" ;
+            schema:inChIKey inchikey:IVOMOUWHDPKRLL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H12N5O6P" ;
+            schema:name "(1S,6R,8R,9R)-8-(6-aminopurin-9-yl)-3-hydroxy-3-oxo-2,4,7-trioxa-3$l^{5}-phosphabicyclo[4.3.0]nonan-9-ol",
+                "Adenosine 3',5'-cyclophosphate",
+                "Adenosine-3',5'-cyclicmonophosphate",
+                "Cyclic AMP",
+                "Cyclic-3',5'-adenylic acid",
+                "cAMP" ;
+            schema:smiles "C1C2C(C(C(O2)N3C=NC4=C3N=CN=C4N)O)OP(=O)(O1)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.097e+01 ;
+            mbo:mz 1.360632e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 2.519e+01 ;
+            mbo:mz 3.298911e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 9.605e+02 ;
+            mbo:mz 3.300603e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.300603e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-001i-0009000000-c527aad341e122fc9bea" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Cyclic AMP, Cyclic-3',5'-adenylic acid, Adenosine 3',5'-cyclophosphate, cAMP, Adenosine-3',5'-cyclicmonophosphate, (1S,6R,8R,9R)-8-(6-aminopurin-9-yl)-3-hydroxy-3-oxo-2,4,7-trioxa-3$l^{5}-phosphabicyclo[4.3.0]nonan-9-ol; LC-ESI-QTOF; MS2" .
+

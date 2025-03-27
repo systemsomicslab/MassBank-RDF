@@ -1,0 +1,86 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB006005 a mbo:MassSpectrum ;
+    dcterms:creator "Heinz T, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2009-03-23, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB006005" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "micrOTOF-Q" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[(E)-3-(4-hydroxy-3,5-dimethoxyphenyl)prop-2-enoyl]oxyethyl-trimethylazanium",
+                "Sinapine" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 3.101655e+02 ;
+            rdfs:seeAlso pubchem:CID5280385 ;
+            schema:inChI "InChI=1S/C16H23NO5/c1-17(2,3)8-9-22-15(18)7-6-12-10-13(20-4)16(19)14(11-12)21-5/h6-7,10-11H,8-9H2,1-5H3/p+1" ;
+            schema:inChIKey inchikey:HUJXHFRXWWGYQH-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C16H24NO5]+" ;
+            schema:name "2-[(E)-3-(4-hydroxy-3,5-dimethoxyphenyl)prop-2-enoyl]oxyethyl-trimethylazanium",
+                "Sinapine" ;
+            schema:smiles "C[N+](C)(C)CCOC(=O)C=CC1=CC(=C(C(=C1)OC)O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 6.006e+01 ;
+            mbo:mz 1.75037e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.3023e+02 ;
+            mbo:mz 3.10159e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.003e+01 ;
+            mbo:mz 3.11163e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.2012e+02 ;
+            mbo:mz 2.07061e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.001e+01 ;
+            mbo:mz 2.08062e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.003e+01 ;
+            mbo:mz 2.36064e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.001e+01 ;
+            mbo:mz 2.5094e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 2.51087e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.001e+01 ;
+            mbo:mz 2.51435e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.121121e+03 ;
+            mbo:mz 2.52091e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 2.002e+01 ;
+            mbo:mz 2.53092e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.101655e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0udi-0090000000-c865ce6a2d45509c5636" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Sinapine; LC-ESI-QTOF; MS2; CE:15 eV; [M]+" .
+

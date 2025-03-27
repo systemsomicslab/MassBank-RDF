@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02191 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-10-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02191" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cyanophenylguanidine" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 1.600749e+02 ;
+            rdfs:seeAlso cas:5637-42-3,
+                chemspider:14659069,
+                pubchem:CID17747914 ;
+            schema:inChI "InChI=1S/C8H8N4/c9-5-6-1-3-7(4-2-6)12-8(10)11/h1-4H,(H4,10,11,12)" ;
+            schema:inChIKey inchikey:BTDGLZSKNFJBER-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8N4" ;
+            schema:name "Cyanophenylguanidine" ;
+            schema:smiles "N#Cc1ccc(NC(=N)N)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 4.4527e+00 ;
+            mbo:mz 4.1014e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.170454e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.590676e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-014i-0900000000-a8dbe7ca34e27c4a2003" ;
+    rdfs:comment "The sample was injected by direct infusion." ;
+    skos:definition "Cyanophenylguanidine; ESI-QTOF; MS2; ESI; NEGATIVE; [M-H]-; CE 20 V" .
+

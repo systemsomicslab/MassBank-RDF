@@ -1,0 +1,102 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU134401 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU134401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "20.366 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,6-dinitro-4-propan-2-yl-N,N-dipropylaniline",
+                "Isopropalin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.091689e+02 ;
+            rdfs:seeAlso cas:33820-53-0,
+                chemspider:33636,
+                pubchem:CID36606 ;
+            schema:inChI "InChI=1S/C15H23N3O4/c1-5-7-16(8-6-2)15-13(17(19)20)9-12(11(3)4)10-14(15)18(21)22/h9-11H,5-8H2,1-4H3" ;
+            schema:inChIKey inchikey:NEKOXWSIMFDGMA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H23N3O4" ;
+            schema:name "2,6-dinitro-4-propan-2-yl-N,N-dipropylaniline",
+                "Isopropalin" ;
+            schema:smiles "CCCN(CCC)C1=C(C=C(C=C1[N+]([O-])=O)C(C)C)[N+]([O-])=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.4618e+03 ;
+            mbo:mz 5.80651e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 1.06285e+04 ;
+            mbo:mz 2.341236e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 308 ],
+        [ mbo:intensity 2.65736e+04 ;
+            mbo:mz 2.641344e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 771 ],
+        [ mbo:intensity 1.65e+04 ;
+            mbo:mz 1.940926e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 479 ],
+        [ mbo:intensity 3.44391e+04 ;
+            mbo:mz 2.060924e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.3478e+03 ;
+            mbo:mz 2.080721e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 1.99164e+04 ;
+            mbo:mz 2.100874e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 578 ],
+        [ mbo:intensity 3.2211e+03 ;
+            mbo:mz 2.18093e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 4.9212e+03 ;
+            mbo:mz 2.191131e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 143 ],
+        [ mbo:intensity 1.82456e+04 ;
+            mbo:mz 2.220875e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 529 ],
+        [ mbo:intensity 2.22742e+04 ;
+            mbo:mz 2.260822e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 646 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90212e+01 ;
+            mbo:precursor_mz 3.101761e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-08fr-0190000000-c5db5fcf60bbb2737fd0" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Isopropalin; LC-ESI-QFT; MS2; CE: 15; R=17500; [M+H]+" .
+

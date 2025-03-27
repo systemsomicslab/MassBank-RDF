@@ -1,0 +1,62 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ324851 a mbo:MassSpectrum ;
+    dcterms:creator "E. Janssen [dtc], B. Lauper [com]" ;
+    dcterms:date "2020-02-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ324851" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.715 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5R,8S,11R,12S,15S,18S,19S,22R)-15-[(4-hydroxyphenyl)methyl]-18-[(1E,3E,5S,6S)-6-methoxy-3,5-dimethyl-7-phenylhepta-1,3-dienyl]-1,5,12,19-tetramethyl-2-methylidene-8-(2-methylpropyl)-3,6,9,13,16,20,25-heptaoxo-1,4,7,10,14,17,21-heptazacyclopentacosane-11,22-dicarboxylic acid",
+                "MCLY",
+                "Microcystin LY" ;
+            mbo:ch_exact_mass 1.001511e+03 ;
+            rdfs:seeAlso chemspider:4945072,
+                pubchem:CID6440826 ;
+            schema:inChI "InChI=1S/C52H71N7O13/c1-28(2)24-40-50(67)58-44(52(70)71)32(6)46(63)56-41(26-36-17-19-37(60)20-18-36)49(66)54-38(21-16-29(3)25-30(4)42(72-10)27-35-14-12-11-13-15-35)31(5)45(62)55-39(51(68)69)22-23-43(61)59(9)34(8)48(65)53-33(7)47(64)57-40/h11-21,25,28,30-33,38-42,44,60H,8,22-24,26-27H2,1-7,9-10H3,(H,53,65)(H,54,66)(H,55,62)(H,56,63)(H,57,64)(H,58,67)(H,68,69)(H,70,71)/b21-16-,29-25+" ;
+            schema:inChIKey inchikey:SIGQAYSWORHPPH-GFXLLRAPSA-N ;
+            schema:molecularFormula "C52H71N7O13" ;
+            schema:name "(5R,8S,11R,12S,15S,18S,19S,22R)-15-[(4-hydroxyphenyl)methyl]-18-[(1E,3E,5S,6S)-6-methoxy-3,5-dimethyl-7-phenylhepta-1,3-dienyl]-1,5,12,19-tetramethyl-2-methylidene-8-(2-methylpropyl)-3,6,9,13,16,20,25-heptaoxo-1,4,7,10,14,17,21-heptazacyclopentacosane-11,22-dicarboxylic acid",
+                "MCLY",
+                "Microcystin LY" ;
+            schema:smiles "COC(Cc1ccccc1)C(C)\\C=C(C)\\C=C/C2NC(=O)C(Cc3ccc(O)cc3)NC(=O)C(C)C(NC(=O)C(CC(C)C)NC(=O)C(C)NC(=O)C(=C)N(C)C(=O)CCC(NC(=O)C2C)C(O)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.815553e+05 ;
+            mbo:mz 9.824932e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 3.983548e+06 ;
+            mbo:mz 1.000504e+03 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.909277e+02 ;
+            mbo:precursor_mz 1.000504e+03 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0udi-9000000000-29bb07f237ca549890e8" ;
+    rdfs:comment "EQ cyanopeptide spectra replaced with more comprehensive acquisition." ;
+    skos:definition "MCLY; LC-ESI-QFT; MS2; CE: 15%; R=17500; [M-H]-" .
+

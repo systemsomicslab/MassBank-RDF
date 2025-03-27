@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000026 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-09-24, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000026" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "726.699 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R)-Hesperidin",
+                "4H-1-Benzopyran-4-one, 7-[[6-O-(6-deoxy-alpha-L-mannopyranosyl)-beta-D-glucopyranosyl]oxy]-2,3-dihydro-5-hydroxy-2-(3-hydroxy-4-methoxyphenyl)-, (2R)-",
+                "Epihesperidin" ;
+            mbo:ch_compound_class "Natural Product; Flavonoid" ;
+            mbo:ch_exact_mass 6.101898e+02 ;
+            rdfs:seeAlso cas:369593-42-0 ;
+            schema:inChI "InChI=1S/C28H34O15/c1-10-21(32)23(34)25(36)27(40-10)39-9-19-22(33)24(35)26(37)28(43-19)41-12-6-14(30)20-15(31)8-17(42-18(20)7-12)11-3-4-16(38-2)13(29)5-11/h3-7,10,17,19,21-30,32-37H,8-9H2,1-2H3/t10-,17+,19+,21-,22+,23+,24-,25+,26+,27+,28+/m0/s1" ;
+            schema:inChIKey inchikey:QUQPHWDTPGMPEX-UTWYECKDSA-N ;
+            schema:molecularFormula "C28H34O15" ;
+            schema:name "(2R)-Hesperidin",
+                "4H-1-Benzopyran-4-one, 7-[[6-O-(6-deoxy-alpha-L-mannopyranosyl)-beta-D-glucopyranosyl]oxy]-2,3-dihydro-5-hydroxy-2-(3-hydroxy-4-methoxyphenyl)-, (2R)-",
+                "Epihesperidin" ;
+            schema:smiles "c(O)(c3)c(C(=O)2)c(cc3OC(O4)C(O)C(O)C(O)C(COC(O5)C(O)C(C(C5C)O)O)4)OC(C2)c(c1)ccc(c1O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 5.369873e+06 ;
+            mbo:mz 3.010684e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 7.109146e+07 ;
+            mbo:mz 6.091793e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.276676e+07 ;
+            mbo:mz 6.101827e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 320 ],
+        [ mbo:intensity 6.42418e+06 ;
+            mbo:mz 6.111861e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 4.094973e+06 ;
+            mbo:mz 6.721692e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 1.80884e+07 ;
+            mbo:mz 7.231751e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 254 ],
+        [ mbo:intensity 6.547844e+06 ;
+            mbo:mz 7.241758e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 92 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-0000009200-5a137b75917d9b9dabd9" ;
+    skos:definition "Epihesperidin; LC-ESI-ITTOF; MS; [M-H]-" .
+

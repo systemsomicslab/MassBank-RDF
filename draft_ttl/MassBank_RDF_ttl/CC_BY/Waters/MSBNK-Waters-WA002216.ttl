@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002216 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002216" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "12.980 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Mepyramine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.851841e+02 ;
+            rdfs:seeAlso cas:91-84-9 ;
+            schema:inChI "InChI=1S/C17H23N3O/c1-19(2)12-13-20(17-6-4-5-11-18-17)14-15-7-9-16(21-3)10-8-15/h4-11H,12-14H2,1-3H3" ;
+            schema:inChIKey inchikey:YECBIJXISLIIDS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H23N3O" ;
+            schema:name "Mepyramine" ;
+            schema:smiles "CN(C)CCN(Cc(c2)ccc(OC)c2)c(c1)nccc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.6e+01 ;
+            mbo:mz 1.19e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.21e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.6e+01 ;
+            mbo:mz 1.22e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 3.21e+02 ;
+            mbo:mz 2.41e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 321 ],
+        [ mbo:intensity 4.3e+01 ;
+            mbo:mz 2.42e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 2.86e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00di-0930000000-2e1b95a0590423d6e4d2" ;
+    skos:definition "Mepyramine; LC-ESI-Q; MS; POS; 45 V" .
+

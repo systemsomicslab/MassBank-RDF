@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU500304 a mbo:MassSpectrum ;
+    dcterms:creator "Chrysoula Kanakaki, Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2021-04-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU500304" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2021 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "40 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness, Restek" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.801 min" ;
+            mbo:solvent " ",
+                "A",
+                "H",
+                "e",
+                "i",
+                "l",
+                "m",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Vinyltriethoxysilane" ;
+            mbo:ch_compound_class "N/A; Food Contact Material" ;
+            mbo:ch_exact_mass 1.901025e+02 ;
+            rdfs:seeAlso cas:78-08-0,
+                chemspider:6269,
+                pubchem:CID6516 ;
+            schema:inChI "InChI=1S/C8H18O3Si/c1-5-9-12(8-4,10-6-2)11-7-3/h8H,4-7H2,1-3H3" ;
+            schema:inChIKey inchikey:FWDBOZPQNFPOLF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H18O3Si" ;
+            schema:name "Vinyltriethoxysilane" ;
+            schema:smiles "CCO[Si](C=C)(OCC)OCC" ] ;
+    mbo:has_peak [ mbo:intensity 5.4e+02 ;
+            mbo:mz 6.29904e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.89847e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 185 ],
+        [ mbo:intensity 3.64e+02 ;
+            mbo:mz 8.1001e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 673 ],
+        [ mbo:intensity 3.08e+02 ;
+            mbo:mz 9.69939e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 570 ],
+        [ mbo:intensity 1.16e+02 ;
+            mbo:mz 9.90091e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 215 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.630811e+02 ;
+            mbo:precursor_mz 1.911098e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-03ea-9000000000-c9818c993948c2b3f3d6" ;
+    rdfs:comment "INTERNAL_ID 5003" ;
+    skos:definition "Vinyltriethoxysilane; GC-APCI-QTOF; MS2; CE: 40 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,89 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003515 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003515" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "13.094 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(10,11-dihydroxy-1,5-dimethylspiro[8-oxatricyclo[7.2.1.02,7]dodec-5-ene-12,2`-oxirane]-2-yl)methyl acetate",
+                "15 Acetoxyscirpenol",
+                "Desacetylanguidine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.241573e+02 ;
+            rdfs:seeAlso cas:2623-22-5,
+                chemspider:380266,
+                pubchem:CID429922 ;
+            schema:inChI "InChI=1S/C17H24O6/c1-9-4-5-16(7-21-10(2)18)11(6-9)23-14-12(19)13(20)15(16,3)17(14)8-22-17/h6,11-14,19-20H,4-5,7-8H2,1-3H3" ;
+            schema:inChIKey inchikey:IRXDUBNENLKYTC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H24O6" ;
+            schema:name "(10,11-dihydroxy-1,5-dimethylspiro[8-oxatricyclo[7.2.1.02,7]dodec-5-ene-12,2`-oxirane]-2-yl)methyl acetate",
+                "15 Acetoxyscirpenol",
+                "Desacetylanguidine" ;
+            schema:smiles "CC1=CC2C(CC1)(C3(C(C(C(C34CO4)O2)O)O)C)COC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.0346e+03 ;
+            mbo:mz 1.451007e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 1.20954e+04 ;
+            mbo:mz 1.591164e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 725 ],
+        [ mbo:intensity 7.4937e+03 ;
+            mbo:mz 1.73132e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 449 ],
+        [ mbo:intensity 1.66691e+04 ;
+            mbo:mz 2.011273e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.28632e+04 ;
+            mbo:mz 2.191377e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 771 ],
+        [ mbo:intensity 1.57881e+04 ;
+            mbo:mz 2.471319e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 946 ],
+        [ mbo:intensity 5.1866e+03 ;
+            mbo:mz 2.651427e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 311 ],
+        [ mbo:intensity 3.188e+03 ;
+            mbo:mz 3.07155e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 191 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.651431e+02 ;
+            mbo:precursor_mz 3.251646e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0ldj-0390000000-74ce7be4351e81d69afd" ;
+    rdfs:comment "INTERNAL_ID 7" ;
+    skos:definition "15 Acetoxyscirpenol; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

@@ -1,0 +1,72 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA029002 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA029002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "6.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2-chloranyl-4-methylsulfonyl-phenyl)carbonylcyclohexane-1,3-dione",
+                "Sulcotrione" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.280167e+02 ;
+            rdfs:seeAlso cas:99105-77-8,
+                chemspider:82858,
+                pubchem:CID91760 ;
+            schema:inChI "InChI=1S/C14H13ClO5S/c1-21(19,20)8-5-6-9(10(15)7-8)14(18)13-11(16)3-2-4-12(13)17/h5-7,13H,2-4H2,1H3" ;
+            schema:inChIKey inchikey:PQTBTIFWAXVEPB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H13ClO5S" ;
+            schema:name "2-(2-chloranyl-4-methylsulfonyl-phenyl)carbonylcyclohexane-1,3-dione",
+                "Sulcotrione" ;
+            schema:smiles "O=C1CCCC(=O)C1C(=O)c1ccc(S(=O)(=O)C)cc1Cl" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.65e+03 ;
+            mbo:mz 1.110443e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 4.75082e+04 ;
+            mbo:mz 1.390389e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 7.6691e+03 ;
+            mbo:mz 1.570492e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 8.659013e+05 ;
+            mbo:mz 3.290242e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.510066e+02 ;
+            mbo:precursor_mz 3.290245e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-0009000000-f2cc70af246eec98d384" ;
+    rdfs:comment "EAWAG_UCHEM_ID 290" ;
+    skos:definition "Sulcotrione; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

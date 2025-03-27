@@ -1,0 +1,70 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02369 a mbo:MassSpectrum ;
+    dcterms:creator "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN" ;
+    dcterms:date "2022-09-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02369" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Eiyu Imai, Molecular Structure Characterization Unit, RIKEN under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JMS-T100GCV (JEOL, Akishima, Japan) coupled to Agilent 7890A (Santa Clara, CA, USA) gas chromatograph." ;
+            mbo:column_name "DB-5MS UI 122-5532UI US0462866H (Agilent, Wilmington, USA) with the length 30 m, I.D. 0.25 mm, and thickness 0.25 micrometer." ;
+            mbo:instrument_type "GC-FI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "7.77 min." ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-Methyl-beta-alanine" ;
+            mbo:ch_compound_class "Non-natural compound" ;
+            mbo:ch_exact_mass 1.030633e+02 ;
+            rdfs:seeAlso chemspider:68396,
+                pubchem:CID75891 ;
+            schema:inChI "InChI=1S/C4H9NO2/c1-5-3-2-4(6)7/h5H,2-3H2,1H3,(H,6,7)" ;
+            schema:inChIKey inchikey:VDIPNVCWMXZNFY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H9NO2" ;
+            schema:name "N-Methyl-beta-alanine" ;
+            schema:smiles "CNCCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.1324e+00 ;
+            mbo:mz 2.3212e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 91 ],
+        [ mbo:intensity 1.8166e+00 ;
+            mbo:mz 2.33121e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 8.356e-01 ;
+            mbo:mz 2.34118e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.47142e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.13128e+01 ;
+            mbo:mz 2.48144e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 213 ],
+        [ mbo:intensity 8.87e+00 ;
+            mbo:mz 2.49141e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 1.3181e+00 ;
+            mbo:mz 2.50142e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0002-0090000000-5ccebce9239a2e615abc" ;
+    rdfs:comment "FI voltage was 10 kV. Typical accuracy level expected was 10 ppm. The m/z value was adjusted with 247.1424." ;
+    skos:definition "N-Methyl-beta-alanine; GC-FI-TOF; MS; POSITIVE; FI; 10 kV; 2TMS" .
+

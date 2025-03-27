@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000680 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000680" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "11.200 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Benzoylecgonine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.891314e+02 ;
+            rdfs:seeAlso cas:519-09-5 ;
+            schema:inChI "InChI=1S/C16H19NO4/c1-17-11-7-8-12(17)14(15(18)19)13(9-11)21-16(20)10-5-3-2-4-6-10/h2-6,11-14H,7-9H2,1H3,(H,18,19)/t11-,12+,13-,14+/m0/s1" ;
+            schema:inChIKey inchikey:GVGYEFKIHJTNQZ-RFQIPJPRSA-N ;
+            schema:molecularFormula "C16H19NO4" ;
+            schema:name "Benzoylecgonine" ;
+            schema:smiles "OC(=O)C(C(OC(=O)c(c3)cccc3)1)C(C2)N(C)C(C2)C1" ] ;
+    mbo:has_peak [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.24e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.9e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.57e+02 ;
+            mbo:mz 2.91e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 157 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 2.92e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 3.12e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 3.28e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-0090000000-0e1f3b9b5ee9c8591d2e" ;
+    skos:definition "Benzoylecgonine; LC-ESI-Q; MS; POS; 15 V" .
+

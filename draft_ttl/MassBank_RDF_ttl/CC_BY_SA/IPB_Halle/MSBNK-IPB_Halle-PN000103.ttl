@@ -1,0 +1,47 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PN000103 a mbo:MassSpectrum ;
+    dcterms:creator "Institute of Bioorganic Chemistry, Polish Academy of Sciences,Poland/Anna Staszków" ;
+    dcterms:date "2011-03-18"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PN000103" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright(C) 2011 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "micrOTOF-Q" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:column_name "Poroshell 120,EC-C18 2.1x100mm,2.7um" ;
+            mbo:instrument_type "ESI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "430.297 sec" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Luteone O-glucoside" ;
+            mbo:ch_compound_class "Natural Product; isoflavone" ;
+            mbo:ch_exact_mass 5.161632e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C26H28O11" ;
+            schema:name "Luteone O-glucoside" ;
+            schema:smiles "N/A" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.99057e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6e+02 ;
+            mbo:mz 3.551176e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 600 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.99057e+02 ;
+            mbo:precursor_mz 5.17175e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-052b-0095000000-1f283382fe94147384bb" ;
+    rdfs:comment "lupinus_mexico" ;
+    skos:definition "Luteone O-glucoside; ESI-TOF; MS2; CE:15 eV; [M+H]+" .
+

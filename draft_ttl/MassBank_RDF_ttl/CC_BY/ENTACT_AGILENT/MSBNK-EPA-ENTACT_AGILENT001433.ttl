@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001433 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001433" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "DTXSID3047477",
+                "dl-Norgestrel" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.122089e+02 ;
+            rdfs:seeAlso cas:6533-00-2,
+                pubchem:CID16051930 ;
+            schema:inChI "InChI=1S/C21H28O2/c1-3-20-11-9-17-16-8-6-15(22)13-14(16)5-7-18(17)19(20)10-12-21(20,23)4-2/h2,13,16-19,23H,3,5-12H2,1H3" ;
+            schema:inChIKey inchikey:WWYNJERNGUHSAO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H28O2" ;
+            schema:name "DTXSID3047477",
+                "dl-Norgestrel" ;
+            schema:smiles "CCC12CCC3C4CCC(=O)C=C4CCC3C1CCC2(O)C#C" ] ;
+    mbo:has_peak [ mbo:intensity 1.581118e+00 ;
+            mbo:mz 1.090648e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.046273e+00 ;
+            mbo:mz 1.190855e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.084468e+00 ;
+            mbo:mz 1.230804e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.191235e+00 ;
+            mbo:mz 1.331012e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.024119e+00 ;
+            mbo:mz 1.991481e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 4.786856e+00 ;
+            mbo:mz 2.4519e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.167147e+00 ;
+            mbo:mz 2.771951e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 4.428515e+00 ;
+            mbo:mz 2.952056e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.132162e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.132162e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-03di-0009000000-3e23adfe563e2cf016c1" ;
+    skos:definition "dl-Norgestrel; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

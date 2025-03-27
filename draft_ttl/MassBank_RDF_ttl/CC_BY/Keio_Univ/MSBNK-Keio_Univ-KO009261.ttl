@@ -1,0 +1,64 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO009261 a mbo:MassSpectrum ;
+    dcterms:creator "Ojima Y, Kakazu Y, Horai H, Soga T, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2011-12-05 (Created 2008-05-12)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO009261" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC/MSD Trap XCT, Agilent Technologies" ;
+            mbo:collision_energy "0.80/0.65/0.50" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS4" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Triadimefon" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.930931e+02 ;
+            rdfs:seeAlso cas:43121-43-3,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:13338> ;
+            schema:inChI "InChI=1S/C14H16ClN3O2/c1-14(2,3)12(19)13(18-9-16-8-17-18)20-11-6-4-10(15)5-7-11/h4-9,13H,1-3H3" ;
+            schema:inChIKey inchikey:WURBVZBTWMNKQT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H16ClN3O2" ;
+            schema:name "Triadimefon" ;
+            schema:smiles "Clc(c2)ccc(c2)OC(n(c1)ncn1)C(=O)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.91e+00 ;
+            mbo:mz 1.089e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.64e+00 ;
+            mbo:mz 1.192e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.164e+01 ;
+            mbo:mz 1.27e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 245 ],
+        [ mbo:intensity 4.08e+00 ;
+            mbo:mz 1.28e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 8.84e+01 ;
+            mbo:mz 1.55e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.179e+01 ;
+            mbo:mz 1.561e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 246 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-d4e8bb5a1476e13cf62b" ;
+    rdfs:comment "[MS3] KO009259" ;
+    skos:definition "Triadimefon; LC-ESI-IT; MS4; m/z: 294/197/155; [M+H]+" .
+

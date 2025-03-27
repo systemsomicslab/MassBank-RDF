@@ -1,0 +1,55 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000882 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000882" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Naphthylsulfonic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.080194e+02 ;
+            rdfs:seeAlso cas:85-47-2 ;
+            schema:inChI "InChI=1S/C10H8O3S/c11-14(12,13)10-7-3-5-8-4-1-2-6-9(8)10/h1-7H,(H,11,12,13)" ;
+            schema:inChIKey inchikey:PSZYNBSKGUBXEH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H8O3S" ;
+            schema:name "1-Naphthylsulfonic acid" ;
+            schema:smiles "OS(=O)(=O)C1=CC=CC2C=CC=CC=21" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 7.995736e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.924892e+00 ;
+            mbo:mz 7.999038e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 3.247432e+00 ;
+            mbo:mz 1.150553e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 2.097173e+01 ;
+            mbo:mz 1.430502e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 210 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.070121e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-9200000000-ab5c3ab1a5108e7082f3" ;
+    skos:definition "1-Naphthylsulfonic acid; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

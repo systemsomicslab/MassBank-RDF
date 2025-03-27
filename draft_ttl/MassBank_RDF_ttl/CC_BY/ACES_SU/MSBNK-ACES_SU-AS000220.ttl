@@ -1,0 +1,63 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000220 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000220" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "11.031600" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Methyl-1H-benzotriazole",
+                "4-methyl-2H-benzotriazole" ;
+            mbo:ch_compound_class "Azoles; Triazoles; Benzotriazoles" ;
+            mbo:ch_exact_mass 1.33064e+02 ;
+            schema:inChI "InChI=1S/C7H7N3/c1-5-3-2-4-6-7(5)9-10-8-6/h2-4H,1H3,(H,8,9,10)" ;
+            schema:molecularFormula "C7H7N3" ;
+            schema:name "4-Methyl-1H-benzotriazole",
+                "4-methyl-2H-benzotriazole" ;
+            schema:smiles "N=1NN=C2C1C=CC=C2C" ] ;
+    mbo:has_peak [ mbo:intensity 2.369255e+06 ;
+            mbo:mz 1.020352e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.160015e+07 ;
+            mbo:mz 1.030428e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 72 ],
+        [ mbo:intensity 6.788882e+06 ;
+            mbo:mz 1.040506e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 1.608456e+08 ;
+            mbo:mz 1.320565e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.320565e+02 ;
+            mbo:precursor_mz 1.320566e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001i-0900000000-a7e0d42dac528cf469d5" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "4-Methyl-1H-benzotriazole; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M-H]-" .
+

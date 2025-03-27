@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000712 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000712" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "12.500 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Pethidine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.471572e+02 ;
+            rdfs:seeAlso cas:57-42-1 ;
+            schema:inChI "InChI=1S/C15H21NO2/c1-3-18-14(17)15(9-11-16(2)12-10-15)13-7-5-4-6-8-13/h4-8H,3,9-12H2,1-2H3" ;
+            schema:inChIKey inchikey:XADCESSVHJOZHK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H21NO2" ;
+            schema:name "Pethidine" ;
+            schema:smiles "CCOC(=O)C(C2)(CCN(C)C2)c(c1)cccc1" ] ;
+    mbo:has_peak [ mbo:intensity 2.82e+02 ;
+            mbo:mz 1.74e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 282 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.5e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 1.75e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 1.76e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 2.02e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 2.04e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.86e+02 ;
+            mbo:mz 2.2e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 286 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 2.21e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.48e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.45e+02 ;
+            mbo:mz 2.49e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 145 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0002-0190000000-ad14ee894ab457f8f7da" ;
+    skos:definition "Pethidine; LC-ESI-Q; MS; POS; 45 V" .
+

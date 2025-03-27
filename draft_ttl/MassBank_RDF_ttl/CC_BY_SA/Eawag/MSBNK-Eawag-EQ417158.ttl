@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ417158 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], M. Stravs [com]" ;
+    dcterms:date "2019-12-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ417158" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K.; Mueller, A.; Singer, H.; Hollender, J. New relevant pesticide transformation products in groundwater detected using target and suspect screening for agricultural and urban micropollutants with LC-HRMS. Water Research 2019, 165. DOI: https://doi.org/10.1016/j.watres.2019.114972" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "150 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "1.041 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,4-dicarbamoyl-3,5,6-trichlorobenzenesulfonic acid",
+                "Chlorothalonil-TP R471811" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.458985e+02 ;
+            rdfs:seeAlso pubchem:CID138402810 ;
+            schema:inChI "InChI=1S/C8H5Cl3N2O5S/c9-3-1(7(12)14)4(10)5(11)6(19(16,17)18)2(3)8(13)15/h(H2,12,14)(H2,13,15)(H,16,17,18)" ;
+            schema:inChIKey inchikey:NLCNUAPJCIAONV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H5Cl3N2O5S" ;
+            schema:name "2,4-dicarbamoyl-3,5,6-trichlorobenzenesulfonic acid",
+                "Chlorothalonil-TP R471811" ;
+            schema:smiles "NC(=O)C1=C(Cl)C(C(N)=O)=C(C(Cl)=C1Cl)S(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.58804e+05 ;
+            mbo:mz 6.7448e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 366 ],
+        [ mbo:intensity 9.87564e+04 ;
+            mbo:mz 7.40036e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 7.06138e+05 ;
+            mbo:mz 7.99574e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.357804e+05 ;
+            mbo:mz 8.60037e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 9.19274e+04 ;
+            mbo:mz 9.69599e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 130 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.468881e+02 ;
+            mbo:precursor_mz 3.448912e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004i-9000000000-3a18d52365086d9ee374" ;
+    rdfs:comment "UCHEM_ID 4171" ;
+    skos:definition "Chlorothalonil-TP R471811; LC-ESI-QFT; MS2; CE: 150%; R=17500; [M-H]-" .
+

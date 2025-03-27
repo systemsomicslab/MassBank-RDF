@@ -1,0 +1,89 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000607 a mbo:MassSpectrum ;
+    dcterms:creator "Zhou H, Tai Y, Sun C, & Pan Y" ;
+    dcterms:date "2006-04-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000607" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Zhou, H.; Tai, Y.; Sun, C.; Pan, Y. Rapid Identification of Vinca Alkaloids by Direct-Injection Electrospray Ionisation Tandem Mass Spectrometry and Confirmation by High-Performance Liquid Chromatography-Mass Spectrometry. Phytochemical Analysis 2005, 16 (5), 328–33. DOI:10.1002/pca.852" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker Esquire3000plus(Bruker-Franzen Analytik, Bremen, Germany);Agilent (Palo Alto, CA, USA) model 1100 chro-matography system" ;
+            mbo:collision_energy "0.9V" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "H",
+                "M",
+                "O",
+                "e" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Vinblastine" ;
+            mbo:ch_compound_class "CLASS1 Alkaloid CLASS2 Bisindole CLASS3 Vinblastine" ;
+            mbo:ch_exact_mass 8.10989e+02 ;
+            rdfs:seeAlso cas:865-21-4,
+                pubchem:CID241903 ;
+            schema:inChI "InChI=1S/C46H58N4O9/c1-8-42(54)23-28-24-45(40(52)57-6,36-30(15-19-49(25-28)26-42)29-13-10-11-14-33(29)47-36)32-21-31-34(22-35(32)56-5)48(4)38-44(31)17-20-50-18-12-16-43(9-2,37(44)50)39(59-27(3)51)46(38,55)41(53)58-7/h10-14,16,21-22,28,37-39,47,54-55H,8-9,15,17-20,23-26H2,1-7H3/t28-,37+,38-,39-,42+,43-,44-,45+,46+/m1/s1" ;
+            schema:inChIKey inchikey:JXLYSJRDGCGARV-XQKSVPLYSA-N ;
+            schema:molecularFormula "C46H58N4O9" ;
+            schema:name "Vinblastine" ;
+            schema:smiles "CC[C@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O)OC)(c3cc4c(cc3OC)N(C)[C@H]3[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]5(CC)C=CCN6CC[C@]43[C@@H]65)C2)C1" ] ;
+    mbo:has_peak [ mbo:intensity 2e+01 ;
+            mbo:mz 3.37e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 4.7e+01 ;
+            mbo:mz 8.11e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 470 ],
+        [ mbo:intensity 7.8e+01 ;
+            mbo:mz 3.55e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 779 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 5.22e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 350 ],
+        [ mbo:intensity 3.6e+01 ;
+            mbo:mz 5.42e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 360 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 6.49e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 8e+00 ;
+            mbo:mz 6.8e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 7.33e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 240 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.51e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.4e+01 ;
+            mbo:mz 7.93e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 739 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.11e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0k96-0004031920-218c17db2fb466632039" ;
+    rdfs:comment "728" ;
+    skos:definition "Vinblastine; LC-ESI-QIT; MS2" .
+

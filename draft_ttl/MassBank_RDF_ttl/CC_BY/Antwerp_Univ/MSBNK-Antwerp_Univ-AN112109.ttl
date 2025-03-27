@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN112109 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN112109" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "45 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.362 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bis(2-ethylhexyl) adipate",
+                "Di(2-ethylhexyl) adipate",
+                "bis(2-ethylhexyl) hexanedioate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.703083e+02 ;
+            rdfs:seeAlso cas:103-23-1,
+                chemspider:7358,
+                pubchem:CID7641 ;
+            schema:inChI "InChI=1S/C22H42O4/c1-5-9-13-19(7-3)17-25-21(23)15-11-12-16-22(24)26-18-20(8-4)14-10-6-2/h19-20H,5-18H2,1-4H3" ;
+            schema:inChIKey inchikey:SAOKZLXYCUGLFA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H42O4" ;
+            schema:name "Bis(2-ethylhexyl) adipate",
+                "Di(2-ethylhexyl) adipate",
+                "bis(2-ethylhexyl) hexanedioate" ;
+            schema:smiles "CCCCC(CC)COC(=O)CCCCC(=O)OCC(CC)CCCC" ] ;
+    mbo:has_peak [ mbo:intensity 1.44098e+04 ;
+            mbo:mz 5.50543e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.5925e+03 ;
+            mbo:mz 5.70701e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 388 ],
+        [ mbo:intensity 3.2451e+03 ;
+            mbo:mz 5.90496e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 225 ],
+        [ mbo:intensity 9.32e+02 ;
+            mbo:mz 7.10853e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 3.2031e+03 ;
+            mbo:mz 8.30492e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 222 ],
+        [ mbo:intensity 2.9157e+03 ;
+            mbo:mz 1.010597e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 202 ],
+        [ mbo:intensity 1.0274e+03 ;
+            mbo:mz 1.110441e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 71 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.713171e+02 ;
+            mbo:precursor_mz 3.713156e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-9100000000-54ae8504fe2c9d181a20" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Di(2-ethylhexyl) adipate; LC-ESI-QTOF; MS2; CE: 45eV; R=7000; [M+H]+" .
+

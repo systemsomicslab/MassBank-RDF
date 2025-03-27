@@ -1,0 +1,69 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000075 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000075" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "137.200 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Catalpinoside",
+                "Catalpol",
+                "De(p-hydroxybenzoyl)catalposide",
+                "beta-D-Glucopyranoside, (1aS,1bS,2S,5aR,6S,6aS)-1a,1b,2,5a,6,6a-hexahydro-6-hydroxy-1a-(hydroxymethyl)oxireno[4,5]cyclopenta[1,2-c]pyran-2-yl",
+                "beta-D-Glucopyranoside, 1a,1b,2,5a,6,6a-hexahydro-6-hydroxy-1a-(hydroxymethyl)oxireno[4,5]cyclopenta[1,2-c]pyran-2-yl, [1aS-(1aalpha,1bbeta,2beta,5abeta,6beta,6aalpha)]-" ;
+            mbo:ch_compound_class "Natural Product; Iridoid" ;
+            mbo:ch_exact_mass 3.621213e+02 ;
+            rdfs:seeAlso cas:2415-24-9,
+                pubchem:CID91520 ;
+            schema:inChI "InChI=1S/C15H22O10/c16-3-6-9(19)10(20)11(21)14(23-6)24-13-7-5(1-2-22-13)8(18)12-15(7,4-17)25-12/h1-2,5-14,16-21H,3-4H2/t5-,6-,7-,8+,9-,10+,11-,12+,13+,14+,15-/m1/s1" ;
+            schema:inChIKey inchikey:LHDWRKICQLTVDL-PZYDOOQISA-N ;
+            schema:molecularFormula "C15H22O10" ;
+            schema:name "Catalpinoside",
+                "Catalpol",
+                "De(p-hydroxybenzoyl)catalposide",
+                "beta-D-Glucopyranoside, (1aS,1bS,2S,5aR,6S,6aS)-1a,1b,2,5a,6,6a-hexahydro-6-hydroxy-1a-(hydroxymethyl)oxireno[4,5]cyclopenta[1,2-c]pyran-2-yl",
+                "beta-D-Glucopyranoside, 1a,1b,2,5a,6,6a-hexahydro-6-hydroxy-1a-(hydroxymethyl)oxireno[4,5]cyclopenta[1,2-c]pyran-2-yl, [1aS-(1aalpha,1bbeta,2beta,5abeta,6beta,6aalpha)]-" ;
+            schema:smiles "OCC(C(O)4)OC([H])(C(O)C(O)4)OC(O3)C([H])(C([H])(C=C3)2)C(CO)(O1)C1C(O)2" ] ;
+    mbo:has_peak [ mbo:intensity 4.197382e+06 ;
+            mbo:mz 1.830646e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 6.780408e+07 ;
+            mbo:mz 3.801535e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.310192e+07 ;
+            mbo:mz 3.81156e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 5.013221e+06 ;
+            mbo:mz 3.851051e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 74 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001i-0009000000-2cede997c091351d4be4" ;
+    skos:definition "Catalpol; LC-ESI-ITTOF; MS; [M+NH3+H]+" .
+

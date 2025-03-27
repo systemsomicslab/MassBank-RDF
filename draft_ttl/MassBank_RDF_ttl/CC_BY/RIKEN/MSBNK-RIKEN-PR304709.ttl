@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR304709 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR304709" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "3.686783" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Gardnerine" ;
+            mbo:ch_compound_class "Macroline alkaloids" ;
+            mbo:ch_exact_mass 3.24424e+02 ;
+            schema:inChI "InChI=1S/C20H24N2O2/c1-3-11-9-22-18-8-15-13-5-4-12(24-2)6-17(13)21-20(15)19(22)7-14(11)16(18)10-23/h3-6,14,16,18-19,21,23H,7-10H2,1-2H3" ;
+            schema:inChIKey inchikey:RBALEJFQJCAPLN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H24N2O2" ;
+            schema:name "Gardnerine" ;
+            schema:smiles "COC1=CC2=C(C=C1)C1=C(N2)C2CC3C(CO)C(C1)N2CC3=CC" ] ;
+    mbo:has_peak [ mbo:intensity 1.86e+02 ;
+            mbo:mz 1.991757e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 186 ],
+        [ mbo:intensity 1.49e+02 ;
+            mbo:mz 3.091507e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 149 ],
+        [ mbo:intensity 3.11e+02 ;
+            mbo:mz 3.131581e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 311 ],
+        [ mbo:intensity 1e+03 ;
+            mbo:mz 3.231729e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.04e+02 ;
+            mbo:mz 3.241712e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 304 ],
+        [ mbo:intensity 1.68e+02 ;
+            mbo:mz 3.251781e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 168 ],
+        [ mbo:intensity 1.3e+02 ;
+            mbo:mz 3.561406e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 130 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.69182e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-0009000000-44c06a87cf622f15ae7e" ;
+    rdfs:comment "registered in RIKEN PlaSMA" ;
+    skos:definition "Gardnerine; LC-ESI-QTOF; MS2" .
+

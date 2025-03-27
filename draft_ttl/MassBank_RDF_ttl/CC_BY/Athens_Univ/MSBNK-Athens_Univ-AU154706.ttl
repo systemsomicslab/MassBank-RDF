@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU154706 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU154706" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "RAMP 16.3-24.4 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "3.702 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,2R)-2-amino-1-phenylpropan-1-ol",
+                "Norephedrine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.510997e+02 ;
+            rdfs:seeAlso cas:14838-15-4,
+                chemspider:25082,
+                pubchem:CID26934 ;
+            schema:inChI "InChI=1S/C9H13NO/c1-7(10)9(11)8-5-3-2-4-6-8/h2-7,9,11H,10H2,1H3/t7-,9-/m1/s1" ;
+            schema:inChIKey inchikey:DLNKOYKMWOXYQA-VXNVDRBHSA-N ;
+            schema:molecularFormula "C9H13NO" ;
+            schema:name "(1S,2R)-2-amino-1-phenylpropan-1-ol",
+                "Norephedrine" ;
+            schema:smiles "C[C@H]([C@H](c1ccccc1)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.4752e+04 ;
+            mbo:mz 5.60489e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 8.256e+03 ;
+            mbo:mz 1.190713e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 1.09336e+05 ;
+            mbo:mz 1.340954e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.28e+03 ;
+            mbo:mz 1.350786e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.828e+03 ;
+            mbo:mz 5.70322e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 2.532e+03 ;
+            mbo:mz 5.9048e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 8.608e+03 ;
+            mbo:mz 9.1054e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 8.36e+02 ;
+            mbo:mz 9.20565e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.188e+03 ;
+            mbo:mz 9.30697e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 4.368e+04 ;
+            mbo:mz 1.150528e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 399 ],
+        [ mbo:intensity 4.164e+03 ;
+            mbo:mz 1.160579e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 5.2156e+04 ;
+            mbo:mz 1.170689e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 477 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.34096e+02 ;
+            mbo:precursor_mz 1.52107e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00lr-1900000000-033f74cd4a3197c7510b" ;
+    rdfs:comment "INTERNAL_ID 1547" ;
+    skos:definition "Norephedrine; LC-ESI-QTOF; MS2; CE: RAMP 16.3-24.4 eV; R=35000; [M+H]+" .
+

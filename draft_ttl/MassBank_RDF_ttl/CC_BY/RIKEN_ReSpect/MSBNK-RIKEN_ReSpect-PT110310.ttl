@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT110310 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT110310" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,6-Dihydroxy-3-methylpurine",
+                "3,7-dihydro-3-methyl-1H-purine-2,6-dione",
+                "3-MX",
+                "3-Methylxanthine",
+                "3-methyl-7H-purine-2,6-dione" ;
+            mbo:ch_compound_class "CLASS1 Alkaloid CLASS2 Xanthine CLASS3 Xanthine" ;
+            mbo:ch_exact_mass 1.6614e+02 ;
+            rdfs:seeAlso cas:1076-22-8 ;
+            schema:inChI "InChI=1S/C6H6N4O2/c1-10-4-3(7-2-8-4)5(11)9-6(10)12/h2H,1H3,(H,7,8)(H,9,11,12)" ;
+            schema:inChIKey inchikey:GMSNIKWWOQHZGF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H6N4O2" ;
+            schema:name "2,6-Dihydroxy-3-methylpurine",
+                "3,7-dihydro-3-methyl-1H-purine-2,6-dione",
+                "3-MX",
+                "3-Methylxanthine",
+                "3-methyl-7H-purine-2,6-dione" ;
+            schema:smiles "CN1C2=C(C(=O)NC1=O)NC=N2" ] ;
+    mbo:has_peak [ mbo:intensity 6.15e+01 ;
+            mbo:mz 6.90459e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 4.355e+01 ;
+            mbo:mz 9.40422e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.373e+02 ;
+            mbo:mz 9.60565e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 152 ],
+        [ mbo:intensity 6.062e+01 ;
+            mbo:mz 1.230682e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 4.457e+02 ;
+            mbo:mz 1.240517e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 493 ],
+        [ mbo:intensity 2.955e+01 ;
+            mbo:mz 1.330145e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 2.192e+02 ;
+            mbo:mz 1.490473e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 242 ],
+        [ mbo:intensity 9.036e+02 ;
+            mbo:mz 1.670569e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.670569e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-014i-1900000000-e5e3ab4240496c2d1174" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "3-Methylxanthine, 2,6-Dihydroxy-3-methylpurine, 3-MX, 3,7-dihydro-3-methyl-1H-purine-2,6-dione, 3-methyl-7H-purine-2,6-dione; LC-ESI-QTOF; MS2" .
+

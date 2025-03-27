@@ -1,0 +1,66 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM004702 a mbo:MassSpectrum ;
+    dcterms:creator "Ji QC, et al." ;
+    dcterms:date "2008-04-04"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM004702" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Ji, Q. C.; Harkey, M. R.; Henderson, G. L.; Gershwin, M. E.; Stern, J. S.; Hackman, R. M. Quantitative Determination of Ginsenosides by High-Performance Liquid Chromatography-Tandem Mass Spectrometry. Phytochemical Analysis 2001, 12 (5), 320–6. DOI:10.1002/pca.593" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Finnigan (San Jose, CA, USA) model LCQ Duo quadruple-ion trap mass spectrometer;  ThermoQuest (San Jose, CA, USA) model P4000 HPLC" ;
+            mbo:collision_energy "n.d." ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ginsenoside Re",
+                "Sanchinoside Re" ;
+            mbo:ch_compound_class "CLASS1 Terpenoid CLASS2 Triterpenoid CLASS3 Ginsenoside" ;
+            mbo:ch_exact_mass 9.47166e+02 ;
+            rdfs:seeAlso cas:52286-59-6,
+                pubchem:CID122130479 ;
+            schema:inChI "InChI=1S/C48H82O18/c1-21(2)11-10-14-48(9,66-42-38(60)35(57)32(54)26(19-49)63-42)23-12-16-46(7)30(23)24(51)17-28-45(6)15-13-29(52)44(4,5)40(45)25(18-47(28,46)8)62-43-39(36(58)33(55)27(20-50)64-43)65-41-37(59)34(56)31(53)22(3)61-41/h11,22-43,49-60H,10,12-20H2,1-9H3/t22-,23+,24-,25+,26-,27-,28-,29+,30?,31-,32-,33-,34+,35+,36+,37+,38-,39-,40?,41?,42?,43?,45-,46?,47-,48+/m1/s1" ;
+            schema:inChIKey inchikey:PWAOOJDMFUQOKB-KWVBUYMASA-N ;
+            schema:molecularFormula "C48H82O18" ;
+            schema:name "Ginsenoside Re",
+                "Sanchinoside Re" ;
+            schema:smiles "CC(C)=CCC[C@](C)(OC1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)[C@H]1CCC2(C)C1[C@H](O)C[C@@H]1[C@@]3(C)CC[C@H](O)C(C)(C)C3[C@@H](OC3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3OC3O[C@H](C)[C@@H](O)[C@H](O)[C@@H]3O)C[C@]12C" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 4.76e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 6.38e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.84e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.46e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-006i-0000909900-c9c197dde04f2170fde2" ;
+    rdfs:comment "N/D" ;
+    skos:definition "Sanchinoside Re, Ginsenoside Re; LC-ESI-QIT; MS2" .
+

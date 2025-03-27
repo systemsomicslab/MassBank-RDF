@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU221007 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU221007" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.393 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[(11Z)-11-[3-(dimethylazaniumyl)propylidene]-6H-benzo[c][1]benzoxepin-2-yl]acetate",
+                "Olopatadine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.371678e+02 ;
+            rdfs:seeAlso cas:140462-76-6,
+                chemspider:4444528,
+                pubchem:CID5281071 ;
+            schema:inChI "InChI=1S/C21H23NO3/c1-22(2)11-5-8-18-17-7-4-3-6-16(17)14-25-20-10-9-15(12-19(18)20)13-21(23)24/h3-4,6-10,12H,5,11,13-14H2,1-2H3,(H,23,24)/b18-8-" ;
+            schema:inChIKey inchikey:JBIMVDZLSHOPLA-LSCVHKIXSA-N ;
+            schema:molecularFormula "C21H23NO3" ;
+            schema:name "2-[(11Z)-11-[3-(dimethylazaniumyl)propylidene]-6H-benzo[c][1]benzoxepin-2-yl]acetate",
+                "Olopatadine" ;
+            schema:smiles "CN(C)CC/C=C\\1/c2ccccc2COc3c1cc(cc3)CC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.460412e+06 ;
+            mbo:mz 3.381821e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.381791e+02 ;
+            mbo:precursor_mz 3.381751e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-000i-0009000000-84a08146d186242ddb94" ;
+    rdfs:comment "INTERNAL_ID 2210" ;
+    skos:definition "Olopatadine; LC-ESI-QTOF; MS2; HILIC; CE: 10 eV; R=35000; [M+H]+" .
+

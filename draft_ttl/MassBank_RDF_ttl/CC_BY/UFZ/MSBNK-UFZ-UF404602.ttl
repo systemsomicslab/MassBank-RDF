@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UF404602 a mbo:MassSpectrum ;
+    dcterms:creator "Schulze T, Krauss M, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-01-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UF404602" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "80 (nominal)" ;
+            mbo:column_name "Kinetex Core-Shell C18 2.6 um, 3.0 x 100 mm, Phenomenex" ;
+            mbo:flow_gradient "90/10 at 0 min, 80/20 at 3.2 min, 5/95 at 17.8 min, 5/95 at 37.8 min, 90/10 at 37.9 min, 90/10 at 47 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "25.093 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[4-(4-Chlorophenoxy)phenyl]-1,1-dimethylurea",
+                "Chloroxuron" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.900822e+02 ;
+            rdfs:seeAlso cas:1982-47-4,
+                chemspider:15299,
+                pubchem:CID16115 ;
+            schema:inChI "InChI=1S/C15H15ClN2O2/c1-18(2)15(19)17-12-5-9-14(10-6-12)20-13-7-3-11(16)4-8-13/h3-10H,1-2H3,(H,17,19)" ;
+            schema:inChIKey inchikey:IVUXTESCPZUGJC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H15ClN2O2" ;
+            schema:name "3-[4-(4-Chlorophenoxy)phenyl]-1,1-dimethylurea",
+                "Chloroxuron" ;
+            schema:smiles "CN(C)C(=O)NC1=CC=C(OC2=CC=C(Cl)C=C2)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.154194e+06 ;
+            mbo:mz 7.20442e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.9941e+04 ;
+            mbo:mz 1.06065e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.91776e+04 ;
+            mbo:mz 1.180651e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 8.78287e+04 ;
+            mbo:mz 1.630308e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 2.4432e+04 ;
+            mbo:mz 1.900414e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.910891e+02 ;
+            mbo:precursor_mz 2.910895e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-00di-9100000000-bf6d8c29272e338bbd43" ;
+    rdfs:comment "INTERNAL_ID 4046" ;
+    skos:definition "Chloroxuron; LC-ESI-ITFT; MS2; CE: 80; R=15000; [M+H]+" .
+

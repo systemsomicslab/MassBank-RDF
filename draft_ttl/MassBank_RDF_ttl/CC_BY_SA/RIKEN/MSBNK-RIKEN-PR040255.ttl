@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR040255 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2008-04-25, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR040255" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,3R,4S,5R,6R)-2-[2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-chromen-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+                "Cyanidin-3-glucoside" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 4.491084e+02 ;
+            rdfs:seeAlso cas:7084-24-4,
+                pubchem:CID441667 ;
+            schema:inChI "InChI=1S/C21H20O11/c22-7-16-17(27)18(28)19(29)21(32-16)31-15-6-10-12(25)4-9(23)5-14(10)30-20(15)8-1-2-11(24)13(26)3-8/h1-6,16-19,21-22,27-29H,7H2,(H3-,23,24,25,26)/p+1/t16-,17-,18+,19-,21-/m1/s1" ;
+            schema:inChIKey inchikey:RKWHWFONKJEUEF-GQUPQBGVSA-O ;
+            schema:molecularFormula "[C21H21O11]+" ;
+            schema:name "(2S,3R,4S,5R,6R)-2-[2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-chromen-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+                "Cyanidin-3-glucoside" ;
+            schema:smiles "OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H](O)[C@@H]1Oc(c3)c([o+1]c(c4)c(c(O)cc(O)4)3)c(c2)cc(O)c(O)c2" ] ;
+    mbo:has_peak [ mbo:intensity 1.316e+04 ;
+            mbo:mz 2.870616e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.189e+03 ;
+            mbo:mz 2.871506e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 8.537e+02 ;
+            mbo:mz 2.880656e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 65 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-0090000000-0ee5168148d1f43f98b9" ;
+    skos:definition "Cyanidin-3-glucoside; LC-ESI-QTOF; MS2; CE:30 V; [M]+" .
+

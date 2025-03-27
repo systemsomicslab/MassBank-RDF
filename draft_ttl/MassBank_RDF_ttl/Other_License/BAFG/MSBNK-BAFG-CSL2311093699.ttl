@@ -1,0 +1,90 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311093699 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311093699" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "150" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "16.132 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Allethrin" ;
+            mbo:ch_compound_class "Insecticide" ;
+            mbo:ch_exact_mass 3.021882e+02 ;
+            rdfs:seeAlso cas:584-79-2 ;
+            schema:inChI "InChI=1S/C19H26O3/c1-7-8-13-12(4)16(10-15(13)20)22-18(21)17-14(9-11(2)3)19(17,5)6/h7,9,14,16-17H,1,8,10H2,2-6H3" ;
+            schema:inChIKey inchikey:ZCVAOQKBXKSDMS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H26O3" ;
+            schema:name "Allethrin" ;
+            schema:smiles "CC(C)=CC1C(C(=O)OC2CC(=O)C(=C2C)CC=C)C1(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.9e+00 ;
+            mbo:mz 5.1029e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 866 ],
+        [ mbo:intensity 3.5e+00 ;
+            mbo:mz 6.50428e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 777 ],
+        [ mbo:intensity 4.5e+00 ;
+            mbo:mz 7.70414e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4e-01 ;
+            mbo:mz 8.90411e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 89 ],
+        [ mbo:intensity 1.7e+00 ;
+            mbo:mz 9.10556e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 377 ],
+        [ mbo:intensity 9e-01 ;
+            mbo:mz 1.15054e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 200 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.031955e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0fvi-9000000000-255da27a000a464a9eae" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "Allethrin; LC-ESI-QTOF; MS2; 150 V" .
+

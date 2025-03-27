@@ -1,0 +1,68 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000302 a mbo:MassSpectrum ;
+    dcterms:creator "Parejo I, et al." ;
+    dcterms:date "2006-04-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000302" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Parejo, I.; Jauregui, O.; Sánchez-Rabaneda, F.; Viladomat, F.; Bastida, J.; Codina, C. Separation and Characterization of Phenolic Compounds in Fennel (Foeniculum Vulgare) Using Liquid Chromatography-Negative Electrospray Ionization Tandem Mass Spectrometry. Journal of Agricultural and Food Chemistry 2004, 52 (12), 3679–87. DOI:10.1021/jf030813h" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API 3000 triple-quadrupole mass spectrometer (PerkinElmer Sciex, Concord, ON, Canada)" ;
+            mbo:collision_energy "35" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-O-Caffeoylquinic acid" ;
+            mbo:ch_compound_class "CLASS1 Phenylpropanoid CLASS2 Phenylpropanoid ester CLASS3 Quinic acid" ;
+            mbo:ch_exact_mass 3.54311e+02 ;
+            rdfs:seeAlso cas:905-99-7,
+                pubchem:CID58427569 ;
+            schema:inChI "InChI=1S/C16H18O9/c17-9-3-1-8(5-10(9)18)2-4-13(21)25-14-11(19)6-16(24,15(22)23)7-12(14)20/h1-5,11-12,14,17-20,24H,6-7H2,(H,22,23)" ;
+            schema:inChIKey inchikey:GYFFKZTYYAFCTR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H18O9" ;
+            schema:name "4-O-Caffeoylquinic acid" ;
+            schema:smiles "O=C(C=Cc1ccc(O)c(O)c1)OC1C(O)CC(O)(C(=O)O)CC1O" ] ;
+    mbo:has_peak [ mbo:intensity 2.8e+01 ;
+            mbo:mz 1.35e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 280 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.73e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.2e+01 ;
+            mbo:mz 1.79e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 819 ],
+        [ mbo:intensity 4.2e+01 ;
+            mbo:mz 1.91e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 420 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.53e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00fr-0900000000-5f6689b5c665d2db19bf" ;
+    rdfs:comment "725" ;
+    skos:definition "4-O-Caffeoylquinic acid; LC-ESI-QQ; MS2" .
+

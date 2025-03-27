@@ -1,0 +1,81 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN113825 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN113825" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "5 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "4.010 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,2R)-2-(7-carboxy-4-methylheptoxy)carbonylcyclohexane-1-carboxylic acid",
+                "Cyclohexane-1,2-dicarboxylic mono carboxyisooctyl ester" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.281886e+02 ;
+            rdfs:seeAlso pubchem:CID155898864 ;
+            schema:inChI "InChI=1S/C17H28O6/c1-12(6-4-10-15(18)19)7-5-11-23-17(22)14-9-3-2-8-13(14)16(20)21/h12-14H,2-11H2,1H3,(H,18,19)(H,20,21)/t12?,13-,14+/m0/s1" ;
+            schema:inChIKey inchikey:HGYNPCSGHWFMTB-KFTPUPIBSA-N ;
+            schema:molecularFormula "C17H28O6" ;
+            schema:name "(1S,2R)-2-(7-carboxy-4-methylheptoxy)carbonylcyclohexane-1-carboxylic acid",
+                "Cyclohexane-1,2-dicarboxylic mono carboxyisooctyl ester" ;
+            schema:smiles "CC(CCCOC(=O)[C@@H]1CCCC[C@@H]1C(=O)O)CCCC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.0047e+03 ;
+            mbo:mz 1.090659e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.36e+02 ;
+            mbo:mz 1.270771e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.235e+02 ;
+            mbo:mz 1.271113e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 4.2598e+03 ;
+            mbo:mz 1.530559e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 1.3767e+03 ;
+            mbo:mz 1.710673e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 6.23718e+04 ;
+            mbo:mz 1.731189e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.704e+02 ;
+            mbo:mz 1.741221e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.30379e+04 ;
+            mbo:mz 3.271824e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 369 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.271821e+02 ;
+            mbo:precursor_mz 3.271813e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-0902000000-adee922550fea726e09c" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Cyclohexane-1,2-dicarboxylic mono carboxyisooctyl ester; LC-ESI-QTOF; MS2; CE: 5eV; R=7000; [M-H]-" .
+

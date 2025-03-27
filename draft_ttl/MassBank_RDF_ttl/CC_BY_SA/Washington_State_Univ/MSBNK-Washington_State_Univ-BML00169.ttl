@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00169 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00169" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "20 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.725" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-methoxy-1-methyl-2-oxohydropyridine-3-carbonitrile",
+                "Ricinine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.640586e+02 ;
+            rdfs:seeAlso cas:524-40-3,
+                chemspider:10216,
+                pubchem:CID10666 ;
+            schema:inChI "InChI=1S/C8H8N2O2/c1-10-4-3-7(12-2)6(5-9)8(10)11/h3-4H,1-2H3" ;
+            schema:inChIKey inchikey:PETSAYFQSGAEQY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8N2O2" ;
+            schema:name "4-methoxy-1-methyl-2-oxohydropyridine-3-carbonitrile",
+                "Ricinine" ;
+            schema:smiles "CN1C=CC(=C(C1=O)C#N)OC" ] ;
+    mbo:has_peak [ mbo:intensity 5e+01 ;
+            mbo:mz 1.080418e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 282 ],
+        [ mbo:intensity 9e+01 ;
+            mbo:mz 1.100622e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 508 ],
+        [ mbo:intensity 2.6e+01 ;
+            mbo:mz 1.22049e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 1.56e+02 ;
+            mbo:mz 1.380546e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 880 ],
+        [ mbo:intensity 4e+01 ;
+            mbo:mz 1.500407e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 226 ],
+        [ mbo:intensity 1.77e+02 ;
+            mbo:mz 1.650656e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.65e+02 ;
+            mbo:precursor_mz 1.650659e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-02ti-0900000000-02608c6cedb37af73052" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.369" ;
+    skos:definition "Ricinine; LC-ESI-QTOF; MS2; CE 20 ev; [M+H]+" .
+

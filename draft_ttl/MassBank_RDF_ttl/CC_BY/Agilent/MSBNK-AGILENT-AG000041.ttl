@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AGILENT-AG000041 a mbo:MassSpectrum ;
+    dcterms:creator "Rennie E, McEachran A, Agilent Technologies" ;
+    dcterms:date "2023-02-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-AGILENT-AG000041" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,4,5-TP / Silvex (Fenoprop)" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.679461e+02 ;
+            rdfs:seeAlso cas:93-72-1,
+                chemspider:6891 ;
+            schema:inChI "InChI=1S/C9H7Cl3O3/c1-4(9(13)14)15-8-3-6(11)5(10)2-7(8)12/h2-4H,1H3,(H,13,14)" ;
+            schema:inChIKey inchikey:ZLSWBLPERHFHIS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H7Cl3O3" ;
+            schema:name "2,4,5-TP / Silvex (Fenoprop)" ;
+            schema:smiles "CC(OC1C=C(Cl)C(Cl)=CC=1Cl)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.204787e+00 ;
+            mbo:mz 9.49694e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 4.111763e+00 ;
+            mbo:mz 1.229643e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.58941e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.176416e+01 ;
+            mbo:mz 1.949177e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 417 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.669388e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-e91bf8b935e99cf6e490" ;
+    skos:definition "2,4,5-TP / Silvex (Fenoprop); ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

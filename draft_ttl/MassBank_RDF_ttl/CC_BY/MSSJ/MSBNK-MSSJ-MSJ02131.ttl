@@ -1,0 +1,56 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ02131 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-10-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ02131" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "40 V" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diphenylguanidine" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 2.111109e+02 ;
+            rdfs:seeAlso cas:102-06-7,
+                chemspider:7313,
+                pubchem:CID7594 ;
+            schema:inChI "InChI=1S/C13H13N3/c14-13(15-11-7-3-1-4-8-11)16-12-9-5-2-6-10-12/h1-10H,(H3,14,15,16)" ;
+            schema:inChIKey inchikey:OWRCNXZUPFZXOS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H13N3" ;
+            schema:name "Diphenylguanidine" ;
+            schema:smiles "C1=CC=C(C=C1)NC(=NC2=CC=CC=C2)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.1903e+00 ;
+            mbo:mz 4.10137e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.77577e+01 ;
+            mbo:mz 9.20494e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 177 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.170446e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.101037e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-1900000000-740d4b964aa9a6498bc2" ;
+    rdfs:comment "The sample was injected by direct infusion." ;
+    skos:definition "Diphenylguanidine; ESI-QTOF; MS2; ESI; NEGATIVE; [M-H]-; CE 40 V" .
+

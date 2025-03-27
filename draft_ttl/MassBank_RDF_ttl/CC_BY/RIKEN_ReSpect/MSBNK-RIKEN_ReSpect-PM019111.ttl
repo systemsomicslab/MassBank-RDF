@@ -1,0 +1,74 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM019111 a mbo:MassSpectrum ;
+    dcterms:creator "F. Matsuda and M. Suzuki." ;
+    dcterms:date "2009-11-18"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM019111" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Simons, R.; Vincken, J.-P.; Bakx, E. J.; Verbruggen, M. A.; Gruppen, H. A Rapid Screening Method for Prenylated Flavonoids with Ultra-High-Performance Liquid Chromatography/Electrospray Ionisation Mass Spectrometry in Licorice Root Extracts. Rapid Communications in Mass Spectrometry 2009, 23 (19), 3083–93. DOI:10.1002/rcm.4215" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Thermo Scientific LTQ-XL (San Jose, CA, USA)" ;
+            mbo:collision_energy "35%" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4H-1-Benzopyran-4-one, 7-hydroxy-3-(5-hydroxy-2,2-dimethyl-2H-1-benzopyran-6-yl)-",
+                "Glabrone" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Isoflavone" ;
+            mbo:ch_exact_mass 3.36343e+02 ;
+            rdfs:seeAlso cas:60008-02-8,
+                pubchem:CID5317652 ;
+            schema:inChI "InChI=1S/C20H16O5/c1-20(2)8-7-14-16(25-20)6-5-12(18(14)22)15-10-24-17-9-11(21)3-4-13(17)19(15)23/h3-10,21-22H,1-2H3" ;
+            schema:inChIKey inchikey:COLMVFWKLOZOOP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H16O5" ;
+            schema:name "4H-1-Benzopyran-4-one, 7-hydroxy-3-(5-hydroxy-2,2-dimethyl-2H-1-benzopyran-6-yl)-",
+                "Glabrone" ;
+            schema:smiles "CC1(C)C=Cc2c(ccc(-c3coc4cc(O)ccc4c3=O)c2O)O1" ] ;
+    mbo:has_peak [ mbo:intensity 1.7e+01 ;
+            mbo:mz 2.13e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 170 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.91e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.1e+01 ;
+            mbo:mz 2.92e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 1e+01 ;
+            mbo:mz 3.07e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 1.8e+01 ;
+            mbo:mz 3.2e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 180 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.35e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0006-0091000000-dcd477af50602b8f679b" ;
+    rdfs:comment "N/D" ;
+    skos:definition "Glabrone, 4H-1-Benzopyran-4-one, 7-hydroxy-3-(5-hydroxy-2,2-dimethyl-2H-1-benzopyran-6-yl)-; LC-ESI-QIT; MS2" .
+

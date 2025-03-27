@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ324453 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ324453" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.5 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Betamethasone 21",
+                "[2-[(8S,9R,10S,11S,13S,14S,16S,17R)-9-fluoro-11,17-dihydroxy-10,13,16-trimethyl-3-oxo-6,7,8,11,12,14,15,16-octahydrocyclopenta[a]phenanthren-17-yl]-2-oxoethyl] acetate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.342105e+02 ;
+            rdfs:seeAlso cas:987-24-6,
+                chemspider:392014,
+                pubchem:CID443967 ;
+            schema:inChI "InChI=1S/C24H31FO6/c1-13-9-18-17-6-5-15-10-16(27)7-8-21(15,3)23(17,25)19(28)11-22(18,4)24(13,30)20(29)12-31-14(2)26/h7-8,10,13,17-19,28,30H,5-6,9,11-12H2,1-4H3/t13-,17-,18-,19-,21-,22-,23-,24-/m0/s1" ;
+            schema:inChIKey inchikey:AKUJBENLRBOFTD-QZIXMDIESA-N ;
+            schema:molecularFormula "C24H31FO6" ;
+            schema:name "Betamethasone 21",
+                "[2-[(8S,9R,10S,11S,13S,14S,16S,17R)-9-fluoro-11,17-dihydroxy-10,13,16-trimethyl-3-oxo-6,7,8,11,12,14,15,16-octahydrocyclopenta[a]phenanthren-17-yl]-2-oxoethyl] acetate" ;
+            schema:smiles "O=C(OCC(=O)[C@]3(O)[C@]2(C[C@H](O)[C@]4(F)[C@@]/1(\\C(=C/C(=O)\\C=C\\1)CC[C@H]4[C@@H]2C[C@@H]3C)C)C)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 4.476707e+05 ;
+            mbo:mz 5.90138e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.77e+02 ;
+            mbo:mz 8.30503e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.459e+02 ;
+            mbo:mz 9.90452e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 8.227e+02 ;
+            mbo:mz 1.0705e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.5682e+03 ;
+            mbo:mz 1.210658e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 7.951e+02 ;
+            mbo:mz 1.230453e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.4527e+03 ;
+            mbo:mz 1.330657e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.792092e+02 ;
+            mbo:precursor_mz 4.332032e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-5d51020970479e59b2f2" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3244" ;
+    skos:definition "Betamethasone 21; LC-ESI-QFT; MS2; CE: 45; R=35000; [M-H]-" .
+

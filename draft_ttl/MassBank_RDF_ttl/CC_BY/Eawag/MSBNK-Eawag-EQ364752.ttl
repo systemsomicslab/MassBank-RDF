@@ -1,0 +1,107 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ364752 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag and Thomaidis N, University of Athens" ;
+    dcterms:date "2015-08-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ364752" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "5.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Albendazole sulfone",
+                "methyl N-(6-propylsulfonyl-1H-benzimidazol-2-yl)carbamate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.970783e+02 ;
+            rdfs:seeAlso cas:75184-71-3,
+                chemspider:48031,
+                pubchem:CID53174 ;
+            schema:inChI "InChI=1S/C12H15N3O4S/c1-3-6-20(17,18)8-4-5-9-10(7-8)14-11(13-9)15-12(16)19-2/h4-5,7H,3,6H2,1-2H3,(H2,13,14,15,16)" ;
+            schema:inChIKey inchikey:CLSJYOLYMZNKJB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H15N3O4S" ;
+            schema:name "Albendazole sulfone",
+                "methyl N-(6-propylsulfonyl-1H-benzimidazol-2-yl)carbamate" ;
+            schema:smiles "CCCS(=O)(=O)C1=CC2=C(C=C1)N=C(N2)NC(=O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 3.99386e+04 ;
+            mbo:mz 1.060171e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.328528e+05 ;
+            mbo:mz 2.219977e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.04385e+04 ;
+            mbo:mz 2.530157e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.550427e+07 ;
+            mbo:mz 2.640447e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.022452e+06 ;
+            mbo:mz 2.96071e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 197 ],
+        [ mbo:intensity 1.696882e+05 ;
+            mbo:mz 1.330282e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.490419e+05 ;
+            mbo:mz 1.570275e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 4.50074e+04 ;
+            mbo:mz 1.580359e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.69637e+04 ;
+            mbo:mz 1.600152e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.56351e+04 ;
+            mbo:mz 1.610229e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.75014e+04 ;
+            mbo:mz 1.730229e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.82724e+04 ;
+            mbo:mz 1.89054e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9.797438e+05 ;
+            mbo:mz 2.2099e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 38 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.640444e+02 ;
+            mbo:precursor_mz 2.960711e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-03di-0090000000-5a1d69ed89637bb24f52" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3647" ;
+    skos:definition "Albendazole sulfone; LC-ESI-QFT; MS2; CE: 30; R=35000; [M-H]-" .
+

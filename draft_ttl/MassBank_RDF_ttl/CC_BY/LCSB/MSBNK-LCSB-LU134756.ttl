@@ -1,0 +1,90 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU134756 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU134756" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "90" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "15.621 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-tert-butyl-5-chloro-6-methyl-1H-pyrimidine-2,4-dione",
+                "Terbacil" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.160666e+02 ;
+            rdfs:seeAlso cas:5902-51-2,
+                chemspider:20830,
+                pubchem:CID22188 ;
+            schema:inChI "InChI=1S/C9H13ClN2O2/c1-5-6(10)7(13)12(8(14)11-5)9(2,3)4/h1-4H3,(H,11,14)" ;
+            schema:inChIKey inchikey:NBQCNZYJJMBDKY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H13ClN2O2" ;
+            schema:name "3-tert-butyl-5-chloro-6-methyl-1H-pyrimidine-2,4-dione",
+                "Terbacil" ;
+            schema:smiles "CC1=C(Cl)C(=O)N(C(=O)N1)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.02409e+04 ;
+            mbo:mz 6.09724e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 1.11768e+04 ;
+            mbo:mz 6.99936e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 8.15496e+04 ;
+            mbo:mz 7.29725e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 284 ],
+        [ mbo:intensity 3.88847e+04 ;
+            mbo:mz 7.39804e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 2.868583e+05 ;
+            mbo:mz 7.49643e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.13208e+04 ;
+            mbo:mz 8.89675e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.34826e+04 ;
+            mbo:mz 1.159909e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 1.97065e+05 ;
+            mbo:mz 1.589967e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 686 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.150593e+02 ;
+            mbo:precursor_mz 2.150593e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00di-9400000000-8378a34f720ed2305e2e" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Terbacil; LC-ESI-QFT; MS2; CE: 90; R=17500; [M-H]-" .
+

@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003680 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003680" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "22.130 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-hydroxy-19-(1H-indol-3-ylmethyl)-7,9,16,17-tetramethyl-15-oxa-20-azatetracyclo[11.8.0.01,18.014,16]henicosa-3,7,11-triene-2,5,21-trione",
+                "Chaetoglobosin A" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.282624e+02 ;
+            rdfs:seeAlso cas:50335-03-0,
+                chemspider:384948,
+                pubchem:CID435276 ;
+            schema:inChI "InChI=1S/C32H36N2O5/c1-17-8-7-10-22-29-31(4,39-29)19(3)27-24(15-20-16-33-23-11-6-5-9-21(20)23)34-30(38)32(22,27)26(36)13-12-25(35)28(37)18(2)14-17/h5-7,9-14,16-17,19,22,24,27-29,33,37H,8,15H2,1-4H3,(H,34,38)" ;
+            schema:inChIKey inchikey:OUMWCYMRLMEZJH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C32H36N2O5" ;
+            schema:name "6-hydroxy-19-(1H-indol-3-ylmethyl)-7,9,16,17-tetramethyl-15-oxa-20-azatetracyclo[11.8.0.01,18.014,16]henicosa-3,7,11-triene-2,5,21-trione",
+                "Chaetoglobosin A" ;
+            schema:smiles "CC1CC=CC2C3C(O3)(C(C4C2(C(=O)C=CC(=O)C(C(=C1)C)O)C(=O)NC4CC5=CNC6=CC=CC=C65)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 2.10948e+04 ;
+            mbo:mz 5.2927e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.292703e+02 ;
+            mbo:precursor_mz 5.292697e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-0000090000-c1023b1205349123d4ee" ;
+    rdfs:comment "INTERNAL_ID 67" ;
+    skos:definition "Chaetoglobosin A; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

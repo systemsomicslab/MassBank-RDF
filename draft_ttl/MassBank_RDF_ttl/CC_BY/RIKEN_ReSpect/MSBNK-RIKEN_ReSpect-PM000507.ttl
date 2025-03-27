@@ -1,0 +1,95 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000507 a mbo:MassSpectrum ;
+    dcterms:creator "Cuyckens F, Rozenberg R, de Hoffmann E, & Claeys M" ;
+    dcterms:date "2006-04-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000507" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Cuyckens, F.; Rozenberg, R.; de Hoffmann, E.; Claeys, M. Structure Characterization of flavonoidO-Diglycosides by Positive and Negative Nano-Electrospray Ionization Ion Trap Mass Spectrometry. Journal of Mass Spectrometry 2001, 36 (11), 1203–10. DOI:10.1002/jms.224" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LCQ mass spectrometer (Finnigan MAT, San Jose, CA, USA)" ;
+            mbo:collision_energy "35%" ;
+            mbo:instrument_type "LC-ESI-QIT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "H",
+                "M",
+                "O",
+                "e" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hesperidin" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavanone CLASS3 Hesperidin" ;
+            mbo:ch_exact_mass 6.10565e+02 ;
+            rdfs:seeAlso cas:520-26-3,
+                pubchem:CID10621 ;
+            schema:inChI "InChI=1S/C28H34O15/c1-10-21(32)23(34)25(36)27(40-10)39-9-19-22(33)24(35)26(37)28(43-19)41-12-6-14(30)20-15(31)8-17(42-18(20)7-12)11-3-4-16(38-2)13(29)5-11/h3-7,10,17,19,21-30,32-37H,8-9H2,1-2H3/t10-,17-,19+,21-,22+,23+,24-,25+,26+,27+,28+/m0/s1" ;
+            schema:inChIKey inchikey:QUQPHWDTPGMPEX-QJBIFVCTSA-N ;
+            schema:molecularFormula "C28H34O15" ;
+            schema:name "Hesperidin" ;
+            schema:smiles "COc1ccc([C@@H]2CC(=O)c3c(O)cc(O[C@@H]4O[C@H](CO[C@@H]5O[C@@H](C)[C@H](O)[C@@H](O)[C@H]5O)[C@@H](O)[C@H](O)[C@H]4O)cc3O2)cc1O" ] ;
+    mbo:has_peak [ mbo:intensity 1.9e+01 ;
+            mbo:mz 3.03e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 1.4e+01 ;
+            mbo:mz 5.75e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 1.3e+01 ;
+            mbo:mz 5.93e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 7e+00 ;
+            mbo:mz 3.45e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 5e+00 ;
+            mbo:mz 4.13e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 1.9e+01 ;
+            mbo:mz 4.31e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 190 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 4.47e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 240 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.49e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.7e+01 ;
+            mbo:mz 4.65e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 370 ],
+        [ mbo:intensity 1.4e+01 ;
+            mbo:mz 4.89e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 5.57e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 150 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 6.11e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0002-0001910000-907392c9487c399e7019" ;
+    rdfs:comment "727" ;
+    skos:definition "Hesperidin; LC-ESI-QIT; MS2" .
+

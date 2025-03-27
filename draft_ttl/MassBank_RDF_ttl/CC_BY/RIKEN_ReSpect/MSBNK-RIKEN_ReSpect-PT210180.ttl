@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT210180 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT210180" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Oxobutanoic acid",
+                "2-Oxobutyric Acid",
+                "2-oxobutanoic acid",
+                "3-Methylpyruvic acid",
+                "Propionylformic acid",
+                "Sodium 2-Oxobutyrate",
+                "alpha-ketobutyrate" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Butyric acid" ;
+            mbo:ch_exact_mass 1.02089e+02 ;
+            rdfs:seeAlso cas:600-18-0 ;
+            schema:inChI "InChI=1S/C4H6O3/c1-2-3(5)4(6)7/h2H2,1H3,(H,6,7)" ;
+            schema:inChIKey inchikey:TYEYBOSBBBHJIV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H6O3" ;
+            schema:name "2-Oxobutanoic acid",
+                "2-Oxobutyric Acid",
+                "2-oxobutanoic acid",
+                "3-Methylpyruvic acid",
+                "Propionylformic acid",
+                "Sodium 2-Oxobutyrate",
+                "alpha-ketobutyrate" ;
+            schema:smiles "CCC(=O)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.557e+01 ;
+            mbo:mz 1.010239e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.010239e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0udi-0900000000-bfdcad5bc3ed586bdede" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Propionylformic acid, 3-Methylpyruvic acid, Sodium 2-Oxobutyrate, alpha-ketobutyrate, 2-Oxobutanoic acid, 2-oxobutanoic acid, 2-Oxobutyric Acid; LC-ESI-QTOF; MS2" .
+

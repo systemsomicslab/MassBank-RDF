@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100118 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100118" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3',5'-Cyclic CMP",
+                "Cytidine-3',5'-cyclicmonophosphate",
+                "cCMP" ;
+            mbo:ch_compound_class "Natural Product; Nucleoside; Phosphates" ;
+            mbo:ch_exact_mass 3.050413e+02 ;
+            rdfs:seeAlso cas:3616-08-8,
+                chemspider:18153,
+                pubchem:CID19236 ;
+            schema:inChI "InChI=1S/C9H12N3O7P/c10-5-1-2-12(9(14)11-5)8-6(13)7-4(18-8)3-17-20(15,16)19-7/h1-2,4,6-8,13H,3H2,(H,15,16)(H2,10,11,14)/t4-,6-,7-,8-/m1/s1" ;
+            schema:inChIKey inchikey:WCPTXJJVVDAEMW-XVFCMESISA-N ;
+            schema:molecularFormula "C9H12N3O7P" ;
+            schema:name "3',5'-Cyclic CMP",
+                "Cytidine-3',5'-cyclicmonophosphate",
+                "cCMP" ;
+            schema:smiles "NC(C=3)=NC(=O)N(C3)[C@H](O1)[C@H](O)[C@H](O2)[C@@H](COP(O)(=O)2)1" ] ;
+    mbo:has_peak [ mbo:intensity 4.009e+02 ;
+            mbo:mz 1.120532e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.62e+01 ;
+            mbo:mz 3.059271e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 2.417e+02 ;
+            mbo:mz 3.060491e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 602 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.060491e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-08fr-0906000000-821014a9ccefad27393d" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Cytidine-3',5'-cyclicmonophosphate; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

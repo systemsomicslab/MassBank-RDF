@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU506602 a mbo:MassSpectrum ;
+    dcterms:creator "Chrysoula Kanakaki, Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2021-04-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU506602" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2021 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker 450 GC coupled to maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Rxi-5Sil MS column, 30m, 0.25mm i.d., 0.25µm film thickness, Restek" ;
+            mbo:flow_rate "1.5 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.838 min" ;
+            mbo:solvent " ",
+                "A",
+                "H",
+                "e",
+                "i",
+                "l",
+                "m",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Phenyl-2-butanone" ;
+            mbo:ch_compound_class "N/A; Food Contact Material" ;
+            mbo:ch_exact_mass 1.480888e+02 ;
+            rdfs:seeAlso cas:1007-32-5,
+                chemspider:13279,
+                pubchem:CID13879 ;
+            schema:inChI "InChI=1S/C10H12O/c1-2-10(11)8-9-6-4-3-5-7-9/h3-7H,2,8H2,1H3" ;
+            schema:inChIKey inchikey:GKDLTXYXODKDEA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H12O" ;
+            schema:name "1-Phenyl-2-butanone" ;
+            schema:smiles "CCC(=O)CC1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.56e+02 ;
+            mbo:mz 5.70344e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 585 ],
+        [ mbo:intensity 3.84e+02 ;
+            mbo:mz 9.10536e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 631 ],
+        [ mbo:intensity 1.32e+02 ;
+            mbo:mz 1.070505e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 217 ],
+        [ mbo:intensity 1.36e+02 ;
+            mbo:mz 1.290714e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 6.08e+02 ;
+            mbo:mz 1.310853e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.12e+02 ;
+            mbo:mz 1.49098e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 184 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.490943e+02 ;
+            mbo:precursor_mz 1.490961e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-053u-6900000000-afc39160eadd03ab0b4a" ;
+    rdfs:comment "INTERNAL_ID 5066" ;
+    skos:definition "1-Phenyl-2-butanone; GC-APCI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

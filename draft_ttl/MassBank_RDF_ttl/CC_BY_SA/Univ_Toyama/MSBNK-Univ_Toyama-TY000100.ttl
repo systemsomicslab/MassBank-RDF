@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000100 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2009-05-17, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000100" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "520.400 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, methyl ester, (1S,4aS,7aS)-",
+                "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, methyl ester, [1S-(1alpha,4aalpha,7aalpha)]-",
+                "Geniposide" ;
+            mbo:ch_compound_class "Natural Product; Iridoid" ;
+            mbo:ch_exact_mass 3.88137e+02 ;
+            rdfs:seeAlso cas:24512-63-8,
+                pubchem:CID107848 ;
+            schema:inChI "InChI=1S/C17H24O10/c1-24-15(23)9-6-25-16(11-7(4-18)2-3-8(9)11)27-17-14(22)13(21)12(20)10(5-19)26-17/h2,6,8,10-14,16-22H,3-5H2,1H3/t8-,10-,11-,12-,13+,14-,16+,17+/m1/s1" ;
+            schema:inChIKey inchikey:IBFYXTRXDNAPMM-BVTMAQQCSA-N ;
+            schema:molecularFormula "C17H24O10" ;
+            schema:name "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, methyl ester, (1S,4aS,7aS)-",
+                "Cyclopenta[c]pyran-4-carboxylic acid, 1-(beta-D-glucopyranosyloxy)-1,4a,5,7a-tetrahydro-7-(hydroxymethyl)-, methyl ester, [1S-(1alpha,4aalpha,7aalpha)]-",
+                "Geniposide" ;
+            schema:smiles "COC(=O)C(=C2)C([H])(C3)C([H])(C(CO)=C3)C(O2)OC([H])(O1)C(O)C(O)C(O)C(CO)1" ] ;
+    mbo:has_peak [ mbo:intensity 3.70314e+05 ;
+            mbo:mz 3.871295e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.2662e+04 ;
+            mbo:mz 3.88128e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 250 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0009000000-b921f5f07bc12965c70d" ;
+    skos:definition "Geniposide; LC-ESI-ITTOF; MS; [M-H]-" .
+

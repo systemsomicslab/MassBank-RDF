@@ -1,0 +1,90 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN120826 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN120826" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.187 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4,4`-Sulfonyldiphenol",
+                "4-(4-hydroxyphenyl)sulfonylphenol",
+                "Bisphenol S" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.5003e+02 ;
+            rdfs:seeAlso cas:80-09-1,
+                chemspider:6374,
+                pubchem:CID6626 ;
+            schema:inChI "InChI=1S/C12H10O4S/c13-9-1-5-11(6-2-9)17(15,16)12-7-3-10(14)4-8-12/h1-8,13-14H" ;
+            schema:inChIKey inchikey:VPWNQTHUCYMVMZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H10O4S" ;
+            schema:name "4,4`-Sulfonyldiphenol",
+                "4-(4-hydroxyphenyl)sulfonylphenol",
+                "Bisphenol S" ;
+            schema:smiles "C1=CC(=CC=C1O)S(=O)(=O)C2=CC=C(C=C2)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.7673e+03 ;
+            mbo:mz 9.20274e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 2.56075e+04 ;
+            mbo:mz 1.080219e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 3.769e+02 ;
+            mbo:mz 1.399939e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 8.6694e+03 ;
+            mbo:mz 1.559891e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 2.127e+02 ;
+            mbo:mz 1.569918e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 4.779e+02 ;
+            mbo:mz 1.570651e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.6843e+03 ;
+            mbo:mz 1.840531e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.3449e+03 ;
+            mbo:mz 1.85061e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.604962e+05 ;
+            mbo:mz 2.49023e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.490236e+02 ;
+            mbo:precursor_mz 2.490227e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0290000000-8c9472240a7d4500d02d" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Bisphenol S; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M-H]-" .
+

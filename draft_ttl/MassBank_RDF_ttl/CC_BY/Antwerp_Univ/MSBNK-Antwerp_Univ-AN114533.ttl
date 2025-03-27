@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN114533 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN114533" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "45 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "3.403 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(2-ethyl-5-hydroxyhexoxy)carbonylbenzoic acid",
+                "Mono(2-ethyl-5-hydroxyhexyl) phthalate",
+                "Mono(2-ethyl-5-hydroxyhexyl)phthalate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.941467e+02 ;
+            rdfs:seeAlso cas:40321-99-1,
+                chemspider:148902,
+                pubchem:CID170295 ;
+            schema:inChI "InChI=1S/C16H22O5/c1-3-12(9-8-11(2)17)10-21-16(20)14-7-5-4-6-13(14)15(18)19/h4-7,11-12,17H,3,8-10H2,1-2H3,(H,18,19)" ;
+            schema:inChIKey inchikey:RYPQSGURZSTFSX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H22O5" ;
+            schema:name "2-(2-ethyl-5-hydroxyhexoxy)carbonylbenzoic acid",
+                "Mono(2-ethyl-5-hydroxyhexyl) phthalate",
+                "Mono(2-ethyl-5-hydroxyhexyl)phthalate" ;
+            schema:smiles "CCC(CCC(C)O)COC(=O)C1=CC=CC=C1C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.03e+02 ;
+            mbo:mz 7.50247e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 2.0361e+03 ;
+            mbo:mz 7.704e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.132e+02 ;
+            mbo:mz 1.210303e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 154 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 2.931394e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-9100000000-18986cee71725307380f" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Mono(2-ethyl-5-hydroxyhexyl)phthalate; LC-ESI-QTOF; MS2; CE: 45eV; R=7000; [M-H]-" .
+

@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS125108 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS125108" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6,7-Dihydroxycoumarin-6-glucoside",
+                "Aesculin",
+                "Aesculinum",
+                "Esculetin-6-beta-D-glucopyranoside",
+                "Esculin sesquihydrate",
+                "Esculoside" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Suger phosphate CLASS3 Glucose phosphate" ;
+            mbo:ch_exact_mass 3.40284e+02 ;
+            rdfs:seeAlso cas:531-75-9,
+                pubchem:CID5281417 ;
+            schema:inChI "InChI=1S/C15H16O9/c16-5-10-12(19)13(20)14(21)15(24-10)23-9-3-6-1-2-11(18)22-8(6)4-7(9)17/h1-4,10,12-17,19-21H,5H2" ;
+            schema:inChIKey inchikey:XHCADAYNFIFUHF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H16O9" ;
+            schema:name "6,7-Dihydroxycoumarin-6-glucoside",
+                "Aesculin",
+                "Aesculinum",
+                "Esculetin-6-beta-D-glucopyranoside",
+                "Esculin sesquihydrate",
+                "Esculoside" ;
+            schema:smiles "C1=CC(=O)OC2=CC(=C(C=C21)OC3C(C(C(C(O3)CO)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.7334e+04 ;
+            mbo:mz 1.76e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 1.31485e+05 ;
+            mbo:mz 1.77e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.7069e+04 ;
+            mbo:mz 3.38e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 206 ],
+        [ mbo:intensity 9.4632e+04 ;
+            mbo:mz 3.39e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 719 ],
+        [ mbo:intensity 7.955e+03 ;
+            mbo:mz 3.4e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 60 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.3932e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-004r-0907000000-45dd5e1e5c37ad1e3060" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "6,7-Dihydroxycoumarin-6-glucoside, Aesculinum, Esculetin-6-beta-D-glucopyranoside, Aesculin, Esculin sesquihydrate , Esculoside; LC-ESI-QQ; MS2" .
+

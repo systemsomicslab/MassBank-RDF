@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01136108 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01136108" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "150 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "10.269 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-ethoxy-3-(trichloromethyl)-1,2,4-thiadiazole",
+                "Etridiazole" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.459188e+02 ;
+            rdfs:seeAlso cas:2593-15-9,
+                chemspider:16489,
+                pubchem:CID17432 ;
+            schema:inChI "InChI=1S/C5H5Cl3N2OS/c1-2-11-4-9-3(10-12-4)5(6,7)8/h2H2,1H3" ;
+            schema:inChIKey inchikey:KQTVWCSONPJJPE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H5Cl3N2OS" ;
+            schema:name "5-ethoxy-3-(trichloromethyl)-1,2,4-thiadiazole",
+                "Etridiazole" ;
+            schema:smiles "CCOC1=NC(=NS1)C(Cl)(Cl)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 6.04594e+04 ;
+            mbo:mz 7.89403e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 407 ],
+        [ mbo:intensity 1.485196e+05 ;
+            mbo:mz 1.079402e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.075e+04 ;
+            mbo:mz 1.399125e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 207 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.430635e+02 ;
+            mbo:precursor_mz 2.469261e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0a4i-3900000000-ee11b4acb7d2e0b4e9b8" ;
+    rdfs:comment "UCHEM_ID 11361" ;
+    skos:definition "Etridiazole; LC-ESI-QFT; MS2; CE: 150%; R=17500; [M+H]+" .
+

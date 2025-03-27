@@ -1,0 +1,71 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS096801 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS096801" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-HIAA",
+                "5-Hydroxy-IAA",
+                "5-Hydroxyheteroauxin",
+                "5-Hydroxyindol-3-ylacetic acid",
+                "5-Hydroxyindole-3-acetate",
+                "5-Hydroxyindole-3-acetic acid",
+                "5-Hydroxyindolylacetic Acid",
+                "5-Oxyindoleacetic acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Acetic acid" ;
+            mbo:ch_exact_mass 1.91186e+02 ;
+            rdfs:seeAlso cas:54-16-0,
+                pubchem:CID1826 ;
+            schema:inChI "InChI=1S/C10H9NO3/c12-7-1-2-9-8(4-7)6(5-11-9)3-10(13)14/h1-2,4-5,11-12H,3H2,(H,13,14)" ;
+            schema:inChIKey inchikey:DUUGKQCEGZLZNO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H9NO3" ;
+            schema:name "5-HIAA",
+                "5-Hydroxy-IAA",
+                "5-Hydroxyheteroauxin",
+                "5-Hydroxyindol-3-ylacetic acid",
+                "5-Hydroxyindole-3-acetate",
+                "5-Hydroxyindole-3-acetic acid",
+                "5-Hydroxyindolylacetic Acid",
+                "5-Oxyindoleacetic acid" ;
+            schema:smiles "C1=CC2=C(C=C1O)C(=CN2)CC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.1658e+04 ;
+            mbo:mz 1.46e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 165 ],
+        [ mbo:intensity 3.4927e+04 ;
+            mbo:mz 1.91e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 3.12464e+05 ;
+            mbo:mz 1.92e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.9219e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0006-0900000000-6f6196154812c1d6b36f" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "5-Hydroxyindole-3-acetate , 5-HIAA, 5-Oxyindoleacetic acid, 5-Hydroxyindol-3-ylacetic acid, 5-Hydroxyindolylacetic Acid, 5-Hydroxy-IAA, 5-Hydroxyindole-3-acetic acid, 5-Hydroxyheteroauxin; LC-ESI-QQ; MS2" .
+

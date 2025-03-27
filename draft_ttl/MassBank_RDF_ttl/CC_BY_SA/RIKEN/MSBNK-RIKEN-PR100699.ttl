@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100699 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100699" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Hydroxy-5-(hydroxymethyl)-2-methyl-4-pyridinecarboxaldehyde",
+                "Hydroxy-5-hydroxymethyl-2-methylisonicotinaldehyde",
+                "PL",
+                "Pyridoxal",
+                "Pyridoxaldehyde",
+                "Vitamin B6" ;
+            mbo:ch_compound_class "Thiamine" ;
+            mbo:ch_exact_mass 1.670582e+02 ;
+            rdfs:seeAlso cas:66-72-8,
+                chemspider:1021,
+                knapsack:C00007509,
+                pubchem:CID1050 ;
+            schema:inChI "InChI=1S/C8H9NO3/c1-5-8(12)7(4-11)6(3-10)2-9-5/h2,4,10,12H,3H2,1H3" ;
+            schema:inChIKey inchikey:RADKZDMFGJYCBB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H9NO3" ;
+            schema:name "3-Hydroxy-5-(hydroxymethyl)-2-methyl-4-pyridinecarboxaldehyde",
+                "Hydroxy-5-hydroxymethyl-2-methylisonicotinaldehyde",
+                "PL",
+                "Pyridoxal",
+                "Pyridoxaldehyde",
+                "Vitamin B6" ;
+            schema:smiles "OCc(c1)c(C=O)c(O)c(C)n1" ] ;
+    mbo:has_peak [ mbo:intensity 8.429e+01 ;
+            mbo:mz 1.080449e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.067e+01 ;
+            mbo:mz 1.360404e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 482 ],
+        [ mbo:intensity 7.496e+01 ;
+            mbo:mz 1.380553e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 888 ],
+        [ mbo:intensity 6.761e+01 ;
+            mbo:mz 1.660504e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 801 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.660504e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-05n0-0900000000-f468a00d88bedc116485" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Pyridoxal; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

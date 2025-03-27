@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU228757 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2018-12-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU228757" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2018 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.430 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[(1R,2R)-2-[(dimethylamino)methyl]-1-hydroxycyclohexyl]phenol",
+                "N,O-Desmethyltramadol",
+                "O-Desmethyltramadol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.491729e+02 ;
+            rdfs:seeAlso cas:80456-81-1,
+                chemspider:8014523,
+                pubchem:CID9838803 ;
+            schema:inChI "InChI=1S/C15H23NO2/c1-16(2)11-13-6-3-4-9-15(13,18)12-7-5-8-14(17)10-12/h5,7-8,10,13,17-18H,3-4,6,9,11H2,1-2H3/t13-,15+/m1/s1" ;
+            schema:inChIKey inchikey:UWJUQVWARXYRCG-HIFRSBDPSA-N ;
+            schema:molecularFormula "C15H23NO2" ;
+            schema:name "3-[(1R,2R)-2-[(dimethylamino)methyl]-1-hydroxycyclohexyl]phenol",
+                "N,O-Desmethyltramadol",
+                "O-Desmethyltramadol" ;
+            schema:smiles "O[C@]2(c1cc(O)ccc1)CCCC[C@@H]2CN(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.84e+02 ;
+            mbo:mz 2.481647e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.481658e+02 ;
+            mbo:precursor_mz 2.481656e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0002-0090000000-cf3096627c4781f271e5" ;
+    rdfs:comment "INTERNAL_ID 2287" ;
+    skos:definition "N,O-Desmethyltramadol; LC-ESI-QTOF; MS2; CE: 10 eV; R=35000; [M-H]-" .
+

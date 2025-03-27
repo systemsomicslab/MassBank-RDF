@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BAFG-CSL2311107481 a mbo:MassSpectrum ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311107481" ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
+            mbo:collision_energy "50" ;
+            mbo:column_name "Zorbax Eclipse Plus C18 2.1 mm x 150 mm, 3.5 um, Agilent" ;
+            mbo:flow_gradient "0 min min 98% A, 1 min 98% A, 2 min 80% A, 16.5 min 2% A, 22 min 2% A, 22.1 min 98% A, 27 min 98% A" ;
+            mbo:flow_rate "0.3 mL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.955 min" ;
+            mbo:solvent " ",
+                "%",
+                ",",
+                ".",
+                "0",
+                "1",
+                ":",
+                "A",
+                "B",
+                "F",
+                "W",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "l",
+                "m",
+                "n",
+                "o",
+                "r",
+                "t" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Methoxyphenol" ;
+            mbo:ch_compound_class "Food_additive; Industrial_process; Metabolite; Pharmaceutical" ;
+            mbo:ch_exact_mass 1.240524e+02 ;
+            rdfs:seeAlso cas:150-76-5 ;
+            schema:inChI "InChI=1S/C7H8O2/c1-9-7-4-2-6(8)3-5-7/h2-5,8H,1H3" ;
+            schema:inChIKey inchikey:NWVVVBRKAWDGAB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H8O2" ;
+            schema:name "4-Methoxyphenol" ;
+            schema:smiles "COc1ccc(O)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 5e-01 ;
+            mbo:mz 6.40336e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 312 ],
+        [ mbo:intensity 8e-01 ;
+            mbo:mz 6.50418e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 6e-01 ;
+            mbo:mz 6.6049e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 375 ],
+        [ mbo:intensity 1.6e+00 ;
+            mbo:mz 8.10357e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.1e+00 ;
+            mbo:mz 8.20432e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 687 ],
+        [ mbo:intensity 8e-01 ;
+            mbo:mz 9.40441e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 500 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 1.100372e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 312 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.250597e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00lr-9000000000-70d1f2259a95c961b6e4" ;
+    rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;
+    skos:definition "4-Methoxyphenol; LC-ESI-QTOF; MS2; 50 V" .
+

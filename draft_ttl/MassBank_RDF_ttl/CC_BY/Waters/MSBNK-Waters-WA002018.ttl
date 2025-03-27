@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA002018 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA002018" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "16.140 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Trifluoperazine (oxide)" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.231592e+02 ;
+            rdfs:seeAlso cas:117-89-5 ;
+            schema:inChI "InChI=1S/C21H24F3N3OS/c1-25-11-13-26(14-12-25)9-4-10-27-17-5-2-3-6-19(17)29(28)20-8-7-16(15-18(20)27)21(22,23)24/h2-3,5-8,15H,4,9-14H2,1H3" ;
+            schema:inChIKey inchikey:UCTLPXYMIYHZST-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H24F3N3OS" ;
+            schema:name "Trifluoperazine (oxide)" ;
+            schema:smiles "CN(C4)CCN(C4)CCCN(c21)c(c3)c(ccc(C(F)(F)F)3)S(=O)c(cccc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 4.08e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.92e+02 ;
+            mbo:mz 4.09e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 5.9e+01 ;
+            mbo:mz 4.1e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 2.78e+02 ;
+            mbo:mz 4.24e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 278 ],
+        [ mbo:intensity 3.9e+01 ;
+            mbo:mz 4.25e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.6e+01 ;
+            mbo:mz 4.26e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.41e+02 ;
+            mbo:mz 4.4e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 341 ],
+        [ mbo:intensity 6.3e+01 ;
+            mbo:mz 4.41e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 4.42e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 20 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0a4i-0000900000-5aa81d3b8d7ac646f905" ;
+    skos:definition "Trifluoperazine (oxide); LC-ESI-Q; MS; POS; 15 V, 30 V" .
+

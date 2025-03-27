@@ -1,0 +1,57 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001835 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001835" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diglycolic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.340215e+02 ;
+            rdfs:seeAlso cas:110-99-6,
+                pubchem:CID8088 ;
+            schema:inChI "InChI=1S/C4H6O5/c5-3(6)1-9-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)" ;
+            schema:inChIKey inchikey:QEVGZEDELICMKH-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H6O5" ;
+            schema:name "Diglycolic acid" ;
+            schema:smiles "OC(=O)COCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.822999e+00 ;
+            mbo:mz 7.101385e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.500877e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.430344e+01 ;
+            mbo:mz 8.902442e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 443 ],
+        [ mbo:intensity 2.001408e+01 ;
+            mbo:mz 1.330142e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 200 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.330142e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-9100000000-cb2cbf13235be0dd9eb3" ;
+    skos:definition "Diglycolic acid; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

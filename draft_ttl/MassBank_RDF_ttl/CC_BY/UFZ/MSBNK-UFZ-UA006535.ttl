@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA006535 a mbo:MassSpectrum ;
+    dcterms:creator "Muschket M, Brack W, Krauss M, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA006535" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Accucore PhenylHexyl 2.6um, 3x150mm, Thermo" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 3.2 min, 5/95 at 21 min, 5/95 at 41 min, 90/10 at 50 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.644 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitril with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-methyl-7-ethylaminocoumarin",
+                "7-(ethylamino)-4-methylchromen-2-one",
+                "7-(ethylamino)-4-methylcoumarin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.030946e+02 ;
+            rdfs:seeAlso cas:91-44-1,
+                chemspider:107184,
+                pubchem:CID120061 ;
+            schema:inChI "InChI=1S/C12H13NO2/c1-3-13-9-4-5-10-8(2)6-12(14)15-11(10)7-9/h4-7,13H,3H2,1-2H3" ;
+            schema:inChIKey inchikey:OTNIKUTWXUODJZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H13NO2" ;
+            schema:name "4-methyl-7-ethylaminocoumarin",
+                "7-(ethylamino)-4-methylchromen-2-one",
+                "7-(ethylamino)-4-methylcoumarin" ;
+            schema:smiles "CCNc1ccc2c(cc(=O)oc2c1)C" ] ;
+    mbo:has_peak [ mbo:intensity 7.414e+02 ;
+            mbo:mz 1.380918e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 960 ],
+        [ mbo:intensity 7.714e+02 ;
+            mbo:mz 1.799937e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.041018e+02 ;
+            mbo:precursor_mz 2.260838e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004r-0900000000-644015129d13a90255c8" ;
+    rdfs:comment "INTERNAL_ID 65" ;
+    skos:definition "4-methyl-7-ethylaminocoumarin; LC-ESI-QFT; MS2; CE: 50%; R=35000; [M+Na]+" .
+

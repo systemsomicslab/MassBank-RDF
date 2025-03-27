@@ -1,0 +1,78 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA007201 a mbo:MassSpectrum ;
+    dcterms:creator "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-08-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA007201" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W (2017) Environ. Sci. Technol. 51:1830-1839, DOI:10.1021/acs.est.6b05468. Mutagenicity in surface waters - synergistic effects of carboline alkaloids and aromatic amines" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "61.67 % (nominal)" ;
+            mbo:column_name "Accucore PhenylHexyl 2.6um, 3x150mm, Thermo" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 3.2 min, 5/95 at 21 min, 5/95 at 41 min, 90/10 at 50 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.952 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Methylaniline",
+                "o-Toluidine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.070735e+02 ;
+            rdfs:seeAlso cas:95-53-4,
+                chemspider:13854136,
+                pubchem:CID7242 ;
+            schema:inChI "InChI=1S/C7H9N/c1-6-4-2-3-5-7(6)8/h2-5H,8H2,1H3" ;
+            schema:inChIKey inchikey:RNVCVTLRINQCPJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H9N" ;
+            schema:name "2-Methylaniline",
+                "o-Toluidine" ;
+            schema:smiles "Cc1ccccc1N" ] ;
+    mbo:has_peak [ mbo:intensity 2.225138e+07 ;
+            mbo:mz 6.50387e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 1.68701e+08 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 630 ],
+        [ mbo:intensity 8.45589e+07 ;
+            mbo:mz 9.30573e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 316 ],
+        [ mbo:intensity 2.675106e+08 ;
+            mbo:mz 1.080808e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.117779e+06 ;
+            mbo:mz 1.190605e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 19 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.080806e+02 ;
+            mbo:precursor_mz 1.080808e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4l-9800000000-768deca9626995e22b46" ;
+    rdfs:comment "INTERNAL_ID 72" ;
+    skos:definition "o-Toluidine; LC-ESI-QFT; MS2; CE: 61.67%; R=35000; [M+H]+" .
+

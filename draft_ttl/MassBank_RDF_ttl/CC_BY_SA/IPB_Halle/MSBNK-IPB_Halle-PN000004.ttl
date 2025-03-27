@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PN000004 a mbo:MassSpectrum ;
+    dcterms:creator "Institute of Bioorganic Chemistry, Polish Academy of Sciences,Poland/Anna Staszków" ;
+    dcterms:date "2011-03-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PN000004" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright(C) 2011 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "micrOTOF-Q" ;
+            mbo:collision_energy "25 eV" ;
+            mbo:column_name "Poroshell 120,EC-C18 2.1x100mm,2.7um" ;
+            mbo:instrument_type "ESI-TOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "430.747 sec" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5,7-Dihydroxy-2-(4-hydroxyphenyl)chroman-4-one",
+                "Naringenin",
+                "Salipurol" ;
+            mbo:ch_compound_class "Natural Product; flavanone" ;
+            mbo:ch_exact_mass 2.720685e+02 ;
+            rdfs:seeAlso cas:480-41-1,
+                pubchem:CID439246 ;
+            schema:inChI "InChI=1S/C15H12O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-6,13,16-18H,7H2/t13-/m0/s1" ;
+            schema:inChIKey inchikey:FTVWIRXFELQLPI-ZDUSSCGKSA-N ;
+            schema:molecularFormula "C15H12O5" ;
+            schema:name "5,7-Dihydroxy-2-(4-hydroxyphenyl)chroman-4-one",
+                "Naringenin",
+                "Salipurol" ;
+            schema:smiles "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.5e+01 ;
+            mbo:mz 8.3011e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 4.5e+01 ;
+            mbo:mz 1.51002e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 2.2e+01 ;
+            mbo:mz 1.6106e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 4.3e+01 ;
+            mbo:mz 1.87039e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 5.3e+01 ;
+            mbo:mz 9.3031e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 9.5e+01 ;
+            mbo:mz 1.07012e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 2.1e+01 ;
+            mbo:mz 1.08019e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 1.17032e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1.19048e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 1.20052e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 1.43048e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 3.5e+01 ;
+            mbo:mz 1.45028e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 35 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.19046e+02 ;
+            mbo:precursor_mz 2.71059e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-014i-0900000000-d8b01f761701c128b7bf" ;
+    rdfs:comment "lupinus_mexico" ;
+    skos:definition "Naringenin; ESI-TOF; MS2; CE:25 eV; [M-H]-" .
+

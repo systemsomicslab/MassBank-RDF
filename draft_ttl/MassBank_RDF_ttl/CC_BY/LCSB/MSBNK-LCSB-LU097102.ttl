@@ -1,0 +1,94 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU097102 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU097102" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "11.177 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(4aR,5aS,8aR,13aS,15aS,15bR)-10,11-dimethoxy-4a,5,5a,7,8,13a,15,15a,15b,16-decahydro-2H-4,6-methanoindolo[3,2,1-ij]oxepino[2,3,4-de]pyrrolo[2,3-h]quinolin-14-one",
+                "Brucine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.941893e+02 ;
+            rdfs:seeAlso cas:357-57-3,
+                chemspider:390579,
+                pubchem:CID442021 ;
+            schema:inChI "InChI=1S/C23H26N2O4/c1-27-16-8-14-15(9-17(16)28-2)25-20(26)10-18-21-13-7-19-23(14,22(21)25)4-5-24(19)11-12(13)3-6-29-18/h3,8-9,13,18-19,21-22H,4-7,10-11H2,1-2H3/t13-,18-,19-,21-,22-,23+/m0/s1" ;
+            schema:inChIKey inchikey:RRKTZKIUPZVBMF-IBTVXLQLSA-N ;
+            schema:molecularFormula "C23H26N2O4" ;
+            schema:name "(4aR,5aS,8aR,13aS,15aS,15bR)-10,11-dimethoxy-4a,5,5a,7,8,13a,15,15a,15b,16-decahydro-2H-4,6-methanoindolo[3,2,1-ij]oxepino[2,3,4-de]pyrrolo[2,3-h]quinolin-14-one",
+                "Brucine" ;
+            schema:smiles "COC1=CC2=C(C=C1OC)[C@@]13CCN4CC5=CCO[C@H]6CC(=O)N2[C@H]1[C@H]6[C@H]5C[C@@H]34" ] ;
+    mbo:has_peak [ mbo:intensity 3.1035e+04 ;
+            mbo:mz 2.440968e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 6.07571e+04 ;
+            mbo:mz 2.821122e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.19513e+04 ;
+            mbo:mz 3.221449e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.011021e+05 ;
+            mbo:mz 3.241229e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.13315e+04 ;
+            mbo:mz 3.321285e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.15575e+04 ;
+            mbo:mz 3.501385e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.238557e+05 ;
+            mbo:mz 3.671653e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 3.61159e+04 ;
+            mbo:mz 3.801716e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 8.93358e+06 ;
+            mbo:mz 3.951964e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.90211e+01 ;
+            mbo:precursor_mz 3.951965e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0009000000-6cf9429edc453e9f80dc" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Brucine; LC-ESI-QFT; MS2; CE: 30; R=17500; [M+H]+" .
+

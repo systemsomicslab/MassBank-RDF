@@ -1,0 +1,110 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO00003 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (CPqRR/FIOCRUZ, Brazil)" ;
+    dcterms:date "2016-01-19 (Created 2013-02-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO00003" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Research Center Rene Rachou (FIOCRUZ, Brazil) under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Waters Atlantis C18 3um 2.1x150mm" ;
+            mbo:flow_gradient "1-100%B in 10min" ;
+            mbo:flow_rate "200ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ajmalicine" ;
+            mbo:ch_compound_class "Natural Product; Alkaloid" ;
+            mbo:ch_exact_mass 3.521787e+02 ;
+            rdfs:seeAlso cas:483-04-5,
+                knapsack:C00001678,
+                pubchem:CID11216 ;
+            schema:inChI "InChI=1S/C21H24N2O3/c1-12-16-10-23-8-7-14-13-5-3-4-6-18(13)22-20(14)19(23)9-15(16)17(11-26-12)21(24)25-2/h3-6,11-12,15-16,19,22H,7-10H2,1-2H3/t12-,15-,16+,19-/m0/s1" ;
+            schema:inChIKey inchikey:GRTOGORTSDXSFK-XJTZBENFSA-N ;
+            schema:molecularFormula "C21H24N2O3" ;
+            schema:name "Ajmalicine" ;
+            schema:smiles "CC1C2CN3CCC4=C(C3CC2C(=CO1)C(=O)OC)NC5=CC=CC=C45" ] ;
+    mbo:has_peak [ mbo:intensity 2.14442e+05 ;
+            mbo:mz 1.440811e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.411e+03 ;
+            mbo:mz 2.521018e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 3.3e+03 ;
+            mbo:mz 2.781175e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 4.718e+03 ;
+            mbo:mz 2.841279e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 6.275e+03 ;
+            mbo:mz 3.211597e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 3.3623e+04 ;
+            mbo:mz 3.531862e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 157 ],
+        [ mbo:intensity 6.595e+03 ;
+            mbo:mz 3.541893e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.6578e+04 ;
+            mbo:mz 1.450841e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 2.366e+03 ;
+            mbo:mz 1.560808e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 3.097e+03 ;
+            mbo:mz 1.580965e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.614e+03 ;
+            mbo:mz 1.700963e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 9.122e+03 ;
+            mbo:mz 1.780862e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 2.728e+03 ;
+            mbo:mz 1.991229e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.6886e+04 ;
+            mbo:mz 2.101123e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 4.781e+03 ;
+            mbo:mz 2.221124e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 22 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.440811e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-0006-0911000000-964ec315a22d564ed425" ;
+    rdfs:comment "[Raw Data] CB001_Ajmalicine_pos_30eV_CB000004.txt" ;
+    skos:definition "Ajmalicine; LC-ESI-QTOF; MS2; [M+H]+; CE: 30eV" .
+

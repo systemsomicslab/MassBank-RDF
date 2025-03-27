@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000011 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000011" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,5,8,11,14-Pentaoxahexadecan-16-ol",
+                "DTXSID8041371" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.521573e+02 ;
+            rdfs:seeAlso cas:23778-52-1,
+                pubchem:CID90255 ;
+            schema:inChI "InChI=1S/C11H24O6/c1-13-4-5-15-8-9-17-11-10-16-7-6-14-3-2-12/h12H,2-11H2,1H3" ;
+            schema:inChIKey inchikey:SLNYBUIEAMRFSZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H24O6" ;
+            schema:name "2,5,8,11,14-Pentaoxahexadecan-16-ol",
+                "DTXSID8041371" ;
+            schema:smiles "COCCOCCOCCOCCOCCO" ] ;
+    mbo:has_peak [ mbo:intensity 1.226867e+00 ;
+            mbo:mz 2.903858e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 6.342872e+00 ;
+            mbo:mz 3.101784e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 1.630659e+00 ;
+            mbo:mz 4.301784e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.503349e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.554826e+00 ;
+            mbo:mz 4.506988e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 6.14006e+01 ;
+            mbo:mz 5.904914e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 613 ],
+        [ mbo:intensity 1.564168e+00 ;
+            mbo:mz 8.905971e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.359878e+00 ;
+            mbo:mz 1.030754e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.531646e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-052b-9000000000-18b428ecffc3faf1b332" ;
+    skos:definition "2,5,8,11,14-Pentaoxahexadecan-16-ol; ESI-QTOF; MS2; CE: 40; [M+H]+" .
+

@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000010 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Martin Group" ;
+    dcterms:date "2020-05-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000010" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "Acquity UPLC BEH C18, 3.0 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "95/5 at 0-15 min, 5/95 at 15.1-24 min, 95/5 at 24.1-28 min" ;
+            mbo:flow_rate "0.4mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "14.499150" ;
+            mbo:solvent "A 10 mM ammonium acetate in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexane-1-sulfonic acid",
+                "Perfluorohexanesulfonic acid" ;
+            mbo:ch_compound_class "Perfluoroalkyl Acids; Organosulfonic acid; PFAS" ;
+            mbo:ch_exact_mass 3.999439e+02 ;
+            schema:inChI "InChI=1S/C6HF13O3S/c7-1(8,3(11,12)5(15,16)17)2(9,10)4(13,14)6(18,19)23(20,21)22/h(H,20,21,22)" ;
+            schema:molecularFormula "C6HF13O3S" ;
+            schema:name "1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexane-1-sulfonic acid",
+                "Perfluorohexanesulfonic acid" ;
+            schema:smiles "OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 9.475394e+07 ;
+            mbo:mz 7.995764e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 307 ],
+        [ mbo:intensity 6.23914e+06 ;
+            mbo:mz 8.195338e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 6.166641e+06 ;
+            mbo:mz 8.196174e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 2.901845e+07 ;
+            mbo:mz 9.895605e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 3.08258e+08 ;
+            mbo:mz 3.98938e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.98938e+02 ;
+            mbo:precursor_mz 3.98792e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-3009000000-186bb0143f91ec83e901" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Perfluorohexanesulfonic acid; LC-ESI-QFT; MS2; CE:40; R=30000; [M-H]-" .
+

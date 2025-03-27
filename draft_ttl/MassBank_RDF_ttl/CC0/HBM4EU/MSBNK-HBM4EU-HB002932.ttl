@@ -1,0 +1,55 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB002932 a mbo:MassSpectrum ;
+    dcterms:creator "Carolin Huber, Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2020-02-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB002932" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Huber C, Mueller E, Schulze T, Brack W, Krauss M, Improving the Screening Analysis of Pesticide Metabolites in Human Biomonitoring by Combining High-Throughput In Vitro Incubation and Automated LC–HRMS Data Processing, Analytical Chemistry, https://doi.org/10.1021/acs.analchem.1c00972" ] ;
+    dcterms:rights "Copyright (C) 2021 Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30% (nominal)" ;
+            mbo:column_name "Waters UPLC BEH C18 1.7 um 2.1 mm x 100 mm with pre-column" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 15 min, 0/100 at 21 min, 100/0 at 22 min, 100/0 at 30 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "70000" ;
+            mbo:retention_time "12.51 min" ;
+            mbo:solvent "A water with 1% ammonium carbonate 1M",
+                "B methanol with 1% ammonium carbonate 1M and 5% water" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chlorotoluron-diOH" ;
+            mbo:ch_compound_class "N/A; Biotransformation Product" ;
+            mbo:ch_exact_mass 2.440615e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C10H13ClN2O3" ;
+            schema:name "Chlorotoluron-diOH" ;
+            schema:smiles "C(*)C1=C(c(*)=C(C(*)=C(*)1)NC(=O)N(C(*))C(*))Cl * = [OH (n=2) & H (n=4)]" ] ;
+    mbo:has_peak [ mbo:intensity 1.98562e+04 ;
+            mbo:mz 9.30345e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.17067e+04 ;
+            mbo:mz 1.400272e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 589 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.430537e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-9500000000-fdbe686993c6f5ff3efc" ;
+    rdfs:comment "Chlorotoluron_diOH_CE30eV.txt" ;
+    skos:definition "Chlorotoluron-diOH (TENTATIVE); LC-ESI-QFT; MS2; CE: 30%; R=70000; [M-H]-" .
+

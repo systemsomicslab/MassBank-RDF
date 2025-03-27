@@ -1,0 +1,113 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_P100201_EF88 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2021-12-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_P100201_EF88" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6530 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "5000" ;
+            mbo:retention_time "0.598 min" ;
+            mbo:solvent "A 90/10 water with 10mM ammonium formate + 0.1% formic acid/methanol",
+                "B acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3R)-3-hydroxy-4-(trimethylazaniumyl)butanoate",
+                "L-Carnitine hydrochloride",
+                "Levocarnitine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.611052e+02 ;
+            rdfs:seeAlso cas:541-15-1,
+                chemspider:10455,
+                pubchem:CID10917 ;
+            schema:inChI "InChI=1S/C7H15NO3/c1-8(2,3)5-6(9)4-7(10)11/h6,9H,4-5H2,1-3H3/t6-/m1/s1" ;
+            schema:inChIKey inchikey:PHIQHXFUZVPYII-ZCFIWIBFSA-N ;
+            schema:molecularFormula "C7H15NO3" ;
+            schema:name "(3R)-3-hydroxy-4-(trimethylazaniumyl)butanoate",
+                "L-Carnitine hydrochloride",
+                "Levocarnitine" ;
+            schema:smiles "C[N+](C)(C)C[C@@H](CC(=O)[O-])O" ] ;
+    mbo:has_peak [ mbo:intensity 2.6626e+03 ;
+            mbo:mz 4.10392e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 4.43487e+04 ;
+            mbo:mz 8.50279e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 767 ],
+        [ mbo:intensity 3.20381e+04 ;
+            mbo:mz 1.020904e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 554 ],
+        [ mbo:intensity 4.52233e+04 ;
+            mbo:mz 1.030377e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 782 ],
+        [ mbo:intensity 1.364e+02 ;
+            mbo:mz 1.440994e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.63852e+04 ;
+            mbo:mz 1.621105e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 456 ],
+        [ mbo:intensity 5.57387e+04 ;
+            mbo:mz 4.30184e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 964 ],
+        [ mbo:intensity 3.1819e+03 ;
+            mbo:mz 4.405e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 2.9319e+03 ;
+            mbo:mz 4.50575e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.68871e+04 ;
+            mbo:mz 5.70336e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 292 ],
+        [ mbo:intensity 1.3429e+04 ;
+            mbo:mz 5.80651e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 232 ],
+        [ mbo:intensity 1.05901e+04 ;
+            mbo:mz 5.90729e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 183 ],
+        [ mbo:intensity 5.77702e+04 ;
+            mbo:mz 6.00808e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.6e+02 ;
+            mbo:mz 6.11087e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.621129e+02 ;
+            mbo:precursor_mz 1.621125e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 14 ;
+    mbo:pk_splash "splash10-0ikl-9400000000-7659509add99cc3a4271" ;
+    rdfs:comment "INTERNAL_ID 1002" ;
+    skos:definition "L-Carnitine hydrochloride; LC-ESI-QTOF; MS2; CE: 20eV; R=5000; [M+H]+" .
+

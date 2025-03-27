@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000082 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000082" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1297.663 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1E,6E)-1-(4-Hydroxyphenyl)-7-(4-hydroxy-3-methoxyphenyl)-1,6-heptadiene-3,5-dione",
+                "1,6-Heptadiene-3,5-dione, 1-(4-hydroxy-3-methoxyphenyl)-7-(4-hydroxyphenyl)-, (1E,6E)-",
+                "1,6-Heptadiene-3,5-dione, 1-(4-hydroxy-3-methoxyphenyl)-7-(p-hydroxyphenyl)-",
+                "Curcumin II",
+                "Demethoxycurcumin",
+                "Desmethoxycurcumin",
+                "Monodemethoxycurcumin" ;
+            mbo:ch_compound_class "Natural Product; Diarylheptanoid" ;
+            mbo:ch_exact_mass 3.381154e+02 ;
+            rdfs:seeAlso cas:22608-11-3,
+                pubchem:CID5469424 ;
+            schema:inChI "InChI=1S/C20H18O5/c1-25-20-12-15(6-11-19(20)24)5-10-18(23)13-17(22)9-4-14-2-7-16(21)8-3-14/h2-12,21,24H,13H2,1H3/b9-4+,10-5+" ;
+            schema:inChIKey inchikey:HJTVQHVGMGKONQ-LUZURFALSA-N ;
+            schema:molecularFormula "C20H18O5" ;
+            schema:name "(1E,6E)-1-(4-Hydroxyphenyl)-7-(4-hydroxy-3-methoxyphenyl)-1,6-heptadiene-3,5-dione",
+                "1,6-Heptadiene-3,5-dione, 1-(4-hydroxy-3-methoxyphenyl)-7-(4-hydroxyphenyl)-, (1E,6E)-",
+                "1,6-Heptadiene-3,5-dione, 1-(4-hydroxy-3-methoxyphenyl)-7-(p-hydroxyphenyl)-",
+                "Curcumin II",
+                "Demethoxycurcumin",
+                "Desmethoxycurcumin",
+                "Monodemethoxycurcumin" ;
+            schema:smiles "COc(c1)c(O)ccc(C=CC(=O)CC(=O)C=Cc(c2)ccc(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.448987e+08 ;
+            mbo:mz 3.37108e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.403767e+07 ;
+            mbo:mz 3.381119e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 235 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0009000000-e01a2a9954cd54a3d966" ;
+    skos:definition "Demethoxycurcumin; LC-ESI-ITTOF; MS; [M-H]-" .
+

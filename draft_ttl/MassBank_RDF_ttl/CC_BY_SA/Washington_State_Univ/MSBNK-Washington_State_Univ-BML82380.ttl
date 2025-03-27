@@ -1,0 +1,56 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML82380 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML82380" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "4.286" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "harringtonine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 5.312468e+02 ;
+            rdfs:seeAlso cas:26833-85-2,
+                chemspider:23089589,
+                pubchem:CID29927670 ;
+            schema:inChI "InChI=1S/C28H37NO9/c1-26(2,32)8-9-28(33,15-22(30)35-4)25(31)38-24-21(34-3)14-27-7-5-10-29(27)11-6-17-12-19-20(37-16-36-19)13-18(17)23(24)27/h12-14,23-24,32-33H,5-11,15-16H2,1-4H3/t23-,24-,27+,28+/m1/s1" ;
+            schema:inChIKey inchikey:HAVJATCHLFRDHY-ZBVBGGFBSA-N ;
+            schema:molecularFormula "C28H37NO9" ;
+            schema:name "harringtonine" ;
+            schema:smiles "CC(C)(CC[C@](CC(=O)OC)(C(=O)O[C@H]1[C@H]2C3=CC4=C(C=C3CCN5[C@@]2(CCC5)C=C1OC)OCO4)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.27583e+05 ;
+            mbo:mz 5.322541e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.1751e+04 ;
+            mbo:mz 5.54236e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 71 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0000090000-4b5bce6f6e7334cfdd2a" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.570" ;
+    skos:definition "harringtonine; LC-ESI-QTOF; MS; POSITIVE" .
+

@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100643 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100643" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3',4',5,7-tetrahydroxyflavone",
+                "4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",
+                "Cyanidenon 1470",
+                "Digitoflavone",
+                "Flacitran",
+                "Luteolin",
+                "Luteolol",
+                "Lutl",
+                "Weld Lake",
+                "Yama kariyasu" ;
+            mbo:ch_compound_class "Flavonoid" ;
+            mbo:ch_exact_mass 2.860477e+02 ;
+            rdfs:seeAlso cas:491-70-3,
+                chemspider:4444102,
+                knapsack:C00000674,
+                pubchem:CID5280445 ;
+            schema:inChI "InChI=1S/C15H10O6/c16-8-4-11(19)15-12(20)6-13(21-14(15)5-8)7-1-2-9(17)10(18)3-7/h1-6,16-19H" ;
+            schema:inChIKey inchikey:IQPNAANSBPBGFQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O6" ;
+            schema:name "3',4',5,7-tetrahydroxyflavone",
+                "4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",
+                "Cyanidenon 1470",
+                "Digitoflavone",
+                "Flacitran",
+                "Luteolin",
+                "Luteolol",
+                "Lutl",
+                "Weld Lake",
+                "Yama kariyasu" ;
+            schema:smiles "Oc(c3)c(O)cc(c3)C(=C1)Oc(c2)c(c(O)cc(O)2)C(=O)1" ] ;
+    mbo:has_peak [ mbo:intensity 7.925e+01 ;
+            mbo:mz 1.070141e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 7.371e+01 ;
+            mbo:mz 1.320227e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 5.821e+02 ;
+            mbo:mz 1.330294e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 473 ],
+        [ mbo:intensity 1.139e+02 ;
+            mbo:mz 1.510033e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 7.128e+01 ;
+            mbo:mz 1.750399e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 1.23e+03 ;
+            mbo:mz 2.850399e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.850399e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-000i-0690000000-4135ff68dafc65e9f339" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Luteolin; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-H]-" .
+

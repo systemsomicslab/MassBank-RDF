@@ -1,0 +1,103 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000872 a mbo:MassSpectrum ;
+    dcterms:creator "Megan J. Kelman, Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000872" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "10(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.26" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,4S,7R,10S,13S)-7-(2-methylpropyl)-4,10-di(propan-2-yl)-15,16-dithia-3,6,9,12,18-pentazabicyclo[11.4.2]nonadecane-2,5,8,11,19-pentone",
+                "Malformin A2",
+                "cyclo[D-Cys(1)-D-Cys(1)-Val-D-Leu-Val]" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 5.152236e+02 ;
+            rdfs:seeAlso pubchem:CID14759319 ;
+            schema:inChI "InChI=1S/C22H37N5O5S2/c1-10(2)7-13-18(28)26-17(12(5)6)22(32)25-14-8-33-34-9-15(24-19(14)29)20(30)27-16(11(3)4)21(31)23-13/h10-17H,7-9H2,1-6H3,(H,23,31)(H,24,29)(H,25,32)(H,26,28)(H,27,30)/t13-,14-,15-,16+,17+/m1/s1" ;
+            schema:inChIKey inchikey:KRQRRZFXHYYNSO-MTSZKFMLSA-N ;
+            schema:molecularFormula "C22H37N5O5S2" ;
+            schema:name "(1S,4S,7R,10S,13S)-7-(2-methylpropyl)-4,10-di(propan-2-yl)-15,16-dithia-3,6,9,12,18-pentazabicyclo[11.4.2]nonadecane-2,5,8,11,19-pentone",
+                "Malformin A2",
+                "cyclo[D-Cys(1)-D-Cys(1)-Val-D-Leu-Val]" ;
+            schema:smiles "CC(C)C[C@@H]1C(=O)N[C@H](C(=O)N[C@@H]2CSSC[C@H](C(=O)N[C@H](C(=O)N1)C(C)C)NC2=O)C(C)C" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 1.290438e+04 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 2.850497e+04 ;
+            mbo:mz 4.171604e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 1.956042e+04 ;
+            mbo:mz 4.712094e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 114 ],
+        [ mbo:intensity 1.34006e+04 ;
+            mbo:mz 4.748356e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 7.04758e+03 ;
+            mbo:mz 4.88236e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.709037e+05 ;
+            mbo:mz 5.162309e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.1e+00 ] ;
+            mbo:mz 9.10547e+01 ;
+            mbo:tentative_formula "C7H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.57e+00 ] ;
+            mbo:mz 4.171611e+02 ;
+            mbo:tentative_formula "C22H27N1O5S1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.23e+00 ] ;
+            mbo:mz 4.712079e+02 ;
+            mbo:tentative_formula "C21H35N4O4S2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.9e+00 ] ;
+            mbo:mz 4.882369e+02 ;
+            mbo:tentative_formula "C21H38N5O4S2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.2e-01 ] ;
+            mbo:mz 5.162312e+02 ;
+            mbo:tentative_formula "C22H38N5O5S2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.162312e+02 ;
+            mbo:precursor_mz 5.162303e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-014i-0000390000-2df4bbe739842d354285" ;
+    rdfs:comment "CONFIDENCE Aspergillus sp." ;
+    skos:definition "Malformin A2; LC-ESI-ITFT; MS2; CE: 10; R=17500; [M+H]+" .
+

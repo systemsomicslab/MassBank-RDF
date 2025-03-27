@@ -1,0 +1,68 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA281557 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA281557" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "90 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "9.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3S)-3-(3,3-dimethylbutylamino)-4-[[(2S)-1-methoxy-1-oxidanylidene-3-phenyl-propan-2-yl]amino]-4-oxidanylidene-butanoic acid",
+                "Neotame" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.782155e+02 ;
+            rdfs:seeAlso cas:165450-17-9,
+                chemspider:7986751,
+                pubchem:CID9810996 ;
+            schema:inChI "InChI=1S/C20H30N2O5/c1-20(2,3)10-11-21-15(13-17(23)24)18(25)22-16(19(26)27-4)12-14-8-6-5-7-9-14/h5-9,15-16,21H,10-13H2,1-4H3,(H,22,25)(H,23,24)/t15-,16-/m0/s1" ;
+            schema:inChIKey inchikey:HLIAVLHNDJUHFG-HOTGVXAUSA-N ;
+            schema:molecularFormula "C20H30N2O5" ;
+            schema:name "(3S)-3-(3,3-dimethylbutylamino)-4-[[(2S)-1-methoxy-1-oxidanylidene-3-phenyl-propan-2-yl]amino]-4-oxidanylidene-butanoic acid",
+                "Neotame" ;
+            schema:smiles "CC(C)(C)CCN[C@@H](CC(=O)O)C(=O)N[C@@H](CC1=CC=CC=C1)C(=O)OC" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.7266e+03 ;
+            mbo:mz 9.60095e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 227 ],
+        [ mbo:intensity 7.3874e+03 ;
+            mbo:mz 1.160507e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 449 ],
+        [ mbo:intensity 1.64219e+04 ;
+            mbo:mz 1.180663e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.772074e+02 ;
+            mbo:precursor_mz 3.772082e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-1900000000-d2d692ed7eaa1b72b202" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2815" ;
+    skos:definition "Neotame; LC-ESI-ITFT; MS2; CE: 90%; R=7500; [M-H]-" .
+

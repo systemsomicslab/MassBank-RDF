@@ -1,0 +1,73 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS084601 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS084601" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3',4',7,8-Tetrahydroxyflavanone-7-O-glucoside",
+                "Flavanomarein",
+                "iOkn-7-Glc",
+                "iso-Okanin-7-glucoside",
+                "isookanin-7-glucoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavanone CLASS3 Isookanin glycoside" ;
+            mbo:ch_exact_mass 4.50396e+02 ;
+            rdfs:seeAlso cas:577-38-8,
+                pubchem:CID101781 ;
+            schema:inChI "InChI=1S/C21H22O11/c22-7-15-16(26)18(28)19(29)21(32-15)31-13-4-2-9-11(24)6-14(30-20(9)17(13)27)8-1-3-10(23)12(25)5-8/h1-5,14-16,18-19,21-23,25-29H,6-7H2" ;
+            schema:inChIKey inchikey:DGGOLFCPSUVVHX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H22O11" ;
+            schema:name "3',4',7,8-Tetrahydroxyflavanone-7-O-glucoside",
+                "Flavanomarein",
+                "iOkn-7-Glc",
+                "iso-Okanin-7-glucoside",
+                "isookanin-7-glucoside" ;
+            schema:smiles "C1C(OC2=C(C1=O)C=CC(=C2O)OC3C(C(C(C(O3)CO)O)O)O)C4=CC(=C(C=C4)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.2131e+04 ;
+            mbo:mz 2.88e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 136 ],
+        [ mbo:intensity 8.8793e+04 ;
+            mbo:mz 2.89e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.1086e+04 ;
+            mbo:mz 4.5e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 1.3608e+04 ;
+            mbo:mz 4.51e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 2.707e+03 ;
+            mbo:mz 4.52e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 30 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.5145e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000i-0090200000-f1652d46a16430a883ae" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "isookanin-7-glucoside, Flavanomarein, iso-Okanin-7-glucoside, 3',4',7,8-Tetrahydroxyflavanone-7-O-glucoside, iOkn-7-Glc; LC-ESI-QQ; MS2" .
+

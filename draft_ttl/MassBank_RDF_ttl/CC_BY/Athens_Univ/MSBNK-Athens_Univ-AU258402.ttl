@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU258402 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU258402" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.567 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Picoxystrobin",
+                "methyl (E)-3-methoxy-2-[2-[[6-(trifluoromethyl)pyridin-2-yl]oxymethyl]phenyl]prop-2-enoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.671031e+02 ;
+            rdfs:seeAlso cas:117428-22-5,
+                chemspider:9460644,
+                pubchem:CID11285653 ;
+            schema:inChI "InChI=1S/C18H16F3NO4/c1-24-11-14(17(23)25-2)13-7-4-3-6-12(13)10-26-16-9-5-8-15(22-16)18(19,20)21/h3-9,11H,10H2,1-2H3/b14-11+" ;
+            schema:inChIKey inchikey:IBSNKSODLGJUMQ-SDNWHVSQSA-N ;
+            schema:molecularFormula "C18H16F3NO4" ;
+            schema:name "Picoxystrobin",
+                "methyl (E)-3-methoxy-2-[2-[[6-(trifluoromethyl)pyridin-2-yl]oxymethyl]phenyl]prop-2-enoate" ;
+            schema:smiles "CO\\C=C(\\C(=O)OC)C1=CC=CC=C1COC1=CC=CC(=N1)C(F)(F)F" ] ;
+    mbo:has_peak [ mbo:intensity 2.0148e+04 ;
+            mbo:mz 1.150537e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.944e+04 ;
+            mbo:mz 1.170691e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.352648e+06 ;
+            mbo:mz 1.450642e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.64532e+05 ;
+            mbo:mz 1.460675e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 1.2964e+04 ;
+            mbo:mz 1.470701e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 8.7292e+04 ;
+            mbo:mz 1.730587e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 9.4064e+04 ;
+            mbo:mz 1.770903e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.062268e+06 ;
+            mbo:mz 2.050855e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 451 ],
+        [ mbo:intensity 9.7648e+04 ;
+            mbo:mz 2.060887e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 41 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.171649e+02 ;
+            mbo:precursor_mz 3.681104e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0930000000-f18474aec7bf05f15234" ;
+    rdfs:comment "INTERNAL_ID 2584" ;
+    skos:definition "Picoxystrobin; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU117802 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Anna Bletsou, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-09-23"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU117802" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "3.6 min" ;
+            mbo:solvent "A water with 0.01% formic acid and 5mM ammonium formate",
+                "B 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-[[8-(dimethylamino)-7-methylquinolin-5-yl]methyl]pyrimidine-2,4-diamine",
+                "Baquiloprim" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.081749e+02 ;
+            rdfs:seeAlso cas:102280-35-3,
+                chemspider:8037126,
+                pubchem:CID9861430 ;
+            schema:inChI "InChI=1S/C17H20N6/c1-10-7-11(8-12-9-21-17(19)22-16(12)18)13-5-4-6-20-14(13)15(10)23(2)3/h4-7,9H,8H2,1-3H3,(H4,18,19,21,22)" ;
+            schema:inChIKey inchikey:AIOWJIMWVFWROP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H20N6" ;
+            schema:name "5-[[8-(dimethylamino)-7-methylquinolin-5-yl]methyl]pyrimidine-2,4-diamine",
+                "Baquiloprim" ;
+            schema:smiles "CC1=CC(=C2C=CC=NC2=C1N(C)C)CC3=CN=C(N=C3N)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.644e+03 ;
+            mbo:mz 1.7108e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.5148e+04 ;
+            mbo:mz 2.941529e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 2.368e+03 ;
+            mbo:mz 2.951573e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.052e+03 ;
+            mbo:mz 3.071608e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.853e+05 ;
+            mbo:mz 3.091766e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.5664e+04 ;
+            mbo:mz 3.101812e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 125 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.091725e+02 ;
+            mbo:precursor_mz 3.091822e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-0009000000-1614f3a19308bd6d2125" ;
+    rdfs:comment "INTERNAL_ID 1178" ;
+    skos:definition "Baquiloprim; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

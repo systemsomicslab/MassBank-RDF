@@ -1,0 +1,88 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA285953 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA285953" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "9.2 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3R,5R)-7-[(1S,2S,6S,8S,8aR)-2-methyl-8-[(2S)-2-methylbutanoyl]oxy-6-oxidanyl-1,2,6,7,8,8a-hexahydronaphthalen-1-yl]-3,5-bis(oxidanyl)heptanoic acid",
+                "Pravastatin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.242461e+02 ;
+            rdfs:seeAlso cas:81093-37-0,
+                chemspider:49398,
+                pubchem:CID54687 ;
+            schema:inChI "InChI=1S/C23H36O7/c1-4-13(2)23(29)30-20-11-17(25)9-15-6-5-14(3)19(22(15)20)8-7-16(24)10-18(26)12-21(27)28/h5-6,9,13-14,16-20,22,24-26H,4,7-8,10-12H2,1-3H3,(H,27,28)/t13-,14-,16+,17+,18+,19-,20-,22-/m0/s1" ;
+            schema:inChIKey inchikey:TUZYXOIXSAXUGO-PZAWKZKUSA-N ;
+            schema:molecularFormula "C23H36O7" ;
+            schema:name "(3R,5R)-7-[(1S,2S,6S,8S,8aR)-2-methyl-8-[(2S)-2-methylbutanoyl]oxy-6-oxidanyl-1,2,6,7,8,8a-hexahydronaphthalen-1-yl]-3,5-bis(oxidanyl)heptanoic acid",
+                "Pravastatin" ;
+            schema:smiles "CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC(CC(CC(=O)O)O)O)O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.469639e+05 ;
+            mbo:mz 5.90139e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 337 ],
+        [ mbo:intensity 7.80372e+04 ;
+            mbo:mz 8.50297e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 179 ],
+        [ mbo:intensity 4.3614e+05 ;
+            mbo:mz 1.010608e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.25259e+04 ;
+            mbo:mz 1.410708e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 1.74053e+04 ;
+            mbo:mz 2.851502e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 3.3459e+05 ;
+            mbo:mz 3.031595e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 766 ],
+        [ mbo:intensity 1.678489e+05 ;
+            mbo:mz 3.211705e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 384 ],
+        [ mbo:intensity 2.00689e+04 ;
+            mbo:mz 4.23238e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 46 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.232379e+02 ;
+            mbo:precursor_mz 4.232388e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0udi-4809000000-0ed5a8797dfc49ecf5af" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2859" ;
+    skos:definition "Pravastatin; LC-ESI-ITFT; MS2; CE: 30%; R=7500; [M-H]-" .
+

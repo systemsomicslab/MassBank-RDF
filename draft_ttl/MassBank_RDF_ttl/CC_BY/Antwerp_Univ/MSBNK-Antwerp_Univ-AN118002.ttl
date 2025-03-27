@@ -1,0 +1,94 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN118002 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN118002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.114 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tris(2-butoxyethyl) phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.982433e+02 ;
+            rdfs:seeAlso cas:78-51-3,
+                chemspider:6292,
+                pubchem:CID6540 ;
+            schema:inChI "InChI=1S/C18H39O7P/c1-4-7-10-20-13-16-23-26(19,24-17-14-21-11-8-5-2)25-18-15-22-12-9-6-3/h4-18H2,1-3H3" ;
+            schema:inChIKey inchikey:WTLBZVNBAKMVDP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H39O7P" ;
+            schema:name "Tris(2-butoxyethyl) phosphate" ;
+            schema:smiles "CCCCOCCOP(=O)(OCCOCCCC)OCCOCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 1.605e+03 ;
+            mbo:mz 5.50542e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 232 ],
+        [ mbo:intensity 3.829e+02 ;
+            mbo:mz 3.00161e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 3.7624e+03 ;
+            mbo:mz 3.992505e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 544 ],
+        [ mbo:intensity 3.3611e+03 ;
+            mbo:mz 5.707e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 486 ],
+        [ mbo:intensity 7.935e+02 ;
+            mbo:mz 8.30854e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 115 ],
+        [ mbo:intensity 4.469e+02 ;
+            mbo:mz 1.010963e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 5.4e+02 ;
+            mbo:mz 1.430101e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 6.9051e+03 ;
+            mbo:mz 1.990727e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.586e+02 ;
+            mbo:mz 2.000753e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 2.97e+02 ;
+            mbo:mz 2.430983e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 5.796e+03 ;
+            mbo:mz 2.991621e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 839 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.992511e+02 ;
+            mbo:precursor_mz 3.992506e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0002-6974000000-8d5e67fb02a0463b29ca" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Tris(2-butoxyethyl) phosphate; LC-ESI-QTOF; MS2; CE: 10eV; R=7000; [M+H]+" .
+

@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000026 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000026" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive HF, Thermo Scientific [MS:1002523]" ;
+            mbo:collision_energy "30.0 NCE" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30.000" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Maresin 1" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 3.602301e+02 ;
+            rdfs:seeAlso pubchem:CID60201795 ;
+            schema:inChI "InChI=1S/C22H32O4/c1-2-3-4-5-6-10-15-20(23)16-11-7-8-12-17-21(24)18-13-9-14-19-22(25)26/h3-4,6-13,16-17,20-21,23-24H,2,5,14-15,18-19H2,1H3,(H,25,26)/b4-3-,8-7+,10-6-,13-9-,16-11-,17-12+/t20-,21-/m0/s1" ;
+            schema:inChIKey inchikey:HLHYXXBCQOUTGK-FHCQLJOMSA-N ;
+            schema:molecularFormula "C22H32O4" ;
+            schema:name "Maresin 1" ;
+            schema:smiles "C(CC/C=C\\C[C@@H](O)/C=C/C=C/C=C\\[C@H](C/C=C\\C/C=C\\CC)O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.370985e+06 ;
+            mbo:mz 5.901348e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 608 ],
+        [ mbo:intensity 2.685754e+05 ;
+            mbo:mz 3.592228e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 119 ],
+        [ mbo:intensity 1.994679e+06 ;
+            mbo:mz 9.303459e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 885 ],
+        [ mbo:intensity 2.252344e+06 ;
+            mbo:mz 1.130608e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.734016e+06 ;
+            mbo:mz 1.230816e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 769 ],
+        [ mbo:intensity 1.378657e+06 ;
+            mbo:mz 1.771285e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 611 ],
+        [ mbo:intensity 1.178166e+06 ;
+            mbo:mz 2.281518e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 523 ],
+        [ mbo:intensity 8.874064e+05 ;
+            mbo:mz 2.501209e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 394 ],
+        [ mbo:intensity 3.482293e+05 ;
+            mbo:mz 2.972223e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 154 ],
+        [ mbo:intensity 1.278489e+05 ;
+            mbo:mz 3.412119e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 57 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.592228e+02 ;
+            mbo:precursor_mz 3.592228e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-072c-5940000000-1ba1bdf6519da86f64e8" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 30.0 NCE within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "Maresin 1; LC-ESI-QFT; MS2; CE: 30.0; R=30.000; [M-H]-" .
+

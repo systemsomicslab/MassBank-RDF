@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS003232 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2013-11-16)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS003232" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "546 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tiliroside" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 5.941373e+02 ;
+            rdfs:seeAlso cas:22153-44-2,
+                pubchem:CID5320686 ;
+            schema:inChI "InChI=1S/C30H26O13/c31-16-6-1-14(2-7-16)3-10-22(35)40-13-21-24(36)26(38)27(39)30(42-21)43-29-25(37)23-19(34)11-18(33)12-20(23)41-28(29)15-4-8-17(32)9-5-15/h1-12,21,24,26-27,30-34,36,38-39H,13H2/b10-3+/t21-,24-,26+,27-,30+/m1/s1" ;
+            schema:inChIKey inchikey:DVGGLGXQSFURLP-VWMSDXGPSA-N ;
+            schema:molecularFormula "C30H26O13" ;
+            schema:name "Tiliroside" ;
+            schema:smiles "C1(=C(C(=C(C(=C1/C(=C(/C(=O)OC([C@]2([H])[C@]([H])([C@@]([H])([C@]([H])([C@@]([H])(O2)OC3=C(OC4=C(C(=C(C(=C4C3=O)O[H])[H])O[H])[H])C5=C(C(=C(C(=C5[H])[H])O[H])[H])[H])O[H])O[H])O[H])([H])[H])\\[H])/[H])[H])[H])O[H])[H])[H]" ] ;
+    mbo:has_peak [ mbo:intensity 3.3e+01 ;
+            mbo:mz 1.450306e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.23e+02 ;
+            mbo:mz 2.270366e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 4.1e+01 ;
+            mbo:mz 2.290515e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 3.03e+02 ;
+            mbo:mz 2.550317e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 303 ],
+        [ mbo:intensity 1.02e+02 ;
+            mbo:mz 2.560382e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 6.3e+01 ;
+            mbo:mz 2.570455e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.840351e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.02e+02 ;
+            mbo:mz 2.850418e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 602 ],
+        [ mbo:intensity 6.7e+01 ;
+            mbo:mz 2.860453e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 67 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.931e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-001r-0090000000-cfec131bf92efe65af7d" ;
+    skos:definition "Tiliroside; LC-ESI-QTOF; MS2; CE:50 eV; [M-H]-" .
+

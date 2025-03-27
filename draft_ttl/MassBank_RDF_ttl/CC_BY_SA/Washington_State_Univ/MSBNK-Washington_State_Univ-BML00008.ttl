@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00008 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00008" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "8.290" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bucharaine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.311784e+02 ;
+            rdfs:seeAlso cas:21059-47-2,
+                chemspider:4495379,
+                pubchem:CID5338262 ;
+            schema:inChI "InChI=1S/C19H25NO4/c1-13(8-9-17(21)19(2,3)23)10-11-24-16-12-18(22)20-15-7-5-4-6-14(15)16/h4-7,10,12,17,21,23H,8-9,11H2,1-3H3,(H,20,22)/b13-10+" ;
+            schema:inChIKey inchikey:PBWIOAMUZKICDN-JLHYYAGUSA-N ;
+            schema:molecularFormula "C19H25NO4" ;
+            schema:name "Bucharaine" ;
+            schema:smiles "C/C(=C\\COC1=CC(=O)NC2=CC=CC=C21)/CCC(C(C)(C)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.4e+01 ;
+            mbo:mz 1.440386e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 5.6e+01 ;
+            mbo:mz 1.531263e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 7.44e+02 ;
+            mbo:mz 1.620529e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.3e+01 ;
+            mbo:mz 1.620884e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 1.929589e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 3.7e+01 ;
+            mbo:mz 3.32139e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 50 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.62e+02 ;
+            mbo:precursor_mz 3.321857e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0900000000-8bdb23503590bade61ca" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.128" ;
+    skos:definition "Bucharaine; LC-ESI-QTOF; MS2; CE 10 ev; [M+H]+" .
+

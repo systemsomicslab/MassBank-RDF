@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000322 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000322" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bis(3,5,5-trimethylhexyl) phthalate",
+                "DTXSID0057889" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.183083e+02 ;
+            rdfs:seeAlso cas:14103-61-8,
+                pubchem:CID121232779 ;
+            schema:inChI "InChI=1S/C26H42O4/c1-19(17-25(3,4)5)13-15-29-23(27)21-11-9-10-12-22(21)24(28)30-16-14-20(2)18-26(6,7)8/h9-12,19-20H,13-18H2,1-8H3/t19-,20+" ;
+            schema:inChIKey inchikey:GDJOUZYAIHWDCA-BGYRXZFFSA-N ;
+            schema:molecularFormula "C26H42O4" ;
+            schema:name "Bis(3,5,5-trimethylhexyl) phthalate",
+                "DTXSID0057889" ;
+            schema:smiles "CC(C)(C)C[C@@H](C)CCOC(=O)C1=CC=CC=C1C(=O)OCC[C@@H](C)CC(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.237594e+01 ;
+            mbo:mz 4.305423e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 4.693983e+01 ;
+            mbo:mz 5.706988e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 469 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.108553e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.196174e+01 ;
+            mbo:mz 8.510118e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 519 ],
+        [ mbo:intensity 1.709927e+00 ;
+            mbo:mz 1.271481e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 5.255929e+01 ;
+            mbo:mz 1.490233e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 525 ],
+        [ mbo:intensity 1.811626e+00 ;
+            mbo:mz 1.670339e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 18 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.193156e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00ds-9200000000-7bae3754e789920e379b" ;
+    skos:definition "Bis(3,5,5-trimethylhexyl) phthalate; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

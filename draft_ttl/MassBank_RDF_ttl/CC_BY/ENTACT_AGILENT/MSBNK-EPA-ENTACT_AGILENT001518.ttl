@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001518 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001518" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(6)-Gingerol",
+                "DTXSID3041035" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.941831e+02 ;
+            rdfs:seeAlso cas:23513-14-6,
+                pubchem:CID442793 ;
+            schema:inChI "InChI=1S/C17H26O4/c1-3-4-5-6-14(18)12-15(19)9-7-13-8-10-16(20)17(11-13)21-2/h8,10-11,14,18,20H,3-7,9,12H2,1-2H3" ;
+            schema:inChIKey inchikey:NLDDIKRKFXEWBK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H26O4" ;
+            schema:name "(6)-Gingerol",
+                "DTXSID3041035" ;
+            schema:smiles "CCCCCC(O)CC(=O)CCC1C=CC(O)=C(C=1)OC" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 5.703459e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.702261e+00 ;
+            mbo:mz 5.707097e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.684344e+01 ;
+            mbo:mz 9.908154e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 268 ],
+        [ mbo:intensity 2.20292e+00 ;
+            mbo:mz 1.780635e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.084471e+00 ;
+            mbo:mz 1.93087e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.931758e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-17bc545314228569651a" ;
+    skos:definition "(6)-Gingerol; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

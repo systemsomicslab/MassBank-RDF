@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS107405 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS107405" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(Methylsulfinyl)propylglucosinolate",
+                "3-Methylsulfinylpropyl glucosinolate",
+                "Glucoiberin",
+                "beta-D-Glucopyranose,1-thio-,1-(4-(methylsulfinyl)-N-(sulfooxy)butanimidate)" ;
+            mbo:ch_compound_class "CLASS1 Glucosinolate CLASS2 Aliphatic glucosinolate" ;
+            mbo:ch_exact_mass 4.23481e+02 ;
+            rdfs:seeAlso cas:554-88-1,
+                pubchem:CID9548622 ;
+            schema:inChI "InChI=1S/C11H21NO10S3/c1-24(17)4-2-3-7(12-22-25(18,19)20)23-11-10(16)9(15)8(14)6(5-13)21-11/h6,8-11,13-16H,2-5H2,1H3,(H,18,19,20)" ;
+            schema:inChIKey inchikey:PHYYADMVYQURSX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H21NO10S3" ;
+            schema:name "3-(Methylsulfinyl)propylglucosinolate",
+                "3-Methylsulfinylpropyl glucosinolate",
+                "Glucoiberin",
+                "beta-D-Glucopyranose,1-thio-,1-(4-(methylsulfinyl)-N-(sulfooxy)butanimidate)" ;
+            schema:smiles "CS(=O)CCCC(=NOS(=O)(=O)O)SC1C(C(C(C(O1)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.84e+03 ;
+            mbo:mz 7.3e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 2.3164e+04 ;
+            mbo:mz 1.17e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 197 ],
+        [ mbo:intensity 1.17382e+05 ;
+            mbo:mz 1.18e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.2435e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-0900000000-2693db59a67a15e0a97c" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "3-Methylsulfinylpropyl glucosinolate, beta-D-Glucopyranose,1-thio-,1-(4-(methylsulfinyl)-N-(sulfooxy)butanimidate), Glucoiberin, 3-(Methylsulfinyl)propylglucosinolate; LC-ESI-QQ; MS2" .
+

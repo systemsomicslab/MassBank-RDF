@@ -1,0 +1,94 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP029901 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP029901" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "7.193 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-2-[[(Z)-octadec-9-enoyl]amino]-3-phenylpropanoic acid",
+                "N-Oleoyl-Phenylalanine",
+                "N-oleoyl phenylalanine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 4.293243e+02 ;
+            rdfs:seeAlso chemspider:58827530,
+                pubchem:CID52922059 ;
+            schema:inChI "InChI=1S/C27H43NO3/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-19-22-26(29)28-25(27(30)31)23-24-20-17-16-18-21-24/h9-10,16-18,20-21,25H,2-8,11-15,19,22-23H2,1H3,(H,28,29)(H,30,31)/b10-9-/t25-/m0/s1" ;
+            schema:inChIKey inchikey:UWKNPULCJWBBDD-JRUKXMRZSA-N ;
+            schema:molecularFormula "C27H43NO3" ;
+            schema:name "(2S)-2-[[(Z)-octadec-9-enoyl]amino]-3-phenylpropanoic acid",
+                "N-Oleoyl-Phenylalanine",
+                "N-oleoyl phenylalanine" ;
+            schema:smiles "CCCCCCCC/C=C\\CCCCCCCC(=O)N[C@@H](CC1=CC=CC=C1)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.6e+02 ;
+            mbo:mz 1.200812e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.8358e+05 ;
+            mbo:mz 4.30332e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.7828e+04 ;
+            mbo:mz 1.660857e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 9.54e+02 ;
+            mbo:mz 1.670899e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.92e+02 ;
+            mbo:mz 3.611983e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.614e+03 ;
+            mbo:mz 3.843267e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 3.8e+02 ;
+            mbo:mz 3.853318e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.346e+03 ;
+            mbo:mz 4.123221e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.66e+02 ;
+            mbo:mz 4.133223e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.48e+02 ;
+            mbo:mz 4.293198e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.303314e+02 ;
+            mbo:precursor_mz 4.303316e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-0000900000-1fc0c5a973edb90fc0ff" ;
+    rdfs:comment "INTERNAL_ID 299" ;
+    skos:definition "N-Oleoyl-Phenylalanine; LC-ESI-QTOF; MS2; CE: 10; R=; [M+H]+" .
+

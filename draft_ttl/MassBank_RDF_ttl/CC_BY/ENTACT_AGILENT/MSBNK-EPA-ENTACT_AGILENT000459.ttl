@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000459 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000459" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-(2-Methoxyphenyl)acetamide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.65079e+02 ;
+            rdfs:seeAlso cas:93-26-5,
+                pubchem:CID7135 ;
+            schema:inChI "InChI=1S/C9H11NO2/c1-7(11)10-8-5-3-4-6-9(8)12-2/h3-6H,1-2H3,(H,10,11)" ;
+            schema:inChIKey inchikey:FGOFNVXHDGQVBG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H11NO2" ;
+            schema:name "N-(2-Methoxyphenyl)acetamide" ;
+            schema:smiles "CC(=O)NC1=CC=CC=C1OC" ] ;
+    mbo:has_peak [ mbo:intensity 2.416347e+01 ;
+            mbo:mz 4.301784e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 241 ],
+        [ mbo:intensity 1.352247e+00 ;
+            mbo:mz 8.004948e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 5.991132e+00 ;
+            mbo:mz 9.204948e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.196087e+00 ;
+            mbo:mz 1.080444e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 7.809016e+01 ;
+            mbo:mz 1.090522e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 780 ],
+        [ mbo:intensity 1.533718e+00 ;
+            mbo:mz 1.090886e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.240757e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.096538e+00 ;
+            mbo:mz 1.480757e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 11 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.660863e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-05fr-1900000000-081bf64219b27af194d0" ;
+    skos:definition "N-(2-Methoxyphenyl)acetamide; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

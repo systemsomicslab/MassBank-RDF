@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000022 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-09-24, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000022" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1139.899 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "AIDS211406",
+                "Oleanane, beta-D-galactopyranoside deriv",
+                "Saikosaponin A",
+                "beta-D-Galactopyranoside, (3beta,4alpha,16beta)-13,28-epoxy-16,23-dihydroxyolean-11-en-3-yl 6-deoxy-3-O-beta-D-glucopyranosyl-" ;
+            mbo:ch_compound_class "Natural Product; Saponin" ;
+            mbo:ch_exact_mass 7.80466e+02 ;
+            rdfs:seeAlso cas:20736-09-8,
+                pubchem:CID167928 ;
+            schema:inChI "InChI=1S/C42H68O13/c1-21-28(46)33(55-34-31(49)30(48)29(47)22(18-43)53-34)32(50)35(52-21)54-27-10-11-37(4)23(38(27,5)19-44)8-12-39(6)24(37)9-13-42-25-16-36(2,3)14-15-41(25,20-51-42)26(45)17-40(39,42)7/h9,13,21-35,43-50H,8,10-12,14-20H2,1-7H3/t21-,22-,23-,24-,25-,26+,27+,28+,29-,30+,31-,32-,33+,34+,35+,37+,38+,39-,40+,41-,42+/m1/s1" ;
+            schema:inChIKey inchikey:KYWSCMDFVARMPN-MSSMMRRTSA-N ;
+            schema:molecularFormula "C42H68O13" ;
+            schema:name "AIDS211406",
+                "Oleanane, beta-D-galactopyranoside deriv",
+                "Saikosaponin A",
+                "beta-D-Galactopyranoside, (3beta,4alpha,16beta)-13,28-epoxy-16,23-dihydroxyolean-11-en-3-yl 6-deoxy-3-O-beta-D-glucopyranosyl-" ;
+            schema:smiles "C(C([H])54)(C1)(C)C([H])(CCC4(C(C7)(C(O8)(C(C(C8)6C(O)7)(CC(CC6)(C)C)[H])C=C5)C)C)C(C(OC(O3)([H])C(C(C(C3C)O)OC(C(O)2)(OC(C(C2O)O)CO)[H])O)C1)(C)CO" ] ;
+    mbo:has_peak [ mbo:intensity 3.186204e+07 ;
+            mbo:mz 7.794566e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.350794e+07 ;
+            mbo:mz 7.804591e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 424 ],
+        [ mbo:intensity 3.087845e+06 ;
+            mbo:mz 7.814634e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 6.902057e+06 ;
+            mbo:mz 8.394764e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 216 ],
+        [ mbo:intensity 3.550307e+06 ;
+            mbo:mz 8.404804e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 2.914909e+06 ;
+            mbo:mz 8.424509e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 91 ],
+        [ mbo:intensity 1.384318e+07 ;
+            mbo:mz 8.934467e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 434 ],
+        [ mbo:intensity 7.121588e+06 ;
+            mbo:mz 8.944488e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 2.075537e+06 ;
+            mbo:mz 8.954577e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 65 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-004l-0000000960-8ce637c5390324ed13f4" ;
+    skos:definition "Saikosaponin A; LC-ESI-ITTOF; MS; [M-H]-" .
+

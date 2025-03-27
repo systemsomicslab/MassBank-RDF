@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_P105206_EF88 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2021-12-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_P105206_EF88" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6530 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "5000" ;
+            mbo:retention_time "0.532 min" ;
+            mbo:solvent "A 90/10 water with 10mM ammonium formate + 0.1% formic acid/methanol",
+                "B acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,7-dihydropurine-2,6-dione",
+                "XANTHINE" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.520334e+02 ;
+            rdfs:seeAlso cas:69-89-6,
+                chemspider:1151,
+                pubchem:CID1188 ;
+            schema:inChI "InChI=1S/C5H4N4O2/c10-4-2-3(7-1-6-2)8-5(11)9-4/h1H,(H3,6,7,8,9,10,11)" ;
+            schema:inChIKey inchikey:LRFVTYWOQMYALW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H4N4O2" ;
+            schema:name "3,7-dihydropurine-2,6-dione",
+                "XANTHINE" ;
+            schema:smiles "O=C1NC2=C(NC=N2)C(=O)N1" ] ;
+    mbo:has_peak [ mbo:intensity 1.12e+01 ;
+            mbo:mz 1.3503e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.210508e+02 ;
+            mbo:precursor_mz 1.530407e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-000i-0900000000-73e0c56a38d16f05383d" ;
+    rdfs:comment "INTERNAL_ID 1052" ;
+    skos:definition "XANTHINE; LC-ESI-QTOF; MS2; CE: 20eV; R=5000; [M+H]+" .
+

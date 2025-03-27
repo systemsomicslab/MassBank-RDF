@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR101026 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR101026" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Myrc-3-Gal",
+                "Myricetin-3-Galactopyranoside",
+                "Myricetin-3-Galactoside" ;
+            mbo:ch_compound_class "Flavonoid" ;
+            mbo:ch_exact_mass 4.800904e+02 ;
+            rdfs:seeAlso cas:15648-86-9,
+                knapsack:C00005728 ;
+            schema:inChI "InChI=1S/C21H20O13/c22-5-12-15(28)17(30)18(31)21(33-12)34-20-16(29)13-8(24)3-7(23)4-11(13)32-19(20)6-1-9(25)14(27)10(26)2-6/h1-4,12,15,17-18,21-28,30-31H,5H2/t12-,15-,17+,18-,21+/m1/s1" ;
+            schema:inChIKey inchikey:FOHXFLPXBUAOJM-LIBJPBHASA-N ;
+            schema:molecularFormula "C21H20O13" ;
+            schema:name "Myrc-3-Gal",
+                "Myricetin-3-Galactopyranoside",
+                "Myricetin-3-Galactoside" ;
+            schema:smiles "OCC(O1)C(O)C(O)C(O)C1OC(C(=O)3)=C(Oc(c4)c(c(O)cc(O)4)3)c(c2)cc(O)c(O)c(O)2" ] ;
+    mbo:has_peak [ mbo:intensity 1.075e+02 ;
+            mbo:mz 8.5029e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 5.543e+01 ;
+            mbo:mz 3.200489e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 6.881e+01 ;
+            mbo:mz 4.810982e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 6.489e+01 ;
+            mbo:mz 9.10394e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 5.468e+01 ;
+            mbo:mz 9.70294e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.893e+02 ;
+            mbo:mz 1.530184e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 8.777e+01 ;
+            mbo:mz 1.650182e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 7.184e+01 ;
+            mbo:mz 2.170489e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 1.004e+02 ;
+            mbo:mz 2.45045e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.026e+02 ;
+            mbo:mz 2.730399e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 2.272e+03 ;
+            mbo:mz 3.190447e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.810982e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014i-0119000000-6cdb7d502c8bcabdf9ed" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Myricetin-3-Galactoside; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

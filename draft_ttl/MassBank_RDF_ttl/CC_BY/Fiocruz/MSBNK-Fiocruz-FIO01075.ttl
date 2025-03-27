@@ -1,0 +1,87 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fiocruz-FIO01075 a mbo:MassSpectrum ;
+    dcterms:creator "Markus Kohlhoff, Natural Product Chemistry Lab (FIOCRUZ Minas, Brazil)" ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fiocruz-FIO01075" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Institute Rene Rachou (FIOCRUZ Minas, Brazil) under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis (Bruker Daltonics)" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Shimadzu Shim-Pack XR-ODS III; C18; 2.2um; 80A; 2.0x150mm" ;
+            mbo:flow_gradient "5-100%B in 10min" ;
+            mbo:flow_rate "400ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B acetonitrile with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Hulupinic acid" ;
+            mbo:ch_compound_class "Natural Product; Terpenoids" ;
+            mbo:ch_exact_mass 2.641362e+02 ;
+            schema:inChI "InChI=1S/C15H20O4/c1-9(2)5-7-15(8-6-10(3)4)13(18)11(16)12(17)14(15)19/h5-6,16-17H,7-8H2,1-4H3" ;
+            schema:inChIKey inchikey:KKNXLCGOZLVUHL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H20O4" ;
+            schema:name "Hulupinic acid" ;
+            schema:smiles "CC(C)=CCC(CC=C(C)C)(C(=O)1)C(=O)C(O)=C(O)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.02128e+05 ;
+            mbo:mz 1.259958e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 258 ],
+        [ mbo:intensity 7.614e+04 ;
+            mbo:mz 2.631295e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 1.508e+04 ;
+            mbo:mz 2.641329e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 6.352e+03 ;
+            mbo:mz 1.269993e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.972e+03 ;
+            mbo:mz 1.390038e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.5796e+04 ;
+            mbo:mz 1.510042e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 5.056e+03 ;
+            mbo:mz 1.790357e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.6996e+04 ;
+            mbo:mz 1.930516e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 3.95056e+05 ;
+            mbo:mz 1.940595e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.484e+04 ;
+            mbo:mz 1.950627e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 4.096e+03 ;
+            mbo:mz 2.090461e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-0006-0910000000-1ab698583b5a61998a89" ;
+    rdfs:comment "[Raw Data] CBA94_Hulupinic-acid_neg_20eV.txt" ;
+    skos:definition "Hulupinic acid; LC-ESI-QTOF; MS2; [M-H]-; CE: 20eV" .
+

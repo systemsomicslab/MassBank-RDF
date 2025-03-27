@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML01377 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML01377" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "2.628" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2',3'-Dideoxythymidine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.260954e+02 ;
+            rdfs:seeAlso cas:3416-05-5,
+                chemspider:5090,
+                pubchem:CID5280 ;
+            schema:inChI "InChI=1S/C10H14N2O4/c1-6-4-12(10(15)11-9(6)14)8-3-2-7(5-13)16-8/h4,7-8,13H,2-3,5H2,1H3,(H,11,14,15)" ;
+            schema:inChIKey inchikey:XKKCQTLDIPIRQD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H14N2O4" ;
+            schema:name "2',3'-Dideoxythymidine" ;
+            schema:smiles "CC1=CN(C(=O)NC1=O)C2CCC(O2)CO" ] ;
+    mbo:has_peak [ mbo:intensity 2.7e+01 ;
+            mbo:mz 1.100227e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 5.88e+02 ;
+            mbo:mz 1.270495e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.1e+01 ;
+            mbo:mz 1.270862e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 36 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.27e+02 ;
+            mbo:precursor_mz 2.271027e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-0900000000-8f78a55d4987b678906f" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.359" ;
+    skos:definition "2',3'-Dideoxythymidine; LC-ESI-QTOF; MS2; CE 10 ev; [M+H]+" .
+

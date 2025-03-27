@@ -1,0 +1,71 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ACES_SU-AS000252 a mbo:MassSpectrum ;
+    dcterms:creator "ACESx, Jonathan W. Martin Group" ;
+    dcterms:date "2022-08-15"^^xsd:date ;
+    dcterms:identifier "MSBNK-ACES_SU-AS000252" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Stockholm University, ACESx, Jonathan W. Martin Group (C) 2022 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QExactive Orbitrap HF-X (Thermo Scientific)" ;
+            mbo:collision_energy "Ramp 20%-70% (nominal)" ;
+            mbo:column_name "Waters; Acquity UPLC BEH C18, 2.1 x 100 mm, 1.7 um, Waters" ;
+            mbo:flow_gradient "98/2 at 4.2 min, 0/100 at 22 min, 0/100 at 25 min, 98/2 at 25.1 min, 98/2 at 30 min" ;
+            mbo:flow_rate "0.45mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "16.243300" ;
+            mbo:solvent "A 1 mM ammonium fluoride in water",
+                "B MeOH" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diethyl 2-dimethoxyphosphinothioylsulfanylbutanedioate",
+                "Malathion" ;
+            mbo:ch_compound_class "Pesticides; Organophosphate Insecticides; Organothiophosphates" ;
+            mbo:ch_exact_mass 3.300361e+02 ;
+            schema:inChI "InChI=1S/C10H19O6PS2/c1-5-15-9(11)7-8(10(12)16-6-2)19-17(18,13-3)14-4/h8H,5-7H2,1-4H3" ;
+            schema:molecularFormula "C10H19O6PS2" ;
+            schema:name "Diethyl 2-dimethoxyphosphinothioylsulfanylbutanedioate",
+                "Malathion" ;
+            schema:smiles "O=C(OCC)CC(SP(=S)(OC)OC)C(=O)OCC" ] ;
+    mbo:has_peak [ mbo:intensity 4.87514e+05 ;
+            mbo:mz 7.895918e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 161 ],
+        [ mbo:intensity 2.049771e+06 ;
+            mbo:mz 9.493643e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 675 ],
+        [ mbo:intensity 3.03339e+06 ;
+            mbo:mz 1.249833e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.76771e+05 ;
+            mbo:mz 2.030387e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 6.0634e+04 ;
+            mbo:mz 2.122592e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 5.5148e+04 ;
+            mbo:mz 3.292321e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 18 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.249833e+02 ;
+            mbo:precursor_mz 3.290288e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00dl-7910000000-61860af50e819682e55f" ;
+    rdfs:comment "CONFIDENCE Standard Compound (Level 1)" ;
+    skos:definition "Malathion; LC-ESI-QFT; MS2; CE: Ramp 20%-70% (nominal); R=30000; [M-H]-" .
+

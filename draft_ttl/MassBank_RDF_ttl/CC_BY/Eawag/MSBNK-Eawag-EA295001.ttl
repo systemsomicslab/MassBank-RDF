@@ -1,0 +1,104 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA295001 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA295001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "16.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chlorpyrifos",
+                "diethoxy-sulfanylidene-(3,5,6-trichloropyridin-2-yl)oxy-{5}-phosphane" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.489263e+02 ;
+            rdfs:seeAlso cas:2921-88-2,
+                chemspider:2629,
+                pubchem:CID2730 ;
+            schema:inChI "InChI=1S/C9H11Cl3NO3PS/c1-3-14-17(18,15-4-2)16-9-7(11)5-6(10)8(12)13-9/h5H,3-4H2,1-2H3" ;
+            schema:inChIKey inchikey:SBPBAQFWLVIOKP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H11Cl3NO3PS" ;
+            schema:name "Chlorpyrifos",
+                "diethoxy-sulfanylidene-(3,5,6-trichloropyridin-2-yl)oxy-{5}-phosphane" ;
+            schema:smiles "Clc1c(OP(=S)(OCC)OCC)nc(Cl)c(Cl)c1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 4.65517e+04 ;
+            mbo:mz 9.69508e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.052178e+06 ;
+            mbo:mz 2.93871e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 187 ],
+        [ mbo:intensity 4.054241e+05 ;
+            mbo:mz 3.038919e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.096751e+07 ;
+            mbo:mz 3.219025e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.84935e+04 ;
+            mbo:mz 1.249821e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.30352e+04 ;
+            mbo:mz 1.710242e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.341253e+06 ;
+            mbo:mz 1.979275e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 6.22661e+04 ;
+            mbo:mz 2.139043e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.51609e+04 ;
+            mbo:mz 2.259586e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.49034e+04 ;
+            mbo:mz 2.419369e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.22452e+04 ;
+            mbo:mz 2.729818e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.08532e+05 ;
+            mbo:mz 2.758606e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.499337e+02 ;
+            mbo:precursor_mz 3.499336e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-00di-0119000000-40638c6cc56c702af00f" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2950" ;
+    skos:definition "Chlorpyrifos; LC-ESI-ITFT; MS2; CE: 35%; R=7500; [M+H]+" .
+

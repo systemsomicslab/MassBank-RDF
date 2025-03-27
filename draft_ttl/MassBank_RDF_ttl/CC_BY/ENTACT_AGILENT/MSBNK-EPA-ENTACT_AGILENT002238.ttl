@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT002238 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT002238" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "C.I. Disperse Orange 25",
+                "DTXSID5051999" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.231382e+02 ;
+            rdfs:seeAlso cas:31482-56-1,
+                pubchem:CID92278 ;
+            schema:inChI "InChI=1S/C17H17N5O2/c1-2-21(13-3-12-18)16-8-4-14(5-9-16)19-20-15-6-10-17(11-7-15)22(23)24/h4-11H,2-3,13H2,1H3/b20-19+" ;
+            schema:inChIKey inchikey:ZSPPPAFDNHYXNW-FMQUCBEESA-N ;
+            schema:molecularFormula "C17H17N5O2" ;
+            schema:name "C.I. Disperse Orange 25",
+                "DTXSID5051999" ;
+            schema:smiles "CCN(CCC#N)C1C=CC(=CC=1)/N=N/C1C=CC(=CC=1)[N+]([O-])=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.339148e+00 ;
+            mbo:mz 9.202567e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 8.078272e+00 ;
+            mbo:mz 1.220237e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 2.732427e+00 ;
+            mbo:mz 1.330886e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 3.698027e+00 ;
+            mbo:mz 1.340964e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.705107e+00 ;
+            mbo:mz 2.37126e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 5.103287e+00 ;
+            mbo:mz 2.550877e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.83119e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.441911e+00 ;
+            mbo:mz 2.841268e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.469189e+01 ;
+            mbo:mz 3.241455e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 147 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.241455e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-001i-0191000000-de80e69372533c4daeec" ;
+    skos:definition "C.I. Disperse Orange 25; ESI-QTOF; MS2; CE: 20; [M+H]+" .
+

@@ -1,0 +1,83 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00039 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi, Y., Horiyama, S, et al, Mukogawa Women's University" ;
+    dcterms:date "2017-07-13 (Created 2016-10-24)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00039" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Chem. Pharm. Bull, 2013, 61 (1), pp 85-89. DOI: 10.1248/cpb.c15-00986" ] ;
+    dcterms:rights "Takahashi, Y., Horiyama, S, et al, Mukogawa Women's University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Quattro Premier, Micromass. Alliance HT 2795,Waters" ;
+            mbo:collision_energy "13 eV" ;
+            mbo:column_name "C18(ODS), Cosmosil 5C18-AR-II, 4.6 x 150 mm, 4.4 micrometer" ;
+            mbo:flow_gradient "A: 0.05%HCOOH, B: CH3OH, linear gradient 5% B - 40% B - 95% B - 5% B" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "11.11 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-(3-Oxobutyl)-tyrosine",
+                "[3-(4'-Hydroxyphenyl)-2-(3''-oxobutylamino)-propanoic acid]" ;
+            mbo:ch_compound_class "Natural Product; amino acid derivative" ;
+            mbo:ch_exact_mass 2.511158e+02 ;
+            rdfs:seeAlso pubchem:CID133052748 ;
+            schema:inChI "InChI=1S/C13H17NO4/c1-9(15)6-7-14-12(13(17)18)8-10-2-4-11(16)5-3-10/h2-5,12,14,16H,6-8H2,1H3,(H,17,18)" ;
+            schema:inChIKey inchikey:UTJBBUZXYRKCRR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H17NO4" ;
+            schema:name "N-(3-Oxobutyl)-tyrosine",
+                "[3-(4'-Hydroxyphenyl)-2-(3''-oxobutylamino)-propanoic acid]" ;
+            schema:smiles "CC(=O)CCNC(C(O)=O)Cc(c1)ccc(O)c1" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 8.79e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 1.229e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 8.89e+03 ;
+            mbo:mz 1.48e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 998 ],
+        [ mbo:intensity 3.89e+02 ;
+            mbo:mz 1.65e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.57e+02 ;
+            mbo:mz 1.66e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 8.9e+03 ;
+            mbo:mz 1.941e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.47e+02 ;
+            mbo:mz 2.062e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 5.1e+01 ;
+            mbo:mz 2.081e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.77e+02 ;
+            mbo:mz 2.522e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 87 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.521241e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0007-0900000000-06561222f01e2dd701e0" ;
+    skos:definition "N-(3-Oxobutyl)-tyrosine; LC-ESI-QQ; MS2; [M+H]+; Positive" .
+

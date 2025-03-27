@@ -1,0 +1,101 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002101 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Vaidotas Kisielius, Xiaomeng Liang, Mulatu Yohannes Nanusha, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002101" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "80 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "11.599 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Valerophenone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.621045e+02 ;
+            rdfs:seeAlso pubchem:CID66093 ;
+            schema:inChI "InChI=1S/C11H14O/c1-2-3-9-11(12)10-7-5-4-6-8-10/h4-8H,2-3,9H2,1H3" ;
+            schema:inChIKey inchikey:XKGLSKVNOSHTAD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H14O" ;
+            schema:name "Valerophenone" ;
+            schema:smiles "CCCCC(=O)C1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.383886e+05 ;
+            mbo:mz 5.70698e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 802 ],
+        [ mbo:intensity 2.75885e+04 ;
+            mbo:mz 1.210649e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 2.2035e+03 ;
+            mbo:mz 1.211012e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.1114e+03 ;
+            mbo:mz 1.351167e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.72392e+05 ;
+            mbo:mz 1.451013e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.3195e+03 ;
+            mbo:mz 6.70543e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.34191e+04 ;
+            mbo:mz 7.90543e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 7.94141e+04 ;
+            mbo:mz 8.50648e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 460 ],
+        [ mbo:intensity 3.79759e+04 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 220 ],
+        [ mbo:intensity 2.04295e+04 ;
+            mbo:mz 1.050699e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 118 ],
+        [ mbo:intensity 1.182571e+05 ;
+            mbo:mz 1.070492e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 685 ],
+        [ mbo:intensity 1.27028e+04 ;
+            mbo:mz 1.1707e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 74 ],
+        [ mbo:intensity 8.7375e+03 ;
+            mbo:mz 1.190857e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 51 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.403515e+02 ;
+            mbo:precursor_mz 1.631117e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0a4j-6900000000-b5893bbed00215017cce" ;
+    rdfs:comment "INTERNAL_ID 19" ;
+    skos:definition "Valerophenone; LC-ESI-ITFT; MS2; CE: 80%; R=15000; [M+H]+" .
+

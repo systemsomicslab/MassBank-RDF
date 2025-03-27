@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO000835 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO000835" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Glyoxalate",
+                "Glyoxylate",
+                "Glyoxylic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 7.400039e+01 ;
+            rdfs:seeAlso cas:298-12-4,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3350> ;
+            schema:inChI "InChI=1S/C2H2O3/c3-1-2(4)5/h1H,(H,4,5)" ;
+            schema:inChIKey inchikey:HHLFWLYXYJOTON-UHFFFAOYSA-N ;
+            schema:molecularFormula "C2H2O3" ;
+            schema:name "Glyoxalate",
+                "Glyoxylate",
+                "Glyoxylic acid" ;
+            schema:smiles "O=CC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.47525e+04 ;
+            mbo:mz 4.3e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.351486e+06 ;
+            mbo:mz 4.51e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 8.9109e+05 ;
+            mbo:mz 7.24e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 4.332678e+07 ;
+            mbo:mz 7.3e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.9604e+04 ;
+            mbo:mz 8.44e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 7.3e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-00di-9000000000-9b5825d5d9d8b094fefa" ;
+    rdfs:comment "KEIO_ID G013" ;
+    skos:definition "Glyoxylic acid; LC-ESI-QQ; MS2; CE:10 V; [M-H]-" .
+

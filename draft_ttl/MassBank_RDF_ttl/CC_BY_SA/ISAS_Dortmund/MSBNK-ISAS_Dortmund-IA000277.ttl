@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000277 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000277" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive HF, Thermo Scientific [MS:1002523]" ;
+            mbo:collision_energy "10.0 eV" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "9(10)-EpOME-[d4]" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 2.962351e+02 ;
+            rdfs:seeAlso pubchem:CID6246154 ;
+            schema:inChI "InChI=1S/C18H32O3/c1-2-3-4-5-7-10-13-16-17(21-16)14-11-8-6-9-12-15-18(19)20/h7,10,16-17H,2-6,8-9,11-15H2,1H3,(H,19,20)/b10-7-" ;
+            schema:inChIKey inchikey:FBUKMFOXMZRGRB-YFHOEESVSA-N ;
+            schema:molecularFormula "C18H32O3" ;
+            schema:name "9(10)-EpOME-[d4]" ;
+            schema:smiles "CCCCC\\C=C/CC1OC1CCCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.605657e+05 ;
+            mbo:mz 1.72109e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 4.886972e+03 ;
+            mbo:mz 1.851151e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.285223e+03 ;
+            mbo:mz 1.981582e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 0 ],
+        [ mbo:intensity 2.093472e+05 ;
+            mbo:mz 2.802358e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 4.912187e+05 ;
+            mbo:mz 2.812419e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 95 ],
+        [ mbo:intensity 5.160569e+06 ;
+            mbo:mz 2.992521e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.99253e+02 ;
+            mbo:precursor_mz 2.99253e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0002-0090000000-8dcb814441609da491d0" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 10.0 eV within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "9(10)-EpOME-[d4]; LC-ESI-QTOF; MS2; CE: 10.0; R=N/A; [M-H]-" .
+

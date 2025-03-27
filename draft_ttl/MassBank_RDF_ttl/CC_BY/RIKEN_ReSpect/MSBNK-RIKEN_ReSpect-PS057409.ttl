@@ -1,0 +1,59 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS057409 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS057409" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "30" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(+-)-Jasmonic acid",
+                "(1R,2R)-3-Oxo-2-(2Z)-2-pentenylcyclopentanacetic Acid",
+                "JA",
+                "Jasmonate" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Carboxylic acid CLASS3 Jasmonic acid" ;
+            mbo:ch_exact_mass 2.10273e+02 ;
+            rdfs:seeAlso cas:6894-38-8,
+                pubchem:CID5281166 ;
+            schema:inChI "InChI=1S/C12H18O3/c1-2-3-4-5-10-9(8-12(14)15)6-7-11(10)13/h3-4,9-10H,2,5-8H2,1H3,(H,14,15)" ;
+            schema:inChIKey inchikey:ZNJFBWYDHIGLCU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H18O3" ;
+            schema:name "(+-)-Jasmonic acid",
+                "(1R,2R)-3-Oxo-2-(2Z)-2-pentenylcyclopentanacetic Acid",
+                "JA",
+                "Jasmonate" ;
+            schema:smiles "CCC=CCC1C(CCC1=O)CC(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.8223e+04 ;
+            mbo:mz 5.8e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 140 ],
+        [ mbo:intensity 1.30114e+05 ;
+            mbo:mz 5.9e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.0925e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-dc5dd73bc5c9b74ebc3c" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "(1R,2R)-3-Oxo-2-(2Z)-2-pentenylcyclopentanacetic Acid, (+-)-Jasmonic acid, JA, Jasmonate; LC-ESI-QQ; MS2" .
+

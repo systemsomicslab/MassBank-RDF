@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001989 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001989" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "20 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Amino-3-methylbutyric acid",
+                "L-Valine",
+                "Val" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.17079e+02 ;
+            rdfs:seeAlso cas:72-18-4,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:3483> ;
+            schema:inChI "InChI=1S/C5H11NO2/c1-3(2)4(6)5(7)8/h3-4H,6H2,1-2H3,(H,7,8)/t4-/m0/s1" ;
+            schema:inChIKey inchikey:KZSNJWFQEVHDMF-BYPYZUCNSA-N ;
+            schema:molecularFormula "C5H11NO2" ;
+            schema:name "2-Amino-3-methylbutyric acid",
+                "L-Valine",
+                "Val" ;
+            schema:smiles "CC(C)[C@H](N)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 4.48e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 5.9406e+04 ;
+            mbo:mz 7.01e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 5.9406e+04 ;
+            mbo:mz 7.21e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 9.901e+03 ;
+            mbo:mz 7.86e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.148521e+06 ;
+            mbo:mz 1.161e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.16e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-014i-0900000000-fd0315877791da7d0f73" ;
+    rdfs:comment "KEIO_ID V001" ;
+    skos:definition "L-Valine; LC-ESI-QQ; MS2; CE:20 V; [M-H]-" .
+

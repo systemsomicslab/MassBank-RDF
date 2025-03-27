@@ -1,0 +1,76 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP031302 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP031302" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.629 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Methyladenosine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.811124e+02 ;
+            rdfs:seeAlso pubchem:CID27476 ;
+            schema:inChI "InChI=1S/C11H15N5O4/c1-15-3-14-10-6(9(15)12)13-4-16(10)11-8(19)7(18)5(2-17)20-11/h3-5,7-8,11-12,17-19H,2H2,1H3/t5-,7-,8-,11-/m1/s1" ;
+            schema:inChIKey inchikey:GFYLSDSUCHVORB-IOSLPCCCSA-N ;
+            schema:molecularFormula "C11H15N5O4" ;
+            schema:name "1-Methyladenosine" ;
+            schema:smiles "Cn1cnc2c(c1=N)ncn2[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.44e+02 ;
+            mbo:mz 6.90337e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.88e+02 ;
+            mbo:mz 7.30275e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.8e+02 ;
+            mbo:mz 8.50274e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.6e+02 ;
+            mbo:mz 1.480615e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.75512e+05 ;
+            mbo:mz 1.500767e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.1198e+04 ;
+            mbo:mz 1.510799e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 1.5948e+04 ;
+            mbo:mz 2.821192e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 91 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.821192e+02 ;
+            mbo:precursor_mz 2.821197e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0udi-0900000000-edf1ed3ad0d6ac2097de" ;
+    rdfs:comment "INTERNAL_ID 313" ;
+    skos:definition "1-Methyladenosine; LC-ESI-QTOF; MS2; CE: 20; R=; [M+H]+" .
+

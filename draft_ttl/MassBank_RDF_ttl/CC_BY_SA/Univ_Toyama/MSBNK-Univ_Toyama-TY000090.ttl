@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000090 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000090" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1493.000 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2H-1-Benzopyran-2-one, 7-methoxy-8-(3-methyl-2-buten-1-yl)-",
+                "2H-1-Benzopyran-2-one, 7-methoxy-8-(3-methyl-2-butenyl)-",
+                "7-Methoxy-8-(3-methyl-2-butenyl)coumarin",
+                "7-Methoxy-8-isopentenylcoumarin",
+                "8-(3-Methyl-2-butenyl)herniarin",
+                "Coumarin, 7-methoxy-8-(3-methyl-2-butenyl)-",
+                "Osthol",
+                "Osthole",
+                "Ostol",
+                "Ostole" ;
+            mbo:ch_compound_class "Natural Product; Coumarin" ;
+            mbo:ch_exact_mass 2.441099e+02 ;
+            rdfs:seeAlso cas:484-12-8,
+                pubchem:CID10228 ;
+            schema:inChI "InChI=1S/C15H16O3/c1-10(2)4-7-12-13(17-3)8-5-11-6-9-14(16)18-15(11)12/h4-6,8-9H,7H2,1-3H3" ;
+            schema:inChIKey inchikey:MBRLOUHOWLUMFF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H16O3" ;
+            schema:name "2H-1-Benzopyran-2-one, 7-methoxy-8-(3-methyl-2-buten-1-yl)-",
+                "2H-1-Benzopyran-2-one, 7-methoxy-8-(3-methyl-2-butenyl)-",
+                "7-Methoxy-8-(3-methyl-2-butenyl)coumarin",
+                "7-Methoxy-8-isopentenylcoumarin",
+                "8-(3-Methyl-2-butenyl)herniarin",
+                "Coumarin, 7-methoxy-8-(3-methyl-2-butenyl)-",
+                "Osthol",
+                "Osthole",
+                "Ostol",
+                "Ostole" ;
+            schema:smiles "CC(C)=CCc(c(OC)1)c(O2)c(C=CC(=O)2)cc1" ] ;
+    mbo:has_peak [ mbo:intensity 1.355182e+07 ;
+            mbo:mz 1.890554e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 276 ],
+        [ mbo:intensity 4.909853e+07 ;
+            mbo:mz 2.451174e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.091456e+06 ;
+            mbo:mz 2.461207e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 144 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-0290000000-190c9b695e2c448050fb" ;
+    skos:definition "Osthole; LC-ESI-ITTOF; MS; [M+H]+" .
+

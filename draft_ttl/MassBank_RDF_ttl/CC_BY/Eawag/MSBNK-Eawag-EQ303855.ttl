@@ -1,0 +1,78 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ303855 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ303855" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "75 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "5.4 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carbaril",
+                "Carbaryl",
+                "N-methylcarbamic acid 1-naphthalenyl ester" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.01079e+02 ;
+            rdfs:seeAlso cas:63-25-2,
+                chemspider:5899,
+                pubchem:CID6129 ;
+            schema:inChI "InChI=1S/C12H11NO2/c1-13-12(14)15-11-8-4-6-9-5-2-3-7-10(9)11/h2-8H,1H3,(H,13,14)" ;
+            schema:inChIKey inchikey:CVXBEEMKQHEXEN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H11NO2" ;
+            schema:name "Carbaril",
+                "Carbaryl",
+                "N-methylcarbamic acid 1-naphthalenyl ester" ;
+            schema:smiles "c12c(OC(NC)=O)cccc1cccc2" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 7.1396e+03 ;
+            mbo:mz 1.150553e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 4.23395e+05 ;
+            mbo:mz 1.430502e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.507e+02 ;
+            mbo:mz 1.450291e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.07152e+04 ;
+            mbo:mz 1.680455e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.0671e+03 ;
+            mbo:mz 1.820613e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.180311e+02 ;
+            mbo:precursor_mz 2.000717e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0006-0900000000-fb732e2875b9e9397e1b" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3038" ;
+    skos:definition "Carbaryl; LC-ESI-QFT; MS2; CE: 75; R=35000; [M-H]-" .
+

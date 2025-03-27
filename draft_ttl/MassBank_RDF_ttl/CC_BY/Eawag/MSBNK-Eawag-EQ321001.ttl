@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ321001 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ321001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "4.9 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(tert-butylamino)-3-[(4-morpholin-4-yl-1,2,5-thiadiazol-3-yl)oxy]propan-2-ol",
+                "Timolol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.161569e+02 ;
+            rdfs:seeAlso cas:26839-75-8,
+                chemspider:5278,
+                pubchem:CID5478 ;
+            schema:inChI "InChI=1S/C13H24N4O3S/c1-13(2,3)14-8-10(18)9-20-12-11(15-21-16-12)17-4-6-19-7-5-17/h10,14,18H,4-9H2,1-3H3" ;
+            schema:inChIKey inchikey:BLJRIMJGRPQVNF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H24N4O3S" ;
+            schema:name "1-(tert-butylamino)-3-[(4-morpholin-4-yl-1,2,5-thiadiazol-3-yl)oxy]propan-2-ol",
+                "Timolol" ;
+            schema:smiles "CC(C)(C)NCC(O)COC1=NSN=C1N1CCOCC1" ] ;
+    mbo:has_peak [ mbo:intensity 5.422394e+06 ;
+            mbo:mz 5.707e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 8.559514e+06 ;
+            mbo:mz 7.40598e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.861703e+06 ;
+            mbo:mz 1.301226e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.061104e+06 ;
+            mbo:mz 2.440744e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.528405e+08 ;
+            mbo:mz 2.611017e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 1.503532e+09 ;
+            mbo:mz 3.171642e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.17164e+02 ;
+            mbo:precursor_mz 3.171642e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-014i-0009000000-26e849bd6770b706d97e" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3210" ;
+    skos:definition "Timolol; LC-ESI-QFT; MS2; CE: 15; R=35000; [M+H]+" .
+

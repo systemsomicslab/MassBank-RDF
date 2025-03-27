@@ -1,0 +1,77 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001137 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001137" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "30 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "L-Serine O-sulfate",
+                "Serine O-sulfate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.849994e+02 ;
+            rdfs:seeAlso <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5666> ;
+            schema:inChI "InChI=1S/C3H7NO6S/c4-2(3(5)6)1-10-11(7,8)9/h2H,1,4H2,(H,5,6)(H,7,8,9)/t2-/m0/s1" ;
+            schema:inChIKey inchikey:LFZGUGJDVUUGLK-REOHCLBHSA-N ;
+            schema:molecularFormula "C3H7NO6S" ;
+            schema:name "L-Serine O-sulfate",
+                "Serine O-sulfate" ;
+            schema:smiles "N[C@@H](COS(O)(=O)=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 3.52e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.9802e+05 ;
+            mbo:mz 7.39e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 4.45545e+04 ;
+            mbo:mz 7.88e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.47525e+04 ;
+            mbo:mz 7.93e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 9.40595e+04 ;
+            mbo:mz 9.64e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 6.782185e+06 ;
+            mbo:mz 9.71e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.306935e+05 ;
+            mbo:mz 1.043e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 3.019805e+05 ;
+            mbo:mz 1.33e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.158417e+06 ;
+            mbo:mz 1.481e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 171 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.84e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-9200000000-16908fc671b0f1897fde" ;
+    rdfs:comment "KEIO_ID H096" ;
+    skos:definition "Serine O-sulfate; LC-ESI-QQ; MS2; CE:30 V; [M-H]-" .
+

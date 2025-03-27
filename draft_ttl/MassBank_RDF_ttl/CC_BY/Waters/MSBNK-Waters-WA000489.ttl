@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000489 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000489" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "ZQ, Waters" ;
+            mbo:column_name "2.1 mm id - 3. 5{mu}m XTerra C18MS" ;
+            mbo:instrument_type "LC-ESI-Q" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "12.850 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Oxomemazine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.301402e+02 ;
+            rdfs:seeAlso cas:3689-50-7 ;
+            schema:inChI "InChI=1S/C18H22N2O2S/c1-14(12-19(2)3)13-20-15-8-4-6-10-17(15)23(21,22)18-11-7-5-9-16(18)20/h4-11,14H,12-13H2,1-3H3" ;
+            schema:inChIKey inchikey:QTQPVLDZQVPLGV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H22N2O2S" ;
+            schema:name "Oxomemazine" ;
+            schema:smiles "CN(C)CC(C)CN(c21)c(c3)c(ccc3)S(=O)(=O)c(cccc2)1" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 1e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 3.33e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 6.7e+01 ;
+            mbo:mz 1.01e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 7.8e+01 ;
+            mbo:mz 1.8e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 78 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.32e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.96e+02 ;
+            mbo:mz 2.44e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 196 ],
+        [ mbo:intensity 3.1e+01 ;
+            mbo:mz 2.45e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.2e+01 ;
+            mbo:mz 2.46e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.92e+02 ;
+            mbo:mz 3.31e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 4.3e+01 ;
+            mbo:mz 3.32e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 43 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0udi-0911000000-d11b4c2bda5a9c2fb58d" ;
+    skos:definition "Oxomemazine; LC-ESI-Q; MS; POS; 60 V" .
+

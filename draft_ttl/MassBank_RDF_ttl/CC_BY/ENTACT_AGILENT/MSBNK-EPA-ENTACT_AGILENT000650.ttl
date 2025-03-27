@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000650 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000650" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Ethenylbenzenesulfonic acid",
+                "DTXSID7044635" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.840194e+02 ;
+            rdfs:seeAlso cas:98-70-4 ;
+            schema:inChI "InChI=1S/C8H8O3S/c1-2-7-3-5-8(6-4-7)12(9,10)11/h2-6H,1H2,(H,9,10,11)" ;
+            schema:inChIKey inchikey:MAGFQRLKWCCTQJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H8O3S" ;
+            schema:name "4-Ethenylbenzenesulfonic acid",
+                "DTXSID7044635" ;
+            schema:smiles "C=CC1=CC=C(C=C1)S(O)(=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.045182e+00 ;
+            mbo:mz 6.503967e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.995736e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.80656e+00 ;
+            mbo:mz 7.999038e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.538908e+00 ;
+            mbo:mz 8.096519e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 9.400485e+00 ;
+            mbo:mz 9.303459e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 1.264121e+01 ;
+            mbo:mz 1.190502e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 126 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.830121e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-004i-9000000000-fc26e1c12bc784c0cda8" ;
+    skos:definition "4-Ethenylbenzenesulfonic acid; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

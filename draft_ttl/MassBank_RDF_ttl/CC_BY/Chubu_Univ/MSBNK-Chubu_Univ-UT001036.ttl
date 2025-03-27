@@ -1,0 +1,98 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Chubu_Univ-UT001036 a mbo:MassSpectrum ;
+    dcterms:creator "Taguchi R, Graduate School of Medicine, The University of Tokyo" ;
+    dcterms:date "2016-01-19 (Created 2010-05-07, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Chubu_Univ-UT001036" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Taguchi, R.; Ishikawa, M. Precise and Global Identification of Phospholipid Molecular Species by an Orbitrap Mass Spectrometer and Automated Search Engine Lipid Search. Journal of Chromatography A 2010, 1217 (25), 4229–39. DOI:10.1016/j.chroma.2010.04.034" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-10ADVPmicro HPLC, Shimadzu; LTQ Orbitrap, Thermo Scientific" ;
+            mbo:collision_energy "30%" ;
+            mbo:column_name "Develosil C30, Nomura Chemical" ;
+            mbo:flow_gradient " add 95/5 at 0 min, 70/30 at 40 min, 50/50 at 41 min, 50/50 at 90 min" ;
+            mbo:flow_rate " add 100 uL/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "16.29 min (in paper: 16 min)" ;
+            mbo:solvent "A acetonitrile-methanol-water (19:19:2) with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)",
+                "B 2-propanol with 0.1% acetic acid and 0.1% ammonium hydroxide (28%)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Phosphatidylcholine 17:1-18:2" ;
+            mbo:ch_compound_class "Natural Product; Glycerophospholipids; Glycerophosphocholines; Diacylglycerophosphocholines" ;
+            mbo:ch_exact_mass 7.695622e+02 ;
+            schema:inChI "InChI=1S/C43H80NO8P/c1-6-8-10-12-14-16-18-20-22-24-26-28-30-32-34-36-43(46)52-41(40-51-53(47,48)50-38-37-44(3,4)5)39-49-42(45)35-33-31-29-27-25-23-21-19-17-15-13-11-9-7-2/h24,26,29-32,41H,6-23,25,27-28,33-40H2,1-5H3/b26-24-,31-29-,32-30-" ;
+            schema:inChIKey inchikey:FNRBLPPAKRRBCG-QGRKPBPISA-N ;
+            schema:molecularFormula "C43H80NO8P" ;
+            schema:name "Phosphatidylcholine 17:1-18:2" ;
+            schema:smiles "C(COP(OCC(COC(=O)CCC=CCCCCCCCCCCCC)OC(=O)CCC=CCC=CCCCCCCCCCC)([O-1])=O)[N+1](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 8.1e+00 ;
+            mbo:mz 2.7956e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.357e+03 ;
+            mbo:mz 7.5416e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.05e+01 ;
+            mbo:mz 7.5501e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 4.64e+01 ;
+            mbo:mz 7.6936e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.43e+01 ;
+            mbo:mz 7.7827e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.82e+01 ;
+            mbo:mz 3.9114e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.54e+01 ;
+            mbo:mz 3.9234e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 7.4e+00 ;
+            mbo:mz 4.6319e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 4.3e+01 ;
+            mbo:mz 5.1797e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.25e+01 ;
+            mbo:mz 5.9028e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.7e+01 ;
+            mbo:mz 6.8293e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 5.8e+00 ;
+            mbo:mz 7.4122e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.09e+01 ;
+            mbo:mz 7.4216e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 6 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.2858e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0udi-0000000900-3be5f631824c3c892ab1" ;
+    skos:definition "Phosphatidylcholine 17:1-18:2; LC-ESI-ITFT; MS2; [M+CH3COO]-; RT: 16.00; Exp: 1" .
+

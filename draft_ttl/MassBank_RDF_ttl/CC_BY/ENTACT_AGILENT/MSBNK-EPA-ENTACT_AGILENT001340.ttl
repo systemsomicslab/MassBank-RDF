@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001340 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001340" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acetoacetanilide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.77079e+02 ;
+            rdfs:seeAlso cas:102-01-2,
+                pubchem:CID7592 ;
+            schema:inChI "InChI=1S/C10H11NO2/c1-8(12)7-10(13)11-9-5-3-2-4-6-9/h2-6H,7H2,1H3,(H,11,13)" ;
+            schema:inChIKey inchikey:DYRDKSSFIWVSNM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H11NO2" ;
+            schema:name "Acetoacetanilide" ;
+            schema:smiles "CC(=O)CC(=O)NC1C=CC=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 1.272901e+00 ;
+            mbo:mz 3.902402e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.701096e+01 ;
+            mbo:mz 4.100329e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 170 ],
+        [ mbo:intensity 1.283002e+00 ;
+            mbo:mz 5.703459e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 4.003731e+00 ;
+            mbo:mz 6.503967e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.26172e+01 ;
+            mbo:mz 8.301385e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 9.205057e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.760717e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-9000000000-7de0d336f41cd267df35" ;
+    skos:definition "Acetoacetanilide; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

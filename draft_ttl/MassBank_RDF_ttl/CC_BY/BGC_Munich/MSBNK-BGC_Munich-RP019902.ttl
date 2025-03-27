@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP019902 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP019902" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "20" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.087 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Dibutylphthalate",
+                "dibutyl benzene-1,2-dicarboxylate",
+                "dibutyl phthalate" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.781518e+02 ;
+            rdfs:seeAlso cas:84-74-2,
+                chemspider:13837319,
+                pubchem:CID3026 ;
+            schema:inChI "InChI=1S/C16H22O4/c1-3-5-11-19-15(17)13-9-7-8-10-14(13)16(18)20-12-6-4-2/h7-10H,3-6,11-12H2,1-2H3" ;
+            schema:inChIKey inchikey:DOIRQSBPFJWKBE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H22O4" ;
+            schema:name "Dibutylphthalate",
+                "dibutyl benzene-1,2-dicarboxylate",
+                "dibutyl phthalate" ;
+            schema:smiles "CCCCOC(=O)c1ccccc1C(=O)OCCCC" ] ;
+    mbo:has_peak [ mbo:intensity 3.334e+03 ;
+            mbo:mz 6.5038e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.0618e+04 ;
+            mbo:mz 1.210285e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.942328e+06 ;
+            mbo:mz 1.49024e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.72548e+05 ;
+            mbo:mz 1.500268e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 2.5472e+04 ;
+            mbo:mz 1.510287e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 5.136e+03 ;
+            mbo:mz 1.670338e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 6.856e+03 ;
+            mbo:mz 2.050861e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.49024e+02 ;
+            mbo:precursor_mz 2.791591e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0002-0900000000-eba5b1ff39b235d2ecdd" ;
+    rdfs:comment "INTERNAL_ID 199" ;
+    skos:definition "Dibutylphthalate; LC-ESI-QTOF; MS2; CE: 20; R=; [M+H]+" .
+

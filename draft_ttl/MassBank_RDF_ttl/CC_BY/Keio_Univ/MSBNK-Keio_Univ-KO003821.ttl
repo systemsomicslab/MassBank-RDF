@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO003821 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO003821" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "40 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-Oxoproline",
+                "5-Pyrrolidone-2-carboxylic acid",
+                "L-5-Oxoproline",
+                "L-5-Oxoproline(2)",
+                "Pyroglutamate",
+                "Pyroglutamic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.290426e+02 ;
+            rdfs:seeAlso cas:98-79-3,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:4992> ;
+            schema:inChI "InChI=1S/C5H7NO3/c7-4-2-1-3(6-4)5(8)9/h3H,1-2H2,(H,6,7)(H,8,9)/t3-/m0/s1" ;
+            schema:inChIKey inchikey:ODHCTXKNWHHXJC-VKHMYHEASA-N ;
+            schema:molecularFormula "C5H7NO3" ;
+            schema:name "5-Oxoproline",
+                "5-Pyrrolidone-2-carboxylic acid",
+                "L-5-Oxoproline",
+                "L-5-Oxoproline(2)",
+                "Pyroglutamate",
+                "Pyroglutamic acid" ;
+            schema:smiles "O=C(C1)NC(C1)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4.9505e+04 ;
+            mbo:mz 4.11e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 624 ],
+        [ mbo:intensity 2.47525e+04 ;
+            mbo:mz 4.25e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 312 ],
+        [ mbo:intensity 4.45545e+04 ;
+            mbo:mz 6.49e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 562 ],
+        [ mbo:intensity 7.9208e+04 ;
+            mbo:mz 6.93e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.9307e+04 ;
+            mbo:mz 7.71e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 874 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.3e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-02vl-9000000000-ed47ec6e675eb338da19" ;
+    rdfs:comment "KEIO_ID P073" ;
+    skos:definition "L-5-Oxoproline; LC-ESI-QQ; MS2; CE:40 V; [M+H]+" .
+

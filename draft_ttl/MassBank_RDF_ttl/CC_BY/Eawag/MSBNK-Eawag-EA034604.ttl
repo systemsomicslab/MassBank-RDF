@@ -1,0 +1,102 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA034604 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA034604" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "6.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,3,5-Triazine-2,4-diamine, N-(1,1-dimethylethyl)-N'-ethyl-6-methoxy-",
+                "2-N-tert-butyl-4-N-ethyl-6-methoxy-1,3,5-triazine-2,4-diamine",
+                "Terbumeton" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.251584e+02 ;
+            rdfs:seeAlso cas:33693-04-8,
+                chemspider:33617,
+                pubchem:CID36584 ;
+            schema:inChI "InChI=1S/C10H19N5O/c1-6-11-7-12-8(15-10(2,3)4)14-9(13-7)16-5/h6H2,1-5H3,(H2,11,12,13,14,15)" ;
+            schema:inChIKey inchikey:BCQMBFHBDZVHKU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H19N5O" ;
+            schema:name "1,3,5-Triazine-2,4-diamine, N-(1,1-dimethylethyl)-N'-ethyl-6-methoxy-",
+                "2-N-tert-butyl-4-N-ethyl-6-methoxy-1,3,5-triazine-2,4-diamine",
+                "Terbumeton" ;
+            schema:smiles "c1(nc(nc(n1)OC)NCC)NC(C)(C)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 1.021343e+05 ;
+            mbo:mz 6.90084e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.832146e+07 ;
+            mbo:mz 1.701039e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.870992e+06 ;
+            mbo:mz 2.261664e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 242 ],
+        [ mbo:intensity 5.77239e+04 ;
+            mbo:mz 7.10603e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.110981e+05 ;
+            mbo:mz 7.50554e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 8.31888e+04 ;
+            mbo:mz 8.5076e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 4.09828e+04 ;
+            mbo:mz 9.70397e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.58547e+04 ;
+            mbo:mz 1.000508e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.656796e+05 ;
+            mbo:mz 1.140662e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.583434e+05 ;
+            mbo:mz 1.280817e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.01855e+05 ;
+            mbo:mz 1.420724e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.261662e+02 ;
+            mbo:precursor_mz 2.261662e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-00di-0920000000-f0bb204e77b324c5bb36" ;
+    rdfs:comment "EAWAG_UCHEM_ID 346" ;
+    skos:definition "Terbumeton; LC-ESI-ITFT; MS2; CE: 45%; R=7500; [M+H]+" .
+

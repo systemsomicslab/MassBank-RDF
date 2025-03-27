@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00219 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2020-03-18"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00219" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "10 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cumyluron" ;
+            mbo:ch_compound_class "Non-natural product" ;
+            mbo:ch_exact_mass 3.021186e+02 ;
+            rdfs:seeAlso cas:99485-76-4,
+                chemspider:9883971,
+                pubchem:CID11709249 ;
+            schema:inChI "InChI=1S/C17H19ClN2O/c1-17(2,14-9-4-3-5-10-14)20-16(21)19-12-13-8-6-7-11-15(13)18/h3-11H,12H2,1-2H3,(H2,19,20,21)" ;
+            schema:inChIKey inchikey:VYNOULHXXDFBLU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H19ClN2O" ;
+            schema:name "Cumyluron" ;
+            schema:smiles "CC(C)(c1ccccc1)NC(=O)NCc2ccccc2Cl" ] ;
+    mbo:has_peak [ mbo:intensity 2.434e+01 ;
+            mbo:mz 1.850478e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 253 ],
+        [ mbo:intensity 9.6175e+01 ;
+            mbo:mz 3.031254e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.031259e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0udi-0209000000-464b5680ea18601f8d64" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 19HP8024 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Cumyluron; ESI-QTOF; MS2; POSITIVE; [M+H]+; CID; 10 V" .
+

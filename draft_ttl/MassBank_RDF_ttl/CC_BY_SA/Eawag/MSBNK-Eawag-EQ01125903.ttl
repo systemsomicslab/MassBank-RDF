@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01125903 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01125903" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "7.522 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(3,4-dimethoxyphenyl)-3-(4-fluorophenyl)-1-morpholin-4-ylprop-2-en-1-one",
+                "Flumorph",
+                "Fumalin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.711533e+02 ;
+            rdfs:seeAlso cas:211867-47-9,
+                chemspider:16738629,
+                pubchem:CID20056423 ;
+            schema:inChI "InChI=1S/C21H22FNO4/c1-25-19-8-5-16(13-20(19)26-2)18(15-3-6-17(22)7-4-15)14-21(24)23-9-11-27-12-10-23/h3-8,13-14H,9-12H2,1-2H3" ;
+            schema:inChIKey inchikey:BKBSMMUEEAWFRX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H22FNO4" ;
+            schema:name "3-(3,4-dimethoxyphenyl)-3-(4-fluorophenyl)-1-morpholin-4-ylprop-2-en-1-one",
+                "Flumorph",
+                "Fumalin" ;
+            schema:smiles "COC1=C(C=C(C=C1)C(=CC(=O)N2CCOCC2)C3=CC=C(C=C3)F)OC" ] ;
+    mbo:has_peak [ mbo:intensity 6.044034e+06 ;
+            mbo:mz 7.00287e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.1633e+06 ;
+            mbo:mz 2.700682e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 9.280059e+07 ;
+            mbo:mz 2.850923e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.905669e+05 ;
+            mbo:mz 3.72161e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 6.97933e+05 ;
+            mbo:mz 1.090446e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 8.006781e+06 ;
+            mbo:mz 1.14055e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 9.967439e+06 ;
+            mbo:mz 1.23024e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 4.508057e+07 ;
+            mbo:mz 1.650546e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 485 ],
+        [ mbo:intensity 1.029351e+06 ;
+            mbo:mz 2.260788e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 2.22253e+06 ;
+            mbo:mz 2.420734e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 1.116383e+06 ;
+            mbo:mz 2.54073e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.130962e+07 ;
+            mbo:mz 2.570974e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 122 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.742527e+02 ;
+            mbo:precursor_mz 3.721606e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-000i-0590000000-ffe89633af6ae6d75387" ;
+    rdfs:comment "UCHEM_ID 11259" ;
+    skos:definition "Flumorph; LC-ESI-QFT; MS2; CE: 45%; R=17500; [M+H]+" .
+

@@ -1,0 +1,104 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ET407201 a mbo:MassSpectrum ;
+    dcterms:creator "B. Clerc, R. Gulde, B. Lauper [com],  C. McArdell, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2020-12-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ET407201" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Gulde et al. 2020, Formation of transformation products during ozonation of secondary wastewater effluent and their fate in post-treatment: From laboratory- to full-scale, Water Research" ] ;
+    dcterms:rights "Copyright (C) Eawag 2020 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "C18 Atlantis T3 5 um, 3x150 mm, Waters" ;
+            mbo:flow_gradient "260/40 at 0 min, 260/40 at 5 min, 15/285 at 20 min, 15/285 at 29 min, 260/40 at 29.5 min, 260/40 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.779 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-7-(4-(4-fluorophenyl)-6-isopropyl-2-(N-methylmethylsulfonamido)pyrimidin-5-yl)-3,5-dihydroxyhept-6-enoic acid -C11H13FO",
+                "ROS_n_300.0656_17.7",
+                "Rosuvastatin -C11H13FO" ;
+            mbo:ch_compound_class "identified ozonation transformation product" ;
+            mbo:ch_exact_mass 3.010732e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C11H15N3O5S" ;
+            schema:name "(E)-7-(4-(4-fluorophenyl)-6-isopropyl-2-(N-methylmethylsulfonamido)pyrimidin-5-yl)-3,5-dihydroxyhept-6-enoic acid -C11H13FO",
+                "ROS_n_300.0656_17.7",
+                "Rosuvastatin -C11H13FO" ;
+            schema:smiles "N/A" ] ;
+    mbo:has_peak [ mbo:intensity 3.95407e+04 ;
+            mbo:mz 6.39624e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 9.6657e+03 ;
+            mbo:mz 1.600884e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 7.5991e+03 ;
+            mbo:mz 1.760832e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 6.342379e+05 ;
+            mbo:mz 1.780986e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.3978e+03 ;
+            mbo:mz 2.22088e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.12112e+05 ;
+            mbo:mz 7.8986e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 334 ],
+        [ mbo:intensity 5.0305e+03 ;
+            mbo:mz 8.50407e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.586562e+05 ;
+            mbo:mz 1.080125e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 250 ],
+        [ mbo:intensity 1.35502e+04 ;
+            mbo:mz 1.090406e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.059918e+05 ;
+            mbo:mz 1.470565e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 167 ],
+        [ mbo:intensity 2.48625e+04 ;
+            mbo:mz 1.480642e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 4.2935e+03 ;
+            mbo:mz 1.490715e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 6.3819e+03 ;
+            mbo:mz 1.501034e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 10 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.10038e+01 ;
+            mbo:precursor_mz 3.00066e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-004i-2900000000-0a5fca2b62f0c908bbac" ;
+    rdfs:comment "UCHEM_ID 4072" ;
+    skos:definition "ROS_n_300.0656_17.7; LC-ESI-QFT; MS2; CE: 35%; R=17500; [M-H]-" .
+

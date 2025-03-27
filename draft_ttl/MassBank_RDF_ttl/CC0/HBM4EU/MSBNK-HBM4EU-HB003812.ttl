@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003812 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003812" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "14.906 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8-benzoyl-2-(1,2-dihydroxyhex-3-enyl)-9-hydroxy-8-methoxy-3-methyl-1-oxa-7-azaspiro[4.4]non-2-ene-4,6-dione",
+                "CID 434331",
+                "Pseurotin A" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.31158e+02 ;
+            rdfs:seeAlso cas:58523-30-1,
+                chemspider:384114,
+                pubchem:CID434331 ;
+            schema:inChI "InChI=1S/C22H25NO8/c1-4-5-11-14(24)15(25)16-12(2)17(26)21(31-16)19(28)22(30-3,23-20(21)29)18(27)13-9-7-6-8-10-13/h5-11,14-15,19,24-25,28H,4H2,1-3H3,(H,23,29)" ;
+            schema:inChIKey inchikey:SLYDIPAXCVVRNY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H25NO8" ;
+            schema:name "8-benzoyl-2-(1,2-dihydroxyhex-3-enyl)-9-hydroxy-8-methoxy-3-methyl-1-oxa-7-azaspiro[4.4]non-2-ene-4,6-dione",
+                "CID 434331",
+                "Pseurotin A" ;
+            schema:smiles "CCC=CC(C(C1=C(C(=O)C2(O1)C(C(NC2=O)(C(=O)C3=CC=CC=C3)OC)O)C)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.9642e+03 ;
+            mbo:mz 2.041802e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.481074e+02 ;
+            mbo:precursor_mz 4.321653e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0udi-0090000000-f59adaee0e2ffd5f748e" ;
+    rdfs:comment "INTERNAL_ID 99" ;
+    skos:definition "Pseurotin A; LC-ESI-ITFT; MS2; CE: 50%; R=7500; [M+H]+" .
+

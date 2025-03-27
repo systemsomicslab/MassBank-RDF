@@ -1,0 +1,105 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N103128_B8BB a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N103128_B8BB" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.237 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "11-Deoxycortisol",
+                "17-hydroxy-17-(2-hydroxyacetyl)-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one",
+                "Reichsteins Substance S" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.462144e+02 ;
+            rdfs:seeAlso cas:152-58-9,
+                chemspider:197564,
+                pubchem:CID227112 ;
+            schema:inChI "InChI=1S/C21H30O4/c1-19-8-5-14(23)11-13(19)3-4-15-16(19)6-9-20(2)17(15)7-10-21(20,25)18(24)12-22/h11,15-17,22,25H,3-10,12H2,1-2H3" ;
+            schema:inChIKey inchikey:WHBHBVVOGNECLV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H30O4" ;
+            schema:name "11-Deoxycortisol",
+                "17-hydroxy-17-(2-hydroxyacetyl)-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one",
+                "Reichsteins Substance S" ;
+            schema:smiles "CC12CCC(=O)C=C1CCC3C2CCC4(C3CCC4(C(=O)CO)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 6.4e+01 ;
+            mbo:mz 1.961291e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 2.635e+02 ;
+            mbo:mz 3.161992e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 278 ],
+        [ mbo:intensity 7.9e+01 ;
+            mbo:mz 3.170815e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 83 ],
+        [ mbo:intensity 2.222e+02 ;
+            mbo:mz 3.271983e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 234 ],
+        [ mbo:intensity 6.2e+01 ;
+            mbo:mz 2.711707e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1.921e+02 ;
+            mbo:mz 2.731834e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 203 ],
+        [ mbo:intensity 1.4e+01 ;
+            mbo:mz 2.841452e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.34e+01 ;
+            mbo:mz 2.861897e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 7.368e+02 ;
+            mbo:mz 2.991659e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 778 ],
+        [ mbo:intensity 2.94e+01 ;
+            mbo:mz 3.00172e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 8.55e+01 ;
+            mbo:mz 3.131796e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 9.467e+02 ;
+            mbo:mz 3.151951e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.571895e+02 ;
+            mbo:precursor_mz 3.452071e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-014j-0059000000-8287819aef776ef90371" ;
+    rdfs:comment "INTERNAL_ID 1031" ;
+    skos:definition "11-Deoxycortisol; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M-H]-" .
+

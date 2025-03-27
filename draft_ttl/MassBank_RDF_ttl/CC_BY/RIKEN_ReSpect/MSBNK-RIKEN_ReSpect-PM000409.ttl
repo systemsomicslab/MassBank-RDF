@@ -1,0 +1,68 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PM000409 a mbo:MassSpectrum ;
+    dcterms:creator "Sanchez-Rabaneda F, et al." ;
+    dcterms:date "2006-04-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PM000409" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sánchez-Rabaneda, F.; Jáuregui, O.; Casals, I.; Andrés-Lacueva, C.; Izquierdo-Pulido, M.; Lamuela-Raventós, R. M. Liquid Chromatographic/Electrospray Ionization Tandem Mass Spectrometric Study of the Phenolic Composition of Cocoa (Theobroma Cacao). Journal of Mass Spectrometry 2003, 38 (1), 35–42. DOI:10.1002/jms.395" ] ;
+    dcterms:rights "Copyright(C) 2012 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent (Waldbronn, Germany) Model 1100; API 3000 triple-quadrupole mass spectrometer (Perkin-Elmer Sciex, Concord, ON, Canada)" ;
+            mbo:collision_energy "-20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ferulic acid" ;
+            mbo:ch_compound_class "CLASS1 Phenylpropanoid CLASS2 Phenylpropanoid monomer CLASS3 Ferulic acid" ;
+            mbo:ch_exact_mass 1.94186e+02 ;
+            rdfs:seeAlso cas:1135-24-6,
+                pubchem:CID445858 ;
+            schema:inChI "InChI=1S/C10H10O4/c1-14-9-6-7(2-4-8(9)11)3-5-10(12)13/h2-6,11H,1H3,(H,12,13)/b5-3+" ;
+            schema:inChIKey inchikey:KSEBMYQBYZTDHS-HWKANZROSA-N ;
+            schema:molecularFormula "C10H10O4" ;
+            schema:name "Ferulic acid" ;
+            schema:smiles "COc1cc(/C=C/C(=O)O)ccc1O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+02 ;
+            mbo:mz 1.34e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 1.49e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 549 ],
+        [ mbo:intensity 2e+01 ;
+            mbo:mz 1.78e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 200 ],
+        [ mbo:intensity 3e+01 ;
+            mbo:mz 1.93e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 300 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.93e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001j-0900000000-2ab98c766c34f58338ff" ;
+    rdfs:comment "726" ;
+    skos:definition "Ferulic acid; LC-ESI-QQ; MS2" .
+

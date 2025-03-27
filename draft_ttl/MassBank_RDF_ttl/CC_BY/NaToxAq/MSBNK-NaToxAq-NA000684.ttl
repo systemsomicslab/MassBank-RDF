@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA000684 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Jawameer Hama, Hubert Schupke, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-02-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA000684" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "85 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "6.379 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1R,4Z,6R,7R,17R)-4-ethylidene-7-hydroxy-6,7-dimethyl-14-oxido-2,9-dioxa-14-azoniatricyclo[9.5.1.0^{14,17}]heptadec-11-ene-3,8-dione",
+                "Senecionine N-oxide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.511682e+02 ;
+            rdfs:seeAlso cas:13354-33-1,
+                chemspider:21865984,
+                pubchem:CID5380876 ;
+            schema:inChI "InChI=1S/C18H25NO6/c1-4-12-9-11(2)18(3,22)17(21)24-10-13-5-7-19(23)8-6-14(15(13)19)25-16(12)20/h4-5,11,14-15,22H,6-10H2,1-3H3/b12-4-/t11-,14-,15-,18-,19?/m1/s1" ;
+            schema:inChIKey inchikey:PLGBHVNNYDZWGZ-GPUZEBNTSA-N ;
+            schema:molecularFormula "C18H25NO6" ;
+            schema:name "(1R,4Z,6R,7R,17R)-4-ethylidene-7-hydroxy-6,7-dimethyl-14-oxido-2,9-dioxa-14-azoniatricyclo[9.5.1.0^{14,17}]heptadec-11-ene-3,8-dione",
+                "Senecionine N-oxide" ;
+            schema:smiles "C\\C=C1\\C[C@@H](C)[C@@](C)(O)C(=O)OCC2=CC[N+]3([O-])CC[C@@H](OC1=O)[C@@H]23" ] ;
+    mbo:has_peak [ mbo:intensity 1.3864e+03 ;
+            mbo:mz 9.40651e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.950875e+02 ;
+            mbo:precursor_mz 3.521755e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0006-9000000000-19601fa6afe24e516e76" ;
+    rdfs:comment "INTERNAL_ID 156" ;
+    skos:definition "Senecionine N-oxide; LC-ESI-ITFT; MS2; CE: 85%; R=15000; [M+H]+" .
+

@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS010905 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS010905" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "50" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "ADP",
+                "Adenosine-5'-diphosphate Di(monocyclohexylammonium)salt" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Adenosine phosphate" ;
+            mbo:ch_exact_mass 4.27207e+02 ;
+            rdfs:seeAlso cas:58-64-0,
+                pubchem:CID6022 ;
+            schema:inChI "InChI=1S/C10H15N5O10P2/c11-8-5-9(13-2-12-8)15(3-14-5)10-7(17)6(16)4(24-10)1-23-27(21,22)25-26(18,19)20/h2-4,6-7,10,16-17H,1H2,(H,21,22)(H2,11,12,13)(H2,18,19,20)" ;
+            schema:inChIKey inchikey:XTWYTFMLZFPYCI-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H15N5O10P2" ;
+            schema:name "ADP",
+                "Adenosine-5'-diphosphate Di(monocyclohexylammonium)salt" ;
+            schema:smiles "C1=NC2=C(C(=N1)N)N=CN2C3C(C(C(O3)COP(=O)(O)OP(=O)(O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.297e+03 ;
+            mbo:mz 9.6e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.5488e+04 ;
+            mbo:mz 9.7e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 114 ],
+        [ mbo:intensity 4.8956e+04 ;
+            mbo:mz 1.35e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 359 ],
+        [ mbo:intensity 1.36232e+05 ;
+            mbo:mz 1.36e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.2831e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000i-1900000000-439322ae443f323b61d3" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "ADP, Adenosine-5'-diphosphate Di(monocyclohexylammonium)salt; LC-ESI-QQ; MS2" .
+

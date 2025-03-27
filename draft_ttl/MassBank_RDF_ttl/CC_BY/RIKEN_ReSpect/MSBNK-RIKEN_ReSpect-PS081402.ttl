@@ -1,0 +1,87 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS081402 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS081402" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Capryl-2-lysophosphatidylcholine",
+                "1-Decanoyl-2-Hydroxy-sn-Glycero-3-Phosphocholine",
+                "1-Decanoyllysolecithin",
+                "1-decanoyl-sn-glycero-3-phosphocholine",
+                "10:0 LysoPC",
+                "Phosphocholine,1-Decanoyl-2-Hydroxy-sn-Glycero-3-" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Phospholipid CLASS3 Phosphocholine" ;
+            mbo:ch_exact_mass 4.11478e+02 ;
+            rdfs:seeAlso cas:22248-63-1,
+                pubchem:CID22851442 ;
+            schema:inChI "InChI=1S/C18H38NO7P/c1-5-6-7-8-9-10-11-12-18(21)24-15-17(20)16-26-27(22,23)25-14-13-19(2,3)4/h17,20H,5-16H2,1-4H3" ;
+            schema:inChIKey inchikey:SECPDKKEUKDCPG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H38NO7P" ;
+            schema:name "1-Capryl-2-lysophosphatidylcholine",
+                "1-Decanoyl-2-Hydroxy-sn-Glycero-3-Phosphocholine",
+                "1-Decanoyllysolecithin",
+                "1-decanoyl-sn-glycero-3-phosphocholine",
+                "10:0 LysoPC",
+                "Phosphocholine,1-Decanoyl-2-Hydroxy-sn-Glycero-3-" ;
+            schema:smiles "CCCCCCCCCC(=O)OCC(COP(=O)([O-])OCC[N+](C)(C)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.4578e+04 ;
+            mbo:mz 1.03e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 2.73815e+05 ;
+            mbo:mz 1.04e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 421 ],
+        [ mbo:intensity 1.9849e+04 ;
+            mbo:mz 1.83e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 2.29533e+05 ;
+            mbo:mz 1.84e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 353 ],
+        [ mbo:intensity 4.0195e+04 ;
+            mbo:mz 3.94e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 1.36309e+05 ;
+            mbo:mz 4.11e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 210 ],
+        [ mbo:intensity 6.491e+05 ;
+            mbo:mz 4.12e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.08991e+05 ;
+            mbo:mz 4.13e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 168 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.125e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03di-0500900000-587b1385e0604281e944" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Phosphocholine,1-Decanoyl-2-Hydroxy-sn-Glycero-3- , 1-decanoyl-sn-glycero-3-phosphocholine, 1-Decanoyl-2-Hydroxy-sn-Glycero-3-Phosphocholine, 10:0 LysoPC, 1-Decanoyllysolecithin, 1-Capryl-2-lysophosphatidylcholine; LC-ESI-QQ; MS2" .
+

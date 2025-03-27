@@ -1,0 +1,72 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ315652 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ315652" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "22.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Carbonic acid tert-butoxycarbonyl tert-butyl ester",
+                "Di-tert-butyl dicarbonate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.181154e+02 ;
+            rdfs:seeAlso cas:24424-99-5,
+                chemspider:81704,
+                pubchem:CID90495 ;
+            schema:inChI "InChI=1S/C10H18O5/c1-9(2,3)14-7(11)13-8(12)15-10(4,5)6/h1-6H3" ;
+            schema:inChIKey inchikey:DYHSDKLCOJIUFX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H18O5" ;
+            schema:name "Carbonic acid tert-butoxycarbonyl tert-butyl ester",
+                "Di-tert-butyl dicarbonate" ;
+            schema:smiles "O=C(OC(=O)OC(C)(C)C)OC(C)(C)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 7.532e+02 ;
+            mbo:mz 6.19882e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 2.34234e+04 ;
+            mbo:mz 1.300172e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 824 ],
+        [ mbo:intensity 4.6449e+03 ;
+            mbo:mz 1.310136e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 163 ],
+        [ mbo:intensity 2.84145e+04 ;
+            mbo:mz 1.990242e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.180312e+02 ;
+            mbo:precursor_mz 2.171081e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-000t-0900000000-8d3922a65e1594717b5c" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3156" ;
+    skos:definition "Di-tert-butyl dicarbonate; LC-ESI-QFT; MS2; CE: 30; R=35000; [M-H]-" .
+

@@ -1,0 +1,66 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA000502 a mbo:MassSpectrum ;
+    dcterms:creator "C. Gallampois (Umea), E. Schymanski (Eawag), W. Brack (UFZ)" ;
+    dcterms:date "2014-06-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA000502" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Multi-criteria approach for tentative identification of polyaromatic river mutagens" ] ;
+    dcterms:rights "Copyright (C) Eawag, 2014 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "Direct infusion experiment" ;
+            mbo:flow_rate "5 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "N/A min" ;
+            mbo:solvent "A methanol",
+                "B N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-methylimidazo[4,5-f]quinolin-2-amine",
+                "IQ" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.980905e+02 ;
+            rdfs:seeAlso cas:76180-96-6,
+                chemspider:48285,
+                pubchem:CID53462 ;
+            schema:inChI "InChI=1S/C11H10N4/c1-15-9-5-4-8-7(3-2-6-13-8)10(9)14-11(15)12/h2-6H,1H3,(H2,12,14)" ;
+            schema:inChIKey inchikey:ARZWATDYIYAUTA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H10N4" ;
+            schema:name "3-methylimidazo[4,5-f]quinolin-2-amine",
+                "IQ" ;
+            schema:smiles "Cn1c2c(c3c(cc2)nccc3)nc1N" ] ;
+    mbo:has_peak [ mbo:intensity 6.4405e+03 ;
+            mbo:mz 1.010272e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 286 ],
+        [ mbo:intensity 2.25022e+04 ;
+            mbo:mz 1.970831e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.970833e+02 ;
+            mbo:precursor_mz 1.970833e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-0900000000-bcc2e45bb466e5c7e371" ;
+    rdfs:comment "INTERNAL_ID 5" ;
+    skos:definition "IQ; ESI-ITFT; MS2; CE: 35%; R=30000; [M-H]-" .
+

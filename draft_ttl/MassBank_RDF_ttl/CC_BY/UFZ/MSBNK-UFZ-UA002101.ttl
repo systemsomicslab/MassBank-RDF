@@ -1,0 +1,102 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA002101 a mbo:MassSpectrum ;
+    dcterms:creator "C. Gallampois (Umea), E. Schymanski (Eawag), W. Brack (UFZ)" ;
+    dcterms:date "2014-06-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA002101" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Multi-criteria approach for tentative identification of polyaromatic river mutagens" ] ;
+    dcterms:rights "Copyright (C) Eawag, 2014 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "Direct infusion experiment" ;
+            mbo:flow_rate "5 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "N/A min" ;
+            mbo:solvent "A methanol",
+                "B N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,4-Chrysenequinone",
+                "chrysene-1,4-dione" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.580681e+02 ;
+            rdfs:seeAlso cas:2304-83-8,
+                chemspider:157435,
+                pubchem:CID180933 ;
+            schema:inChI "InChI=1S/C18H10O2/c19-16-9-10-17(20)18-14-6-5-11-3-1-2-4-12(11)13(14)7-8-15(16)18/h1-10H" ;
+            schema:inChIKey inchikey:UORKIKBNUWJNJF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H10O2" ;
+            schema:name "1,4-Chrysenequinone",
+                "chrysene-1,4-dione" ;
+            schema:smiles "O=C\\4c3c(ccc2c1ccccc1ccc23)C(=O)/C=C/4" ] ;
+    mbo:has_peak [ mbo:intensity 5.30638e+04 ;
+            mbo:mz 1.890699e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.45846e+04 ;
+            mbo:mz 2.410649e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.06956e+04 ;
+            mbo:mz 2.420726e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.05181e+04 ;
+            mbo:mz 2.020771e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.292351e+05 ;
+            mbo:mz 2.030855e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 9.1437e+03 ;
+            mbo:mz 2.150364e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.9768e+04 ;
+            mbo:mz 2.150856e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.034816e+05 ;
+            mbo:mz 2.170649e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.53076e+04 ;
+            mbo:mz 2.270008e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 9.7291e+03 ;
+            mbo:mz 2.27073e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.59139e+06 ;
+            mbo:mz 2.310806e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.590754e+02 ;
+            mbo:precursor_mz 2.590754e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-001i-0090000000-bd75dc1981c408d49bcb" ;
+    rdfs:comment "INTERNAL_ID 21" ;
+    skos:definition "1,4-Chrysenequinone; ESI-ITFT; MS2; CE: 35%; R=30000; [M+H]+" .
+

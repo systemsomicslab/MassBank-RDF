@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR040261 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2008-04-25, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR040261" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S,3R,4S,5S,6R)-2-[5,7-dihydroxy-2-(4-hydroxy-3,5-dimethoxy-phenyl)chromen-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+                "Malvidin-3-O-beta-D-galactoside",
+                "Malvidin-3-galactoside",
+                "Primulin" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 4.931346e+02 ;
+            rdfs:seeAlso cas:30113-37-2,
+                pubchem:CID5484292 ;
+            schema:inChI "InChI=1S/C23H24O12/c1-31-14-3-9(4-15(32-2)18(14)27)22-16(7-11-12(26)5-10(25)6-13(11)33-22)34-23-21(30)20(29)19(28)17(8-24)35-23/h3-7,17,19-21,23-24,28-30H,8H2,1-2H3,(H2-,25,26,27)/p+1/t17-,19+,20+,21-,23-/m1/s1" ;
+            schema:inChIKey inchikey:PXUQTDZNOHRWLI-XSEKTIEYSA-O ;
+            schema:molecularFormula "[C23H25O12]+" ;
+            schema:name "(2S,3R,4S,5S,6R)-2-[5,7-dihydroxy-2-(4-hydroxy-3,5-dimethoxy-phenyl)chromen-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+                "Malvidin-3-O-beta-D-galactoside",
+                "Malvidin-3-galactoside",
+                "Primulin" ;
+            schema:smiles "OCC(O1)C(O)C(O)C(O)C1Oc(c3)c([o+1]c(c4)c(c(O)cc(O)4)3)c(c2)cc(OC)c(O)c(OC)2" ] ;
+    mbo:has_peak [ mbo:intensity 2.949e+01 ;
+            mbo:mz 2.420634e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.268e+01 ;
+            mbo:mz 3.319824e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 9.985e+01 ;
+            mbo:mz 3.320962e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 2.972e+01 ;
+            mbo:mz 3.32176e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 5.228e+01 ;
+            mbo:mz 2.700602e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 7.961e+01 ;
+            mbo:mz 2.870628e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 5.546e+01 ;
+            mbo:mz 2.990647e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.38e+02 ;
+            mbo:mz 3.150595e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 9.281e+01 ;
+            mbo:mz 3.160657e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 2.067e+03 ;
+            mbo:mz 3.310892e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.786e+02 ;
+            mbo:mz 3.311847e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 3.261e+01 ;
+            mbo:mz 3.313658e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 16 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-001i-0009000000-d9f3ebe007c6f9f72980" ;
+    skos:definition "Malvidin-3-O-beta-D-galactoside; LC-ESI-QTOF; MS2; CE:30 V; [M]+" .
+

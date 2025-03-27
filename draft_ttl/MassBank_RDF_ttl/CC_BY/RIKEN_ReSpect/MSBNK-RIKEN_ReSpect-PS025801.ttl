@@ -1,0 +1,75 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS025801 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS025801" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5'-IMP",
+                "5'-inosinate",
+                "I-5'-P",
+                "IMP",
+                "Inosine-5'-monophosphate",
+                "Inosinic Acid" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Inosine phosphate" ;
+            mbo:ch_exact_mass 3.4821e+02 ;
+            rdfs:seeAlso cas:131-99-7,
+                pubchem:CID8582 ;
+            schema:inChI "InChI=1S/C10H13N4O8P/c15-6-4(1-21-23(18,19)20)22-10(7(6)16)14-3-13-5-8(14)11-2-12-9(5)17/h2-4,6-7,10,15-16H,1H2,(H,11,12,17)(H2,18,19,20)" ;
+            schema:inChIKey inchikey:GRSZFWQUAKGDAV-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H13N4O8P" ;
+            schema:name "5'-IMP",
+                "5'-inosinate",
+                "I-5'-P",
+                "IMP",
+                "Inosine-5'-monophosphate",
+                "Inosinic Acid" ;
+            schema:smiles "C1=NC(=O)C2=C(N1)N(C=N2)C3C(C(C(O3)COP(=O)(O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.4557e+04 ;
+            mbo:mz 1.36e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 3.08451e+05 ;
+            mbo:mz 1.37e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.1069e+04 ;
+            mbo:mz 3.48e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 263 ],
+        [ mbo:intensity 2.87407e+05 ;
+            mbo:mz 3.49e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 931 ],
+        [ mbo:intensity 1.1461e+04 ;
+            mbo:mz 3.5e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 37 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.4928e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000b-0709000000-fad328edf05a3a905c65" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "5'-inosinate, I-5'-P, Inosinic Acid, IMP, 5'-IMP, Inosine-5'-monophosphate; LC-ESI-QQ; MS2" .
+

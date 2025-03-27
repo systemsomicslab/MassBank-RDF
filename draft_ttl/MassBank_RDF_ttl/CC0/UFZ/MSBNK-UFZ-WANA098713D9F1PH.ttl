@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA098713D9F1PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA098713D9F1PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "13.491 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4,5-dichloro-2-octyl-1,2-thiazol-3-one",
+                "DCOIT",
+                "Kathon 930" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.810408e+02 ;
+            rdfs:seeAlso cas:6625-54-3,
+                chemspider:82791,
+                pubchem:CID91688 ;
+            schema:inChI "InChI=1S/C11H17Cl2NOS/c1-2-3-4-5-6-7-8-14-11(15)9(12)10(13)16-14/h2-8H2,1H3" ;
+            schema:inChIKey inchikey:PORQOHRXAJJKGK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H17Cl2NOS" ;
+            schema:name "4,5-dichloro-2-octyl-1,2-thiazol-3-one",
+                "DCOIT",
+                "Kathon 930" ;
+            schema:smiles "CCCCCCCCN1SC(Cl)=C(Cl)C1=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.1077e+03 ;
+            mbo:mz 5.5054e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 7.67382e+04 ;
+            mbo:mz 5.70697e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 348 ],
+        [ mbo:intensity 5.62817e+04 ;
+            mbo:mz 7.10855e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 255 ],
+        [ mbo:intensity 2.203501e+05 ;
+            mbo:mz 1.699231e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.82049e+02 ;
+            mbo:precursor_mz 2.820481e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-5900000000-5d1d9340f5e28ab8e3ce" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "DCOIT; LC-ESI-ITFT; MS2; CE: 50%; R=15000; [M+H]+" .
+

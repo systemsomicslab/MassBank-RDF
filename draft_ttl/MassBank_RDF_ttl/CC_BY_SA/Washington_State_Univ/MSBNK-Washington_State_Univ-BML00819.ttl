@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML00819 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML00819" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:collision_energy "10 ev" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "9.158" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4'-Methoxyflavonol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.680736e+02 ;
+            rdfs:seeAlso cas:6889-78-7,
+                chemspider:87688,
+                pubchem:CID97141 ;
+            schema:inChI "InChI=1S/C16H12O4/c1-19-11-8-6-10(7-9-11)16-15(18)14(17)12-4-2-3-5-13(12)20-16/h2-9,18H,1H3" ;
+            schema:inChIKey inchikey:IIBBFGMVMNZMGA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H12O4" ;
+            schema:name "4'-Methoxyflavonol" ;
+            schema:smiles "COC1=CC=C(C=C1)C2=C(C(=O)C3=CC=CC=C3O2)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.9e+02 ;
+            mbo:mz 1.049907e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 288 ],
+        [ mbo:intensity 3.7e+01 ;
+            mbo:mz 1.769843e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 2.1e+01 ;
+            mbo:mz 1.869913e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 6.58e+02 ;
+            mbo:mz 2.690787e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.69e+02 ;
+            mbo:precursor_mz 2.690809e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0390000000-3512e3c75c0757551f56" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 1.249" ;
+    skos:definition "4'-Methoxyflavonol; LC-ESI-QTOF; MS2; CE 10 ev; [M+H]+" .
+

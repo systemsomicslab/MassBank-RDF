@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU072352 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU072352" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "30" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.199 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Fosamine",
+                "carbamoyl(ethoxy)phosphinic acid" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.530191e+02 ;
+            rdfs:seeAlso cas:59682-52-9,
+                chemspider:30725,
+                pubchem:CID33257 ;
+            schema:inChI "InChI=1S/C3H8NO4P/c1-2-8-9(6,7)3(4)5/h2H2,1H3,(H2,4,5)(H,6,7)" ;
+            schema:inChIKey inchikey:UCHDFLNGIZUADY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C3H8NO4P" ;
+            schema:name "Fosamine",
+                "carbamoyl(ethoxy)phosphinic acid" ;
+            schema:smiles "CCOP(O)(=O)C(N)=O" ] ;
+    mbo:has_peak [ mbo:intensity 9.807061e+05 ;
+            mbo:mz 6.29641e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.8158e+03 ;
+            mbo:mz 7.8959e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.195535e+05 ;
+            mbo:mz 8.09747e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 122 ],
+        [ mbo:intensity 3.644e+03 ;
+            mbo:mz 1.059701e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.702814e+05 ;
+            mbo:mz 1.09006e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 275 ],
+        [ mbo:intensity 2.76572e+04 ;
+            mbo:mz 1.520118e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 28 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.39624e+01 ;
+            mbo:precursor_mz 1.520118e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-9200000000-526f48b11fe27eab4094" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Fosamine; LC-ESI-QFT; MS2; CE: 30; R=17500; [M-H]-" .
+

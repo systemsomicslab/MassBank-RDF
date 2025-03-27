@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100067 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100067" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-amino-2-deoxy-6-O-phosphono-alpha-D-glucopyranose",
+                "D-Glucosamine-6-phosphate" ;
+            mbo:ch_compound_class "Carbohydrate Phosphates" ;
+            mbo:ch_exact_mass 2.590457e+02 ;
+            rdfs:seeAlso cas:3616-42-0,
+                chemspider:388356,
+                knapsack:C00019580,
+                pubchem:CID439217 ;
+            schema:inChI "InChI=1S/C6H14NO8P/c7-3-5(9)4(8)2(15-6(3)10)1-14-16(11,12)13/h2-6,8-10H,1,7H2,(H2,11,12,13)/t2-,3-,4-,5-,6+/m1/s1" ;
+            schema:inChIKey inchikey:XHMJOUIAFHJHBW-UKFBFLRUSA-N ;
+            schema:molecularFormula "C6H14NO8P" ;
+            schema:name "2-amino-2-deoxy-6-O-phosphono-alpha-D-glucopyranose",
+                "D-Glucosamine-6-phosphate" ;
+            schema:smiles "O[C@@H](O1)[C@H](N)[C@@H](O)[C@H](O)[C@H]1COP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.833e+01 ;
+            mbo:mz 1.260558e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 120 ],
+        [ mbo:intensity 1.528e+02 ;
+            mbo:mz 2.600535e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.600535e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-03di-0190000000-280711606909adbb8814" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "D-Glucosamine-6-phosphate; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

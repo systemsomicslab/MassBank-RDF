@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100160 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100160" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-beta-Hydroxy-gamma-(trimethylammonio)butyrate",
+                "L-Carnitine",
+                "L-gamma-Trimethyl-beta-hydroxybutyrobetaine",
+                "Levocarnitine",
+                "Vitamin BT" ;
+            mbo:ch_compound_class "Carnitine" ;
+            mbo:ch_exact_mass 1.611052e+02 ;
+            rdfs:seeAlso cas:541-15-1,
+                chemspider:10455,
+                pubchem:CID10917 ;
+            schema:inChI "InChI=1S/C7H15NO3/c1-8(2,3)5-6(9)4-7(10)11/h6,9H,4-5H2,1-3H3/t6-/m1/s1" ;
+            schema:inChIKey inchikey:PHIQHXFUZVPYII-ZCFIWIBFSA-N ;
+            schema:molecularFormula "C7H15NO3" ;
+            schema:name "(-)-beta-Hydroxy-gamma-(trimethylammonio)butyrate",
+                "L-Carnitine",
+                "L-gamma-Trimethyl-beta-hydroxybutyrobetaine",
+                "Levocarnitine",
+                "Vitamin BT" ;
+            schema:smiles "[O-1]C(=O)C[C@H](O)C[N+1](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 6.098e+00 ;
+            mbo:mz 5.70337e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 4.979e+01 ;
+            mbo:mz 5.80661e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 426 ],
+        [ mbo:intensity 1.67e+01 ;
+            mbo:mz 5.90737e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 143 ],
+        [ mbo:intensity 4.617e+01 ;
+            mbo:mz 6.00819e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 395 ],
+        [ mbo:intensity 3.4e+00 ;
+            mbo:mz 6.10322e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 1.167e+02 ;
+            mbo:mz 8.50287e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.125e+01 ;
+            mbo:mz 1.020911e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 696 ],
+        [ mbo:intensity 4.73e+01 ;
+            mbo:mz 1.030393e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 405 ],
+        [ mbo:intensity 3.289e+00 ;
+            mbo:mz 1.62113e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 28 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.62113e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0zg0-9400000000-15c3db3324f1d46d3c7c" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "L-Carnitine; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

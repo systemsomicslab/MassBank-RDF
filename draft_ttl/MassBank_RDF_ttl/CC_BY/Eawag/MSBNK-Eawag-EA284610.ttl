@@ -1,0 +1,72 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA284610 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA284610" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "8.0 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3R)-N-methyl-3-(2-methylphenoxy)-3-phenyl-1-propanamine",
+                "Atomoxetine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.551623e+02 ;
+            rdfs:seeAlso cas:83015-26-3,
+                chemspider:49516,
+                pubchem:CID54841 ;
+            schema:inChI "InChI=1S/C17H21NO/c1-14-8-6-7-11-16(14)19-17(12-13-18-2)15-9-4-3-5-10-15/h3-11,17-18H,12-13H2,1-2H3/t17-/m1/s1" ;
+            schema:inChIKey inchikey:VHGCDTVCOLNTBX-QGZVFWFLSA-N ;
+            schema:molecularFormula "C17H21NO" ;
+            schema:name "(3R)-N-methyl-3-(2-methylphenoxy)-3-phenyl-1-propanamine",
+                "Atomoxetine" ;
+            schema:smiles "c1c(c(ccc1)O[C@@H](c1ccccc1)CCNC)C" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 3.21707e+04 ;
+            mbo:mz 1.1707e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 763 ],
+        [ mbo:intensity 2.46143e+04 ;
+            mbo:mz 1.210646e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 583 ],
+        [ mbo:intensity 4.21451e+04 ;
+            mbo:mz 1.470804e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.6337e+04 ;
+            mbo:mz 1.970956e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 624 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.561706e+02 ;
+            mbo:precursor_mz 2.561696e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0002-0900000000-133c9cb2f2383aa0fe8a" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2846" ;
+    skos:definition "Atomoxetine; LC-ESI-ITFT; MS2; CE: 45%; R=15000; [M+H]+" .
+

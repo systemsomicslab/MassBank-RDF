@@ -1,0 +1,89 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS072809 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS072809" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "30" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "UDP-D-galactopyranose",
+                "UDP-Gal",
+                "UDP-Galactose disodium salt",
+                "UDP-galactose",
+                "Uridine-5'-diphosphogalactose disodium salt" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Nucleotide CLASS3 Uridine phosphate" ;
+            mbo:ch_exact_mass 5.66306e+02 ;
+            rdfs:seeAlso cas:2956-16-3,
+                pubchem:CID23724458 ;
+            schema:inChI "InChI=1S/C15H24N2O17P2/c18-3-5-8(20)10(22)12(24)14(32-5)33-36(28,29)34-35(26,27)30-4-6-9(21)11(23)13(31-6)17-2-1-7(19)16-15(17)25/h1-2,5-6,8-14,18,20-24H,3-4H2,(H,26,27)(H,28,29)(H,16,19,25)" ;
+            schema:inChIKey inchikey:HSCJRCZFDFQWRP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H24N2O17P2" ;
+            schema:name "UDP-D-galactopyranose",
+                "UDP-Gal",
+                "UDP-Galactose disodium salt",
+                "UDP-galactose",
+                "Uridine-5'-diphosphogalactose disodium salt" ;
+            schema:smiles "C1=CN(C(=O)NC1=O)C2C(C(C(O2)COP(=O)(O)OP(=O)(O)OC3C(C(C(C(O3)CO)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.1013e+04 ;
+            mbo:mz 3.22e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 8.9073e+04 ;
+            mbo:mz 3.23e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.91e+03 ;
+            mbo:mz 3.24e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 6.352e+03 ;
+            mbo:mz 4.03e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 3.701e+03 ;
+            mbo:mz 5.63e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 42 ],
+        [ mbo:intensity 5.6252e+04 ;
+            mbo:mz 5.64e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 631 ],
+        [ mbo:intensity 7.5327e+04 ;
+            mbo:mz 5.65e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 845 ],
+        [ mbo:intensity 1.9693e+04 ;
+            mbo:mz 5.66e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 6.06e+03 ;
+            mbo:mz 5.67e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 68 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.654e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-02mi-0005090000-6f0e22871dd132f72c53" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "UDP-galactose, UDP-Galactose disodium salt, UDP-D-galactopyranose, Uridine-5'-diphosphogalactose disodium salt, UDP-Gal; LC-ESI-QQ; MS2" .
+

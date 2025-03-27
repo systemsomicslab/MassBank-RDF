@@ -1,0 +1,63 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Fac_Eng_Univ_Tokyo-JP009831 a mbo:MassSpectrum ;
+    dcterms:creator "KURARAY CO., LTD." ;
+    dcterms:date "2016-01-19 (Created 2008-10-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Fac_Eng_Univ_Tokyo-JP009831" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "JEOL JMS-D-300" ;
+            mbo:instrument_type "EI-B" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(4-(1,1-DIMETHYLETHYL)PHENYL)PROPANAL",
+                "2-(4-TERT-BUTYLPHENYL)PROPANAL" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.901358e+02 ;
+            rdfs:seeAlso pubchem:CID590304 ;
+            schema:inChI "InChI=1S/C13H18O/c1-10(9-14)11-5-7-12(8-6-11)13(2,3)4/h5-10H,1-4H3" ;
+            schema:inChIKey inchikey:SNOVXNPIRUDJNG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H18O" ;
+            schema:name "2-(4-(1,1-DIMETHYLETHYL)PHENYL)PROPANAL",
+                "2-(4-TERT-BUTYLPHENYL)PROPANAL" ;
+            schema:smiles "O=CC(C)c(c1)ccc(c1)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.58e+01 ;
+            mbo:mz 5.7e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 458 ],
+        [ mbo:intensity 1.31e+01 ;
+            mbo:mz 1.45e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 9.999e+01 ;
+            mbo:mz 1.61e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.41e+00 ;
+            mbo:mz 1.62e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 1.23e+01 ;
+            mbo:mz 1.75e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 1.25e+01 ;
+            mbo:mz 1.9e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 125 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-2900000000-883e8d9462d0a2111e27" ;
+    skos:definition "2-(4-TERT-BUTYLPHENYL)PROPANAL; EI-B; MS" .
+

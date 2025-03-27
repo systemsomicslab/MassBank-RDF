@@ -1,0 +1,88 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ421151 a mbo:MassSpectrum ;
+    dcterms:creator "K. Kiefer [dtc], J. Hollender [dtc], H. Singer [dtc], M. Stravs [com]" ;
+    dcterms:date "2019-12-03"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ421151" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Kiefer, K.; Mueller, A.; Singer, H.; Hollender, J. New relevant pesticide transformation products in groundwater detected using target and suspect screening for agricultural and urban micropollutants with LC-HRMS. Water Research 2019, 165. DOI: https://doi.org/10.1016/j.watres.2019.114972" ] ;
+    dcterms:rights "Copyright (C) Eawag 2019 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "1.351 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B MeOH with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(diaminomethylidenecarbamoylsulfamoyl)-N,N-dimethylpyridine-3-carboxamide",
+                "Nicosulfuron-TP AUSN" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.140797e+02 ;
+            rdfs:seeAlso chemspider:28295028,
+                pubchem:CID132990948 ;
+            schema:inChI "InChI=1S/C10H14N6O4S/c1-16(2)8(17)6-4-3-5-13-7(6)21(19,20)15-10(18)14-9(11)12/h3-5H,1-2H3,(H5,11,12,14,15,18)" ;
+            schema:inChIKey inchikey:JIZXOFJDALMBAQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H14N6O4S" ;
+            schema:name "2-(diaminomethylidenecarbamoylsulfamoyl)-N,N-dimethylpyridine-3-carboxamide",
+                "Nicosulfuron-TP AUSN" ;
+            schema:smiles "CN(C)C(=O)C1=CC=CN=C1S(=O)(=O)NC(=O)NC(N)=N" ] ;
+    mbo:has_peak [ mbo:intensity 4.03197e+04 ;
+            mbo:mz 7.89734e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 2.094858e+05 ;
+            mbo:mz 8.30364e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.520546e+05 ;
+            mbo:mz 1.640831e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 2.009684e+05 ;
+            mbo:mz 1.650666e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 1.815485e+05 ;
+            mbo:mz 2.100343e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1.136216e+07 ;
+            mbo:mz 2.280449e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.782452e+05 ;
+            mbo:mz 2.710506e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 9.421826e+06 ;
+            mbo:mz 3.130724e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 828 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.130724e+02 ;
+            mbo:precursor_mz 3.130724e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-01t9-0096000000-e0aaa6a88f149eaeb0f3" ;
+    rdfs:comment "UCHEM_ID 4211" ;
+    skos:definition "Nicosulfuron-TP AUSN; LC-ESI-QFT; MS2; CE: 15%; R=17500; [M-H]-" .
+

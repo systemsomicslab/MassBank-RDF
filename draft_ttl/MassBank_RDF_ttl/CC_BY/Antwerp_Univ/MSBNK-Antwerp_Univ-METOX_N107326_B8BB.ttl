@@ -1,0 +1,75 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N107326_B8BB a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N107326_B8BB" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.144 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(Z)-hexadec-9-enoic acid",
+                "Palmitoleic acid" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.542246e+02 ;
+            rdfs:seeAlso cas:373-49-9,
+                chemspider:393216,
+                pubchem:CID445638 ;
+            schema:inChI "InChI=1S/C16H30O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16(17)18/h7-8H,2-6,9-15H2,1H3,(H,17,18)/b8-7-" ;
+            schema:inChIKey inchikey:SECPZKHBENQXJG-FPLPWBNLSA-N ;
+            schema:molecularFormula "C16H30O2" ;
+            schema:name "(Z)-hexadec-9-enoic acid",
+                "Palmitoleic acid" ;
+            schema:smiles "CCCCCC\\C=C/CCCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 7.88e+01 ;
+            mbo:mz 1.711368e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.68e+02 ;
+            mbo:mz 1.72143e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 1.243e+02 ;
+            mbo:mz 1.730572e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 5.79e+01 ;
+            mbo:mz 2.352075e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 2.4101e+03 ;
+            mbo:mz 2.532183e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 2.532173e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0190000000-45bd2b8877c15c5110fc" ;
+    rdfs:comment "INTERNAL_ID 1073" ;
+    skos:definition "Palmitoleic acid; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M-H]-" .
+

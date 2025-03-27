@@ -1,0 +1,81 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS001126 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2014-06-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS001126" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "56 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "789.6 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-Glu(1-2)Glu-28-Glu Hederagenin (NMR)" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 9.585137e+02 ;
+            rdfs:seeAlso pubchem:CID134733135 ;
+            schema:inChI "InChI=1S/C48H78O19/c1-43(2)13-15-48(42(61)67-40-37(60)34(57)31(54)25(19-50)63-40)16-14-46(5)22(23(48)17-43)7-8-28-44(3)11-10-29(45(4,21-52)27(44)9-12-47(28,46)6)65-41-38(35(58)32(55)26(20-51)64-41)66-39-36(59)33(56)30(53)24(18-49)62-39/h7,23-41,49-60H,8-21H2,1-6H3/t23-,24+,25+,26+,27?,28?,29-,30+,31+,32+,33-,34-,35-,36+,37+,38+,39-,40-,41-,44-,45-,46+,47+,48-/m0/s1" ;
+            schema:inChIKey inchikey:GOIICROVOYDKKG-RMOCACDQSA-N ;
+            schema:molecularFormula "C48H78O19" ;
+            schema:name "3-Glu(1-2)Glu-28-Glu Hederagenin (NMR)" ;
+            schema:smiles "C1[C@@H]([C@@](C2[C@](C1)(C3[C@@](CC2)([C@]4(C(=CC3)[C@]5([C@@](CC4)(CCC(C5)(C)C)C(O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)=O)[H])C)C)C)(C)CO)O[C@@H]7O[C@@H]([C@H]([C@@H]([C@H]7O[C@@H]8O[C@@H]([C@H]([C@@H]([C@H]8O)O)O)CO)O)O)CO" ] ;
+    mbo:has_peak [ mbo:intensity 3.29e+02 ;
+            mbo:mz 4.713453e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 329 ],
+        [ mbo:intensity 9.4e+01 ;
+            mbo:mz 4.723499e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 94 ],
+        [ mbo:intensity 5.9e+01 ;
+            mbo:mz 6.153918e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 3.33e+02 ;
+            mbo:mz 6.333979e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 333 ],
+        [ mbo:intensity 1.11e+02 ;
+            mbo:mz 6.343993e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 111 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 7.954487e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.52e+02 ;
+            mbo:mz 7.964502e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 452 ],
+        [ mbo:intensity 1.21e+02 ;
+            mbo:mz 7.974531e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 121 ],
+        [ mbo:intensity 5.5e+01 ;
+            mbo:mz 8.374583e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 55 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.00358e+03 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0000202900-aa11cbccc9945e3cd4de" ;
+    skos:definition "3-Glu(1-2)Glu-28-Glu Hederagenin (NMR); LC-ESI-QTOF; MS2; CE:56 eV; [M-H]-" .
+

@@ -1,0 +1,116 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM852501 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM852501" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.277 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ondansetron" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.931528e+02 ;
+            rdfs:seeAlso cas:99614-02-5,
+                chemspider:4434,
+                pubchem:CID4595 ;
+            schema:inChI "InChI=1S/C18H19N3O/c1-12-19-9-10-21(12)11-13-7-8-16-17(18(13)22)14-5-3-4-6-15(14)20(16)2/h3-6,9-10,13H,7-8,11H2,1-2H3" ;
+            schema:inChIKey inchikey:FELGMEQIXOGIFQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H19N3O" ;
+            schema:name "Ondansetron" ;
+            schema:smiles "CN1C2=C(C3=C1C=CC=C3)C(=O)C(CN1C=CN=C1C)CC2" ] ;
+    mbo:has_peak [ mbo:intensity 1.020074e+06 ;
+            mbo:mz 8.30604e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 8.582841e+05 ;
+            mbo:mz 1.710676e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 3.769176e+06 ;
+            mbo:mz 1.820965e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.895323e+05 ;
+            mbo:mz 1.831041e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.102433e+07 ;
+            mbo:mz 1.841121e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 370 ],
+        [ mbo:intensity 2.181324e+07 ;
+            mbo:mz 2.121069e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 158 ],
+        [ mbo:intensity 1.379511e+08 ;
+            mbo:mz 2.9416e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.800846e+05 ;
+            mbo:mz 1.430729e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 5.080412e+05 ;
+            mbo:mz 1.430856e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.789429e+05 ;
+            mbo:mz 1.54065e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 2.561295e+05 ;
+            mbo:mz 1.550731e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.104628e+06 ;
+            mbo:mz 1.67073e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 4.536246e+05 ;
+            mbo:mz 1.680808e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.962864e+06 ;
+            mbo:mz 1.690886e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 7.513999e+07 ;
+            mbo:mz 1.700964e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 544 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.941598e+02 ;
+            mbo:precursor_mz 2.941601e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-006x-0790000000-39dfc83ad8c54c21d83d" ;
+    rdfs:comment "INTERNAL_ID 8525" ;
+    skos:definition "Ondansetron; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M+H]+" .
+

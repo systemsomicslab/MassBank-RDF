@@ -1,0 +1,84 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-CASMI_2016-SM817001 a mbo:MassSpectrum ;
+    dcterms:creator "Krauss M, Schymanski EL, Weidauer C, Schupke H, UFZ and Eawag" ;
+    dcterms:date "2016-12-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-CASMI_2016-SM817001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Schymanski, E. L.; Ruttkies, C.; Krauss, M.; Brouard, C.; Kind, T.; Dührkop, K.; Allen, F.; Vaniya, A.; Verdegem, D.; Böcker, S.; et al. Critical Assessment of Small Molecule Identification 2016: Automated Methods. Journal of Cheminformatics 2017, 9 (1). DOI:10.1186/s13321-017-0207-1" ] ;
+    dcterms:rights "Copyright (C) 2016 UFZ/Eawag under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "35  (nominal)" ;
+            mbo:column_name "Kinetex C18 EVO 2.6 um, 2.1x50 mm, precolumn 2.1x5 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "12.085 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-phenanthren-9-ylethanone",
+                "9-Acetylphenanthren",
+                "9-Acetylphenanthrene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.200888e+02 ;
+            rdfs:seeAlso cas:784-04-3,
+                chemspider:67432,
+                pubchem:CID74868 ;
+            schema:inChI "InChI=1S/C16H12O/c1-11(17)16-10-12-6-2-3-7-13(12)14-8-4-5-9-15(14)16/h2-10H,1H3" ;
+            schema:inChIKey inchikey:UIFAWZBYTTXSOG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H12O" ;
+            schema:name "1-phenanthren-9-ylethanone",
+                "9-Acetylphenanthren",
+                "9-Acetylphenanthrene" ;
+            schema:smiles "CC(=O)C1=CC2=CC=CC=C2C2=CC=CC=C12" ] ;
+    mbo:has_peak [ mbo:intensity 2.8078e+03 ;
+            mbo:mz 8.107e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.9324e+03 ;
+            mbo:mz 1.370592e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.2574e+03 ;
+            mbo:mz 1.780772e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.076483e+05 ;
+            mbo:mz 1.790856e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 2.40603e+04 ;
+            mbo:mz 2.030856e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.926449e+06 ;
+            mbo:mz 2.210962e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.649843e+02 ;
+            mbo:precursor_mz 2.210961e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00di-0090000000-5340741421b9eef31a74" ;
+    rdfs:comment "INTERNAL_ID 8170" ;
+    skos:definition "9-Acetylphenanthren; LC-ESI-QFT; MS2; CE: 35 NCE; R=35000; [M+H]+" .
+

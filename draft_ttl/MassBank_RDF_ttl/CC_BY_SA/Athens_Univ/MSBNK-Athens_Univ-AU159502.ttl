@@ -1,0 +1,79 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU159502 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU159502" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.6 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-(2-fluorophenyl)-1-methyl-7-nitro-3H-1,4-benzodiazepin-2-one",
+                "Flunitrazepam" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.130863e+02 ;
+            rdfs:seeAlso cas:1622-62-4,
+                chemspider:3263,
+                pubchem:CID3380 ;
+            schema:inChI "InChI=1S/C16H12FN3O3/c1-19-14-7-6-10(20(22)23)8-12(14)16(18-9-15(19)21)11-4-2-3-5-13(11)17/h2-8H,9H2,1H3" ;
+            schema:inChIKey inchikey:PPTYJKAXVCCBDU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H12FN3O3" ;
+            schema:name "5-(2-fluorophenyl)-1-methyl-7-nitro-3H-1,4-benzodiazepin-2-one",
+                "Flunitrazepam" ;
+            schema:smiles "CN1C2=C(C=C(C=C2)[N+]([O-])=O)C(=NCC1=O)C1=C(F)C=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.6228e+04 ;
+            mbo:mz 2.680998e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 2.72e+03 ;
+            mbo:mz 2.691031e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.56e+03 ;
+            mbo:mz 2.860988e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 4.79668e+05 ;
+            mbo:mz 3.140936e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.8076e+04 ;
+            mbo:mz 3.150964e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 5.836e+03 ;
+            mbo:mz 3.160987e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.271368e+02 ;
+            mbo:precursor_mz 3.140935e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-0009000000-d3cdbd0e6db0ff7d3658" ;
+    rdfs:comment "INTERNAL_ID 1595" ;
+    skos:definition "Flunitrazepam; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

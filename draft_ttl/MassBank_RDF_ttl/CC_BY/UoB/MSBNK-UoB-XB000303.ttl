@@ -1,0 +1,90 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UoB-XB000303 a mbo:MassSpectrum ;
+    dcterms:creator "Tara J. Bowen, University of Birmingham" ;
+    dcterms:date "2023-04-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-UoB-XB000303" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Bowen, T.J.; Southam, A.D.; Hall, A.R.; Weber, R.J.M.; Lloyd, G.R.; Macdonald, R.; Wilson, A.; Pointon, A.; Viant, M.R. Simultaneously discovering the fate and biochemical effects of xenobiotics through untargeted metabolomics. Nat. Commun. (under review)" ] ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Dionex Ultimate 3000 UHPLC Thermo Scientific; Q Exactive Focus Orbitrap MS Thermo Scientific" ;
+            mbo:collision_energy "25,60,100% (stepped)" ;
+            mbo:column_name "Accucore 150 Amide, 2.6um, 2.1x100mm, Thermo Scientific" ;
+            mbo:flow_gradient "99/1 at 0 min, 99/1 at 1 min, 85:15 at 3 min, 50/50 at 6 min, 5/95 at 9 min, 5/95 at 10 min, 99/1 at 10.5 min, 99/1 at 15 min" ;
+            mbo:flow_rate "0.5 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-FT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "0.020 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "amitriptyline_BTP_M4" ;
+            mbo:ch_compound_class "N/A; Biotransformation product" ;
+            mbo:ch_exact_mass 2.93178e+02 ;
+            schema:inChI "N/A" ;
+            schema:molecularFormula "C20H23NO" ;
+            schema:name "amitriptyline_BTP_M4" ;
+            schema:smiles "N/A" ] ;
+    mbo:has_peak [ mbo:intensity 2.03839e+04 ;
+            mbo:mz 5.80651e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 296 ],
+        [ mbo:intensity 4.66538e+04 ;
+            mbo:mz 2.331326e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 678 ],
+        [ mbo:intensity 2.02033e+04 ;
+            mbo:mz 2.941855e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 293 ],
+        [ mbo:intensity 1.53479e+04 ;
+            mbo:mz 6.50386e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 6.87792e+04 ;
+            mbo:mz 9.10542e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.49472e+04 ;
+            mbo:mz 1.050699e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 653 ],
+        [ mbo:intensity 1.40966e+04 ;
+            mbo:mz 1.150543e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 205 ],
+        [ mbo:intensity 3.74297e+04 ;
+            mbo:mz 1.170699e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 544 ],
+        [ mbo:intensity 1.79626e+04 ;
+            mbo:mz 1.550854e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 261 ],
+        [ mbo:intensity 1.96287e+04 ;
+            mbo:mz 1.890698e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 285 ],
+        [ mbo:intensity 1.38146e+04 ;
+            mbo:mz 1.910855e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 201 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.941851e+02 ;
+            mbo:precursor_mz 2.941852e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-05nf-6940000000-445abae1f91e22bf63ac" ;
+    rdfs:comment "INTERNAL_ID 6890" ;
+    skos:definition "amitriptyline_BTP_M4; LC-ESI-FT; MS2; CE: 25,60,100%; R=17500; [M+H]+" .
+

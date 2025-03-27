@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU212203 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-12-06"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU212203" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "30 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "5.1 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-desmethylpheniramine",
+                "N-methyl-3-phenyl-3-pyridin-2-ylpropan-1-amine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.26147e+02 ;
+            rdfs:seeAlso cas:19428-44-5,
+                chemspider:141676,
+                pubchem:CID161283 ;
+            schema:inChI "InChI=1S/C15H18N2/c1-16-12-10-14(13-7-3-2-4-8-13)15-9-5-6-11-17-15/h2-9,11,14,16H,10,12H2,1H3" ;
+            schema:inChIKey inchikey:GDCVFNAQLOMGMS-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H18N2" ;
+            schema:name "N-desmethylpheniramine",
+                "N-methyl-3-phenyl-3-pyridin-2-ylpropan-1-amine" ;
+            schema:smiles "CNCCC(C1=CC=CC=C1)C2=CC=CC=N2" ] ;
+    mbo:has_peak [ mbo:intensity 1.0096e+04 ;
+            mbo:mz 1.170565e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 2.2012e+04 ;
+            mbo:mz 1.180645e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.272e+03 ;
+            mbo:mz 1.190693e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.28668e+05 ;
+            mbo:mz 1.670721e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 187 ],
+        [ mbo:intensity 5.83936e+05 ;
+            mbo:mz 1.680797e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 332 ],
+        [ mbo:intensity 6.1852e+04 ;
+            mbo:mz 1.690842e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.757096e+06 ;
+            mbo:mz 1.961117e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.9746e+05 ;
+            mbo:mz 1.971149e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 112 ],
+        [ mbo:intensity 1.2528e+04 ;
+            mbo:mz 1.98118e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 7 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.271537e+02 ;
+            mbo:precursor_mz 2.271543e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0002-0900000000-454ee0296dc7bc842f5d" ;
+    rdfs:comment "INTERNAL_ID 2122" ;
+    skos:definition "N-desmethylpheniramine; LC-ESI-QTOF; MS2; CE: 30 eV; R=35000; [M+H]+" .
+

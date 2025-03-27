@@ -1,0 +1,85 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BS-BS001116 a mbo:MassSpectrum ;
+    dcterms:creator "Plant Biology, The Noble Foundation, Ardmore, OK, US/Dennis Fine, Daniel Wherritt, and Lloyd Sumner" ;
+    dcterms:date "2017-12-01 (Created 2014-06-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-BS-BS001116" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker impact HD" ;
+            mbo:collision_energy "53 eV" ;
+            mbo:column_name "Waters Acquity BEH C18 1.7um x 2.1 x 150 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 20/80 at 35 min; 5/95 at 35 min, 5/95 at 38 min; 95/5 at 38.1 min, 95/5 at 45 min" ;
+            mbo:flow_rate "FLOW_RATE 560 uL / min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "1198.2 sec" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05 % formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(Glucosyl(1-2) glucuronyl)-22-DDMP Soyasapogenol B (NMR)" ;
+            mbo:ch_compound_class "Natural Product; N/A" ;
+            mbo:ch_exact_mass 9.224926e+02 ;
+            rdfs:seeAlso pubchem:CID134755353 ;
+            schema:inChI "InChI=1S/C48H74O17/c1-22-32(52)25(51)17-31(60-22)62-30-19-43(2,3)18-24-23-9-10-28-45(5)13-12-29(46(6,21-50)27(45)11-14-48(28,8)47(23,7)16-15-44(24,30)4)63-42-39(36(56)35(55)38(64-42)40(58)59)65-41-37(57)34(54)33(53)26(20-49)61-41/h9,24,26-31,33-39,41-42,49-50,52-57H,10-21H2,1-8H3,(H,58,59)/t24-,26+,27?,28?,29-,30+,31+,33+,34-,35-,36-,37+,38-,39+,41-,42+,44+,45-,46+,47+,48+/m0/s1" ;
+            schema:inChIKey inchikey:OJLGASCOGOIOJR-OASJHIPRSA-N ;
+            schema:molecularFormula "C48H74O17" ;
+            schema:name "3-(Glucosyl(1-2) glucuronyl)-22-DDMP Soyasapogenol B (NMR)" ;
+            schema:smiles "C1[C@@H]([C@@](C2[C@](C1)(C3[C@@](CC2)([C@]4(C(=CC3)[C@]5([C@@](CC4)([C@@H](CC(C5)(C)C)O[C@H]6OC(=C(C(C6)=O)O)C)C)[H])C)C)C)(CO)C)O[C@@H]7O[C@@H]([C@H]([C@@H]([C@H]7O[C@@H]8O[C@@H]([C@H]([C@@H]([C@H]8O)O)O)CO)O)O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 4e+01 ;
+            mbo:mz 9.90094e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 2.3e+01 ;
+            mbo:mz 9.245069e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 3.7e+01 ;
+            mbo:mz 1.010257e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 6.2e+01 ;
+            mbo:mz 1.130257e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 3.6e+01 ;
+            mbo:mz 1.250257e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 7.414374e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 8.214822e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 9.214949e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.33e+02 ;
+            mbo:mz 9.224988e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 533 ],
+        [ mbo:intensity 1.42e+02 ;
+            mbo:mz 9.235018e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 142 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 9.214949e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00di-0000000009-4f94488be39f53b0db73" ;
+    skos:definition "3-(Glucosyl(1-2) glucuronyl)-22-DDMP Soyasapogenol B (NMR); LC-ESI-QTOF; MS2; CE:53 eV; [M-H]-" .
+

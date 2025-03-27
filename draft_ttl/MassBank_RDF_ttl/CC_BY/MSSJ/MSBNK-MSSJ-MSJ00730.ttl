@@ -1,0 +1,101 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00730 a mbo:MassSpectrum ;
+    dcterms:creator "Nobuyuki Okahashi and Fumio Matsuda, Osaka University" ;
+    dcterms:date "2021-10-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00730" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Nobuyuki Okahashi et al. Mass Spectrometry 2019 vol. 8, A0073." ] ;
+    dcterms:rights "Nobuyuki Okahashi and Fumio Matsuda, Osaka University under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "GCMS-TQ8040 (Shimadzu, Kyoto, Japan)" ;
+            mbo:collision_energy "10 V" ;
+            mbo:column_name "DB-5MS+DG (Agilent Technologies, Santa Clara, CA, USA)" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "GC-EI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Fumaric acid" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.16011e+02 ;
+            rdfs:seeAlso cas:110-17-8,
+                chemspider:10197150,
+                pubchem:CID444972 ;
+            schema:inChI "InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/b2-1+" ;
+            schema:inChIKey inchikey:VZCYOOQTPOCHFL-OWOJBTEDSA-N ;
+            schema:molecularFormula "C4H4O4" ;
+            schema:name "Fumaric acid" ;
+            schema:smiles "C(=C/C(=O)O)\\C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.48595e+05 ;
+            mbo:mz 7.305e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 645 ],
+        [ mbo:intensity 5.603e+04 ;
+            mbo:mz 1.711e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 81 ],
+        [ mbo:intensity 1.5187e+04 ;
+            mbo:mz 2.011e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 7.5519e+04 ;
+            mbo:mz 2.171e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 5.56001e+05 ;
+            mbo:mz 2.4505e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 800 ],
+        [ mbo:intensity 4.9177e+04 ;
+            mbo:mz 7.505e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 2.7658e+04 ;
+            mbo:mz 1.271e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 5.4939e+04 ;
+            mbo:mz 1.331e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 1.335e+04 ;
+            mbo:mz 1.4315e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 6.94691e+05 ;
+            mbo:mz 1.471e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.9852e+04 ;
+            mbo:mz 1.4905e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 4.9496e+04 ;
+            mbo:mz 1.5505e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 2.2092e+04 ;
+            mbo:mz 1.571e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 32 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.45066e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-0002-4960000000-50d92185818b6675c535" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Fumaric acid; GC-EI-QQ; MS2; POSITIVE; CID 10 V; 2 TMS-derivative; [M-15]+" .
+

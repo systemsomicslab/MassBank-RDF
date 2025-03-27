@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00892 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-12-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00892" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:collision_energy "10 V" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Malonyldaidzin" ;
+            mbo:ch_compound_class "Glycosyloxyisoflavone" ;
+            mbo:ch_exact_mass 5.021111e+02 ;
+            rdfs:seeAlso cas:124590-31-4,
+                chemspider:8089617,
+                pubchem:CID9913968 ;
+            schema:inChI "InChI=1S/C24H22O12/c25-12-3-1-11(2-4-12)15-9-33-16-7-13(5-6-14(16)20(15)29)35-24-23(32)22(31)21(30)17(36-24)10-34-19(28)8-18(26)27/h1-7,9,17,21-25,30-32H,8,10H2,(H,26,27)/t17-,21-,22+,23-,24-/m1/s1" ;
+            schema:inChIKey inchikey:MTXMHWSVSZKYBT-ASDZUOGYSA-N ;
+            schema:molecularFormula "C24H22O12" ;
+            schema:name "Malonyldaidzin" ;
+            schema:smiles "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)COC(=O)CC(=O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 7.24284e+02 ;
+            mbo:mz 2.530495e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.3826e+01 ;
+            mbo:mz 2.540534e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 1.28235e+02 ;
+            mbo:mz 2.950609e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 177 ],
+        [ mbo:intensity 4.759e+01 ;
+            mbo:mz 3.370717e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 5.47437e+02 ;
+            mbo:mz 4.57112e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 755 ],
+        [ mbo:intensity 4.1479e+01 ;
+            mbo:mz 4.581171e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 1.20737e+02 ;
+            mbo:mz 5.011028e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 167 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.011039e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0zfr-0090510000-af2c8901f9589bcf2f0b" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Malonyldaidzin; ESI-QTOF; MS2; NEGATIVE; [M-H]-; CID; 10 V" .
+

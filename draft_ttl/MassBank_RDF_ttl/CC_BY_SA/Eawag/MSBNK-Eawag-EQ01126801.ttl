@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01126801 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01126801" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "4.261 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(3,5-dimethyl-4-methylsulfonylphenyl) N-methylcarbamate",
+                "Methiocarb Sulfone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.570722e+02 ;
+            rdfs:seeAlso cas:2179-25-1,
+                chemspider:15729,
+                pubchem:CID16589 ;
+            schema:inChI "InChI=1S/C11H15NO4S/c1-7-5-9(16-11(13)12-3)6-8(2)10(7)17(4,14)15/h5-6H,1-4H3,(H,12,13)" ;
+            schema:inChIKey inchikey:RJBJMKAMQIOAML-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H15NO4S" ;
+            schema:name "(3,5-dimethyl-4-methylsulfonylphenyl) N-methylcarbamate",
+                "Methiocarb Sulfone" ;
+            schema:smiles "CC1=CC(=CC(=C1S(=O)(=O)C)C)OC(=O)NC" ] ;
+    mbo:has_peak [ mbo:intensity 3.8572e+03 ;
+            mbo:mz 1.210649e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 3.2178e+04 ;
+            mbo:mz 1.220726e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 333 ],
+        [ mbo:intensity 9.66133e+04 ;
+            mbo:mz 2.01058e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.329582e+02 ;
+            mbo:precursor_mz 2.580795e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-0390000000-67067362d6a874731732" ;
+    rdfs:comment "UCHEM_ID 11268" ;
+    skos:definition "Methiocarb Sulfone; LC-ESI-QFT; MS2; CE: 15%; R=17500; [M+H]+" .
+

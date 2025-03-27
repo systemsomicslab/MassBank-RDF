@@ -1,0 +1,71 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN113002 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-05"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN113002" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 80/20 at 0.5 min, 5/95 at 6 min, 5/95 at 7 min, 80/20 at 7.1 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "5.387 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(2-benzoyloxypropoxy)propan-2-yl benzoate",
+                "Di(propylene glycol) dibenzoate",
+                "Dipropyleneglycol-dibenzoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.421467e+02 ;
+            rdfs:seeAlso cas:94-03-1,
+                chemspider:91768,
+                pubchem:CID101560 ;
+            schema:inChI "InChI=1S/C20H22O5/c1-15(24-19(21)17-9-5-3-6-10-17)13-23-14-16(2)25-20(22)18-11-7-4-8-12-18/h3-12,15-16H,13-14H2,1-2H3" ;
+            schema:inChIKey inchikey:IZYUWBATGXUSIK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H22O5" ;
+            schema:name "1-(2-benzoyloxypropoxy)propan-2-yl benzoate",
+                "Di(propylene glycol) dibenzoate",
+                "Dipropyleneglycol-dibenzoate" ;
+            schema:smiles "CC(COCC(C)OC(=O)C1=CC=CC=C1)OC(=O)C1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 8.14e+02 ;
+            mbo:mz 7.7039e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 2.025e+02 ;
+            mbo:mz 9.10533e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.07607e+04 ;
+            mbo:mz 1.050334e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.6131e+03 ;
+            mbo:mz 1.630751e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 463 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.651373e+02 ;
+            mbo:precursor_mz 3.43154e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0a4i-0900000000-9a513180da728444e2c9" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "Dipropyleneglycol-dibenzoate; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M+H]+" .
+

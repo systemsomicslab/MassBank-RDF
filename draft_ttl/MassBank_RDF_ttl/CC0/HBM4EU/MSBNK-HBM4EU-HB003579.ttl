@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003579 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003579" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "26.680 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[3,4-dihydroxy-6-(hydroxymethyl)oxan-2-yl]-4-hydroxy-6-[3-hydroxy-8-(hydroxymethyl)-2,6,10,12-tetramethyloctadeca-4,6,9-trien-2-yl]pyran-2-one",
+                "Fusapyrone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 6.063768e+02 ;
+            rdfs:seeAlso cas:156856-31-4,
+                pubchem:CID76169512 ;
+            schema:inChI "InChI=1S/C34H54O9/c1-7-8-9-10-11-21(2)14-23(4)16-24(19-35)15-22(3)12-13-28(39)34(5,6)29-18-26(37)30(33(41)43-29)32-31(40)27(38)17-25(20-36)42-32/h12-13,15-16,18,21,24-25,27-28,31-32,35-40H,7-11,14,17,19-20H2,1-6H3" ;
+            schema:inChIKey inchikey:HEECQDWUNPZALD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C34H54O9" ;
+            schema:name "3-[3,4-dihydroxy-6-(hydroxymethyl)oxan-2-yl]-4-hydroxy-6-[3-hydroxy-8-(hydroxymethyl)-2,6,10,12-tetramethyloctadeca-4,6,9-trien-2-yl]pyran-2-one",
+                "Fusapyrone" ;
+            schema:smiles "CCCCCCC(C)CC(=CC(CO)C=C(C)C=CC(C(C)(C)C1=CC(=C(C(=O)O1)C2C(C(CC(O2)CO)O)O)O)O)C" ] ;
+    mbo:has_peak [ mbo:intensity 8.5266e+03 ;
+            mbo:mz 1.550707e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 1.30111e+04 ;
+            mbo:mz 2.892529e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 188 ],
+        [ mbo:intensity 3.3131e+03 ;
+            mbo:mz 1.670701e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 3.8476e+03 ;
+            mbo:mz 1.790702e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 1.0899e+04 ;
+            mbo:mz 1.950655e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 157 ],
+        [ mbo:intensity 1.39959e+04 ;
+            mbo:mz 1.970814e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 202 ],
+        [ mbo:intensity 6.91636e+04 ;
+            mbo:mz 2.290863e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.05832e+04 ;
+            mbo:mz 2.470974e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 297 ],
+        [ mbo:intensity 1.61743e+04 ;
+            mbo:mz 2.651076e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 234 ],
+        [ mbo:intensity 5.5231e+03 ;
+            mbo:mz 2.71243e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 80 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.073855e+02 ;
+            mbo:precursor_mz 6.073841e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-004j-0290000000-433823e501f9bb57dc06" ;
+    rdfs:comment "INTERNAL_ID 36" ;
+    skos:definition "Fusapyrone; LC-ESI-ITFT; MS2; CE: 40%; R=7500; [M+H]+" .
+

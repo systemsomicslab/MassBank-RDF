@@ -1,0 +1,53 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PN000116 a mbo:MassSpectrum ;
+    dcterms:creator "Institute of Bioorganic Chemistry, Polish Academy of Sciences,Poland/Anna Staszków" ;
+    dcterms:date "2011-03-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PN000116" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright(C) 2011 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "micrOTOF-Q" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:column_name "Poroshell 120,EC-C18 2.1x100mm,2.7um" ;
+            mbo:instrument_type "ESI-TOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "214.365 sec" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2'-Hydroxygenistein-7-O-glucoside" ;
+            mbo:ch_compound_class "Natural Product; isoflavone" ;
+            mbo:ch_exact_mass 4.481006e+02 ;
+            rdfs:seeAlso cas:137351-12-3,
+                pubchem:CID10275537 ;
+            schema:inChI "InChI=1S/C21H20O11/c22-6-15-18(27)19(28)20(29)21(32-15)31-9-4-13(25)16-14(5-9)30-7-11(17(16)26)10-2-1-8(23)3-12(10)24/h1-5,7,15,18-25,27-29H,6H2/t15-,18-,19+,20-,21-/m1/s1" ;
+            schema:inChIKey inchikey:VYYHGKQKCBDQKO-CMWLGVBASA-N ;
+            schema:molecularFormula "C21H20O11" ;
+            schema:name "2'-Hydroxygenistein-7-O-glucoside" ;
+            schema:smiles "C1=CC(=C(C=C1O)O)C2=COC3=CC(=CC(=C3C2=O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 9.99e+02 ;
+            mbo:mz 2.87052e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.48e+02 ;
+            mbo:mz 2.880551e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 148 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.87048e+02 ;
+            mbo:precursor_mz 4.49103e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0090000000-4fb3bf4b4ce8dbe007ab" ;
+    rdfs:comment "standard" ;
+    skos:definition "2'-Hydroxygenistein-7-O-glucoside; ESI-TOF; MS2; CE:15 eV; [M+H]+" .
+

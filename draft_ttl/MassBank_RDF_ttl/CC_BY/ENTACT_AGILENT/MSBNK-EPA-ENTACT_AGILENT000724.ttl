@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000724 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000724" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4'-Chloroacetoacetanilide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.1104e+02 ;
+            rdfs:seeAlso cas:101-92-8,
+                pubchem:CID7587 ;
+            schema:inChI "InChI=1S/C10H10ClNO2/c1-7(13)6-10(14)12-9-4-2-8(11)3-5-9/h2-5H,6H2,1H3,(H,12,14)" ;
+            schema:inChIKey inchikey:JMRJWEJJUKUBEA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H10ClNO2" ;
+            schema:name "4'-Chloroacetoacetanilide" ;
+            schema:smiles "CC(=O)CC(=O)NC1C=CC(Cl)=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 1.419764e+01 ;
+            mbo:mz 3.49694e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 1.639985e+00 ;
+            mbo:mz 3.902402e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 4.572008e+01 ;
+            mbo:mz 4.100329e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 457 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 5.703459e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.146811e+00 ;
+            mbo:mz 5.70584e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 1.168606e+00 ;
+            mbo:mz 5.707097e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 3.188204e+01 ;
+            mbo:mz 8.301385e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 319 ],
+        [ mbo:intensity 1.037925e+01 ;
+            mbo:mz 1.260116e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 104 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.100327e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0a4i-9000000000-d36701384160e31a0fba" ;
+    skos:definition "4'-Chloroacetoacetanilide; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

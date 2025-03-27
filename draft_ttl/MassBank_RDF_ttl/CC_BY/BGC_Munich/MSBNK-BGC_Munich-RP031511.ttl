@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP031511 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-11-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP031511" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "10" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "0.643 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-[(2S,3R,4S,5R)-3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]-1H-pyrimidine-2,4-dione",
+                "Pseudouridine" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 2.440695e+02 ;
+            rdfs:seeAlso cas:1445-07-4,
+                chemspider:14319,
+                pubchem:CID15047 ;
+            schema:inChI "InChI=1S/C9H12N2O6/c12-2-4-5(13)6(14)7(17-4)3-1-10-9(16)11-8(3)15/h1,4-7,12-14H,2H2,(H2,10,11,15,16)/t4-,5-,6-,7+/m1/s1" ;
+            schema:inChIKey inchikey:PTJWIQPHWPFNBW-GBNDHIKLSA-N ;
+            schema:molecularFormula "C9H12N2O6" ;
+            schema:name "5-[(2S,3R,4S,5R)-3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]-1H-pyrimidine-2,4-dione",
+                "Pseudouridine" ;
+            schema:smiles "c1c(c(nc(n1)O)O)[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.4e+01 ;
+            mbo:mz 1.10025e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.8e+01 ;
+            mbo:mz 1.400342e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 4.078e+03 ;
+            mbo:mz 1.530308e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 199 ],
+        [ mbo:intensity 1.34e+02 ;
+            mbo:mz 1.540341e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.62e+02 ;
+            mbo:mz 1.83042e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 6e+01 ;
+            mbo:mz 1.950423e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.0484e+04 ;
+            mbo:mz 2.430624e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.430623e+02 ;
+            mbo:precursor_mz 2.430623e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0006-0290000000-2197c361897f73092dd6" ;
+    rdfs:comment "INTERNAL_ID 315" ;
+    skos:definition "Pseudouridine; LC-ESI-QTOF; MS2; CE: 10; R=; [M-H]-" .
+

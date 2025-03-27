@@ -1,0 +1,81 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS084204 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS084204" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Datc-3-Glc-6pp-Rha",
+                "Datiscin",
+                "datiscetin-3-O-rutinoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavonol CLASS3 Datiscetin glycoside" ;
+            mbo:ch_exact_mass 5.94522e+02 ;
+            rdfs:seeAlso cas:16310-92-2,
+                pubchem:CID5883291 ;
+            schema:inChI "InChI=1S/C27H30O15/c1-9-17(31)20(34)22(36)26(39-9)38-8-15-18(32)21(35)23(37)27(41-15)42-25-19(33)16-13(30)6-10(28)7-14(16)40-24(25)11-4-2-3-5-12(11)29/h2-7,9,15,17-18,20-23,26-32,34-37H,8H2,1H3" ;
+            schema:inChIKey inchikey:BJJCTXDEJUWVIC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C27H30O15" ;
+            schema:name "Datc-3-Glc-6pp-Rha",
+                "Datiscin",
+                "datiscetin-3-O-rutinoside" ;
+            schema:smiles "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC=CC=C5O)O)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.1122e+04 ;
+            mbo:mz 7.1e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 7.498e+03 ;
+            mbo:mz 8.4e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 3.4773e+04 ;
+            mbo:mz 8.5e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 191 ],
+        [ mbo:intensity 8.23e+03 ;
+            mbo:mz 1.29e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 1.3461e+04 ;
+            mbo:mz 1.47e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 74 ],
+        [ mbo:intensity 5.8784e+04 ;
+            mbo:mz 2.86e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 324 ],
+        [ mbo:intensity 1.81499e+05 ;
+            mbo:mz 2.87e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.5548e+04 ;
+            mbo:mz 2.88e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 196 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.9549e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-000i-2090000000-f9afcd3ff4301026548a" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Datc-3-Glc-6pp-Rha, Datiscin, datiscetin-3-O-rutinoside; LC-ESI-QQ; MS2" .
+

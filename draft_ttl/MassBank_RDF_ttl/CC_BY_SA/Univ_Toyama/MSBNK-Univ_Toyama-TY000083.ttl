@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000083 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-12-13, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000083" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "558.400 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(-)-Epigallocatechin 3-O-gallate",
+                "(-)-Epigallocatechin 3-gallate",
+                "(-)-Epigallocatechin gallate",
+                "(-)-Epigallocatechol gallate",
+                "3-O-Galloyl-(-)-epigallocatechin",
+                "Benzoic acid, 3,4,5-trihydroxy-, (2R,3R)-3,4-dihydro-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-2H-1-benzopyran-3-yl ester",
+                "Epigallocatechin-3-monogallate",
+                "Gallic acid, 3-ester with epigallocatechol, (-)-",
+                "L-Epigallocatechin gallate",
+                "[(2R,3R)-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate" ;
+            mbo:ch_compound_class "Natural Product; Tannin" ;
+            mbo:ch_exact_mass 4.580849e+02 ;
+            rdfs:seeAlso cas:989-51-5,
+                chemspider:58575,
+                pubchem:CID65064 ;
+            schema:inChI "InChI=1S/C22H18O11/c23-10-5-12(24)11-7-18(33-22(31)9-3-15(27)20(30)16(28)4-9)21(32-17(11)6-10)8-1-13(25)19(29)14(26)2-8/h1-6,18,21,23-30H,7H2/t18-,21-/m1/s1" ;
+            schema:inChIKey inchikey:WMBWREPUVVBILR-WIYYLYMNSA-N ;
+            schema:molecularFormula "C22H18O11" ;
+            schema:name "(-)-Epigallocatechin 3-O-gallate",
+                "(-)-Epigallocatechin 3-gallate",
+                "(-)-Epigallocatechin gallate",
+                "(-)-Epigallocatechol gallate",
+                "3-O-Galloyl-(-)-epigallocatechin",
+                "Benzoic acid, 3,4,5-trihydroxy-, (2R,3R)-3,4-dihydro-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-2H-1-benzopyran-3-yl ester",
+                "Epigallocatechin-3-monogallate",
+                "Gallic acid, 3-ester with epigallocatechol, (-)-",
+                "L-Epigallocatechin gallate",
+                "[(2R,3R)-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate" ;
+            schema:smiles "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.00658e+06 ;
+            mbo:mz 2.890705e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 2.589664e+07 ;
+            mbo:mz 4.590917e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.941984e+06 ;
+            mbo:mz 4.600949e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 268 ],
+        [ mbo:intensity 1.323468e+06 ;
+            mbo:mz 4.61094e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.488194e+06 ;
+            mbo:mz 9.342003e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 57 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0a4i-0010900000-1c80f2ff23bdedc89000" ;
+    skos:definition "(-)-Epigallocatechin gallate; LC-ESI-ITTOF; MS; [M+H]+" .
+

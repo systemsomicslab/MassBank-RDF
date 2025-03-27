@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000189 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000189" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,4,5-Trichlorobenzenesulfonic acid",
+                "DTXSID2045072" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.598868e+02 ;
+            rdfs:seeAlso cas:6378-25-2,
+                pubchem:CID80786 ;
+            schema:inChI "InChI=1S/C6H3Cl3O3S/c7-3-1-5(9)6(2-4(3)8)13(10,11)12/h1-2H,(H,10,11,12)" ;
+            schema:inChIKey inchikey:LEDKKDPOPIKMSZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H3Cl3O3S" ;
+            schema:name "2,4,5-Trichlorobenzenesulfonic acid",
+                "DTXSID2045072" ;
+            schema:smiles "OS(=O)(=O)C1=CC(Cl)=C(Cl)C=C1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 7.005428e+01 ;
+            mbo:mz 3.49694e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 700 ],
+        [ mbo:intensity 1.634732e+00 ;
+            mbo:mz 2.588796e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.995736e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.95514e+00 ;
+            mbo:mz 7.999038e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 3.583578e+00 ;
+            mbo:mz 8.096519e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 3.87447e+00 ;
+            mbo:mz 9.49694e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.3443e+01 ;
+            mbo:mz 1.149262e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 134 ],
+        [ mbo:intensity 1.234471e+01 ;
+            mbo:mz 1.229643e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 123 ],
+        [ mbo:intensity 9.021579e+01 ;
+            mbo:mz 1.58941e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 901 ],
+        [ mbo:intensity 1.992824e+01 ;
+            mbo:mz 1.949177e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 199 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.588796e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-057i-9600000000-922f3ab13a262d9c2a44" ;
+    skos:definition "2,4,5-Trichlorobenzenesulfonic acid; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

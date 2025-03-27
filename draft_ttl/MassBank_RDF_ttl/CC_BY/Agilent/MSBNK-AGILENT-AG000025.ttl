@@ -1,0 +1,61 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AGILENT-AG000025 a mbo:MassSpectrum ;
+    dcterms:creator "Rennie E, McEachran A, Agilent Technologies" ;
+    dcterms:date "2023-02-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-AGILENT-AG000025" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Atrazine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.150938e+02 ;
+            rdfs:seeAlso cas:1912-24-9,
+                chemspider:2169 ;
+            schema:inChI "InChI=1S/C8H14ClN5/c1-4-10-7-12-6(9)13-8(14-7)11-5(2)3/h5H,4H2,1-3H3,(H2,10,11,12,13,14)" ;
+            schema:inChIKey inchikey:MXWJVTOOROXGIU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H14ClN5" ;
+            schema:name "Atrazine" ;
+            schema:smiles "CCNC1N=C(Cl)N=C(NC(C)C)N=1" ] ;
+    mbo:has_peak [ mbo:intensity 7.005965e+00 ;
+            mbo:mz 9.799178e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 1.311772e+01 ;
+            mbo:mz 1.370027e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 2.716063e+00 ;
+            mbo:mz 1.379979e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.617474e+01 ;
+            mbo:mz 1.740541e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.16101e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.16101e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-014i-0290000000-3966de77d1e0196b6e8b" ;
+    skos:definition "Atrazine; ESI-QTOF; MS2; CE: 10; [M+H]+" .
+

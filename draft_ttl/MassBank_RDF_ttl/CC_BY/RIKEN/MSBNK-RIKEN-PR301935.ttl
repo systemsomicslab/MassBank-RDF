@@ -1,0 +1,87 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR301935 a mbo:MassSpectrum ;
+    dcterms:creator "Tetsuya Mori, Center for Sustainable Resource Science, RIKEN" ;
+    dcterms:date "2019-03-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR301935" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Tsugawa H., Nakabayashi R., Mori T., Yamada Y., Takahashi M., Rai A., Sugiyama R., Yamamoto H., Nakaya T., Yamazaki M., Kooke R., Bac-Molenaar JA., Oztolan-Erol N., Keurentjes JJB., Arita M., Saito K. (2019) \"A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms\" Nature Methods 16(4):295-298. [doi:10.1038/s41592-019-0358-2]" ] ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC, Waters Acquity UPLC System; MS, Waters Xevo G2 Q-Tof" ;
+            mbo:collision_energy "6V" ;
+            mbo:column_name "Acquity bridged ethyl hybrid C18 (1.7 um, 2.1 mm * 100 mm, Waters)" ;
+            mbo:flow_gradient "A/B = (99.5%/0.5% at 0 min, 99.5%/0.5% at 0.1 min, 20%/80% at 10 min, 0.5%/99.5% at 10.1 min, 0.5%/99.5% at 12.0 min, 99.5%/0.5% at 12.1 min, 99.5%/0.5% at 15.0 min)" ;
+            mbo:flow_rate "0.3 ml/min at 0 min, 0.3 ml/min at 10 min, 0.4 ml/min at 10.1 min, 0.4 ml/min at 14.4 min, 0.3 ml/min at 14.5 min" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "4.63935" ;
+            mbo:solvent "A water including 0.1% formic acid",
+                "B acetonitrile including 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Gossypetin-8-C-glucoside" ;
+            mbo:ch_compound_class "Flavonoid-8-O-glycosides" ;
+            mbo:ch_exact_mass 4.80378e+02 ;
+            schema:inChI "InChI=1S/C21H20O13/c22-5-11-13(27)15(29)17(31)21(32-11)34-19-10(26)4-9(25)12-14(28)16(30)18(33-20(12)19)6-1-2-7(23)8(24)3-6/h1-4,11,13,15,17,21-27,29-31H,5H2/t11-,13-,15+,17-,21+/m1/s1" ;
+            schema:inChIKey inchikey:SJRXVLUZMMDCNG-KKPQBLLMSA-N ;
+            schema:molecularFormula "C21H20O13" ;
+            schema:name "Gossypetin-8-C-glucoside" ;
+            schema:smiles "OC[C@H]1O[C@@H](OC2=C(O)C=C(O)C3=C2OC(=C(O)C3=O)C2=CC(O)=C(O)C=C2)[C@H](O)[C@@H](O)[C@@H]1O" ] ;
+    mbo:has_peak [ mbo:intensity 3e+01 ;
+            mbo:mz 1.910301e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 4.3e+01 ;
+            mbo:mz 3.210439e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 4.1e+01 ;
+            mbo:mz 2.390167e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 4.8e+01 ;
+            mbo:mz 3.170447e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 2.5e+01 ;
+            mbo:mz 3.170664e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1e+03 ;
+            mbo:mz 3.190454e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.38e+02 ;
+            mbo:mz 3.190658e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 138 ],
+        [ mbo:intensity 1.8e+02 ;
+            mbo:mz 3.200463e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 180 ],
+        [ mbo:intensity 9e+01 ;
+            mbo:mz 3.200617e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 90 ],
+        [ mbo:intensity 4.1e+01 ;
+            mbo:mz 3.200813e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 41 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.810977e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-014i-0009000000-3b02c4c96a64be941fed" ;
+    rdfs:comment "registered in RIKEN PlaSMA" ;
+    skos:definition "Gossypetin-8-C-glucoside; LC-ESI-QTOF; MS2" .
+

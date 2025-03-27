@@ -1,0 +1,59 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Toyama-TY000070 a mbo:MassSpectrum ;
+    dcterms:creator "Ken TANAKA" ;
+    dcterms:date "2016-01-19 (Created 2008-10-27, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Toyama-TY000070" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Shimadzu LC20A-IT-TOFMS" ;
+            mbo:column_name "Waters Atlantis T3 (2.1 x 150 mm, 5 um)" ;
+            mbo:flow_gradient "10 % B to 100 % B/40 min" ;
+            mbo:flow_rate "0.2 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "1150.300 sec" ;
+            mbo:solvent "A 5 mM ammonium acetate",
+                "B CH3CN" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Saikosaponin B2",
+                "beta-D-Galactopyranoside, (3beta,4alpha,16alpha)-16,23,28-trihydroxyoleana-11,13(18)-dien-3-yl 6-deoxy-3-O-beta-D-glucopyranosyl-" ;
+            mbo:ch_compound_class "Natural Product; Saponin" ;
+            mbo:ch_exact_mass 7.80466e+02 ;
+            rdfs:seeAlso cas:58316-41-9,
+                pubchem:CID5321063 ;
+            schema:inChI "InChI=1S/C42H68O13/c1-21-29(47)34(55-35-32(50)31(49)30(48)24(18-43)53-35)33(51)36(52-21)54-28-11-12-38(4)25(39(28,5)19-44)10-13-40(6)26(38)9-8-22-23-16-37(2,3)14-15-42(23,20-45)27(46)17-41(22,40)7/h8-9,21,24-36,43-51H,10-20H2,1-7H3/t21-,24-,25-,26-,27-,28+,29+,30-,31+,32-,33-,34+,35+,36+,38+,39+,40-,41-,42-/m1/s1" ;
+            schema:inChIKey inchikey:WRYJYFCCMSVEPQ-ORAXXRKOSA-N ;
+            schema:molecularFormula "C42H68O13" ;
+            schema:name "Saikosaponin B2",
+                "beta-D-Galactopyranoside, (3beta,4alpha,16alpha)-16,23,28-trihydroxyoleana-11,13(18)-dien-3-yl 6-deoxy-3-O-beta-D-glucopyranosyl-" ;
+            schema:smiles "C(C(O)1)C(C)(C3(C)7)C(C=CC3(C(C6)(C)C(CC7)(C(CO)(C(C6)OC([H])(C(O)4)OC(C)C(C(OC([H])(C5O)OC(CO)C(C5O)O)4)O)C)[H])[H])=C(C2)C1(CCC2(C)C)CO" ] ;
+    mbo:has_peak [ mbo:intensity 6.4314e+04 ;
+            mbo:mz 1.129847e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 239 ],
+        [ mbo:intensity 2.68815e+05 ;
+            mbo:mz 7.794593e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.4878e+04 ;
+            mbo:mz 7.804455e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 353 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-004i-0100000900-233abe5687960f7bcb15" ;
+    skos:definition "Saikosaponin B2; LC-ESI-ITTOF; MS; [M-H]-" .
+

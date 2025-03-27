@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA000405 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Jawameer Hama, Hubert Schupke, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany and University of Copenhagen (UCPH), Denmark" ;
+    dcterms:date "2019-02-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA000405" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "125 % (nominal)" ;
+            mbo:column_name "Synergi Polar RP, 2.5 um 100x3.0 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5/0 at 0 min, 95/5/0 at 2 min, 5/95/0 at 8 min, 5/80/15 at 12 min, 5/25/70 at 19 min, 3/2/95 at 19.5 min, 3/2/95 at 22 min, 95/5/0 at 23 min, 95/5/0 at 28 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "7.538 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(1H-indol-3-yl)-N,N-dimethylmethanamine",
+                "Gramine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.741157e+02 ;
+            rdfs:seeAlso cas:87-52-5,
+                chemspider:6625,
+                pubchem:CID6890 ;
+            schema:inChI "InChI=1S/C11H14N2/c1-13(2)8-9-7-12-11-6-4-3-5-10(9)11/h3-7,12H,8H2,1-2H3" ;
+            schema:inChIKey inchikey:OCDGBSUVYYVKQZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H14N2" ;
+            schema:name "1-(1H-indol-3-yl)-N,N-dimethylmethanamine",
+                "Gramine" ;
+            schema:smiles "CN(C)CC1=CNC2=CC=CC=C12" ] ;
+    mbo:has_peak [ mbo:intensity 7.20109e+04 ;
+            mbo:mz 7.70386e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 477 ],
+        [ mbo:intensity 8.3112e+03 ;
+            mbo:mz 9.50493e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 6.4176e+03 ;
+            mbo:mz 1.020464e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.035168e+05 ;
+            mbo:mz 1.030542e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 686 ],
+        [ mbo:intensity 4.14737e+04 ;
+            mbo:mz 1.050447e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 275 ],
+        [ mbo:intensity 1.20591e+04 ;
+            mbo:mz 1.280495e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 1.4352e+03 ;
+            mbo:mz 1.290453e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.506618e+05 ;
+            mbo:mz 1.300651e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.3903e+03 ;
+            mbo:mz 1.460605e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 16 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.950837e+02 ;
+            mbo:precursor_mz 1.75123e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0f89-2900000000-892477168acec824fe77" ;
+    rdfs:comment "INTERNAL_ID 58" ;
+    skos:definition "Gramine; LC-ESI-ITFT; MS2; CE: 125%; R=15000; [M+H]+" .
+

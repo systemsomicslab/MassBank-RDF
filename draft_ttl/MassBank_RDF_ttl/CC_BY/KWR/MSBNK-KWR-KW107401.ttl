@@ -1,0 +1,93 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-KWR-KW107401 a mbo:MassSpectrum ;
+    dcterms:creator "Erik Emke, Andrea Brunner, KWR" ;
+    dcterms:date "2017-03-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-KWR-KW107401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 KWR watercycle research institute under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Orbitrap Classic, Thermo Scientific" ;
+            mbo:collision_energy "35 eV IT-MS" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x150mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 0/100 at 40 min, 0/100 at 45 min, 95/5 at 47 min, 95/5 at 52 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "nominal" ;
+            mbo:retention_time "16.137 min" ;
+            mbo:solvent "A water with 0.05% formic acid",
+                "B acetonitrile with 0.05% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Irbesartan" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.282325e+02 ;
+            rdfs:seeAlso cas:138402-11-6,
+                chemspider:3618,
+                pubchem:CID3749 ;
+            schema:inChI "InChI=1S/C25H28N6O/c1-2-3-10-22-26-25(15-6-7-16-25)24(32)31(22)17-18-11-13-19(14-12-18)20-8-4-5-9-21(20)23-27-29-30-28-23/h4-5,8-9,11-14H,2-3,6-7,10,15-17H2,1H3,(H,27,28,29,30)" ;
+            schema:inChIKey inchikey:YOSHYTLCDANDAN-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H28N6O" ;
+            schema:name "Irbesartan" ;
+            schema:smiles "CCCCC1=NC2(CCCC2)C(=O)N1Cc3ccc(cc3)c4ccccc4c5[nH]nnn5" ] ;
+    mbo:has_peak [ mbo:intensity 3.67862e+04 ;
+            mbo:mz 1.921082e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 3.6776e+03 ;
+            mbo:mz 4.021232e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.522734e+06 ;
+            mbo:mz 1.951036e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 9.5422e+03 ;
+            mbo:mz 1.960401e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.5098e+04 ;
+            mbo:mz 2.051013e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 1.66468e+04 ;
+            mbo:mz 2.080956e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.5272e+03 ;
+            mbo:mz 2.501775e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 8.7111e+03 ;
+            mbo:mz 3.18062e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 7.7963e+03 ;
+            mbo:mz 3.720123e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.887e+03 ;
+            mbo:mz 3.842182e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.2924e+02 ;
+            mbo:precursor_mz 4.292397e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0002-0900000000-25bf34b0363209aa2dc2" ;
+    rdfs:comment "INTERNAL_ID 1074" ;
+    skos:definition "Irbesartan; LC-ESI-ITFT; MS2; CE: 35 eV; R=nominal; [M+H]+" .
+

@@ -1,0 +1,88 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag_Additional_Specs-ETS00107 a mbo:MassSpectrum ;
+    dcterms:creator "Huntscha S, Schymanski E, Hofstetter TB, Spahr S, Hollender J, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2016-02-03 (Created 2014-06-25)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag_Additional_Specs-ETS00107" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Huntscha, S.; Hofstetter, T. B.; Schymanski, E. L.; Spahr, S.; Hollender, J. Biotransformation of Benzotriazoles: Insights from Transformation Product Identification and Compound-Specific Isotope Analysis. Environmental Science & Technology 2014, 48 (8), 4435–43. DOI:10.1021/es405694z" ] ;
+    dcterms:rights "Copyright (C) 2016 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "scaled 80 (m/z=200) to 110 (m/z=120)" ;
+            mbo:column_name "Atlantis T3 3um, 3.0x150mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0-8 min, 5/95 at 18-21 min" ;
+            mbo:flow_rate "300 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "19.7 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1H-Benzotriazole-4-carboxylic acid",
+                "1H-Benzotriazole-4-carboxylic acid (Tentative)",
+                "4-Methylbenzotriazole Transformation Product 31" ;
+            mbo:ch_compound_class "N/A; Biotransformation Product" ;
+            mbo:ch_exact_mass 1.630382e+02 ;
+            rdfs:seeAlso pubchem:CID6454490 ;
+            schema:inChI "InChI=1S/C7H5N3O2/c11-7(12)4-2-1-3-5-6(4)9-10-8-5/h1-3H,(H,11,12)(H,8,9,10)" ;
+            schema:inChIKey inchikey:KFJDQPJLANOOOB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C7H5N3O2" ;
+            schema:name "1H-Benzotriazole-4-carboxylic acid",
+                "1H-Benzotriazole-4-carboxylic acid (Tentative)",
+                "4-Methylbenzotriazole Transformation Product 31" ;
+            schema:smiles "C1=CC2=NNN=C2C(=C1)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.2198e+03 ;
+            mbo:mz 6.3022e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 339 ],
+        [ mbo:intensity 2.2784e+03 ;
+            mbo:mz 7.20405e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 240 ],
+        [ mbo:intensity 2.2939e+03 ;
+            mbo:mz 8.90077e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 241 ],
+        [ mbo:intensity 9.4971e+03 ;
+            mbo:mz 9.00329e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.6419e+03 ;
+            mbo:mz 1.100411e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 278 ],
+        [ mbo:intensity 5.8404e+03 ;
+            mbo:mz 1.180285e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 614 ],
+        [ mbo:intensity 2.906e+03 ;
+            mbo:mz 1.460352e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 306 ],
+        [ mbo:intensity 5.8867e+03 ;
+            mbo:mz 1.640452e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 619 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.640445e+02 ;
+            mbo:precursor_mz 1.640445e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03dl-9800000000-dbebe5b1fef41cac001f" ;
+    rdfs:comment "Structure/data is 1H-Benzotriazole-4-carboxylic acid; other isomers possible (but less likely)" ;
+    skos:definition "1H-Benzotriazole-4-carboxylic acid (Tentative); LC-ESI-ITFT; MS2; 80-110; R=7500; [M+H]+" .
+

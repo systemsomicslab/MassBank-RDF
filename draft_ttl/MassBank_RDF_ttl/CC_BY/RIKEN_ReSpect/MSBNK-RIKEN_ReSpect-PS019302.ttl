@@ -1,0 +1,83 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS019302 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS019302" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Amino-2-hydroxypurine",
+                "4-Amino-2-hydroxypyrimidine",
+                "4-Amino-2-oxo-1,2-dihydropyrimidine",
+                "4-Amino-2-pyridinol",
+                "4-Amino-2-pyrimidinol",
+                "6-Aminouracil",
+                "Cytosine",
+                "Cytosinimine" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Other CLASS3 Cytosine" ;
+            mbo:ch_exact_mass 1.11104e+02 ;
+            rdfs:seeAlso cas:71-30-7,
+                pubchem:CID597 ;
+            schema:inChI "InChI=1S/C4H5N3O/c5-3-1-2-6-4(8)7-3/h1-2H,(H3,5,6,7,8)" ;
+            schema:inChIKey inchikey:OPTASPLRGRRNAP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C4H5N3O" ;
+            schema:name "4-Amino-2-hydroxypurine",
+                "4-Amino-2-hydroxypyrimidine",
+                "4-Amino-2-oxo-1,2-dihydropyrimidine",
+                "4-Amino-2-pyridinol",
+                "4-Amino-2-pyrimidinol",
+                "6-Aminouracil",
+                "Cytosine",
+                "Cytosinimine" ;
+            schema:smiles "C1=C(NC(=O)N=C1)N" ] ;
+    mbo:has_peak [ mbo:intensity 1.3161e+04 ;
+            mbo:mz 6.9e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 67 ],
+        [ mbo:intensity 2.5314e+04 ;
+            mbo:mz 9.4e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 3.6643e+04 ;
+            mbo:mz 9.5e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 187 ],
+        [ mbo:intensity 1.2699e+04 ;
+            mbo:mz 1.1e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 7.3487e+04 ;
+            mbo:mz 1.11e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 375 ],
+        [ mbo:intensity 1.9569e+05 ;
+            mbo:mz 1.12e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.1205e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-03di-2900000000-6efc347a4e72751d7793" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "6-Aminouracil, 4-Amino-2-hydroxypyrimidine, Cytosinimine, 4-Amino-2-hydroxypurine, Cytosine, 4-Amino-2-pyrimidinol, 4-Amino-2-pyridinol, 4-Amino-2-oxo-1,2-dihydropyrimidine; LC-ESI-QQ; MS2" .
+

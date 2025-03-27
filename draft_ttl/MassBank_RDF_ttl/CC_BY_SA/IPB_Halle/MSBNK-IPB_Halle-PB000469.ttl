@@ -1,0 +1,77 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000469 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-01-02, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000469" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-aminohexanoic acid",
+                "Aminocaproic acid" ;
+            mbo:ch_compound_class "Natural Product; amino acid" ;
+            mbo:ch_exact_mass 1.310946e+02 ;
+            rdfs:seeAlso pubchem:CID564 ;
+            schema:inChI "InChI=1S/C6H13NO2/c7-5-3-1-2-4-6(8)9/h1-5,7H2,(H,8,9)" ;
+            schema:inChIKey inchikey:SLXKOJJOQWFEFD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H13NO2" ;
+            schema:name "6-aminohexanoic acid",
+                "Aminocaproic acid" ;
+            schema:smiles "C(CCC(=O)O)CCN" ] ;
+    mbo:has_peak [ mbo:intensity 6.9926e+01 ;
+            mbo:mz 6.8051e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.393012e+03 ;
+            mbo:mz 6.9071e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 2.98676e+02 ;
+            mbo:mz 7.3066e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 5.47193e+02 ;
+            mbo:mz 7.9055e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 8.47508e+02 ;
+            mbo:mz 9.6083e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 85 ],
+        [ mbo:intensity 1.490204e+03 ;
+            mbo:mz 9.7067e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 149 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.14093e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.352537e+03 ;
+            mbo:mz 1.15077e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 135 ],
+        [ mbo:intensity 7.47302e+03 ;
+            mbo:mz 1.32103e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 747 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-03e9-2900000000-5a4b7c29f57f4a21bbf1" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Aminocaproic acid; LC-ESI-QTOF; MS2; CE:15 eV; [M+H]+" .
+

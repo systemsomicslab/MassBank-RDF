@@ -1,0 +1,62 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA008701 a mbo:MassSpectrum ;
+    dcterms:creator "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2017-08-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA008701" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Muz M, Kutsarova S, Krauss M, Schulze T, Brack W (2017) Environ. Sci. Technol. 51:1830-1839, DOI:10.1021/acs.est.6b05468. Mutagenicity in surface waters - synergistic effects of carboline alkaloids and aromatic amines" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "35 % (nominal)" ;
+            mbo:column_name "Accucore PhenylHexyl 2.6um, 3x150mm, Thermo" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 3.2 min, 5/95 at 21 min, 5/95 at 41 min, 90/10 at 50 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30000" ;
+            mbo:retention_time "3.962 min" ;
+            mbo:solvent "A water",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-[4-[1-Hydroxy-2-(propan-2-ylamino)ethyl]phenyl]methanesulfonamide",
+                "Sotalol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.721195e+02 ;
+            rdfs:seeAlso cas:959-24-0,
+                chemspider:5063,
+                pubchem:CID5253 ;
+            schema:inChI "InChI=1S/C12H20N2O3S/c1-9(2)13-8-12(15)10-4-6-11(7-5-10)14-18(3,16)17/h4-7,9,12-15H,8H2,1-3H3" ;
+            schema:inChIKey inchikey:ZBMZVLHSJCTVON-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H20N2O3S" ;
+            schema:name "N-[4-[1-Hydroxy-2-(propan-2-ylamino)ethyl]phenyl]methanesulfonamide",
+                "Sotalol" ;
+            schema:smiles "CC(C)NCC(c1ccc(cc1)NS(=O)(=O)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 5.610411e+05 ;
+            mbo:mz 2.551166e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.731267e+02 ;
+            mbo:precursor_mz 2.731267e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-3dfd0368e041a6bb9859" ;
+    rdfs:comment "INTERNAL_ID 87" ;
+    skos:definition "Sotalol; LC-ESI-ITFT; MS2; CE: 35%; R=30000; [M+H]+" .
+

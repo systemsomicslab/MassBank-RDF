@@ -1,0 +1,65 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO001545 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO001545" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Oxalic monoamide",
+                "Oxamate",
+                "Oxamic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 8.901129e+01 ;
+            rdfs:seeAlso cas:471-47-6,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:4622> ;
+            schema:inChI "InChI=1S/C2H3NO3/c3-1(4)2(5)6/h(H2,3,4)(H,5,6)" ;
+            schema:inChIKey inchikey:SOWBFZRMHSNYGE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C2H3NO3" ;
+            schema:name "Oxalic monoamide",
+                "Oxamate",
+                "Oxamic acid" ;
+            schema:smiles "NC(=O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 7.42575e+04 ;
+            mbo:mz 4.2e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 7.970305e+05 ;
+            mbo:mz 4.41e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.48515e+04 ;
+            mbo:mz 4.49e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.44555e+04 ;
+            mbo:mz 5.99e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.997527e+07 ;
+            mbo:mz 8.82e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.8e+01 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000i-9000000000-e87e076e2ffe6d08a16b" ;
+    rdfs:comment "KEIO_ID O011" ;
+    skos:definition "Oxamic acid; LC-ESI-QQ; MS2; CE:10 V; [M-H]-" .
+

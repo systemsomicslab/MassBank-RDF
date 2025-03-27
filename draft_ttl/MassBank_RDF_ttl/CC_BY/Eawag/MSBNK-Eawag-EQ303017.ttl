@@ -1,0 +1,62 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ303017 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ303017" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "15 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.1 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Trospium",
+                "spiro[8-azoniabicyclo[3.2.1]octane-8,1`-azolidin-1-ium]-3-yl 2-hydroxy-2,2-diphenylacetate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.922226e+02 ;
+            rdfs:seeAlso chemspider:5394,
+                pubchem:CID5596 ;
+            schema:inChI "InChI=1S/C25H30NO3/c27-24(25(28,19-9-3-1-4-10-19)20-11-5-2-6-12-20)29-23-17-21-13-14-22(18-23)26(21)15-7-8-16-26/h1-6,9-12,21-23,28H,7-8,13-18H2/q+1" ;
+            schema:inChIKey inchikey:OYYDSUSKLWTMMQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C25H30NO3]+" ;
+            schema:name "Trospium",
+                "spiro[8-azoniabicyclo[3.2.1]octane-8,1`-azolidin-1-ium]-3-yl 2-hydroxy-2,2-diphenylacetate" ;
+            schema:smiles "OC(C(=O)OC1CC2CCC(C1)[N+]21CCCC1)(C1=CC=CC=C1)C1=CC=CC=C1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 5.54028e+06 ;
+            mbo:mz 1.641429e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.236302e+09 ;
+            mbo:mz 3.922207e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.922208e+02 ;
+            mbo:precursor_mz 3.92222e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0006-0009000000-062dc6b487dec38536d8" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3030" ;
+    skos:definition "Trospium; LC-ESI-QFT; MS2; CE: 15; R=35000; [M]+" .
+

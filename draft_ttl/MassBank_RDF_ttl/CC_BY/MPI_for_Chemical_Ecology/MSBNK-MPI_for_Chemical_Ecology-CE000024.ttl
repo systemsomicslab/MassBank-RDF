@@ -1,0 +1,63 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MPI_for_Chemical_Ecology-CE000024 a mbo:MassSpectrum ;
+    dcterms:creator "Ales Svatos, Ravi Kumar Maddula, MPI for Chemical Ecology, Jena, Germany" ;
+    dcterms:date "2016-01-19 (Created 2012-04-11, modified 2012-05-21)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MPI_for_Chemical_Ecology-CE000024" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "F. Rasche, A. Svatos, R.K. Maddula, C. Boettcher and S. Boecker. Computing fragmentation trees from tandem mass spectrometry data. Anal. Chem., 2011, 83, 1243-1251 doi:10.1021/ac101825k" ] ;
+    dcterms:rights "Copyright(C) 2011 MPI for Chemical Ecology, Jena, Germany under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic; HP-1100 HPLC, Agilent" ;
+            mbo:column_name "Symmetry C18 Column, Waters" ;
+            mbo:flow_gradient "0min:5%, 24min:95%, 28min:95%, 28.1:5% (acetonitrile)" ;
+            mbo:flow_rate "0.3 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "524.102 s" ;
+            mbo:solvent "A H2O(0.1%HCOOH)",
+                "B CH3CN(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Methylumbelliferylglucuronide" ;
+            mbo:ch_compound_class "Natural Product; Benzopyran" ;
+            mbo:ch_exact_mass 3.520794e+02 ;
+            rdfs:seeAlso pubchem:CID91553 ;
+            schema:inChI "InChI=1S/C16H16O9/c1-6-4-10(17)24-9-5-7(2-3-8(6)9)23-16-13(20)11(18)12(19)14(25-16)15(21)22/h2-5,11-14,16,18-20H,1H3,(H,21,22)/t11-,12-,13+,14-,16+/m0/s1" ;
+            schema:inChIKey inchikey:ARQXEQLMMNGFDU-JHZZJYKESA-N ;
+            schema:molecularFormula "C16H16O9" ;
+            schema:name "4-Methylumbelliferylglucuronide" ;
+            schema:smiles "CC1=CC(=O)OC2=C1C=CC(=C2)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.887512e+07 ;
+            mbo:mz 3.530876e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.401768e+06 ;
+            mbo:mz 3.540905e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 180 ],
+        [ mbo:intensity 6.179464e+05 ;
+            mbo:mz 3.550924e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 7.407557e+04 ;
+            mbo:mz 3.560952e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0udi-0009000000-7da8e9393a279f089678" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported by the Max-Planck-Society" ;
+    skos:definition "4-Methylumbelliferylglucuronide; LC-ESI-ITFT; MS; [M+H]+; isotope pattern" .
+

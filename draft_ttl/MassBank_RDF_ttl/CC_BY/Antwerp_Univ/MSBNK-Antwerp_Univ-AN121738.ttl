@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-AN121738 a mbo:MassSpectrum ;
+    dcterms:creator "Belova L, Covaci A, University of Antwerp, Belgium; Caballero-Casero N, University of Cordoba, Spain." ;
+    dcterms:date "2021-08-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-AN121738" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "ZORBAX Extend-C18 3.5um, 2.1x50mm, Agilent Technologies" ;
+            mbo:flow_gradient "80/20 at 0 min, 10/90 at 1.5 min, 5/95 at 5 min, 5/95 at 7.5 min, 80/20 at 7.6 min, 80/20 at 10 min" ;
+            mbo:flow_rate "350 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "4.407 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2,2-Bis(4-hydroxyphenyl)propane dimethacrylate",
+                "Bisphenol A dimethacrylate",
+                "[4-[2-[4-(2-methylprop-2-enoyloxy)phenyl]propan-2-yl]phenyl] 2-methylprop-2-enoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.641675e+02 ;
+            rdfs:seeAlso cas:3253-39-2,
+                chemspider:69197,
+                pubchem:CID76739 ;
+            schema:inChI "InChI=1S/C23H24O4/c1-15(2)21(24)26-19-11-7-17(8-12-19)23(5,6)18-9-13-20(14-10-18)27-22(25)16(3)4/h7-14H,1,3H2,2,4-6H3" ;
+            schema:inChIKey inchikey:QUZSUMLPWDHKCJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C23H24O4" ;
+            schema:name "2,2-Bis(4-hydroxyphenyl)propane dimethacrylate",
+                "Bisphenol A dimethacrylate",
+                "[4-[2-[4-(2-methylprop-2-enoyloxy)phenyl]propan-2-yl]phenyl] 2-methylprop-2-enoate" ;
+            schema:smiles "CC(=C)C(=O)Oc1ccc(cc1)C(C)(C)c2ccc(OC(=O)C(C)=C)cc2" ] ;
+    mbo:has_peak [ mbo:intensity 6.71788e+04 ;
+            mbo:mz 6.90342e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.74249e+04 ;
+            mbo:mz 2.031063e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 854 ],
+        [ mbo:intensity 4.237e+02 ;
+            mbo:mz 2.101478e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.822017e+02 ;
+            mbo:precursor_mz 3.822013e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0gb9-9070000000-3b810910adedcdd0f3a7" ;
+    rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;
+    skos:definition "2,2-Bis(4-hydroxyphenyl)propane dimethacrylate; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M+NH4]+" .
+

@@ -1,0 +1,54 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00926 a mbo:MassSpectrum ;
+    dcterms:creator "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan." ;
+    dcterms:date "2021-09-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00926" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Atsushi Yamamoto, Faculty of Environmental Studies, Tottori University of Environmental Studies, 1-1, Wakabadai-kita, Tottori City, Tottori 689-1111, Japan. under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "X500R QTOF (AB Sciex LLC, USA)" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Daidzein" ;
+            mbo:ch_compound_class "7-Hydroxyisoflavone" ;
+            mbo:ch_exact_mass 2.540579e+02 ;
+            rdfs:seeAlso cas:486-66-8,
+                chemspider:4445025,
+                pubchem:CID5281708 ;
+            schema:inChI "InChI=1S/C15H10O4/c16-10-3-1-9(2-4-10)13-8-19-14-7-11(17)5-6-12(14)15(13)18/h1-8,16-17H" ;
+            schema:inChIKey inchikey:ZQSIJRDFPHDXIC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O4" ;
+            schema:name "Daidzein" ;
+            schema:smiles "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.49291e+03 ;
+            mbo:mz 2.530532e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.1209e+02 ;
+            mbo:mz 2.540569e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 175 ],
+        [ mbo:intensity 3.1328e+02 ;
+            mbo:mz 5.071128e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 90 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0udi-0090000000-76a28ade919e4637142a" ;
+    rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;
+    skos:definition "Daidzein; ESI-QTOF; MS; NEGATIVE" .
+

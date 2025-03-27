@@ -1,0 +1,102 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-BGC_Munich-RP015303 a mbo:MassSpectrum ;
+    dcterms:creator "BGC, Helmholtz Zentrum Muenchen" ;
+    dcterms:date "2017-10-24"^^xsd:date ;
+    dcterms:identifier "MSBNK-BGC_Munich-RP015303" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "maXis plus UHR-ToF-MS, Bruker Daltonics" ;
+            mbo:collision_energy "40" ;
+            mbo:column_name "BEH C18 1.7um, 2.1x100mm, Waters" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1.12 min, 0.5/99.5 at 6.41 min, 0.5/99.5 at 10.01 min" ;
+            mbo:flow_rate "400 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "3.087 min" ;
+            mbo:solvent "A Water with 0.1% formic acid",
+                "B ACN with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Octanedioic acid",
+                "Suberic acid" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 1.740892e+02 ;
+            rdfs:seeAlso cas:505-48-6,
+                chemspider:10025,
+                pubchem:CID10457 ;
+            schema:inChI "InChI=1S/C8H14O4/c9-7(10)5-3-1-2-4-6-8(11)12/h1-6H2,(H,9,10)(H,11,12)" ;
+            schema:inChIKey inchikey:TYFQFVWCELRYAO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H14O4" ;
+            schema:name "Octanedioic acid",
+                "Suberic acid" ;
+            schema:smiles "OC(=O)CCCCCCC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.06e+02 ;
+            mbo:mz 5.30381e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 1.44e+02 ;
+            mbo:mz 8.70803e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 1.24e+02 ;
+            mbo:mz 8.80751e+01 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 1.64e+02 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 7.4e+01 ;
+            mbo:mz 6.50383e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 28 ],
+        [ mbo:intensity 2.44e+02 ;
+            mbo:mz 6.70537e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 2.654e+03 ;
+            mbo:mz 6.90695e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.2e+01 ;
+            mbo:mz 7.3028e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.22e+02 ;
+            mbo:mz 7.70379e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 7.8e+01 ;
+            mbo:mz 7.90535e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 4.26e+02 ;
+            mbo:mz 8.30858e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 8.2e+01 ;
+            mbo:mz 8.70556e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 31 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.50582e+01 ;
+            mbo:precursor_mz 1.750965e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-014i-9000000000-d05f608ef6283dd0d04e" ;
+    rdfs:comment "INTERNAL_ID 153" ;
+    skos:definition "Suberic acid; LC-ESI-QTOF; MS2; CE: 40; R=; [M+H]+" .
+

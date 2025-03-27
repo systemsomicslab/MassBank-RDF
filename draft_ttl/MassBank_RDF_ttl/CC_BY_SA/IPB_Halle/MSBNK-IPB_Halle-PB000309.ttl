@@ -1,0 +1,53 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000309 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-04-18, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000309" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "55 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(4-hydroxybenzoyl)oxyethyl-trimethylazanium",
+                "4-Hydroxybenzoylcholine" ;
+            mbo:ch_compound_class "Natural Product; phenolic choline ester" ;
+            mbo:ch_exact_mass 2.241287e+02 ;
+            rdfs:seeAlso pubchem:CID151252 ;
+            schema:inChI "InChI=1S/C12H17NO3/c1-13(2,3)8-9-16-12(15)10-4-6-11(14)7-5-10/h4-7H,8-9H2,1-3H3/p+1" ;
+            schema:inChIKey inchikey:BAPAICNRGIBFJT-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C12H18NO3]+" ;
+            schema:name "2-(4-hydroxybenzoyl)oxyethyl-trimethylazanium",
+                "4-Hydroxybenzoylcholine" ;
+            schema:smiles "C[N+](C)(C)CCOC(=O)C1=CC=C(C=C1)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.650506e+03 ;
+            mbo:mz 6.5038e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 465 ],
+        [ mbo:intensity 3.6297e+03 ;
+            mbo:mz 9.3033e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 363 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 1.21031e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00di-7900000000-948cf79f530574c15b5a" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "4-Hydroxybenzoylcholine; LC-ESI-QTOF; MS2; CE:55 eV; M+" .
+

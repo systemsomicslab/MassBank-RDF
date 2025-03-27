@@ -1,0 +1,98 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU117553 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU117553" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "45" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.426 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Flutolanil",
+                "N-(3-propan-2-yloxyphenyl)-2-(trifluoromethyl)benzamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.231133e+02 ;
+            rdfs:seeAlso cas:66332-96-5,
+                chemspider:43579,
+                pubchem:CID47898 ;
+            schema:inChI "InChI=1S/C17H16F3NO2/c1-11(2)23-13-7-5-6-12(10-13)21-16(22)14-8-3-4-9-15(14)17(18,19)20/h3-11H,1-2H3,(H,21,22)" ;
+            schema:inChIKey inchikey:PTCGDEVVHUXTMP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H16F3NO2" ;
+            schema:name "Flutolanil",
+                "N-(3-propan-2-yloxyphenyl)-2-(trifluoromethyl)benzamide" ;
+            schema:smiles "CC(C)OC1=CC(NC(=O)C2=C(C=CC=C2)C(F)(F)F)=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 4.38603e+04 ;
+            mbo:mz 6.89957e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.51687e+04 ;
+            mbo:mz 2.60053e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.31614e+04 ;
+            mbo:mz 1.250206e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 6.652579e+05 ;
+            mbo:mz 1.340247e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 63 ],
+        [ mbo:intensity 1.053859e+07 ;
+            mbo:mz 1.450269e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.369024e+05 ;
+            mbo:mz 1.890168e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.70493e+04 ;
+            mbo:mz 1.920458e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.86626e+04 ;
+            mbo:mz 2.120517e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.22825e+04 ;
+            mbo:mz 2.200402e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.552167e+05 ;
+            mbo:mz 2.400466e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 34 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.561333e+02 ;
+            mbo:precursor_mz 3.22106e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-0002-0900000000-f8b9c41c8b057a1c8a89" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Flutolanil; LC-ESI-QFT; MS2; CE: 45; R=17500; [M-H]-" .
+

@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100910 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100910" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Peonidin-3-O-beta-galactopyranoside",
+                "Pn 3-Gal" ;
+            mbo:ch_compound_class "Anthocyanidin" ;
+            mbo:ch_exact_mass 4.63124e+02 ;
+            rdfs:seeAlso cas:260256-26-6,
+                knapsack:C00006680 ;
+            schema:inChI "InChI=1S/C22H22O11/c1-30-15-4-9(2-3-12(15)25)21-16(7-11-13(26)5-10(24)6-14(11)31-21)32-22-20(29)19(28)18(27)17(8-23)33-22/h2-7,17-20,22-23,27-29H,8H2,1H3,(H2-,24,25,26)/p+1/t17-,18+,19+,20-,22-/m1/s1" ;
+            schema:inChIKey inchikey:ZZWPMFROUHHAKY-VRRLNDPFSA-O ;
+            schema:molecularFormula "[C22H23O11]+" ;
+            schema:name "Peonidin-3-O-beta-galactopyranoside",
+                "Pn 3-Gal" ;
+            schema:smiles "COc(c(O)4)cc(cc4)c([o+1]1)c(OC(O3)C(O)C(O)C(O)C(CO)3)cc(c(O)2)c(cc(O)c2)1" ] ;
+    mbo:has_peak [ mbo:intensity 1.257e+02 ;
+            mbo:mz 2.110406e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 2.062e+02 ;
+            mbo:mz 2.270354e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 262 ],
+        [ mbo:intensity 8.443e+01 ;
+            mbo:mz 2.390366e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 107 ],
+        [ mbo:intensity 2.83e+02 ;
+            mbo:mz 2.550311e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 360 ],
+        [ mbo:intensity 5.165e+02 ;
+            mbo:mz 2.830263e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 657 ],
+        [ mbo:intensity 1.805e+02 ;
+            mbo:mz 2.840342e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 230 ],
+        [ mbo:intensity 7.854e+02 ;
+            mbo:mz 2.980497e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.025e+02 ;
+            mbo:mz 2.990579e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 639 ],
+        [ mbo:intensity 5.984e+02 ;
+            mbo:mz 4.611084e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 761 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.611084e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-01pk-0090200000-b9eb977e2a8f55947396" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Peonidin-3-O-beta-galactopyranoside; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M-2H]-" .
+

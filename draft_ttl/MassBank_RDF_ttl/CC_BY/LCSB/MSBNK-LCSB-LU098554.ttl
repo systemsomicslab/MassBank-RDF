@@ -1,0 +1,102 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU098554 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU098554" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "60" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "14.467 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2R)-2-(3-chloro-4-methylsulfonylphenyl)-3-[(1R)-3-oxocyclopentyl]-N-pyrazin-2-ylpropanamide",
+                "Piragliatin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.210863e+02 ;
+            rdfs:seeAlso cas:625114-41-2,
+                chemspider:8607766,
+                pubchem:CID10432339 ;
+            schema:inChI "InChI=1S/C19H20ClN3O4S/c1-28(26,27)17-5-3-13(10-16(17)20)15(9-12-2-4-14(24)8-12)19(25)23-18-11-21-6-7-22-18/h3,5-7,10-12,15H,2,4,8-9H2,1H3,(H,22,23,25)/t12-,15+/m0/s1" ;
+            schema:inChIKey inchikey:XEANIURBPHCHMG-SWLSCSKDSA-N ;
+            schema:molecularFormula "C19H20ClN3O4S" ;
+            schema:name "(2R)-2-(3-chloro-4-methylsulfonylphenyl)-3-[(1R)-3-oxocyclopentyl]-N-pyrazin-2-ylpropanamide",
+                "Piragliatin" ;
+            schema:smiles "CS(=O)(=O)C1=CC=C(C=C1Cl)[C@@H](C[C@H]1CCC(=O)C1)C(=O)NC1=NC=CN=C1" ] ;
+    mbo:has_peak [ mbo:intensity 6.79345e+04 ;
+            mbo:mz 6.39624e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.3201e+03 ;
+            mbo:mz 1.99113e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 4.1912e+03 ;
+            mbo:mz 2.009785e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 62 ],
+        [ mbo:intensity 1.47616e+04 ;
+            mbo:mz 7.8986e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 217 ],
+        [ mbo:intensity 1.51236e+04 ;
+            mbo:mz 8.10345e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 222 ],
+        [ mbo:intensity 4.40581e+04 ;
+            mbo:mz 9.40411e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 648 ],
+        [ mbo:intensity 8.4669e+03 ;
+            mbo:mz 9.50504e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 2.3355e+03 ;
+            mbo:mz 1.090659e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 3.8196e+03 ;
+            mbo:mz 1.17071e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 1.55898e+04 ;
+            mbo:mz 1.310866e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 229 ],
+        [ mbo:intensity 6.51324e+04 ;
+            mbo:mz 1.571023e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 958 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.129857e+02 ;
+            mbo:precursor_mz 4.20079e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-08fu-9500000000-24706aca534c9091b42a" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "Piragliatin; LC-ESI-QFT; MS2; CE: 60; R=17500; [M-H]-" .
+

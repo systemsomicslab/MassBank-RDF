@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000534 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000534" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,4,5,6-Tetrachloropyridine-2-carboxylic acid" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.588761e+02 ;
+            rdfs:seeAlso cas:10469-09-7,
+                pubchem:CID82646 ;
+            schema:inChI "InChI=1S/C6HCl4NO2/c7-1-2(8)4(6(12)13)11-5(10)3(1)9/h(H,12,13)" ;
+            schema:inChIKey inchikey:GXFRQLQUKBSYQL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6HCl4NO2" ;
+            schema:name "3,4,5,6-Tetrachloropyridine-2-carboxylic acid" ;
+            schema:smiles "OC(=O)C1N=C(Cl)C(Cl)=C(Cl)C=1Cl" ] ;
+    mbo:has_peak [ mbo:intensity 6.469623e+00 ;
+            mbo:mz 3.49694e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.13879e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.578689e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-03di-0090000000-dcab4c756dd9e9bc5323" ;
+    skos:definition "3,4,5,6-Tetrachloropyridine-2-carboxylic acid; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

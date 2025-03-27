@@ -1,0 +1,73 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU105011 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU105011" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "5.730 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(6R,7R)-7-[[(2S)-2-[(4-ethyl-2,3-dioxopiperazine-1-carbonyl)amino]-2-(4-hydroxyphenyl)acetyl]amino]-3-[(1-methyltetrazol-5-yl)sulfanylmethyl]-8-oxo-5-thia-1-azabicyclo[4.2.0]oct-2-ene-2-carboxylic acid",
+                "AC1OFCHV",
+                "Cefoperazone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 6.451424e+02 ;
+            rdfs:seeAlso cas:62893-20-3,
+                chemspider:5408849,
+                pubchem:CID7048632 ;
+            schema:inChI "InChI=1S/C25H27N9O8S2/c1-3-32-8-9-33(21(39)20(32)38)24(42)27-15(12-4-6-14(35)7-5-12)18(36)26-16-19(37)34-17(23(40)41)13(10-43-22(16)34)11-44-25-28-29-30-31(25)2/h4-7,15-16,22,35H,3,8-11H2,1-2H3,(H,26,36)(H,27,42)(H,40,41)/t15-,16+,22+/m0/s1" ;
+            schema:inChIKey inchikey:GCFBRXLSHGKWDP-WJONJSRFSA-N ;
+            schema:molecularFormula "C25H27N9O8S2" ;
+            schema:name "(6R,7R)-7-[[(2S)-2-[(4-ethyl-2,3-dioxopiperazine-1-carbonyl)amino]-2-(4-hydroxyphenyl)acetyl]amino]-3-[(1-methyltetrazol-5-yl)sulfanylmethyl]-8-oxo-5-thia-1-azabicyclo[4.2.0]oct-2-ene-2-carboxylic acid",
+                "AC1OFCHV",
+                "Cefoperazone" ;
+            schema:smiles "O=C2N1/C(=C(\\CS[C@@H]1[C@@H]2NC(=O)[C@H](c3ccc(O)cc3)NC(=O)N4C(=O)C(=O)N(CC)CC4)CSc5nnnn5C)C(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 4.732e+03 ;
+            mbo:mz 1.430811e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.4e+02 ;
+            mbo:mz 1.440854e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 93 ],
+        [ mbo:intensity 2.016e+03 ;
+            mbo:mz 1.480396e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 426 ],
+        [ mbo:intensity 4.64e+02 ;
+            mbo:mz 1.560134e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 98 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 7.045256e+02 ;
+            mbo:precursor_mz 6.461497e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-0900000000-0433af0ab531e0ec0c28" ;
+    rdfs:comment "INTERNAL_ID 1050" ;
+    skos:definition "Cefoperazone; LC-ESI-QTOF; MS2; HILIC; CE: 50 eV; R=35000; [M+H]+" .
+

@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001221 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001221" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-[3,5-DI(tert-butyl)-4-hydroxyphenyl]propanohydrazide",
+                "DTXSID1027978" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.922151e+02 ;
+            rdfs:seeAlso cas:32687-77-7,
+                pubchem:CID64865 ;
+            schema:inChI "InChI=1S/C17H28N2O2/c1-16(2,3)12-9-11(7-8-14(20)19-18)10-13(15(12)21)17(4,5)6/h9-10,21H,7-8,18H2,1-6H3,(H,19,20)" ;
+            schema:inChIKey inchikey:KMWIPXLIKIAZMT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H28N2O2" ;
+            schema:name "3-[3,5-DI(tert-butyl)-4-hydroxyphenyl]propanohydrazide",
+                "DTXSID1027978" ;
+            schema:smiles "CC(C)(C)C1C=C(CCC(=O)NN)C=C(C=1O)C(C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.340971e+00 ;
+            mbo:mz 4.100329e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 6.400999e+00 ;
+            mbo:mz 2.311754e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 4.213529e+01 ;
+            mbo:mz 4.199854e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 421 ],
+        [ mbo:intensity 1.577145e+00 ;
+            mbo:mz 4.300636e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 3.11185e+01 ;
+            mbo:mz 5.702201e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 311 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 7.304074e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.172091e+00 ;
+            mbo:mz 7.307712e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.078131e+00 ;
+            mbo:mz 1.190502e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 1.188038e+00 ;
+            mbo:mz 1.751128e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.470478e+00 ;
+            mbo:mz 2.181676e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 15 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.912078e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-00di-9000000000-bce3dc17c95291056553" ;
+    skos:definition "3-[3,5-DI(tert-butyl)-4-hydroxyphenyl]propanohydrazide; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

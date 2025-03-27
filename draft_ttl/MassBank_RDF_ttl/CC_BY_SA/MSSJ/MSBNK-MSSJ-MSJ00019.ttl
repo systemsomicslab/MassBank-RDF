@@ -1,0 +1,54 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-MSSJ-MSJ00019 a mbo:MassSpectrum ;
+    dcterms:creator "CASMI2013 organizers" ;
+    dcterms:date "2016-01-19 (Created 2014-07-22)"^^xsd:date ;
+    dcterms:identifier "MSBNK-MSSJ-MSJ00019" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Mass Spectrometry Society of Japan under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LC-IT-TOF (Shimadzu)" ;
+            mbo:instrument_type "ESI-ITTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Demethoxycurcumin" ;
+            mbo:ch_compound_class "Natural Product; Curcumins" ;
+            mbo:ch_exact_mass 3.381154e+02 ;
+            rdfs:seeAlso chemspider:4482000,
+                knapsack:C00037023,
+                pubchem:CID5324476 ;
+            schema:inChI "InChI=1S/C20H18O5/c1-25-20-12-15(6-11-19(20)24)5-10-18(23)13-17(22)9-4-14-2-7-16(21)8-3-14/h2-13,21,23-24H,1H3/b9-4+,10-5+,18-13-" ;
+            schema:inChIKey inchikey:UEPVWRDHSPMIAZ-IZTHOABVSA-N ;
+            schema:molecularFormula "C20H18O5" ;
+            schema:name "Demethoxycurcumin" ;
+            schema:smiles "COC1=C(C=CC(=C1)/C=C/C(=C/C(=O)/C=C/C2=CC=C(C=C2)O)/O)O" ] ;
+    mbo:has_peak [ mbo:intensity 6.6493e+06 ;
+            mbo:mz 3.37108e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.926434e+06 ;
+            mbo:mz 3.381122e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 289 ],
+        [ mbo:intensity 2.51486e+05 ;
+            mbo:mz 3.391128e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000i-0009000000-3b659167a4c7cd242607" ;
+    rdfs:comment "[MS2] MSJ00020" ;
+    skos:definition "Demethoxycurcumin; ESI-ITTOF; MS; Negative" .
+

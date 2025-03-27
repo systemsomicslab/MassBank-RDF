@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Antwerp_Univ-METOX_N106432_D0B8 a mbo:MassSpectrum ;
+    dcterms:creator "da Silva KM, Iturrospe E, van de Lavoir M, Robeyns R, University of Antwerp, Belgium" ;
+    dcterms:date "2022-04-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-Antwerp_Univ-METOX_N106432_D0B8" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 6560 QTOF" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "N/A" ;
+            mbo:flow_gradient "50/50 isocratic" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7000" ;
+            mbo:retention_time "0.164 min" ;
+            mbo:solvent "A 30/70 acetonitrile/water with 2mM ammonium acetate",
+                "B 88/10/2 isopropanol/acetonitrile/water with 2mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-octadecanoyl-rac-glycerol",
+                "2,3-dihydroxypropyl octadecanoate",
+                "Glyceryl monostearate" ;
+            mbo:ch_compound_class "N/A; Metabolomics Standard" ;
+            mbo:ch_exact_mass 3.583083e+02 ;
+            rdfs:seeAlso cas:123-94-4,
+                chemspider:23095,
+                pubchem:CID24699 ;
+            schema:inChI "InChI=1S/C21H42O4/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-21(24)25-19-20(23)18-22/h20,22-23H,2-19H2,1H3" ;
+            schema:inChIKey inchikey:VBICKXHEKHSIBG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H42O4" ;
+            schema:name "1-octadecanoyl-rac-glycerol",
+                "2,3-dihydroxypropyl octadecanoate",
+                "Glyceryl monostearate" ;
+            schema:smiles "CCCCCCCCCCCCCCCCCC(=O)OCC(CO)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.16e+01 ;
+            mbo:mz 9.212e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 1.443e+02 ;
+            mbo:mz 3.75179e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 841 ],
+        [ mbo:intensity 1.715e+02 ;
+            mbo:mz 1.170362e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.503e+02 ;
+            mbo:mz 1.330083e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 876 ],
+        [ mbo:intensity 5.67e+01 ;
+            mbo:mz 1.931822e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 330 ],
+        [ mbo:intensity 2.16e+01 ;
+            mbo:mz 2.562981e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 126 ],
+        [ mbo:intensity 2.38e+01 ;
+            mbo:mz 2.599947e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 139 ],
+        [ mbo:intensity 5.22e+01 ;
+            mbo:mz 2.652058e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 304 ],
+        [ mbo:intensity 3.91e+01 ;
+            mbo:mz 2.731502e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 228 ],
+        [ mbo:intensity 4.6e+01 ;
+            mbo:mz 2.931775e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 268 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.800164e+02 ;
+            mbo:precursor_mz 4.173222e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-017l-0943000000-23e4aa6f994b1c1ee571" ;
+    rdfs:comment "INTERNAL_ID 1064" ;
+    skos:definition "1-octadecanoyl-rac-glycerol; LC-ESI-QTOF; MS2; CE: 20eV; R=7000; [M+CH3COO]-" .
+

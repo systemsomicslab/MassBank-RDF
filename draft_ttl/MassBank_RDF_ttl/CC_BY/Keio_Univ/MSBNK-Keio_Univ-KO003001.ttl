@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Keio_Univ-KO003001 a mbo:MassSpectrum ;
+    dcterms:creator "Kakazu Y, Horai H, Institute for Advanced Biosciences, Keio Univ." ;
+    dcterms:date "2016-01-19 (Created 2007-07-07, modified 2011-05-10)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Keio_Univ-KO003001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API3000, Applied Biosystems" ;
+            mbo:collision_energy "30 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Glycyrrhizate",
+                "Glycyrrhizic acid",
+                "Glycyrrhizin",
+                "Glycyrrhizinate" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 8.224038e+02 ;
+            rdfs:seeAlso cas:1405-86-3,
+                <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CIDSID:5341> ;
+            schema:inChI "InChI=1S/C42H62O16/c1-37(2)21-8-11-42(7)31(20(43)16-18-19-17-39(4,36(53)54)13-12-38(19,3)14-15-41(18,42)6)40(21,5)10-9-22(37)55-35-30(26(47)25(46)29(57-35)33(51)52)58-34-27(48)23(44)24(45)28(56-34)32(49)50/h16,19,21-31,34-35,44-48H,8-15,17H2,1-7H3,(H,49,50)(H,51,52)(H,53,54)/t19-,21-,22-,23-,24-,25-,26-,27+,28-,29-,30+,31+,34-,35-,38+,39-,40-,41+,42+/m0/s1" ;
+            schema:inChIKey inchikey:LPLVUJXQOOQHMX-QWBHMCJMSA-N ;
+            schema:molecularFormula "C42H62O16" ;
+            schema:name "Glycyrrhizate",
+                "Glycyrrhizic acid",
+                "Glycyrrhizin",
+                "Glycyrrhizinate" ;
+            schema:smiles "OC(=O)C(C)(C7)CC(C(C)(C7)1)(C(=C6)C(C)(C(C5([H])C6=O)(CCC([H])(C25C)C(C)(C)C(OC(O3)C(OC(O4)C(O)C(C(C4C(O)=O)O)O)C(C(C3C(O)=O)O)O)CC2)C)CC1)[H]" ] ;
+    mbo:has_peak [ mbo:intensity 2.292082e+06 ;
+            mbo:mz 4.538e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.633665e+05 ;
+            mbo:mz 4.716e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 3.712875e+05 ;
+            mbo:mz 6.476e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 162 ],
+        [ mbo:intensity 1.138615e+05 ;
+            mbo:mz 6.845e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 50 ],
+        [ mbo:intensity 8.9109e+04 ;
+            mbo:mz 8.234e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 8.23e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0udi-0000901000-57104f23e3197f427a1d" ;
+    rdfs:comment "KEIO_ID G057" ;
+    skos:definition "Glycyrrhizin; LC-ESI-QQ; MS2; CE:30 V; [M+H]+" .
+

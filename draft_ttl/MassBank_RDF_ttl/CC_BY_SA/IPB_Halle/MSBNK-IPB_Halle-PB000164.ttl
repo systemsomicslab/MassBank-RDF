@@ -1,0 +1,49 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-IPB_Halle-PB000164 a mbo:MassSpectrum ;
+    dcterms:creator "Boettcher C, Institute of Plant Biochemistry, Halle, Germany" ;
+    dcterms:date "2016-01-19 (Created 2008-01-03, modified 2013-06-04)"^^xsd:date ;
+    dcterms:identifier "MSBNK-IPB_Halle-PB000164" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "API QSTAR Pulsar i" ;
+            mbo:collision_energy "15 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,5,7-trihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+                "Kaempferol" ;
+            mbo:ch_compound_class "Natural Product; Flavonol" ;
+            mbo:ch_exact_mass 2.860477e+02 ;
+            rdfs:seeAlso pubchem:CID5280863 ;
+            schema:inChI "InChI=1S/C15H10O6/c16-8-3-1-7(2-4-8)15-14(20)13(19)12-10(18)5-9(17)6-11(12)21-15/h1-6,16-18,20H" ;
+            schema:inChIKey inchikey:IYRMWMYZSQPJKC-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O6" ;
+            schema:name "3,5,7-trihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+                "Kaempferol" ;
+            schema:smiles "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1e+04 ;
+            mbo:mz 2.87055e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.06025e+02 ;
+            mbo:mz 2.88061e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 31 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-000i-0090000000-160d6352ced9323d8a12" ;
+    rdfs:comment "CONFIDENCE confident structure" ;
+    skos:definition "Kaempferol; LC-ESI-QTOF; MS2; CE:15 eV; [M+H]+" .
+

@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA126811C9CFPH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA126811C9CFPH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "8.532 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,5,5-trimethylcyclohex-2-en-1-one",
+                "Isophorone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.381045e+02 ;
+            rdfs:seeAlso cas:78-59-1,
+                chemspider:6296,
+                pubchem:CID6544 ;
+            schema:inChI "InChI=1S/C9H14O/c1-7-4-8(10)6-9(2,3)5-7/h4H,5-6H2,1-3H3" ;
+            schema:inChIKey inchikey:HJOVHMDZYOCNQW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H14O" ;
+            schema:name "3,5,5-trimethylcyclohex-2-en-1-one",
+                "Isophorone" ;
+            schema:smiles "CC1=CC(=O)CC(C)(C)C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.130596e+06 ;
+            mbo:mz 6.90332e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 163 ],
+        [ mbo:intensity 2.072436e+05 ;
+            mbo:mz 1.211009e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 6.932406e+06 ;
+            mbo:mz 1.391114e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.04093e+04 ;
+            mbo:mz 7.90541e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.56108e+04 ;
+            mbo:mz 8.10697e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 1.057903e+05 ;
+            mbo:mz 8.30489e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 4.18674e+04 ;
+            mbo:mz 9.30697e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 5.73577e+04 ;
+            mbo:mz 9.50854e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.175422e+05 ;
+            mbo:mz 9.70646e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 7.7106e+03 ;
+            mbo:mz 9.71008e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.1852e+03 ;
+            mbo:mz 1.1108e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.391118e+02 ;
+            mbo:precursor_mz 1.391117e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-000i-1900000000-8d7f46b4e8b80ec5efbc" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Isophorone; LC-ESI-ITFT; MS2; CE: 40%; R=15000; [M+H]+" .
+

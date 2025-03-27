@@ -1,0 +1,103 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100475 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2009-09-10, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100475" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-60 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6,7-Dihydroxycoumarin-6-glucoside",
+                "Aesculin",
+                "Aesculinum",
+                "Esculetin-6-beta-D-glucopyranoside",
+                "Esculin",
+                "Esculoside" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.400794e+02 ;
+            rdfs:seeAlso cas:531-75-9,
+                chemspider:4444765,
+                knapsack:C00002472,
+                pubchem:CID5281417 ;
+            schema:inChI "InChI=1S/C15H16O9/c16-5-10-12(19)13(20)14(21)15(24-10)23-9-3-6-1-2-11(18)22-8(6)4-7(9)17/h1-4,10,12-17,19-21H,5H2/t10-,12-,13+,14-,15-/m1/s1" ;
+            schema:inChIKey inchikey:XHCADAYNFIFUHF-TVKJYDDYSA-N ;
+            schema:molecularFormula "C15H16O9" ;
+            schema:name "6,7-Dihydroxycoumarin-6-glucoside",
+                "Aesculin",
+                "Aesculinum",
+                "Esculetin-6-beta-D-glucopyranoside",
+                "Esculin",
+                "Esculoside" ;
+            schema:smiles "OCC(O1)C(O)C(O)C(O)C1Oc(c2)c(O)cc(O3)c(C=CC(=O)3)2" ] ;
+    mbo:has_peak [ mbo:intensity 9.71e+01 ;
+            mbo:mz 7.70405e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 3.236e+01 ;
+            mbo:mz 1.800395e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.158e+02 ;
+            mbo:mz 3.410872e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 80 ],
+        [ mbo:intensity 5.88e+01 ;
+            mbo:mz 8.503e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 3.123e+01 ;
+            mbo:mz 8.90403e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 8.665e+01 ;
+            mbo:mz 1.050351e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 5.468e+02 ;
+            mbo:mz 1.230458e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 204 ],
+        [ mbo:intensity 4.276e+02 ;
+            mbo:mz 1.330304e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 5.789e+01 ;
+            mbo:mz 1.350456e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 1.147e+02 ;
+            mbo:mz 1.510405e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 2.684e+03 ;
+            mbo:mz 1.790348e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.410872e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-004i-0900000000-f430c535996e7a3911ce" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Esculin; LC-ESI-QTOF; MS2; CE:Ramp 5-60 V; [M+H]+" .
+

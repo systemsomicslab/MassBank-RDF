@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU153308 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-26"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU153308" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "ACQUITY UPLC BEH Amide 1.7 um 2.1x100mm, Waters" ;
+            mbo:flow_gradient "0/100 at 0-2 min, 95/5 at 12 min, 95/5 at 17 min, 0/100 at 17.1, 0/100 at 25 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "5.979 min" ;
+            mbo:solvent "A Water with 0.01% formic acid and 1mM ammonium formate",
+                "B Acetonitrile:Water 95:5 with 0.01% formic acid and 1mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Diacetylmorphine",
+                "Diacetylmorphine (Heroin)",
+                "[(4R,4aR,7S,7aR,12bS)-9-acetyloxy-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7-yl] acetate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.691576e+02 ;
+            rdfs:seeAlso cas:209-217-7,
+                chemspider:4575379,
+                pubchem:CID5462328 ;
+            schema:inChI "InChI=1S/C21H23NO5/c1-11(23)25-16-6-4-13-10-15-14-5-7-17(26-12(2)24)20-21(14,8-9-22(15)3)18(13)19(16)27-20/h4-7,14-15,17,20H,8-10H2,1-3H3/t14-,15+,17-,20-,21-/m0/s1" ;
+            schema:inChIKey inchikey:GVGLGOZIDCSQPN-PVHGPHFFSA-N ;
+            schema:molecularFormula "C21H23NO5" ;
+            schema:name "Diacetylmorphine",
+                "Diacetylmorphine (Heroin)",
+                "[(4R,4aR,7S,7aR,12bS)-9-acetyloxy-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7-yl] acetate" ;
+            schema:smiles "CC(=O)Oc1ccc2c3c1O[C@@H]4[C@]35CCN([C@H](C2)[C@@H]5C=C[C@@H]4OC(=O)C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.348e+03 ;
+            mbo:mz 2.11076e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.816e+03 ;
+            mbo:mz 2.681351e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 3.468e+03 ;
+            mbo:mz 3.10144e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 3.56e+03 ;
+            mbo:mz 3.281563e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 2.50868e+05 ;
+            mbo:mz 3.70167e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.5992e+04 ;
+            mbo:mz 3.711702e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 223 ],
+        [ mbo:intensity 8.028e+03 ;
+            mbo:mz 3.721715e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 32 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.701666e+02 ;
+            mbo:precursor_mz 3.701649e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-0009000000-46cdf2142ec07c43733f" ;
+    rdfs:comment "INTERNAL_ID 1533" ;
+    skos:definition "Diacetylmorphine (Heroin); LC-ESI-QTOF; MS2; HILIC; CE: 20 eV; R=35000; [M+H]+" .
+

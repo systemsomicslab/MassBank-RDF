@@ -1,0 +1,74 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NAIST-KNA00727 a mbo:MassSpectrum ;
+    dcterms:creator "Takahashi H, Kanaya S, Ogasawara N, Graduate School of Information Science, NAIST" ;
+    dcterms:date "2016-01-19 (Created 2009-11-19, modified 2011-08-03)"^^xsd:date ;
+    dcterms:identifier "MSBNK-NAIST-KNA00727" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL, Thermo Scientfic" ;
+            mbo:collision_energy "35eV" ;
+            mbo:column_name "TOSOH TSKgel ODS-100V  5um Part no. 21456" ;
+            mbo:flow_gradient "0min:3%, 45min:97%, 50min:97%, 50.1:3%, 57min:3% (acetonitrile)" ;
+            mbo:flow_rate "0.5 ml/min" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:retention_time "6.751218 min" ;
+            mbo:solvent "A 0.1%formate-water",
+                "B 0.1%formate-acetonitrile" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "alpha-D-Glucose 6-phosphate" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 2.600297e+02 ;
+            rdfs:seeAlso pubchem:CID3937 ;
+            schema:inChI "InChI=1S/C6H13O9P/c7-3-2(1-14-16(11,12)13)15-6(10)5(9)4(3)8/h2-10H,1H2,(H2,11,12,13)/t2-,3-,4+,5-,6+/m1/s1" ;
+            schema:inChIKey inchikey:NBSCHQHZLSJFNQ-DVKNGEFBSA-N ;
+            schema:molecularFormula "C6H13O9P" ;
+            schema:name "alpha-D-Glucose 6-phosphate" ;
+            schema:smiles "O[C@@H](O1)[C@H](O)[C@@H](O)[C@H](O)[C@H]1COP(O)(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 5.818278e+01 ;
+            mbo:mz 1.690435e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.088576e+02 ;
+            mbo:mz 1.98973e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 14 ],
+        [ mbo:intensity 8.649241e+00 ;
+            mbo:mz 2.230798e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.951927e+01 ;
+            mbo:mz 2.410287e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 7.669237e+03 ;
+            mbo:mz 2.590521e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.729576e+02 ;
+            mbo:mz 3.391526e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 5.266267e+00 ;
+            mbo:mz 5.012742e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.590521e+02 ;
+            mbo:precursor_mz 5.1905e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0a4i-0090000000-e8b45476ee838b1a65f3" ;
+    skos:definition "alpha-D-Glucose 6-phosphate; LC-ESI-ITFT; MS2; m/z:519.05; NEG" .
+

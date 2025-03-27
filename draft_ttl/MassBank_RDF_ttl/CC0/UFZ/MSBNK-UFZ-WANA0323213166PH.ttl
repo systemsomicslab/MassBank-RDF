@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA0323213166PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA0323213166PH" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "70 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "12.968 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tri-isobutylphosphate",
+                "Triisobutyl phosphate",
+                "tris(2-methylpropyl) phosphate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.661647e+02 ;
+            rdfs:seeAlso cas:126-71-6,
+                chemspider:29088,
+                pubchem:CID31355 ;
+            schema:inChI "InChI=1S/C12H27O4P/c1-10(2)7-14-17(13,15-8-11(3)4)16-9-12(5)6/h10-12H,7-9H2,1-6H3" ;
+            schema:inChIKey inchikey:HRKAMJBPFPHCSD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H27O4P" ;
+            schema:name "Tri-isobutylphosphate",
+                "Triisobutyl phosphate",
+                "tris(2-methylpropyl) phosphate" ;
+            schema:smiles "CC(C)COP(=O)(OCC(C)C)OCC(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 8.5703e+03 ;
+            mbo:mz 5.70698e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.2279e+03 ;
+            mbo:mz 8.09738e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 3.397759e+05 ;
+            mbo:mz 9.89845e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.671729e+02 ;
+            mbo:precursor_mz 2.67172e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-0002-9000000000-ac861441bccbd822c43f" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Tri-isobutylphosphate; LC-ESI-ITFT; MS2; CE: 70%; R=15000; [M+H]+" .
+

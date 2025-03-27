@@ -1,0 +1,86 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00665 a mbo:MassSpectrum ;
+    dcterms:creator "Lege S, Zwiener C, Environmental Analytical Chemistry (EAC), University of Tuebingen" ;
+    dcterms:date "2015-11-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Env_Anal_Chem_U_Tuebingen-TUE00665" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015, Environmental Analytical Chemistry (EAC), University of Tuebingen, Germany under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "6550 Q-TOF (Agilent Technologies)" ;
+            mbo:collision_energy "10.0V" ;
+            mbo:column_name "Flow injection" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "12000 (m/z 120) - 26000 (m/z 1000)" ;
+            mbo:solvent " ",
+                "%",
+                "(",
+                ")",
+                "+",
+                ".",
+                "0",
+                "1",
+                "2",
+                "5",
+                ":",
+                "A",
+                "H",
+                "M",
+                "N",
+                "O",
+                "a",
+                "c",
+                "d",
+                "e",
+                "i",
+                "m",
+                "n",
+                "o",
+                "t",
+                "u" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sucralose" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.960145e+02 ;
+            rdfs:seeAlso chemspider:64561,
+                pubchem:CID71485 ;
+            schema:inChI "InChI=1S/C12H19Cl3O8/c13-1-4-7(17)10(20)12(3-14,22-4)23-11-9(19)8(18)6(15)5(2-16)21-11/h4-11,16-20H,1-3H2/t4-,5-,6+,7-,8+,9-,10+,11-,12+/m1/s1" ;
+            schema:inChIKey inchikey:BAQAVOSOZGMPRM-QBMZZYIRSA-N ;
+            schema:molecularFormula "C12H19Cl3O8" ;
+            schema:name "Sucralose" ;
+            schema:smiles "C([C@@H]1[C@@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CCl)O)O)CCl)O)O)Cl)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.914e+03 ;
+            mbo:mz 3.49686e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 1.34e+02 ;
+            mbo:mz 1.430349e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 3.346e+03 ;
+            mbo:mz 3.590299e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 192 ],
+        [ mbo:intensity 1.7418e+04 ;
+            mbo:mz 3.950068e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.950073e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0002-0009000000-74a6a42e16e430085240" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Sucralose; LC-ESI-QTOF; MS2; CE: 10.0V; [M-H]-" .
+

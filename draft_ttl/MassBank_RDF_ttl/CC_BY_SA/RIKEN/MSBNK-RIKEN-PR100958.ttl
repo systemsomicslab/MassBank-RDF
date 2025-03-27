@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR100958 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2010-06-21, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR100958" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Kaem-3-Gal-6''-Rha-3''-Rha",
+                "Kaempferol-3-Galactoside-6''-Rhamnoside-3'''-Rhamnoside",
+                "Kaempferol-3-Galactoside-6-Rhamnoside-3-Rhamnoside" ;
+            mbo:ch_compound_class "Flavonoid" ;
+            mbo:ch_exact_mass 7.402164e+02 ;
+            rdfs:seeAlso cas:83170-31-4 ;
+            schema:inChI "InChI=1S/C33H40O19/c1-10-19(37)23(41)25(43)32(48-10)51-29-20(38)11(2)47-31(27(29)45)46-9-17-21(39)24(42)26(44)33(50-17)52-30-22(40)18-15(36)7-14(35)8-16(18)49-28(30)12-3-5-13(34)6-4-12/h3-8,10-11,17,19-21,23-27,29,31-39,41-45H,9H2,1-2H3/t10-,11-,17+,19-,20-,21-,23+,24-,25+,26+,27+,29+,31+,32-,33-/m0/s1" ;
+            schema:inChIKey inchikey:UYVBMGULWGRDQT-KABOUGNXSA-N ;
+            schema:molecularFormula "C33H40O19" ;
+            schema:name "Kaem-3-Gal-6''-Rha-3''-Rha",
+                "Kaempferol-3-Galactoside-6''-Rhamnoside-3'''-Rhamnoside",
+                "Kaempferol-3-Galactoside-6-Rhamnoside-3-Rhamnoside" ;
+            schema:smiles "C(C(COC(C5O)OC(C(C5OC([H])(O6)C(C(C(C(C)6)O)O)O)O)C)1)(C(O)C(C(OC(=C(c(c4)ccc(O)c4)3)C(=O)c(c2O3)c(cc(c2)O)O)O1)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.187e+03 ;
+            mbo:mz 2.840319e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 249 ],
+        [ mbo:intensity 1.277e+04 ;
+            mbo:mz 2.850392e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.877e+03 ;
+            mbo:mz 2.860448e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 147 ],
+        [ mbo:intensity 7.531e+03 ;
+            mbo:mz 7.392086e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 589 ],
+        [ mbo:intensity 2.649e+03 ;
+            mbo:mz 7.402125e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 207 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 7.392085e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000i-0090000500-59fa722c5475666c6374" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Kaempferol-3-Galactoside-6''-Rhamnoside-3'''-Rhamnoside; LC-ESI-QTOF; MS2; CE:30 V; [M-H]-" .
+

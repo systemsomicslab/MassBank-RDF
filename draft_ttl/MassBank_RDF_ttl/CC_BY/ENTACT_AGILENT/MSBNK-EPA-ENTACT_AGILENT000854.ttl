@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000854 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000854" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-(1-Methylbutyl)phenol" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 1.641201e+02 ;
+            rdfs:seeAlso cas:87-26-3,
+                pubchem:CID99016 ;
+            schema:inChI "InChI=1S/C11H16O/c1-3-6-9(2)10-7-4-5-8-11(10)12/h4-5,7-9,12H,3,6H2,1-2H3" ;
+            schema:inChIKey inchikey:ROMXEVFSCNLHAB-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H16O" ;
+            schema:name "2-(1-Methylbutyl)phenol" ;
+            schema:smiles "CCCC(C)C1C=CC=CC=1O" ] ;
+    mbo:has_peak [ mbo:intensity 1.007713e+01 ;
+            mbo:mz 4.100329e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 1.043726e+00 ;
+            mbo:mz 4.301894e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 6.983384e+00 ;
+            mbo:mz 6.503967e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 70 ],
+        [ mbo:intensity 3.719761e+00 ;
+            mbo:mz 9.101894e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 4.881992e+00 ;
+            mbo:mz 9.105532e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 1.282942e+01 ;
+            mbo:mz 9.303459e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 128 ],
+        [ mbo:intensity 1.587217e+01 ;
+            mbo:mz 1.170346e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 159 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 1.190502e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.248742e+00 ;
+            mbo:mz 1.330659e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 42 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.631128e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-014i-2900000000-c00a4653f45382c8c4f2" ;
+    skos:definition "2-(1-Methylbutyl)phenol; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+

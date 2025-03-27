@@ -1,0 +1,59 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000505 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000505" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent QTof 6545, Agilent Technologies [MS:1000490]" ;
+            mbo:collision_energy "10.0 eV" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "N/A" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "13-HODE-[d4]" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 2.962351e+02 ;
+            rdfs:seeAlso pubchem:CID5282947 ;
+            schema:inChI "InChI=1S/C18H32O3/c1-2-3-11-14-17(19)15-12-9-7-5-4-6-8-10-13-16-18(20)21/h7,9,12,15,17,19H,2-6,8,10-11,13-14,16H2,1H3,(H,20,21)/b9-7-,15-12+" ;
+            schema:inChIKey inchikey:HNICUWMFWZBIFP-BSZOFBHHSA-N ;
+            schema:molecularFormula "C18H32O3" ;
+            schema:name "13-HODE-[d4]" ;
+            schema:smiles "C(CCCCCCC/C=C\\C=C\\C(CCCCC)O)(=O)O" ] ;
+    mbo:has_peak [ mbo:intensity 8.995084e+03 ;
+            mbo:mz 1.981576e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 3.446997e+03 ;
+            mbo:mz 2.802359e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 6.230385e+03 ;
+            mbo:mz 2.812422e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 1.665635e+05 ;
+            mbo:mz 2.992528e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.99253e+02 ;
+            mbo:precursor_mz 2.99253e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0002-0090000000-16943c006cb2ab61462c" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 10.0 eV within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "13-HODE-[d4]; LC-ESI-QTOF; MS2; CE: 10.0; R=N/A; [M-H]-" .
+

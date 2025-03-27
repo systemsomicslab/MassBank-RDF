@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ01121402 a mbo:MassSpectrum ;
+    dcterms:creator "B. Beck [dtc,com], J. Hollender [dtc]" ;
+    dcterms:date "2023-04-27"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ01121402" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) Eawag 2023 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Exploris 240 Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "16.038 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2,2-dimethyl-3H-1-benzofuran-7-yl) N-(dibutylamino)sulfanyl-N-methylcarbamate",
+                "Carbosulfan" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.802134e+02 ;
+            rdfs:seeAlso cas:39995-74-9,
+                chemspider:37764,
+                pubchem:CID41384 ;
+            schema:inChI "InChI=1S/C20H32N2O3S/c1-6-8-13-22(14-9-7-2)26-21(5)19(23)24-17-12-10-11-16-15-20(3,4)25-18(16)17/h10-12H,6-9,13-15H2,1-5H3" ;
+            schema:inChIKey inchikey:JLQUFIHWVLZVTJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H32N2O3S" ;
+            schema:name "(2,2-dimethyl-3H-1-benzofuran-7-yl) N-(dibutylamino)sulfanyl-N-methylcarbamate",
+                "Carbosulfan" ;
+            schema:smiles "CCCCN(CCCC)SN(C)C(=O)OC1=CC=CC2=C1OC(C2)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 8.24201e+04 ;
+            mbo:mz 7.60215e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 98 ],
+        [ mbo:intensity 3.29379e+04 ;
+            mbo:mz 1.950474e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.25374e+04 ;
+            mbo:mz 2.221125e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.59042e+04 ;
+            mbo:mz 8.60965e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.43509e+04 ;
+            mbo:mz 1.04053e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 8.437286e+05 ;
+            mbo:mz 1.180684e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 7.1126e+03 ;
+            mbo:mz 1.230441e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.657062e+05 ;
+            mbo:mz 1.281432e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 315 ],
+        [ mbo:intensity 1.87232e+04 ;
+            mbo:mz 1.490595e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 3.635112e+05 ;
+            mbo:mz 1.601153e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 430 ],
+        [ mbo:intensity 1.171683e+05 ;
+            mbo:mz 1.650907e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 139 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.883935e+02 ;
+            mbo:precursor_mz 3.812206e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-014i-0900000000-62e64619a26ded202a6c" ;
+    rdfs:comment "UCHEM_ID 11214" ;
+    skos:definition "Carbosulfan; LC-ESI-QFT; MS2; CE: 30%; R=17500; [M+H]+" .
+

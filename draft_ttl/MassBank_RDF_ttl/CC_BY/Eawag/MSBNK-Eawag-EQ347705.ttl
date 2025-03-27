@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EQ347705 a mbo:MassSpectrum ;
+    dcterms:creator "Beck B, Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2015-08-25"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EQ347705" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "75 (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.1 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Chloro-N,N-dimethylaniline",
+                "4-chloro-N,N-dimethylaniline" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.550502e+02 ;
+            rdfs:seeAlso cas:698-69-1,
+                chemspider:21539183,
+                pubchem:CID136530 ;
+            schema:inChI "InChI=1S/C8H10ClN/c1-10(2)8-5-3-7(9)4-6-8/h3-6H,1-2H3" ;
+            schema:inChIKey inchikey:IONGEXNDPXANJD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H10ClN" ;
+            schema:name "4-Chloro-N,N-dimethylaniline",
+                "4-chloro-N,N-dimethylaniline" ;
+            schema:smiles "CN(C)c1ccc(cc1)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 4.369042e+06 ;
+            mbo:mz 1.060651e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 11 ],
+        [ mbo:intensity 6.891324e+05 ;
+            mbo:mz 1.120072e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.264815e+06 ;
+            mbo:mz 1.200806e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 6.344314e+06 ;
+            mbo:mz 1.210885e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 4.758244e+05 ;
+            mbo:mz 1.260102e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.401361e+08 ;
+            mbo:mz 1.40026e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 345 ],
+        [ mbo:intensity 4.060015e+08 ;
+            mbo:mz 1.410338e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.357214e+07 ;
+            mbo:mz 1.560573e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 33 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.560573e+02 ;
+            mbo:precursor_mz 1.560575e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0006-0900000000-34286940082f7552e381" ;
+    rdfs:comment "EAWAG_UCHEM_ID 3477" ;
+    skos:definition "4-chloro-N,N-dimethylaniline; LC-ESI-QFT; MS2; CE: 75; R=35000; [M+H]+" .
+

@@ -1,0 +1,97 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU152602 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-05-30"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU152602" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "7.547 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(1,3-benzodioxol-5-yloxymethyl)-4-(4-fluorophenyl)piperidine",
+                "3-[(1,3-Benzodioxol-5-yloxy)methyl]-4-(4-fluorophenyl)piperidine",
+                "Paroxetine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.291427e+02 ;
+            rdfs:seeAlso cas:827-88-3,
+                chemspider:4529,
+                pubchem:CID4691 ;
+            schema:inChI "InChI=1S/C19H20FNO3/c20-15-3-1-13(2-4-15)17-7-8-21-10-14(17)11-22-16-5-6-18-19(9-16)24-12-23-18/h1-6,9,14,17,21H,7-8,10-12H2" ;
+            schema:inChIKey inchikey:AHOUBRCZNHFOSL-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H20FNO3" ;
+            schema:name "3-(1,3-benzodioxol-5-yloxymethyl)-4-(4-fluorophenyl)piperidine",
+                "3-[(1,3-Benzodioxol-5-yloxy)methyl]-4-(4-fluorophenyl)piperidine",
+                "Paroxetine" ;
+            schema:smiles "FC1=CC=C(C=C1)C1CCNCC1COC1=CC2=C(OCO2)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 6.856e+03 ;
+            mbo:mz 1.230595e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.5672e+04 ;
+            mbo:mz 3.321553e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.02e+04 ;
+            mbo:mz 1.510374e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 1.1624e+04 ;
+            mbo:mz 1.630904e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 7.516e+03 ;
+            mbo:mz 1.781013e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.9796e+05 ;
+            mbo:mz 1.921174e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 3.1752e+04 ;
+            mbo:mz 1.931222e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 8.24e+03 ;
+            mbo:mz 3.131231e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.32118e+06 ;
+            mbo:mz 3.301499e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.39536e+05 ;
+            mbo:mz 3.311532e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 181 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.371017e+02 ;
+            mbo:precursor_mz 3.3015e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-001i-0109000000-078d87ce6df57cf612b3" ;
+    rdfs:comment "INTERNAL_ID 1526" ;
+    skos:definition "Paroxetine; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M+H]+" .
+

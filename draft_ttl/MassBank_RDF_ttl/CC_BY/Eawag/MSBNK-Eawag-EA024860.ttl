@@ -1,0 +1,76 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA024860 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA024860" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "3.8 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-[4-(2-pyrimidinylsulfamoyl)phenyl]acetamide",
+                "N4-Acetylsulfadiazine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.92063e+02 ;
+            rdfs:seeAlso cas:127-74-2,
+                chemspider:58478,
+                pubchem:CID64952 ;
+            schema:inChI "InChI=1S/C12H12N4O3S/c1-9(17)15-10-3-5-11(6-4-10)20(18,19)16-12-13-7-2-8-14-12/h2-8H,1H3,(H,15,17)(H,13,14,16)" ;
+            schema:inChIKey inchikey:NJIZUWGMNCUKGU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H12N4O3S" ;
+            schema:name "N-[4-(2-pyrimidinylsulfamoyl)phenyl]acetamide",
+                "N4-Acetylsulfadiazine" ;
+            schema:smiles "c1nc(NS(c2ccc(cc2)NC(C)=O)(=O)=O)ncc1" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 5.2245e+03 ;
+            mbo:mz 9.20255e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 131 ],
+        [ mbo:intensity 1.9464e+03 ;
+            mbo:mz 9.40412e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 49 ],
+        [ mbo:intensity 3.32987e+04 ;
+            mbo:mz 1.340611e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 838 ],
+        [ mbo:intensity 4.5954e+03 ;
+            mbo:mz 1.840754e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 3.9715e+04 ;
+            mbo:mz 2.270939e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.910567e+02 ;
+            mbo:precursor_mz 2.910557e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0059-1890000000-fbf9d4bdb929eb3da12d" ;
+    rdfs:comment "EAWAG_UCHEM_ID 248" ;
+    skos:definition "N4-Acetylsulfadiazine; LC-ESI-ITFT; MS2; CE: 45%; R=15000; [M-H]-" .
+

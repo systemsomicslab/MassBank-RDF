@@ -1,0 +1,83 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS027003 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS027003" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "30" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(R,R)-3,3'-Dithiobis(2-aminopropionicacid)",
+                "Cys",
+                "L-Cystine",
+                "L-Dicysteine",
+                "L-alpha-Diamino-beta-dithiolactic acid",
+                "beta.,.beta'-Dithiodialanine" ;
+            mbo:ch_compound_class "CLASS1 Amino acid CLASS2 Cystine" ;
+            mbo:ch_exact_mass 2.40302e+02 ;
+            rdfs:seeAlso cas:56-89-3,
+                pubchem:CID67678 ;
+            schema:inChI "InChI=1S/C6H12N2O4S2/c7-3(5(9)10)1-13-14-2-4(8)6(11)12/h3-4H,1-2,7-8H2,(H,9,10)(H,11,12)" ;
+            schema:inChIKey inchikey:LEVWYRKDKASIDU-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H12N2O4S2" ;
+            schema:name "(R,R)-3,3'-Dithiobis(2-aminopropionicacid)",
+                "Cys",
+                "L-Cystine",
+                "L-Dicysteine",
+                "L-alpha-Diamino-beta-dithiolactic acid",
+                "beta.,.beta'-Dithiodialanine" ;
+            schema:smiles "C(C(C(=O)O)N)SSCC(C(=O)O)N" ] ;
+    mbo:has_peak [ mbo:intensity 7.949e+03 ;
+            mbo:mz 7.3e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 165 ],
+        [ mbo:intensity 4.8229e+04 ;
+            mbo:mz 7.4e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.0648e+04 ;
+            mbo:mz 1.19e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 221 ],
+        [ mbo:intensity 1.7554e+04 ;
+            mbo:mz 1.2e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 364 ],
+        [ mbo:intensity 3.611e+03 ;
+            mbo:mz 1.22e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 1.0021e+04 ;
+            mbo:mz 1.51e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 208 ],
+        [ mbo:intensity 2.694e+03 ;
+            mbo:mz 1.52e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 56 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.4122e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00di-9700000000-0ef853c629ab0d48859a" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "L-Dicysteine, Cys, (R,R)-3,3'-Dithiobis(2-aminopropionicacid), beta.,.beta'-Dithiodialanine, L-alpha-Diamino-beta-dithiolactic acid, L-Cystine; LC-ESI-QQ; MS2" .
+

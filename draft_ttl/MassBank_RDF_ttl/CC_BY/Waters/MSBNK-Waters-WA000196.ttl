@@ -1,0 +1,63 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Waters-WA000196 a mbo:MassSpectrum ;
+    dcterms:creator "Nihon Waters K.K." ;
+    dcterms:date "2016-01-19 (Created 2007-08-01, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Waters-WA000196" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "QuattroPremier XE, Waters" ;
+            mbo:collision_energy "10 V" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cloransulam-methyl" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.29031e+02 ;
+            rdfs:seeAlso cas:147150-35-4 ;
+            schema:inChI "InChI=1S/C15H13ClFN5O5S/c1-3-27-15-18-10(17)7-11-19-14(20-22(11)15)28(24,25)21-12-8(13(23)26-2)5-4-6-9(12)16/h4-7,21H,3H2,1-2H3" ;
+            schema:inChIKey inchikey:BIKACRYIQSLICJ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H13ClFN5O5S" ;
+            schema:name "Cloransulam-methyl" ;
+            schema:smiles "CCOC(=N3)n(n1)c(C=C(F)3)nc1S(=O)(=O)Nc(c(Cl)2)c(ccc2)C(=O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 8e+00 ;
+            mbo:mz 1.85e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 3.7e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 6.93e+02 ;
+            mbo:mz 3.98e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 693 ],
+        [ mbo:intensity 2.4e+01 ;
+            mbo:mz 3.99e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 24 ],
+        [ mbo:intensity 9.99e+02 ;
+            mbo:mz 4.3e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.3e+01 ;
+            mbo:mz 4.31e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 63 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.3e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-001j-0006900000-6b3db0952d9628ba1ea8" ;
+    skos:definition "Cloransulam-methyl; LC-ESI-QQ; MS2; CE:10 V; [M+H]+" .
+

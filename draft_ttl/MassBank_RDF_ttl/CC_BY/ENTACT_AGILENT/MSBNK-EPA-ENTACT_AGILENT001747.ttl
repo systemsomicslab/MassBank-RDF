@@ -1,0 +1,51 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001747 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001747" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "20" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "CI-1029",
+                "DTXSID8047262" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 4.832443e+02 ;
+            rdfs:seeAlso cas:207736-05-8,
+                pubchem:CID54687772 ;
+            schema:inChI "InChI=1S/C28H37NO4S/c1-17(2)28(12-11-19-7-9-21(29)10-8-19)15-23(31)25(26(32)33-28)34-24-13-18(3)20(16-30)14-22(24)27(4,5)6/h7-10,13-14,17,25,30H,11-12,15-16,29H2,1-6H3" ;
+            schema:inChIKey inchikey:YDZPKVMVMXBCHP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C28H37NO4S" ;
+            schema:name "CI-1029",
+                "DTXSID8047262" ;
+            schema:smiles "CC(C)(C)C1C=C(CO)C(C)=CC=1SC1C(=O)OC(CC1=O)(CCC1C=CC(N)=CC=1)C(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 1.643373e+00 ;
+            mbo:mz 2.490955e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 4.822371e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.822371e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0000900000-30b9889ef724a56444be" ;
+    skos:definition "CI-1029; ESI-QTOF; MS2; CE: 20; [M-H]-" .
+

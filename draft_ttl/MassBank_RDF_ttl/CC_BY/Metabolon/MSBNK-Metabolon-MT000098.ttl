@@ -1,0 +1,85 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Metabolon-MT000098 a mbo:MassSpectrum ;
+    dcterms:creator "Evans A M, Mitchell M, DeHaven C D, Barrett T, Milgram E, Metabolon Inc." ;
+    dcterms:date "2016-01-19 (Created 2009-08-07, modified 2012-10-30)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Metabolon-MT000098" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2003-2009 Metabolon, Inc. under CC BY-NC-ND" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ XL, Thermo Finnigan" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "LC-ESI-IT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Octanoylcarnitine" ;
+            mbo:ch_compound_class "Natural Product; Fatty Acyls; Fatty esters; Fatty acyl carnitines" ;
+            mbo:ch_exact_mass 2.882175e+02 ;
+            rdfs:seeAlso cas:3671-77-0,
+                pubchem:CID123702 ;
+            schema:inChI "InChI=1S/C15H29NO4/c1-5-6-7-8-9-10-15(19)20-13(11-14(17)18)12-16(2,3)4/h13H,5-12H2,1-4H3/p+1" ;
+            schema:inChIKey inchikey:CXTATJFJDMJMIY-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C15H30NO4]+" ;
+            schema:name "Octanoylcarnitine" ;
+            schema:smiles "CCCCCCCC(=O)OC(CC(O)=O)C[N+1](C)(C)C" ] ;
+    mbo:has_peak [ mbo:intensity 5.6e+01 ;
+            mbo:mz 8.5e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 559 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 2.291e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.3e+00 ;
+            mbo:mz 2.302e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3e-01 ;
+            mbo:mz 8.6e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 9e-01 ;
+            mbo:mz 1.091e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 1.5e+01 ;
+            mbo:mz 1.271e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 150 ],
+        [ mbo:intensity 1e-01 ;
+            mbo:mz 1.281e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3e+00 ;
+            mbo:mz 1.441e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 30 ],
+        [ mbo:intensity 5e-01 ;
+            mbo:mz 1.452e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3e-01 ;
+            mbo:mz 2.102e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.3e+00 ;
+            mbo:mz 2.108e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 13 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.883e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-004i-4190000000-9bcf37803c7107337ab9" ;
+    skos:definition "Octanoylcarnitine; LC-ESI-IT; MS2; m/z: 288.3; [M]+" .
+

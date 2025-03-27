@@ -1,0 +1,75 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-ISAS_Dortmund-IA000168 a mbo:MassSpectrum ;
+    dcterms:creator "Nils Hoffmann, Dominik Kopczynski, Bing Peng" ;
+    dcterms:date "2018-11-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-ISAS_Dortmund-IA000168" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2019, Leibniz Institut fuer Analytische Wissenschaften - ISAS - e.V., Dortmund, Germany under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive HF, Thermo Scientific [MS:1002523]" ;
+            mbo:collision_energy "40.0 NCE" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "30.000" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Resolvin D2-[d5]" ;
+            mbo:ch_compound_class "Natural Product; Lipid Standard" ;
+            mbo:ch_exact_mass 3.76225e+02 ;
+            rdfs:seeAlso pubchem:CID11383310 ;
+            schema:inChI "InChI=1S/C22H32O5/c1-2-3-9-16-20(24)21(25)17-12-7-5-4-6-10-14-19(23)15-11-8-13-18-22(26)27/h3-12,14,17,19-21,23-25H,2,13,15-16,18H2,1H3,(H,26,27)/b6-4-,7-5+,9-3-,11-8-,14-10+,17-12+/t19-,20+,21-/m1/s1" ;
+            schema:inChIKey inchikey:IKFAUGXNBOBQDM-XFMPMKITSA-N ;
+            schema:molecularFormula "C22H32O5" ;
+            schema:name "Resolvin D2-[d5]" ;
+            schema:smiles "C(C/C=C\\C[C@@H](/C=C/C=C\\C=C\\C=C\\[C@H]([C@H](C/C=C\\CC)O)O)O)C(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 7.978285e+06 ;
+            mbo:mz 5.901352e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 339 ],
+        [ mbo:intensity 1.337775e+07 ;
+            mbo:mz 6.90344e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 568 ],
+        [ mbo:intensity 6.795454e+06 ;
+            mbo:mz 1.13061e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 288 ],
+        [ mbo:intensity 3.04857e+06 ;
+            mbo:mz 1.350817e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 129 ],
+        [ mbo:intensity 2.953841e+06 ;
+            mbo:mz 1.410559e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 125 ],
+        [ mbo:intensity 2.353452e+07 ;
+            mbo:mz 1.750765e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.553571e+06 ;
+            mbo:mz 2.151443e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 6.767958e+04 ;
+            mbo:mz 2.59134e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.802491e+02 ;
+            mbo:precursor_mz 3.802491e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-00or-5900000000-839e1afec965525f25c9" ;
+    rdfs:comment "PROCESSING averaging of repeated ion fragments at 40.0 NCE within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;
+    skos:definition "Resolvin D2-[d5]; LC-ESI-QFT; MS2; CE: 40.0; R=30.000; [M-H]-" .
+

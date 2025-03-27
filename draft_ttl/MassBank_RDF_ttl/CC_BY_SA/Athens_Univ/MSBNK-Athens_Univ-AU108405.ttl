@@ -1,0 +1,83 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU108405 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Anna Bletsou, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2015-09-22"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU108405" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2015 Department of Chemistry, University of Athens under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "50 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "6.5 min" ;
+            mbo:solvent "A water with 0.01% formic acid and 5mM ammonium formate",
+                "B 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Ethopabate",
+                "methyl 4-acetamido-2-ethoxybenzoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.371001e+02 ;
+            rdfs:seeAlso cas:59-06-3,
+                chemspider:5812,
+                pubchem:CID6034 ;
+            schema:inChI "InChI=1S/C12H15NO4/c1-4-17-11-7-9(13-8(2)14)5-6-10(11)12(15)16-3/h5-7H,4H2,1-3H3,(H,13,14)" ;
+            schema:inChIKey inchikey:GOVWOKSKFSBNGD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H15NO4" ;
+            schema:name "Ethopabate",
+                "methyl 4-acetamido-2-ethoxybenzoate" ;
+            schema:smiles "CCOc1cc(ccc1C(=O)OC)NC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 4.48e+02 ;
+            mbo:mz 1.170574e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 5.12e+02 ;
+            mbo:mz 1.180644e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.8236e+04 ;
+            mbo:mz 1.360388e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.028e+03 ;
+            mbo:mz 1.370221e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1.964e+03 ;
+            mbo:mz 1.370416e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.236e+03 ;
+            mbo:mz 1.460598e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 4.48e+02 ;
+            mbo:mz 1.640695e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.381074e+02 ;
+            mbo:precursor_mz 2.381074e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-000i-0900000000-d8b1eb7846d28ed3893e" ;
+    rdfs:comment "INTERNAL_ID 1084" ;
+    skos:definition "Ethopabate; LC-ESI-QTOF; MS2; CE: 50 eV; R=35000; [M+H]+" .
+

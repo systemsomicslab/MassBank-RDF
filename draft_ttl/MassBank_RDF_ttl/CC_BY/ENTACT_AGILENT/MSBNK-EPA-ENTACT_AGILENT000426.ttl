@@ -1,0 +1,49 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT000426 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-05-02"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT000426" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,5-Dichlorosalicyl-3,4-dichloroanilide" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 3.489231e+02 ;
+            rdfs:seeAlso cas:1154-59-2,
+                pubchem:CID14385 ;
+            schema:inChI "InChI=1S/C13H7Cl4NO2/c14-6-3-8(12(19)11(17)4-6)13(20)18-7-1-2-9(15)10(16)5-7/h1-5,19H,(H,18,20)" ;
+            schema:inChIKey inchikey:SJQBHPJLLIJASD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H7Cl4NO2" ;
+            schema:name "3,5-Dichlorosalicyl-3,4-dichloroanilide" ;
+            schema:smiles "OC1=C(C=C(Cl)C=C1Cl)C(=O)NC1C=C(Cl)C(Cl)=CC=1" ] ;
+    mbo:has_peak [ mbo:intensity 1.633488e+00 ;
+            mbo:mz 1.609566e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 16 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 3.479158e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 3.479158e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-0002-0009000000-736b070e2622ad27810b" ;
+    skos:definition "3,5-Dichlorosalicyl-3,4-dichloroanilide; ESI-QTOF; MS2; CE: 10; [M-H]-" .
+

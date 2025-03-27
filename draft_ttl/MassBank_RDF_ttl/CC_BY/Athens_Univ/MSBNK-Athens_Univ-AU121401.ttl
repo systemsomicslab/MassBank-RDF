@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU121401 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Reza Aalizadeh, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2016-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU121401" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2016 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "10 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "9.059 min" ;
+            mbo:solvent "A 90:10 water:methanol with 0.01% formic acid and 5mM ammonium formate",
+                "B methanol with 0.01% formic acid and 5mM ammonium formate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,17-dihydroxy-17-(2-hydroxyacetyl)-10,13-dimethyl-2,3,4,5,6,7,8,9,12,14,15,16-dodecahydro-1H-cyclopenta[a]phenanthren-11-one",
+                "THE",
+                "Urocortisone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.64225e+02 ;
+            rdfs:seeAlso cas:547-77-3,
+                chemspider:537175,
+                pubchem:CID618110 ;
+            schema:inChI "InChI=1S/C21H32O5/c1-19-7-5-13(23)9-12(19)3-4-14-15-6-8-21(26,17(25)11-22)20(15,2)10-16(24)18(14)19/h12-15,18,22-23,26H,3-11H2,1-2H3" ;
+            schema:inChIKey inchikey:SYGWGHVTLUBCEM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C21H32O5" ;
+            schema:name "3,17-dihydroxy-17-(2-hydroxyacetyl)-10,13-dimethyl-2,3,4,5,6,7,8,9,12,14,15,16-dodecahydro-1H-cyclopenta[a]phenanthren-11-one",
+                "THE",
+                "Urocortisone" ;
+            schema:smiles "CC12CCC(CC1CCC3C2C(=O)CC4(C3CCC4(C(=O)CO)O)C)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.28e+02 ;
+            mbo:mz 1.490242e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 226 ],
+        [ mbo:intensity 6.84e+02 ;
+            mbo:mz 3.292142e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 472 ],
+        [ mbo:intensity 1.448e+03 ;
+            mbo:mz 3.472253e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.6e+02 ;
+            mbo:mz 3.482223e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 248 ],
+        [ mbo:intensity 7.44e+02 ;
+            mbo:mz 3.652364e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 513 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.501134e+02 ;
+            mbo:precursor_mz 3.652323e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-0002-0009000000-0425bb7b0cb551b506f7" ;
+    rdfs:comment "INTERNAL_ID 1214" ;
+    skos:definition "THE; LC-ESI-QTOF; MS2; CE: 10 eV; R=35000; [M+H]+" .
+

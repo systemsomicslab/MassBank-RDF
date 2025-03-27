@@ -1,0 +1,52 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Washington_State_Univ-BML81117 a mbo:MassSpectrum ;
+    dcterms:creator "Cuthbertson DJ, Johnson SR, Lange BM, Institute of Biological Chemistry, Washington State University" ;
+    dcterms:date "2016-01-19 (Created 2012-10-26)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Washington_State_Univ-BML81117" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Agilent 1200 RRLC; Agilent 6520 QTOF" ;
+            mbo:column_name "Agilent C8 Cartridge Column 2.1X30mm 3.5 micron (guard); Agilent SB-Aq 2.1x50mm 1.8 micron (analytical)" ;
+            mbo:flow_gradient "linear from 98A/2B at 0 min to 2A/98B at 13 min, hold 6 min at 2A/98B, reequilibration 98A/2B (5 min)" ;
+            mbo:flow_rate "0.6 ml/min" ;
+            mbo:instrument_type "LC-APCI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS" ;
+            mbo:retention_time "6.476" ;
+            mbo:solvent "A water with 0.2% acetic acid",
+                "B methanol with 0.2% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Dihydroergotamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 5.832795e+02 ;
+            rdfs:seeAlso cas:6190-39-2,
+                chemspider:2958,
+                pubchem:CID3066 ;
+            schema:inChI "InChI=1S/C33H37N5O5/c1-32(35-29(39)21-15-23-22-10-6-11-24-28(22)20(17-34-24)16-25(23)36(2)18-21)31(41)38-26(14-19-8-4-3-5-9-19)30(40)37-13-7-12-27(37)33(38,42)43-32/h3-6,8-11,17,21,23,25-27,34,42H,7,12-16,18H2,1-2H3,(H,35,39)" ;
+            schema:inChIKey inchikey:LUZRJRNZXALNLM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C33H37N5O5" ;
+            schema:name "Dihydroergotamine" ;
+            schema:smiles "CC1(C(=O)N2C(C(=O)N3CCCC3C2(O1)O)CC4=CC=CC=C4)NC(=O)C5CC6C(CC7=CNC8=CC=CC6=C78)N(C5)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.856394e+06 ;
+            mbo:mz 5.842868e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-001i-0000090000-79cc470b2ee2c6d2d5f8" ;
+    rdfs:comment "relative retention time with respect to 9-anthracene Carboxylic Acid is 0.878" ;
+    skos:definition "Dihydroergotamine; LC-APCI-QTOF; MS; POSITIVE" .
+

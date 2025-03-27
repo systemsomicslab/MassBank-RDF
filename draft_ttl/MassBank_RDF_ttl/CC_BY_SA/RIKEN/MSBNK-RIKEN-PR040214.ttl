@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN-PR040214 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Plant Science Center, RIKEN." ;
+    dcterms:date "2016-01-19 (Created 2008-03-03, modified 2011-05-06)"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN-PR040214" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "UPLC Q-Tof Premier, Waters" ;
+            mbo:collision_energy "30 V" ;
+            mbo:fragmentation_mode "LOW-ENERGY CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "A CH3CN(0.1%HCOOH)",
+                "B H2O(0.1%HCOOH)" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-3-(3,4-dihydroxyphenyl)prop-2-enoic acid",
+                "3,4-dihydroxycinnamic acid",
+                "Caffeic acid" ;
+            mbo:ch_compound_class "Natural Product" ;
+            mbo:ch_exact_mass 1.800423e+02 ;
+            rdfs:seeAlso cas:501-16-6,
+                pubchem:CID689043 ;
+            schema:inChI "InChI=1S/C9H8O4/c10-7-3-1-6(5-8(7)11)2-4-9(12)13/h1-5,10-11H,(H,12,13)/b4-2+" ;
+            schema:inChIKey inchikey:QAIPRVGONGVQAS-DUXPYHPUSA-N ;
+            schema:molecularFormula "C9H8O4" ;
+            schema:name "(E)-3-(3,4-dihydroxyphenyl)prop-2-enoic acid",
+                "3,4-dihydroxycinnamic acid",
+                "Caffeic acid" ;
+            schema:smiles "C1=CC(=C(C=C1/C=C/C(=O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 3.579e+02 ;
+            mbo:mz 6.30243e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 61 ],
+        [ mbo:intensity 4.011e+02 ;
+            mbo:mz 1.350475e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 6.26e+02 ;
+            mbo:mz 7.70404e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 106 ],
+        [ mbo:intensity 2.14e+02 ;
+            mbo:mz 7.70868e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 36 ],
+        [ mbo:intensity 2.372e+02 ;
+            mbo:mz 7.9056e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 40 ],
+        [ mbo:intensity 5.895e+03 ;
+            mbo:mz 8.90406e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.716e+03 ;
+            mbo:mz 8.90898e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 291 ],
+        [ mbo:intensity 2.071e+02 ;
+            mbo:mz 1.070517e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 35 ],
+        [ mbo:intensity 1.144e+03 ;
+            mbo:mz 1.170363e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 194 ],
+        [ mbo:intensity 3.023e+02 ;
+            mbo:mz 1.170925e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 51 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-000i-9200000000-0fd7b8f57372dc8172d5" ;
+    skos:definition "Caffeic acid; LC-ESI-QTOF; MS2; CE:30 V; [M+H]+" .
+

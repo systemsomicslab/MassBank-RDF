@@ -1,0 +1,112 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UA006001 a mbo:MassSpectrum ;
+    dcterms:creator "Muz M (1), Dann J (1), Jaeger F (2), Brack W (1), Krauss M (1), (1) Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany, (2) Synchem UG & Co. KG, Felsberg-Altenburg, Germany" ;
+    dcterms:date "2017-08-17"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UA006001" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Muz M, Dann J, Jaeger F, Brack W, Krauss M (2017) Environ. Sci. Technol. 51:4681-4688, DOI:10.1021/acs.est.7b00426. Identification of Mutagenic Aromatic Amines in River Samples with Industrial Wastewater Impact" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Accucore PhenylHexyl 2.6um, 3x150mm, Thermo" ;
+            mbo:flow_gradient "90/10 at 0 min, 90/10 at 3.2 min, 5/95 at 21 min, 5/95 at 41 min, 90/10 at 50 min" ;
+            mbo:flow_rate "200 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "3.493 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "5-[(2S)-2-Carboxy-2-(trimethylazaniumyl)ethyl]-1H-imidazole-2-thiolate",
+                "L-(+)-Ergothioneine",
+                "L-Ergothioneine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.290885e+02 ;
+            rdfs:seeAlso cas:497-30-3,
+                chemspider:4508619,
+                pubchem:CID5351619 ;
+            schema:inChI "InChI=1S/C9H15N3O2S/c1-12(2,3)7(8(13)14)4-6-5-10-9(15)11-6/h5,7H,4H2,1-3H3,(H2-,10,11,13,14,15)/t7-/m0/s1" ;
+            schema:inChIKey inchikey:SSISHJJTAXXQAX-ZETCQYMHSA-N ;
+            schema:molecularFormula "C9H15N3O2S" ;
+            schema:name "5-[(2S)-2-Carboxy-2-(trimethylazaniumyl)ethyl]-1H-imidazole-2-thiolate",
+                "L-(+)-Ergothioneine",
+                "L-Ergothioneine" ;
+            schema:smiles "C[N+](C)(C)[C@@H](Cc1c[nH]c(n1)S)C(=O)[O-]" ] ;
+    mbo:has_peak [ mbo:intensity 1.836416e+05 ;
+            mbo:mz 5.89952e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 1.388944e+07 ;
+            mbo:mz 1.270325e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.949363e+05 ;
+            mbo:mz 1.430275e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 21 ],
+        [ mbo:intensity 4.211024e+06 ;
+            mbo:mz 1.861061e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 303 ],
+        [ mbo:intensity 1.097414e+06 ;
+            mbo:mz 2.30096e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 3.81329e+06 ;
+            mbo:mz 6.00809e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 274 ],
+        [ mbo:intensity 4.621353e+05 ;
+            mbo:mz 6.70418e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.383566e+06 ;
+            mbo:mz 6.80496e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 100 ],
+        [ mbo:intensity 1.97582e+06 ;
+            mbo:mz 6.90574e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 2.130125e+05 ;
+            mbo:mz 8.30604e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 4.783062e+05 ;
+            mbo:mz 8.60059e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 34 ],
+        [ mbo:intensity 2.623912e+05 ;
+            mbo:mz 9.40526e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 1.441136e+06 ;
+            mbo:mz 1.000216e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 104 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.30096e+02 ;
+            mbo:precursor_mz 2.300958e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 13 ;
+    mbo:pk_splash "splash10-004i-3900000000-caa65ea3e411af866d82" ;
+    rdfs:comment "INTERNAL_ID 60" ;
+    skos:definition "L-(+)-Ergothioneine; LC-ESI-QFT; MS2; CE: 50%; R=35000; [M+H]+" .
+

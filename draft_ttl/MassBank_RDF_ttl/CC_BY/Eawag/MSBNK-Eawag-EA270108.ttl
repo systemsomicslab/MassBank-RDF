@@ -1,0 +1,88 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Eawag-EA270108 a mbo:MassSpectrum ;
+    dcterms:creator "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag" ;
+    dcterms:date "2014-01-14"^^xsd:date ;
+    dcterms:identifier "MSBNK-Eawag-EA270108" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2012 Eawag, Duebendorf, Switzerland under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "XBridge C18 3.5um, 2.1x50mm, Waters" ;
+            mbo:flow_gradient "90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min" ;
+            mbo:flow_rate "200 ul/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "6.1 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5S,6S)-5,6-bis(oxidanyl)-5,6-dihydrobenzo[b][1]benzazepine-11-carboxamide",
+                "10,11-trans-Dihydroxy-10,11-dihydrocarbamazepine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.701004e+02 ;
+            rdfs:seeAlso cas:58955-93-4,
+                chemspider:102714,
+                pubchem:CID114725 ;
+            schema:inChI "InChI=1S/C15H14N2O3/c16-15(20)17-11-7-3-1-5-9(11)13(18)14(19)10-6-2-4-8-12(10)17/h1-8,13-14,18-19H,(H2,16,20)/t13-,14-/m0/s1" ;
+            schema:inChIKey inchikey:PRGQOPPDPVELEG-KBPBESRZSA-N ;
+            schema:molecularFormula "C15H14N2O3" ;
+            schema:name "(5S,6S)-5,6-bis(oxidanyl)-5,6-dihydrobenzo[b][1]benzazepine-11-carboxamide",
+                "10,11-trans-Dihydroxy-10,11-dihydrocarbamazepine" ;
+            schema:smiles "c12[C@@H]([C@@H](O)c3c(N(C(N)=O)c2cccc1)cccc3)O" ] ;
+    mbo:data_processing_deprofile "Spline" ;
+    mbo:has_peak [ mbo:intensity 2.814113e+05 ;
+            mbo:mz 1.800806e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 2.76781e+04 ;
+            mbo:mz 1.820966e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 6.91092e+04 ;
+            mbo:mz 2.080757e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 1.249988e+06 ;
+            mbo:mz 2.100913e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 184 ],
+        [ mbo:intensity 2.030862e+06 ;
+            mbo:mz 2.360706e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 298 ],
+        [ mbo:intensity 6.803976e+06 ;
+            mbo:mz 2.530971e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.932824e+05 ;
+            mbo:mz 2.540811e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 2.694906e+05 ;
+            mbo:mz 2.711077e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 40 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.711079e+02 ;
+            mbo:precursor_mz 2.711077e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0udi-0090000000-cf5c813c71e73c67b390" ;
+    rdfs:comment "EAWAG_UCHEM_ID 2701" ;
+    skos:definition "10,11-trans-Dihydroxy-10,11-dihydrocarbamazepine; LC-ESI-ITFT; MS2; CE: 15%; R=15000; [M+H]+" .
+

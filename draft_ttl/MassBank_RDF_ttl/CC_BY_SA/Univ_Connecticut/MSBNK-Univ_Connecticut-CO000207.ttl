@@ -1,0 +1,78 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Univ_Connecticut-CO000207 a mbo:MassSpectrum ;
+    dcterms:creator "Dennis W. Hill, Tzipporah M. Kertesz, Robert Friedman, David F. Grant" ;
+    dcterms:date "2016-01-19 (Created 2008-07-15, modified 2012-11-20)"^^xsd:date ;
+    dcterms:identifier "MSBNK-Univ_Connecticut-CO000207" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Mass Spectral Metabonomics beyond Elemental Formula: Chemical Database Querying by Matching Experimental with Computational Fragmentation Spectra, http://pubs.acs.org/doi/abs/10.1021/ac800548g" ] ;
+    dcterms:rights " under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Micromass Q-TOF II" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Triethylgallamine" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 5.104635e+02 ;
+            rdfs:seeAlso pubchem:CID3450 ;
+            schema:inChI "InChI=1S/C30H60N3O3/c1-10-31(11-2,12-3)22-25-34-28-20-19-21-29(35-26-23-32(13-4,14-5)15-6)30(28)36-27-24-33(16-7,17-8)18-9/h19-21H,10-18,22-27H2,1-9H3/q+3" ;
+            schema:inChIKey inchikey:OZLPUNFFCJDMJD-UHFFFAOYSA-N ;
+            schema:molecularFormula "[C30H60N3O3]3+" ;
+            schema:name "Triethylgallamine" ;
+            schema:smiles "CC[N+](CC)(CC)CCOC1=C(C(=CC=C1)OCC[N+](CC)(CC)CC)OCC[N+](CC)(CC)CC" ] ;
+    mbo:has_peak [ mbo:intensity 2.58533e+02 ;
+            mbo:mz 5.80643e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 1e+04 ;
+            mbo:mz 8.60958e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.18501e+02 ;
+            mbo:mz 8.70997e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 52 ],
+        [ mbo:intensity 5.54944e+02 ;
+            mbo:mz 1.001122e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 7.14753e+02 ;
+            mbo:mz 1.011199e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 1.01595e+02 ;
+            mbo:mz 1.021258e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.79506e+02 ;
+            mbo:mz 2.241642e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 2.60128e+02 ;
+            mbo:mz 2.521586e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 26 ],
+        [ mbo:intensity 2.40032e+02 ;
+            mbo:mz 2.801902e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 24 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 5.114714e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-000i-9100000000-e6a14a2af8e7d6814d47" ;
+    skos:definition "Triethylgallamine; LC-ESI-QTOF; MS2; CE:20 eV; [M+H]+" .
+

@@ -1,0 +1,87 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-Athens_Univ-AU237558 a mbo:MassSpectrum ;
+    dcterms:creator "Nikiforos Alygizakis, Katerina Galani, Nikolaos Thomaidis, University of Athens" ;
+    dcterms:date "2019-03-29"^^xsd:date ;
+    dcterms:identifier "MSBNK-Athens_Univ-AU237558" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (C) 2019 Department of Chemistry, University of Athens under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Bruker maXis Impact" ;
+            mbo:collision_energy "20 eV" ;
+            mbo:column_name "Acclaim RSLC C18 2.2um, 2.1x100mm, Thermo" ;
+            mbo:flow_gradient "99/1 at 0-1 min, 61/39 at 3 min, 0.1/99.9 at 14-16 min, 99/1 at 16.1-20 min" ;
+            mbo:flow_rate "200 uL/min at 0-3 min, 400 uL/min at 14 min, 480 uL/min at 16-19 min, 200 uL/min at 19.1-20 min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "35000" ;
+            mbo:retention_time "10.491 min" ;
+            mbo:solvent "A 90:10 water:methanol with 5mM ammonium acetate",
+                "B methanol with 5mM ammonium acetate" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-chloro-2-[(5-chloro-2-hydroxyphenyl)methyl]phenol",
+                "Dichlorophen" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.680058e+02 ;
+            rdfs:seeAlso cas:97-23-4,
+                chemspider:2929,
+                pubchem:CID3037 ;
+            schema:inChI "InChI=1S/C13H10Cl2O2/c14-10-1-3-12(16)8(6-10)5-9-7-11(15)2-4-13(9)17/h1-4,6-7,16-17H,5H2" ;
+            schema:inChIKey inchikey:MDNWOSOZYLHTCG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H10Cl2O2" ;
+            schema:name "4-chloro-2-[(5-chloro-2-hydroxyphenyl)methyl]phenol",
+                "Dichlorophen" ;
+            schema:smiles "OC1=CC=C(Cl)C=C1CC1=C(O)C=CC(Cl)=C1" ] ;
+    mbo:has_peak [ mbo:intensity 1.07332e+05 ;
+            mbo:mz 1.269957e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.128e+03 ;
+            mbo:mz 1.27999e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 57 ],
+        [ mbo:intensity 2.4496e+04 ;
+            mbo:mz 1.289922e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 228 ],
+        [ mbo:intensity 9.92e+02 ;
+            mbo:mz 1.299964e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 9.12e+02 ;
+            mbo:mz 2.310213e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.0864e+04 ;
+            mbo:mz 2.669981e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 1.792e+03 ;
+            mbo:mz 2.680004e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 8.128e+03 ;
+            mbo:mz 2.68994e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 76 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.669985e+02 ;
+            mbo:precursor_mz 2.669985e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-004i-0910000000-13fec9e376ee9a6e1dce" ;
+    rdfs:comment "INTERNAL_ID 2375" ;
+    skos:definition "Dichlorophen; LC-ESI-QTOF; MS2; CE: 20 eV; R=35000; [M-H]-" .
+

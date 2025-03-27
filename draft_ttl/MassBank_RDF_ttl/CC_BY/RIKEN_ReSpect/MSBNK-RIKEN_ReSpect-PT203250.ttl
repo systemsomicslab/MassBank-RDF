@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PT203250 a mbo:MassSpectrum ;
+    dcterms:creator "Matsuda F, Suzuki M, Sawada Y, Plant Science Center, RIKEN." ;
+    dcterms:date "2008-07-28"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PT203250" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright(C) 2009 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Tof Premier, Waters" ;
+            mbo:collision_energy "Ramp 5-45 V" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:solvent "/",
+                "2",
+                "3",
+                "C",
+                "H",
+                "N",
+                "O" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Hydroxynitrobenzene",
+                "4-Nitrohydroxybenzene",
+                "4-Nitrophenol",
+                "4-nitrophenol",
+                "Niphen",
+                "PNP",
+                "Paranitrophenol",
+                "p-Nitrophenol" ;
+            mbo:ch_compound_class "CLASS1 Other CLASS2 Phenol CLASS3 Other" ;
+            mbo:ch_exact_mass 1.3911e+02 ;
+            rdfs:seeAlso cas:100-02-7 ;
+            schema:inChI "InChI=1S/C6H5NO3/c8-6-3-1-5(2-4-6)7(9)10/h1-4,8H" ;
+            schema:inChIKey inchikey:BTJIUGUIPKRLHP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C6H5NO3" ;
+            schema:name "4-Hydroxynitrobenzene",
+                "4-Nitrohydroxybenzene",
+                "4-Nitrophenol",
+                "4-nitrophenol",
+                "Niphen",
+                "PNP",
+                "Paranitrophenol",
+                "p-Nitrophenol" ;
+            schema:smiles "C1=CC(=CC=C1[N+](=O)[O-])O" ] ;
+    mbo:has_peak [ mbo:intensity 2.314e+02 ;
+            mbo:mz 9.20285e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 59 ],
+        [ mbo:intensity 2.249e+03 ;
+            mbo:mz 1.080228e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 572 ],
+        [ mbo:intensity 3.925e+03 ;
+            mbo:mz 1.380191e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.769e+02 ;
+            mbo:mz 1.383134e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 96 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 1.380191e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-052r-0900000000-1279a141e229fec8dbd4" ;
+    rdfs:comment "Acquisition and generation of the data is financially supported in part by CREST/JST." ;
+    skos:definition "Niphen, p-Nitrophenol, Paranitrophenol, 4-Hydroxynitrobenzene, 4-nitrophenol, 4-Nitrophenol, 4-Nitrohydroxybenzene, PNP; LC-ESI-QTOF; MS2" .
+

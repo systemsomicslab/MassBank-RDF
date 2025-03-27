@@ -1,0 +1,61 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-RIKEN_ReSpect-PS093207 a mbo:MassSpectrum ;
+    dcterms:creator "Sawada Y, Matsuda F, and Hirai MY. Plant Science Center, RIKEN" ;
+    dcterms:date "2009-02-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-RIKEN_ReSpect-PS093207" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Sawada, Y.; Akiyama, K.; Sakata, A.; Kuwahara, A.; Otsuki, H.; Sakurai, T.; Saito, K.; Hirai, M. Y. Widely Targeted Metabolomics Based on Large-Scale MS/MS Data for Elucidating Metabolite Accumulation Patterns in Plants. Plant and Cell Physiology 2008, 50 (1), 37–47. DOI:10.1093/pcp/pcn183" ] ;
+    dcterms:rights "Copyright(C) 2008 Plant Science Center, RIKEN under CC BY-NC" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "TQD, Waters" ;
+            mbo:collision_energy "10" ;
+            mbo:instrument_type "LC-ESI-QQ" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Guajavarin",
+                "Quer-3-Ara",
+                "Quercetin-3-Arabinoside" ;
+            mbo:ch_compound_class "CLASS1 Flavonoid CLASS2 Flavonol CLASS3 Quercetin glycoside" ;
+            mbo:ch_exact_mass 4.34353e+02 ;
+            rdfs:seeAlso cas:22255-13-6,
+                pubchem:CID5481224 ;
+            schema:inChI "InChI=1S/C20H18O11/c21-8-4-11(24)14-13(5-8)30-18(7-1-2-9(22)10(23)3-7)19(16(14)27)31-20-17(28)15(26)12(25)6-29-20/h1-5,12,15,17,20-26,28H,6H2" ;
+            schema:inChIKey inchikey:PZZRDJXEMZMZFD-UHFFFAOYSA-N ;
+            schema:molecularFormula "C20H18O11" ;
+            schema:name "Guajavarin",
+                "Quer-3-Ara",
+                "Quercetin-3-Arabinoside" ;
+            schema:smiles "C1C(C(C(C(O1)OC2=C(OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.20749e+05 ;
+            mbo:mz 4.32e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 228 ],
+        [ mbo:intensity 5.30211e+05 ;
+            mbo:mz 4.33e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.14664e+05 ;
+            mbo:mz 4.34e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 216 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 4.3339e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-001i-0000900000-58ceae60b0122e9c8ef5" ;
+    rdfs:comment "All users must cite follwing literature in publication(s)." ;
+    skos:definition "Quercetin-3-Arabinoside, Quer-3-Ara, Guajavarin; LC-ESI-QQ; MS2" .
+

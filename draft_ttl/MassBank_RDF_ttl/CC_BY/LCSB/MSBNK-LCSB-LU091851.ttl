@@ -1,0 +1,92 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-LCSB-LU091851 a mbo:MassSpectrum ;
+    dcterms:creator "Elapavalore, A.; Kondić, T.; Singh, R.; Schymanski, E." ;
+    dcterms:date "2020-08-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-LCSB-LU091851" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Elapavalore, A.; Kondić, T.; et al., Adding Open Spectral Data to MassBank and PubChem Using Open Source Tools to Support Non-Targeted Exposomics of Mixtures (submitted)." ] ;
+    dcterms:rights "Copyright © 2019 by Environmental Cheminformatics, LCSB, University of Luxembourg, Luxembourg under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Orbitrap (Thermo Scientific)" ;
+            mbo:collision_energy "15" ;
+            mbo:column_name "Acquity BEH C18 1.7um, 2.1x150mm (Waters)" ;
+            mbo:flow_gradient "90/10 at 0-2 min, 0/100 at 15-20 min, 90/10 at 20.1-30 min" ;
+            mbo:flow_rate "0.20 mL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "17.101 min" ;
+            mbo:solvent "A 0.1% formic acid",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "tert-Butyl 4-hydroxybenzoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.940943e+02 ;
+            rdfs:seeAlso cas:25804-49-3,
+                chemspider:105128,
+                pubchem:CID117640 ;
+            schema:inChI "InChI=1S/C11H14O3/c1-11(2,3)14-10(13)8-4-6-9(12)7-5-8/h4-7,12H,1-3H3" ;
+            schema:inChIKey inchikey:WHWMOMRHHQLBQQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C11H14O3" ;
+            schema:name "tert-Butyl 4-hydroxybenzoate" ;
+            schema:smiles "CC(C)(C)OC(=O)C1=CC=C(O)C=C1" ] ;
+    mbo:has_peak [ mbo:intensity 6.27362e+04 ;
+            mbo:mz 9.20268e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 1.438226e+06 ;
+            mbo:mz 9.30346e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 174 ],
+        [ mbo:intensity 4.25688e+04 ;
+            mbo:mz 9.50139e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.02165e+04 ;
+            mbo:mz 1.080217e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.14259e+04 ;
+            mbo:mz 1.200219e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 1.13255e+06 ;
+            mbo:mz 1.360167e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 137 ],
+        [ mbo:intensity 8.236721e+06 ;
+            mbo:mz 1.370244e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.05136e+04 ;
+            mbo:mz 1.490974e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.976939e+06 ;
+            mbo:mz 1.93087e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 967 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.290853e+02 ;
+            mbo:precursor_mz 1.93087e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-000f-0900000000-c5e74427a0daa712e81a" ;
+    rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;
+    skos:definition "tert-Butyl 4-hydroxybenzoate; LC-ESI-QFT; MS2; CE: 15; R=17500; [M-H]-" .
+

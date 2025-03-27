@@ -1,0 +1,67 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-EPA-ENTACT_AGILENT001037 a mbo:MassSpectrum ;
+    dcterms:creator "EPA CCTE and Agilent Technologies" ;
+    dcterms:date "2023-09-19"^^xsd:date ;
+    dcterms:identifier "MSBNK-EPA-ENTACT_AGILENT001037" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights " under CC BY" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "N/A" ;
+            mbo:collision_energy "40" ;
+            mbo:instrument_type "ESI-QTOF" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Ethylhexylparaben",
+                "DTXSID4022525" ;
+            mbo:ch_compound_class "N/A" ;
+            mbo:ch_exact_mass 2.501569e+02 ;
+            rdfs:seeAlso cas:5153-25-3,
+                pubchem:CID107377 ;
+            schema:inChI "InChI=1S/C15H22O3/c1-3-5-6-12(4-2)11-18-15(17)13-7-9-14(16)10-8-13/h7-10,12,16H,3-6,11H2,1-2H3" ;
+            schema:inChIKey inchikey:VTIMKVIDORQQFA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H22O3" ;
+            schema:name "2-Ethylhexylparaben",
+                "DTXSID4022525" ;
+            schema:smiles "CCCCC(COC(=O)C1C=CC(O)=CC=1)CC" ] ;
+    mbo:has_peak [ mbo:intensity 2.6982e+00 ;
+            mbo:mz 9.101894e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 27 ],
+        [ mbo:intensity 1e+02 ;
+            mbo:mz 9.202676e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.764596e+00 ;
+            mbo:mz 9.206315e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 1.007533e+01 ;
+            mbo:mz 9.303459e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 101 ],
+        [ mbo:intensity 1.182324e+00 ;
+            mbo:mz 1.210295e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 1.375155e+00 ;
+            mbo:mz 1.271128e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz 2.491496e+02 ;
+            mbo:precursor_type mbo:IT003 ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0006-9000000000-37f26d7a0731321159cf" ;
+    skos:definition "2-Ethylhexylparaben; ESI-QTOF; MS2; CE: 40; [M-H]-" .
+
