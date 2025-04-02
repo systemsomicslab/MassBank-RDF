@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -8,10 +8,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111013576 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-10"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL23111013576" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-10"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL23111013576" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "30" ;
@@ -23,31 +24,10 @@ massbank:MSBNK-BAFG-CSL23111013576 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "13.815 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "5-Hydroxy-Octocrylen" ;
             mbo:ch_exact_mass 3.771991e+02 ;
+            rdfs:name "5-Hydroxy-Octocrylen" ;
             schema:inChI "InChI=1S/C24H27NO3/c1-3-19(15-14-18(2)26)17-28-24(27)22(16-25)23(20-10-6-4-7-11-20)21-12-8-5-9-13-21/h4-13,18-19,26H,3,14-15,17H2,1-2H3" ;
             schema:inChIKey inchikey:QOJGFAVCVCFMKL-UHFFFAOYSA-N ;
             schema:molecularFormula "C24H27NO3" ;

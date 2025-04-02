@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,10 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311093164 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-09"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL2311093164" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-09"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL2311093164" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "40" ;
@@ -24,32 +25,11 @@ massbank:MSBNK-BAFG-CSL2311093164 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "7.247 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "Dasatinib" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 4.871557e+02 ;
+            rdfs:name "Dasatinib" ;
             rdfs:seeAlso cas:302962-49-8 ;
             schema:inChI "InChI=1S/C22H26ClN7O2S/c1-14-4-3-5-16(23)20(14)28-21(32)17-13-24-22(33-17)27-18-12-19(26-15(2)25-18)30-8-6-29(7-9-30)10-11-31/h3-5,12-13,31H,6-11H2,1-2H3,(H,28,32)(H,24,25,26,27)" ;
             schema:inChIKey inchikey:ZBNZXTGUTAYRHI-UHFFFAOYSA-N ;

@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,10 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111017470 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-10"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL23111017470" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-10"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL23111017470" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "120" ;
@@ -24,32 +25,11 @@ massbank:MSBNK-BAFG-CSL23111017470 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "12.73 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "Fluopicolide" ;
             mbo:ch_compound_class "Fungicide" ;
             mbo:ch_exact_mass 3.819654e+02 ;
+            rdfs:name "Fluopicolide" ;
             rdfs:seeAlso cas:239110-15-7 ;
             schema:inChI "InChI=1S/C14H8Cl3F3N2O/c15-8-2-1-3-9(16)12(8)13(23)22-6-11-10(17)4-7(5-21-11)14(18,19)20/h1-5H,6H2,(H,22,23)" ;
             schema:inChIKey inchikey:GBOYJIHYACSLGN-UHFFFAOYSA-N ;

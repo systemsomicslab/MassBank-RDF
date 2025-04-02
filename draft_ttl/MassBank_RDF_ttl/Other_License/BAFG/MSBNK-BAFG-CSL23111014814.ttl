@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -8,10 +8,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111014814 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-10"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL23111014814" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-10"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL23111014814" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "30" ;
@@ -23,31 +24,10 @@ massbank:MSBNK-BAFG-CSL23111014814 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "14.103 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "3-Cyclohexyl-1,1-dibenzylurea" ;
             mbo:ch_exact_mass 3.222045e+02 ;
+            rdfs:name "3-Cyclohexyl-1,1-dibenzylurea" ;
             schema:inChI "InChI=1S/C21H26N2O/c24-21(22-20-14-8-3-9-15-20)23(16-18-10-4-1-5-11-18)17-19-12-6-2-7-13-19/h1-2,4-7,10-13,20H,3,8-9,14-17H2,(H,22,24)" ;
             schema:inChIKey inchikey:QAVDMLYEKOVQPL-UHFFFAOYSA-N ;
             schema:molecularFormula "C21H26N2O" ;

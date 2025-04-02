@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,10 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111016300 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-10"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL23111016300" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-10"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL23111016300" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "30" ;
@@ -24,32 +25,11 @@ massbank:MSBNK-BAFG-CSL23111016300 a mbo:MassSpectrum ;
             mbo:ion_mode "NEGATIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "12.051 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "1,1,1-Trifluoro-N-((trifluoromethyl)sulfonyl)methanesulfonamide" ;
             mbo:ch_compound_class "Industrial_process" ;
             mbo:ch_exact_mass 2.809251e+02 ;
+            rdfs:name "1,1,1-Trifluoro-N-((trifluoromethyl)sulfonyl)methanesulfonamide" ;
             rdfs:seeAlso cas:82113-65-3 ;
             schema:inChI "InChI=1S/C2HF6NO4S2/c3-1(4,5)14(10,11)9-15(12,13)2(6,7)8/h9H" ;
             schema:inChIKey inchikey:ZXMGHDIOOHOAAE-UHFFFAOYSA-N ;

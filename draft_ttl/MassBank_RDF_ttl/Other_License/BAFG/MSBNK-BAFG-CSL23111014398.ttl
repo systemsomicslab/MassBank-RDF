@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,10 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111014398 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-10"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL23111014398" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-10"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL23111014398" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "60" ;
@@ -24,32 +25,11 @@ massbank:MSBNK-BAFG-CSL23111014398 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "10.391 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "Spinosad A" ;
             mbo:ch_compound_class "Insecticide" ;
             mbo:ch_exact_mass 7.314608e+02 ;
+            rdfs:name "Spinosad A" ;
             rdfs:seeAlso cas:131929-60-7 ;
             schema:inChI "InChI=1S/C41H65NO10/c1-10-26-12-11-13-34(52-36-17-16-33(42(5)6)23(3)48-36)22(2)37(44)32-20-30-28(31(32)21-35(43)50-26)15-14-25-18-27(19-29(25)30)51-41-40(47-9)39(46-8)38(45-7)24(4)49-41/h14-15,20,22-31,33-34,36,38-41H,10-13,16-19,21H2,1-9H3" ;
             schema:inChIKey inchikey:SRJQTHAZUNRMPR-UHFFFAOYSA-N ;

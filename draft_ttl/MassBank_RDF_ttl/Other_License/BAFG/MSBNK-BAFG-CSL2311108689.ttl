@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,10 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311108689 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-10"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL2311108689" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-10"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL2311108689" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "10" ;
@@ -24,32 +25,11 @@ massbank:MSBNK-BAFG-CSL2311108689 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "5.915 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "Hexamidine" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 3.542056e+02 ;
+            rdfs:name "Hexamidine" ;
             rdfs:seeAlso cas:3811-75-4 ;
             schema:inChI "InChI=1S/C20H26N4O2/c21-19(22)15-5-9-17(10-6-15)25-13-3-1-2-4-14-26-18-11-7-16(8-12-18)20(23)24/h5-12H,1-4,13-14H2,(H3,21,22)(H3,23,24)" ;
             schema:inChIKey inchikey:OQLKNTOKMBVBKV-UHFFFAOYSA-N ;

@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,10 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311095967 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-09"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL2311095967" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-09"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL2311095967" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "40" ;
@@ -24,32 +25,11 @@ massbank:MSBNK-BAFG-CSL2311095967 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "8.305 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "Aripiprazole" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 4.47148e+02 ;
+            rdfs:name "Aripiprazole" ;
             rdfs:seeAlso cas:129722-12-9 ;
             schema:inChI "InChI=1S/C23H27Cl2N3O2/c24-19-4-3-5-21(23(19)25)28-13-11-27(12-14-28)10-1-2-15-30-18-8-6-17-7-9-22(29)26-20(17)16-18/h3-6,8,16H,1-2,7,9-15H2,(H,26,29)" ;
             schema:inChIKey inchikey:CEUORZQYGODEFX-UHFFFAOYSA-N ;

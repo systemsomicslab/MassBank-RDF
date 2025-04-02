@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms1: <http://purl.org/dc/terms> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,10 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311095206 a mbo:MassSpectrum ;
-    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms:date "2023-11-09"^^xsd:date ;
-    dcterms:identifier "MSBNK-BAFG-CSL2311095206" ;
-    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms1:date "2023-11-09"^^xsd:date ;
+    dcterms1:identifier "MSBNK-BAFG-CSL2311095206" ;
+    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "50" ;
@@ -24,32 +25,11 @@ massbank:MSBNK-BAFG-CSL2311095206 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "15.019 min" ;
-            mbo:solvent " ",
-                "%",
-                ",",
-                ".",
-                "0",
-                "1",
-                ":",
-                "A",
-                "B",
-                "F",
-                "W",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t" ] ;
+            mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
-            rdfs:label "Indoxacarb" ;
             mbo:ch_compound_class "Insecticide" ;
             mbo:ch_exact_mass 5.270707e+02 ;
+            rdfs:name "Indoxacarb" ;
             rdfs:seeAlso cas:173584-44-6 ;
             schema:inChI "InChI=1S/C22H17ClF3N3O7/c1-33-18(30)21-10-12-9-13(23)3-8-16(12)17(21)27-28(11-35-21)19(31)29(20(32)34-2)14-4-6-15(7-5-14)36-22(24,25)26/h3-9H,10-11H2,1-2H3/t21-/m0/s1" ;
             schema:inChIKey inchikey:VBCVPMMZEGZULK-NRFANRHFSA-N ;
