@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -49,10 +52,14 @@ massbank:MSBNK-Eawag-EA050252 a mbo:MassSpectrum ;
             mbo:mz 3.28123e+02 ;
             mbo:peak_sequential_number 1 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.81e+00 ] ;
+            mbo:mz 3.28123e+02 ;
+            mbo:tentative_formula "C15H22NO5S-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 3.281225e+02 ;
-            mbo:precursor_mz 3.281224e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "328.1224"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 1 ;
     mbo:pk_splash "splash10-004i-0009000000-589bd4c985bd20c58e9a" ;
     rdfs:comment "EAWAG_UCHEM_ID 502" ;

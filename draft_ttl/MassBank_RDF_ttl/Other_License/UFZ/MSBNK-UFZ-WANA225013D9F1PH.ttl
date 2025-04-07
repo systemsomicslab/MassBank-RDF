@@ -1,0 +1,88 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA225013D9F1PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA225013D9F1PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "10.685 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,2S,4R,8S,9S,11S,12R,13S)-12-fluoro-11-hydroxy-8-(2-hydroxyacetyl)-6,6,9,13-tetramethyl-5,7-dioxapentacyclo[10.8.0.02,9.04,8.013,18]icosa-14,17-dien-16-one",
+                "Triamcinolone acetonide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.342105e+02 ;
+            rdfs:seeAlso cas:67-78-7,
+                chemspider:6196,
+                pubchem:CID6436 ;
+            schema:inChI "InChI=1S/C24H31FO6/c1-20(2)30-19-10-16-15-6-5-13-9-14(27)7-8-21(13,3)23(15,25)17(28)11-22(16,4)24(19,31-20)18(29)12-26/h7-9,15-17,19,26,28H,5-6,10-12H2,1-4H3/t15-,16-,17-,19+,21-,22-,23-,24+/m0/s1" ;
+            schema:inChIKey inchikey:YNDXUCZADRHECN-JNQJZLCISA-N ;
+            schema:molecularFormula "C24H31FO6" ;
+            schema:name "(1S,2S,4R,8S,9S,11S,12R,13S)-12-fluoro-11-hydroxy-8-(2-hydroxyacetyl)-6,6,9,13-tetramethyl-5,7-dioxapentacyclo[10.8.0.02,9.04,8.013,18]icosa-14,17-dien-16-one",
+                "Triamcinolone acetonide" ;
+            schema:smiles "[H][C@@]12C[C@H]3OC(C)(C)O[C@@]3(C(=O)CO)[C@@]1(C)C[C@H](O)[C@@]1(F)[C@@]2([H])CCC2=CC(=O)C=C[C@]12C" ] ;
+    mbo:has_peak [ mbo:intensity 1.6988e+03 ;
+            mbo:mz 1.210647e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 802 ],
+        [ mbo:intensity 2.1151e+03 ;
+            mbo:mz 1.470808e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.29e+03 ;
+            mbo:mz 2.251271e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 609 ],
+        [ mbo:intensity 1.2236e+03 ;
+            mbo:mz 2.631437e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 578 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.01e+00 ] ;
+            mbo:mz 1.210647e+02 ;
+            mbo:tentative_formula "C8H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.1e+00 ] ;
+            mbo:mz 1.470808e+02 ;
+            mbo:tentative_formula "C10H11O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.22e+00 ] ;
+            mbo:mz 2.251271e+02 ;
+            mbo:tentative_formula "C16H17O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.51e+00 ] ;
+            mbo:mz 2.631437e+02 ;
+            mbo:tentative_formula "C19H19O+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.711694e+02 ;
+            mbo:precursor_mz_value "435.2177"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-01xt-0950000000-184024bd4f3d9617e43f" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Triamcinolone acetonide; LC-ESI-ITFT; MS2; CE: 50%; R=15000; [M+H]+" .
+

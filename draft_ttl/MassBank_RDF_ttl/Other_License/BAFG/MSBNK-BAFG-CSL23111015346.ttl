@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111015346 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111015346" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111015346" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "90" ;
@@ -27,8 +27,8 @@ massbank:MSBNK-BAFG-CSL23111015346 a mbo:MassSpectrum ;
             mbo:retention_time "15.246 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-Palmitoyl-2-glutaryl-sn-glycero-3-phosphocholine" ;
             mbo:ch_exact_mass 6.093642e+02 ;
-            rdfs:name "1-Palmitoyl-2-glutaryl-sn-glycero-3-phosphocholine" ;
             rdfs:seeAlso cas:89947-79-5 ;
             schema:inChI "InChI=1S/C29H56NO10P/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-20-28(33)37-24-26(40-29(34)21-18-19-27(31)32)25-39-41(35,36)38-23-22-30(2,3)4/h26H,5-25H2,1-4H3,(H-,31,32,35,36)" ;
             schema:inChIKey inchikey:CDZVJFRXJAUXPP-UHFFFAOYSA-N ;
@@ -88,8 +88,8 @@ massbank:MSBNK-BAFG-CSL23111015346 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 353 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 6.103715e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "610.3715"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 13 ;
     mbo:pk_splash "splash10-00dr-9600000000-4c55637b97655f936fa5" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

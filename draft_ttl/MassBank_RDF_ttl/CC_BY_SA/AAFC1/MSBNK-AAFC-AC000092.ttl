@@ -1,0 +1,96 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000092 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, J. David Miller, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000092" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.82" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Chaetoglobosin C" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 5.282624e+02 ;
+            rdfs:seeAlso cas:50645-76-6,
+                chemspider:10235105,
+                knapsack:C00011309,
+                pubchem:CID102093917 ;
+            schema:inChI "InChI=1S/C32H36N2O5/c1-17-8-7-10-22-29-31(4,39-29)19(3)27-24(15-20-16-33-23-11-6-5-9-21(20)23)34-30(38)32(22,27)26(36)13-12-25(35)28(37)18(2)14-17/h5-7,9-11,14,16-17,19,22,24,27,29,33H,8,12-13,15H2,1-4H3,(H,34,38)/b10-7-,18-14-/t17-,19-,22-,24-,27-,29-,31+,32+/m0/s1" ;
+            schema:inChIKey inchikey:RIZAHVBYKWUPHQ-MASOQXDXSA-N ;
+            schema:molecularFormula "C32H36N2O5" ;
+            schema:name "Chaetoglobosin C" ;
+            schema:smiles "C[C@H]/1C/C=C\\[C@H]2[C@H]3[C@](O3)([C@H]([C@@H]4[C@@]2(C(=O)CCC(=O)C(=O)/C(=C1)/C)C(=O)N[C@H]4CC5=CNC6=CC=CC=C65)C)C" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 2.519412e+05 ;
+            mbo:mz 1.300651e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.842813e+04 ;
+            mbo:mz 1.320808e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 73 ],
+        [ mbo:intensity 1.385874e+04 ;
+            mbo:mz 1.850709e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.36606e+04 ;
+            mbo:mz 2.451172e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 54 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.32e+00 ] ;
+            mbo:mz 1.300647e+02 ;
+            mbo:tentative_formula "C9H8N1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.91e+00 ] ;
+            mbo:mz 1.320804e+02 ;
+            mbo:tentative_formula "C9H10N1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.91e+00 ] ;
+            mbo:mz 1.850704e+02 ;
+            mbo:tentative_formula "C11H9N2O1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.2e-01 ] ;
+            mbo:mz 2.45117e+02 ;
+            mbo:tentative_formula "C15H17O3+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.300647e+02 ;
+            mbo:precursor_mz_value "529.2692"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-001i-0900000000-1e1c5f898faf3754cc69" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Chaetoglobosin C; LC-ESI-ITFT; MS2; CE: 30; R=17500; [M+H]+" .
+

@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -66,10 +69,30 @@ massbank:MSBNK-Antwerp_Univ-METOX_N105344_CB20 a mbo:MassSpectrum ;
             mbo:mz 3.151675e+02 ;
             mbo:peak_sequential_number 5 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.223e+01 ] ;
+            mbo:mz 1.390878e+02 ;
+            mbo:tentative_formula "C6H16ClO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.4e+00 ] ;
+            mbo:mz 2.580909e+02 ;
+            mbo:tentative_formula "C15H14O4-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.63e+00 ] ;
+            mbo:mz 2.590902e+02 ;
+            mbo:tentative_formula "C16H16ClO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.1e-01 ] ;
+            mbo:mz 2.821264e+02 ;
+            mbo:tentative_formula "C18H18O3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.815e+01 ] ;
+            mbo:mz 3.151675e+02 ;
+            mbo:tentative_formula "C17H28ClO3-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 4.212252e+02 ;
-            mbo:precursor_mz 3.971787e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "397.1787"^^xsd:float ;
+            mbo:precursor_type_value "[M+Cl]-" ] ;
     mbo:pk_num_peak 5 ;
     mbo:pk_splash "splash10-066r-0296000000-de55e2ccb754d8263af3" ;
     rdfs:comment "INTERNAL_ID 1053" ;

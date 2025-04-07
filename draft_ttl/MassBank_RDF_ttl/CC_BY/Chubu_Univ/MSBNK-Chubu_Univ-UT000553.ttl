@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -3177,10 +3180,42 @@ massbank:MSBNK-Chubu_Univ-UT000553 a mbo:MassSpectrum ;
             mbo:mz 2.902103e+02 ;
             mbo:peak_sequential_number 99 ;
             mbo:relative_intensity 1 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.222896e+01 ] ;
+            mbo:mz 3.372634e+02 ;
+            mbo:tentative_formula "[{18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.152526e+02 ] ;
+            mbo:mz 3.391151e+02 ;
+            mbo:tentative_formula "[{18:1}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.487932e+01 ] ;
+            mbo:mz 3.392713e+02 ;
+            mbo:tentative_formula "[{18:1}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.270864e+02 ] ;
+            mbo:mz 5.992479e+02 ;
+            mbo:tentative_formula "[{18:2-18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.995784e+01 ] ;
+            mbo:mz 5.99462e+02 ;
+            mbo:tentative_formula "[{18:2-18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.661534e+02 ] ;
+            mbo:mz 5.996635e+02 ;
+            mbo:tentative_formula "[{18:2-18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.626485e+01 ] ;
+            mbo:mz 6.014677e+02 ;
+            mbo:tentative_formula "[{18:1-18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.822695e+01 ] ;
+            mbo:mz 8.98761e+02 ;
+            mbo:tentative_formula "[M+NH4]+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 6.01461e+02 ;
-            mbo:precursor_mz 8.987e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "898.7"^^xsd:float ;
+            mbo:precursor_type_value "[M+NH4]+" ] ;
     mbo:pk_num_peak 785 ;
     mbo:pk_splash "splash10-0udi-0000039010-deadfcdf0165f115cd5d" ;
     skos:definition "Triacylglycerol 18:1-18:2-18:2; LC-ESI-QTOF; MS; mouse WAT" .

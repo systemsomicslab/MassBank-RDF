@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111017441 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111017441" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111017441" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "40" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111017441 a mbo:MassSpectrum ;
             mbo:retention_time "9.225 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Pyrimethanil" ;
             mbo:ch_compound_class "Fungicide" ;
             mbo:ch_exact_mass 1.991109e+02 ;
-            rdfs:name "Pyrimethanil" ;
             rdfs:seeAlso cas:53112-28-0 ;
             schema:inChI "InChI=1S/C12H13N3/c1-9-8-10(2)14-12(13-9)15-11-6-4-3-5-7-11/h3-8H,1-2H3,(H,13,14,15)" ;
             schema:inChIKey inchikey:ZLIBICFPKPWGIZ-UHFFFAOYSA-N ;
@@ -273,8 +273,8 @@ massbank:MSBNK-BAFG-CSL23111017441 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 157 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 2.001182e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "200.1182"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 59 ;
     mbo:pk_splash "splash10-001i-5910000000-e68d921f11c4a09b3629" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

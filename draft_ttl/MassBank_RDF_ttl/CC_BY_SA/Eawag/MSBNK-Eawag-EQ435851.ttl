@@ -3,9 +3,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -50,10 +53,18 @@ massbank:MSBNK-Eawag-EQ435851 a mbo:MassSpectrum ;
             mbo:mz 1.022544e+03 ;
             mbo:peak_sequential_number 2 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.88e+00 ] ;
+            mbo:mz 1.004529e+03 ;
+            mbo:tentative_formula "C48H70N13O11-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7e-01 ] ;
+            mbo:mz 1.022544e+03 ;
+            mbo:tentative_formula "C48H72N13O12-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 1.90928e+02 ;
-            mbo:precursor_mz 1.022543e+03 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "1022.5429"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 2 ;
     mbo:pk_splash "splash10-00di-9000000000-f857a39aa3de1568a7a2" ;
     rdfs:comment "NaToxAq - Natural Toxins and Drinking Water Quality - From Source to Tap (https://natoxaq.ku.dk)" ;

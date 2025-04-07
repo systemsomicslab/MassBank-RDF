@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311096234 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311096234" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311096234" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "70" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311096234 a mbo:MassSpectrum ;
             mbo:retention_time "5.666 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-Methylthioinosin" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 2.980736e+02 ;
-            rdfs:name "6-Methylthioinosin" ;
             rdfs:seeAlso cas:342-69-8 ;
             schema:inChI "InChI=1S/C11H14N4O4S/c1-20-10-6-9(12-3-13-10)15(4-14-6)11-8(18)7(17)5(2-16)19-11/h3-5,7-8,11,16-18H,2H2,1H3" ;
             schema:inChIKey inchikey:ZDRFDHHANOYUTE-UHFFFAOYSA-N ;
@@ -165,8 +165,8 @@ massbank:MSBNK-BAFG-CSL2311096234 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 36 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 2.990809e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "299.0809"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 32 ;
     mbo:pk_splash "splash10-0gdi-1900000000-8852c50b77efa26438d0" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

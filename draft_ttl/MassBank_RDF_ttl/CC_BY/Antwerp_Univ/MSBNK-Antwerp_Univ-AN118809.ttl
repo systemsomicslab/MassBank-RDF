@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -107,10 +110,74 @@ massbank:MSBNK-Antwerp_Univ-AN118809 a mbo:MassSpectrum ;
             mbo:mz 1.109833e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 74 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.1e+00 ] ;
+            mbo:mz 6.3e+01 ;
+            mbo:tentative_formula "C2H4Cl+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.593e+01 ] ;
+            mbo:mz 1.200284e+02 ;
+            mbo:tentative_formula "H8O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.89e+00 ] ;
+            mbo:mz 1.369923e+02 ;
+            mbo:tentative_formula "C5H7Cl2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.98e+00 ] ;
+            mbo:mz 1.429668e+02 ;
+            mbo:tentative_formula "C3H5Cl2O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.6e-01 ] ;
+            mbo:mz 1.630155e+02 ;
+            mbo:tentative_formula "C5H8O4P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.14e+00 ] ;
+            mbo:mz 2.349681e+02 ;
+            mbo:tentative_formula "C4H10ClO5P2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.5e+00 ] ;
+            mbo:mz 2.3597e+02 ;
+            mbo:tentative_formula "C11H7ClP2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.04e+00 ] ;
+            mbo:mz 2.969597e+02 ;
+            mbo:tentative_formula "C2H18Cl5O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.41e+00 ] ;
+            mbo:mz 6.50388e+01 ;
+            mbo:tentative_formula "C5H5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.949e+01 ] ;
+            mbo:mz 6.60451e+01 ;
+            mbo:tentative_formula "C5H6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.363e+01 ] ;
+            mbo:mz 7.49977e+01 ;
+            mbo:tentative_formula "C2H4OP+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.68e+00 ] ;
+            mbo:mz 8.09731e+01 ;
+            mbo:tentative_formula "H2O3P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.8e-01 ] ;
+            mbo:mz 8.30492e+01 ;
+            mbo:tentative_formula "C5H7O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.06e+00 ] ;
+            mbo:mz 9.89847e+01 ;
+            mbo:tentative_formula "CH4ClO3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.8e+00 ] ;
+            mbo:mz 1.010159e+02 ;
+            mbo:tentative_formula "C5H6Cl+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.02e+00 ] ;
+            mbo:mz 1.109833e+02 ;
+            mbo:tentative_formula "CH4O4P+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 5.829129e+02 ;
-            mbo:precursor_mz 5.80915e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "580.915"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 16 ;
     mbo:pk_splash "splash10-02aj-9240000000-74abdd1897fdf19f69c4" ;
     rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;

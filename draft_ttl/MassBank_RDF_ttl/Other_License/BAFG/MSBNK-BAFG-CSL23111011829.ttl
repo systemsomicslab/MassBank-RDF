@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111011829 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111011829" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111011829" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "60" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111011829 a mbo:MassSpectrum ;
             mbo:retention_time "4.674 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-[6-[formyl-(2,2,6,6-tetramethylpiperidin-4-yl)amino]hexyl]-N-(2,2,6,6-tetramethylpiperidin-4-yl)formamide" ;
             mbo:ch_compound_class "Industrial_process" ;
             mbo:ch_exact_mass 4.503934e+02 ;
-            rdfs:name "N-[6-[formyl-(2,2,6,6-tetramethylpiperidin-4-yl)amino]hexyl]-N-(2,2,6,6-tetramethylpiperidin-4-yl)formamide" ;
             rdfs:seeAlso cas:124172-53-8 ;
             schema:inChI "InChI=1S/C26H50N4O2/c1-23(2)15-21(16-24(3,4)27-23)29(19-31)13-11-9-10-12-14-30(20-32)22-17-25(5,6)28-26(7,8)18-22/h19-22,27-28H,9-18H2,1-8H3" ;
             schema:inChIKey inchikey:UONLDZHKYCFZRW-UHFFFAOYSA-N ;
@@ -113,8 +113,8 @@ massbank:MSBNK-BAFG-CSL23111011829 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 92 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 4.514007e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "451.4007"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 19 ;
     mbo:pk_splash "splash10-0a4i-9741000000-70db43941faa76ac4c4e" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

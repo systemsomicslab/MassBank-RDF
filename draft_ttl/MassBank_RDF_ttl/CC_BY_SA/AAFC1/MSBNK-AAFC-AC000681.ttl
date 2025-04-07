@@ -1,0 +1,77 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000681 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000681" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "10(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.36" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(E)-6-(4-hydroxy-6-methoxy-7-methyl-3-oxo-1H-2-benzofuran-5-yl)-4-methylhex-4-enoic acid",
+                "Melbex",
+                "Mycophenolate",
+                "Mycophenolic acid",
+                "Myfortic" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 3.20126e+02 ;
+            rdfs:seeAlso cas:24280-93-1,
+                chemspider:393865,
+                knapsack:C00018753,
+                pubchem:CID446541 ;
+            schema:inChI "InChI=1S/C17H20O6/c1-9(5-7-13(18)19)4-6-11-15(20)14-12(8-23-17(14)21)10(2)16(11)22-3/h4,20H,5-8H2,1-3H3,(H,18,19)/b9-4+" ;
+            schema:inChIKey inchikey:HPNSFSBZBAHARI-RUDMXATFSA-N ;
+            schema:molecularFormula "C17H20O6" ;
+            schema:name "(E)-6-(4-hydroxy-6-methoxy-7-methyl-3-oxo-1H-2-benzofuran-5-yl)-4-methylhex-4-enoic acid",
+                "Melbex",
+                "Mycophenolate",
+                "Mycophenolic acid",
+                "Myfortic" ;
+            schema:smiles "CC1=C(C(=C(C2=C1COC2=O)O)C/C=C(\\C)/CCC(=O)O)OC" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 2.721249e+07 ;
+            mbo:mz 3.431152e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.19e+00 ] ;
+            mbo:mz 3.431163e+02 ;
+            mbo:tentative_formula "C17H20O6Na1+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.431163e+02 ;
+            mbo:precursor_mz_value "343.1147"^^xsd:float ;
+            mbo:precursor_type_value "[M+Na]+" ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0006-0009000000-c332d2ec5ae2309a6fb6" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Mycophenolic acid; LC-ESI-ITFT; MS2; CE: 10; R=17500; [M+Na]+" .
+

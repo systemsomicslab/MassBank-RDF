@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -64,10 +67,30 @@ massbank:MSBNK-Eawag-EQ360201 a mbo:MassSpectrum ;
             mbo:mz 3.331805e+02 ;
             mbo:peak_sequential_number 5 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.02e+00 ] ;
+            mbo:mz 8.51011e+01 ;
+            mbo:tentative_formula "C6H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.5e-01 ] ;
+            mbo:mz 1.650545e+02 ;
+            mbo:tentative_formula "C9H9O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.79e+00 ] ;
+            mbo:mz 1.701173e+02 ;
+            mbo:tentative_formula "C9H16NO2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.73e+00 ] ;
+            mbo:mz 2.220757e+02 ;
+            mbo:tentative_formula "C11H12NO4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.06e+00 ] ;
+            mbo:mz 3.331805e+02 ;
+            mbo:tentative_formula "C18H25N2O4+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 3.331799e+02 ;
-            mbo:precursor_mz 3.331809e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "333.1809"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 5 ;
     mbo:pk_splash "splash10-00lr-0509000000-04e223fd4526724eeebf" ;
     rdfs:comment "EAWAG_UCHEM_ID 3602" ;

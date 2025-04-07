@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311107988 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311107988" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311107988" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "90" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311107988 a mbo:MassSpectrum ;
             mbo:retention_time "9.527 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Fenpropimorph" ;
             mbo:ch_compound_class "Pharmaceutical; Fungicide" ;
             mbo:ch_exact_mass 3.032562e+02 ;
-            rdfs:name "Fenpropimorph" ;
             rdfs:seeAlso cas:67564-91-4 ;
             schema:inChI "InChI=1S/C20H33NO/c1-15(12-21-13-16(2)22-17(3)14-21)11-18-7-9-19(10-8-18)20(4,5)6/h7-10,15-17H,11-14H2,1-6H3/t15?,16-,17+" ;
             schema:inChIKey inchikey:RYAUSSKQMZRMAI-ALOPSCKCSA-N ;
@@ -113,8 +113,8 @@ massbank:MSBNK-BAFG-CSL2311107988 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 73 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 3.042635e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "304.2635"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 19 ;
     mbo:pk_splash "splash10-014i-4900000000-2c4889c9d717e4cb00c6" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

@@ -1,0 +1,89 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB002484 a mbo:MassSpectrum ;
+    dcterms:creator "Noelia Caballero-Casero, Adrian Covaci, Toxicological Center, University of Antwerp, Wilrijk, Belgium" ;
+    dcterms:date "2020-02-20"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB002484" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Oberacher H, Sasse M, Antignac J-P, Guitton Y, Debrauwer L, Jamin E L, Schulze T, Krauss M, Covaci A, Caballero-Casero N, Rosseau K, Damont A, Fenaille F, Lamoree M, Schymanski E, A European proposal for quality control and quality assurance of tandem mass spectral libraries, Environmental Sciences Europe, https://doi.org/10.1186/s12302-020-00314-9" ] ;
+    dcterms:rights "Copyright (c) by Toxicological Center, University of Antwerp, Wilrijk, Belgium under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "6545 QTOF Agilent" ;
+            mbo:collision_energy "35 eV" ;
+            mbo:flow_gradient "50/50" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "CID" ;
+            mbo:instrument_type "LC-ESI-QTOF" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "3600" ;
+            mbo:solvent "A water",
+                "B methanol" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-(Diphenylmethyl)-4-methylpiperazine",
+                "Cyclizine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.661783e+02 ;
+            rdfs:seeAlso cas:82-92-8,
+                pubchem:CID6726 ;
+            schema:inChI "InChI=1S/C18H22N2/c1-19-12-14-20(15-13-19)18(16-8-4-2-5-9-16)17-10-6-3-7-11-17/h2-11,18H,12-15H2,1H3" ;
+            schema:inChIKey inchikey:UVKZSORBKUEBAZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H22N2" ;
+            schema:name "1-(Diphenylmethyl)-4-methylpiperazine",
+                "Cyclizine" ;
+            schema:smiles "CN1CCN(CC1)C(C1=CC=CC=C1)C1=CC=CC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 3.2352e+03 ;
+            mbo:mz 7.2962e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 1.01203e+04 ;
+            mbo:mz 1.150621e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 206 ],
+        [ mbo:intensity 8.961e+03 ;
+            mbo:mz 1.280707e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 183 ],
+        [ mbo:intensity 2.4885e+03 ;
+            mbo:mz 1.510607e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 4.81511e+04 ;
+            mbo:mz 1.520625e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 982 ],
+        [ mbo:intensity 4.89787e+04 ;
+            mbo:mz 1.650739e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.4414e+04 ;
+            mbo:mz 1.66082e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 294 ],
+        [ mbo:intensity 1.65534e+04 ;
+            mbo:mz 1.670951e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 338 ],
+        [ mbo:intensity 2.5032e+03 ;
+            mbo:mz 1.686297e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 51 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz_value "267.1856"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0gb9-0900000000-a86e695095f2ce184b7c" ;
+    rdfs:comment "Flow Injection" ;
+    skos:definition "Cyclizine; LC-ESI-QTOF; MS2; CE: 35 eV; R=3600; [M+H]+" .
+

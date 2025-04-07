@@ -1,0 +1,136 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA2239155BE0PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA2239155BE0PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "6.713 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Acetamiprid",
+                "N-[(6-chloropyridin-3-yl)methyl]-N`-cyano-N-methylethanimidamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.220672e+02 ;
+            rdfs:seeAlso cas:135410-20-7,
+                chemspider:21130168,
+                pubchem:CID213021 ;
+            schema:inChI "InChI=1S/C10H11ClN4/c1-8(14-7-12)15(2)6-9-3-4-10(11)13-5-9/h3-5H,6H2,1-2H3" ;
+            schema:inChIKey inchikey:WCXDHFDTOYPNIE-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H11ClN4" ;
+            schema:name "Acetamiprid",
+                "N-[(6-chloropyridin-3-yl)methyl]-N`-cyano-N-methylethanimidamide" ;
+            schema:smiles "CN(CC1=CC=C(Cl)N=C1)C(C)=NC#N" ] ;
+    mbo:has_peak [ mbo:intensity 2.981938e+05 ;
+            mbo:mz 5.60492e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 151 ],
+        [ mbo:intensity 1.17861e+04 ;
+            mbo:mz 2.230746e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 4.94021e+04 ;
+            mbo:mz 9.00338e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 1.970422e+06 ;
+            mbo:mz 1.260105e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.2817e+03 ;
+            mbo:mz 1.460713e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 2.4042e+03 ;
+            mbo:mz 1.510059e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 3.0043e+03 ;
+            mbo:mz 1.550371e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.1863e+03 ;
+            mbo:mz 1.810529e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 6.5855e+03 ;
+            mbo:mz 1.870982e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.2126e+03 ;
+            mbo:mz 2.060475e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 1 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.66e+00 ] ;
+            mbo:mz 5.60492e+01 ;
+            mbo:tentative_formula "C3H6N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.7e-01 ] ;
+            mbo:mz 2.230746e+02 ;
+            mbo:tentative_formula "C10H12ClN4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.8e-01 ] ;
+            mbo:mz 9.00338e+01 ;
+            mbo:tentative_formula "C6H4N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4e-01 ] ;
+            mbo:mz 1.260105e+02 ;
+            mbo:tentative_formula "C6H5ClN+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.4e-01 ] ;
+            mbo:mz 1.460713e+02 ;
+            mbo:tentative_formula "C8H8N3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.3e-01 ] ;
+            mbo:mz 1.510059e+02 ;
+            mbo:tentative_formula "C7H4ClN2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9e-02 ] ;
+            mbo:mz 1.550371e+02 ;
+            mbo:tentative_formula "C7H8ClN2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.5e-01 ] ;
+            mbo:mz 1.810529e+02 ;
+            mbo:tentative_formula "C9H10ClN2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.1e+00 ] ;
+            mbo:mz 1.870982e+02 ;
+            mbo:tentative_formula "C10H11N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.24e+00 ] ;
+            mbo:mz 2.060475e+02 ;
+            mbo:tentative_formula "C10H9ClN3+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.169862e+02 ;
+            mbo:precursor_mz_value "223.0745"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-004i-1900000000-70e8d058bc2a04bfecad" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Acetamiprid; LC-ESI-ITFT; MS2; CE: 60%; R=15000; [M+H]+" .
+

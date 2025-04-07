@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -27,14 +30,7 @@ massbank:MSBNK-Athens_Univ-AU500502 a mbo:MassSpectrum ;
             mbo:ms_type "MS2" ;
             mbo:resolution "35000" ;
             mbo:retention_time "22.489 min" ;
-            mbo:solvent " ",
-                "A",
-                "H",
-                "e",
-                "i",
-                "l",
-                "m",
-                "u" ] ;
+            mbo:solvent "A Helium" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
             rdfs:label "Benzyl butyl phthalate" ;
             mbo:ch_compound_class "N/A; Food Contact Material" ;
@@ -83,10 +79,46 @@ massbank:MSBNK-Athens_Univ-AU500502 a mbo:MassSpectrum ;
             mbo:mz 2.131533e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 32 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.145e+01 ] ;
+            mbo:mz 9.10532e+01 ;
+            mbo:tentative_formula "C7H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.197e+01 ] ;
+            mbo:mz 9.71e+01 ;
+            mbo:tentative_formula "C7H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.13e+00 ] ;
+            mbo:mz 1.211014e+02 ;
+            mbo:tentative_formula "C9H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.39e+00 ] ;
+            mbo:mz 1.231177e+02 ;
+            mbo:tentative_formula "C9H15+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.49e+00 ] ;
+            mbo:mz 1.250954e+02 ;
+            mbo:tentative_formula "C8H13O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.222e+01 ] ;
+            mbo:mz 1.351198e+02 ;
+            mbo:tentative_formula "C10H15+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.426e+01 ] ;
+            mbo:mz 1.490254e+02 ;
+            mbo:tentative_formula "C8H5O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.66e+00 ] ;
+            mbo:mz 1.500297e+02 ;
+            mbo:tentative_formula "C8H6O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.226e+01 ] ;
+            mbo:mz 2.131533e+02 ;
+            mbo:tentative_formula "C12H21O3+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 1.490253e+02 ;
-            mbo:precursor_mz 3.131434e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "313.1434"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 9 ;
     mbo:pk_splash "splash10-0002-0900000000-a641a845df758ed8d928" ;
     rdfs:comment "INTERNAL_ID 5005" ;

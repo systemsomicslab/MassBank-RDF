@@ -2,9 +2,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -58,10 +61,30 @@ massbank:MSBNK-Antwerp_Univ-AN113925 a mbo:MassSpectrum ;
             mbo:mz 3.132028e+02 ;
             mbo:peak_sequential_number 5 ;
             mbo:relative_intensity 412 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.38e+00 ] ;
+            mbo:mz 1.090656e+02 ;
+            mbo:tentative_formula "C7H9O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.42e+00 ] ;
+            mbo:mz 1.250601e+02 ;
+            mbo:tentative_formula "C7H9O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.71e+00 ] ;
+            mbo:mz 1.53056e+02 ;
+            mbo:tentative_formula "C8H9O3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.16e+00 ] ;
+            mbo:mz 1.591396e+02 ;
+            mbo:tentative_formula "C9H19O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.31e+00 ] ;
+            mbo:mz 3.132028e+02 ;
+            mbo:tentative_formula "C17H29O5-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 3.132027e+02 ;
-            mbo:precursor_mz 3.13202e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "313.202"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 5 ;
     mbo:pk_splash "splash10-0udi-0903000000-f9ec8e955bb87dd0d5b8" ;
     rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;

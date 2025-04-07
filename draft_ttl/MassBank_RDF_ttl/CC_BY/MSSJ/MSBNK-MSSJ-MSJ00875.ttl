@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -83,9 +86,37 @@ massbank:MSBNK-MSSJ-MSJ00875 a mbo:MassSpectrum ;
             mbo:mz 4.243661e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 242 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.290549e+02 ;
+            mbo:tentative_formula "[C6H12O3-3H]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.410185e+02 ;
+            mbo:tentative_formula "[C6H12O4-7H]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.470655e+02 ;
+            mbo:tentative_formula "[C6H12O4-H]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.590291e+02 ;
+            mbo:tentative_formula "[C6H10O5-3H]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.630605e+02 ;
+            mbo:tentative_formula "[C6H12O5-H]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.413737e+02 ;
+            mbo:tentative_formula "[C30H50O2-H]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 5.993942e+02 ;
+            mbo:tentative_formula "[C36H58O7-3H]+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 9.435261e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "943.5261"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 12 ;
     mbo:pk_splash "splash10-006x-0100900000-54e4bca8961c572d0166" ;
     rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;

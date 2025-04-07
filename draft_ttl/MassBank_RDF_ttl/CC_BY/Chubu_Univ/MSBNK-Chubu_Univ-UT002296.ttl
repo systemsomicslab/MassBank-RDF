@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -85,8 +88,31 @@ massbank:MSBNK-Chubu_Univ-UT002296 a mbo:MassSpectrum ;
             mbo:mz 4.9005e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 12 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.92e+02 ] ;
+            mbo:mz 2.5503e+02 ;
+            mbo:tentative_formula "[fa(16:0)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.36e+02 ] ;
+            mbo:mz 2.8314e+02 ;
+            mbo:tentative_formula "[fa(18:0)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.93e+02 ] ;
+            mbo:mz 4.8012e+02 ;
+            mbo:tentative_formula "[lyso_PC(-,16:0)]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.7e+02 ] ;
+            mbo:mz 4.9005e+02 ;
+            mbo:tentative_formula "[lyso_PC(18:0,-)-H2O]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.34e+02 ] ;
+            mbo:mz 5.0817e+02 ;
+            mbo:tentative_formula "[lyso_PC(18:0,-)]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "746.17"^^xsd:float,
+                "820.61"^^xsd:float ;
+            mbo:precursor_type_value "[M+CH3COO]-",
+                "[M-CH3]-" ] ;
     mbo:pk_num_peak 11 ;
     mbo:pk_splash "splash10-0a59-0090000000-c946aa0017c3ecc3e801" ;
     skos:definition "Phosphatidylcholine 18:0-16:0; LC-ESI-ITFT; MS3; [M+CH3COO]-/[M-CH3]-; RT: 35.78; Exp: 2" .

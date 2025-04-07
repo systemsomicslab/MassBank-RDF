@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -105,10 +108,74 @@ massbank:MSBNK-Eawag_Additional_Specs-ET408101 a mbo:MassSpectrum ;
             mbo:mz 1.230089e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 16 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.17e+00 ] ;
+            mbo:mz 6.80141e+01 ;
+            mbo:tentative_formula "C3H2NO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.1e-01 ] ;
+            mbo:mz 1.320329e+02 ;
+            mbo:tentative_formula "C7H4N2O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.8e-01 ] ;
+            mbo:mz 1.380196e+02 ;
+            mbo:tentative_formula "C6H4NO3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2e-02 ] ;
+            mbo:mz 1.620309e+02 ;
+            mbo:tentative_formula "C7H4N3O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.5e-01 ] ;
+            mbo:mz 1.799999e+02 ;
+            mbo:tentative_formula "C7H4N2O2S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.58e+00 ] ;
+            mbo:mz 1.829867e+02 ;
+            mbo:tentative_formula "C6H3N2O3S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.8e-01 ] ;
+            mbo:mz 1.959947e+02 ;
+            mbo:tentative_formula "C7H4N2O3S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.6e-01 ] ;
+            mbo:mz 2.259929e+02 ;
+            mbo:tentative_formula "C7H4N3O4S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7e-01 ] ;
+            mbo:mz 8.79737e+01 ;
+            mbo:tentative_formula "CN2OS-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.06e+00 ] ;
+            mbo:mz 9.50138e+01 ;
+            mbo:tentative_formula "C5H3O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.1e-01 ] ;
+            mbo:mz 1.039686e+02 ;
+            mbo:tentative_formula "CN2O2S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.02e+00 ] ;
+            mbo:mz 1.040379e+02 ;
+            mbo:tentative_formula "C6H4N2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.5e-01 ] ;
+            mbo:mz 1.080217e+02 ;
+            mbo:tentative_formula "C6H4O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1e-02 ] ;
+            mbo:mz 1.16038e+02 ;
+            mbo:tentative_formula "C7H4N2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8e-02 ] ;
+            mbo:mz 1.190251e+02 ;
+            mbo:tentative_formula "C6H3N2O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.08e+00 ] ;
+            mbo:mz 1.230089e+02 ;
+            mbo:tentative_formula "C6H3O3-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 9.10038e+01 ;
-            mbo:precursor_mz 2.259928e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "225.9928"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 16 ;
     mbo:pk_splash "splash10-01si-0900000000-e13543e76fe3597546a2" ;
     rdfs:comment "UCHEM_ID 4081" ;

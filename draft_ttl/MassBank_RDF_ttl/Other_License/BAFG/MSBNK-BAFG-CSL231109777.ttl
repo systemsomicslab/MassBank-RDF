@@ -1,4 +1,4 @@
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -8,11 +8,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL231109777 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL231109777" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL231109777" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "140" ;
@@ -26,8 +26,8 @@ massbank:MSBNK-BAFG-CSL231109777 a mbo:MassSpectrum ;
             mbo:retention_time "11.279 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1-(4-Methoxybenzoyl)-undecyl)-trimethyl-ammonium" ;
             mbo:ch_exact_mass 3.482897e+02 ;
-            rdfs:name "(1-(4-Methoxybenzoyl)-undecyl)-trimethyl-ammonium" ;
             schema:inChI "InChI=1S/C22H38NO2/c1-6-7-8-9-10-11-12-13-14-21(23(2,3)4)22(24)19-15-17-20(25-5)18-16-19/h15-18,21H,6-14H2,1-5H3/q+1" ;
             schema:inChIKey inchikey:JMKAPSBUJQQULC-UHFFFAOYSA-N ;
             schema:molecularFormula "[C22H38NO2]+" ;
@@ -62,8 +62,8 @@ massbank:MSBNK-BAFG-CSL231109777 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 7 ;
             mbo:relative_intensity 789 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 3.482897e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "348.2897"^^xsd:float ;
+            mbo:precursor_type_value "[M]+" ] ;
     mbo:pk_num_peak 7 ;
     mbo:pk_splash "splash10-004l-9000000000-59264e8c596c82a59d59" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

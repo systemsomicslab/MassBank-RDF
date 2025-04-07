@@ -4,8 +4,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -65,10 +68,34 @@ massbank:MSBNK-Eawag-EQ434059 a mbo:MassSpectrum ;
             mbo:mz 9.49691e+01 ;
             mbo:peak_sequential_number 6 ;
             mbo:relative_intensity 362 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.8e-01 ] ;
+            mbo:mz 6.00005e+01 ;
+            mbo:tentative_formula "C5-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.8e-01 ] ;
+            mbo:mz 6.20036e+01 ;
+            mbo:tentative_formula "C4N-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.7e-01 ] ;
+            mbo:mz 6.59986e+01 ;
+            mbo:tentative_formula "C3NO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.41e+00 ] ;
+            mbo:mz 7.40035e+01 ;
+            mbo:tentative_formula "C5N-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.65e+00 ] ;
+            mbo:mz 8.60033e+01 ;
+            mbo:tentative_formula "C6N-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.76e+00 ] ;
+            mbo:mz 9.49691e+01 ;
+            mbo:tentative_formula "C5Cl-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.80929e+02 ;
-            mbo:precursor_mz 2.809293e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "280.9293"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 6 ;
     mbo:pk_splash "splash10-044i-9000000000-6fac4dd1825506ad9383" ;
     rdfs:comment "UCHEM_ID 4340" ;

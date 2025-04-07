@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311108265 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311108265" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311108265" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "35" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311108265 a mbo:MassSpectrum ;
             mbo:retention_time "7.73 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-desmethyl-citalopram" ;
             mbo:ch_compound_class "Metabolite; Pharmaceutical" ;
             mbo:ch_exact_mass 3.101481e+02 ;
-            rdfs:name "N-desmethyl-citalopram" ;
             rdfs:seeAlso cas:62498-67-3 ;
             schema:inChI "InChI=1S/C19H19FN2O/c1-22-10-2-9-19(16-4-6-17(20)7-5-16)18-8-3-14(12-21)11-15(18)13-23-19/h3-8,11,22H,2,9-10,13H2,1H3" ;
             schema:inChIKey inchikey:PTJADDMMFYXMMG-UHFFFAOYSA-N ;
@@ -473,8 +473,8 @@ massbank:MSBNK-BAFG-CSL2311108265 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 99 ;
             mbo:relative_intensity 29 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 3.111555e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "311.1555"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 109 ;
     mbo:pk_splash "splash10-0a4i-0950000000-49dcd59f1f8add4a79ab" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

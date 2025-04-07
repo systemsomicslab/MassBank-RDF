@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -331,9 +334,37 @@ massbank:MSBNK-Keio_Univ-KO009171 a mbo:MassSpectrum ;
             mbo:mz 8.4e+01 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 1 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.406059e+01 ] ;
+            mbo:mz 7.42e+01 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.809697e+01 ] ;
+            mbo:mz 9.81e+01 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.161075e+02 ] ;
+            mbo:mz 1.161e+02 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.570653e+02 ] ;
+            mbo:mz 1.57e+02 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.83081e+02 ] ;
+            mbo:mz 1.831e+02 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.181181e+02 ] ;
+            mbo:mz 2.181e+02 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.421545e+02 ] ;
+            mbo:mz 2.422e+02 ;
+            mbo:tentative_formula "1" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 2.6e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "260.0"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 75 ;
     mbo:pk_splash "splash10-0159-1900000000-63f0b6b57a76617acc2d" ;
     rdfs:comment "KEIO_ID P192" ;

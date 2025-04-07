@@ -5,9 +5,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -67,10 +70,30 @@ massbank:MSBNK-LCSB-LU039952 a mbo:MassSpectrum ;
             mbo:mz 2.130669e+02 ;
             mbo:peak_sequential_number 5 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.4e-01 ] ;
+            mbo:mz 9.30346e+01 ;
+            mbo:tentative_formula "C6H5O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.03e+00 ] ;
+            mbo:mz 1.82061e+02 ;
+            mbo:tentative_formula "C12H8NO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9e-02 ] ;
+            mbo:mz 1.830689e+02 ;
+            mbo:tentative_formula "C12H9NO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.9e-01 ] ;
+            mbo:mz 2.110515e+02 ;
+            mbo:tentative_formula "C12H7N2O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.1e-01 ] ;
+            mbo:mz 2.130669e+02 ;
+            mbo:tentative_formula "C12H9N2O2-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.13067e+02 ;
-            mbo:precursor_mz 2.13067e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "213.067"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 5 ;
     mbo:pk_splash "splash10-03di-0090000000-f65b2e7abdc9d7b3a403" ;
     rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;

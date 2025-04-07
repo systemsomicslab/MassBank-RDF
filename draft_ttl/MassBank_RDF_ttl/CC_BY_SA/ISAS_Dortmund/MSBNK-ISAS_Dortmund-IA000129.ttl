@@ -2,9 +2,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -60,10 +63,38 @@ massbank:MSBNK-ISAS_Dortmund-IA000129 a mbo:MassSpectrum ;
             mbo:mz 2.913052e+02 ;
             mbo:peak_sequential_number 7 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.10261e+01 ] ;
+            mbo:mz 6.10261e+01 ;
+            mbo:tentative_formula "61.026" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.40326e+01 ] ;
+            mbo:mz 7.403258e+01 ;
+            mbo:tentative_formula "74.033" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.9088e+01 ] ;
+            mbo:mz 8.908805e+01 ;
+            mbo:tentative_formula "89.088" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.152594e+02 ] ;
+            mbo:mz 2.152591e+02 ;
+            mbo:tentative_formula "215.259" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.473155e+02 ] ;
+            mbo:mz 2.473155e+02 ;
+            mbo:tentative_formula "247.316" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.712819e+02 ] ;
+            mbo:mz 2.712821e+02 ;
+            mbo:tentative_formula "271.282" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.913052e+02 ] ;
+            mbo:mz 2.913052e+02 ;
+            mbo:tentative_formula "precursor" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.913052e+02 ;
-            mbo:precursor_mz 2.913052e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "291.3052"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 7 ;
     mbo:pk_splash "splash10-0006-0090000000-986c2186fa4b730ca969" ;
     rdfs:comment "PROCESSING averaging of repeated ion fragments at 40.0 NCE within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;

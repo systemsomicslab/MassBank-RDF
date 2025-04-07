@@ -1,0 +1,112 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000500 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000500" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "20(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "4.21" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Penitrem A" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 6.332857e+02 ;
+            rdfs:seeAlso cas:12627-35-9,
+                chemspider:10202291,
+                knapsack:C00023567,
+                pubchem:CID6610243 ;
+            schema:inChI "InChI=1S/C37H44ClNO6/c1-15(2)28-27(40)31-37(45-31)23(43-28)9-10-33(6)34(7)18(8-11-35(33,37)41)29-25-24-21(39-30(25)34)14-20(38)17-12-16(3)19-13-22(32(4,5)44-29)36(19,42)26(17)24/h14,18-19,22-23,27-29,31,39-42H,1,3,8-13H2,2,4-7H3/t18-,19+,22+,23-,27-,28+,29-,31+,33+,34+,35-,36+,37-/m0/s1" ;
+            schema:inChIKey inchikey:JDUWHZOLEDOQSR-JKPSMKLGSA-N ;
+            schema:molecularFormula "C37H44ClNO6" ;
+            schema:name "Penitrem A" ;
+            schema:smiles "CC(=C)[C@@H]1[C@@H]([C@@H]2[C@@]3(O2)[C@@H](O1)CC[C@]4([C@]3(CC[C@@H]5[C@@]4(C6=C7[C@H]5OC([C@H]8C[C@H]9[C@@]8(C1=C7C(=CC(=C1CC9=C)Cl)N6)O)(C)C)C)O)C)O" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 2.784023e+06 ;
+            mbo:mz 5.402273e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 130 ],
+        [ mbo:intensity 1.152855e+06 ;
+            mbo:mz 5.482193e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 2.134163e+07 ;
+            mbo:mz 5.582401e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.69183e+06 ;
+            mbo:mz 5.982719e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 2.828598e+06 ;
+            mbo:mz 6.162824e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 132 ],
+        [ mbo:intensity 1.224569e+06 ;
+            mbo:mz 6.34293e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 57 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.25e+00 ] ;
+            mbo:mz 5.40228e+02 ;
+            mbo:tentative_formula "C31H37O6Cl1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.47e+00 ] ;
+            mbo:mz 5.482158e+02 ;
+            mbo:tentative_formula "C35H32O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.2e+00 ] ;
+            mbo:mz 5.582383e+02 ;
+            mbo:tentative_formula "C37H34O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.15e+00 ] ;
+            mbo:mz 5.982694e+02 ;
+            mbo:tentative_formula "C37H41N1O4Cl1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.29e+00 ] ;
+            mbo:mz 6.162798e+02 ;
+            mbo:tentative_formula "C37H43N1O5Cl1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.68e+00 ] ;
+            mbo:mz 6.342894e+02 ;
+            mbo:tentative_formula "C37H45N1O6Cl1+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.582383e+02 ;
+            mbo:precursor_mz_value "634.2925"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0a4i-0000091000-41938a0a666cddd05b7f" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Penitrem A; LC-ESI-ITFT; MS2; CE: 20; R=17500; [M+H]+" .
+

@@ -1,0 +1,64 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002453 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2020-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002453" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2020 by Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30% (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "0.978 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5R,7S,9Z,12R,18R)-9-ethylidene-7-(hydroxymethyl)-5-methyl-3,6,11-trioxa-15-azatetracyclo[10.5.1.05,7.015,18]octadec-1(17)-ene-4,10-dione",
+                "Erucifoline" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.491525e+02 ;
+            rdfs:seeAlso chemspider:31146617,
+                pubchem:CID76308652 ;
+            schema:inChI "InChI=1S/C18H23NO6/c1-3-11-8-18(10-20)17(2,25-18)16(22)23-9-12-4-6-19-7-5-13(14(12)19)24-15(11)21/h3-4,13-14,20H,5-10H2,1-2H3/b11-3-/t13-,14-,17+,18+/m1/s1" ;
+            schema:inChIKey inchikey:NOQVBHHOUTTZGE-LUZNJDLOSA-N ;
+            schema:molecularFormula "C18H23NO6" ;
+            schema:name "(5R,7S,9Z,12R,18R)-9-ethylidene-7-(hydroxymethyl)-5-methyl-3,6,11-trioxa-15-azatetracyclo[10.5.1.05,7.015,18]octadec-1(17)-ene-4,10-dione",
+                "Erucifoline" ;
+            schema:smiles "C/C=C\\1/C[C@@]2([C@@](O2)(C(=O)OCC3=CCN4[C@H]3[C@@H](CC4)OC1=O)C)CO" ] ;
+    mbo:has_peak [ mbo:intensity 3.495286e+05 ;
+            mbo:mz 3.5016e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.9e-01 ] ;
+            mbo:mz 3.5016e+02 ;
+            mbo:tentative_formula "C18H24NO6+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.501595e+02 ;
+            mbo:precursor_mz_value "350.1598"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0udi-0009000000-ddb0ddd7bb0e15624004" ;
+    rdfs:comment "INTERNAL_ID 2300" ;
+    skos:definition "Erucifoline; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

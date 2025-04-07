@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA215205070APH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA215205070APH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "0.806 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[4-[(7-chloroquinolin-4-yl)amino]pentyl-ethylamino]ethanol",
+                "Hydroxychloroquine" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.351764e+02 ;
+            rdfs:seeAlso cas:747-36-4,
+                chemspider:3526,
+                pubchem:CID3652 ;
+            schema:inChI "InChI=1S/C18H26ClN3O/c1-3-22(11-12-23)10-4-5-14(2)21-17-8-9-20-18-13-15(19)6-7-16(17)18/h6-9,13-14,23H,3-5,10-12H2,1-2H3,(H,20,21)" ;
+            schema:inChIKey inchikey:XXSMGPRMXLTPCZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C18H26ClN3O" ;
+            schema:name "2-[4-[(7-chloroquinolin-4-yl)amino]pentyl-ethylamino]ethanol",
+                "Hydroxychloroquine" ;
+            schema:smiles "CCN(CCO)CCCC(C)NC1=C2C=CC(Cl)=CC2=NC=C1" ] ;
+    mbo:has_peak [ mbo:intensity 2.4982e+03 ;
+            mbo:mz 1.581548e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 153 ],
+        [ mbo:intensity 1.63104e+04 ;
+            mbo:mz 2.471003e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.34435e+04 ;
+            mbo:mz 3.361844e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 823 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.09e+00 ] ;
+            mbo:mz 1.581548e+02 ;
+            mbo:tentative_formula "C6H23ClN2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.78e+00 ] ;
+            mbo:mz 2.471003e+02 ;
+            mbo:tentative_formula "C14H16ClN2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.14e+00 ] ;
+            mbo:mz 3.361844e+02 ;
+            mbo:tentative_formula "C18H27ClN3O+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.570355e+02 ;
+            mbo:precursor_mz_value "336.1837"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-000b-0197000000-0d5000738be80e6ab192" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Hydroxychloroquine; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

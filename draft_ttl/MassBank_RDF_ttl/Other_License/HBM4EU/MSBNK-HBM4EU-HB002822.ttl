@@ -1,0 +1,119 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB002822 a mbo:MassSpectrum ;
+    dcterms:creator "Carolin Huber, Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ GmbH, Leipzig, Germany" ;
+    dcterms:date "2021-02-23"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB002822" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Huber C, Mueller E, Schulze T, Brack W, Krauss M, Improving the Screening Analysis of Pesticide Metabolites in Human Biomonitoring by Combining High-Throughput In Vitro Incubation and Automated LC–HRMS Data Processing, Analytical Chemistry, https://doi.org/10.1021/acs.analchem.1c00972" ] ;
+    dcterms:rights "Copyright (C) 2021 Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q Exactive Plus Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30% (nominal)" ;
+            mbo:column_name "Waters UPLC BEH C18 1.7 um 2.1 mm x 100 mm with pre-column" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 15 min, 0/100 at 21 min, 100/0 at 22 min, 100/0 at 30 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-QFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "70000" ;
+            mbo:retention_time "8.18 min" ;
+            mbo:solvent "A water with 1% ammonium carbonate 1M",
+                "B methanol with 1% ammonium carbonate 1M and 5% water" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "6-chloro-N2-ethyl-1,3,5-triazine-2,4-diamine",
+                "Atrazine-despropyl" ;
+            mbo:ch_compound_class "N/A; Biotransformation Product" ;
+            mbo:ch_exact_mass 1.73046e+02 ;
+            rdfs:seeAlso cas:1007-28-9,
+                pubchem:CID13878 ;
+            schema:inChI "InChI=1S/C5H8ClN5/c1-2-8-5-10-3(6)9-4(7)11-5/h2H2,1H3,(H3,7,8,9,10,11)" ;
+            schema:inChIKey inchikey:IVENSCMCQBJAKW-UHFFFAOYSA-N ;
+            schema:molecularFormula "C5H8ClN5" ;
+            schema:name "6-chloro-N2-ethyl-1,3,5-triazine-2,4-diamine",
+                "Atrazine-despropyl" ;
+            schema:smiles "CCNC1=NC(=NC(=N1)N)Cl" ] ;
+    mbo:has_peak [ mbo:intensity 2.7935e+03 ;
+            mbo:mz 5.50545e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.030526e+05 ;
+            mbo:mz 9.60556e+01 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 244 ],
+        [ mbo:intensity 3.402616e+05 ;
+            mbo:mz 1.040009e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 804 ],
+        [ mbo:intensity 1.59876e+04 ;
+            mbo:mz 1.100461e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 38 ],
+        [ mbo:intensity 4.31155e+04 ;
+            mbo:mz 1.320323e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 102 ],
+        [ mbo:intensity 9.8967e+03 ;
+            mbo:mz 1.380774e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 23 ],
+        [ mbo:intensity 2.04657e+04 ;
+            mbo:mz 1.460229e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 48 ],
+        [ mbo:intensity 1.23246e+04 ;
+            mbo:mz 1.740545e+02 ;
+            mbo:peak_sequential_number 16 ;
+            mbo:relative_intensity 29 ],
+        [ mbo:intensity 2.9265e+03 ;
+            mbo:mz 5.80653e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 8.145e+04 ;
+            mbo:mz 6.19794e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 193 ],
+        [ mbo:intensity 2.8654e+03 ;
+            mbo:mz 6.70544e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 4.22544e+05 ;
+            mbo:mz 6.80244e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.5186e+03 ;
+            mbo:mz 6.90699e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 8 ],
+        [ mbo:intensity 7.50421e+04 ;
+            mbo:mz 7.10604e+01 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 177 ],
+        [ mbo:intensity 1.765828e+05 ;
+            mbo:mz 7.90057e+01 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 417 ],
+        [ mbo:intensity 5.9872e+03 ;
+            mbo:mz 9.00104e+01 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 14 ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:precursor_mz_value "174.0538"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 16 ;
+    mbo:pk_splash "splash10-0gb9-9400000000-55e33edc12d56a656d50" ;
+    rdfs:comment "Atrazine_despropyl_30eV.txt" ;
+    skos:definition "Atrazine-despropyl (PROBABLE); LC-ESI-QFT; MS2; CE: 30%; R=70000; [M+H]+" .
+

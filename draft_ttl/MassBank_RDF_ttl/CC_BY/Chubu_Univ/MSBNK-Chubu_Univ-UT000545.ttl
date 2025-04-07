@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -1061,10 +1064,30 @@ massbank:MSBNK-Chubu_Univ-UT000545 a mbo:MassSpectrum ;
             mbo:mz 4.744117e+02 ;
             mbo:peak_sequential_number 99 ;
             mbo:relative_intensity 2 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.447472e+00 ] ;
+            mbo:mz 2.572141e+02 ;
+            mbo:tentative_formula "[{12:0}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.950647e+01 ] ;
+            mbo:mz 3.372542e+02 ;
+            mbo:tentative_formula "[{18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.606647e+01 ] ;
+            mbo:mz 5.194278e+02 ;
+            mbo:tentative_formula "[{12:0-18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.025835e+01 ] ;
+            mbo:mz 5.994858e+02 ;
+            mbo:tentative_formula "[{18:2-18:2}-OH]+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.074538e+01 ] ;
+            mbo:mz 8.16683e+02 ;
+            mbo:tentative_formula "[M+NH4]+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 5.194197e+02 ;
-            mbo:precursor_mz 8.167e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "816.7"^^xsd:float ;
+            mbo:precursor_type_value "[M+NH4]+" ] ;
     mbo:pk_num_peak 256 ;
     mbo:pk_splash "splash10-014j-0000091000-546cc979e32a230c4619" ;
     skos:definition "Triacylglycerol 12:0-18:2-18:2; LC-ESI-QTOF; MS; mouse WAT" .

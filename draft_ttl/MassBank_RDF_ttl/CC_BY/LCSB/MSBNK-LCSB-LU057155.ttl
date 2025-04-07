@@ -5,9 +5,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -109,10 +112,74 @@ massbank:MSBNK-LCSB-LU057155 a mbo:MassSpectrum ;
             mbo:mz 8.40216e+01 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 45 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.5e-01 ] ;
+            mbo:mz 5.50189e+01 ;
+            mbo:tentative_formula "C3H3O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5e-02 ] ;
+            mbo:mz 8.50295e+01 ;
+            mbo:tentative_formula "C4H5O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.7e-01 ] ;
+            mbo:mz 8.70087e+01 ;
+            mbo:tentative_formula "C3H3O3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.5e-01 ] ;
+            mbo:mz 9.50139e+01 ;
+            mbo:tentative_formula "C5H3O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.5e-01 ] ;
+            mbo:mz 9.90088e+01 ;
+            mbo:tentative_formula "C4H3O3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.9e-01 ] ;
+            mbo:mz 1.010244e+02 ;
+            mbo:tentative_formula "C4H5O3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.2e-01 ] ;
+            mbo:mz 1.080217e+02 ;
+            mbo:tentative_formula "C6H4O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.3e-01 ] ;
+            mbo:mz 1.169072e+02 ;
+            mbo:tentative_formula "CCl3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.2e-01 ] ;
+            mbo:mz 5.70345e+01 ;
+            mbo:tentative_formula "C3H5O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.9e-01 ] ;
+            mbo:mz 5.80061e+01 ;
+            mbo:tentative_formula "C2H2O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.2e-01 ] ;
+            mbo:mz 5.90138e+01 ;
+            mbo:tentative_formula "C2H3O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.1e-01 ] ;
+            mbo:mz 7.10139e+01 ;
+            mbo:tentative_formula "C3H3O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.3e-01 ] ;
+            mbo:mz 7.29931e+01 ;
+            mbo:tentative_formula "C2HO3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.2e-01 ] ;
+            mbo:mz 7.30295e+01 ;
+            mbo:tentative_formula "C3H5O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.2e-01 ] ;
+            mbo:mz 8.30138e+01 ;
+            mbo:tentative_formula "C4H3O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4e-01 ] ;
+            mbo:mz 8.40216e+01 ;
+            mbo:tentative_formula "C4H4O2-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.490227e+02 ;
-            mbo:precursor_mz 3.069548e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "306.9548"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 16 ;
     mbo:pk_splash "splash10-0ab9-9000000000-951d50ade829cd9fa4ea" ;
     rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;

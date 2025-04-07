@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311094563 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311094563" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311094563" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "90" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311094563 a mbo:MassSpectrum ;
             mbo:retention_time "5.137 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Levetiracetam" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 1.701055e+02 ;
-            rdfs:name "Levetiracetam" ;
             rdfs:seeAlso cas:102767-28-2 ;
             schema:inChI "InChI=1S/C8H14N2O2/c1-2-6(8(9)12)10-5-3-4-7(10)11/h6H,2-5H2,1H3,(H2,9,12)/t6-/m1/s1" ;
             schema:inChIKey inchikey:HPHUVLMMVZITSG-ZCFIWIBFSA-N ;
@@ -61,8 +61,8 @@ massbank:MSBNK-BAFG-CSL2311094563 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 6 ;
             mbo:relative_intensity 285 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 1.711128e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "171.1128"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 6 ;
     mbo:pk_splash "splash10-0006-9000000000-b87170612b6925b20c5f" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

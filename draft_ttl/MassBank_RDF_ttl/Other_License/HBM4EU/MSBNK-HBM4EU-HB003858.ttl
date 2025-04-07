@@ -1,0 +1,98 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003858 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003858" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "21.353 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "14-(hydroxymethyl)-3-[14-(hydroxymethyl)-18-methyl-13,17-dioxo-15,16-dithia-10,12,18-triazapentacyclo[12.2.2.01,12.03,11.04,9]octadeca-4,6,8-trien-3-yl]-18-methyl-15,16-dithia-10,12,18-triazapentacyclo[12.2.2.01,12.03,11.04,9]octadeca-4,6,8-triene-13,17-dione",
+                "Chaetocin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 6.960953e+02 ;
+            rdfs:seeAlso cas:28097-03-2,
+                chemspider:141930,
+                pubchem:CID161591 ;
+            schema:inChI "InChI=1S/C30H28N6O6S4/c1-33-21(39)27-11-25(15-7-3-5-9-17(15)31-19(25)35(27)23(41)29(33,13-37)45-43-27)26-12-28-22(40)34(2)30(14-38,46-44-28)24(42)36(28)20(26)32-18-10-6-4-8-16(18)26/h3-10,19-20,31-32,37-38H,11-14H2,1-2H3" ;
+            schema:inChIKey inchikey:PZPPOCZWRGNKIR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C30H28N6O6S4" ;
+            schema:name "14-(hydroxymethyl)-3-[14-(hydroxymethyl)-18-methyl-13,17-dioxo-15,16-dithia-10,12,18-triazapentacyclo[12.2.2.01,12.03,11.04,9]octadeca-4,6,8-trien-3-yl]-18-methyl-15,16-dithia-10,12,18-triazapentacyclo[12.2.2.01,12.03,11.04,9]octadeca-4,6,8-triene-13,17-dione",
+                "Chaetocin" ;
+            schema:smiles "CN1C(=O)C23CC4(C(N2C(=O)C1(SS3)CO)NC5=CC=CC=C54)C67CC89C(=O)N(C(C(=O)N8C6NC1=CC=CC=C71)(SS9)CO)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.3302e+03 ;
+            mbo:mz 2.010635e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 216 ],
+        [ mbo:intensity 2.3899e+03 ;
+            mbo:mz 2.670985e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 155 ],
+        [ mbo:intensity 9.0151e+03 ;
+            mbo:mz 2.84102e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 584 ],
+        [ mbo:intensity 2.8124e+03 ;
+            mbo:mz 2.851111e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 1.54311e+04 ;
+            mbo:mz 3.480471e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.4e-01 ] ;
+            mbo:mz 2.010635e+02 ;
+            mbo:tentative_formula "CH19N3O2S3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.99e+00 ] ;
+            mbo:mz 2.670985e+02 ;
+            mbo:tentative_formula "C7H17N5O4S+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.4e-01 ] ;
+            mbo:mz 2.84102e+02 ;
+            mbo:tentative_formula "C7H26NO4S3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3e-01 ] ;
+            mbo:mz 2.851111e+02 ;
+            mbo:tentative_formula "C8H23N5S3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.5e-01 ] ;
+            mbo:mz 3.480471e+02 ;
+            mbo:tentative_formula "C15H14N3O3S2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.971035e+02 ;
+            mbo:precursor_mz_value "697.1026"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-000t-0097000000-2708815622fc3357b40d" ;
+    rdfs:comment "INTERNAL_ID 115" ;
+    skos:definition "Chaetocin; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

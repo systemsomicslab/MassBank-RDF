@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -59,10 +62,26 @@ massbank:MSBNK-Antwerp_Univ-AN116728 a mbo:MassSpectrum ;
             mbo:mz 1.530311e+02 ;
             mbo:peak_sequential_number 4 ;
             mbo:relative_intensity 7 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.55e+00 ] ;
+            mbo:mz 6.2964e+01 ;
+            mbo:tentative_formula "O2P-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.7e+00 ] ;
+            mbo:mz 7.89584e+01 ;
+            mbo:tentative_formula "O3P-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.26e+00 ] ;
+            mbo:mz 9.69689e+01 ;
+            mbo:tentative_formula "H2O4P-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.58e+00 ] ;
+            mbo:mz 1.530311e+02 ;
+            mbo:tentative_formula "C4H10O4P-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.090954e+02 ;
-            mbo:precursor_mz 2.090948e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "209.0948"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 4 ;
     mbo:pk_splash "splash10-004i-9000000000-f36e1d0831cc2dce0675" ;
     rdfs:comment "HBM4EU - science and policy for a healthy future (https://www.hbm4eu.eu)" ;

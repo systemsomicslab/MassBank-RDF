@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -73,10 +76,38 @@ massbank:MSBNK-Eawag-EA025403 a mbo:MassSpectrum ;
             mbo:mz 2.760818e+02 ;
             mbo:peak_sequential_number 7 ;
             mbo:relative_intensity 33 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.7e-01 ] ;
+            mbo:mz 7.30648e+01 ;
+            mbo:tentative_formula "C4H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.15e+00 ] ;
+            mbo:mz 1.110262e+02 ;
+            mbo:tentative_formula "C6H7S+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.36e+00 ] ;
+            mbo:mz 1.520168e+02 ;
+            mbo:tentative_formula "C7H6NOS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2e-02 ] ;
+            mbo:mz 1.680841e+02 ;
+            mbo:tentative_formula "C9H14NS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.3e-01 ] ;
+            mbo:mz 2.040241e+02 ;
+            mbo:tentative_formula "C11H8O2S+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.4e-01 ] ;
+            mbo:mz 2.440559e+02 ;
+            mbo:tentative_formula "C11H15ClNOS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.9e-01 ] ;
+            mbo:mz 2.760818e+02 ;
+            mbo:tentative_formula "C12H19ClNO2S+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.760826e+02 ;
-            mbo:precursor_mz 2.76082e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "276.082"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 7 ;
     mbo:pk_splash "splash10-0006-0090000000-21496638118e65a06472" ;
     rdfs:comment "EAWAG_UCHEM_ID 254" ;

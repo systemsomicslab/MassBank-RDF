@@ -1,0 +1,64 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA2157213166PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA2157213166PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "70 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "14.200 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[1-[[1-[3-[2-(7-chloroquinolin-2-yl)ethenyl]phenyl]-3-[2-(2-hydroxypropan-2-yl)phenyl]propyl]sulfanylmethyl]cyclopropyl]acetic acid",
+                "Montelukast",
+                "cis-Montelukast" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.852104e+02 ;
+            rdfs:seeAlso chemspider:4099,
+                pubchem:CID4248 ;
+            schema:inChI "InChI=1S/C35H36ClNO3S/c1-34(2,40)30-9-4-3-7-25(30)13-17-32(41-23-35(18-19-35)22-33(38)39)27-8-5-6-24(20-27)10-15-29-16-12-26-11-14-28(36)21-31(26)37-29/h3-12,14-16,20-21,32,40H,13,17-19,22-23H2,1-2H3,(H,38,39)" ;
+            schema:inChIKey inchikey:UCHDWCPVSPXUMX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C35H36ClNO3S" ;
+            schema:name "2-[1-[[1-[3-[2-(7-chloroquinolin-2-yl)ethenyl]phenyl]-3-[2-(2-hydroxypropan-2-yl)phenyl]propyl]sulfanylmethyl]cyclopropyl]acetic acid",
+                "Montelukast",
+                "cis-Montelukast" ;
+            schema:smiles "CC(C)(O)C1=CC=CC=C1CCC(SCC1(CC(O)=O)CC1)C1=CC=CC(C=CC2=NC3=C(C=CC(Cl)=C3)C=C2)=C1" ] ;
+    mbo:has_peak [ mbo:intensity 6.1964e+03 ;
+            mbo:mz 9.10545e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.54e+00 ] ;
+            mbo:mz 9.10545e+01 ;
+            mbo:tentative_formula "C7H7+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.169863e+02 ;
+            mbo:precursor_mz_value "586.2177"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0006-9000000000-bab392b0bbcf1cba23df" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Montelukast; LC-ESI-ITFT; MS2; CE: 70%; R=15000; [M+H]+" .
+

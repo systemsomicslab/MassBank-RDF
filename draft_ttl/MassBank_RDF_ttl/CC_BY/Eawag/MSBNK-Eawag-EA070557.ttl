@@ -4,8 +4,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -71,10 +74,38 @@ massbank:MSBNK-Eawag-EA070557 a mbo:MassSpectrum ;
             mbo:mz 1.300665e+02 ;
             mbo:peak_sequential_number 7 ;
             mbo:relative_intensity 675 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.17e+00 ] ;
+            mbo:mz 6.70302e+01 ;
+            mbo:tentative_formula "C3H3N2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.6e-01 ] ;
+            mbo:mz 7.69703e+01 ;
+            mbo:tentative_formula "CHO2S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.08e+00 ] ;
+            mbo:mz 7.99574e+01 ;
+            mbo:tentative_formula "O3S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.8e-01 ] ;
+            mbo:mz 9.3973e+01 ;
+            mbo:tentative_formula "CH2O3S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.89e+00 ] ;
+            mbo:mz 1.200822e+02 ;
+            mbo:tentative_formula "C8H10N-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.86e+00 ] ;
+            mbo:mz 1.209606e+02 ;
+            mbo:tentative_formula "C2HO4S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.75e+00 ] ;
+            mbo:mz 1.300665e+02 ;
+            mbo:tentative_formula "C9H8N-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 3.220864e+02 ;
-            mbo:precursor_mz 3.220867e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "322.0867"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 7 ;
     mbo:pk_splash "splash10-004i-9300000000-be274b734c689265b9ca" ;
     rdfs:comment "EAWAG_UCHEM_ID 705" ;

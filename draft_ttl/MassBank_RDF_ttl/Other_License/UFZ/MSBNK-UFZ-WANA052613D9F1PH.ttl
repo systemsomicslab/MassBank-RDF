@@ -1,0 +1,112 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA052613D9F1PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA052613D9F1PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "11.725 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2-butyl-1-benzofuran-3-yl)-[4-[2-(diethylamino)ethoxy]-3,5-diiodophenyl]methanone",
+                "Amiodarone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 6.450237e+02 ;
+            rdfs:seeAlso cas:1951-25-3,
+                chemspider:2072,
+                pubchem:CID2157 ;
+            schema:inChI "InChI=1S/C25H29I2NO3/c1-4-7-11-22-23(18-10-8-9-12-21(18)31-22)24(29)17-15-19(26)25(20(27)16-17)30-14-13-28(5-2)6-3/h8-10,12,15-16H,4-7,11,13-14H2,1-3H3" ;
+            schema:inChIKey inchikey:IYIKLHRQXLHMJQ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C25H29I2NO3" ;
+            schema:name "(2-butyl-1-benzofuran-3-yl)-[4-[2-(diethylamino)ethoxy]-3,5-diiodophenyl]methanone",
+                "Amiodarone" ;
+            schema:smiles "CCCCC1=C(C(=O)C2=CC(I)=C(OCCN(CC)CC)C(I)=C2)C2=CC=CC=C2O1" ] ;
+    mbo:has_peak [ mbo:intensity 2.18045e+04 ;
+            mbo:mz 7.2081e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 781 ],
+        [ mbo:intensity 3.271e+03 ;
+            mbo:mz 7.30887e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 117 ],
+        [ mbo:intensity 2.31877e+04 ;
+            mbo:mz 8.60968e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 830 ],
+        [ mbo:intensity 2.79021e+04 ;
+            mbo:mz 1.001125e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.8369e+03 ;
+            mbo:mz 1.590443e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 66 ],
+        [ mbo:intensity 6.1878e+03 ;
+            mbo:mz 2.010918e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 222 ],
+        [ mbo:intensity 1.3897e+03 ;
+            mbo:mz 2.480836e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 50 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.65e+00 ] ;
+            mbo:mz 7.2081e+01 ;
+            mbo:tentative_formula "C4H10N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.82e+00 ] ;
+            mbo:mz 7.30887e+01 ;
+            mbo:tentative_formula "C4H11N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.18e+00 ] ;
+            mbo:mz 8.60968e+01 ;
+            mbo:tentative_formula "C5H12N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.99e+00 ] ;
+            mbo:mz 1.001125e+02 ;
+            mbo:tentative_formula "C6H14N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.63e+00 ] ;
+            mbo:mz 1.590443e+02 ;
+            mbo:tentative_formula "C10H7O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.74e+00 ] ;
+            mbo:mz 2.010918e+02 ;
+            mbo:tentative_formula "H26IO3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.79e+00 ] ;
+            mbo:mz 2.480836e+02 ;
+            mbo:tentative_formula "C17H12O2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.460325e+02 ;
+            mbo:precursor_mz_value "646.031"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0uki-9510000000-4a78b2cf729c1a0934ef" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Amiodarone; LC-ESI-ITFT; MS2; CE: 50%; R=15000; [M+H]+" .
+

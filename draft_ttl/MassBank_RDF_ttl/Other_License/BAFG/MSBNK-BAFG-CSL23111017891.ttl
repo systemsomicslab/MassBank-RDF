@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111017891 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111017891" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111017891" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "120" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111017891 a mbo:MassSpectrum ;
             mbo:retention_time "13.951 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Clodinafop-Propargyl" ;
             mbo:ch_compound_class "Herbicide" ;
             mbo:ch_exact_mass 3.490517e+02 ;
-            rdfs:name "Clodinafop-Propargyl" ;
             rdfs:seeAlso cas:105512-06-9 ;
             schema:inChI "InChI=1S/C17H13ClFNO4/c1-3-8-22-17(21)11(2)23-13-4-6-14(7-5-13)24-16-15(19)9-12(18)10-20-16/h1,4-7,9-11H,8H2,2H3" ;
             schema:inChIKey inchikey:JBDHZKLJNAIJNC-UHFFFAOYSA-N ;
@@ -157,8 +157,8 @@ massbank:MSBNK-BAFG-CSL23111017891 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 999 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 3.50059e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "350.059"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 30 ;
     mbo:pk_splash "splash10-0h00-9200000000-1fe9668ed7e3316004d0" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

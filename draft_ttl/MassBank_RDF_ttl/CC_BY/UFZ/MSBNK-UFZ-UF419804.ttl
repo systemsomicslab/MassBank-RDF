@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -64,10 +67,30 @@ massbank:MSBNK-UFZ-UF419804 a mbo:MassSpectrum ;
             mbo:mz 1.669863e+02 ;
             mbo:peak_sequential_number 5 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.12e+00 ] ;
+            mbo:mz 1.240345e+02 ;
+            mbo:tentative_formula "C7H8S+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.82e+00 ] ;
+            mbo:mz 1.35014e+02 ;
+            mbo:tentative_formula "C7H5NS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.69e+00 ] ;
+            mbo:mz 1.36022e+02 ;
+            mbo:tentative_formula "C7H6NS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.04e+00 ] ;
+            mbo:mz 1.4903e+02 ;
+            mbo:tentative_formula "C8H7NS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.34e+00 ] ;
+            mbo:mz 1.669863e+02 ;
+            mbo:tentative_formula "C7H5NS2+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 1.631333e+02 ;
-            mbo:precursor_mz 1.820093e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "182.0093"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 5 ;
     mbo:pk_splash "splash10-014i-0900000000-a53a69c09545ff3ff408" ;
     rdfs:comment "INTERNAL_ID 4198" ;

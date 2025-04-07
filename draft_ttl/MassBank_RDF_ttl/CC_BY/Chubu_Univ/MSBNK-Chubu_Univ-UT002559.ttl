@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -65,9 +68,13 @@ massbank:MSBNK-Chubu_Univ-UT002559 a mbo:MassSpectrum ;
             mbo:mz 5.7815e+02 ;
             mbo:peak_sequential_number 6 ;
             mbo:relative_intensity 18 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.87e+02 ] ;
+            mbo:mz 5.3611e+02 ;
+            mbo:tentative_formula "[PC(lyso,20:0)-CH3]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 6.1041e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "610.41"^^xsd:float ;
+            mbo:precursor_type_value "[M+CH3COO]-" ] ;
     mbo:pk_num_peak 6 ;
     mbo:pk_splash "splash10-000i-0000090000-29cfe25777d60b61ca60" ;
     skos:definition "Phosphatidylcholine lyso 20:0; LC-ESI-ITFT; MS2; [M+CH3COO]-; RT: 6.16; Exp: 3" .

@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111011869 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111011869" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111011869" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "140" ;
@@ -27,8 +27,8 @@ massbank:MSBNK-BAFG-CSL23111011869 a mbo:MassSpectrum ;
             mbo:retention_time "6.754 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2-Carboxyethyl)triphenylphosphonium" ;
             mbo:ch_exact_mass 3.351195e+02 ;
-            rdfs:name "(2-Carboxyethyl)triphenylphosphonium" ;
             rdfs:seeAlso cas:51114-94-4 ;
             schema:inChI "InChI=1S/C21H19O2P/c22-21(23)16-17-24(18-10-4-1-5-11-18,19-12-6-2-7-13-19)20-14-8-3-9-15-20/h1-15H,16-17H2/p+1" ;
             schema:inChIKey inchikey:FLYPZWDELZKIOY-UHFFFAOYSA-O ;
@@ -160,8 +160,8 @@ massbank:MSBNK-BAFG-CSL23111011869 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 307 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 3.351195e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "335.1195"^^xsd:float ;
+            mbo:precursor_type_value "[M]+" ] ;
     mbo:pk_num_peak 31 ;
     mbo:pk_splash "splash10-0zgi-2900000000-3c91c090eb9610fd3391" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

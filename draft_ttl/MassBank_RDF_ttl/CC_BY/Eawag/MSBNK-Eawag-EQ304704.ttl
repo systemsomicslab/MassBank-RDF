@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -111,10 +114,74 @@ massbank:MSBNK-Eawag-EQ304704 a mbo:MassSpectrum ;
             mbo:mz 9.89841e+01 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 3 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.85e+00 ] ;
+            mbo:mz 5.99763e+01 ;
+            mbo:tentative_formula "C2HCl+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.1e-01 ] ;
+            mbo:mz 1.090049e+02 ;
+            mbo:tentative_formula "C2H6O3P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.2e-01 ] ;
+            mbo:mz 1.119476e+02 ;
+            mbo:tentative_formula "CH2ClO2P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.8e-01 ] ;
+            mbo:mz 1.129998e+02 ;
+            mbo:tentative_formula "CH6O4P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.7e-01 ] ;
+            mbo:mz 1.270155e+02 ;
+            mbo:tentative_formula "C2H8O4P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.33e+00 ] ;
+            mbo:mz 1.309656e+02 ;
+            mbo:tentative_formula "CH5ClO3P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.8e-01 ] ;
+            mbo:mz 1.449815e+02 ;
+            mbo:tentative_formula "C2H7ClO3P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.5e-01 ] ;
+            mbo:mz 2.209531e+02 ;
+            mbo:tentative_formula "C4H8Cl2O4P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2e+00 ] ;
+            mbo:mz 6.29997e+01 ;
+            mbo:tentative_formula "C2H4Cl+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.9e-01 ] ;
+            mbo:mz 6.49787e+01 ;
+            mbo:tentative_formula "H2O2P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.7e-01 ] ;
+            mbo:mz 7.69788e+01 ;
+            mbo:tentative_formula "C2H2ClO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.4e-01 ] ;
+            mbo:mz 7.89943e+01 ;
+            mbo:tentative_formula "CH4O2P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.4e-01 ] ;
+            mbo:mz 9.4945e+01 ;
+            mbo:tentative_formula "C2HCl2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.7e-01 ] ;
+            mbo:mz 9.69604e+01 ;
+            mbo:tentative_formula "CH3ClOP+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.8e-01 ] ;
+            mbo:mz 9.70049e+01 ;
+            mbo:tentative_formula "CH6O3P+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.2e-01 ] ;
+            mbo:mz 9.89841e+01 ;
+            mbo:tentative_formula "H4O4P+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.209533e+02 ;
-            mbo:precursor_mz 2.209532e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "220.9532"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 16 ;
     mbo:pk_splash "splash10-004i-2900000000-051c8cc88647cdf4959e" ;
     rdfs:comment "EAWAG_UCHEM_ID 3047" ;

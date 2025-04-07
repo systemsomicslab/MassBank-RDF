@@ -1,0 +1,76 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003443 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003443" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "23.546 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Aspochalasin 1" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.172515e+02 ;
+            rdfs:seeAlso cas:71968-02-0 ;
+            schema:inChI "InChI=1S/C24H35NO5/c1-13(2)10-18-22-16(5)15(4)12-17-11-14(3)6-7-19(26)20(27)8-9-21(28)30-24(17,22)23(29)25-18/h8-9,11-13,16-20,22,26-27H,6-7,10H2,1-5H3,(H,25,29)/t16-,17+,18+,19+,20-,22+,24-/m1/s1" ;
+            schema:inChIKey inchikey:TYOGSRFPSVCJQL-JMFILFSWSA-N ;
+            schema:molecularFormula "C24H35NO5" ;
+            schema:name "Aspochalasin 1" ;
+            schema:smiles "CC(C)C[C@@H]1NC(=O)[C@]23OC(=O)C=C[C@@H](O)[C@@H](O)CCC(C)=C[C@H]3C=C(C)[C@@H](C)[C@@H]12" ] ;
+    mbo:has_peak [ mbo:intensity 2.82977e+04 ;
+            mbo:mz 1.540867e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 6.7696e+03 ;
+            mbo:mz 2.61149e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 9 ],
+        [ mbo:intensity 7.300602e+05 ;
+            mbo:mz 4.16243e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.36e+00 ] ;
+            mbo:mz 1.540867e+02 ;
+            mbo:tentative_formula "C8H12NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.41e+00 ] ;
+            mbo:mz 2.61149e+02 ;
+            mbo:tentative_formula "C16H21O3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.1e+00 ] ;
+            mbo:mz 4.16243e+02 ;
+            mbo:tentative_formula "C24H34NO5-" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.762652e+02 ;
+            mbo:precursor_mz_value "416.2442"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-0000900000-45cbae0c514f90a6f857" ;
+    rdfs:comment "INTERNAL_ID 132" ;
+    skos:definition "Aspochalasin 1; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M-H]-" .
+

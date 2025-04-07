@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -100,10 +103,66 @@ massbank:MSBNK-Eawag-EQ01132103 a mbo:MassSpectrum ;
             mbo:mz 2.130223e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 255 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.1e-01 ] ;
+            mbo:mz 5.50542e+01 ;
+            mbo:tentative_formula "C4H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.07e+00 ] ;
+            mbo:mz 2.150182e+02 ;
+            mbo:tentative_formula "C12H3F2NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.2e-01 ] ;
+            mbo:mz 2.330287e+02 ;
+            mbo:tentative_formula "C9H8ClF2N2O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.62e+00 ] ;
+            mbo:mz 2.480452e+02 ;
+            mbo:tentative_formula "C11H10ClF3N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.4e-01 ] ;
+            mbo:mz 2.530349e+02 ;
+            mbo:tentative_formula "C9H9ClF3N2O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.4e-01 ] ;
+            mbo:mz 2.950821e+02 ;
+            mbo:tentative_formula "C12H15ClF3N2O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1e-02 ] ;
+            mbo:mz 7.30648e+01 ;
+            mbo:tentative_formula "C4H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.99e+00 ] ;
+            mbo:mz 1.660297e+02 ;
+            mbo:tentative_formula "C8H7ClN2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.2e+00 ] ;
+            mbo:mz 1.760075e+02 ;
+            mbo:tentative_formula "C7H5ClF2N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.12e+00 ] ;
+            mbo:mz 1.950122e+02 ;
+            mbo:tentative_formula "C9H5ClFN2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.1e-01 ] ;
+            mbo:mz 1.960135e+02 ;
+            mbo:tentative_formula "C7H6ClF3N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.82e+00 ] ;
+            mbo:mz 2.000559e+02 ;
+            mbo:tentative_formula "C9H7F3N2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.3e-01 ] ;
+            mbo:mz 2.059977e+02 ;
+            mbo:tentative_formula "C8H4ClF3N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.3e-01 ] ;
+            mbo:mz 2.130223e+02 ;
+            mbo:tentative_formula "C9H7ClFN2O+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.950817e+02 ;
-            mbo:precursor_mz 2.95082e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "295.082"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 14 ;
     mbo:pk_splash "splash10-05mk-4490000000-8f652e84c5df8efdb6fc" ;
     rdfs:comment "UCHEM_ID 11321" ;

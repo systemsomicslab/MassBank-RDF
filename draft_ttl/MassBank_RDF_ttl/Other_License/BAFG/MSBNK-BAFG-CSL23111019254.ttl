@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111019254 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111019254" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111019254" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "140" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111019254 a mbo:MassSpectrum ;
             mbo:retention_time "8.823 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Foramsulfuron" ;
             mbo:ch_compound_class "Herbicide" ;
             mbo:ch_exact_mass 4.521114e+02 ;
-            rdfs:name "Foramsulfuron" ;
             rdfs:seeAlso cas:173159-57-4 ;
             schema:inChI "InChI=1S/C17H20N6O7S/c1-23(2)15(25)11-6-5-10(18-9-24)7-12(11)31(27,28)22-17(26)21-16-19-13(29-3)8-14(20-16)30-4/h5-9H,1-4H3,(H,18,24)(H2,19,20,21,22,26)" ;
             schema:inChIKey inchikey:PXDNXJSDGQBLKS-UHFFFAOYSA-N ;
@@ -265,8 +265,8 @@ massbank:MSBNK-BAFG-CSL23111019254 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 30 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 4.531187e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "453.1187"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 57 ;
     mbo:pk_splash "splash10-0159-9000000000-60d25c6db003ca82da8a" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

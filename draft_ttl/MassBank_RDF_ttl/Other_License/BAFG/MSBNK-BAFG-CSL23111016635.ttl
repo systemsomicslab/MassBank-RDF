@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111016635 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111016635" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111016635" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "40" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111016635 a mbo:MassSpectrum ;
             mbo:retention_time "8.178 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tylosin" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 9.155192e+02 ;
-            rdfs:name "Tylosin" ;
             rdfs:seeAlso cas:1401-69-0 ;
             schema:inChI "InChI=1S/C46H77NO17/c1-13-33-30(22-58-45-42(57-12)41(56-11)37(52)26(5)60-45)18-23(2)14-15-31(49)24(3)19-29(16-17-48)39(25(4)32(50)20-34(51)62-33)64-44-38(53)36(47(9)10)40(27(6)61-44)63-35-21-46(8,55)43(54)28(7)59-35/h14-15,17-18,24-30,32-33,35-45,50,52-55H,13,16,19-22H2,1-12H3" ;
             schema:inChIKey inchikey:WBPYTXDJUQJLPQ-UHFFFAOYSA-N ;
@@ -69,8 +69,8 @@ massbank:MSBNK-BAFG-CSL23111016635 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 8 ;
             mbo:relative_intensity 999 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 9.165264e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "916.5264"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 8 ;
     mbo:pk_splash "splash10-014i-0100000209-753a294e73c3225b9fbc" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

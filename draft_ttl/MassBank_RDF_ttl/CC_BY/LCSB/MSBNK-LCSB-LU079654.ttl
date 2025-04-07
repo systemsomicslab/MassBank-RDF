@@ -5,9 +5,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -115,10 +118,78 @@ massbank:MSBNK-LCSB-LU079654 a mbo:MassSpectrum ;
             mbo:mz 2.230765e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5e-01 ] ;
+            mbo:mz 8.20298e+01 ;
+            mbo:tentative_formula "C4H4NO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.82e+00 ] ;
+            mbo:mz 2.240839e+02 ;
+            mbo:tentative_formula "C15H12O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.46e+00 ] ;
+            mbo:mz 2.350761e+02 ;
+            mbo:tentative_formula "C16H11O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.1e-01 ] ;
+            mbo:mz 2.360715e+02 ;
+            mbo:tentative_formula "C15H10NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.15e+00 ] ;
+            mbo:mz 2.480714e+02 ;
+            mbo:tentative_formula "C16H10NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.06e+00 ] ;
+            mbo:mz 2.49079e+02 ;
+            mbo:tentative_formula "C16H11NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.5e-01 ] ;
+            mbo:mz 2.500873e+02 ;
+            mbo:tentative_formula "C16H12NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.78e+00 ] ;
+            mbo:mz 2.64102e+02 ;
+            mbo:tentative_formula "C17H14NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6e-02 ] ;
+            mbo:mz 2.661186e+02 ;
+            mbo:tentative_formula "C17H16NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.3e-01 ] ;
+            mbo:mz 1.070377e+02 ;
+            mbo:tentative_formula "C6H5NO-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.3e-01 ] ;
+            mbo:mz 1.220249e+02 ;
+            mbo:tentative_formula "C6H4NO2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.6e-01 ] ;
+            mbo:mz 1.670867e+02 ;
+            mbo:tentative_formula "C13H11-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.6e-01 ] ;
+            mbo:mz 1.790867e+02 ;
+            mbo:tentative_formula "C14H11-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7e-02 ] ;
+            mbo:mz 1.950815e+02 ;
+            mbo:tentative_formula "C14H11O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.62e+00 ] ;
+            mbo:mz 2.080526e+02 ;
+            mbo:tentative_formula "C14H8O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.4e-01 ] ;
+            mbo:mz 2.220687e+02 ;
+            mbo:tentative_formula "C15H10O2-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1e-02 ] ;
+            mbo:mz 2.230765e+02 ;
+            mbo:tentative_formula "C15H11O2-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 1.530306e+02 ;
-            mbo:precursor_mz 2.661187e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "266.1187"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 17 ;
     mbo:pk_splash "splash10-00di-0290000000-387bfc29f1617450e0f4" ;
     rdfs:comment "RAW_DATA available as MSV000091754 at [DOI:10.25345/C5S46HG75]" ;

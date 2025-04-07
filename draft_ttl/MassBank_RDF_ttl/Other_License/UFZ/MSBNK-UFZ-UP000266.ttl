@@ -1,0 +1,99 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-UP000266 a mbo:MassSpectrum ;
+    dcterms:creator "Liza-Marie Beckers, Werner Brack, Janek-Paul Dann, Martin Krauss, Erik Mueller, Tobias Schulze, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2019-07-31"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-UP000266" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Beckers L-M, Brack W, Dann JP, Krauss M, Mueller E, Schulze T, 2020. Unraveling longitudinal pollution patterns of organic micropollutants in a river by non-target screening and cluster analysis. Science of The Total Environment, https://doi.org/10.1016/j.scitotenv.2020.138388" ] ;
+    dcterms:rights "Copyright (C) 2019 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "45 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "13.450 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Myristamidopropyl betaine",
+                "carboxymethyl-dimethyl-[3-(tetradecanoylamino)propyl]azanium" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.713274e+02 ;
+            rdfs:seeAlso chemspider:91247,
+                pubchem:CID100998 ;
+            schema:inChI "InChI=1S/C21H42N2O3/c1-4-5-6-7-8-9-10-11-12-13-14-16-20(24)22-17-15-18-23(2,3)19-21(25)26/h4-19H2,1-3H3,(H-,22,24,25,26)/p+1" ;
+            schema:inChIKey inchikey:QGCUAFIULMNFPJ-UHFFFAOYSA-O ;
+            schema:molecularFormula "[C21H43N2O3]+" ;
+            schema:name "Myristamidopropyl betaine",
+                "carboxymethyl-dimethyl-[3-(tetradecanoylamino)propyl]azanium" ;
+            schema:smiles "CCCCCCCCCCCCCC(=O)NCCC[N+](C)(C)CC(O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 1.702e+03 ;
+            mbo:mz 6.70541e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 20 ],
+        [ mbo:intensity 1.479e+03 ;
+            mbo:mz 8.107e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 2.7282e+03 ;
+            mbo:mz 9.50855e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 31 ],
+        [ mbo:intensity 1.2939e+03 ;
+            mbo:mz 1.091009e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 8.69334e+04 ;
+            mbo:mz 2.682633e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.51e+00 ] ;
+            mbo:mz 6.70541e+01 ;
+            mbo:tentative_formula "C5H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.79e+00 ] ;
+            mbo:mz 8.107e+01 ;
+            mbo:tentative_formula "C6H9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.9e-01 ] ;
+            mbo:mz 9.50855e+01 ;
+            mbo:tentative_formula "C7H11+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.62e+00 ] ;
+            mbo:mz 1.091009e+02 ;
+            mbo:tentative_formula "C8H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.9e-01 ] ;
+            mbo:mz 2.682633e+02 ;
+            mbo:tentative_formula "C17H34NO+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.713265e+02 ;
+            mbo:precursor_mz_value "371.3268"^^xsd:float ;
+            mbo:precursor_type_value "[M]+" ] ;
+    mbo:pk_num_peak 5 ;
+    mbo:pk_splash "splash10-014i-0090000000-f49d748cab7b4e9c92c5" ;
+    rdfs:comment "INTERNAL_ID 14" ;
+    skos:definition "Myristamidopropyl betaine; LC-ESI-ITFT; MS2; CE: 45%; R=15000; [M]+" .
+

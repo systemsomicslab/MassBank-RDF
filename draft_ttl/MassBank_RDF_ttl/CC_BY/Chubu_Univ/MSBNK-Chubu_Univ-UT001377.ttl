@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -129,9 +132,37 @@ massbank:MSBNK-Chubu_Univ-UT001377 a mbo:MassSpectrum ;
             mbo:mz 3.3309e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 1 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.52e+02 ] ;
+            mbo:mz 2.6114e+02 ;
+            mbo:tentative_formula "[fa(20:3)-H-CO2]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.71e+02 ] ;
+            mbo:mz 2.8313e+02 ;
+            mbo:tentative_formula "[fa(18:0)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.13e+02 ] ;
+            mbo:mz 3.0503e+02 ;
+            mbo:tentative_formula "[fa(20:3)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.1e+01 ] ;
+            mbo:mz 4.6227e+02 ;
+            mbo:tentative_formula "[lyso_PE(18:0,-)-H2O]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.13e+02 ] ;
+            mbo:mz 4.8011e+02 ;
+            mbo:tentative_formula "[lyso_PE(18:0,-)]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.21e+02 ] ;
+            mbo:mz 4.8403e+02 ;
+            mbo:tentative_formula "[lyso_PE(-,20:3)-H2O]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.45e+02 ] ;
+            mbo:mz 5.0217e+02 ;
+            mbo:tentative_formula "[lyso_PE(-,20:3)]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 7.6855e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "768.55"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 23 ;
     mbo:pk_splash "splash10-0a4i-0039100000-a3fc241e5be3890b0f48" ;
     skos:definition "Phosphatidylethanolamine 18:0-20:3; LC-ESI-ITFT; MS2; [M-H]-; RT: 30.56; Exp: 1" .

@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311096014 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311096014" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311096014" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "80" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311096014 a mbo:MassSpectrum ;
             mbo:retention_time "8.911 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Roxithromycine" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 8.365246e+02 ;
-            rdfs:name "Roxithromycine" ;
             rdfs:seeAlso cas:80214-83-1 ;
             schema:inChI "InChI=1S/C41H76N2O15/c1-15-29-41(10,49)34(45)24(4)31(42-53-21-52-17-16-50-13)22(2)19-39(8,48)36(58-38-32(44)28(43(11)12)18-23(3)54-38)25(5)33(26(6)37(47)56-29)57-30-20-40(9,51-14)35(46)27(7)55-30/h22-30,32-36,38,44-46,48-49H,15-21H2,1-14H3/b42-31+/t22-,23?,24+,25+,26-,27?,28?,29-,30?,32?,33+,34-,35?,36-,38?,39-,40?,41-/m1/s1" ;
             schema:inChIKey inchikey:RXZBMPWDPOLZGW-KMAKEOJNSA-N ;
@@ -129,8 +129,8 @@ massbank:MSBNK-BAFG-CSL2311096014 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 139 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 8.375318e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "837.5318"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 23 ;
     mbo:pk_splash "splash10-067j-8900000000-ddc9c1fb7dfc689fe110" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

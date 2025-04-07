@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311091779 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311091779" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311091779" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "10" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311091779 a mbo:MassSpectrum ;
             mbo:retention_time "4.769 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Desmethylranitidine" ;
             mbo:ch_compound_class "Pharmaceutical; Transformation_product" ;
             mbo:ch_exact_mass 3.001256e+02 ;
-            rdfs:name "Desmethylranitidine" ;
             rdfs:seeAlso cas:66357-25-3 ;
             schema:inChI "InChI=1S/C12H20N4O3S/c1-13-7-10-3-4-11(19-10)9-20-6-5-15-12(14-2)8-16(17)18/h3-4,8,13-15H,5-7,9H2,1-2H3" ;
             schema:inChIKey inchikey:WZLBVRXZNDXPPW-UHFFFAOYSA-N ;
@@ -49,8 +49,8 @@ massbank:MSBNK-BAFG-CSL2311091779 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 3 ;
             mbo:relative_intensity 999 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 2.991183e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "299.1183"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 3 ;
     mbo:pk_splash "splash10-0002-0190000000-b82efe4acb96c05abd72" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

@@ -1,0 +1,79 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000950 a mbo:MassSpectrum ;
+    dcterms:creator "Megan J. Kelman, Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000950" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "55(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "3.8" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Cyclo(VVFF)" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 4.922737e+02 ;
+            rdfs:seeAlso pubchem:CID424453 ;
+            schema:inChI "InChI=1S/C28H36N4O4/c1-17(2)23-27(35)30-21(15-19-11-7-5-8-12-19)25(33)29-22(16-20-13-9-6-10-14-20)26(34)31-24(18(3)4)28(36)32-23/h5-14,17-18,21-24H,15-16H2,1-4H3,(H,29,33)(H,30,35)(H,31,34)(H,32,36)" ;
+            schema:inChIKey inchikey:OWKLJRMFTXDULF-UHFFFAOYSA-N ;
+            schema:molecularFormula "C28H36N4O4" ;
+            schema:name "Cyclo(VVFF)" ;
+            schema:smiles "O=C(NC(C(C)C)C(NC(CC1=CC=CC=C1)C(NC2CC3=CC=CC=C3)=O)=O)C(C(C)C)NC2=O" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 5.692953e+04 ;
+            mbo:mz 7.20816e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 469 ],
+        [ mbo:intensity 7.026902e+04 ;
+            mbo:mz 9.09773e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 579 ],
+        [ mbo:intensity 1.212307e+05 ;
+            mbo:mz 1.200808e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.917161e+03 ;
+            mbo:mz 1.200893e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 32 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.8e+00 ] ;
+            mbo:mz 1.20081e+02 ;
+            mbo:tentative_formula "C8H10N1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.28e+00 ] ;
+            mbo:mz 1.200896e+02 ;
+            mbo:tentative_formula "C4H12N2O2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.20081e+02 ;
+            mbo:precursor_mz_value "493.2804"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-00di-9800000000-ead2c5b8b33f78feba4e" ;
+    rdfs:comment "CONFIDENCE Penicillium sp." ;
+    skos:definition "Cyclo(VVFF); LC-ESI-ITFT; MS2; CE: 55; R=17500; [M+H]+" .
+

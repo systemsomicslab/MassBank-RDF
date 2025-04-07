@@ -1,0 +1,90 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003350 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003350" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "17.656 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Lateropyrone",
+                "methyl 5,9-dihydroxy-2-methyl-4,6-dioxopyrano[3,4-g]chromene-8-carboxylate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.180376e+02 ;
+            rdfs:seeAlso cas:93752-78-4,
+                chemspider:29272077,
+                pubchem:CID54692970 ;
+            schema:inChI "InChI=1S/C15H10O8/c1-5-3-7(16)10-8(22-5)4-6-9(12(10)18)14(19)23-13(11(6)17)15(20)21-2/h3-4,17-18H,1-2H3" ;
+            schema:inChIKey inchikey:JSQAILNRMPHAGO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H10O8" ;
+            schema:name "Lateropyrone",
+                "methyl 5,9-dihydroxy-2-methyl-4,6-dioxopyrano[3,4-g]chromene-8-carboxylate" ;
+            schema:smiles "CC1=CC(=O)C2=C(O1)C=C3C(=C2O)C(=O)OC(=C3O)C(=O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 1.27568e+04 ;
+            mbo:mz 2.580178e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 8.2361e+03 ;
+            mbo:mz 2.730408e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 9.99404e+04 ;
+            mbo:mz 2.850044e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 6.79806e+06 ;
+            mbo:mz 3.170309e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.33e+00 ] ;
+            mbo:mz 2.580178e+02 ;
+            mbo:tentative_formula "C13H6O6-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.2e+00 ] ;
+            mbo:mz 2.730408e+02 ;
+            mbo:tentative_formula "C14H9O6-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.26e+00 ] ;
+            mbo:mz 2.850044e+02 ;
+            mbo:tentative_formula "C14H5O7-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.81e+00 ] ;
+            mbo:mz 3.170309e+02 ;
+            mbo:tentative_formula "C15H9O8-" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.170313e+02 ;
+            mbo:precursor_mz_value "317.0303"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-014i-0009000000-d636e700c358dfc658b7" ;
+    rdfs:comment "INTERNAL_ID 107" ;
+    skos:definition "Lateropyrone; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M-H]-" .
+

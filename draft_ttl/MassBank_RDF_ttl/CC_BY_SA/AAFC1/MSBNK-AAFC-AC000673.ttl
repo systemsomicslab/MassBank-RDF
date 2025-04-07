@@ -1,0 +1,91 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000673 a mbo:MassSpectrum ;
+    dcterms:creator "Derek Holzscherer, Jacob Walsh, Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000673" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "4.54" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Scleroderolide",
+                "furo[2',3':5,6]napho[1,8-BC]pyran-5,6-dione,8,9-dihydro-3,7-dihydroxy-1,8,8,9-tetramethyl-,(9S)-" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 3.280947e+02 ;
+            rdfs:seeAlso cas:108354-17-2,
+                pubchem:CID13786694 ;
+            schema:inChI "InChI=1S/C18H16O6/c1-6-5-8(19)15-10-9(6)16-12(18(3,4)7(2)23-16)13(20)11(10)14(21)17(22)24-15/h5,7,19-20H,1-4H3/t7-/m0/s1" ;
+            schema:inChIKey inchikey:MYDJDVOVZVSVIE-ZETCQYMHSA-N ;
+            schema:molecularFormula "C18H16O6" ;
+            schema:name "Scleroderolide",
+                "furo[2',3':5,6]napho[1,8-BC]pyran-5,6-dione,8,9-dihydro-3,7-dihydroxy-1,8,8,9-tetramethyl-,(9S)-" ;
+            schema:smiles "C[C@H]1C(C2=C(O1)C3=C4C(=C2O)C(=O)C(=O)OC4=C(C=C3C)O)(C)C" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 2.482477e+06 ;
+            mbo:mz 2.730393e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 165 ],
+        [ mbo:intensity 1.128286e+06 ;
+            mbo:mz 2.87055e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 75 ],
+        [ mbo:intensity 7.645613e+05 ;
+            mbo:mz 3.110914e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 1.507404e+07 ;
+            mbo:mz 3.29102e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.27e+00 ] ;
+            mbo:mz 2.73039e+02 ;
+            mbo:tentative_formula "C14H9O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.05e+00 ] ;
+            mbo:mz 2.870547e+02 ;
+            mbo:tentative_formula "C15H11O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.2e-01 ] ;
+            mbo:mz 3.110912e+02 ;
+            mbo:tentative_formula "C18H15O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.39e+00 ] ;
+            mbo:mz 3.291015e+02 ;
+            mbo:tentative_formula "C18H17O6+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.291015e+02 ;
+            mbo:precursor_mz_value "329.1014"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-004i-0029000000-697b0c9ee7ed302c7acc" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Scleroderolide; LC-ESI-ITFT; MS2; CE: 30; R=17500; [M+H]+" .
+

@@ -1,0 +1,64 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002469 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2020-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002469" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2020 by Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "10% (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "6.587 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Echimidine N-oxide",
+                "[(7R,8R)-7-[(Z)-2-methylbut-2-enoyl]oxy-4-oxido-5,6,7,8-tetrahydro-3H-pyrrolizin-4-ium-1-yl]methyl (2R)-2,3-dihydroxy-2-[(1S)-1-hydroxyethyl]-3-methylbutanoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.13205e+02 ;
+            rdfs:seeAlso chemspider:31146616,
+                pubchem:CID76334042 ;
+            schema:inChI "InChI=1S/C20H31NO8/c1-6-12(2)17(23)29-15-8-10-21(27)9-7-14(16(15)21)11-28-18(24)20(26,13(3)22)19(4,5)25/h6-7,13,15-16,22,25-26H,8-11H2,1-5H3/b12-6-/t13-,15+,16+,20-,21?/m0/s1" ;
+            schema:inChIKey inchikey:KDJGEXAPDZNXSD-KCFAIRMISA-N ;
+            schema:molecularFormula "C20H31NO8" ;
+            schema:name "Echimidine N-oxide",
+                "[(7R,8R)-7-[(Z)-2-methylbut-2-enoyl]oxy-4-oxido-5,6,7,8-tetrahydro-3H-pyrrolizin-4-ium-1-yl]methyl (2R)-2,3-dihydroxy-2-[(1S)-1-hydroxyethyl]-3-methylbutanoate" ;
+            schema:smiles "C/C=C(/C)\\C(=O)O[C@@H]1CC[N+]2([C@@H]1C(=CC2)COC(=O)[C@@]([C@H](C)O)(C(C)(C)O)O)[O-]" ] ;
+    mbo:has_peak [ mbo:intensity 3.893056e+05 ;
+            mbo:mz 4.142123e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.9e-01 ] ;
+            mbo:mz 4.142123e+02 ;
+            mbo:tentative_formula "C20H32NO8+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.142123e+02 ;
+            mbo:precursor_mz_value "414.2122"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-03di-0000900000-b0e5e49112de5e47126c" ;
+    rdfs:comment "INTERNAL_ID 2305" ;
+    skos:definition "Echimidine N-oxide; LC-ESI-ITFT; MS2; CE: 10%; R=15000; [M+H]+" .
+

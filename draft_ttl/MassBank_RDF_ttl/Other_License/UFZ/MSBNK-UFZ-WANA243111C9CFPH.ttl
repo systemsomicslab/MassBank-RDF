@@ -1,0 +1,112 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA243111C9CFPH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA243111C9CFPH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "6.817 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-Amino-4-methylcoumarin",
+                "7-amino-4-methylchromen-2-one" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.750633e+02 ;
+            rdfs:seeAlso cas:26941-42-4,
+                chemspider:83285,
+                pubchem:CID92249 ;
+            schema:inChI "InChI=1S/C10H9NO2/c1-6-4-10(12)13-9-5-7(11)2-3-8(6)9/h2-5H,11H2,1H3" ;
+            schema:inChIKey inchikey:GLNDAGDHSLMOKX-UHFFFAOYSA-N ;
+            schema:molecularFormula "C10H9NO2" ;
+            schema:name "7-Amino-4-methylcoumarin",
+                "7-amino-4-methylchromen-2-one" ;
+            schema:smiles "CC1=CC(=O)OC2=CC(N)=CC=C12" ] ;
+    mbo:has_peak [ mbo:intensity 1.91893e+04 ;
+            mbo:mz 1.050701e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.79648e+04 ;
+            mbo:mz 1.150543e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 1.132152e+05 ;
+            mbo:mz 1.170574e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.651079e+05 ;
+            mbo:mz 1.200808e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 2.795515e+05 ;
+            mbo:mz 1.320808e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 17 ],
+        [ mbo:intensity 1.069569e+05 ;
+            mbo:mz 1.480757e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 1.634385e+07 ;
+            mbo:mz 1.760706e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.33e+00 ] ;
+            mbo:mz 1.050701e+02 ;
+            mbo:tentative_formula "C8H9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.4e-01 ] ;
+            mbo:mz 1.150543e+02 ;
+            mbo:tentative_formula "C9H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.18e+00 ] ;
+            mbo:mz 1.170574e+02 ;
+            mbo:tentative_formula "C8H7N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.8e-01 ] ;
+            mbo:mz 1.200808e+02 ;
+            mbo:tentative_formula "C8H10N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.6e-01 ] ;
+            mbo:mz 1.320808e+02 ;
+            mbo:tentative_formula "C9H10N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.7e-01 ] ;
+            mbo:mz 1.480757e+02 ;
+            mbo:tentative_formula "C9H10NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.1e-01 ] ;
+            mbo:mz 1.760706e+02 ;
+            mbo:tentative_formula "C10H10NO2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.760712e+02 ;
+            mbo:precursor_mz_value "176.0706"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-004i-0900000000-c884a35ed8d4ea731c7e" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "7-Amino-4-methylcoumarin; LC-ESI-ITFT; MS2; CE: 40%; R=15000; [M+H]+" .
+

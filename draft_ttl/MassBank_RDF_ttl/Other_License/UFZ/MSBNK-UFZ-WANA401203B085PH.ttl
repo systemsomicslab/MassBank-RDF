@@ -1,0 +1,80 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA401203B085PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA401203B085PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.488 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-[(4R,5S,6S,7R,9R,11E,13E,15R,16R)-6-[(2R,3R,4R,5S,6R)-5-[(2S,4R,5S,6S)-4,5-dihydroxy-4,6-dimethyloxan-2-yl]oxy-4-(dimethylamino)-3-hydroxy-6-methyloxan-2-yl]oxy-16-ethyl-4-hydroxy-15-[[(2R,3R,4R,5R,6R)-5-hydroxy-3,4-dimethoxy-6-methyloxan-2-yl]oxymethyl]-5,9,13-trimethyl-2,10-dioxo-1-oxacyclohexadeca-11,13-dien-7-yl]acetaldehyde",
+                "Tylosin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 9.155192e+02 ;
+            rdfs:seeAlso cas:1401-69-0,
+                chemspider:4444097,
+                pubchem:CID5280440 ;
+            schema:inChI "InChI=1S/C46H77NO17/c1-13-33-30(22-58-45-42(57-12)41(56-11)37(52)26(5)60-45)18-23(2)14-15-31(49)24(3)19-29(16-17-48)39(25(4)32(50)20-34(51)62-33)64-44-38(53)36(47(9)10)40(27(6)61-44)63-35-21-46(8,55)43(54)28(7)59-35/h14-15,17-18,24-30,32-33,35-45,50,52-55H,13,16,19-22H2,1-12H3/b15-14+,23-18+/t24-,25+,26-,27-,28+,29+,30-,32-,33-,35+,36-,37-,38-,39-,40-,41-,42-,43+,44+,45-,46-/m1/s1" ;
+            schema:inChIKey inchikey:WBPYTXDJUQJLPQ-VMXQISHHSA-N ;
+            schema:molecularFormula "C46H77NO17" ;
+            schema:name "2-[(4R,5S,6S,7R,9R,11E,13E,15R,16R)-6-[(2R,3R,4R,5S,6R)-5-[(2S,4R,5S,6S)-4,5-dihydroxy-4,6-dimethyloxan-2-yl]oxy-4-(dimethylamino)-3-hydroxy-6-methyloxan-2-yl]oxy-16-ethyl-4-hydroxy-15-[[(2R,3R,4R,5R,6R)-5-hydroxy-3,4-dimethoxy-6-methyloxan-2-yl]oxymethyl]-5,9,13-trimethyl-2,10-dioxo-1-oxacyclohexadeca-11,13-dien-7-yl]acetaldehyde",
+                "Tylosin" ;
+            schema:smiles "CC[C@H]1OC(=O)C[C@@H](O)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)[C@@H](O[C@H]3C[C@@](C)(O)[C@@H](O)[C@H](C)O3)[C@@H]([C@H]2O)N(C)C)[C@@H](CC=O)C[C@@H](C)C(=O)\\C=C\\C(\\C)=C\\[C@@H]1CO[C@@H]1O[C@H](C)[C@@H](O)[C@@H](OC)[C@H]1OC" ] ;
+    mbo:has_peak [ mbo:intensity 2.8331e+03 ;
+            mbo:mz 1.741125e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 148 ],
+        [ mbo:intensity 5.3269e+03 ;
+            mbo:mz 7.724498e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 278 ],
+        [ mbo:intensity 1.91513e+04 ;
+            mbo:mz 9.165268e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.2e-01 ] ;
+            mbo:mz 1.741125e+02 ;
+            mbo:tentative_formula "C8H16NO3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.66e+00 ] ;
+            mbo:mz 7.724498e+02 ;
+            mbo:tentative_formula "C39H66NO14+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.6e-01 ] ;
+            mbo:mz 9.165268e+02 ;
+            mbo:tentative_formula "C46H78NO17+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 9.165282e+02 ;
+            mbo:precursor_mz_value "916.5264"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-014i-0100000209-111b56c96c0e7762ef24" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Tylosin; LC-ESI-ITFT; MS2; CE: 20%; R=15000; [M+H]+" .
+

@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111017298 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111017298" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111017298" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "40" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111017298 a mbo:MassSpectrum ;
             mbo:retention_time "5.304 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Hydroxyatrazine" ;
             mbo:ch_compound_class "Transformation_product; Herbicide; Metabolite" ;
             mbo:ch_exact_mass 1.971277e+02 ;
-            rdfs:name "2-Hydroxyatrazine" ;
             rdfs:seeAlso cas:2163-68-0 ;
             schema:inChI "InChI=1S/C8H15N5O/c1-4-9-6-11-7(10-5(2)3)13-8(14)12-6/h5H,4H2,1-3H3,(H3,9,10,11,12,13,14)" ;
             schema:inChIKey inchikey:NFMIMWNQWAWNDW-UHFFFAOYSA-N ;
@@ -81,8 +81,8 @@ massbank:MSBNK-BAFG-CSL23111017298 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 143 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 1.961204e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "196.1204"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 11 ;
     mbo:pk_splash "splash10-00kf-9000000000-4ab47a244b463b2c6135" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

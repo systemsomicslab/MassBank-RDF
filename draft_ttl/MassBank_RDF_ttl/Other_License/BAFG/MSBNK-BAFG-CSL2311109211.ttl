@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311109211 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311109211" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311109211" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "50" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311109211 a mbo:MassSpectrum ;
             mbo:retention_time "12.118 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Bosentan" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 5.511839e+02 ;
-            rdfs:name "Bosentan" ;
             rdfs:seeAlso cas:147536-97-8 ;
             schema:inChI "InChI=1S/C27H29N5O6S/c1-27(2,3)18-10-12-19(13-11-18)39(34,35)32-23-22(38-21-9-6-5-8-20(21)36-4)26(37-17-16-33)31-25(30-23)24-28-14-7-15-29-24/h5-15,33H,16-17H2,1-4H3,(H,30,31,32)" ;
             schema:inChIKey inchikey:GJPICJJJRGTNOD-UHFFFAOYSA-N ;
@@ -205,8 +205,8 @@ massbank:MSBNK-BAFG-CSL2311109211 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 37 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 5.521911e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "552.1911"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 42 ;
     mbo:pk_splash "splash10-0ue9-0290000000-9a47a698e3647e068319" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

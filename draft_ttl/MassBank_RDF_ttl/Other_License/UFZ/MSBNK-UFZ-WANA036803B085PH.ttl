@@ -1,0 +1,112 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA036803B085PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA036803B085PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "8.436 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "N-Ethyl-o-toluenesulfonamide",
+                "N-ethyl-2-methylbenzenesulfonamide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.990667e+02 ;
+            rdfs:seeAlso cas:1077-56-1,
+                chemspider:13488,
+                pubchem:CID14110 ;
+            schema:inChI "InChI=1S/C9H13NO2S/c1-3-10-13(11,12)9-7-5-4-6-8(9)2/h4-7,10H,3H2,1-2H3" ;
+            schema:inChIKey inchikey:NATWUQFQFMZVMT-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H13NO2S" ;
+            schema:name "N-Ethyl-o-toluenesulfonamide",
+                "N-ethyl-2-methylbenzenesulfonamide" ;
+            schema:smiles "CCNS(=O)(=O)C1=CC=CC=C1C" ] ;
+    mbo:has_peak [ mbo:intensity 8.5518e+03 ;
+            mbo:mz 6.50384e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 4.126017e+05 ;
+            mbo:mz 9.10543e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 330 ],
+        [ mbo:intensity 5.6531e+03 ;
+            mbo:mz 1.08057e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.363567e+05 ;
+            mbo:mz 1.090649e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 6.559e+03 ;
+            mbo:mz 1.200575e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.249911e+06 ;
+            mbo:mz 1.550162e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.128994e+06 ;
+            mbo:mz 2.000742e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 902 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.22e+00 ] ;
+            mbo:mz 6.50384e+01 ;
+            mbo:tentative_formula "C5H5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.5e-01 ] ;
+            mbo:mz 9.10543e+01 ;
+            mbo:tentative_formula "C7H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.7e-01 ] ;
+            mbo:mz 1.08057e+02 ;
+            mbo:tentative_formula "C7H8O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.5e-01 ] ;
+            mbo:mz 1.090649e+02 ;
+            mbo:tentative_formula "C7H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.48e+00 ] ;
+            mbo:mz 1.200575e+02 ;
+            mbo:tentative_formula "C8H8O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.8e-01 ] ;
+            mbo:mz 1.550162e+02 ;
+            mbo:tentative_formula "C7H7O2S+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.5e-01 ] ;
+            mbo:mz 2.000742e+02 ;
+            mbo:tentative_formula "C9H14NO2S+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.000748e+02 ;
+            mbo:precursor_mz_value "200.074"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-0pb9-2970000000-1b69e2d8c8ba38a174af" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "N-Ethyl-o-toluenesulfonamide; LC-ESI-ITFT; MS2; CE: 20%; R=15000; [M+H]+" .
+

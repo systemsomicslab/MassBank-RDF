@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -81,8 +84,35 @@ massbank:MSBNK-Chubu_Univ-UT003010 a mbo:MassSpectrum ;
             mbo:mz 5.039e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 71 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.58e+02 ] ;
+            mbo:mz 2.5305e+02 ;
+            mbo:tentative_formula "[fa(16:1)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.91e+02 ] ;
+            mbo:mz 2.8316e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H-CO2]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6e+00 ] ;
+            mbo:mz 3.2723e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.4e+02 ] ;
+            mbo:mz 4.6008e+02 ;
+            mbo:tentative_formula "[lyso_PC(16:1,-)-H2O]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.99e+02 ] ;
+            mbo:mz 4.7815e+02 ;
+            mbo:tentative_formula "[lyso_PC(16:1,-)]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.46e+02 ] ;
+            mbo:mz 5.3422e+02 ;
+            mbo:tentative_formula "[lyso_PC(-,22:6)-H2O]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "788.13"^^xsd:float,
+                "862.56"^^xsd:float ;
+            mbo:precursor_type_value "[M+CH3COO]-",
+                "[M-CH3]-" ] ;
     mbo:pk_num_peak 11 ;
     mbo:pk_splash "splash10-0fb9-0095210000-8da7997e012618eaddda" ;
     skos:definition "Phosphatidylcholine 16:1-22:6; LC-ESI-ITFT; MS3; [M+CH3COO]-/[M-CH3]-; RT: 10.94; Exp: 3" .

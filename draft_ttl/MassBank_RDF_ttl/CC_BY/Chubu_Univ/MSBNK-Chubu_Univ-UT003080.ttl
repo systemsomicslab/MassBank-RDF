@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -53,8 +56,19 @@ massbank:MSBNK-Chubu_Univ-UT003080 a mbo:MassSpectrum ;
             mbo:mz 4.3705e+02 ;
             mbo:peak_sequential_number 4 ;
             mbo:relative_intensity 488 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.2e+01 ] ;
+            mbo:mz 2.8327e+02 ;
+            mbo:tentative_formula "[fa(18:0)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.95e+02 ] ;
+            mbo:mz 4.3705e+02 ;
+            mbo:tentative_formula "[lyso_PS(18:0,-)]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "701.12"^^xsd:float,
+                "788.54"^^xsd:float ;
+            mbo:precursor_type_value "[M-C3H6NO2]-",
+                "[M-H]-" ] ;
     mbo:pk_num_peak 4 ;
     mbo:pk_splash "splash10-0159-0030900000-e5a37e48acaf68a7e3d1" ;
     rdfs:comment "PRECURSOR_TYPE [M-H]-/[M-Ser]-" ;

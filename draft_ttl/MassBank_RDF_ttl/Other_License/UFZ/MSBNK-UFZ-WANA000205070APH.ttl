@@ -1,0 +1,104 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA000205070APH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA000205070APH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "5.025 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-cyclopropyl-6-fluoro-4-oxo-7-piperazin-1-ylquinoline-3-carboxylic acid",
+                "Ciprofloxacin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.311332e+02 ;
+            rdfs:seeAlso cas:86393-32-0,
+                chemspider:2662,
+                pubchem:CID2764 ;
+            schema:inChI "InChI=1S/C17H18FN3O3/c18-13-7-11-14(8-15(13)20-5-3-19-4-6-20)21(10-1-2-10)9-12(16(11)22)17(23)24/h7-10,19H,1-6H2,(H,23,24)" ;
+            schema:inChIKey inchikey:MYSWGUAQZAJSOK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H18FN3O3" ;
+            schema:name "1-cyclopropyl-6-fluoro-4-oxo-7-piperazin-1-ylquinoline-3-carboxylic acid",
+                "Ciprofloxacin" ;
+            schema:smiles "OC(=O)C1=CN(C2CC2)C2=C(C=C(F)C(=C2)N2CCNCC2)C1=O" ] ;
+    mbo:has_peak [ mbo:intensity 3.4499e+03 ;
+            mbo:mz 2.310936e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 13 ],
+        [ mbo:intensity 3.90309e+04 ;
+            mbo:mz 2.451094e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 143 ],
+        [ mbo:intensity 8.672e+03 ;
+            mbo:mz 2.681457e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 2.732818e+05 ;
+            mbo:mz 2.881516e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.12448e+04 ;
+            mbo:mz 3.141309e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 151 ],
+        [ mbo:intensity 2.293608e+05 ;
+            mbo:mz 3.321414e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 838 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.35e+00 ] ;
+            mbo:mz 2.310936e+02 ;
+            mbo:tentative_formula "C13H12FN2O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.76e+00 ] ;
+            mbo:mz 2.451094e+02 ;
+            mbo:tentative_formula "C14H14FN2O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.2e-01 ] ;
+            mbo:mz 2.681457e+02 ;
+            mbo:tentative_formula "C13H19FN3O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.35e+00 ] ;
+            mbo:mz 2.881516e+02 ;
+            mbo:tentative_formula "C16H19FN3O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.01e+00 ] ;
+            mbo:mz 3.141309e+02 ;
+            mbo:tentative_formula "C17H17FN3O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.83e+00 ] ;
+            mbo:mz 3.321414e+02 ;
+            mbo:tentative_formula "C17H19FN3O3+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.169863e+02 ;
+            mbo:precursor_mz_value "332.1405"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-0019-0097000000-347463ba5f8d4cd6f960" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Ciprofloxacin; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

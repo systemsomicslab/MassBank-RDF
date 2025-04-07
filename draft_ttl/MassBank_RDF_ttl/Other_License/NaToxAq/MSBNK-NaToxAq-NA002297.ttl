@@ -1,0 +1,122 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002297 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2020-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002297" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2020 by Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20% (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "7.420 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Lasiocarpine",
+                "[(7S,8R)-7-[(Z)-2-methylbut-2-enoyl]oxy-5,6,7,8-tetrahydro-3H-pyrrolizin-1-yl]methyl (2R)-2,3-dihydroxy-2-[(1S)-1-methoxyethyl]-3-methylbutanoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.112257e+02 ;
+            rdfs:seeAlso cas:303-34-4,
+                chemspider:4445050,
+                pubchem:CID5281735 ;
+            schema:inChI "InChI=1S/C21H33NO7/c1-7-13(2)18(23)29-16-9-11-22-10-8-15(17(16)22)12-28-19(24)21(26,14(3)27-6)20(4,5)25/h7-8,14,16-17,25-26H,9-12H2,1-6H3/b13-7-/t14-,16-,17+,21-/m0/s1" ;
+            schema:inChIKey inchikey:QHOZSLCIKHUPSU-LPLKQDONSA-N ;
+            schema:molecularFormula "C21H33NO7" ;
+            schema:name "Lasiocarpine",
+                "[(7S,8R)-7-[(Z)-2-methylbut-2-enoyl]oxy-5,6,7,8-tetrahydro-3H-pyrrolizin-1-yl]methyl (2R)-2,3-dihydroxy-2-[(1S)-1-methoxyethyl]-3-methylbutanoate" ;
+            schema:smiles "C/C=C(/C)\\C(=O)O[C@H]1CCN2[C@@H]1C(=CC2)COC(=O)[C@@]([C@H](C)OC)(C(C)(C)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 8.91757e+04 ;
+            mbo:mz 1.200808e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 194 ],
+        [ mbo:intensity 2.180153e+05 ;
+            mbo:mz 2.201332e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 474 ],
+        [ mbo:intensity 1.87109e+04 ;
+            mbo:mz 2.381439e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 41 ],
+        [ mbo:intensity 1.4557e+03 ;
+            mbo:mz 2.541379e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 2.3612e+03 ;
+            mbo:mz 3.221654e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 1.118803e+05 ;
+            mbo:mz 3.361806e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 243 ],
+        [ mbo:intensity 1.5072e+04 ;
+            mbo:mz 3.942224e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 4.599537e+05 ;
+            mbo:mz 4.122332e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9e-02 ] ;
+            mbo:mz 1.200808e+02 ;
+            mbo:tentative_formula "C8H10N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4e-02 ] ;
+            mbo:mz 2.201332e+02 ;
+            mbo:tentative_formula "C13H18NO2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.5e-01 ] ;
+            mbo:mz 2.381439e+02 ;
+            mbo:tentative_formula "C13H20NO3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3e+00 ] ;
+            mbo:mz 2.541379e+02 ;
+            mbo:tentative_formula "C13H20NO4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.49e+00 ] ;
+            mbo:mz 3.221654e+02 ;
+            mbo:tentative_formula "C17H24NO5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.5e-01 ] ;
+            mbo:mz 3.361806e+02 ;
+            mbo:tentative_formula "C18H26NO5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8e-02 ] ;
+            mbo:mz 3.942224e+02 ;
+            mbo:tentative_formula "C21H32NO6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.9e-01 ] ;
+            mbo:mz 4.122332e+02 ;
+            mbo:tentative_formula "C21H34NO7+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.122329e+02 ;
+            mbo:precursor_mz_value "412.233"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-03k9-0142900000-1e4225906e50a3cb489a" ;
+    rdfs:comment "INTERNAL_ID 2259" ;
+    skos:definition "Lasiocarpine; LC-ESI-ITFT; MS2; CE: 20%; R=15000; [M+H]+" .
+

@@ -2,8 +2,11 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -57,10 +60,30 @@ massbank:MSBNK-Eawag_Additional_Specs-ET190706 a mbo:MassSpectrum ;
             mbo:mz 1.440576e+02 ;
             mbo:peak_sequential_number 5 ;
             mbo:relative_intensity 68 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.9e-01 ] ;
+            mbo:mz 5.50179e+01 ;
+            mbo:tentative_formula "C3H3O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.97e+00 ] ;
+            mbo:mz 5.80652e+01 ;
+            mbo:tentative_formula "C3H8N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.57e+00 ] ;
+            mbo:mz 9.10544e+01 ;
+            mbo:tentative_formula "C7H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.2e-01 ] ;
+            mbo:mz 1.210649e+02 ;
+            mbo:tentative_formula "C8H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.26e+00 ] ;
+            mbo:mz 1.440576e+02 ;
+            mbo:tentative_formula "C10H8O+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 6.10285e+01 ;
-            mbo:precursor_mz 2.741802e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "274.1802"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 5 ;
     mbo:pk_splash "splash10-0a4i-9300000000-5625493d34a2960da892" ;
     rdfs:comment "INTERNAL_ID 1907" ;

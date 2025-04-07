@@ -4,8 +4,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -91,9 +94,17 @@ massbank:MSBNK-Chubu_Univ-UT002633 a mbo:MassSpectrum ;
             mbo:mz 5.4882e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 24 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.02e+02 ] ;
+            mbo:mz 2.831e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H-CO2]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.34e+02 ] ;
+            mbo:mz 3.2709e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 8.3451e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "834.51"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 13 ;
     mbo:pk_splash "splash10-00c0-0059050000-4e2cf8c779848379391c" ;
     skos:definition "Phosphatidylethanolamine 22:6-22:6; LC-ESI-ITFT; MS2; [M-H]-; RT: 9.79; Exp: 3" .

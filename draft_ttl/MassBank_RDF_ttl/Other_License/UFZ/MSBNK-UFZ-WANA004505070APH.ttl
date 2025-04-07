@@ -1,0 +1,64 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA004505070APH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA004505070APH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "11.179 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "11H-benzo[b][1]benzazepine",
+                "Iminostilbene" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.930891e+02 ;
+            rdfs:seeAlso cas:256-96-2,
+                chemspider:8857,
+                pubchem:CID9212 ;
+            schema:inChI "InChI=1S/C14H11N/c1-3-7-13-11(5-1)9-10-12-6-2-4-8-14(12)15-13/h1-10,15H" ;
+            schema:inChIKey inchikey:LCGTWRLJTMHIQZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C14H11N" ;
+            schema:name "11H-benzo[b][1]benzazepine",
+                "Iminostilbene" ;
+            schema:smiles "N1C2=CC=CC=C2C=CC2=CC=CC=C12" ] ;
+    mbo:has_peak [ mbo:intensity 4.963218e+06 ;
+            mbo:mz 1.940966e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.4e-01 ] ;
+            mbo:mz 1.940966e+02 ;
+            mbo:tentative_formula "C14H12N+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.941182e+02 ;
+            mbo:precursor_mz_value "194.0964"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0006-0900000000-8d9b11e8152e0726e233" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Iminostilbene; LC-ESI-ITFT; MS2; CE: 30%; R=15000; [M+H]+" .
+

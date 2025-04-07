@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311091951 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311091951" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311091951" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "130" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311091951 a mbo:MassSpectrum ;
             mbo:retention_time "3.4 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Iopamidol" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 7.768541e+02 ;
-            rdfs:name "Iopamidol" ;
             rdfs:seeAlso cas:60166-93-0 ;
             schema:inChI "InChI=1S/C17H22I3N3O8/c1-6(28)15(29)23-14-12(19)9(16(30)21-7(2-24)3-25)11(18)10(13(14)20)17(31)22-8(4-26)5-27/h6-8,24-28H,2-5H2,1H3,(H,21,30)(H,22,31)(H,23,29)/t6-/m0/s1" ;
             schema:inChIKey inchikey:XQZXYNRDCRIARQ-LURJTMIESA-N ;
@@ -41,8 +41,8 @@ massbank:MSBNK-BAFG-CSL2311091951 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 1 ;
             mbo:relative_intensity 999 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 7.758468e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "775.8468"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 1 ;
     mbo:pk_splash "splash10-004i-0900000000-c6de4ab78b83b31e9899" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

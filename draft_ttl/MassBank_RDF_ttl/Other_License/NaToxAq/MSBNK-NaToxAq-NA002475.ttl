@@ -1,0 +1,64 @@
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-NaToxAq-NA002475 a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany" ;
+    dcterms:date "2020-02-21"^^xsd:date ;
+    dcterms:identifier "MSBNK-NaToxAq-NA002475" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2020 by Helmholtz Centre for Environmental Research GmbH - UFZ, Leipzig, Germany under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15% (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50x2.1 mm, Phenomenex" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5/0 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "7.985 min" ;
+            mbo:solvent "A water with 0.1% formic acid",
+                "B methanol with 0.1% formic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Lasiocarpine N-oxide",
+                "[(7S,8R)-7-[(Z)-2-methylbut-2-enoyl]oxy-4-oxido-5,6,7,8-tetrahydro-3H-pyrrolizin-4-ium-1-yl]methyl (2R)-2,3-dihydroxy-2-[(1S)-1-methoxyethyl]-3-methylbutanoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 4.272206e+02 ;
+            rdfs:seeAlso chemspider:4572693,
+                pubchem:CID5458800 ;
+            schema:inChI "InChI=1S/C21H33NO8/c1-7-13(2)18(23)30-16-9-11-22(27)10-8-15(17(16)22)12-29-19(24)21(26,14(3)28-6)20(4,5)25/h7-8,14,16-17,25-26H,9-12H2,1-6H3/b13-7-/t14-,16-,17+,21-,22?/m0/s1" ;
+            schema:inChIKey inchikey:AABILZKQMVKFHP-LRBDFNDQSA-N ;
+            schema:molecularFormula "C21H33NO8" ;
+            schema:name "Lasiocarpine N-oxide",
+                "[(7S,8R)-7-[(Z)-2-methylbut-2-enoyl]oxy-4-oxido-5,6,7,8-tetrahydro-3H-pyrrolizin-4-ium-1-yl]methyl (2R)-2,3-dihydroxy-2-[(1S)-1-methoxyethyl]-3-methylbutanoate" ;
+            schema:smiles "C/C=C(/C)\\C(=O)O[C@H]1CC[N+]2([C@@H]1C(=CC2)COC(=O)[C@@]([C@H](C)OC)(C(C)(C)O)O)[O-]" ] ;
+    mbo:has_peak [ mbo:intensity 5.19222e+05 ;
+            mbo:mz 4.282276e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.1e-01 ] ;
+            mbo:mz 4.282276e+02 ;
+            mbo:tentative_formula "C21H34NO8+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 4.282275e+02 ;
+            mbo:precursor_mz_value "428.2279"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-004i-0000900000-61953a5a76a8d0772c3e" ;
+    rdfs:comment "INTERNAL_ID 2306" ;
+    skos:definition "Lasiocarpine N-oxide; LC-ESI-ITFT; MS2; CE: 15%; R=15000; [M+H]+" .
+

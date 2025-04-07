@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111014686 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111014686" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111014686" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "80" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111014686 a mbo:MassSpectrum ;
             mbo:retention_time "9.974 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Remdesivir" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 6.022254e+02 ;
-            rdfs:name "Remdesivir" ;
             rdfs:seeAlso cas:1809249-37-3 ;
             schema:inChI "InChI=1S/C27H35N6O8P/c1-4-18(5-2)13-38-26(36)17(3)32-42(37,41-19-9-7-6-8-10-19)39-14-21-23(34)24(35)27(15-28,40-21)22-12-11-20-25(29)30-16-31-33(20)22/h6-12,16-18,21,23-24,34-35H,4-5,13-14H2,1-3H3,(H,32,37)(H2,29,30,31)" ;
             schema:inChIKey inchikey:RWWYLEGWBNMMLJ-UHFFFAOYSA-N ;
@@ -209,8 +209,8 @@ massbank:MSBNK-BAFG-CSL23111014686 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 64 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 6.032327e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "603.2327"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 43 ;
     mbo:pk_splash "splash10-0udi-1950000000-31d9d4ecb04b9b936139" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

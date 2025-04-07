@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -409,9 +412,33 @@ massbank:MSBNK-Keio_Univ-KO009182 a mbo:MassSpectrum ;
             mbo:mz 2.652e+02 ;
             mbo:peak_sequential_number 93 ;
             mbo:relative_intensity 1 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.204494e+01 ] ;
+            mbo:mz 7.21e+01 ;
+            mbo:tentative_formula "0" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.00555e+01 ] ;
+            mbo:mz 9.01e+01 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.160348e+02 ] ;
+            mbo:mz 1.16e+02 ;
+            mbo:tentative_formula "1" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.74113e+02 ] ;
+            mbo:mz 1.741e+02 ;
+            mbo:tentative_formula "0" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.840974e+02 ] ;
+            mbo:mz 1.841e+02 ;
+            mbo:tentative_formula "0" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.021079e+02 ] ;
+            mbo:mz 2.021e+02 ;
+            mbo:tentative_formula "0" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 2.2e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "220.0"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 93 ;
     mbo:pk_splash "splash10-0f6x-9470000000-cfd10935dbbb59770f3f" ;
     rdfs:comment "KEIO_ID P032" ;

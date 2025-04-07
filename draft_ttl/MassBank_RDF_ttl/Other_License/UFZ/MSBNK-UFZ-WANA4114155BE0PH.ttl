@@ -1,0 +1,152 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA4114155BE0PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA4114155BE0PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "7.949 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-Hydroxycoumarin",
+                "4-hydroxychromen-2-one" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.620317e+02 ;
+            rdfs:seeAlso cas:1076-38-6,
+                chemspider:10254753,
+                pubchem:CID54682930 ;
+            schema:inChI "InChI=1S/C9H6O3/c10-7-5-9(11)12-8-4-2-1-3-6(7)8/h1-5,10H" ;
+            schema:inChIKey inchikey:VXIXUWQIVKSKSA-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H6O3" ;
+            schema:name "4-Hydroxycoumarin",
+                "4-hydroxychromen-2-one" ;
+            schema:smiles "OC1=CC(=O)OC2=CC=CC=C12" ] ;
+    mbo:has_peak [ mbo:intensity 2.357172e+05 ;
+            mbo:mz 6.89968e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 69 ],
+        [ mbo:intensity 1.32874e+04 ;
+            mbo:mz 1.390386e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 4 ],
+        [ mbo:intensity 5.6855e+03 ;
+            mbo:mz 1.450281e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 3.389556e+06 ;
+            mbo:mz 1.630386e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.4297e+04 ;
+            mbo:mz 7.70383e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.45666e+04 ;
+            mbo:mz 7.9054e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 5.415828e+05 ;
+            mbo:mz 9.1054e+01 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 160 ],
+        [ mbo:intensity 3.55898e+04 ;
+            mbo:mz 9.30333e+01 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 10 ],
+        [ mbo:intensity 3.355853e+05 ;
+            mbo:mz 9.50489e+01 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 2.07021e+04 ;
+            mbo:mz 1.070488e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 6 ],
+        [ mbo:intensity 1.455866e+05 ;
+            mbo:mz 1.190489e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.99175e+06 ;
+            mbo:mz 1.210281e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 587 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.25e+00 ] ;
+            mbo:mz 6.89968e+01 ;
+            mbo:tentative_formula "C3HO2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.67e+00 ] ;
+            mbo:mz 1.390386e+02 ;
+            mbo:tentative_formula "C7H7O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.8e+00 ] ;
+            mbo:mz 1.450281e+02 ;
+            mbo:tentative_formula "C9H5O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.13e+00 ] ;
+            mbo:mz 1.630386e+02 ;
+            mbo:tentative_formula "C9H7O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.35e+00 ] ;
+            mbo:mz 7.70383e+01 ;
+            mbo:tentative_formula "C6H5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.63e+00 ] ;
+            mbo:mz 7.9054e+01 ;
+            mbo:tentative_formula "C6H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.31e+00 ] ;
+            mbo:mz 9.1054e+01 ;
+            mbo:tentative_formula "C7H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.02e+00 ] ;
+            mbo:mz 9.30333e+01 ;
+            mbo:tentative_formula "C6H5O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.09e+00 ] ;
+            mbo:mz 9.50489e+01 ;
+            mbo:tentative_formula "C6H7O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.84e+00 ] ;
+            mbo:mz 1.070488e+02 ;
+            mbo:tentative_formula "C7H7O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.73e+00 ] ;
+            mbo:mz 1.190489e+02 ;
+            mbo:tentative_formula "C8H7O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.27e+00 ] ;
+            mbo:mz 1.210281e+02 ;
+            mbo:tentative_formula "C7H5O2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.630391e+02 ;
+            mbo:precursor_mz_value "163.039"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 12 ;
+    mbo:pk_splash "splash10-03k9-1900000000-548158dfc8d23f877c15" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "4-Hydroxycoumarin; LC-ESI-ITFT; MS2; CE: 60%; R=15000; [M+H]+" .
+

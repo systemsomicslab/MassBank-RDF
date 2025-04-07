@@ -4,8 +4,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -99,9 +102,25 @@ massbank:MSBNK-Chubu_Univ-UT001317 a mbo:MassSpectrum ;
             mbo:mz 7.6029e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 0 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.8e+01 ] ;
+            mbo:mz 2.8127e+02 ;
+            mbo:tentative_formula "[fa(18:1)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.64e+02 ] ;
+            mbo:mz 5.0614e+02 ;
+            mbo:tentative_formula "[lyso_PC(-,18:1)]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.64e+02 ] ;
+            mbo:mz 5.0614e+02 ;
+            mbo:tentative_formula "[lyso_PC(18:1,-)]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.63e+02 ] ;
+            mbo:mz 7.7085e+02 ;
+            mbo:tentative_formula "[PC(18:1,18:1)-CH3]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 8.4461e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "844.61"^^xsd:float ;
+            mbo:precursor_type_value "[M+CH3COO]-" ] ;
     mbo:pk_num_peak 15 ;
     mbo:pk_splash "splash10-00di-0000000900-7355a5253384165e2071" ;
     skos:definition "Phosphatidylcholine 18:1-18:1; LC-ESI-ITFT; MS2; [M+CH3COO]-; RT: 24.60; Exp: 1" .

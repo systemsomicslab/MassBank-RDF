@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -56,10 +59,26 @@ massbank:MSBNK-Eawag-EQ435651 a mbo:MassSpectrum ;
             mbo:mz 8.424091e+02 ;
             mbo:peak_sequential_number 4 ;
             mbo:relative_intensity 177 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.86e+00 ] ;
+            mbo:mz 1.800663e+02 ;
+            mbo:tentative_formula "C9H10NO3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.4e-01 ] ;
+            mbo:mz 6.613349e+02 ;
+            mbo:tentative_formula "C35H45N6O7-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.04e+00 ] ;
+            mbo:mz 8.24398e+02 ;
+            mbo:tentative_formula "C44H54N7O9-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.7e-01 ] ;
+            mbo:mz 8.424091e+02 ;
+            mbo:tentative_formula "C44H56N7O10-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 1.909278e+02 ;
-            mbo:precursor_mz 8.424094e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "842.4094"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 4 ;
     mbo:pk_splash "splash10-03di-0000009040-7e7d78b08d5ed08f09e5" ;
     rdfs:comment "NaToxAq - Natural Toxins and Drinking Water Quality - From Source to Tap (https://natoxaq.ku.dk)" ;

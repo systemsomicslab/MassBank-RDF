@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -105,9 +108,29 @@ massbank:MSBNK-Chubu_Univ-UT002590 a mbo:MassSpectrum ;
             mbo:mz 4.0326e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 33 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.32e+02 ] ;
+            mbo:mz 2.6709e+02 ;
+            mbo:tentative_formula "[fa(17:1)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.55e+02 ] ;
+            mbo:mz 2.8317e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H-CO2]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.04e+02 ] ;
+            mbo:mz 3.271e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.54e+02 ] ;
+            mbo:mz 4.6402e+02 ;
+            mbo:tentative_formula "[lyso_PE(17:1,-)]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.95e+02 ] ;
+            mbo:mz 5.2407e+02 ;
+            mbo:tentative_formula "[lyso_PE(-,22:6)]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 7.7451e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "774.51"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 17 ;
     mbo:pk_splash "splash10-00or-0096300000-f364a45182a03fb52006" ;
     skos:definition "Phosphatidylethanolamine 17:1-22:6; LC-ESI-ITFT; MS2; [M-H]-; RT: 13.99; Exp: 3" .

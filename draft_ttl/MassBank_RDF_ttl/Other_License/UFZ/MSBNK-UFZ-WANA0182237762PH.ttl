@@ -1,0 +1,114 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA0182237762PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA0182237762PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "80 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "11.860 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3-(diethoxyphosphinothioylsulfanylmethyl)-1,2,3-benzotriazin-4-one",
+                "Azinphos-ethyl",
+                "Ethyl azinphos" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.450371e+02 ;
+            rdfs:seeAlso cas:2642-71-9,
+                chemspider:16576,
+                pubchem:CID17531 ;
+            schema:inChI "InChI=1S/C12H16N3O3PS2/c1-3-17-19(20,18-4-2)21-9-15-12(16)10-7-5-6-8-11(10)13-14-15/h5-8H,3-4,9H2,1-2H3" ;
+            schema:inChIKey inchikey:RQVGAIADHNPSME-UHFFFAOYSA-N ;
+            schema:molecularFormula "C12H16N3O3PS2" ;
+            schema:name "3-(diethoxyphosphinothioylsulfanylmethyl)-1,2,3-benzotriazin-4-one",
+                "Azinphos-ethyl",
+                "Ethyl azinphos" ;
+            schema:smiles "CCOP(=S)(OCC)SCN1N=NC2=CC=CC=C2C1=O" ] ;
+    mbo:has_peak [ mbo:intensity 2.5524e+03 ;
+            mbo:mz 7.70389e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 237 ],
+        [ mbo:intensity 2.1968e+03 ;
+            mbo:mz 1.050454e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 204 ],
+        [ mbo:intensity 7.3101e+03 ;
+            mbo:mz 1.090112e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 678 ],
+        [ mbo:intensity 1.07739e+04 ;
+            mbo:mz 1.149618e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.415e+03 ;
+            mbo:mz 1.370061e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 780 ],
+        [ mbo:intensity 2.7115e+03 ;
+            mbo:mz 1.760455e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 251 ],
+        [ mbo:intensity 3.2384e+03 ;
+            mbo:mz 1.940568e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 300 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.9e-01 ] ;
+            mbo:mz 7.70389e+01 ;
+            mbo:tentative_formula "C2H8NP+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.8e-01 ] ;
+            mbo:mz 1.050454e+02 ;
+            mbo:tentative_formula "H11NO3S+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.16e+00 ] ;
+            mbo:mz 1.090112e+02 ;
+            mbo:tentative_formula "C2H8NPS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.34e+00 ] ;
+            mbo:mz 1.149618e+02 ;
+            mbo:tentative_formula "H4O3PS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.73e+00 ] ;
+            mbo:mz 1.370061e+02 ;
+            mbo:tentative_formula "C3H8NOPS+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.4e-01 ] ;
+            mbo:mz 1.760455e+02 ;
+            mbo:tentative_formula "C8H6N3O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.14e+00 ] ;
+            mbo:mz 1.940568e+02 ;
+            mbo:tentative_formula "C8H8N3O3+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.460455e+02 ;
+            mbo:precursor_mz_value "346.0443"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-08g0-0900000000-cc3120664fce95b1279e" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Ethyl azinphos; LC-ESI-ITFT; MS2; CE: 80%; R=15000; [M+H]+" .
+

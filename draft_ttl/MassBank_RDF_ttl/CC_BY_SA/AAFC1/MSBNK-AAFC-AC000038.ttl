@@ -1,0 +1,82 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000038 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000038" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.95" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(7aR,10aS)-5-Methoxy-3,4,7a,9,10,10a-hexahydro-1H,12H-furo[3',2':4,5]furo[2,3-h]pyrano[3,4-c]chromene-1,12-dione",
+                "Aflatoxin G2" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 3.300739e+02 ;
+            rdfs:seeAlso cas:7241-98-7,
+                chemspider:2006509,
+                knapsack:C00023619,
+                pubchem:CID2724362 ;
+            schema:inChI "InChI=1S/C17H14O7/c1-20-9-6-10-12(8-3-5-22-17(8)23-10)14-11(9)7-2-4-21-15(18)13(7)16(19)24-14/h6,8,17H,2-5H2,1H3/t8-,17+/m0/s1" ;
+            schema:inChIKey inchikey:WPCVRWVBBXIRMA-WNWIJWBNSA-N ;
+            schema:molecularFormula "C17H14O7" ;
+            schema:name "(7aR,10aS)-5-Methoxy-3,4,7a,9,10,10a-hexahydro-1H,12H-furo[3',2':4,5]furo[2,3-h]pyrano[3,4-c]chromene-1,12-dione",
+                "Aflatoxin G2" ;
+            schema:smiles "COC1=C2C3=C(C(=O)OCC3)C(=O)OC2=C4[C@@H]5CCO[C@@H]5OC4=C1" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 6.524157e+05 ;
+            mbo:mz 3.130707e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 77 ],
+        [ mbo:intensity 8.420092e+06 ;
+            mbo:mz 3.310812e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4e+00 ] ;
+            mbo:mz 3.130694e+02 ;
+            mbo:tentative_formula "C17H13O6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.27e+00 ] ;
+            mbo:mz 3.310798e+02 ;
+            mbo:tentative_formula "C17H15O7+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.310798e+02 ;
+            mbo:precursor_mz_value "331.0807"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-001i-0009000000-6e71ff873af7574caf6a" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Aflatoxin G2; LC-ESI-ITFT; MS2; CE: 30; R=17500; [M+H]+" .
+

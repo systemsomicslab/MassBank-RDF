@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311092314 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311092314" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311092314" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "90" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311092314 a mbo:MassSpectrum ;
             mbo:retention_time "8.049 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sitagliptin-N-sulfate" ;
             mbo:ch_compound_class "Metabolite; Pharmaceutical" ;
             mbo:ch_exact_mass 4.870749e+02 ;
-            rdfs:name "Sitagliptin-N-sulfate" ;
             rdfs:seeAlso cas:940002-57-3 ;
             schema:inChI "InChI=1S/C16H15F6N5O4S/c17-10-6-12(19)11(18)4-8(10)3-9(25-32(29,30)31)5-14(28)26-1-2-27-13(7-26)23-24-15(27)16(20,21)22/h4,6,9,25H,1-3,5,7H2,(H,29,30,31)" ;
             schema:inChIKey inchikey:AOWQKFDVSZMKPA-UHFFFAOYSA-N ;
@@ -49,8 +49,8 @@ massbank:MSBNK-BAFG-CSL2311092314 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 3 ;
             mbo:relative_intensity 91 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 4.860676e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "486.0676"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 3 ;
     mbo:pk_splash "splash10-002b-9000000000-e2a8f57650fb4f744c62" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

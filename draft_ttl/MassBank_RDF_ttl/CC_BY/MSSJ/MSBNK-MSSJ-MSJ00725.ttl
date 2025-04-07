@@ -5,9 +5,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -103,9 +106,12 @@ massbank:MSBNK-MSSJ-MSJ00725 a mbo:MassSpectrum ;
             mbo:mz 1.821e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 23 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.45e+02 ] ;
+            mbo:mz 2.8815e+02 ;
+            mbo:tentative_formula "[M+MEOX,2TMS-OCH3]+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 2.881082e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "288.10819"^^xsd:float ] ;
     mbo:pk_num_peak 16 ;
     mbo:pk_splash "splash10-0072-1980000000-7032ff27f5172b57a05e" ;
     rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 21HP8020 to the Mass Spectrometry Society of Japan." ;

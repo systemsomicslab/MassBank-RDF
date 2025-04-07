@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -104,10 +107,70 @@ massbank:MSBNK-NaToxAq-NA000160 a mbo:MassSpectrum ;
             mbo:mz 1.590438e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 2 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.08e+00 ] ;
+            mbo:mz 8.40807e+01 ;
+            mbo:tentative_formula "C5H10N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.01e+00 ] ;
+            mbo:mz 1.710439e+02 ;
+            mbo:tentative_formula "C11H7O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.43e+00 ] ;
+            mbo:mz 1.730595e+02 ;
+            mbo:tentative_formula "C11H9O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.64e+00 ] ;
+            mbo:mz 1.850954e+02 ;
+            mbo:tentative_formula "C13H13O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.43e+00 ] ;
+            mbo:mz 2.010541e+02 ;
+            mbo:tentative_formula "C12H9O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.48e+00 ] ;
+            mbo:mz 2.030698e+02 ;
+            mbo:tentative_formula "C12H11O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.41e+00 ] ;
+            mbo:mz 2.151061e+02 ;
+            mbo:tentative_formula "C14H15O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.29e+00 ] ;
+            mbo:mz 8.60963e+01 ;
+            mbo:tentative_formula "C5H12N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7e-01 ] ;
+            mbo:mz 1.120756e+02 ;
+            mbo:tentative_formula "C6H10NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.7e-01 ] ;
+            mbo:mz 1.150543e+02 ;
+            mbo:tentative_formula "C9H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.1e-01 ] ;
+            mbo:mz 1.350439e+02 ;
+            mbo:tentative_formula "C8H7O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.19e+00 ] ;
+            mbo:mz 1.43049e+02 ;
+            mbo:tentative_formula "C10H7O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.2e-01 ] ;
+            mbo:mz 1.500912e+02 ;
+            mbo:tentative_formula "C9H12NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.34e+00 ] ;
+            mbo:mz 1.51099e+02 ;
+            mbo:tentative_formula "C9H13NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.55e+00 ] ;
+            mbo:mz 1.590438e+02 ;
+            mbo:tentative_formula "C10H7O2+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.861441e+02 ;
-            mbo:precursor_mz 2.861438e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "286.1438"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 15 ;
     mbo:pk_splash "splash10-0udi-0190000000-ac07f7582bd1fc0b26e7" ;
     rdfs:comment "NaToxAq - Natural Toxins and Drinking Water Quality - From Source to Tap (https://natoxaq.ku.dk)" ;

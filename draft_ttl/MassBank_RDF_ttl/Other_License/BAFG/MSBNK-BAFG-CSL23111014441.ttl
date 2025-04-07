@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111014441 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111014441" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111014441" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 6600 SCIEX" ;
             mbo:collision_energy "110" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111014441 a mbo:MassSpectrum ;
             mbo:retention_time "18.874 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Tris(4-isopropylphenyl) phosphate" ;
             mbo:ch_compound_class "Industrial_process" ;
             mbo:ch_exact_mass 4.522116e+02 ;
-            rdfs:name "Tris(4-isopropylphenyl) phosphate" ;
             rdfs:seeAlso cas:2502-15-0 ;
             schema:inChI "InChI=1S/C27H33O4P/c1-19(2)22-7-13-25(14-8-22)29-32(28,30-26-15-9-23(10-16-26)20(3)4)31-27-17-11-24(12-18-27)21(5)6/h7-21H,1-6H3" ;
             schema:inChIKey inchikey:ANVREEJNGJMLOV-UHFFFAOYSA-N ;
@@ -85,8 +85,8 @@ massbank:MSBNK-BAFG-CSL23111014441 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 999 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 4.532189e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "453.2189"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 12 ;
     mbo:pk_splash "splash10-0v00-5900000000-1980b4a88fe7dad98717" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

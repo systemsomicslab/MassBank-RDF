@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003713 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003713" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "22.389 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "8,10,14,23,25,28-hexahydroxy-6,21-dimethyloctacyclo[14.11.1.02,11.02,15.04,9.013,17.017,26.019,24]octacosa-4(9),5,7,10,19(24),20,22,25-octaene-3,12,18,27-tetrone",
+                "Rugulosin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.421213e+02 ;
+            rdfs:seeAlso cas:19292-47-8,
+                chemspider:56511,
+                pubchem:CID62769 ;
+            schema:inChI "InChI=1S/C30H22O10/c1-7-3-9-13(11(31)5-7)21(33)17-25(37)20-23(35)15-16-24(36)19(29(15,17)27(9)39)26(38)18-22(34)14-10(28(40)30(16,18)20)4-8(2)6-12(14)32/h3-6,15-16,19-20,23-24,31-36H,1-2H3" ;
+            schema:inChIKey inchikey:QFDPVUTXKUGISP-UHFFFAOYSA-N ;
+            schema:molecularFormula "C30H22O10" ;
+            schema:name "8,10,14,23,25,28-hexahydroxy-6,21-dimethyloctacyclo[14.11.1.02,11.02,15.04,9.013,17.017,26.019,24]octacosa-4(9),5,7,10,19(24),20,22,25-octaene-3,12,18,27-tetrone",
+                "Rugulosin" ;
+            schema:smiles "CC1=CC2=C(C(=C1)O)C(=C3C(=O)C4C(C5C3(C2=O)C6C(C5C47C(=C(C8=C(C7=O)C=C(C=C8O)C)O)C6=O)O)O)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.02931e+04 ;
+            mbo:mz 2.550651e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 182 ],
+        [ mbo:intensity 5.65796e+04 ;
+            mbo:mz 2.730762e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.09329e+04 ;
+            mbo:mz 5.431279e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 723 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.9e-01 ] ;
+            mbo:mz 2.550651e+02 ;
+            mbo:tentative_formula "C15H11O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.55e+00 ] ;
+            mbo:mz 2.730762e+02 ;
+            mbo:tentative_formula "C15H13O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.33e+00 ] ;
+            mbo:mz 5.431279e+02 ;
+            mbo:tentative_formula "C30H23O10+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.431288e+02 ;
+            mbo:precursor_mz_value "543.1286"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-00dl-0090050000-2c38a71818ad3a67da04" ;
+    rdfs:comment "INTERNAL_ID 77" ;
+    skos:definition "Rugulosin; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

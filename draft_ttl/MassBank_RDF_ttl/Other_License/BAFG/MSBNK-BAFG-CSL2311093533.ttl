@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL2311093533 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-09"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL2311093533" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-09"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL2311093533" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "100" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL2311093533 a mbo:MassSpectrum ;
             mbo:retention_time "5.148 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Triethylphosphine oxide" ;
             mbo:ch_compound_class "Pharmaceutical" ;
             mbo:ch_exact_mass 1.340861e+02 ;
-            rdfs:name "Triethylphosphine oxide" ;
             rdfs:seeAlso cas:597-50-2 ;
             schema:inChI "InChI=1S/C6H15OP/c1-4-8(7,5-2)6-3/h4-6H2,1-3H3" ;
             schema:inChIKey inchikey:ZSSWXNPRLJLCDU-UHFFFAOYSA-N ;
@@ -69,8 +69,8 @@ massbank:MSBNK-BAFG-CSL2311093533 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 8 ;
             mbo:relative_intensity 178 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 1.350933e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "135.0933"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 8 ;
     mbo:pk_splash "splash10-0a4l-9000000000-de8a08b536a417a3e37f" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

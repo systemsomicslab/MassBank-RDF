@@ -1,0 +1,112 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA2193155BE0PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA2193155BE0PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.727 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(8S,9S,10R,11S,13R,14S,17S)-11-hydroxy-17-(2-hydroxyacetyl)-10-methyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthrene-13-carbaldehyde",
+                "Aldosterone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.601937e+02 ;
+            rdfs:seeAlso cas:52-39-1,
+                chemspider:5633,
+                pubchem:CID5839 ;
+            schema:inChI "InChI=1S/C21H28O5/c1-20-7-6-13(24)8-12(20)2-3-14-15-4-5-16(18(26)10-22)21(15,11-23)9-17(25)19(14)20/h8,11,14-17,19,22,25H,2-7,9-10H2,1H3/t14-,15-,16+,17-,19+,20-,21+/m0/s1" ;
+            schema:inChIKey inchikey:PQSUYGKTWSAVDQ-ZVIOFETBSA-N ;
+            schema:molecularFormula "C21H28O5" ;
+            schema:name "(8S,9S,10R,11S,13R,14S,17S)-11-hydroxy-17-(2-hydroxyacetyl)-10-methyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthrene-13-carbaldehyde",
+                "Aldosterone" ;
+            schema:smiles "[H][C@@]12CC[C@H](C(=O)CO)[C@]1(C[C@H](O)[C@@]1([H])[C@@]2([H])CCC2=CC(=O)CC[C@]12C)C=O" ] ;
+    mbo:has_peak [ mbo:intensity 6.5561e+03 ;
+            mbo:mz 1.210651e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 479 ],
+        [ mbo:intensity 1.6925e+03 ;
+            mbo:mz 1.350808e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 124 ],
+        [ mbo:intensity 1.36827e+04 ;
+            mbo:mz 1.470807e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 5.9516e+03 ;
+            mbo:mz 1.710807e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 435 ],
+        [ mbo:intensity 5.3958e+03 ;
+            mbo:mz 1.730966e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 394 ],
+        [ mbo:intensity 1.3312e+03 ;
+            mbo:mz 2.111118e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 1.4604e+03 ;
+            mbo:mz 2.231113e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 107 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.26e+00 ] ;
+            mbo:mz 1.210651e+02 ;
+            mbo:tentative_formula "C8H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.91e+00 ] ;
+            mbo:mz 1.350808e+02 ;
+            mbo:tentative_formula "C9H11O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.79e+00 ] ;
+            mbo:mz 1.470807e+02 ;
+            mbo:tentative_formula "C10H11O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.44e+00 ] ;
+            mbo:mz 1.710807e+02 ;
+            mbo:tentative_formula "C12H11O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.93e+00 ] ;
+            mbo:mz 1.730966e+02 ;
+            mbo:tentative_formula "C12H13O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8e-02 ] ;
+            mbo:mz 2.111118e+02 ;
+            mbo:tentative_formula "C15H15O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.8e+00 ] ;
+            mbo:mz 2.231113e+02 ;
+            mbo:tentative_formula "C16H15O+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.612011e+02 ;
+            mbo:precursor_mz_value "361.201"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00dj-0900000000-4e4209d1521494d2a52a" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Aldosterone; LC-ESI-ITFT; MS2; CE: 60%; R=15000; [M+H]+" .
+

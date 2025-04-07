@@ -1,0 +1,78 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000772 a mbo:MassSpectrum ;
+    dcterms:creator "Megan J. Kelman, Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000772" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Visagie, C. M.; Renaud, J. B.; Burgess, K. M. N.; Malloch, D. W.; Clark, D.; Ketch, L.; Urb, M.; Louis-Seize, G.; Assabgui, R.; Sumarah, M. W.; et al. Fifteen New Species of Penicillium. Persoonia - Molecular Phylogeny and Evolution of Fungi 2016, 36 (1), 247–80. DOI:10.3767/003158516x691627" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "20(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.17" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(e)-3-(1h-imidazol-4-ylmethylene)-6-(1h-indol-3-ylmethyl)-2,5-piperazinedione",
+                "Dehydrohistidyl-tryptophanyl-diketopiperazine" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 3.211226e+02 ;
+            rdfs:seeAlso chemspider:29215612,
+                pubchem:CID51136281 ;
+            schema:inChI "InChI=1S/C17H15N5O2/c23-16-14(5-10-7-19-13-4-2-1-3-12(10)13)21-17(24)15(22-16)6-11-8-18-9-20-11/h1-4,6-9,14,19H,5H2,(H,18,20)(H,21,24)(H,22,23)/b15-6+" ;
+            schema:inChIKey inchikey:ITXQTTPWGBFRNK-GIDUJCDVSA-N ;
+            schema:molecularFormula "C17H15N5O2" ;
+            schema:name "(e)-3-(1h-imidazol-4-ylmethylene)-6-(1h-indol-3-ylmethyl)-2,5-piperazinedione",
+                "Dehydrohistidyl-tryptophanyl-diketopiperazine" ;
+            schema:smiles "C1=CC=C2C(=C1)C(=CN2)CC3C(=O)N/C(=C/C4=CN=CN4)/C(=O)N3" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 5.104582e+04 ;
+            mbo:mz 1.93072e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 110 ],
+        [ mbo:intensity 4.650308e+05 ;
+            mbo:mz 3.221298e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6e-02 ] ;
+            mbo:mz 1.93072e+02 ;
+            mbo:tentative_formula "C8H9N4O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.12e+00 ] ;
+            mbo:mz 3.221302e+02 ;
+            mbo:tentative_formula "C17H16N5O2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.221302e+02 ;
+            mbo:precursor_mz_value "322.1293"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-00di-0009000000-972bb55949bf88202070" ;
+    rdfs:comment "CONFIDENCE Penicillium bissettii" ;
+    skos:definition "Dehydrohistidyl-tryptophanyl-diketopiperazine; LC-ESI-ITFT; MS2; CE: 20; R=17500; [M+H]+" .
+

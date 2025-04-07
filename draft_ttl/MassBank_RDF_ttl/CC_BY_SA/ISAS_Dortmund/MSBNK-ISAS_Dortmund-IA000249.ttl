@@ -2,9 +2,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -72,10 +75,50 @@ massbank:MSBNK-ISAS_Dortmund-IA000249 a mbo:MassSpectrum ;
             mbo:mz 2.992017e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 52 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.90135e+01 ] ;
+            mbo:mz 5.901351e+01 ;
+            mbo:tentative_formula "59.014" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.172122e+02 ] ;
+            mbo:mz 3.172122e+02 ;
+            mbo:tentative_formula "precursor" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.10137e+01 ] ;
+            mbo:mz 7.101369e+01 ;
+            mbo:tentative_formula "71.014" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.30711e+01 ] ;
+            mbo:mz 9.307109e+01 ;
+            mbo:tentative_formula "93.071" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.150402e+02 ] ;
+            mbo:mz 1.150402e+02 ;
+            mbo:tentative_formula "115.040" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.211023e+02 ] ;
+            mbo:mz 1.211024e+02 ;
+            mbo:tentative_formula "121.102" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.631494e+02 ] ;
+            mbo:mz 1.631494e+02 ;
+            mbo:tentative_formula "163.149" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.011651e+02 ] ;
+            mbo:mz 2.011651e+02 ;
+            mbo:tentative_formula "201.165" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.552119e+02 ] ;
+            mbo:mz 2.55212e+02 ;
+            mbo:tentative_formula "255.212" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.992017e+02 ] ;
+            mbo:mz 2.992017e+02 ;
+            mbo:tentative_formula "299.202" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 3.172122e+02 ;
-            mbo:precursor_mz 3.172122e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "317.2122"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 10 ;
     mbo:pk_splash "splash10-066r-4930000000-647b0146e7618ca71aaf" ;
     rdfs:comment "PROCESSING averaging of repeated ion fragments at 30.0 eV within 5 ppm window [MS, MS:1000575, mean of spectra, ]" ;

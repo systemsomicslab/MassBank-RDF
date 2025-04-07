@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -26,30 +29,7 @@ massbank:MSBNK-UPAO-UPA00022 a mbo:MassSpectrum ;
             mbo:ion_mode "POSITIVE" ;
             mbo:ms_type "MS2" ;
             mbo:retention_time "3.05 min" ;
-            mbo:solvent " ",
-                "%",
-                ".",
-                "0",
-                "1",
-                ":",
-                ";",
-                "A",
-                "B",
-                "F",
-                "M",
-                "P",
-                "a",
-                "c",
-                "d",
-                "e",
-                "i",
-                "l",
-                "m",
-                "n",
-                "o",
-                "r",
-                "t",
-                "w" ] ;
+            mbo:solvent "MPA: 0.1% Formic Acid in water; MPB: 0.1% Formic Acid in Acetonitrile" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
             rdfs:label "TELMISARTAN" ;
             mbo:ch_compound_class "Non-Natural Product" ;
@@ -354,9 +334,89 @@ massbank:MSBNK-UPAO-UPA00022 a mbo:MassSpectrum ;
             mbo:mz 2.358595e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 1 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.1e-01 ] ;
+            mbo:mz 1.930654e+02 ;
+            mbo:tentative_formula "C14H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7e-02 ] ;
+            mbo:mz 3.051766e+02 ;
+            mbo:tentative_formula "C19H21N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.88e+00 ] ;
+            mbo:mz 3.061794e+02 ;
+            mbo:tentative_formula "C18H21N4(13C)+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.82e+00 ] ;
+            mbo:mz 3.171772e+02 ;
+            mbo:tentative_formula "C20H21N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.6e+00 ] ;
+            mbo:mz 4.671884e+02 ;
+            mbo:tentative_formula "C31H23N4O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.46e+00 ] ;
+            mbo:mz 4.712523e+02 ;
+            mbo:tentative_formula "C32H31N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.14e+00 ] ;
+            mbo:mz 4.972352e+02 ;
+            mbo:tentative_formula "C33H29N4O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.82e+00 ] ;
+            mbo:mz 4.982384e+02 ;
+            mbo:tentative_formula "C32H29N4O(13C)+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.11e+00 ] ;
+            mbo:mz 4.992419e+02 ;
+            mbo:tentative_formula "C31H29N4O(13C2)+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.71e+00 ] ;
+            mbo:mz 5.152461e+02 ;
+            mbo:tentative_formula "C33H31N4O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.44e+00 ] ;
+            mbo:mz 5.162488e+02 ;
+            mbo:tentative_formula "C32H31N4O2(13C)+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.39e+00 ] ;
+            mbo:mz 2.110754e+02 ;
+            mbo:tentative_formula "C14H11O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.9e-01 ] ;
+            mbo:mz 5.17251e+02 ;
+            mbo:tentative_formula "C31H31N4O2(13C2)+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.96e+00 ] ;
+            mbo:mz 2.120801e+02 ;
+            mbo:tentative_formula "C13H11O2(13C)+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.9e-01 ] ;
+            mbo:mz 2.751294e+02 ;
+            mbo:tentative_formula "C17H15N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.46e+00 ] ;
+            mbo:mz 2.761379e+02 ;
+            mbo:tentative_formula "C17H16N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.96e+00 ] ;
+            mbo:mz 2.771392e+02 ;
+            mbo:tentative_formula "C16H16N4(13C)+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.2e-01 ] ;
+            mbo:mz 2.891455e+02 ;
+            mbo:tentative_formula "C18H17N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.19e+00 ] ;
+            mbo:mz 3.031597e+02 ;
+            mbo:tentative_formula "C19H19N4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9e-01 ] ;
+            mbo:mz 3.041646e+02 ;
+            mbo:tentative_formula "C18H19N4(13C)+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 5.152441e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "515.24414"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 73 ;
     mbo:pk_splash "splash10-014j-0000690000-e5484f50567b0ed1d402" ;
     rdfs:comment "Contact us: http://www.upao.edu.pe/labinm/" ;

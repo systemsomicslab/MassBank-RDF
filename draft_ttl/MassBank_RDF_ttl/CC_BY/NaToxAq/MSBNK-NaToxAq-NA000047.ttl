@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -100,10 +103,66 @@ massbank:MSBNK-NaToxAq-NA000047 a mbo:MassSpectrum ;
             mbo:mz 1.050697e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 5 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.7e+00 ] ;
+            mbo:mz 6.90332e+01 ;
+            mbo:tentative_formula "C4H5O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.72e+00 ] ;
+            mbo:mz 1.09101e+02 ;
+            mbo:tentative_formula "C8H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.28e+00 ] ;
+            mbo:mz 1.110803e+02 ;
+            mbo:tentative_formula "C7H11O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.22e+00 ] ;
+            mbo:mz 1.111167e+02 ;
+            mbo:tentative_formula "C8H15+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.84e+00 ] ;
+            mbo:mz 1.21101e+02 ;
+            mbo:tentative_formula "C9H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.06e+00 ] ;
+            mbo:mz 1.391115e+02 ;
+            mbo:tentative_formula "C9H15O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.93e+00 ] ;
+            mbo:mz 7.90541e+01 ;
+            mbo:tentative_formula "C6H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.11e+00 ] ;
+            mbo:mz 8.10697e+01 ;
+            mbo:tentative_formula "C6H9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.47e+00 ] ;
+            mbo:mz 8.30489e+01 ;
+            mbo:tentative_formula "C5H7O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.64e+00 ] ;
+            mbo:mz 9.30697e+01 ;
+            mbo:tentative_formula "C7H9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.68e+00 ] ;
+            mbo:mz 9.50854e+01 ;
+            mbo:tentative_formula "C7H11+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.56e+00 ] ;
+            mbo:mz 9.70646e+01 ;
+            mbo:tentative_formula "C6H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.18e+00 ] ;
+            mbo:mz 9.71011e+01 ;
+            mbo:tentative_formula "C7H13+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.49e+00 ] ;
+            mbo:mz 1.050697e+02 ;
+            mbo:tentative_formula "C8H9+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 1.391118e+02 ;
-            mbo:precursor_mz 1.391117e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "139.1117"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 14 ;
     mbo:pk_splash "splash10-014r-9600000000-6b829884f4fab06b3be4" ;
     rdfs:comment "NaToxAq - Natural Toxins and Drinking Water Quality - From Source to Tap (https://natoxaq.ku.dk)" ;

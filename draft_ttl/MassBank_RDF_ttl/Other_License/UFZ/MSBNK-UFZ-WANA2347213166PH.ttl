@@ -1,0 +1,146 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA2347213166PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA2347213166PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "70 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "2.496 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1-oxidoquinolin-1-ium",
+                "Quinoline 1-oxide",
+                "Quinoline N-oxide" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.450528e+02 ;
+            rdfs:seeAlso cas:1613-37-2,
+                chemspider:14627,
+                pubchem:CID15366 ;
+            schema:inChI "InChI=1S/C9H7NO/c11-10-7-3-5-8-4-1-2-6-9(8)10/h1-7H" ;
+            schema:inChIKey inchikey:GIIWGCBLYNDKBO-UHFFFAOYSA-N ;
+            schema:molecularFormula "C9H7NO" ;
+            schema:name "1-oxidoquinolin-1-ium",
+                "Quinoline 1-oxide",
+                "Quinoline N-oxide" ;
+            schema:smiles "[O-][N+]1=CC=CC2=CC=CC=C12" ] ;
+    mbo:has_peak [ mbo:intensity 1.85612e+04 ;
+            mbo:mz 7.70384e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 7 ],
+        [ mbo:intensity 2.710669e+06 ;
+            mbo:mz 1.29057e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.596626e+06 ;
+            mbo:mz 1.460597e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 957 ],
+        [ mbo:intensity 1.468443e+05 ;
+            mbo:mz 9.1054e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 54 ],
+        [ mbo:intensity 3.9671e+03 ;
+            mbo:mz 9.50491e+01 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.0191e+03 ;
+            mbo:mz 1.010387e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.6082e+03 ;
+            mbo:mz 1.020465e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 5.89735e+04 ;
+            mbo:mz 1.03054e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 22 ],
+        [ mbo:intensity 4.9329e+04 ;
+            mbo:mz 1.170571e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 18 ],
+        [ mbo:intensity 9.92256e+04 ;
+            mbo:mz 1.180649e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 37 ],
+        [ mbo:intensity 8.170892e+05 ;
+            mbo:mz 1.280494e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 301 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.69e+00 ] ;
+            mbo:mz 7.70384e+01 ;
+            mbo:tentative_formula "C6H5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.19e+00 ] ;
+            mbo:mz 1.29057e+02 ;
+            mbo:tentative_formula "C9H7N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.13e+00 ] ;
+            mbo:mz 1.460597e+02 ;
+            mbo:tentative_formula "C9H8NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.99e+00 ] ;
+            mbo:mz 9.1054e+01 ;
+            mbo:tentative_formula "C7H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.1e-01 ] ;
+            mbo:mz 9.50491e+01 ;
+            mbo:tentative_formula "C6H7O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.6e-01 ] ;
+            mbo:mz 1.010387e+02 ;
+            mbo:tentative_formula "C8H5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 9.7e-01 ] ;
+            mbo:mz 1.020465e+02 ;
+            mbo:tentative_formula "C8H6+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.85e+00 ] ;
+            mbo:mz 1.03054e+02 ;
+            mbo:tentative_formula "C8H7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.41e+00 ] ;
+            mbo:mz 1.170571e+02 ;
+            mbo:tentative_formula "C8H7N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.53e+00 ] ;
+            mbo:mz 1.180649e+02 ;
+            mbo:tentative_formula "C8H8N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.6e-01 ] ;
+            mbo:mz 1.280494e+02 ;
+            mbo:tentative_formula "C9H6N+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.4606e+02 ;
+            mbo:precursor_mz_value "146.06"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 11 ;
+    mbo:pk_splash "splash10-004j-0900000000-bc4af11151845ec43ff4" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Quinoline N-oxide; LC-ESI-ITFT; MS2; CE: 70%; R=15000; [M+H]+" .
+

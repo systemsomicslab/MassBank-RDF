@@ -1,0 +1,138 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000300 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000300" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.74" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "12'-Hydroxy-2',5'a-bis(1-methylethyl)-8a-ergotaman-3',6',18-trione",
+                "Ergocorninine" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 5.612951e+02 ;
+            rdfs:seeAlso cas:564-36-3,
+                chemspider:8183574,
+                knapsack:C00011230,
+                pubchem:CID73453 ;
+            schema:inChI "InChI=1S/C31H39N5O5/c1-16(2)26-28(38)35-11-7-10-24(35)31(40)36(26)29(39)30(41-31,17(3)4)33-27(37)19-12-21-20-8-6-9-22-25(20)18(14-32-22)13-23(21)34(5)15-19/h6,8-9,12,14,16-17,19,23-24,26,32,40H,7,10-11,13,15H2,1-5H3,(H,33,37)/t19-,23-,24+,26+,30-,31+/m1/s1" ;
+            schema:inChIKey inchikey:UJYGDMFEEDNVBF-OGGGUQDZSA-N ;
+            schema:molecularFormula "C31H39N5O5" ;
+            schema:name "12'-Hydroxy-2',5'a-bis(1-methylethyl)-8a-ergotaman-3',6',18-trione",
+                "Ergocorninine" ;
+            schema:smiles "CC(C)[C@H]1C(=O)N2CCC[C@H]2[C@]3(N1C(=O)[C@](O3)(C(C)C)NC(=O)[C@H]4CN([C@@H]5CC6=CNC7=CC=CC(=C67)C5=C4)C)O" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 4.496419e+05 ;
+            mbo:mz 1.380523e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 33 ],
+        [ mbo:intensity 1.566134e+06 ;
+            mbo:mz 2.470828e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 114 ],
+        [ mbo:intensity 1.369707e+07 ;
+            mbo:mz 2.901248e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.846972e+05 ;
+            mbo:mz 3.341716e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 65 ],
+        [ mbo:intensity 7.485022e+05 ;
+            mbo:mz 3.601509e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 55 ],
+        [ mbo:intensity 1.18062e+06 ;
+            mbo:mz 3.621665e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 86 ],
+        [ mbo:intensity 6.994711e+05 ;
+            mbo:mz 4.441894e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 51 ],
+        [ mbo:intensity 3.485151e+06 ;
+            mbo:mz 5.412421e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 254 ],
+        [ mbo:intensity 1.059837e+06 ;
+            mbo:mz 5.842843e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 77 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.91e+00 ] ;
+            mbo:mz 1.38052e+02 ;
+            mbo:tentative_formula "C4H10O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6.7e-01 ] ;
+            mbo:mz 2.47083e+02 ;
+            mbo:tentative_formula "C12H10N5Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.6e-01 ] ;
+            mbo:mz 2.90125e+02 ;
+            mbo:tentative_formula "C13H16N5O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.12e+00 ] ;
+            mbo:mz 3.34172e+02 ;
+            mbo:tentative_formula "C26H22+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.8e-01 ] ;
+            mbo:mz 3.601512e+02 ;
+            mbo:tentative_formula "C27H20O1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.28e+00 ] ;
+            mbo:mz 3.62167e+02 ;
+            mbo:tentative_formula "C27H22O1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.12e+00 ] ;
+            mbo:mz 4.441871e+02 ;
+            mbo:tentative_formula "C24H27N3O4Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.32e+00 ] ;
+            mbo:mz 5.412398e+02 ;
+            mbo:tentative_formula "C29H34N4O5Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.83e+00 ] ;
+            mbo:mz 5.842821e+02 ;
+            mbo:tentative_formula "C31H39N5O5Na1+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.90125e+02 ;
+            mbo:precursor_mz_value "584.2838"^^xsd:float ;
+            mbo:precursor_type_value "[M+Na]+" ] ;
+    mbo:pk_num_peak 9 ;
+    mbo:pk_splash "splash10-0006-0091020000-ee71ba63707f240fda69" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Ergocorninine; LC-ESI-ITFT; MS2; CE: 30; R=17500; [M+Na]+" .
+

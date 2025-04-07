@@ -1,0 +1,128 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000454 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000454" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "20(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "4.78" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Enniatin B" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 6.394095e+02 ;
+            rdfs:seeAlso cas:917-13-5,
+                chemspider:144430,
+                knapsack:C00018905,
+                pubchem:CID164754 ;
+            schema:inChI "InChI=1S/C33H57N3O9/c1-16(2)22-31(40)43-26(20(9)10)29(38)35(14)24(18(5)6)33(42)45-27(21(11)12)30(39)36(15)23(17(3)4)32(41)44-25(19(7)8)28(37)34(22)13/h16-27H,1-15H3/t22-,23-,24-,25+,26+,27+/m0/s1" ;
+            schema:inChIKey inchikey:MIZMDSVSLSIMSC-VYLWARHZSA-N ;
+            schema:molecularFormula "C33H57N3O9" ;
+            schema:name "Enniatin B" ;
+            schema:smiles "CC(C)[C@H]1C(=O)O[C@@H](C(=O)N([C@H](C(=O)O[C@@H](C(=O)N([C@H](C(=O)O[C@@H](C(=O)N1C)C(C)C)C(C)C)C)C(C)C)C(C)C)C)C(C)C" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 9.645992e+06 ;
+            mbo:mz 8.60964e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 46 ],
+        [ mbo:intensity 1.17145e+07 ;
+            mbo:mz 1.861489e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 56 ],
+        [ mbo:intensity 2.099991e+08 ;
+            mbo:mz 1.961332e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 1.193566e+08 ;
+            mbo:mz 2.141438e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 568 ],
+        [ mbo:intensity 1.106722e+07 ;
+            mbo:mz 3.141935e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 53 ],
+        [ mbo:intensity 1.942281e+07 ;
+            mbo:mz 4.272776e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 92 ],
+        [ mbo:intensity 3.739117e+07 ;
+            mbo:mz 5.273327e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 178 ],
+        [ mbo:intensity 1.223781e+07 ;
+            mbo:mz 6.404168e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 58 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.9e+00 ] ;
+            mbo:mz 8.60966e+01 ;
+            mbo:tentative_formula "C5H12N1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.18e+00 ] ;
+            mbo:mz 1.861479e+02 ;
+            mbo:tentative_formula "C10H20N1O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.16e+00 ] ;
+            mbo:mz 1.961322e+02 ;
+            mbo:tentative_formula "C11H18N1O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.48e+00 ] ;
+            mbo:mz 2.141426e+02 ;
+            mbo:tentative_formula "C11H20N1O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.46e+00 ] ;
+            mbo:mz 3.141946e+02 ;
+            mbo:tentative_formula "C13H30O8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.92e+00 ] ;
+            mbo:mz 4.272784e+02 ;
+            mbo:tentative_formula "C19H41N1O9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.35e+00 ] ;
+            mbo:mz 5.273304e+02 ;
+            mbo:tentative_formula "C27H47N2O8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.94e+00 ] ;
+            mbo:mz 6.404136e+02 ;
+            mbo:tentative_formula "C33H58N3O9+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.961322e+02 ;
+            mbo:precursor_mz_value "640.4162"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-01ot-0940010000-8c530198198076c18622" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Enniatin B; LC-ESI-ITFT; MS2; CE: 20; R=17500; [M+H]+" .
+

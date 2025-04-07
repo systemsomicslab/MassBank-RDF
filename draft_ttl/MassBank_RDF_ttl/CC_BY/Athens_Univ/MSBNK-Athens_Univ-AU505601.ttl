@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -27,14 +30,7 @@ massbank:MSBNK-Athens_Univ-AU505601 a mbo:MassSpectrum ;
             mbo:ms_type "MS2" ;
             mbo:resolution "35000" ;
             mbo:retention_time "22.597 min" ;
-            mbo:solvent " ",
-                "A",
-                "H",
-                "e",
-                "i",
-                "l",
-                "m",
-                "u" ] ;
+            mbo:solvent "A Helium" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
             rdfs:label "Butyl stearate" ;
             mbo:ch_compound_class "N/A; Food Contact Material" ;
@@ -123,10 +119,86 @@ massbank:MSBNK-Athens_Univ-AU505601 a mbo:MassSpectrum ;
             mbo:mz 2.652539e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 80 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.195e+01 ] ;
+            mbo:mz 1.571242e+02 ;
+            mbo:tentative_formula "C9H17O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.103e+01 ] ;
+            mbo:mz 2.662575e+02 ;
+            mbo:tentative_formula "C18H34O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.35e+00 ] ;
+            mbo:mz 2.832641e+02 ;
+            mbo:tentative_formula "C18H35O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7.72e+00 ] ;
+            mbo:mz 2.842732e+02 ;
+            mbo:tentative_formula "C18H36O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.09e+00 ] ;
+            mbo:mz 2.852785e+02 ;
+            mbo:tentative_formula "C18H37O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.515e+01 ] ;
+            mbo:mz 2.862823e+02 ;
+            mbo:tentative_formula "C18H38O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.17e+00 ] ;
+            mbo:mz 2.872918e+02 ;
+            mbo:tentative_formula "C18H39O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.903e+01 ] ;
+            mbo:mz 3.263117e+02 ;
+            mbo:tentative_formula "C21H42O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.02e+00 ] ;
+            mbo:mz 3.393275e+02 ;
+            mbo:tentative_formula "C22H43O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8.23e+00 ] ;
+            mbo:mz 3.403308e+02 ;
+            mbo:tentative_formula "C22H44O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.6e-01 ] ;
+            mbo:mz 3.413415e+02 ;
+            mbo:tentative_formula "C22H45O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.535e+01 ] ;
+            mbo:mz 1.591404e+02 ;
+            mbo:tentative_formula "C9H19O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.079e+01 ] ;
+            mbo:mz 1.631499e+02 ;
+            mbo:tentative_formula "C12H19+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.16e+00 ] ;
+            mbo:mz 1.711394e+02 ;
+            mbo:tentative_formula "C10H19O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.412e+01 ] ;
+            mbo:mz 1.851562e+02 ;
+            mbo:tentative_formula "C11H21O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.82e+00 ] ;
+            mbo:mz 2.091904e+02 ;
+            mbo:tentative_formula "C14H25O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.212e+01 ] ;
+            mbo:mz 2.412191e+02 ;
+            mbo:tentative_formula "C15H29O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.24e+00 ] ;
+            mbo:mz 2.472407e+02 ;
+            mbo:tentative_formula "C18H31+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 5.11e+00 ] ;
+            mbo:mz 2.652539e+02 ;
+            mbo:tentative_formula "C18H33O+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.832621e+02 ;
-            mbo:precursor_mz 3.413414e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "341.3414"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 19 ;
     mbo:pk_splash "splash10-000i-0091000000-c486030428c50e1e3e11" ;
     rdfs:comment "INTERNAL_ID 5056" ;

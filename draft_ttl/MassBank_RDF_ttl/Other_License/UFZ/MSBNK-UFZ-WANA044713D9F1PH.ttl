@@ -1,0 +1,112 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA044713D9F1PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA044713D9F1PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "50 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "9.491 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Capecitabine",
+                "pentyl N-[1-[(2R,3R,4S,5R)-3,4-dihydroxy-5-methyloxolan-2-yl]-5-fluoro-2-oxopyrimidin-4-yl]carbamate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.591493e+02 ;
+            rdfs:seeAlso cas:154361-50-9,
+                chemspider:54916,
+                pubchem:CID60953 ;
+            schema:inChI "InChI=1S/C15H22FN3O6/c1-3-4-5-6-24-15(23)18-12-9(16)7-19(14(22)17-12)13-11(21)10(20)8(2)25-13/h7-8,10-11,13,20-21H,3-6H2,1-2H3,(H,17,18,22,23)/t8-,10-,11-,13-/m1/s1" ;
+            schema:inChIKey inchikey:GAGWJHPBXLXJQN-UORFTKCHSA-N ;
+            schema:molecularFormula "C15H22FN3O6" ;
+            schema:name "Capecitabine",
+                "pentyl N-[1-[(2R,3R,4S,5R)-3,4-dihydroxy-5-methyloxolan-2-yl]-5-fluoro-2-oxopyrimidin-4-yl]carbamate" ;
+            schema:smiles "CCCCCOC(=O)NC1=NC(=O)N(C=C1F)[C@@H]1O[C@H](C)[C@@H](O)[C@H]1O" ] ;
+    mbo:has_peak [ mbo:intensity 2.27053e+04 ;
+            mbo:mz 7.10857e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 79 ],
+        [ mbo:intensity 3.5574e+03 ;
+            mbo:mz 7.30287e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.214403e+05 ;
+            mbo:mz 1.300416e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 774 ],
+        [ mbo:intensity 5.3341e+03 ;
+            mbo:mz 1.560211e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 19 ],
+        [ mbo:intensity 2.857792e+05 ;
+            mbo:mz 1.740316e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.3582e+03 ;
+            mbo:mz 1.859995e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 9.3055e+03 ;
+            mbo:mz 2.4411e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 33 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.71e+00 ] ;
+            mbo:mz 7.10857e+01 ;
+            mbo:tentative_formula "C5H11+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4e+00 ] ;
+            mbo:mz 7.30287e+01 ;
+            mbo:tentative_formula "C3H5O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.32e+00 ] ;
+            mbo:mz 1.300416e+02 ;
+            mbo:tentative_formula "C9H6O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.24e+00 ] ;
+            mbo:mz 1.560211e+02 ;
+            mbo:tentative_formula "C10H4O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.85e+00 ] ;
+            mbo:mz 1.740316e+02 ;
+            mbo:tentative_formula "C10H6O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.81e+00 ] ;
+            mbo:mz 1.859995e+02 ;
+            mbo:tentative_formula "C10HFNO2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.27e+00 ] ;
+            mbo:mz 2.4411e+02 ;
+            mbo:tentative_formula "C15H16O3+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.601579e+02 ;
+            mbo:precursor_mz_value "360.1565"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-00e9-0900000000-67d39995a5b6aa7fb3ed" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Capecitabine; LC-ESI-ITFT; MS2; CE: 50%; R=15000; [M+H]+" .
+

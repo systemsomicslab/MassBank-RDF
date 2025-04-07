@@ -1,0 +1,122 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA0363213166PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-13"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA0363213166PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "70 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "1.545 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "2-Isopropyl-6-methyl-pyrimidin-4-ol",
+                "6-methyl-2-propan-2-yl-1H-pyrimidin-4-one",
+                "CID 17777" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 1.52095e+02 ;
+            rdfs:seeAlso cas:2814-20-2,
+                chemspider:16799,
+                pubchem:CID17777 ;
+            schema:inChI "InChI=1S/C8H12N2O/c1-5(2)8-9-6(3)4-7(11)10-8/h4-5H,1-3H3,(H,9,10,11)" ;
+            schema:inChIKey inchikey:AJPIUNPJBFBUKK-UHFFFAOYSA-N ;
+            schema:molecularFormula "C8H12N2O" ;
+            schema:name "2-Isopropyl-6-methyl-pyrimidin-4-ol",
+                "6-methyl-2-propan-2-yl-1H-pyrimidin-4-one",
+                "CID 17777" ;
+            schema:smiles "CC(C)C1=NC(C)=CC(=O)N1" ] ;
+    mbo:has_peak [ mbo:intensity 8.834638e+05 ;
+            mbo:mz 7.0065e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 297 ],
+        [ mbo:intensity 2.973679e+06 ;
+            mbo:mz 8.40444e+01 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 6.7704e+03 ;
+            mbo:mz 1.080809e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.2284e+03 ;
+            mbo:mz 1.120756e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.4697e+03 ;
+            mbo:mz 1.360758e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 8.9308e+03 ;
+            mbo:mz 1.370711e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.55574e+04 ;
+            mbo:mz 1.380789e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 12 ],
+        [ mbo:intensity 2.420407e+06 ;
+            mbo:mz 1.531024e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 813 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.19e+00 ] ;
+            mbo:mz 7.0065e+01 ;
+            mbo:tentative_formula "C4H8N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.3e-01 ] ;
+            mbo:mz 8.40444e+01 ;
+            mbo:tentative_formula "C4H6NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.21e+00 ] ;
+            mbo:mz 1.080809e+02 ;
+            mbo:tentative_formula "C7H10N+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.9e-01 ] ;
+            mbo:mz 1.120756e+02 ;
+            mbo:tentative_formula "C6H10NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.14e+00 ] ;
+            mbo:mz 1.360758e+02 ;
+            mbo:tentative_formula "C8H10NO+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.15e+00 ] ;
+            mbo:mz 1.370711e+02 ;
+            mbo:tentative_formula "C7H9N2O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7e-01 ] ;
+            mbo:mz 1.380789e+02 ;
+            mbo:tentative_formula "C7H10N2O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.4e-01 ] ;
+            mbo:mz 1.531024e+02 ;
+            mbo:tentative_formula "C8H13N2O+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.531028e+02 ;
+            mbo:precursor_mz_value "153.1022"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0f89-9500000000-bd280a4503cdcdbc6925" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "2-Isopropyl-6-methyl-pyrimidin-4-ol; LC-ESI-ITFT; MS2; CE: 70%; R=15000; [M+H]+" .
+

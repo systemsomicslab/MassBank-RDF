@@ -1,0 +1,136 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-UFZ-WANA022103B085PH a mbo:MassSpectrum ;
+    dcterms:creator "Tobias Schulze, Martin Krauss, Department of Effect-Directed Analysis, Helmholtz Centre for Environmental Research - UFZ, Leipzig, Germany" ;
+    dcterms:date "2023-08-12"^^xsd:date ;
+    dcterms:identifier "MSBNK-UFZ-WANA022103B085PH" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2023 under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Kinetex Evo C18 2.6 um 50 x 2.1 mm" ;
+            mbo:flow_gradient "95/5 at 0 min, 95/5 at 1 min, 0/100 at 13 min, 0/100 at 24 min, 95/5 at 24.3 min, 95/5 at 32 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "15000" ;
+            mbo:retention_time "12.363 min" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(8S,9S,10R,13S,14S,17S)-17-acetyl-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one",
+                "Progesterone" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.142246e+02 ;
+            rdfs:seeAlso cas:57-83-0,
+                chemspider:5773,
+                pubchem:CID5994 ;
+            schema:inChI "InChI=1S/C21H30O2/c1-13(22)17-6-7-18-16-5-4-14-12-15(23)8-10-20(14,2)19(16)9-11-21(17,18)3/h12,16-19H,4-11H2,1-3H3/t16-,17+,18-,19-,20-,21+/m0/s1" ;
+            schema:inChIKey inchikey:RJKFOVLPORLFTN-LEKSSAKUSA-N ;
+            schema:molecularFormula "C21H30O2" ;
+            schema:name "(8S,9S,10R,13S,14S,17S)-17-acetyl-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one",
+                "Progesterone" ;
+            schema:smiles "CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C" ] ;
+    mbo:has_peak [ mbo:intensity 1.893498e+05 ;
+            mbo:mz 9.70644e+01 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 71 ],
+        [ mbo:intensity 2.670115e+06 ;
+            mbo:mz 3.152307e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 8.58136e+04 ;
+            mbo:mz 1.090644e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 32 ],
+        [ mbo:intensity 7.8791e+03 ;
+            mbo:mz 1.2308e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 3.4983e+03 ;
+            mbo:mz 2.011267e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 1 ],
+        [ mbo:intensity 7.4404e+03 ;
+            mbo:mz 2.331899e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 5.8609e+03 ;
+            mbo:mz 2.411591e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 2 ],
+        [ mbo:intensity 7.704e+03 ;
+            mbo:mz 2.732211e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.29441e+04 ;
+            mbo:mz 2.792099e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 7.14277e+04 ;
+            mbo:mz 2.972203e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 27 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.61e+00 ] ;
+            mbo:mz 9.70644e+01 ;
+            mbo:tentative_formula "C6H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.67e+00 ] ;
+            mbo:mz 3.152307e+02 ;
+            mbo:tentative_formula "C21H31O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.7e+00 ] ;
+            mbo:mz 1.090644e+02 ;
+            mbo:tentative_formula "C7H9O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.3e+00 ] ;
+            mbo:mz 1.2308e+02 ;
+            mbo:tentative_formula "C8H11O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.28e+00 ] ;
+            mbo:mz 2.011267e+02 ;
+            mbo:tentative_formula "C14H17O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.5e-01 ] ;
+            mbo:mz 2.331899e+02 ;
+            mbo:tentative_formula "C16H25O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.67e+00 ] ;
+            mbo:mz 2.411591e+02 ;
+            mbo:tentative_formula "C17H21O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.3e-01 ] ;
+            mbo:mz 2.732211e+02 ;
+            mbo:tentative_formula "C19H29O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.04e+00 ] ;
+            mbo:mz 2.792099e+02 ;
+            mbo:tentative_formula "C21H27+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.19e+00 ] ;
+            mbo:mz 2.972203e+02 ;
+            mbo:tentative_formula "C21H29O+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.152316e+02 ;
+            mbo:precursor_mz_value "315.2319"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 10 ;
+    mbo:pk_splash "splash10-014i-0009000000-60b8cb966f7f011bed20" ;
+    rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;
+    skos:definition "Progesterone; LC-ESI-ITFT; MS2; CE: 20%; R=15000; [M+H]+" .
+

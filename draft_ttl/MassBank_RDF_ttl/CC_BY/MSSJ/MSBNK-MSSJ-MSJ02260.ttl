@@ -4,9 +4,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -96,9 +99,61 @@ massbank:MSBNK-MSSJ-MSJ02260 a mbo:MassSpectrum ;
             mbo:mz 4.049881e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 83 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.19981e+01 ;
+            mbo:tentative_formula "[CH3NO-3H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.229959e+02 ;
+            mbo:tentative_formula "[C16H9ClF6N2O3-3H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.249949e+02 ;
+            mbo:tentative_formula "[C16H9ClF6N2O3-3H]-(37Cl)" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.409622e+02 ;
+            mbo:tentative_formula "[C16H9Cl2F5N2O3-3H]-(37Cl)" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.609709e+02 ;
+            mbo:tentative_formula "[C16H8Cl2F6N2O3-H]-(37Cl)" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.169968e+02 ;
+            mbo:tentative_formula "[C2H2F4O-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.560263e+02 ;
+            mbo:tentative_formula "[C7H5F2NO-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 1.769567e+02 ;
+            mbo:tentative_formula "[C7H5ClF2O-3H]-(37Cl)" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 2.779572e+02 ;
+            mbo:tentative_formula "[C8H5Cl2F4NO-H]-(37Cl)" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 3.029534e+02 ;
+            mbo:tentative_formula "[C9H7Cl2F3N2O2-H]-(37Cl)" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 3.979599e+02 ;
+            mbo:tentative_formula "[C16H11Cl2F3N2O3-8H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.029911e+02 ;
+            mbo:tentative_formula "[C16H10ClF5N2O3-5H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 4.049881e+02 ;
+            mbo:tentative_formula "[C16H10ClF5N2O3-5H]-(37Cl)" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 4.609714e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "460.97138"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 14 ;
     mbo:pk_splash "splash10-0006-0010900000-7a3a061b638d1a3ddc33" ;
     rdfs:comment "This record was created by the financial support of MEXT/JSPS KAKENHI Grant Number 22HP8019 to the Mass Spectrometry Society of Japan." ;

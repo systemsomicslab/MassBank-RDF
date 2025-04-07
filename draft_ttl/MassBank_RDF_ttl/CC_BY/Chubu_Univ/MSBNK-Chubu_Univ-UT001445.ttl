@@ -3,8 +3,11 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -177,9 +180,25 @@ massbank:MSBNK-Chubu_Univ-UT001445 a mbo:MassSpectrum ;
             mbo:mz 2.8311e+02 ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 570 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.67e+02 ] ;
+            mbo:mz 2.8311e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H-CO2]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.34e+02 ] ;
+            mbo:mz 3.2709e+02 ;
+            mbo:tentative_formula "[fa(22:6)-H]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.2e+01 ] ;
+            mbo:mz 4.2027e+02 ;
+            mbo:tentative_formula "[lyso_PE(alkyl-16:0,-)-H2O]-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.06e+02 ] ;
+            mbo:mz 4.3812e+02 ;
+            mbo:tentative_formula "[lyso_PE(alkyl-16:0,-)]-" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 7.4853e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "748.53"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
     mbo:pk_num_peak 35 ;
     mbo:pk_splash "splash10-003i-0049800000-3af6ebea8528a3dd0424" ;
     skos:definition "Phosphatidylethanolamine alkyl 16:0-22:6; LC-ESI-ITFT; MS2; [M-H]-; RT: 22.36; Exp: 1" .

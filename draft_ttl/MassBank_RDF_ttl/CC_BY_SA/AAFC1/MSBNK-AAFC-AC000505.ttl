@@ -1,0 +1,111 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000505 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000505" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "30(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "2.59" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(5R,6R,7S)-5,6,7,9,10-pentahydroxy-2-methoxy-7-methyl-6,8-dihydro-5H-anthracene-1,4-dione",
+                "Bostrycin",
+                "Rhodosporin" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 3.360845e+02 ;
+            rdfs:seeAlso cas:21879-81-2,
+                chemspider:28612,
+                pubchem:CID30839 ;
+            schema:inChI "InChI=1S/C16H16O8/c1-16(23)4-5-8(14(21)15(16)22)13(20)9-6(17)3-7(24-2)12(19)10(9)11(5)18/h3,14-15,18,20-23H,4H2,1-2H3/t14-,15-,16+/m1/s1" ;
+            schema:inChIKey inchikey:ZQNOLGRKZRDRQO-OAGGEKHMSA-N ;
+            schema:molecularFormula "C16H16O8" ;
+            schema:name "(5R,6R,7S)-5,6,7,9,10-pentahydroxy-2-methoxy-7-methyl-6,8-dihydro-5H-anthracene-1,4-dione",
+                "Bostrycin",
+                "Rhodosporin" ;
+            schema:smiles "C[C@@]1(CC2=C(C3=C(C(=O)C=C(C3=O)OC)C(=C2[C@H]([C@H]1O)O)O)O)O" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 1.700468e+04 ;
+            mbo:mz 1.670339e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 116 ],
+        [ mbo:intensity 8.501402e+03 ;
+            mbo:mz 2.450808e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 58 ],
+        [ mbo:intensity 8.779798e+03 ;
+            mbo:mz 2.550652e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 60 ],
+        [ mbo:intensity 2.648339e+04 ;
+            mbo:mz 2.590601e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 180 ],
+        [ mbo:intensity 1.470213e+05 ;
+            mbo:mz 2.730757e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 3.997342e+04 ;
+            mbo:mz 3.010707e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 272 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.5e-01 ] ;
+            mbo:mz 1.670338e+02 ;
+            mbo:tentative_formula "C8H7O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.5e+00 ] ;
+            mbo:mz 2.450812e+02 ;
+            mbo:tentative_formula "C14H13O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.49e+00 ] ;
+            mbo:mz 2.550648e+02 ;
+            mbo:tentative_formula "C15H11O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.05e+00 ] ;
+            mbo:mz 2.590593e+02 ;
+            mbo:tentative_formula "C14H11O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.55e+00 ] ;
+            mbo:mz 2.730745e+02 ;
+            mbo:tentative_formula "C15H13O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -5.15e+00 ] ;
+            mbo:mz 3.010691e+02 ;
+            mbo:tentative_formula "C16H13O6+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.730745e+02 ;
+            mbo:precursor_mz_value "337.0912"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 6 ;
+    mbo:pk_splash "splash10-00di-0091000000-17de6fc1e19b7ad4364a" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Bostrycin; LC-ESI-ITFT; MS2; CE: 30; R=17500; [M+H]+" .
+

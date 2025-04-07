@@ -1,5 +1,5 @@
 @prefix cas: <http://identifiers.org/cas/> .
-@prefix dcterms1: <http://purl.org/dc/terms> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
@@ -9,11 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 massbank:MSBNK-BAFG-CSL23111011514 a mbo:MassSpectrum ;
-    dcterms1:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
-    dcterms1:date "2023-11-10"^^xsd:date ;
-    dcterms1:identifier "MSBNK-BAFG-CSL23111011514" ;
-    dcterms1:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms1:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
+    dcterms:creator "Kevin S. Jewell; Björn Ehlig; Arne Wick" ;
+    dcterms:date "2023-11-10"^^xsd:date ;
+    dcterms:identifier "MSBNK-BAFG-CSL23111011514" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:rights "Copyright 2023 Federal Institute of Hydrology, Koblenz, Germany under dl-de/by-2-0" ;
     mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
             mbo:ac_instrument "TripleTOF 5600 SCIEX" ;
             mbo:collision_energy "140" ;
@@ -27,9 +27,9 @@ massbank:MSBNK-BAFG-CSL23111011514 a mbo:MassSpectrum ;
             mbo:retention_time "7.502 min" ;
             mbo:solvent "A: Water 0.1% Formic acid, B: Acetonitrile 0.1% Formic acid" ] ;
     mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(Methoxymethyl)triphenylphosphonium" ;
             mbo:ch_compound_class "Industrial_process" ;
             mbo:ch_exact_mass 3.071246e+02 ;
-            rdfs:name "(Methoxymethyl)triphenylphosphonium" ;
             rdfs:seeAlso cas:4009-98-7 ;
             schema:inChI "InChI=1S/C20H20OP/c1-21-17-22(18-11-5-2-6-12-18,19-13-7-3-8-14-19)20-15-9-4-10-16-20/h2-16H,17H2,1H3/q+1" ;
             schema:inChIKey inchikey:SDMCZCALYDCRBH-UHFFFAOYSA-N ;
@@ -197,8 +197,8 @@ massbank:MSBNK-BAFG-CSL23111011514 a mbo:MassSpectrum ;
             mbo:peak_sequential_number 9 ;
             mbo:relative_intensity 56 ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
-            mbo:precursor_mz 3.071246e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "307.1246"^^xsd:float ;
+            mbo:precursor_type_value "[M]+" ] ;
     mbo:pk_num_peak 40 ;
     mbo:pk_splash "splash10-0pc0-5900000000-369659d2c603dbeb5b55" ;
     rdfs:comment "Acquisition method: 10.1002/rcm.8541" ;

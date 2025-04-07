@@ -1,0 +1,178 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix knapsack: <http://identifiers.org/knapsack/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-AAFC-AC000617 a mbo:MassSpectrum ;
+    dcterms:creator "Justin B. Renaud, Mark W. Sumarah, Agriculture and Agri-Food Canada" ;
+    dcterms:date "2017-07-07"^^xsd:date ;
+    dcterms:identifier "MSBNK-AAFC-AC000617" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:references [ a bibo:Article ;
+            rdfs:label "Renaud, J. B.; Sumarah, M. W. Data Independent Acquisition-Digital Archiving Mass Spectrometry: Application to Single Kernel Mycotoxin Analysis of Fusarium Graminearum Infected Maize. Analytical and Bioanalytical Chemistry 2016, 408 (12), 3083–91. DOI:10.1007/s00216-016-9391-5" ] ;
+    dcterms:rights "Copyright (C) 2017 under CC BY-SA" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "Q-Exactive Orbitrap Thermo Scientific" ;
+            mbo:collision_energy "50(NCE)" ;
+            mbo:column_name "Agilent RRHD Eclipse 50 x 2 mm, 1.8 uM" ;
+            mbo:flow_gradient "100:0 at 0 min, 100:0 at 0.5 min, 0:100 at 3.5 min, 0:100 at 5.5 min, 100:0 at 7 min" ;
+            mbo:flow_rate "0.3 mL min-1" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ionization "ESI" ;
+            mbo:ionization_voltage "3.9 kV" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "17500" ;
+            mbo:retention_time "4.07" ;
+            mbo:solvent "A H2O 0.1% FA",
+                "B ACN 0.1% FA" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(2S)-6-[(3R,7R,8R,8aS)-3,4'-dihydroxy-4,4,7,8a-tetramethyl-6'-oxospiro[2,3,4a,5,6,7-hexahydro-1H-naphthalene-8,2'-3,8-dihydrofuro[2,3-e]isoindole]-7'-yl]-2-[(2R,3S,7R,8R,8aS)-2,3,4'-trihydroxy-4,4,7,8a-tetramethyl-6'-oxospiro[2,3,4a,5,6,7-hexahydro-1H-naphthalene-8,2'-3,8-dihydrofuro[2,3-e]isoindole]-7'-yl]hexanoic acid",
+                "Stachybocin B" ;
+            mbo:ch_compound_class "Natural Product; Fungal metabolite" ;
+            mbo:ch_exact_mass 8.98498e+02 ;
+            rdfs:seeAlso knapsack:C00016148,
+                pubchem:CID10509958 ;
+            schema:inChI "InChI=1S/C52H70N2O11/c1-26-12-14-38-47(3,4)40(58)16-17-49(38,7)51(26)21-30-35(55)19-28-32(41(30)64-51)24-53(44(28)60)18-10-9-11-34(46(62)63)54-25-33-29(45(54)61)20-36(56)31-22-52(65-42(31)33)27(2)13-15-39-48(5,6)43(59)37(57)23-50(39,52)8/h19-20,26-27,34,37-40,43,55-59H,9-18,21-25H2,1-8H3,(H,62,63)/t26-,27-,34+,37-,38?,39?,40-,43-,49+,50+,51-,52-/m1/s1" ;
+            schema:inChIKey inchikey:ZRTGPZGAMCJZNA-CRDDFVEESA-N ;
+            schema:molecularFormula "C52H70N2O11" ;
+            schema:name "(2S)-6-[(3R,7R,8R,8aS)-3,4'-dihydroxy-4,4,7,8a-tetramethyl-6'-oxospiro[2,3,4a,5,6,7-hexahydro-1H-naphthalene-8,2'-3,8-dihydrofuro[2,3-e]isoindole]-7'-yl]-2-[(2R,3S,7R,8R,8aS)-2,3,4'-trihydroxy-4,4,7,8a-tetramethyl-6'-oxospiro[2,3,4a,5,6,7-hexahydro-1H-naphthalene-8,2'-3,8-dihydrofuro[2,3-e]isoindole]-7'-yl]hexanoic acid",
+                "Stachybocin B" ;
+            schema:smiles "C[C@@H]1CCC2[C@@]([C@@]13CC4=C(C=C5C(=C4O3)CN(C5=O)CCCC[C@@H](C(=O)O)N6CC7=C8C(=C(C=C7C6=O)O)C[C@@]9(O8)[C@@H](CCC1[C@@]9(C[C@H]([C@H](C1(C)C)O)O)C)C)O)(CC[C@H](C2(C)C)O)C" ] ;
+    mbo:data_processing_deprofile "Proteowizard" ;
+    mbo:has_peak [ mbo:intensity 1.482695e+05 ;
+            mbo:mz 4.742612e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 6.017789e+05 ;
+            mbo:mz 8.594841e+02 ;
+            mbo:peak_sequential_number 10 ;
+            mbo:relative_intensity 177 ],
+        [ mbo:intensity 6.342934e+05 ;
+            mbo:mz 8.754817e+02 ;
+            mbo:peak_sequential_number 11 ;
+            mbo:relative_intensity 187 ],
+        [ mbo:intensity 3.392561e+06 ;
+            mbo:mz 8.774974e+02 ;
+            mbo:peak_sequential_number 12 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 2.176687e+05 ;
+            mbo:mz 8.784966e+02 ;
+            mbo:peak_sequential_number 13 ;
+            mbo:relative_intensity 64 ],
+        [ mbo:intensity 2.595908e+05 ;
+            mbo:mz 9.034766e+02 ;
+            mbo:peak_sequential_number 14 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 1.28586e+06 ;
+            mbo:mz 9.214872e+02 ;
+            mbo:peak_sequential_number 15 ;
+            mbo:relative_intensity 379 ],
+        [ mbo:intensity 1.609223e+05 ;
+            mbo:mz 4.861734e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 47 ],
+        [ mbo:intensity 7.652707e+05 ;
+            mbo:mz 4.912878e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 225 ],
+        [ mbo:intensity 2.53129e+06 ;
+            mbo:mz 4.922718e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 745 ],
+        [ mbo:intensity 1.314509e+05 ;
+            mbo:mz 4.991837e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 3.345298e+05 ;
+            mbo:mz 5.202667e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 99 ],
+        [ mbo:intensity 1.54458e+05 ;
+            mbo:mz 6.373214e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 45 ],
+        [ mbo:intensity 4.812736e+05 ;
+            mbo:mz 6.533179e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 142 ],
+        [ mbo:intensity 3.485498e+05 ;
+            mbo:mz 6.693128e+02 ;
+            mbo:peak_sequential_number 9 ;
+            mbo:relative_intensity 103 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.5e-01 ] ;
+            mbo:mz 4.74261e+02 ;
+            mbo:tentative_formula "C27H38O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.02e+00 ] ;
+            mbo:mz 8.59485e+02 ;
+            mbo:tentative_formula "C48H70N1O11Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.74e+00 ] ;
+            mbo:mz 8.754802e+02 ;
+            mbo:tentative_formula "C51H68N2O9Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.48e+00 ] ;
+            mbo:mz 8.774952e+02 ;
+            mbo:tentative_formula "C51H70N2O9Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.14e+00 ] ;
+            mbo:mz 9.034747e+02 ;
+            mbo:tentative_formula "C52H68N2O10Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.71e+00 ] ;
+            mbo:mz 9.214847e+02 ;
+            mbo:tentative_formula "C52H70N2O11Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.39e+00 ] ;
+            mbo:mz 4.861746e+02 ;
+            mbo:tentative_formula "C23H29N1O9Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.34e+00 ] ;
+            mbo:mz 4.912871e+02 ;
+            mbo:tentative_formula "C27H41N1O7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.57e+00 ] ;
+            mbo:mz 4.92271e+02 ;
+            mbo:tentative_formula "C27H40O8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.34e+00 ] ;
+            mbo:mz 4.991825e+02 ;
+            mbo:tentative_formula "C26H29N1O9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.51e+00 ] ;
+            mbo:mz 5.202659e+02 ;
+            mbo:tentative_formula "C28H40O9+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.4e-01 ] ;
+            mbo:mz 6.373209e+02 ;
+            mbo:tentative_formula "C46H41N2O1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 8.9e-01 ] ;
+            mbo:mz 6.533185e+02 ;
+            mbo:tentative_formula "C49H42Na1+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.1e-01 ] ;
+            mbo:mz 6.693129e+02 ;
+            mbo:tentative_formula "C49H42O1Na1+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 8.774952e+02 ;
+            mbo:precursor_mz_value "921.4866"^^xsd:float ;
+            mbo:precursor_type_value "[M+Na]+" ] ;
+    mbo:pk_num_peak 15 ;
+    mbo:pk_splash "splash10-004l-0000601092-dee3d708acfb6049395a" ;
+    rdfs:comment "CONFIDENCE isolated standard" ;
+    skos:definition "Stachybocin B; LC-ESI-ITFT; MS2; CE: 50; R=17500; [M+Na]+" .
+
