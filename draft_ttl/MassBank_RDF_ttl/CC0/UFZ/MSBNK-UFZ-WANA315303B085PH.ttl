@@ -3,9 +3,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -66,10 +69,34 @@ massbank:MSBNK-UFZ-WANA315303B085PH a mbo:MassSpectrum ;
             mbo:mz 3.421474e+02 ;
             mbo:peak_sequential_number 6 ;
             mbo:relative_intensity 411 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.42e+00 ] ;
+            mbo:mz 1.660868e+02 ;
+            mbo:tentative_formula "C9H12NO2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.1e-01 ] ;
+            mbo:mz 2.221488e+02 ;
+            mbo:tentative_formula "C13H20NO2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 3.82e+00 ] ;
+            mbo:mz 2.501447e+02 ;
+            mbo:tentative_formula "C14H20NO3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.56e+00 ] ;
+            mbo:mz 2.51152e+02 ;
+            mbo:tentative_formula "C14H21NO3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.04e+00 ] ;
+            mbo:mz 2.521604e+02 ;
+            mbo:tentative_formula "C14H22NO3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.12e+00 ] ;
+            mbo:mz 3.421474e+02 ;
+            mbo:tentative_formula "C17H25ClNO4+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 2.610066e+02 ;
-            mbo:precursor_mz 3.421467e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "342.1467"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
     mbo:pk_num_peak 6 ;
     mbo:pk_splash "splash10-0udi-0092000000-e7d77fbc9704fb7a3629" ;
     rdfs:comment "CONFIDENCE Reference Standard (Level 1)" ;

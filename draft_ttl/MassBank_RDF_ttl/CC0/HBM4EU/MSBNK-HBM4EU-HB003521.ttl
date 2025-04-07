@@ -1,0 +1,124 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003521 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003521" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "5.905 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "3,10-dihydroxy-2-(hydroxymethyl)-1,5-dimethylspiro[8-oxatricyclo[7.2.1.02,7]dodec-5-ene-12,2`-oxirane]-4-one",
+                "Deoxynivalenol",
+                "Vomitoxin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.96126e+02 ;
+            rdfs:seeAlso cas:51481-10-8,
+                chemspider:380420,
+                pubchem:CID430147 ;
+            schema:inChI "InChI=1S/C15H20O6/c1-7-3-9-14(5-16,11(19)10(7)18)13(2)4-8(17)12(21-9)15(13)6-20-15/h3,8-9,11-12,16-17,19H,4-6H2,1-2H3" ;
+            schema:inChIKey inchikey:LINOMUASTDIRTM-UHFFFAOYSA-N ;
+            schema:molecularFormula "C15H20O6" ;
+            schema:name "3,10-dihydroxy-2-(hydroxymethyl)-1,5-dimethylspiro[8-oxatricyclo[7.2.1.02,7]dodec-5-ene-12,2`-oxirane]-4-one",
+                "Deoxynivalenol",
+                "Vomitoxin" ;
+            schema:smiles "CC1=CC2C(C(C1=O)O)(C3(CC(C(C34CO4)O2)O)C)CO" ] ;
+    mbo:has_peak [ mbo:intensity 7.4809e+03 ;
+            mbo:mz 2.031067e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 68 ],
+        [ mbo:intensity 4.3496e+03 ;
+            mbo:mz 2.191012e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 39 ],
+        [ mbo:intensity 1.60315e+04 ;
+            mbo:mz 2.311009e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 145 ],
+        [ mbo:intensity 3.05971e+04 ;
+            mbo:mz 2.491114e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 277 ],
+        [ mbo:intensity 4.8181e+03 ;
+            mbo:mz 2.511278e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 44 ],
+        [ mbo:intensity 1.07052e+04 ;
+            mbo:mz 2.611127e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 97 ],
+        [ mbo:intensity 1.19168e+04 ;
+            mbo:mz 2.791219e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 108 ],
+        [ mbo:intensity 1.104654e+05 ;
+            mbo:mz 2.971329e+02 ;
+            mbo:peak_sequential_number 8 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 4.3e-01 ] ;
+            mbo:mz 2.031067e+02 ;
+            mbo:tentative_formula "C13H15O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.61e+00 ] ;
+            mbo:mz 2.191012e+02 ;
+            mbo:tentative_formula "C13H15O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.89e+00 ] ;
+            mbo:mz 2.311009e+02 ;
+            mbo:tentative_formula "C14H15O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.89e+00 ] ;
+            mbo:mz 2.491114e+02 ;
+            mbo:tentative_formula "C14H17O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 7e-02 ] ;
+            mbo:mz 2.511278e+02 ;
+            mbo:tentative_formula "C14H19O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.18e+00 ] ;
+            mbo:mz 2.611127e+02 ;
+            mbo:tentative_formula "C15H17O4+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.69e+00 ] ;
+            mbo:mz 2.791219e+02 ;
+            mbo:tentative_formula "C15H19O5+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.2e+00 ] ;
+            mbo:mz 2.971329e+02 ;
+            mbo:tentative_formula "C15H21O6+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 2.971329e+02 ;
+            mbo:precursor_mz_value "297.1333"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 8 ;
+    mbo:pk_splash "splash10-0002-0090000000-aaa6a5868262139b123f" ;
+    rdfs:comment "INTERNAL_ID 12" ;
+    skos:definition "Deoxynivalenol; LC-ESI-ITFT; MS2; CE: 20%; R=7500; [M+H]+" .
+

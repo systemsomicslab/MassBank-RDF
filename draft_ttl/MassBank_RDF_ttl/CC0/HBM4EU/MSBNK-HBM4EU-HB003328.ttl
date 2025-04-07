@@ -1,0 +1,82 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003328 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003328" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "60 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "26.947 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "1,8-dihydroxy-3-methoxy-6-methylanthracene-9,10-dione",
+                "Physcion" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.840685e+02 ;
+            rdfs:seeAlso cas:521-61-9,
+                chemspider:10193,
+                pubchem:CID10639 ;
+            schema:inChI "InChI=1S/C16H12O5/c1-7-3-9-13(11(17)4-7)16(20)14-10(15(9)19)5-8(21-2)6-12(14)18/h3-6,17-18H,1-2H3" ;
+            schema:inChIKey inchikey:FFWOKTFYGVYKIR-UHFFFAOYSA-N ;
+            schema:molecularFormula "C16H12O5" ;
+            schema:name "1,8-dihydroxy-3-methoxy-6-methylanthracene-9,10-dione",
+                "Physcion" ;
+            schema:smiles "CC1=CC2=C(C(=C1)O)C(=O)C3=C(C2=O)C=C(C=C3O)OC" ] ;
+    mbo:has_peak [ mbo:intensity 7.35619e+04 ;
+            mbo:mz 2.40043e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 169 ],
+        [ mbo:intensity 1.09169e+04 ;
+            mbo:mz 2.680381e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 25 ],
+        [ mbo:intensity 4.358832e+05 ;
+            mbo:mz 2.830616e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 6e-01 ] ;
+            mbo:mz 2.40043e+02 ;
+            mbo:tentative_formula "C14H8O4-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.24e+00 ] ;
+            mbo:mz 2.680381e+02 ;
+            mbo:tentative_formula "C15H8O5-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.41e+00 ] ;
+            mbo:mz 2.830616e+02 ;
+            mbo:tentative_formula "C16H11O5-" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.410175e+02 ;
+            mbo:precursor_mz_value "283.0612"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-001i-0090000000-8917a08904f9327cc3a4" ;
+    rdfs:comment "INTERNAL_ID 98" ;
+    skos:definition "Physcion; LC-ESI-ITFT; MS2; CE: 60%; R=7500; [M-H]-" .
+

@@ -1,0 +1,76 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003490 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003490" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "21.909 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1S,4S,7R,10S,13S)-4,7-bis(2-methylpropyl)-10-propan-2-yl-15,16-dithia-2,5,8,11,19-pentazabicyclo[11.4.2]nonadecane-3,6,9,12,18-pentone",
+                "Malformin B1b",
+                "Malformin C" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 5.292393e+02 ;
+            rdfs:seeAlso cas:59926-78-2,
+                chemspider:10269547,
+                pubchem:CID21635794 ;
+            schema:inChI "InChI=1S/C23H39N5O5S2/c1-11(2)7-14-20(30)26-16-9-34-35-10-17(27-21(16)31)22(32)28-18(13(5)6)23(33)25-15(8-12(3)4)19(29)24-14/h11-18H,7-10H2,1-6H3,(H,24,29)(H,25,33)(H,26,30)(H,27,31)(H,28,32)/t14-,15+,16+,17+,18-/m0/s1" ;
+            schema:inChIKey inchikey:TZODYIWCRGWHQB-TZNCUMHOSA-N ;
+            schema:molecularFormula "C23H39N5O5S2" ;
+            schema:name "(1S,4S,7R,10S,13S)-4,7-bis(2-methylpropyl)-10-propan-2-yl-15,16-dithia-2,5,8,11,19-pentazabicyclo[11.4.2]nonadecane-3,6,9,12,18-pentone",
+                "Malformin B1b",
+                "Malformin C" ;
+            schema:smiles "O=C1[C@H](CC(C)C)NC([C@@H](CC(C)C)NC([C@H](C(C)C)NC([C@@H]2NC([C@@H](CSSC2)N1)=O)=O)=O)=O" ] ;
+    mbo:has_peak [ mbo:intensity 7.739e+03 ;
+            mbo:mz 4.942436e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 15 ],
+        [ mbo:intensity 5.278297e+05 ;
+            mbo:mz 5.282319e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.38e+00 ] ;
+            mbo:mz 4.942436e+02 ;
+            mbo:tentative_formula "C23H36N5O5S-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -8e-02 ] ;
+            mbo:mz 5.282319e+02 ;
+            mbo:tentative_formula "C23H38N5O5S2-" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 5.882535e+02 ;
+            mbo:precursor_mz_value "528.232"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
+    mbo:pk_num_peak 2 ;
+    mbo:pk_splash "splash10-004i-0000090000-c815aeb20f3e679030ed" ;
+    rdfs:comment "INTERNAL_ID 145" ;
+    skos:definition "Malformin C; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M-H]-" .
+

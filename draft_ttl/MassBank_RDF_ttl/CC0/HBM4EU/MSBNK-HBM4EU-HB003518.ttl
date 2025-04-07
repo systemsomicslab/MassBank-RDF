@@ -1,0 +1,92 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003518 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003518" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "15 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "15.433 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(11-acetyloxy-10-hydroxy-1,5-dimethylspiro[8-oxatricyclo[7.2.1.02,7]dodec-5-ene-12,2`-oxirane]-2-yl)methyl acetate",
+                "Anguidine",
+                "Diacetoxyscirpenol" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.661679e+02 ;
+            rdfs:seeAlso cas:2270-40-8,
+                chemspider:373646,
+                pubchem:CID422111 ;
+            schema:inChI "InChI=1S/C19H26O7/c1-10-5-6-18(8-23-11(2)20)13(7-10)26-16-14(22)15(25-12(3)21)17(18,4)19(16)9-24-19/h7,13-16,22H,5-6,8-9H2,1-4H3" ;
+            schema:inChIKey inchikey:AUGQEEXBDZWUJY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C19H26O7" ;
+            schema:name "(11-acetyloxy-10-hydroxy-1,5-dimethylspiro[8-oxatricyclo[7.2.1.02,7]dodec-5-ene-12,2`-oxirane]-2-yl)methyl acetate",
+                "Anguidine",
+                "Diacetoxyscirpenol" ;
+            schema:smiles "CC1=CC2C(CC1)(C3(C(C(C(C34CO4)O2)O)OC(=O)C)C)COC(=O)C" ] ;
+    mbo:has_peak [ mbo:intensity 3.7534e+03 ;
+            mbo:mz 2.011477e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 542 ],
+        [ mbo:intensity 6.9185e+03 ;
+            mbo:mz 2.291218e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 999 ],
+        [ mbo:intensity 4.8399e+03 ;
+            mbo:mz 2.471331e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 699 ],
+        [ mbo:intensity 2.259e+03 ;
+            mbo:mz 3.671749e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 326 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.27e+00 ] ;
+            mbo:mz 2.011477e+02 ;
+            mbo:tentative_formula "C11H21O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.43e+00 ] ;
+            mbo:mz 2.291218e+02 ;
+            mbo:tentative_formula "C15H17O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.11e+00 ] ;
+            mbo:mz 2.471331e+02 ;
+            mbo:tentative_formula "C15H19O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -6.2e-01 ] ;
+            mbo:mz 3.671749e+02 ;
+            mbo:tentative_formula "C19H27O7+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.671767e+02 ;
+            mbo:precursor_mz_value "367.1751"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0fba-0091000000-0d0ece25c11a48734a9c" ;
+    rdfs:comment "INTERNAL_ID 8" ;
+    skos:definition "Diacetoxyscirpenol; LC-ESI-ITFT; MS2; CE: 15%; R=7500; [M+H]+" .
+

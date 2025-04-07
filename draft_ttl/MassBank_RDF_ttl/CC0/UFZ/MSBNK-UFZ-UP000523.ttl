@@ -5,9 +5,12 @@
 @prefix inchikey: <http://identifiers.org/inchikey/> .
 @prefix massbank: <https://identifiers.org/massbank/> .
 @prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -71,10 +74,34 @@ massbank:MSBNK-UFZ-UP000523 a mbo:MassSpectrum ;
             mbo:mz 3.932103e+02 ;
             mbo:peak_sequential_number 6 ;
             mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -4.41e+00 ] ;
+            mbo:mz 1.582597e+02 ;
+            mbo:tentative_formula "C9H34O+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.33e+00 ] ;
+            mbo:mz 3.051567e+02 ;
+            mbo:tentative_formula "C12H26NaO7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 0e+00 ] ;
+            mbo:mz 3.311727e+02 ;
+            mbo:tentative_formula "C14H28NaO7+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.27e+00 ] ;
+            mbo:mz 3.491841e+02 ;
+            mbo:tentative_formula "C14H30NaO8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.33e+00 ] ;
+            mbo:mz 3.751994e+02 ;
+            mbo:tentative_formula "C16H32NaO8+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.05e+00 ] ;
+            mbo:mz 3.932103e+02 ;
+            mbo:tentative_formula "C16H34NaO9+" ] ;
     mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
             mbo:base_peak 4.322807e+02 ;
-            mbo:precursor_mz 4.372357e+02 ;
-            mbo:precursor_type mbo:IT003 ] ;
+            mbo:precursor_mz_value "437.2357"^^xsd:float ;
+            mbo:precursor_type_value "[M+Na]+" ] ;
     mbo:pk_num_peak 6 ;
     mbo:pk_splash "splash10-0006-0009000000-e03f60ea7e8ec7786161" ;
     rdfs:comment "INTERNAL_ID 10" ;

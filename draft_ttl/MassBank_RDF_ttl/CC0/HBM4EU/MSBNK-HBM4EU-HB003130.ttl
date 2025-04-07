@@ -1,0 +1,66 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003130 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003130" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "40 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "15.248 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "(1aR,2R,3R,3aR,5S,7bS)-2-hydroxy-3,3a-dimethyl-5-prop-1-en-2-yl-1a,2,3,4,5,7b-hexahydronaphtho[1,2-b]oxiren-6-one",
+                "Eremofortin B" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 2.481412e+02 ;
+            rdfs:seeAlso cas:60048-73-9,
+                chemspider:35467340,
+                pubchem:CID101316756 ;
+            schema:inChI "InChI=1S/C15H20O3/c1-7(2)9-6-15(4)8(3)12(17)14-13(18-14)10(15)5-11(9)16/h5,8-9,12-14,17H,1,6H2,2-4H3/t8-,9-,12+,13-,14+,15+/m0/s1" ;
+            schema:inChIKey inchikey:OXZGFGFICRZIFY-DURCKFPESA-N ;
+            schema:molecularFormula "C15H20O3" ;
+            schema:name "(1aR,2R,3R,3aR,5S,7bS)-2-hydroxy-3,3a-dimethyl-5-prop-1-en-2-yl-1a,2,3,4,5,7b-hexahydronaphtho[1,2-b]oxiren-6-one",
+                "Eremofortin B" ;
+            schema:smiles "C[C@H]1[C@@H](O)[C@H]2O[C@H]2C2=CC(=O)[C@@H](C[C@]12C)C(C)=C" ] ;
+    mbo:has_peak [ mbo:intensity 7.0565e+03 ;
+            mbo:mz 2.471332e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -3.2e+00 ] ;
+            mbo:mz 2.471332e+02 ;
+            mbo:tentative_formula "C15H19O3-" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 1.410168e+02 ;
+            mbo:precursor_mz_value "247.134"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
+    mbo:pk_num_peak 1 ;
+    mbo:pk_splash "splash10-0002-0090000000-ac35f4529e7eebb50387" ;
+    rdfs:comment "INTERNAL_ID 52" ;
+    skos:definition "Eremofortin B; LC-ESI-ITFT; MS2; CE: 40%; R=7500; [M-H]-" .
+

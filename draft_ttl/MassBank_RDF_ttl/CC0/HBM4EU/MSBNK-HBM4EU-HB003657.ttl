@@ -1,0 +1,90 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003657 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003657" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "16.138 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "4-(1H-imidazol-5-ylmethylidene)-9-(2-methylbut-3-en-2-yl)-2,5,16-triazatetracyclo[7.7.0.02,7.010,15]hexadeca-10,12,14-triene-3,6-dione",
+                "Roquefortine C" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.891852e+02 ;
+            rdfs:seeAlso cas:58735-64-1,
+                chemspider:287729,
+                pubchem:CID324941 ;
+            schema:inChI "InChI=1S/C22H23N5O2/c1-4-21(2,3)22-10-17-18(28)25-16(9-13-11-23-12-24-13)19(29)27(17)20(22)26-15-8-6-5-7-14(15)22/h4-9,11-12,17,20,26H,1,10H2,2-3H3,(H,23,24)(H,25,28)" ;
+            schema:inChIKey inchikey:SPWSUFUPTSJWNG-UHFFFAOYSA-N ;
+            schema:molecularFormula "C22H23N5O2" ;
+            schema:name "4-(1H-imidazol-5-ylmethylidene)-9-(2-methylbut-3-en-2-yl)-2,5,16-triazatetracyclo[7.7.0.02,7.010,15]hexadeca-10,12,14-triene-3,6-dione",
+                "Roquefortine C" ;
+            schema:smiles "CC(C)(C=C)C12CC3C(=O)NC(=CC4=CN=CN4)C(=O)N3C1NC5=CC=CC=C25" ] ;
+    mbo:has_peak [ mbo:intensity 4.94485e+04 ;
+            mbo:mz 1.930716e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 3.39827e+04 ;
+            mbo:mz 3.201139e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.075052e+06 ;
+            mbo:mz 3.221296e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 109 ],
+        [ mbo:intensity 9.872667e+06 ;
+            mbo:mz 3.901921e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -2.03e+00 ] ;
+            mbo:mz 1.930716e+02 ;
+            mbo:tentative_formula "C8H9N4O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.09e+00 ] ;
+            mbo:mz 3.201139e+02 ;
+            mbo:tentative_formula "C17H14N5O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -7.9e-01 ] ;
+            mbo:mz 3.221296e+02 ;
+            mbo:tentative_formula "C17H16N5O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -9.6e-01 ] ;
+            mbo:mz 3.901921e+02 ;
+            mbo:tentative_formula "C22H24N5O2+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.901933e+02 ;
+            mbo:precursor_mz_value "390.1925"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 4 ;
+    mbo:pk_splash "splash10-0006-0009000000-bd746c82bbf4c8384534" ;
+    rdfs:comment "INTERNAL_ID 60" ;
+    skos:definition "Roquefortine C; LC-ESI-ITFT; MS2; CE: 20%; R=7500; [M+H]+" .
+

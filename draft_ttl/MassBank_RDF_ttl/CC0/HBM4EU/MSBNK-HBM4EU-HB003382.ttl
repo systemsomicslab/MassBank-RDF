@@ -1,0 +1,114 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003382 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003382" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "30 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "NEGATIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "15.111 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "Sulochrin",
+                "methyl 2-(2,6-dihydroxy-4-methylbenzoyl)-5-hydroxy-3-methoxybenzoate" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.320896e+02 ;
+            rdfs:seeAlso cas:519-57-3,
+                chemspider:141044,
+                pubchem:CID160505 ;
+            schema:inChI "InChI=1S/C17H16O7/c1-8-4-11(19)15(12(20)5-8)16(21)14-10(17(22)24-3)6-9(18)7-13(14)23-2/h4-7,18-20H,1-3H3" ;
+            schema:inChIKey inchikey:YJRLSCDUYLRBIZ-UHFFFAOYSA-N ;
+            schema:molecularFormula "C17H16O7" ;
+            schema:name "Sulochrin",
+                "methyl 2-(2,6-dihydroxy-4-methylbenzoyl)-5-hydroxy-3-methoxybenzoate" ;
+            schema:smiles "CC1=CC(=C(C(=C1)O)C(=O)C2=C(C=C(C=C2OC)O)C(=O)OC)O" ] ;
+    mbo:has_peak [ mbo:intensity 1.943552e+05 ;
+            mbo:mz 1.050348e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 76 ],
+        [ mbo:intensity 2.062626e+06 ;
+            mbo:mz 1.490246e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 811 ],
+        [ mbo:intensity 8.8821e+03 ;
+            mbo:mz 1.670347e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 3 ],
+        [ mbo:intensity 1.094082e+05 ;
+            mbo:mz 1.810508e+02 ;
+            mbo:peak_sequential_number 4 ;
+            mbo:relative_intensity 43 ],
+        [ mbo:intensity 1.987255e+06 ;
+            mbo:mz 2.990561e+02 ;
+            mbo:peak_sequential_number 5 ;
+            mbo:relative_intensity 781 ],
+        [ mbo:intensity 1.37908e+04 ;
+            mbo:mz 3.010714e+02 ;
+            mbo:peak_sequential_number 6 ;
+            mbo:relative_intensity 5 ],
+        [ mbo:intensity 2.540991e+06 ;
+            mbo:mz 3.310827e+02 ;
+            mbo:peak_sequential_number 7 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.85e+00 ] ;
+            mbo:mz 1.050348e+02 ;
+            mbo:tentative_formula "C7H5O-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.48e+00 ] ;
+            mbo:mz 1.490246e+02 ;
+            mbo:tentative_formula "C8H5O3-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.61e+00 ] ;
+            mbo:mz 1.670347e+02 ;
+            mbo:tentative_formula "C8H7O4-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.16e+00 ] ;
+            mbo:mz 1.810508e+02 ;
+            mbo:tentative_formula "C9H9O4-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.1e-01 ] ;
+            mbo:mz 2.990561e+02 ;
+            mbo:tentative_formula "C16H11O6-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value -1.32e+00 ] ;
+            mbo:mz 3.010714e+02 ;
+            mbo:tentative_formula "C16H13O6-" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 1.11e+00 ] ;
+            mbo:mz 3.310827e+02 ;
+            mbo:tentative_formula "C17H15O7-" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 6.631739e+02 ;
+            mbo:precursor_mz_value "331.0823"^^xsd:float ;
+            mbo:precursor_type_value "[M-H]-" ] ;
+    mbo:pk_num_peak 7 ;
+    mbo:pk_splash "splash10-000t-0879000000-ef002c15a60143f20d4a" ;
+    rdfs:comment "INTERNAL_ID 112" ;
+    skos:definition "Sulochrin; LC-ESI-ITFT; MS2; CE: 30%; R=7500; [M-H]-" .
+

@@ -1,0 +1,84 @@
+@prefix cas: <http://identifiers.org/cas/> .
+@prefix chemspider: <http://identifiers.org/chemspider/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inchikey: <http://identifiers.org/inchikey/> .
+@prefix massbank: <https://identifiers.org/massbank/> .
+@prefix mbo: <http://www.massbank.jp/ontology/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+massbank:MSBNK-HBM4EU-HB003789 a mbo:MassSpectrum ;
+    dcterms:creator "Laurent Debrauwer, Emilien L. Jamin, Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France" ;
+    dcterms:date "2021-10-11"^^xsd:date ;
+    dcterms:identifier "MSBNK-HBM4EU-HB003789" ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rights "Copyright (c) 2021 by Research Centre in Food Toxicology (TOXALIM), INRAE, MetaboHUB-Metatoul platform, Toulouse, France under CC0" ;
+    mbo:analytical_methods_and_conditions [ a mbo:AnalyticalMethods ;
+            mbo:ac_instrument "LTQ Orbitrap XL Thermo Scientific" ;
+            mbo:collision_energy "20 % (nominal)" ;
+            mbo:column_name "Hypersil GOLD C18 1.9 um 100 x 2.1 mm Thermo Fisher Scientific" ;
+            mbo:flow_gradient "100/0 at 0 min, 0/100 at 30 min, 0/100 at 35 min" ;
+            mbo:flow_rate "300 uL/min" ;
+            mbo:fragmentation_mode "HCD" ;
+            mbo:instrument_type "LC-ESI-ITFT" ;
+            mbo:ion_mode "POSITIVE" ;
+            mbo:ms_type "MS2" ;
+            mbo:resolution "7500" ;
+            mbo:retention_time "15.221 min" ;
+            mbo:solvent "A water with 5% methanol and 0.1% acetic acid",
+                "B methanol with 0.1% acetic acid" ] ;
+    mbo:compound [ a schema:chemicalsubstance ;
+            rdfs:label "7-hydroxy-11-(hydroxymethyl)-15-methyl-12,13-dithia-9,15-diazatetracyclo[9.2.2.01,9.03,8]pentadeca-3,5-diene-10,14-dione",
+                "Aspergillin",
+                "Gliotoxin" ;
+            mbo:ch_compound_class "N/A; Environmental Standard" ;
+            mbo:ch_exact_mass 3.260395e+02 ;
+            rdfs:seeAlso cas:67-99-2,
+                chemspider:3358,
+                pubchem:CID3477 ;
+            schema:inChI "InChI=1S/C13H14N2O4S2/c1-14-10(18)12-5-7-3-2-4-8(17)9(7)15(12)11(19)13(14,6-16)21-20-12/h2-4,8-9,16-17H,5-6H2,1H3" ;
+            schema:inChIKey inchikey:FIVPIPIDMRVLAY-UHFFFAOYSA-N ;
+            schema:molecularFormula "C13H14N2O4S2" ;
+            schema:name "7-hydroxy-11-(hydroxymethyl)-15-methyl-12,13-dithia-9,15-diazatetracyclo[9.2.2.01,9.03,8]pentadeca-3,5-diene-10,14-dione",
+                "Aspergillin",
+                "Gliotoxin" ;
+            schema:smiles "CN1C(=O)C23CC4=CC=CC(C4N2C(=O)C1(SS3)CO)O" ] ;
+    mbo:has_peak [ mbo:intensity 2.43667e+04 ;
+            mbo:mz 2.27082e+02 ;
+            mbo:peak_sequential_number 1 ;
+            mbo:relative_intensity 204 ],
+        [ mbo:intensity 6.0876e+04 ;
+            mbo:mz 2.450927e+02 ;
+            mbo:peak_sequential_number 2 ;
+            mbo:relative_intensity 509 ],
+        [ mbo:intensity 1.194813e+05 ;
+            mbo:mz 2.631033e+02 ;
+            mbo:peak_sequential_number 3 ;
+            mbo:relative_intensity 999 ] ;
+    mbo:has_peak_annotations [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.03e+00 ] ;
+            mbo:mz 2.27082e+02 ;
+            mbo:tentative_formula "C13H11N2O2+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.69e+00 ] ;
+            mbo:mz 2.450927e+02 ;
+            mbo:tentative_formula "C13H13N2O3+" ],
+        [ mbo:error [ sio:SIO_000221 obo:UO_0000169 ;
+                    rdf:value 2.43e+00 ] ;
+            mbo:mz 2.631033e+02 ;
+            mbo:tentative_formula "C13H15N2O4+" ] ;
+    mbo:mass_spectram_meta_data [ a mbo:MassSpectramMetaData ;
+            mbo:base_peak 3.270477e+02 ;
+            mbo:precursor_mz_value "327.0468"^^xsd:float ;
+            mbo:precursor_type_value "[M+H]+" ] ;
+    mbo:pk_num_peak 3 ;
+    mbo:pk_splash "splash10-03dj-0090000000-d1dc435c862c10a2fd45" ;
+    rdfs:comment "INTERNAL_ID 94" ;
+    skos:definition "Gliotoxin; LC-ESI-ITFT; MS2; CE: 20%; R=7500; [M+H]+" .
+
